@@ -1,6 +1,6 @@
 """
 essential_requirements.py
-
+This is just a testing script for learning purposes
 Runs an essential-requirements check for every candidate CV against every
 job listing, using a single 7B/8B model.
 
