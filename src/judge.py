@@ -40,23 +40,18 @@ Usage:
     python judge.py --summaries summaries.json --job job.pdf \\
         --parser-dir cv-parser/pipeline --model deepseek-r1:8b --host http://localhost:11434
 
-    # append to a shared results CSV instead of writing one JSON per run
-    python judge.py --summaries summaries.json --job job.pdf \\
-        --parser-dir cv-parser/pipeline --output-format csv --output judged/all_results.csv
-
 Requirements:
     pip install requests pymupdf
 """
 
 import argparse
-import csv
 import json
-import re
 import sys
 import time
 from pathlib import Path
 
-import requests
+from ollama_utils import call_ollama_json
+from results_io import save_json
 
 
 # Loading input =====================================================================
@@ -210,58 +205,85 @@ with exactly these keys:
 
 # Calling the local Ollama model ============================================
 
-def call_ollama(prompt, model, host, temperature=0.2):
+# def call_ollama(prompt, model, host, temperature=0.2):
+#     """
+#     Call a local Ollama model's /api/generate endpoint (non-streaming).
+#     """
+#     url = f"{host.rstrip('/')}/api/generate"
+#     payload = {
+#         "model": model,
+#         "prompt": prompt,
+#         "stream": False,
+#         "options": {"temperature": temperature},
+#     }
+#     try:
+#         response = requests.post(url, json=payload, timeout=3600)
+#         response.raise_for_status()
+#     except requests.exceptions.ConnectionError:
+#         sys.exit(
+#             f"error: could not connect to Ollama at {host}. "
+#             f"Is `ollama serve` running, and is '{model}' pulled "
+#             f"(`ollama pull {model}`)?"
+#         )
+#     except requests.exceptions.RequestException as e:
+#         sys.exit(f"error: Ollama request failed: {e}")
+
+#     data = response.json()
+#     return data.get("response", "")
+
+def call_judge(prompt, model, host, num_predict, keep_alive, temperature=0.2,timeout=3600,return_raw=False):
     """
-    Call a local Ollama model's /api/generate endpoint (non-streaming).
+    Call the judge model via shared ollama_utils helper.
+
+    Go through /api/chat, strips <think> reasoning out of reply before hunting for JSON object.
+    Connection-level failure (e.g. ollama not running / model not pulled/ timeout):
+        exit with error message. 
+    Parse failure (call succeeds but reply is not valid JSON):
+        hand back to caller.
     """
-    url = f"{host.rstrip('/')}/api/generate"
-    payload = {
-        "model": model,
-        "prompt": prompt,
-        "stream": False,
-        "options": {"temperature": temperature},
-    }
-    try:
-        resp = requests.post(url, json=payload, timeout=3600)
-        resp.raise_for_status()
-    except requests.exceptions.ConnectionError:
-        sys.exit(
-            f"error: could not connect to Ollama at {host}. "
-            f"Is `ollama serve` running, and is '{model}' pulled "
-            f"(`ollama pull {model}`)?"
-        )
-    except requests.exceptions.RequestException as e:
-        sys.exit(f"error: Ollama request failed: {e}")
+    parsed, error, raw = call_ollama_json(
+        model, prompt,
+        num_predict=num_predict,
+        keep_alive=keep_alive,
+        host=host,
+        temperature=temperature,
+        timeout = timeout,
+        return_raw=return_raw,
+    )
 
-    data = resp.json()
-    return data.get("response", "")
+    if error and error.startswith("REQUEST ERROR"):
+        sys.exit(f"err: could not get a response from ollama at {host} ({error})."
+                 f" Check that `ollama serve` is running, and {model} is pulled.")
+
+    return parsed,error,raw
+
+# def parse_judge_output(raw_text):
+#     """
+#     Attempt to parse the model's response as JSON. 
+#     Models sometimes wrap JSON in markdown fences or add stray text, so fall back to extracting
+#     the first {...} block if a direct parse fails.
+#     """
+#     text = raw_text.strip()
+
+#     # Strip markdown code fences if present.
+#     text = re.sub(r"^```(?:json)?\s*", "", text)
+#     text = re.sub(r"\s*```$", "", text)
+
+#     try:
+#         return json.loads(text)
+#     except json.JSONDecodeError:
+#         pass
+
+#     match = re.search(r"\{.*\}", text, re.DOTALL)
+#     if match:
+#         try:
+#             return json.loads(match.group(0))
+#         except json.JSONDecodeError:
+#             pass
+
+#     return None
 
 
-def parse_judge_output(raw_text):
-    """
-    Attempt to parse the model's response as JSON. 
-    Models sometimes wrap JSON in markdown fences or add stray text, so fall back to extracting
-    the first {...} block if a direct parse fails.
-    """
-    text = raw_text.strip()
-
-    # Strip markdown code fences if present.
-    text = re.sub(r"^```(?:json)?\s*", "", text)
-    text = re.sub(r"\s*```$", "", text)
-
-    try:
-        return json.loads(text)
-    except json.JSONDecodeError:
-        pass
-
-    match = re.search(r"\{.*\}", text, re.DOTALL)
-    if match:
-        try:
-            return json.loads(match.group(0))
-        except json.JSONDecodeError:
-            pass
-
-    return None
 
 # Output validation ============================================================
 
@@ -272,8 +294,8 @@ def validate_and_coerce(parsed, candidate_name):
     """
     Check the judge's parsed output against the schema judge.py asked for.
 
-    Returns (clean_dict, errors, blocking). clean_dict is always a best-effort
-    dict (never None) so a CSV row can be written even when things are messy.
+    Returns (clean_dict, errors, blocking). 
+    clean_dict is always a best-effort dict (never None).
     blocking is True when the result is unsafe to write as "clean" JSON:
     the model's output wasn't a JSON object at all, or final_score could not
     be read as a number.
@@ -316,12 +338,6 @@ def validate_and_coerce(parsed, candidate_name):
 
 # Output writing
 
-CSV_FIELDS = [
-    "candidate", "job", "final_score", "score_rationale",
-    "key_strengths", "key_weaknesses", "final_evaluation", "errors",
-]
-
-
 def write_json_output(out_path, clean, errors, blocking, raw_response):
     """
     Write validated output as JSON. If validation was blocking, refuse to
@@ -332,10 +348,10 @@ def write_json_output(out_path, clean, errors, blocking, raw_response):
     out_path = Path(out_path)
     if blocking:
         invalid_path = out_path.with_suffix(out_path.suffix + ".invalid.json")
-        invalid_path.parent.mkdir(parents=True, exist_ok=True)
-        invalid_path.write_text(
-            json.dumps({"raw_response": raw_response, "errors": errors}, indent=2, ensure_ascii=False),
-            encoding="utf-8",
+        save_json(
+            {"raw_response": raw_response, "errors":errors},
+            invalid_path.parent,
+            invalid_path.name
         )
         print(f"\nERROR: judge output failed validation, nothing written to {out_path}", file=sys.stderr)
         for e in errors:
@@ -343,8 +359,7 @@ def write_json_output(out_path, clean, errors, blocking, raw_response):
         print(f"Raw response saved to {invalid_path}", file=sys.stderr)
         return False
 
-    out_path.parent.mkdir(parents=True, exist_ok=True)
-    out_path.write_text(json.dumps(clean, indent=2, ensure_ascii=False), encoding="utf-8")
+    save_json(clean,out_path.parent,out_path.name)
     print(f"\nSaved final evaluation to {out_path}")
     if errors:
         print("Note: written with non-blocking validation warnings:")
@@ -352,39 +367,6 @@ def write_json_output(out_path, clean, errors, blocking, raw_response):
             print(f"  - {e}")
     return True
 
-
-def write_csv_output(out_path, clean, errors, job_name):
-    """
-    Append one row to a shared CSV file, creating it with a header if it
-    doesn't exist yet. CSV is the lower-risk fallback: a validation problem
-    is recorded in the row's "errors" column rather than blocking the write.
-    """
-    out_path = Path(out_path)
-    out_path.parent.mkdir(parents=True, exist_ok=True)
-    is_new = not out_path.exists()
-
-    row = {
-        "candidate": clean.get("candidate", ""),
-        "job": job_name,
-        "final_score": clean.get("final_score", ""),
-        "score_rationale": clean.get("score_rationale", ""),
-        "key_strengths": clean.get("key_strengths", ""),
-        "key_weaknesses": clean.get("key_weaknesses", ""),
-        "final_evaluation": clean.get("final_evaluation", ""),
-        "errors": "; ".join(errors),
-    }
-
-    with open(out_path, "a", newline="", encoding="utf-8") as f:
-        writer = csv.DictWriter(f, fieldnames=CSV_FIELDS)
-        if is_new:
-            writer.writeheader()
-        writer.writerow(row)
-    print(f"\nAppended row for {row['candidate']} to {out_path}")
-    if errors:
-        print("Note: appended with validation warnings (see 'errors' column):")
-        for e in errors:
-            print(f"  - {e}")
-    return True
 
 
 # Main =====================================================================
@@ -417,9 +399,33 @@ def main():
         help="Ollama model name to use as the judge (default: deepseek-r1:8b).",
     )
     parser.add_argument(
-        "--host", default="http://localhost:11434",
-        help="Ollama host URL (default: http://localhost:11434).",
+        "--host", default="http://localhost:11434/api/chat",
+        help="Ollama host URL (default: http://localhost:11434/api/chat).",
     )
+    parser.add_argument(
+        "--num-predict", type=int, default=4096,
+        help="Max tokens the judge model may generate (default: 4096).", 
+    )
+    #set higher than indep evaluators, reasoning models (deepseek-r1) spend part of budget on <think>
+    # before JSON is ever written. If value is too low, reply can truncate before JSON is complete.
+    
+    parser.add_argument(
+        "--keep-alive", default="0m",
+        help="How long Ollama keeps the judge model loaded after this call (default: '5m'). "
+    )
+
+    parser.add_argument(
+        "--temperature",default=0.2
+    )
+
+    parser.add_argument(
+        "--timeout",default=3600
+    )
+
+    parser.add_argument(
+        "--return-raw",
+    )
+
     parser.add_argument(
         "--keep-scores", action="store_true",
         help="Include prior reviewers' numeric scores in the prompt (off by default, to reduce anchoring bias).",
@@ -430,18 +436,10 @@ def main():
     )
     parser.add_argument(
         "--output", default=None,
-        help="Path to save the final evaluation. A .json path writes one validated JSON object; "
-             "a .csv path appends one row to a shared CSV file. Required unless --output-format is set explicitly.",
+        help="Path to save the final evaluation. "
     )
-    parser.add_argument(
-        "--output-format", choices=["json", "csv"], default=None,
-        help="Force the output format instead of inferring it from --output's extension.",
-    )
+    
     args = parser.parse_args()
-
-    output_format = args.output_format
-    if output_format is None and args.output:
-        output_format = "csv" if Path(args.output).suffix.lower() == ".csv" else "json"
 
     summaries = load_summaries(args.summaries)
     parsed_cv = import_parsed_cv(args.parser_dir)
@@ -454,12 +452,20 @@ def main():
 
     print(f"Sending {len(summaries)} summary(ies) for '{candidate_name}' ({job_name}) to {args.model} at {args.host} ...")
     start_time = time.time()
-    raw_response = call_ollama(prompt, args.model, args.host)
+    parsed, error, raw_response = call_judge(
+        prompt, args.model, args.host,
+        num_predict=args.num_predict,
+        keep_alive=args.keep_alive,
+        temperature=args.temperature,
+        timeout=args.timeout,
+        return_raw=args.return_raw
+    )
+
+
     end_time = time.time()
     print(f"Model finished, time: {end_time - start_time:.4f}")
-
-    parsed = parse_judge_output(raw_response)
-    if parsed is None:
+    
+    if error:  # PARSE ERROR -- fall through and let validate_and_coerce flag it as blocking
         print("\nWarning: could not parse model output as JSON. Raw response below:\n")
         print(raw_response)
 
@@ -470,12 +476,9 @@ def main():
     if not args.output:
         return
 
-    if output_format == "csv":
-        ok = write_csv_output(args.output, clean, errors, job_name)
-    else:
-        ok = write_json_output(args.output, clean, errors, blocking, raw_response)
+    write_ok = write_json_output(args.output, clean, errors, blocking, raw_response)
 
-    if not ok:
+    if not write_ok:
         sys.exit(1)
 
 
