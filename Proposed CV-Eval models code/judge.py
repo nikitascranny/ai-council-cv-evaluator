@@ -202,36 +202,9 @@ with exactly these keys:
 }}
 """
 
-
-# Calling the local Ollama model ============================================
-
-# def call_ollama(prompt, model, host, temperature=0.2):
-#     """
-#     Call a local Ollama model's /api/generate endpoint (non-streaming).
-#     """
-#     url = f"{host.rstrip('/')}/api/generate"
-#     payload = {
-#         "model": model,
-#         "prompt": prompt,
-#         "stream": False,
-#         "options": {"temperature": temperature},
-#     }
-#     try:
-#         response = requests.post(url, json=payload, timeout=3600)
-#         response.raise_for_status()
-#     except requests.exceptions.ConnectionError:
-#         sys.exit(
-#             f"error: could not connect to Ollama at {host}. "
-#             f"Is `ollama serve` running, and is '{model}' pulled "
-#             f"(`ollama pull {model}`)?"
-#         )
-#     except requests.exceptions.RequestException as e:
-#         sys.exit(f"error: Ollama request failed: {e}")
-
-#     data = response.json()
-#     return data.get("response", "")
-
-def call_judge(prompt, model, host, num_predict, keep_alive, temperature=0.2,timeout=3600,return_raw=False):
+def call_judge(prompt, model, host, num_predict, keep_alive, temperature=0.2,timeout=3600,
+            #    return_raw=False
+               ):
     """
     Call the judge model via shared ollama_utils helper.
 
@@ -241,47 +214,20 @@ def call_judge(prompt, model, host, num_predict, keep_alive, temperature=0.2,tim
     Parse failure (call succeeds but reply is not valid JSON):
         hand back to caller.
     """
-    parsed, error, raw = call_ollama_json(
+    parsed, error = call_ollama_json(
         model, prompt,
         num_predict=num_predict,
         keep_alive=keep_alive,
         host=host,
         temperature=temperature,
         timeout = timeout,
-        return_raw=return_raw,
     )
 
     if error and error.startswith("REQUEST ERROR"):
         sys.exit(f"err: could not get a response from ollama at {host} ({error})."
                  f" Check that `ollama serve` is running, and {model} is pulled.")
 
-    return parsed,error,raw
-
-# def parse_judge_output(raw_text):
-#     """
-#     Attempt to parse the model's response as JSON. 
-#     Models sometimes wrap JSON in markdown fences or add stray text, so fall back to extracting
-#     the first {...} block if a direct parse fails.
-#     """
-#     text = raw_text.strip()
-
-#     # Strip markdown code fences if present.
-#     text = re.sub(r"^```(?:json)?\s*", "", text)
-#     text = re.sub(r"\s*```$", "", text)
-
-#     try:
-#         return json.loads(text)
-#     except json.JSONDecodeError:
-#         pass
-
-#     match = re.search(r"\{.*\}", text, re.DOTALL)
-#     if match:
-#         try:
-#             return json.loads(match.group(0))
-#         except json.JSONDecodeError:
-#             pass
-
-#     return None
+    return parsed,error
 
 
 
@@ -338,7 +284,7 @@ def validate_and_coerce(parsed, candidate_name):
 
 # Output writing
 
-def write_json_output(out_path, clean, errors, blocking, raw_response):
+def write_json_output(out_path, clean, errors):
     """
     Write validated output as JSON. If validation was blocking, refuse to
     write the clean path (so nothing downstream can mistake a broken result
@@ -346,18 +292,6 @@ def write_json_output(out_path, clean, errors, blocking, raw_response):
     file instead, returning a non-zero-worthy failure flag.
     """
     out_path = Path(out_path)
-    if blocking:
-        invalid_path = out_path.with_suffix(out_path.suffix + ".invalid.json")
-        save_json(
-            {"raw_response": raw_response, "errors":errors},
-            invalid_path.parent,
-            invalid_path.name
-        )
-        print(f"\nERROR: judge output failed validation, nothing written to {out_path}", file=sys.stderr)
-        for e in errors:
-            print(f"  - {e}", file=sys.stderr)
-        print(f"Raw response saved to {invalid_path}", file=sys.stderr)
-        return False
 
     save_json(clean,out_path.parent,out_path.name)
     print(f"\nSaved final evaluation to {out_path}")
@@ -423,10 +357,6 @@ def main():
     )
 
     parser.add_argument(
-        "--return-raw",
-    )
-
-    parser.add_argument(
         "--keep-scores", action="store_true",
         help="Include prior reviewers' numeric scores in the prompt (off by default, to reduce anchoring bias).",
     )
@@ -452,22 +382,21 @@ def main():
 
     print(f"Sending {len(summaries)} summary(ies) for '{candidate_name}' ({job_name}) to {args.model} at {args.host} ...")
     start_time = time.time()
-    parsed, error, raw_response = call_judge(
+    parsed, error = call_judge(
         prompt, args.model, args.host,
         num_predict=args.num_predict,
         keep_alive=args.keep_alive,
         temperature=args.temperature,
         timeout=args.timeout,
-        return_raw=args.return_raw
     )
 
 
     end_time = time.time()
     print(f"Model finished, time: {end_time - start_time:.4f}")
     
-    if error:  # PARSE ERROR -- fall through and let validate_and_coerce flag it as blocking
-        print("\nWarning: could not parse model output as JSON. Raw response below:\n")
-        print(raw_response)
+    # if error:  # PARSE ERROR -- fall through and let validate_and_coerce flag it as blocking
+    #     print("\nWarning: could not parse model output as JSON. Raw response below:\n")
+    #     print(raw_response)
 
     clean, errors, blocking = validate_and_coerce(parsed, candidate_name)
     print(f"\nFinal score for {candidate_name}: {clean.get('final_score', '?')}/10")
@@ -476,7 +405,7 @@ def main():
     if not args.output:
         return
 
-    write_ok = write_json_output(args.output, clean, errors, blocking, raw_response)
+    write_ok = write_json_output(args.output, clean, errors)
 
     if not write_ok:
         sys.exit(1)

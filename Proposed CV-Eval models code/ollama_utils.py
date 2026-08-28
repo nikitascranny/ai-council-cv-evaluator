@@ -8,6 +8,7 @@ clean JSON object back out of its reply.
 import re
 import json
 import requests
+from typing import Union
 
 OLLAMA_URL = "http://localhost:11434/api/chat" # The local Ollama API endpoint
 # Ollama must be running  and the model must be loaded for this to work
@@ -29,7 +30,14 @@ def extract_json(text: str) -> dict:
     return json.loads(match.group(0))
 
 
-def call_ollama_json(model: str, prompt: str, num_predict: int = 1024, keep_alive: int = 0):
+def call_ollama_json(model: str,
+                     prompt: str,
+                     num_predict: int = 1024,
+                     keep_alive=0, # keep_alive can be str or int. int= in seconds. str e.g. 5m = 5 minutes
+                     host: str = OLLAMA_URL,
+                     temperature=None, # float
+                     timeout: int=3600 # guard against hung request (alive but stuck process). To refactor in evaluate files.
+                    ):
     """
     Send a single user prompt to a local Ollama model and return the
     JSON object parsed out of its reply.
@@ -42,26 +50,38 @@ def call_ollama_json(model: str, prompt: str, num_predict: int = 1024, keep_aliv
     of leaving it resident which is its default behavior. This comes in handy
     when running many different models in a row so that we don't run out of RAM on the host machine.
     """
+    options: dict[str, Union[int, float]] = {"num_predict": num_predict}
+    if temperature is not None:
+        options["temperature"] = temperature
+
     try:
         # gets the models reply from the local Ollama API and raises an exception if the request fails
         response = requests.post(
-            OLLAMA_URL,
+            host,
             json={
                 "model": model,
                 "messages": [{"role": "user", "content": prompt}],
                 "stream": False,
-                "options": {"num_predict": num_predict},
+                "options": options,
                 "keep_alive": keep_alive,
             },
+            timeout=timeout ## Use to avoid hung request
         )
         response.raise_for_status()
-    except requests.exceptions.HTTPError as e:
-        return {}, f"REQUEST ERROR: {e}"
+
+    except requests.exceptions.RequestException as e: # includes HTTPError
+        # Catches connection failures (Ollama not running), timeouts, and HTTP error statuses alike, 
+        # so callers always get back a (dict,str) pair instead of an uncaught exception killing the run.
+        error = f"REQUEST ERROR: {e}"
+        return ({}, error)
 
     raw_reply = response.json()["message"]["content"]
     cleaned = strip_think_tags(raw_reply)
 
     try:
-        return extract_json(cleaned), None
+        parsed = extract_json(cleaned)
     except (ValueError, json.JSONDecodeError):
-        return {}, "PARSE ERROR"
+        error = "PARSE ERROR"
+        return ({},error)
+
+    return (parsed,None)
