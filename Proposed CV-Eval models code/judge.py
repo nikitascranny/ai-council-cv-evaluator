@@ -29,11 +29,11 @@ representing itself as good data.
 Usage:
     python judge.py --summaries combined/secretary/lerato_munche.json \\
         --job job_listings/job_listing_secretary.pdf \\
-        --parser-dir cv-parser/pipeline \\
+        --parser-dir cv-parser/pipeline \\ ##
         --output judged/secretary/lerato_munche.json
 
     # multiple summary files also still works (e.g. one per grader run,
-    # if you don't want to use aggregate_results.py)
+    # aggregate_results.py not used) -- depends on output of evaluator models
     python judge.py --summaries s1.json s2.json --job job_listing.pdf --parser-dir cv-parser/pipeline
 
     # choose a different local Ollama model / host
@@ -52,14 +52,88 @@ from pathlib import Path
 
 from ollama_utils import call_ollama_json
 from results_io import save_json
+from document_utils import extract_text_from_pdf
 
+# =====================================================================
+# Argument parsing (cmd) 
+# =====================================================================
 
-# Loading input =====================================================================
+def _parse_args():
+    parser = argparse.ArgumentParser(
+            description="Judge multiple CV summaries against a job listing using a local Ollama model."
+    )
+    parser.add_argument(
+        "--summaries", nargs="+", required=True,
+        help="One or more JSON files, each a summary object or list of summary objects "
+                "(typically the single combined file aggregate_results.py produces for one candidate/job).",
+    )
+    parser.add_argument(
+        "--job", required=True,
+        help="Path to the job listing PDF.",
+    )
+    # parser.add_argument(
+    #     "--parser-dir", required=True,
+    #     help="Path to the cv-parser 'pipeline' directory (contains parsed_cv.py). "
+    #             "The job listing PDF is always read through this parser.",
+    # )
+    parser.add_argument(
+        "--job-name", default=None,
+        help="Job label to record in output (e.g. for the CSV 'job' column). "
+                "Defaults to the job PDF's filename stem.",
+    )
+    parser.add_argument(
+        "--model", default="deepseek-r1:8b",
+        help="Ollama model name to use as the judge (default: deepseek-r1:8b).",
+    )
+    parser.add_argument(
+        "--host", default="http://localhost:11434/api/chat",
+        help="Ollama host URL (default: http://localhost:11434/api/chat).",
+    )
+    parser.add_argument(
+        "--num-predict", type=int, default=4096,
+        help="Max tokens the judge model may generate (default: 4096).", 
+    )
+    #set higher than indep evaluators, reasoning models (deepseek-r1) spend part of budget on <think>
+    # before JSON is ever written. If value is too low, reply can truncate before JSON is complete.
+    
+    parser.add_argument(
+        "--keep-alive", default="0m",
+        help="How long Ollama keeps the judge model loaded after this call (default: '5m'). "
+    )
+
+    parser.add_argument(
+        "--temperature",type=float,default=0.2
+    )
+
+    parser.add_argument(
+        "--timeout",type=int,default=3600
+    )
+
+    parser.add_argument(
+        "--keep-scores", action="store_true",
+        help="Include prior reviewers' numeric scores in the prompt (off by default, to reduce anchoring bias).",
+    )
+    parser.add_argument(
+        "--candidate", default=None,
+        help="Candidate name to use. Defaults to the 'candidate' field from the first summary.",
+    )
+    parser.add_argument(
+        "--output", default=None,
+        help="Path to save the final evaluation. "
+    )
+
+    return parser.parse_args()
+
+# =====================================================================
+# Loading input 
+# =====================================================================
 
 def load_summaries(paths):
     """
     Load one or more JSON files, each containing either a single summary
-    object or a list of summary objects. Returns a flat list of dicts.
+    object or a list of summary objects. 
+    
+    Returns a flat list of dicts. [{...}, {...}]
     """
     summaries = []
     for path in paths:
@@ -73,7 +147,7 @@ def load_summaries(paths):
                 sys.exit(f"error: could not parse {path} as JSON: {e}")
 
         if isinstance(data, list):
-            summaries.extend(data)
+            summaries.extend(data) 
         elif isinstance(data, dict):
             summaries.append(data)
         else:
@@ -84,51 +158,10 @@ def load_summaries(paths):
     return summaries
 
 
-def import_parsed_cv(parser_dir):
-    """
-    Import the cv-parser pipeline's parsed_cv module from parser_dir.
-    Used for the job listing PDF.
-    """
-    parser_dir = Path(parser_dir)
-    if not parser_dir.is_dir():
-        sys.exit(
-            f"error: --parser-dir {parser_dir} not found. Point it at the "
-            f"cv-parser 'pipeline' directory (contains parsed_cv.py)."
-        )
-    if str(parser_dir) not in sys.path:
-        sys.path.insert(0, str(parser_dir))
-    try:
-        import parsed_cv  # noqa: PLC0415 -- deliberately lazy, path-dependent import
-    except ImportError as e:
-        sys.exit(
-            f"error: could not import parsed_cv from {parser_dir}: {e}\n"
-            f"Is pymupdf installed? (pip install pymupdf)"
-        )
-    return parsed_cv
+# =====================================================================
+# Prompt construction 
+# =====================================================================
 
-
-def extract_job_text(pdf_path, parsed_cv):
-    """
-    Extract job listing text using the cv-parser pipeline's parser.
-    """
-    path = Path(pdf_path)
-    if not path.exists():
-        sys.exit(f"error: job listing PDF not found: {path}")
-
-    cv = parsed_cv.parse(path)
-    for warning in cv.warnings:
-        print(f"  WARN {path.name}: {warning}", file=sys.stderr)
-
-    full_text = cv.full_text()
-    if not full_text:
-        sys.exit(
-            f"error: parsed_cv extracted no text from {path} "
-            f"(it may be a scanned image without OCR text -- see cv.warnings above)"
-        )
-    return full_text
-
-
-# Prompt construction =================================================================
 def _as_text(value):
     """
     Render a strengths/weaknesses field as prompt text whether the grader
@@ -230,8 +263,9 @@ def call_judge(prompt, model, host, num_predict, keep_alive, temperature=0.2,tim
     return parsed,error
 
 
-
-# Output validation ============================================================
+# =====================================================================
+# Output validation 
+# =====================================================================
 
 REQUIRED_TEXT_FIELDS = ("score_rationale", "key_strengths", "key_weaknesses", "final_evaluation")
 
@@ -281,8 +315,9 @@ def validate_and_coerce(parsed, candidate_name):
 
     return clean, errors, blocking
 
-
+# =====================================================================
 # Output writing
+# =====================================================================
 
 def write_json_output(out_path, clean, errors):
     """
@@ -301,84 +336,23 @@ def write_json_output(out_path, clean, errors):
             print(f"  - {e}")
     return True
 
-
-
-# Main =====================================================================
+    
+# =====================================================================
+# Main 
+# =====================================================================
 
 def main():
-    parser = argparse.ArgumentParser(
-        description="Judge multiple CV summaries against a job listing using a local Ollama model."
-    )
-    parser.add_argument(
-        "--summaries", nargs="+", required=True,
-        help="One or more JSON files, each a summary object or list of summary objects "
-             "(typically the single combined file aggregate_results.py produces for one candidate/job).",
-    )
-    parser.add_argument(
-        "--job", required=True,
-        help="Path to the job listing PDF.",
-    )
-    parser.add_argument(
-        "--parser-dir", required=True,
-        help="Path to the cv-parser 'pipeline' directory (contains parsed_cv.py). "
-             "The job listing PDF is always read through this parser.",
-    )
-    parser.add_argument(
-        "--job-name", default=None,
-        help="Job label to record in output (e.g. for the CSV 'job' column). "
-             "Defaults to the job PDF's filename stem.",
-    )
-    parser.add_argument(
-        "--model", default="deepseek-r1:8b",
-        help="Ollama model name to use as the judge (default: deepseek-r1:8b).",
-    )
-    parser.add_argument(
-        "--host", default="http://localhost:11434/api/chat",
-        help="Ollama host URL (default: http://localhost:11434/api/chat).",
-    )
-    parser.add_argument(
-        "--num-predict", type=int, default=4096,
-        help="Max tokens the judge model may generate (default: 4096).", 
-    )
-    #set higher than indep evaluators, reasoning models (deepseek-r1) spend part of budget on <think>
-    # before JSON is ever written. If value is too low, reply can truncate before JSON is complete.
     
-    parser.add_argument(
-        "--keep-alive", default="0m",
-        help="How long Ollama keeps the judge model loaded after this call (default: '5m'). "
-    )
-
-    parser.add_argument(
-        "--temperature",default=0.2
-    )
-
-    parser.add_argument(
-        "--timeout",default=3600
-    )
-
-    parser.add_argument(
-        "--keep-scores", action="store_true",
-        help="Include prior reviewers' numeric scores in the prompt (off by default, to reduce anchoring bias).",
-    )
-    parser.add_argument(
-        "--candidate", default=None,
-        help="Candidate name to use. Defaults to the 'candidate' field from the first summary.",
-    )
-    parser.add_argument(
-        "--output", default=None,
-        help="Path to save the final evaluation. "
-    )
-    
-    args = parser.parse_args()
+    args = _parse_args()
 
     summaries = load_summaries(args.summaries)
-    parsed_cv = import_parsed_cv(args.parser_dir)
-    job_text = extract_job_text(args.job, parsed_cv)
+    job_text = extract_text_from_pdf(args.job)
     job_name = args.job_name or Path(args.job).stem
 
     candidate_name = args.candidate or summaries[0].get("candidate", "Unknown candidate")
     summaries_text = format_summaries_for_prompt(summaries, keep_scores=args.keep_scores)
     prompt = build_prompt(job_text, summaries_text, candidate_name)
+    print(f"prompt:\n{prompt}")
 
     print(f"Sending {len(summaries)} summary(ies) for '{candidate_name}' ({job_name}) to {args.model} at {args.host} ...")
     start_time = time.time()

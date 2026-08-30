@@ -1,0 +1,10 @@
+data/
+__pycache__/
+*.pyc
+*.json
+logs/
+cv-parser/
+docs/
+*.txt
+.gitkeep
+scripts/
