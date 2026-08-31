@@ -1009,3 +1009,25 @@ def test_capitalised_runs_lost_do_not_reject():
     kept_numbers = "Lead Engineer, Umoja, 2019-2023, 14 staff, 12% gain."
     reasons = rewriter_v1.rejection_reasons(ORIGINAL, kept_numbers, "Role")
     assert reasons == []
+
+
+def test_numbers_lost_ignores_a_trailing_page_number():
+    """Measured on ALEX PARK: the CV ends "...policies.\n2". That 2 is a page
+    number, and rejecting its loss discarded an honest rewrite - the strict
+    retry dropped it too, so the candidate was rejected outright."""
+    original = "Managed 14 staff and cut costs 12%.\n2"
+    assert rewriter_v1.numbers_lost(original, "Led 14 staff, costs down 12%.") == []
+
+
+def test_numbers_lost_ignores_single_digits_anywhere():
+    """Too weak to reject on: bullet markers, stray digits, footnote marks."""
+    assert rewriter_v1.numbers_lost("worked 5 days on 3 teams", "worked there") == []
+
+
+def test_numbers_lost_still_catches_a_real_figure():
+    assert rewriter_v1.numbers_lost("managed 14 staff", "managed staff") == ["14"]
+
+
+def test_numbers_lost_still_catches_a_year_and_a_percentage():
+    lost = rewriter_v1.numbers_lost("2019 to 2023, cut costs 12%", "cut costs")
+    assert sorted(lost) == ["12%", "2019", "2023"]

@@ -146,6 +146,37 @@ def _new_against(original: str, candidates: set[str]) -> list[str]:
         and not re.search(rf"(?<!\w){re.escape(f)}(?!\w)", haystack))
 
 
+# A line holding nothing but a small number is a page number, not a fact. The
+# parser keeps them: ALEX PARK.pdf ends "...policies." then "2".
+_STANDALONE_NUMBER_LINE = re.compile(r"^\s*\d{1,3}\s*$", re.M)
+
+
+def load_bearing_numbers(text: str) -> set[str]:
+    """Numbers worth rejecting over: not page numbers, not lone digits.
+
+    Rejecting on every number was measured too blunt. On ALEX PARK the only
+    number the rewrite dropped was the trailing page number 2, so an honest
+    rewrite was rejected, and the strict retry dropped it again - rejecting the
+    candidate outright. A single digit is rarely a claim; a four-digit year or
+    a percentage always is.
+
+    Known gap: the extractor splits "060 000 0000" into three tokens, so a
+    rewrite that reformats a phone number reads as losing three figures. Not
+    seen in practice yet, recorded here rather than guessed at.
+    """
+    standalone = {m.group().strip() for m in _STANDALONE_NUMBER_LINE.finditer(text)}
+    facts = set()
+    for match in _NUMBER.findall(text):
+        if match.strip() in standalone:
+            continue
+        if len(match.strip().rstrip("%")) < 2:
+            continue
+        token = normalise(match)
+        if token:
+            facts.add(token)
+    return facts
+
+
 def numbers_lost(original: str, rewritten: str) -> list[str]:
     """Numbers present in the original and missing from the rewrite.
 
@@ -159,7 +190,7 @@ def numbers_lost(original: str, rewritten: str) -> list[str]:
     employer, job title, role, date, number ... must still be there", the
     rewriter still dropped the number 2 from ALEX PARK.
     """
-    return _new_against(rewritten, _extract(original, (_NUMBER,)))
+    return _new_against(rewritten, load_bearing_numbers(original))
 
 
 def rejection_reasons(original: str, rewritten: str, job_title: str) -> list[str]:
