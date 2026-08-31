@@ -20,7 +20,7 @@ Key behaviours, all deliberate:
     silently dropped vote.
 
 Usage:
-    python pipeline/run_evaluations.py --models qwen2.5:3b llama3.2:3b
+    python pipeline/run_evaluations.py --models qwen2.5:14b phi4
     python pipeline/run_evaluations.py --dry-run          # cost estimate, no calls
 """
 
@@ -55,7 +55,7 @@ OLLAMA = "http://localhost:11434/api/generate"
 # Running the bare documented command therefore appended 5 x 9 x 10 = 450 junk
 # rows to the shared Results/votes.jsonl, which already_done() then counts as
 # work completed. Naming only installed models is what stops that.
-DEFAULT_MODELS = ["qwen2.5:3b", "llama3.2:3b", "phi3.5:3.8b"]
+DEFAULT_MODELS = ["qwen2.5:14b", "phi4"]
 
 # --- probe set: the minimum run that decides which models are worth using -----
 # One positive job and one negative control, against four CVs chosen because each

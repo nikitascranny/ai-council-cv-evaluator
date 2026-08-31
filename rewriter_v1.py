@@ -5,7 +5,7 @@ check the paraphrase invented nothing, then re-score it with the same evaluator.
 A score that moves after a rephrasing that added no information means the
 ranking was reading wording, not substance.
 
-    scorer = rewriter_v1.make_scorer("qwen2.5:3b")
+    scorer = rewriter_v1.make_scorer("qwen2.5:14b")
     result = rewriter_v1.probe(cv_text, "Fullstack Engineer", scorer)
     result.delta        # 0 means the ranking ignored phrasing
 
@@ -14,6 +14,7 @@ From the shell:  python rewriter_v1.py [--verify-determinism]
 
 import argparse
 import collections
+import difflib
 import json
 import re
 import sys
@@ -202,7 +203,12 @@ def advisory_caps_runs(original: str, rewritten: str) -> list[str]:
 # scorer, wrong here, as it would force the rewritten CV into a JSON object.
 
 OLLAMA_URL = "http://localhost:11434/api/generate"
-DEFAULT_REWRITER_MODEL = "qwen2.5:3b"
+# The rewriting model. Measured on batch3/bad_cv_kevin_jones, qwen2.5:3b
+# returned the CV essentially unchanged (99% word overlap) for one job
+# title and a genuine paraphrase for another, at temperature 0 and a fixed
+# seed - so a delta measured against it can reflect an absent rewrite
+# rather than an indifferent ranking. See ProbeResult.similarity.
+DEFAULT_REWRITER_MODEL = "qwen2.5:14b"
 DEFAULT_NUM_CTX = 8192
 
 
@@ -391,6 +397,14 @@ class ProbeResult:
     # phrasing. facts_lost runs the guard with its arguments reversed.
     length_ratio: float | None = None
     facts_lost: int | None = None
+    # Word overlap with the original, 1.0 meaning the rewriter handed back what
+    # it was given. delta alone cannot separate "phrasing did not matter" from
+    # "nothing was rephrased", and no other field can either: a no-op has an
+    # ideal length_ratio, loses no facts and invents none, so it reads as a
+    # healthy row. Measured on batch3/bad_cv_kevin_jones, where the rewriter
+    # changed 2 words of 232 and the delta of 0 would have been reported as
+    # evidence the ranking ignores wording.
+    similarity: float | None = None
     error: str | None = None
 
     def to_dict(self) -> dict:
@@ -439,6 +453,8 @@ def probe(cv_text: str, job_title: str, scorer, *,
         result.rejected = bool(reasons)
         result.advisory = advisory_caps_runs(cv_text, rewritten)
         result.length_ratio = (len(rewritten) / len(cv_text)) if cv_text else None
+        result.similarity = difflib.SequenceMatcher(
+            None, cv_text.split(), rewritten.split()).ratio()
         # Arguments reversed on purpose: facts of the original missing from the
         # rewrite, which the one-directional guard would not see. Caps runs
         # count here, unlike in the rejection direction - losing a named entity
@@ -500,7 +516,9 @@ ROOT = Path(__file__).resolve().parent
 CV_DIR = ROOT / "Batch1" / "CVs"
 JOB_DIR = ROOT / "Batch1" / "Job Listings"
 OUT = ROOT / "Results" / "rewriter_v1.jsonl"
-DEFAULT_SCORER_MODELS = ["qwen2.5:3b", "llama3.2:3b", "phi3.5:3.8b"]
+# The council the team actually runs. The probe is a sanity check on that
+# ranking, so scoring it with smaller models measures a system nobody ships.
+DEFAULT_SCORER_MODELS = ["qwen2.5:14b", "phi4"]
 
 
 def title_from_slug(slug: str) -> str:

@@ -1,13 +1,15 @@
-"""Interactive demo runner: one candidate against one job, stage by stage.
+"""Console app for the CV evaluator: council, judge and the rewriter probe.
 
-    python run_demo.py                  # council + judge
-    python run_demo.py --rewrite        # also run the phrasing-sensitivity probe
-    python run_demo.py --essential      # also run the essential-requirements check
-    python run_demo.py --fast           # 3b models, for when a big model stalls
+    python run_demo.py           # main menu
+    python run_demo.py --fast    # start on the lighter 7b models
+    python run_demo.py --once    # single evaluation, no menu (for scripting)
 
-Pick a job and a CV from the menus and each stage prints as it finishes, so a
-slow or failing model is visible rather than a hang. Stages are independent: if
-the council loses a model the judge still runs on what came back.
+The menu loops until you quit, so several candidates can be run in one session
+and the models and stages can be changed between runs without restarting.
+
+Each stage prints as it finishes, so a slow or failing model is visible rather
+than a hang, and stages are independent: if the council loses a model the judge
+still runs on what came back. An action that fails returns to the menu.
 
 The evaluator, judge and essential-requirements code is the team's, kept in
 integration/ and imported lazily so this file still loads, and its tests still
@@ -15,6 +17,7 @@ run, on a checkout that does not have it.
 """
 
 import argparse
+import html
 import json
 import re
 import sys
@@ -23,14 +26,19 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
 INTEGRATION = ROOT / "integration"
+DEMO_RESULTS = ROOT / "Results" / "demo"
 
-# The team's real models. --fast swaps in what is pulled on a smaller machine.
+# The team's real models, and what --fast falls back to.
 COUNCIL_MODELS = ["qwen2.5:14b", "phi4"]
 ESSENTIAL_MODEL = "qwen2.5:7b"
 JUDGE_MODEL = "deepseek-r1:8b"
-FAST_MODELS = {"council": ["qwen2.5:3b", "llama3.2:3b"],
-               "essential": "qwen2.5:3b",
-               "judge": "qwen2.5:3b"}
+
+# 7b, not 3b. The 3b models score the same CV several points higher than the
+# 14b ones and llama3.2:3b returned unparseable JSON on two of three runs, so
+# anything measured on them says more about the model size than the candidate.
+FAST_MODELS = {"council": ["qwen2.5:7b"],
+               "essential": "qwen2.5:7b",
+               "judge": "qwen2.5:7b"}
 
 
 # --- corpus discovery -------------------------------------------------------
@@ -151,6 +159,15 @@ def _integration():
     return document_utils, Evaluate_CV, judge, essential_requirements, ollama_utils
 
 
+def job_text_of(job_path) -> str:
+    """Job listing PDF -> text, via the team's plain pdfplumber extraction.
+
+    Job listings are single-column prose, so they do not need the structural
+    parser - and using it here would misreport which component read what.
+    """
+    return _integration()[0].extract_text_from_pdf(job_path)
+
+
 def parse_stage(cv_path, load_cv=None):
     """Our parser. Runs first because everything downstream reads its output."""
     if load_cv is None:
@@ -220,15 +237,19 @@ def judge_stage(job_text, rows, candidate, model, judge_fn=None):
     return parsed
 
 
-def rewrite_stage(cv_text, job_title, scorer, probe=None):
+def rewrite_stage(cv_text, job_title, scorer, probe=None, paraphrase_fn=None):
     """The phrasing-sensitivity probe, reported as a finding.
 
     A rejected rewrite is a result about the rewriting model, not an error: it
     means the paraphrase introduced a fact the original did not contain.
+
+    paraphrase_fn is passed straight through to probe(), which is how the report
+    gets hold of the rewritten text without ProbeResult having to carry it.
     """
     if probe is None:
         import rewriter_v1
-        result = rewriter_v1.probe(cv_text, job_title, scorer)
+        extra = {"paraphrase_fn": paraphrase_fn} if paraphrase_fn else {}
+        result = rewriter_v1.probe(cv_text, job_title, scorer, **extra)
         out = result if isinstance(result, dict) else vars(result)
     else:
         out = probe(cv_text, job_title, scorer)
@@ -257,6 +278,16 @@ def result_filename(job: str, candidate: str) -> str:
     return "{}__{}.json".format(_safe(job), _safe(candidate))
 
 
+def new_payload(job: str, candidate: str) -> dict:
+    """Start a run's payload already carrying its identity.
+
+    save_run used to merge job and candidate in on the way to disk, so the dict
+    handed to write_report lacked both and every page was headed "? - ?".
+    Building them in up front means one dict is saved and rendered.
+    """
+    return {"job": job, "candidate": candidate}
+
+
 def save_run(out_dir, job: str, candidate: str, payload: dict) -> Path:
     out_dir = Path(out_dir)
     out_dir.mkdir(parents=True, exist_ok=True)
@@ -265,6 +296,336 @@ def save_run(out_dir, job: str, candidate: str, payload: dict) -> Path:
     body.update(payload)
     path.write_text(json.dumps(body, indent=2, ensure_ascii=False), encoding="utf-8")
     return path
+
+
+# --- the comparison report --------------------------------------------------
+
+def capture_paraphrase(fn):
+    """Wrap a paraphrase function so the text it returned can be read back.
+
+    probe() takes paraphrase_fn as a parameter, so this captures the rewrite
+    without adding a field to ProbeResult. That matters: the batch runner writes
+    result.to_dict() as one JSONL row per candidate-job, and a full CV in every
+    row would bloat the research output the findings are read from.
+
+    The guard retries on rejection, calling this a second time. Keeping the last
+    call is deliberate - that is the text which was actually scored.
+    """
+    def wrapper(cv_text, job_title, **kwargs):
+        result = fn(cv_text, job_title, **kwargs)
+        wrapper.text = result
+        return result
+
+    wrapper.text = None
+    return wrapper
+
+
+def word_diff(before: str, after: str):
+    """Word-level diff as two HTML fragments: deletions left, insertions right.
+
+    This is what makes "only the wording changed" visible rather than asserted.
+    Every token is escaped - CV text is not trusted markup.
+    """
+    import difflib
+
+    a, b = before.split(), after.split()
+    left, right = [], []
+    for tag, i1, i2, j1, j2 in difflib.SequenceMatcher(None, a, b).get_opcodes():
+        cut_a = html.escape(" ".join(a[i1:i2]))
+        cut_b = html.escape(" ".join(b[j1:j2]))
+        if tag == "equal":
+            left.append(cut_a)
+            right.append(cut_b)
+        else:
+            if cut_a:
+                left.append("<del>{}</del>".format(cut_a))
+            if cut_b:
+                right.append("<ins>{}</ins>".format(cut_b))
+    return " ".join(left), " ".join(right)
+
+
+_REPORT_CSS = """
+:root { --bg:#faf9f7; --fg:#1c1b19; --dim:#6b6862; --line:#e0ddd6;
+        --card:#fff; --ins:#1f7a3d; --insbg:#e4f5ea; --del:#a3382c; --delbg:#fdeae7; }
+@media (prefers-color-scheme: dark) {
+  :root { --bg:#16150f; --fg:#eceae4; --dim:#9a968c; --line:#33312a;
+          --card:#1e1d16; --ins:#6ddc95; --insbg:#16351f; --del:#f2917f; --delbg:#3a1c17; } }
+* { box-sizing: border-box; }
+body { margin:0; background:var(--bg); color:var(--fg);
+       font:16px/1.55 -apple-system, "Segoe UI", system-ui, sans-serif; }
+header { padding:22px 28px; border-bottom:1px solid var(--line); }
+h1 { margin:0 0 4px; font-size:23px; letter-spacing:-.01em; }
+.sub { color:var(--dim); font-size:14px; }
+.strip { display:flex; flex-wrap:wrap; gap:14px; padding:18px 28px;
+         border-bottom:1px solid var(--line); }
+.tile { background:var(--card); border:1px solid var(--line); border-radius:9px;
+        padding:11px 15px; min-width:132px; }
+.tile .k { font-size:11px; text-transform:uppercase; letter-spacing:.07em;
+           color:var(--dim); }
+.tile .v { font-size:26px; font-weight:600; font-variant-numeric:tabular-nums; }
+.tile .n { font-size:12px; color:var(--dim); }
+.panes { display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+         gap:18px; padding:22px 28px; align-items:start; }
+.pane { background:var(--card); border:1px solid var(--line); border-radius:11px;
+        overflow:hidden; }
+.pane h2 { margin:0; padding:11px 16px; font-size:12px; text-transform:uppercase;
+           letter-spacing:.08em; color:var(--dim); border-bottom:1px solid var(--line); }
+.body { padding:16px; white-space:pre-wrap; word-wrap:break-word;
+        font:13.5px/1.6 ui-monospace, "Cascadia Code", Consolas, monospace;
+        max-height:60vh; overflow:auto; }
+ins { background:var(--insbg); color:var(--ins); text-decoration:none;
+      border-radius:3px; padding:0 2px; }
+del { background:var(--delbg); color:var(--del); text-decoration:line-through;
+      border-radius:3px; padding:0 2px; }
+.tags { display:flex; flex-wrap:wrap; gap:6px; padding:0 16px 14px; }
+.tag { font-size:11px; border:1px solid var(--line); border-radius:20px;
+       padding:2px 9px; color:var(--dim); }
+.flag { margin:0 28px 6px; padding:12px 16px; border-radius:9px;
+        background:var(--delbg); color:var(--del); font-size:14px; }
+table { width:100%; border-collapse:collapse; }
+td, th { padding:7px 16px; text-align:left; border-bottom:1px solid var(--line);
+         font-size:13.5px; vertical-align:top; }
+th { font-size:11px; text-transform:uppercase; letter-spacing:.06em; color:var(--dim); }
+td.s { font-weight:600; font-variant-numeric:tabular-nums; width:46px; }
+"""
+
+
+def _tile(label, value, note=""):
+    return ('<div class="tile"><div class="k">{}</div><div class="v">{}</div>'
+            '<div class="n">{}</div></div>').format(
+        html.escape(label), value, html.escape(note))
+
+
+def _pane(title, body_html, tags=()):
+    chips = "".join('<span class="tag">{}</span>'.format(html.escape(str(t)))
+                    for t in tags)
+    return ('<section class="pane"><h2>{}</h2><div class="body">{}</div>'
+            '{}</section>').format(
+        html.escape(title), body_html,
+        '<div class="tags">{}</div>'.format(chips) if chips else "")
+
+
+def render_report(payload: dict) -> str:
+    """The whole run as one self-contained page.
+
+    Local file, no server and no network: it has to open in a browser next to
+    the terminal with nothing else running.
+    """
+    candidate = payload.get("candidate", "?")
+    job = payload.get("job", "?")
+    council = payload.get("council") or []
+    judge = payload.get("judge") or {}
+    rewrite = payload.get("rewrite") or {}
+    rewritten_text = payload.get("rewritten_text") or ""
+    cv_text = payload.get("cv_text") or ""
+
+    tiles = []
+    for row in council:
+        score = row.get("score")
+        tiles.append(_tile(row.get("model", "?"),
+                           "&mdash;" if score is None else score, "council"))
+    if judge:
+        final = judge.get("final_score")
+        tiles.append(_tile("judge", "&mdash;" if final is None else final,
+                           "final verdict"))
+    if rewrite:
+        delta = rewrite.get("delta")
+        shown = "&mdash;" if delta is None else ("+{}".format(delta) if delta > 0 else delta)
+        tiles.append(_tile("rewrite delta", shown,
+                           "{} -> {}".format(rewrite.get("score_before"),
+                                             rewrite.get("score_after"))))
+
+    similarity = rewrite.get("similarity")
+    if similarity is not None:
+        tiles.append(_tile("unchanged", "{:.0%}".format(similarity),
+                           "word overlap"))
+
+    flag = ""
+    # A rewrite that barely changed anything makes delta meaningless: the
+    # ranking did not ignore a rephrasing, there was no rephrasing. Nothing
+    # else on the row shows this - a no-op has an ideal length ratio, invents
+    # nothing and loses nothing.
+    if similarity is not None and similarity >= 0.95:
+        flag = ('<div class="flag"><b>The rewriter barely changed anything &mdash; '
+                'a no-op rewrite.</b> {:.1%} of the words are unchanged, so this '
+                'run says nothing about phrasing sensitivity: the delta of {} '
+                'reflects an absent rewrite, not an indifferent ranking. Exclude '
+                'it rather than averaging it in.</div>').format(
+            similarity, rewrite.get("delta"))
+
+    if rewrite.get("rejected"):
+        reasons = ", ".join(str(r) for r in (rewrite.get("reasons") or []))
+        flag = ('<div class="flag"><b>Rewrite rejected by the fact guard.</b> '
+                'The paraphrase introduced material the original did not contain: '
+                '{}. This is a result about the rewriting model, not a failure of '
+                'the run.</div>').format(html.escape(reasons) or "unrecorded")
+
+    panes = [_pane("Job listing", html.escape(payload.get("job_text") or ""))]
+
+    if rewritten_text:
+        left, right = word_diff(cv_text, rewritten_text)
+        panes.append(_pane("Original CV (as parsed)", left,
+                           payload.get("sections") or ()))
+        panes.append(_pane("Rewritten CV", right))
+    else:
+        panes.append(_pane("CV (as parsed)", html.escape(cv_text),
+                           payload.get("sections") or ()))
+
+    rows = "".join(
+        "<tr><td class='s'>{}</td><td>{}</td><td>{}</td></tr>".format(
+            "&mdash;" if r.get("score") is None else r.get("score"),
+            html.escape(str(r.get("model", "?"))),
+            html.escape(str(r.get("summary", ""))))
+        for r in council)
+    if judge:
+        rows += "<tr><td class='s'>{}</td><td>{}</td><td>{}</td></tr>".format(
+            "&mdash;" if judge.get("final_score") is None else judge.get("final_score"),
+            "judge", html.escape(str(judge.get("final_evaluation", ""))))
+    table = ("<section class='pane' style='margin:0 28px 28px'>"
+             "<h2>Reasoning</h2><table><tr><th>Score</th><th>Model</th>"
+             "<th>Verdict</th></tr>{}</table></section>").format(rows)
+
+    return ("<!doctype html>\n<html lang='en'><head><meta charset='utf-8'>"
+            "<meta name='viewport' content='width=device-width,initial-scale=1'>"
+            "<title>{cand} - {job}</title><style>{css}</style></head><body>"
+            "<header><h1>{cand}</h1><div class='sub'>{job}</div></header>"
+            "<div class='strip'>{tiles}</div>{flag}"
+            "<div class='panes'>{panes}</div>{table}</body></html>").format(
+        cand=html.escape(candidate), job=html.escape(job), css=_REPORT_CSS,
+        tiles="".join(tiles), flag=flag, panes="".join(panes), table=table)
+
+
+def write_report(json_path, payload: dict) -> Path:
+    """Write the page beside the run's JSON, same stem."""
+    path = Path(json_path).with_suffix(".html")
+    path.write_text(render_report(payload), encoding="utf-8")
+    return path
+
+
+# --- settings ---------------------------------------------------------------
+
+class Settings:
+    """What the next run will do. Held across menu choices.
+
+    An explicitly chosen model wins over fast mode, so switching to fast to get
+    through a slow stage does not silently discard a model the user picked.
+    """
+
+    def __init__(self, fast=False, essential=False, rewrite=False,
+                 council=None, judge=None):
+        self.fast = fast
+        self.essential = essential
+        self.rewrite = rewrite
+        self._council = list(council) if council else None
+        self._judge = judge
+
+    @property
+    def council(self):
+        if self._council:
+            return self._council
+        return FAST_MODELS["council"] if self.fast else COUNCIL_MODELS
+
+    @council.setter
+    def council(self, models):
+        self._council = list(models) if models else None
+
+    @property
+    def judge(self):
+        if self._judge:
+            return self._judge
+        return FAST_MODELS["judge"] if self.fast else JUDGE_MODEL
+
+    @judge.setter
+    def judge(self, model):
+        self._judge = model or None
+
+    @property
+    def essential_model(self):
+        return FAST_MODELS["essential"] if self.fast else ESSENTIAL_MODEL
+
+    def stages(self) -> list:
+        active = ["parse", "council"]
+        if self.essential:
+            active.append("essential requirements")
+        active.append("judge")
+        if self.rewrite:
+            active.append("rewriter probe")
+        return active
+
+    def summary(self) -> str:
+        return ("council: {}\n  judge:   {}\n  stages:  {}".format(
+            ", ".join(self.council), self.judge, " -> ".join(self.stages())))
+
+
+# --- saved results ----------------------------------------------------------
+
+def saved_runs(out_dir) -> list:
+    """Previous runs, newest first. Missing directory is simply no runs."""
+    out_dir = Path(out_dir)
+    if not out_dir.is_dir():
+        return []
+    return sorted(out_dir.glob("*.json"),
+                  key=lambda p: p.stat().st_mtime, reverse=True)
+
+
+def describe_run(path) -> str:
+    """One line per saved run.
+
+    Anything unreadable is reported as such rather than raised: a half-written
+    file from an interrupted run must not stop the list from displaying.
+    """
+    path = Path(path)
+    try:
+        data = json.loads(path.read_text(encoding="utf-8"))
+    except Exception:
+        return "{}  (unreadable)".format(path.name)
+
+    scores = ", ".join(
+        "{} {}".format(row.get("model", "?"), row.get("score"))
+        for row in data.get("council", []))
+    final = (data.get("judge") or {}).get("final_score")
+    return "{} -> {}  |  judge {}  |  {}".format(
+        data.get("candidate", path.stem), data.get("job", "?"), final, scores)
+
+
+# --- the menu loop ----------------------------------------------------------
+
+def app_loop(settings, actions=None, reader=input):
+    """Main menu, until the user quits.
+
+    An action that raises returns to the menu rather than ending the session -
+    a model dying mid-demo should cost one run, not the whole app.
+    """
+    if actions is None:
+        actions = default_actions()
+    while True:
+        print("\n" + "=" * 64)
+        print("  AI CV EVALUATOR")
+        print("=" * 64)
+        print("  " + settings.summary())
+        print()
+        for key, (label, _) in actions.items():
+            print("  {}. {}".format(key, label))
+        print("  q. Quit")
+
+        try:
+            choice = reader("\nChoice: ").strip().lower()
+        except EOFError:
+            return 0
+
+        if choice in ("q", "quit", "exit"):
+            return 0
+        entry = actions.get(choice)
+        if entry is None:
+            print("  -> pick one of: {}, q".format(", ".join(actions)))
+            continue
+        try:
+            entry[1](settings)
+        except KeyboardInterrupt:
+            print("\n  (cancelled)")
+        except Exception as exc:
+            print("\n  [!] that run failed: {}".format(exc))
+            print("  Back to the menu; nothing else was affected.")
 
 
 # --- driver -----------------------------------------------------------------
@@ -286,78 +647,198 @@ def _stage_banners():
     return banner
 
 
-def main(argv=None):
-    ap = argparse.ArgumentParser(
-        description="Run one CV against one job, stage by stage.")
-    ap.add_argument("--rewrite", action="store_true",
-                    help="also run the rewriter phrasing-sensitivity probe")
-    ap.add_argument("--essential", action="store_true",
-                    help="also run the essential-requirements check")
-    ap.add_argument("--fast", action="store_true",
-                    help="use the 3b models instead of the team's defaults")
-    ap.add_argument("--council", help="comma-separated evaluator models")
-    ap.add_argument("--judge-model", help="override the judge model")
-    args = ap.parse_args(argv)
+def _preflight_ok(settings, needed) -> bool:
+    """Warn about models Ollama does not have, before a long stage starts."""
+    absent = missing_models(needed, available_models())
+    if not absent:
+        return True
+    print("\n  Not pulled: {}".format(", ".join(absent)))
+    print("  Change the models from the menu, or pull them.")
+    return input("  Continue anyway? [y/N] ").strip().lower() in ("y", "yes")
 
-    council = FAST_MODELS["council"] if args.fast else COUNCIL_MODELS
-    essential_model = FAST_MODELS["essential"] if args.fast else ESSENTIAL_MODEL
-    judge_model = FAST_MODELS["judge"] if args.fast else JUDGE_MODEL
-    if args.council:
-        council = [m.strip() for m in args.council.split(",") if m.strip()]
-    if args.judge_model:
-        judge_model = args.judge_model
 
-    # Checked before anything is picked or parsed: the council takes minutes, and
-    # discovering a missing judge model only after it has run wastes the demo.
-    wanted = list(council) + [judge_model] + ([essential_model] if args.essential else [])
-    absent = missing_models(wanted, available_models())
-    if absent:
-        print("Not pulled: {}".format(", ".join(absent)))
-        print("Pull them, or pass --fast / --council / --judge-model.")
-        if input("Continue anyway? [y/N] ").strip().lower() not in ("y", "yes"):
-            return 1
+# --- menu actions -----------------------------------------------------------
+
+def run_evaluation(settings):
+    """Parse, council, optional essential-requirements, judge, optional probe."""
+    needed = list(settings.council) + [settings.judge]
+    if settings.essential:
+        needed.append(settings.essential_model)
+    if not _preflight_ok(settings, needed):
+        return
 
     job_path = choose("Job listing:", discover_jobs())
     if job_path is None:
-        return 0
+        return
     cv_path = choose("Candidate CV:", discover_cvs())
     if cv_path is None:
-        return 0
+        return
 
     candidate = cv_path.stem
     job_title = title_from_slug(job_path.stem)
     document_utils = _integration()[0]
 
     print("\n{}  ->  {}".format(candidate, job_title))
-    print("council: {} | judge: {}".format(", ".join(council), judge_model))
+    banner = _stage_banners()
 
-    _banner = _stage_banners()
-
-    _banner("PARSE (structure-aware CV parser)")
+    banner("PARSE (structure-aware CV parser)")
     cv = parse_stage(cv_path)
     job_text = document_utils.extract_text_from_pdf(job_path)
 
-    _banner("COUNCIL ({} evaluator models)".format(len(council)))
-    rows = council_stage(job_text, cv.full_text(), candidate, council)
-    payload = {"council": rows}
+    banner("COUNCIL ({} evaluator models)".format(len(settings.council)))
+    rows = council_stage(job_text, cv.full_text(), candidate, settings.council)
 
-    if args.essential:
-        _banner("ESSENTIAL REQUIREMENTS")
+    # The report needs the inputs, not just the scores: the whole point is
+    # seeing the job listing and the CV the models actually read.
+    payload = new_payload(job_path.stem, candidate)
+    payload.update({"council": rows, "job_text": job_text,
+                    "cv_text": cv.full_text(),
+                    "sections": [s.label for s in cv.sections]})
+
+    if settings.essential:
+        banner("ESSENTIAL REQUIREMENTS")
         payload["essential"] = essential_stage(
-            job_text, cv, candidate, essential_model)
+            job_text, cv, candidate, settings.essential_model)
 
-    _banner("JUDGE")
-    payload["judge"] = judge_stage(job_text, rows, candidate, judge_model)
+    banner("JUDGE")
+    payload["judge"] = judge_stage(job_text, rows, candidate, settings.judge)
 
-    if args.rewrite:
-        _banner("REWRITER PROBE (phrasing sensitivity)")
+    if settings.rewrite:
+        banner("REWRITER PROBE (phrasing sensitivity)")
         import rewriter_v1
-        scorer = rewriter_v1.make_scorer(council[0])
-        payload["rewrite"] = rewrite_stage(cv.full_text(), job_title, scorer)
+        scorer = rewriter_v1.make_scorer(settings.council[0])
+        capture = capture_paraphrase(rewriter_v1.paraphrase)
+        payload["rewrite"] = rewrite_stage(cv.full_text(), job_title, scorer,
+                                           paraphrase_fn=capture)
+        payload["rewritten_text"] = capture.text
 
-    path = save_run(ROOT / "Results" / "demo", job_path.stem, candidate, payload)
-    print("\nSaved to {}".format(path))
-    return 0
+    path = save_run(DEMO_RESULTS, job_path.stem, candidate, payload)
+    report = write_report(path, payload)
+    print("\nSaved to  {}".format(path))
+    print("Report    {}".format(report))
+
+
+def run_probe_only(settings):
+    """The rewriter probe on its own, without waiting for a council run."""
+    if not _preflight_ok(settings, [settings.council[0]]):
+        return
+
+    job_path = choose("Job listing (title only is used):", discover_jobs())
+    if job_path is None:
+        return
+    cv_path = choose("Candidate CV:", discover_cvs())
+    if cv_path is None:
+        return
+
+    import rewriter_v1
+    cv = parse_stage(cv_path)
+    job_title = title_from_slug(job_path.stem)
+
+    banner = _stage_banners()
+    banner("REWRITER PROBE (phrasing sensitivity)")
+    scorer = rewriter_v1.make_scorer(settings.council[0])
+    capture = capture_paraphrase(rewriter_v1.paraphrase)
+    result = rewrite_stage(cv.full_text(), job_title, scorer,
+                           paraphrase_fn=capture)
+
+    payload = new_payload(job_path.stem + "__probe", cv_path.stem)
+    payload.update({"rewrite": result, "rewritten_text": capture.text,
+                    "job_text": job_text_of(job_path),
+                    "cv_text": cv.full_text(),
+                    "sections": [s.label for s in cv.sections]})
+    path = save_run(DEMO_RESULTS, job_path.stem + "__probe", cv_path.stem, payload)
+    report = write_report(path, payload)
+    print("\nSaved to  {}".format(path))
+    print("Report    {}".format(report))
+
+
+def edit_settings(settings):
+    """Change models and toggle the optional stages, without restarting."""
+    while True:
+        print("\n  " + settings.summary())
+        print("\n  1. Fast models {}".format("[on]" if settings.fast else "[off]"))
+        print("  2. Essential-requirements stage {}".format(
+            "[on]" if settings.essential else "[off]"))
+        print("  3. Rewriter probe stage {}".format(
+            "[on]" if settings.rewrite else "[off]"))
+        print("  4. Set council models")
+        print("  5. Set judge model")
+        print("  b. Back")
+        try:
+            choice = input("\n  Choice: ").strip().lower()
+        except EOFError:
+            return
+
+        if choice in ("b", "back", "q"):
+            return
+        if choice == "1":
+            settings.fast = not settings.fast
+        elif choice == "2":
+            settings.essential = not settings.essential
+        elif choice == "3":
+            settings.rewrite = not settings.rewrite
+        elif choice == "4":
+            raw = input("  Comma-separated (blank to reset): ").strip()
+            settings.council = [m.strip() for m in raw.split(",") if m.strip()]
+        elif choice == "5":
+            settings.judge = input("  Judge model (blank to reset): ").strip()
+        else:
+            print("  -> 1-5, or b")
+
+
+def browse_results(settings):
+    """Read back previous runs, so a slow run only has to happen once."""
+    runs = saved_runs(DEMO_RESULTS)
+    if not runs:
+        print("\n  No saved runs yet - they appear here after an evaluation.")
+        return
+
+    print("\n  Saved runs, newest first:")
+    for i, path in enumerate(runs, start=1):
+        print("  {:2}. {}".format(i, describe_run(path)))
+
+    try:
+        raw = input("\n  Number to open in full (blank to go back): ").strip()
+    except EOFError:
+        return
+    if raw.isdigit() and 1 <= int(raw) <= len(runs):
+        print()
+        print(runs[int(raw) - 1].read_text(encoding="utf-8"))
+
+
+def default_actions() -> dict:
+    return {
+        "1": ("Run a full evaluation", run_evaluation),
+        "2": ("Run the rewriter probe only", run_probe_only),
+        "3": ("Settings", edit_settings),
+        "4": ("Browse saved results", browse_results),
+    }
+
+
+def main(argv=None):
+    ap = argparse.ArgumentParser(
+        description="Interactive CV evaluator: council, judge and rewriter probe.")
+    ap.add_argument("--rewrite", action="store_true",
+                    help="start with the rewriter probe stage enabled")
+    ap.add_argument("--essential", action="store_true",
+                    help="start with the essential-requirements stage enabled")
+    ap.add_argument("--fast", action="store_true",
+                    help="start on the lighter 7b models instead of the team's defaults")
+    ap.add_argument("--council", help="comma-separated evaluator models")
+    ap.add_argument("--judge-model", help="override the judge model")
+    ap.add_argument("--once", action="store_true",
+                    help="run a single evaluation and exit, skipping the menu")
+    args = ap.parse_args(argv)
+
+    settings = Settings(
+        fast=args.fast, essential=args.essential, rewrite=args.rewrite,
+        council=[m.strip() for m in args.council.split(",")] if args.council else None,
+        judge=args.judge_model)
+
+    if args.once:
+        run_evaluation(settings)
+        return 0
+    return app_loop(settings)
 
 
 if __name__ == "__main__":

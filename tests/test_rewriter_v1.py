@@ -842,3 +842,50 @@ def test_rejection_rate_counts_truncated_rejections():
     text = rewriter_v1.summarise(rows, flag_threshold=2)
     assert "1 rejected (of 2 scored)" in text
     assert "1 truncated (excluded)" in text
+
+
+# --- similarity: telling a real rewrite from a no-op -------------------------
+
+def test_probe_records_similarity_against_the_original():
+    """delta alone cannot distinguish "phrasing did not matter" from "the model
+    barely rewrote anything". Measured on batch3/bad_cv_kevin_jones: the
+    rewriter changed 2 words of 232 and returned length_ratio 1.002, which
+    looks like a perfectly ordinary rewrite on every other field."""
+    rewritten = "Senior Engineer, Umoja Bank, 2019-2023, 14 people, 12%."
+    result = rewriter_v1.probe(ORIGINAL, "Role", _stub_scorer([4, 4]),
+                               paraphrase_fn=_stub_paraphraser(rewritten))
+    assert result.similarity is not None
+    assert 0.0 <= result.similarity <= 1.0
+
+
+def test_similarity_is_one_when_the_rewriter_returns_the_input_unchanged():
+    """The no-op case, which every other field on the row reports as healthy."""
+    result = rewriter_v1.probe(ORIGINAL, "Role", _stub_scorer([4, 4]),
+                               paraphrase_fn=_stub_paraphraser(ORIGINAL))
+    assert result.similarity == pytest.approx(1.0)
+    assert result.delta == 0
+    assert result.rejected is False
+    assert result.length_ratio == pytest.approx(1.0)
+
+
+def test_similarity_falls_when_the_wording_genuinely_changes():
+    barely = rewriter_v1.probe(
+        ORIGINAL, "Role", _stub_scorer([4, 4]),
+        paraphrase_fn=_stub_paraphraser(ORIGINAL.replace("Senior", "Sr"))).similarity
+    heavily = rewriter_v1.probe(
+        ORIGINAL, "Role", _stub_scorer([4, 4]),
+        paraphrase_fn=_stub_paraphraser(
+            "Led a team of 14 at Umoja Bank from 2019 to 2023, lifting "
+            "throughput by 12%.")).similarity
+    assert heavily < barely
+
+
+def test_similarity_is_none_when_the_probe_errored_before_rewriting():
+    """No rewrite happened, so there is nothing to compare - not a 0.0, which
+    would read as a completely different rewrite."""
+    def explode(cv_text, job_title, **kwargs):
+        raise OSError("ollama down")      # what an unreachable host actually raises
+    result = rewriter_v1.probe(ORIGINAL, "Role", _stub_scorer([4]),
+                               paraphrase_fn=explode)
+    assert result.similarity is None
+    assert result.error
