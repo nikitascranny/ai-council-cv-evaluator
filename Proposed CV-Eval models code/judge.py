@@ -90,6 +90,11 @@ def _parse_args():
     # before JSON is ever written. If value is too low, reply can truncate before JSON is complete.
     
     parser.add_argument(
+        "--max-retries",type=int,default=3,
+        help="Max attempts to get a JSON-parseable reply from the judge model before giving up and writing {}. default=3"
+    )
+
+    parser.add_argument(
         "--keep-alive", default="0m",
         help="How long Ollama keeps the judge model loaded after this call (default: '5m'). "
     )
@@ -228,8 +233,8 @@ with exactly these keys:
 }}
 """
 
-def call_judge(prompt, model, host, num_predict, keep_alive, temperature=0.2,timeout=3600,
-            #    return_raw=False
+def call_judge(prompt, model, host, num_predict, keep_alive, 
+               temperature=0.2,timeout=3600,
                ):
     """
     Call the judge model via shared ollama_utils helper.
@@ -255,6 +260,32 @@ def call_judge(prompt, model, host, num_predict, keep_alive, temperature=0.2,tim
 
     return parsed,error
 
+def call_judge_with_retries(prompt, model, host, num_predict, keep_alive,
+                             temperature=0.2, timeout=3600, max_retries=3):
+    """
+    Call judge model, retry if its reply doesn't parse as a JSON object 
+    (PARSE ERROR from ollama_utils). This method is only triggered by a parse faillure. 
+    Connection-level failures still exit immediately.
+
+    If every attempt fails parsing (after max_retries), return last attempt's ({},"PARSE EROR")
+    """
+    attempt = 0
+    while True:
+        attempt += 1
+        parsed, error = call_judge(
+            prompt, model, host,
+            num_predict=num_predict,
+            keep_alive=keep_alive,
+            temperature=temperature,
+            timeout=timeout,
+        )
+        if not error:
+            return parsed, error
+        if attempt >= max_retries:
+            print(f"\n{error} on attempt {attempt}/{max_retries} -- giving up after max retries.")
+            return parsed, error
+        print(f"\n{error} on attempt {attempt}/{max_retries} -- retrying...")
+    
 
 # =====================================================================
 # Output writing
@@ -293,12 +324,13 @@ def main():
 
     print(f"Sending {len(summaries)} summary(ies) for '{candidate_name}' ({job_name}) to {args.model} at {args.host} ...")
     start_time = time.time()
-    parsed, error = call_judge(
+    parsed, error = call_judge_with_retries(
         prompt, args.model, args.host,
         num_predict=args.num_predict,
         keep_alive=args.keep_alive,
         temperature=args.temperature,
         timeout=args.timeout,
+        max_retries=args.max_retries
     )
 
 
