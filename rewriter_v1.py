@@ -1,20 +1,15 @@
 """Rewriter Variant 1 - a phrasing-sensitivity probe, not a CV you keep.
 
-Paraphrase a CV toward a job TITLE (not the full listing - the rewriter does
-not need the requirements), verify the paraphrase invented nothing, then
-re-score it with the same evaluator. A score that moves after a rephrasing
-that added no information means the ranking was reading wording, not
-substance.
+Paraphrase a CV toward a job title (the rewriter never sees the requirements),
+check the paraphrase invented nothing, then re-score it with the same evaluator.
+A score that moves after a rephrasing that added no information means the
+ranking was reading wording, not substance.
 
-    import rewriter_v1
     scorer = rewriter_v1.make_scorer("qwen2.5:3b")
     result = rewriter_v1.probe(cv_text, "Fullstack Engineer", scorer)
     result.delta        # 0 means the ranking ignored phrasing
 
-Or from the shell:  python rewriter_v1.py --verify-determinism
-                    python rewriter_v1.py
-
-Spec: docs/superpowers/specs/2026-08-24-rewriter-variant-1-design.md
+From the shell:  python rewriter_v1.py [--verify-determinism]
 """
 
 import argparse
@@ -33,15 +28,13 @@ import prompts  # noqa: E402
 import run_evaluations  # noqa: E402
 import cv_parser  # noqa: E402
 
-# ============================================================================
-# 1. FACT EXTRACTION
+# --- 1. Fact extraction ---
 #
 # The probe's whole claim is "a pure rephrasing, no new information". An
 # instruction-tuned model asked to improve a CV will invent scope and upgrade
-# verbs unless stopped, and a score jump caused by invented content would be
-# read as phrasing sensitivity - inverting the finding. These are the token
-# classes an embellishing model reliably fabricates.
-# ============================================================================
+# verbs unless stopped, and a score jump caused by invented content would read
+# as phrasing sensitivity - inverting the finding. These are the token classes
+# an embellishing model reliably fabricates.
 
 # Keep % attached: "72.8%" is a different claim from "72.8". Dots are kept in
 # the first pass and classified in the second, because stripping them outright
@@ -63,18 +56,16 @@ _QUALIFICATION = re.compile(
     r"CCNP|ITIL|PRINCE2|PMP|Scrum)\b",
     re.I)
 
-# An abbreviation and its expansion are the SAME qualification. Expanding an
+# An abbreviation and its expansion are one qualification. Expanding an
 # abbreviation is exactly what a paraphraser does, so without this the guard
-# reads "BCom Hons" -> "BCom Honours" as an invented qualification and rejects
-# an honest rewrite. Measured: that false rejection fired on THE DANIEL.pdf,
-# the first real CV ever put through the probe, and the rejection rate it
-# corrupts is a reported finding.
+# reads "BCom Hons" -> "BCom Honours" as an invented qualification and rejects an
+# honest rewrite. That false rejection fired on THE DANIEL.pdf, the first real CV
+# put through the probe, and it corrupts a rejection rate we report.
 #
-# Only OVER-reporting is fixed here. The reverse direction - "MSc" expanding to
-# the phrase "Master of Science" - is not detected at all, because the phrase
-# is not in the lexicon. That is under-reporting, which this module treats as
-# the safe direction throughout: a missed embellishment weakens one row, a
-# false rejection discards a good one.
+# Only over-reporting is fixed here. The reverse - "MSc" expanding to "Master of
+# Science" - is not detected, since the phrase is not in the lexicon. That is
+# under-reporting, the safe direction throughout this module: a missed
+# embellishment weakens one row, a false rejection discards a good one.
 _QUALIFICATION_CANON = {
     "hons": "honours",
     "matriculation": "matric",
@@ -129,9 +120,7 @@ def extract_caps_runs(text: str) -> set[str]:
     return _extract(text, (_CAPS_RUN,))
 
 
-# ============================================================================
-# 2. THE GUARD
-# ============================================================================
+# --- 2. The guard ---
 
 
 def _new_against(original: str, candidates: set[str]) -> list[str]:
@@ -206,13 +195,11 @@ def advisory_caps_runs(original: str, rewritten: str) -> list[str]:
     return _new_against(original, extract_caps_runs(rewritten))
 
 
-# ============================================================================
-# 3. THE REWRITING AGENT
+# --- 3. The rewriting agent ---
 #
-# One call, plain text. It does NOT reuse run_evaluations.call_ollama, which
-# hardcodes "format": "json" - correct for a scorer, wrong here, since it
-# would force the rewritten CV into a JSON object.
-# ============================================================================
+# One call, plain text. It deliberately does not reuse
+# run_evaluations.call_ollama, which hardcodes "format": "json" - right for a
+# scorer, wrong here, as it would force the rewritten CV into a JSON object.
 
 OLLAMA_URL = "http://localhost:11434/api/generate"
 DEFAULT_REWRITER_MODEL = "qwen2.5:3b"
@@ -317,14 +304,11 @@ paraphrase.last_prompt_chars = None
 paraphrase.last_truncated = None
 
 
-# ============================================================================
-# 4. THE SCORER
+# --- 4. The scorer ---
 #
-# A parameter, not a hardcoded dependency. Variant 1 is a sanity check on the
-# ranking a company actually runs, so the probe must be able to point at
-# whichever evaluator that is. This is the default implementation, over the
-# existing deterministic temp-0 path.
-# ============================================================================
+# A parameter, not a hardcoded dependency: the probe is a sanity check on the
+# ranking a company actually runs, so it has to point at whichever evaluator
+# that is. Below is the default, over the existing deterministic temp-0 path.
 
 DEFAULT_PROMPT_VERSION = "v3_criteria"
 
@@ -380,9 +364,7 @@ def make_scorer(model: str, prompt_version: str = DEFAULT_PROMPT_VERSION,
     return scorer
 
 
-# ============================================================================
-# 5. THE PROBE
-# ============================================================================
+# --- 5. The probe ---
 
 
 @dataclass
@@ -457,13 +439,11 @@ def probe(cv_text: str, job_title: str, scorer, *,
         result.rejected = bool(reasons)
         result.advisory = advisory_caps_runs(cv_text, rewritten)
         result.length_ratio = (len(rewritten) / len(cv_text)) if cv_text else None
-        # Arguments reversed on purpose: facts of the ORIGINAL missing from the
-        # rewrite. The guard itself is one-directional and would not see these.
-        # Hard facts AND caps runs, unlike the rejection direction. Losing a
-        # named entity is unambiguous - "Umoja Bank" absent from the rewrite
-        # is a dropped employer - whereas GAINING one is usually re-casing,
-        # which is why rejection ignores caps runs. Reversing the rejection
-        # guard here left facts_lost blind to exactly the case it cites.
+        # Arguments reversed on purpose: facts of the original missing from the
+        # rewrite, which the one-directional guard would not see. Caps runs
+        # count here, unlike in the rejection direction - losing a named entity
+        # is unambiguous ("Umoja Bank" absent means a dropped employer), whereas
+        # gaining one is usually just re-casing.
         result.facts_lost = len(_new_against(rewritten, extract_facts(cv_text)))
 
         result.score_after = scorer(rewritten, job_title)
@@ -475,18 +455,15 @@ def probe(cv_text: str, job_title: str, scorer, *,
     return result
 
 
-# ============================================================================
-# 6. THE DETERMINISM CONTROL
+# --- 6. The determinism control ---
 #
 # The probe's validity rests entirely on the evaluator returning the same score
-# for the same input. call_ollama sends temperature 0.0 with a fixed seed, so
-# it SHOULD - but nothing in this project has ever checked, and GPU batching
-# can drift a nominally greedy decode. All 237 rows in Results/votes.jsonl are
-# seed 0, one run per (model, job, cv): no CV has ever been scored twice.
-#
-# If this does not hold, a post-paraphrase delta cannot be distinguished from
-# run-to-run noise and the probe measures nothing.
-# ============================================================================
+# for the same input. call_ollama sends temperature 0.0 with a fixed seed, so it
+# should - but nothing here has ever checked, and GPU batching can drift a
+# nominally greedy decode. All 237 rows in Results/votes.jsonl are seed 0, one
+# run per (model, job, cv): no CV has ever been scored twice. If this does not
+# hold, a post-paraphrase delta cannot be told apart from run-to-run noise and
+# the probe measures nothing.
 
 
 _INTERLEAVE_CV = (
@@ -517,9 +494,7 @@ def verify_determinism(cv_texts: dict, job_title: str, scorer,
     return drift
 
 
-# ============================================================================
-# 7. BATCH RUN AND REPORTING
-# ============================================================================
+# --- 7. Batch run and reporting ---
 
 ROOT = Path(__file__).resolve().parent
 CV_DIR = ROOT / "Batch1" / "CVs"
@@ -630,11 +605,11 @@ def summarise(rows: list, flag_threshold: int) -> str:
     scored = [r for r in rows if not r.get("error") and r.get("delta") is not None]
     truncated = [r for r in scored if row_truncated(r)]
     usable = [r for r in scored if not row_truncated(r)]
-    # Rejections are counted over every SCORED row, not just untruncated ones.
-    # The rejection rate is itself a reported finding about the rewriting
-    # model, and a rewrite that was rejected AND truncated is still a
-    # rejection; counting over `usable` biased that rate low. Truncation is an
-    # overlapping tally, reported separately, not a filter on this count.
+    # Counted over every scored row, not just untruncated ones. The rejection
+    # rate is itself a reported finding about the rewriting model, and a rewrite
+    # that was both rejected and truncated is still a rejection - counting over
+    # `usable` biased the rate low. Truncation is an overlapping tally, reported
+    # separately, not a filter on this count.
     rejected = [r for r in scored if r.get("rejected")]
     clean = [r for r in usable if not r.get("rejected")]
     flagged = [r for r in clean if abs(r["delta"]) >= flag_threshold]

@@ -6,30 +6,23 @@
     cv.sections_named("experience", "education")
     cv_parser.signals(cv)                 # structural findability signals
 
-Or from the shell:  python cv_parser.py "SOME CV.pdf"  -> JSON on stdout.
+From the shell:  python cv_parser.py "SOME CV.pdf"  -> JSON on stdout.
 
-Five stages run in dependency order, one per section banner below. Read top to
-bottom and the pipeline reads as prose:
+Five stages, in dependency order, one per section header below:
 
-  1. TEXT EXTRACTION      pdf -> normalised text (the flat path, and the
-                          extractor comparison every vote is labelled with)
-  2. PAGE LAYOUT          pdf page -> Blocks in human reading order, columns
-                          and gutters resolved
-  3. SEGMENTATION         Blocks -> labelled Sections, headings resolved by
-                          typography first and vocabulary second
-  4. PARSER CONTRACT      parse() and ParsedCV - the only names a consumer needs
-  5. FINDABILITY          deterministic structural signals over a ParsedCV
+  1. Text extraction   pdf -> normalised text, with the extractor recorded
+  2. Page layout       pdf page -> Blocks in reading order, columns resolved
+  3. Segmentation      Blocks -> labelled Sections, typography before vocabulary
+  4. Parser contract   parse() and ParsedCV - all a consumer needs
+  5. Findability       structural signals over a ParsedCV
 
-Oversized documents are NOT chunked. ParsedCV.chunks() was removed as dead code
-- nothing outside its own tests ever called it, and at num_ctx=8192 the largest
-Batch1 prompt is ~7.6k tokens. A CV too long to fit is passed whole and
-truncated by the model. Restore from git history if that stops being true.
+Oversized documents are not chunked: at num_ctx=8192 the largest Batch1 prompt is
+~7.6k tokens, so a CV too long to fit is passed whole and truncated by the model.
 
-WHY ONE FILE: this is a component two other people import. Five modules sharing
-a sys.path hack made that a setup problem rather than an import.
+One file rather than five, because two other people import this and five modules
+sharing a sys.path hack is a setup problem rather than an import.
 
-Requires PyMuPDF (fitz). pypdf and pdfplumber are imported lazily, only when
-their extractor is actually requested.
+Requires PyMuPDF (fitz); pypdf and pdfplumber are imported only when requested.
 """
 
 import re
@@ -41,33 +34,18 @@ from pathlib import Path
 import fitz
 
 
-# ============================================================================
-# 1. TEXT EXTRACTION
+# --- 1. Text extraction ---
 #
-# PDF text extraction, with the extractor as a controlled variable.
+# The extractor is a controlled variable, recorded on every vote beside the model
+# name: the same CV read by two extractors differs in word fusion, header junk
+# and - on two-column CVs - section order, any of which can change what a model
+# concludes. Measured on Batch1, pymupdf fuses 95 words across the ten CVs
+# against pypdf's 145, because pypdf reads two-column layouts line by line and
+# renders icon fonts as dingbats that fuse onto the next word.
 #
-# Extraction quality is not a detail here. The same CV rendered by two extractors
-# differs in word fusion, contact-header junk and - on two-column CVs - the ORDER
-# sections appear in. Any of those can change what a model concludes, so which
-# extractor produced the text is recorded on every vote alongside the model name.
-#
-#   pypdf     What the original Batch1 runs used. Reads two-column layouts
-#             line-by-line, which splices sidebar content into the middle of body
-#             sentences, and renders icon fonts as dingbats that fuse onto the
-#             following word (map-pin + "Cape Town" becomes one token).
-#
-#   pymupdf   MuPDF with blocks sorted by position, so a sidebar stays a coherent
-#             block instead of interleaving. Icon glyphs degrade to single control
-#             characters that do not fuse onto words. Measured on Batch1: 95 fused
-#             words across the ten CVs versus 145 for pypdf.
-#
-# Neither extractor fully solves multi-column reading order - both still place
-# Riaan Goven's Education block away from where a human reader would expect it.
-# That is what stage 2 exists to fix.
-#
-# Both run through the same clean() pass, so switching extractor changes only the
-# extraction, not the normalisation.
-# ============================================================================
+# Neither fully solves multi-column reading order - both misplace Riaan Goven's
+# Education block, which is what stage 2 exists to fix. Both run through the same
+# clean() pass, so the extractor changes extraction, not normalisation.
 
 
 EXTRACTORS = ("pypdf", "pymupdf", "pdfplumber")
@@ -81,10 +59,10 @@ LIGATURES = {"ﬀ": "ff", "ﬁ": "fi", "ﬂ": "fl", "ﬃ": "ffi",
 # codes, private-use codepoints, or - under pypdf - as dingbats. Replaced with a
 # space rather than deleted, so "\x83T. +27" does not collapse to "T.+27".
 #
-# CRITICAL: no range may begin the character class with a bare "-". A leading
-# hyphen is read as a literal and strips every hyphen in the document, turning
-# "hands-on" into "hands on". An earlier version of this pattern did exactly
-# that and silently destroyed 25 of 31 hyphens in Riaan Goven's CV.
+# Careful: no range may start with a bare "-". A leading hyphen reads as a
+# literal and strips every hyphen in the document, turning "hands-on" into
+# "hands on". An earlier version of this pattern did exactly that and silently
+# destroyed 25 of 31 hyphens in Riaan Goven's CV.
 JUNK_GLYPHS = re.compile(
     "[\x00-\x08\x0b\x0c\x0e-\x1f\x7f-\x9f"      # C0 and C1 control codes
     "-"                             # private use area
@@ -152,27 +130,20 @@ def extract(path, extractor: str = "pymupdf") -> str:
     return clean(_BACKENDS[extractor](path))
 
 
-# ============================================================================
-# 2. PAGE LAYOUT AND READING ORDER
-#
-# Geometry-based reading-order recovery.
+# --- 2. Page layout and reading order ---
 #
 # PyMuPDF's get_text("blocks", sort=True) sorts in horizontal bands, so on a
-# two-column CV it emits a main-column block and then jumps to a sidebar block
-# higher up the page. Measured on RIAAN GOVEN.pdf page 0, that places the heading
-# "Work Experience" (y=296, main column) immediately before the sidebar block
-# beginning "Education | Jan 2024 - Current | Masters in Digital Business" (y=127).
-# The cached text in pipeline/.textcache/pymupdf/ shows the result: his entire
-# education history sits under the Work Experience heading, and every model that
-# reads it believes his degrees are jobs.
+# two-column CV it emits a main-column block then jumps to a sidebar block higher
+# up the page. On RIAAN GOVEN.pdf page 0 that puts the heading "Work Experience"
+# (y=296) immediately before a sidebar block beginning "Education | Jan 2024 -
+# Current | Masters in Digital Business" (y=127): his entire education history
+# lands under Work Experience, and every model reading it takes his degrees for
+# jobs.
 #
-# This stage therefore never uses sort=True. It reads blocks with their geometry,
-# detects the column gutter, and emits each column in full before the next.
-#
-# Font size and weight are collected here alongside geometry because get_text("dict")
-# yields both together; re-deriving them later would mean matching blocks back to
-# spans by bbox. Stage 3 needs both to tell a heading from body text.
-# ============================================================================
+# So this stage never uses sort=True - it reads blocks with their geometry, finds
+# the column gutter, and emits each column in full before the next. Font size and
+# weight come along because get_text("dict") yields them alongside geometry, and
+# stage 3 needs both to tell a heading from body text.
 
 
 # PyMuPDF span flag bit 4 marks bold. Documented in the "dict" output schema.
@@ -180,7 +151,7 @@ _BOLD_FLAG = 1 << 4
 
 # Blocks at least this fraction of page width span the columns rather than sitting
 # in one - banners, name headers, contact strips. They confound gutter detection,
-# so they are set aside and re-inserted as band separators (Task 4).
+# so they are set aside and re-inserted as band separators.
 FULL_WIDTH_RATIO = 0.6
 
 
@@ -240,19 +211,14 @@ def raw_blocks(page, page_index: int) -> list[Block]:
 # A gutter must be this wide to count. Below it, ordinary inter-word or
 # inter-cell whitespace qualifies and single-column pages get split.
 #
-# 15.0 was the starting value and measured too strict: THE DANIEL page 0 puts
-# a SKILLS column at x=36.2-190.7 beside an EDUCATION column at x=203.2-564.1,
-# a gutter of roughly 12pt, which a 15pt floor misses outright. Swept against
-# tests/fixtures/layout_labels.json with tools/tune_gutter.py across gutter
-# widths 8-30pt and side shares 0.08-0.20 (see full sweep table in
-# .superpowers/sdd/2026-08-12-structure-aware-cv-parser/task-3-report.md): every
-# setting tried yields zero false positives, and MIN_GUTTER_PT<=12 paired with
-# MIN_SIDE_SHARE<=0.10 additionally reaches perfect recall - all 5 labelled
-# multi-column pages found, no misses, across all 32 labelled pages. 12.0/0.10
-# is chosen over the looser 8.0/0.08 and 10.0/0.08 ties: same measured
-# precision 1.00 and recall 1.00, but the largest gutter and share thresholds
-# that still hit that ceiling, leaving the most margin before an unseen CV's
-# ordinary whitespace starts reading as a gutter.
+# 15.0 was the starting value and measured too strict: THE DANIEL page 0 puts a
+# SKILLS column at x=36.2-190.7 beside an EDUCATION column at x=203.2-564.1 - a
+# ~12pt gutter a 15pt floor misses outright. Swept against
+# tests/fixtures/layout_labels.json with tools/tune_gutter.py over widths 8-30pt
+# and side shares 0.08-0.20: no setting gives a false positive, and <=12 paired
+# with MIN_SIDE_SHARE <= 0.10 finds all 5 labelled multi-column pages out of 32.
+# 12.0/0.10 ties 8.0/0.08 on precision and recall but leaves the most margin
+# before an unseen CV's ordinary whitespace reads as a gutter.
 MIN_GUTTER_PT = 12.0
 
 # Each side must hold at least this share of the page's text. Without this test
@@ -407,49 +373,30 @@ def clean_blocks(page, page_index: int) -> list[Block]:
     return kept
 
 
-# ============================================================================
-# 3. SECTION SEGMENTATION
+# --- 3. Section segmentation ---
 #
-# Group ordered blocks into labelled CV sections.
+# Headings are identified by typography first, vocabulary second. A lexicon alone
+# is not enough: RIAAN GOVEN.pdf heads a subsection "DEVELOPMENT", which no CV
+# lexicon contains but which is short, bold and above body size.
 #
-# Headings are identified by typography first and vocabulary second. A lexicon
-# alone is not enough: RIAAN GOVEN.pdf heads a subsection "DEVELOPMENT", which no
-# reasonable CV-section lexicon contains, but which is short, bold and set above
-# body size. (Its sibling subsection "USER EXPERIENCE" is a different case since
-# Task 14: longest-match resolves it to "experience" via the word "experience"
-# it contains, harmlessly - it opens a second experience-labelled section rather
-# than nesting, and sections_named("experience") does not care how many Section
-# objects its label is spread across.)
+# Only section headings ("Work Experience") are boundaries - entry headings
+# ("Senior UX Researcher, Umoja Bank") and sub-headings ("Key Responsibilities")
+# are typographically similar but must not split the section. So a heading opens
+# a new section only when the lexicon recognises it; anything else stays inside
+# as a block. Treating every typographic heading as a boundary stranded 4,487
+# chars of a Lerato Munche job entry outside Work Experience.
 #
-# A CV has more than one tier of heading: section headings ("Work Experience"),
-# entry headings ("Senior UX Researcher, Umoja Bank") and sub-headings ("Key
-# Responsibilities") are all typographically distinct from body text, but only the
-# first is a section boundary. So a heading only opens a new section when the
-# lexicon recognises it; an unrecognised heading is treated as an entry or
-# sub-heading and stays inside the section it belongs to, kept as a block so its
-# text is never lost. Measured on Batch1: treating every typographic heading as a
-# boundary stranded a single Lerato Munche job entry's 4,487 chars outside Work
-# Experience, because her own job title severed it from the section.
-#
-# Nothing is ever discarded. An unrecognised heading appearing before any section
-# is open still opens an "other" section, with the heading preserved verbatim in
-# raw_heading - so full_text() stays complete no matter how unusual the template.
-# ============================================================================
+# Nothing is discarded: an unrecognised heading before any section opens an
+# "other" section with raw_heading kept verbatim, so full_text() stays complete.
 
 
 
 LABELS = ("contact", "summary", "skills", "experience", "education",
           "certifications", "projects", "references", "other")
 
-# Heading phrase (normalised: lowercased, punctuation and decorative numerals
-# stripped) -> label. heading_label resolves the LONGEST key that appears as a
-# contiguous run of whole words in the heading - "work experience" and
-# "experience" are both entries, and a heading containing either wins on
-# whichever is longer, so a qualifier like "Tutoring Experience" or "Projects &
-# Technical Experience" cannot fail to match just because it is not one of
-# these keys verbatim. Before commit 7035eda this comment claimed longest-match
-# and the code did plain dict.get instead; that was found and "fixed" by
-# rewriting the comment to match the code. It was the code that was wrong:
+# Normalised heading phrase -> label. heading_label resolves the longest key
+# appearing as a contiguous run of whole words, so "work experience" beats
+# "experience" and a qualifier like "Tutoring Experience" still matches. Plain
 # exact-match missed "TUTORING EXPERIENCE" on the first out-of-sample CV and
 # filed 1,642 chars of work history under education.
 SECTION_LEXICON = {
@@ -505,16 +452,11 @@ SECTION_LEXICON = {
     "languages": "skills",
 }
 
-# Every label this module can emit: the lexicon's values plus the two labels
-# group_sections writes literally ("other") and _implicit_label returns
-# ("contact"/"summary"). Checked at import so LABELS actually CONSTRAINS the
-# output rather than merely describing it - it was documentation-only and read
-# by nothing, which makes it exactly the kind of comment a teammate trusts and
-# nothing enforces. The lexicon is the hand-edited half (widened nine times in
-# one task), so a typo in a value - "eduction" for "education" - would ship a
-# label no consumer asks for and no test names. Import time rather than per
-# call: run_evaluations.extract() parses every CV before the first model call,
-# so this fails at startup either way, and costs nothing per parse.
+# Every label this module can emit: the lexicon's values plus the two written
+# literally ("other") and returned by _implicit_label ("contact"/"summary").
+# Checked at import so LABELS constrains the output instead of merely describing
+# it. The lexicon is the hand-edited half, so a typo in a value - "eduction" for
+# "education" - would ship a label no consumer asks for and no test names.
 _ORPHAN_LABELS = (set(SECTION_LEXICON.values()) | {"other", "contact", "summary"}) - set(LABELS)
 if _ORPHAN_LABELS:
     raise ValueError(
@@ -583,17 +525,14 @@ def body_size(blocks) -> float:
 
 
 # A label followed by a value on the same line - "Position : Registry
-# Coordinator", "Grade: Achieved a 72.8% average." - is data, not a section
-# heading, however it is styled. NDLOVU KARABO REFILWE's CV is written almost
-# entirely as bold label:value pairs, and is_heading fired on 35 of them.
-# Mostly inert while they nested, but "Contact : 011 555 0147" inside her
-# REFERENCES list opened a contact-labelled section carrying four referees'
-# names and phone numbers - which a UI would present as the candidate's own.
+# Coordinator", "Grade: Achieved a 72.8% average." - is data, not a heading,
+# however it is styled. NDLOVU KARABO REFILWE's CV is almost entirely bold
+# label:value pairs and is_heading fired on 35 of them; "Contact : 011 555 0147"
+# inside her REFERENCES list opened a contact section holding four referees'
+# numbers, which a UI would show as the candidate's own.
 #
-# A TRAILING colon is different: it introduces a list rather than naming a
-# value, so "Key Job Responsibilities:" and "DUTIES INVOLVES THE FOLLOWING:"
-# stay headings. The pattern therefore requires non-space content after the
-# colon.
+# A trailing colon introduces a list rather than naming a value, so "Key Job
+# Responsibilities:" stays a heading - hence the required content after the colon.
 _LABEL_VALUE = re.compile(r"\S\s*:\s+\S")
 
 
@@ -622,10 +561,10 @@ class Section:
     raw_heading: str | None
     blocks: list = field(default_factory=list)
     # Text of every unrecognised heading nested inside this section as an entry
-    # or sub-heading (Task 7b). Nesting is the right call - a job title is not a
-    # section boundary - but it used to leave no trace: signals() (stage 5)
-    # counted only raw_heading, so a CV whose headings the lexicon misread still
-    # reported unlabelled_sections == 0. This is what lets the signal see what
+    # or sub-heading. Nesting is right - a job title is not a section boundary -
+    # but it left no trace: signals() counted only raw_heading, so a CV whose
+    # headings the lexicon misread still reported unlabelled_sections == 0.
+    # This is what lets the signal see what
     # the parser did not understand, whether it opened a section or nested.
     nested_headings: list = field(default_factory=list)
 
@@ -713,23 +652,14 @@ def group_sections(blocks) -> list[Section]:
     for block in blocks:
         kind = "sidebar" if sidebar_col.get(block.page) == block.column else "main"
         if kind == "sidebar" and current["sidebar"] is not None and block.page != sidebar_page:
-            # UNTESTED AGAINST REAL DATA - defensive, and honestly labelled as
-            # such. The rule is sound: a sidebar section left open on a previous
-            # page has no relationship to this page's sidebar, so it is closed
-            # rather than left absorbing text. But instrumented across all 10
-            # Batch1 CVs this branch fires ZERO times and deleting it changes no
-            # CV's output, because every sidebar detected in the corpus is page 0
-            # only (GEOFF/LERATO/RIAAN column 1, JORDAN/THE DANIEL column 0) -
-            # there is never a second sidebar page to reset on. An earlier
-            # version of this comment credited it with fixing RIAAN GOVEN and
-            # GEOFF NITSCHKE's "Tools" bleed; that is wrong. Those, and LERATO's
-            # 14,651-char swallow, were fixed entirely by the two-pointer
-            # current[kind] split below. Kept anyway - a sidebar running down
-            # several pages is an ordinary template and the failure it would
-            # cause is exactly the one this function exists to prevent - and
-            # pinned by the synthetic
-            # test_sidebar_section_resets_at_each_page_boundary, which is the
-            # only thing exercising it.
+            # Defensive and untested against real data: instrumented across
+            # all 10 Batch1 CVs this fires zero times, because every sidebar in
+            # the corpus is page 0 only. The rule is still sound - a sidebar
+            # left open on a previous page has no relationship to this page's -
+            # and a sidebar running down several pages is an ordinary template,
+            # so it stays. The synthetic
+            # test_sidebar_section_resets_at_each_page_boundary is the only
+            # thing exercising it.
             current["sidebar"] = None
 
         if is_heading(block, baseline):
@@ -738,13 +668,11 @@ def group_sections(blocks) -> list[Section]:
             if label is not None:
                 section = Section(label=label, heading=raw, raw_heading=None)
             else:
-                # An unrecognised heading is an ENTRY heading or a sub-heading,
-                # not a section boundary. It stays inside the section it
-                # belongs to - the one this column kind currently has open -
-                # kept as a block so its text survives in full_text(). With no
-                # section of this kind open there is nothing to nest inside,
-                # so it opens an "other" section, as Task 7b's leading-heading
-                # fallback did.
+                # An unrecognised heading is an entry or sub-heading, not a
+                # section boundary, so it stays inside the section this column
+                # currently has open, kept as a block so its text survives in
+                # full_text(). With no section of this kind open there is
+                # nothing to nest inside, so it opens an "other" section.
                 target = current[kind]
                 if target is not None:
                     target.nested_headings.append(raw)
@@ -779,19 +707,14 @@ def group_sections(blocks) -> list[Section]:
                                    heading=None, raw_heading=None,
                                    blocks=preamble))
 
-    # A CV's opening banner is the candidate's name and title, which normalises
-    # to six words or fewer - so is_heading fires on it, the lexicon misses it,
-    # and it opened an "other" section. Only text appearing BEFORE any heading
-    # ever reached _implicit_label, so on 6 of the 10 Batch1 CVs (ALEX PARK,
-    # EMILE MOKOENA, GEOFF NITSCHKE, PATRICK MARAIS, THE DANIEL, NDLOVU KARABO
-    # REFILWE) the candidate's own email address sat under "other" and
-    # sections_named("contact") returned nothing at all.
+    # A CV's opening banner is the candidate's name and title, short enough that
+    # is_heading fires while the lexicon misses it, so it opens an "other"
+    # section. On 6 of the 10 Batch1 CVs that left the candidate's own email
+    # under "other" and sections_named("contact") returning nothing.
     #
-    # Only the FIRST section is reconsidered, and only when its own text carries
-    # an email, phone or profile URL. A contact-shaped block later in the
-    # document belongs to whatever section it sits in - a referees list being
-    # the obvious case - and must not be promoted to the candidate's contact
-    # details.
+    # Only the first section is reconsidered, and only if its text carries an
+    # email, phone or profile URL - a contact-shaped block later in the document
+    # (a referees list, typically) belongs to whatever section it sits in.
     if sections and sections[0].label == "other" and _CONTACT_HINT.search(sections[0].text()):
         sections[0].label = "contact"
         sections[0].raw_heading = None
@@ -799,31 +722,21 @@ def group_sections(blocks) -> list[Section]:
     return sections
 
 
-# ============================================================================
-# 4. THE PARSER CONTRACT
+# --- 4. The parser contract ---
 #
-# Everything above - column detection, block ordering, heading typography - is an
-# implementation detail. Consumers see parse(path) -> ParsedCV and two projections:
-#
-#     full_text()       the whole CV in reading order; the council default
-#     sections_named()  scoped input, e.g. the essential-requirements agent asking
-#                       for experience + education + certifications only
-#
-# bbox and per-section blocks are carried even though no current consumer reads
-# them, because the UI needs to point at the region a judgement came from and
-# reworking the schema later would break every consumer at once.
-# ============================================================================
+# Everything above is implementation detail. Consumers get parse(path) -> ParsedCV
+# and two projections: full_text() for the council, sections_named() for scoped
+# input. bbox and per-section blocks are carried although nothing reads them yet -
+# the UI needs to point at the region a judgement came from, and changing the
+# schema later would break every consumer at once.
 
 
 PARSER_VERSION = 2   # bump on any change to layout or segmentation; keys the cache
-# Bumped for Task 14's longest-match heading_label. A cached structured_v1 JSON
-# encodes SECTIONS - labels, headings, block membership - produced by the old
-# exact-match lookup, so "TUTORING EXPERIENCE" is already baked into an
-# "education" section on disk. Reading that file back under the new code would
-# not re-run heading_label at all; the mislabelling would persist forever
-# behind a cache hit. Bumping the version points run_evaluations.extract() at a
-# fresh structured_v2 directory, so every CV is re-segmented once with the
-# fixed resolver instead of silently keeping its old, wrong labels.
+# Bumped for the longest-match heading_label. A cached v1 JSON already encodes
+# sections labelled by the old exact-match lookup, and reading it back would not
+# re-run heading_label at all - the mislabelling would survive forever behind a
+# cache hit. Bumping points extract() at a fresh directory so every CV is
+# re-segmented once under the fixed resolver.
 
 
 @dataclass
@@ -871,13 +784,11 @@ class ParsedCV:
         sections = [
             Section(
                 label=s["label"], heading=s["heading"], raw_heading=s["raw_heading"],
-                # .get, not [] - a cache entry written before this field existed
-                # (structured_v1, pre-Task 14) has no "nested_headings" key at
-                # all, and that must not raise KeyError here: run_evaluations.
-                # extract() treats a from_dict KeyError as a torn cache and
-                # silently re-parses, so a bare [] default would never even be
-                # exercised through that path, but from_dict is also called
-                # directly (tests, tools) where no such fallback exists.
+                # .get, not [] - a cache entry written before this field
+                # existed has no "nested_headings" key, and a KeyError here is
+                # not always caught: run_evaluations.extract() treats one as a
+                # torn cache and re-parses, but from_dict is also called
+                # directly by tests and tools, which have no such fallback.
                 nested_headings=s.get("nested_headings", []),
                 blocks=[Block(text=b["text"], page=b["page"],
                                      bbox=tuple(b["bbox"]), max_size=b["max_size"],
@@ -931,19 +842,12 @@ def parse(path, extractor: str = "pymupdf") -> ParsedCV:
                     warnings=warnings)
 
 
-# ============================================================================
-# 5. FINDABILITY SIGNALS
+# --- 5. Findability signals ---
 #
-# Deterministic structural signals for the findability criterion.
-#
-# The brief asks the system to judge "how easy and clear it is to find the relevant
-# skill information". That is a property of layout, and flattening a PDF to a string
-# destroys it - the model is then asked to reconstruct from the wreckage what the
-# document plainly showed. Once sections exist these signals are simply counted.
-#
-# These are inputs for the judge, not a score. Wiring them into a prompt is the
-# judge component's decision, not this stage's.
-# ============================================================================
+# The brief asks how easy it is to find the relevant skill information. That is a
+# property of layout, and flattening the PDF to a string destroys it. Once
+# sections exist the signals are just counts. They are inputs for the judge, not
+# a score - turning them into one is the judge's call, not this stage's.
 
 
 def signals(cv) -> dict:
@@ -964,13 +868,11 @@ def signals(cv) -> dict:
         "headed_fraction": headed / len(sections),
         "has_skills_section": any(s.label == "skills" for s in sections),
         "section_count": len(sections),
-        # Headings this lexicon did not recognise, whether they opened their own
-        # "other" section (raw_heading) or nested inside the current one as an
-        # entry/sub-heading (nested_headings, Task 7b). Counting raw_heading
-        # alone went blind the moment nesting shipped: a CV whose headings were
-        # nested rather than orphaned reported unlabelled_sections == 0 even
-        # with three of its six headings mislabelled - a clean bill on a
-        # document the parser could not read. High counts mean either an
+        # Headings the lexicon missed, whether they opened their own "other"
+        # section (raw_heading) or nested inside one as an entry heading
+        # (nested_headings). Counting raw_heading alone went blind once nesting
+        # shipped: a CV whose headings nested rather than orphaned reported 0
+        # here with three of its six headings mislabelled. High counts mean an
         # unusual template or a lexicon gap - worth inspecting either way.
         "unlabelled_sections": sum(1 for s in sections if s.raw_heading)
                                + sum(len(s.nested_headings) for s in sections),
@@ -981,9 +883,7 @@ def signals(cv) -> dict:
     }
 
 
-# ============================================================================
-# CLI
-# ============================================================================
+# --- CLI ---
 
 if __name__ == "__main__":
     import argparse

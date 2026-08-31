@@ -1,0 +1,30 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+pipeline/.textcache/
+# Both written by tools/label_layout.py, which dirties the repo when run.
+# The committed labels live in tests/fixtures/layout_labels.json; the
+# .proposed.json file is the tool's suggestion, kept out until a human confirms it.
+tools/_pagedumps/
+tests/fixtures/layout_labels.proposed.json
+.superpowers/
+demo/
+
+# Local-only working material: stale export zips and one-off model dumps.
+# cv-parser.zip predates the merge into cv_parser.py (3568bcd); results.zip is
+# a copy of Results/results/. Kept on disk, out of git.
+scratch/
+
+# Keegan's own CV, used as the out-of-sample document by tools/trace_cv.py.
+# Personal data - never goes to a shared repo.
+My CV/
+
+# Batch output written by pipeline/run_evaluations.py.
+Results/results/
+
+# Design records kept local: plans and specs stay on disk, out of the shared repo.
+docs/superpowers/
+
+# Teammates' code, vendored from GitLab for the end-to-end demo and test run.
+# Not ours to commit - see their branches Akram_Testing and nikita-testing.
+integration/
