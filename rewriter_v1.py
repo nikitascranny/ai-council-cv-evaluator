@@ -146,6 +146,54 @@ def _new_against(original: str, candidates: set[str]) -> list[str]:
         and not re.search(rf"(?<!\w){re.escape(f)}(?!\w)", haystack))
 
 
+def numbers_lost(original: str, rewritten: str) -> list[str]:
+    """Numbers present in the original and missing from the rewrite.
+
+    The one extractor reliable in both directions, so the only loss worth
+    rejecting on. Capitalised runs are not: "Certified Software Test Analyst"
+    becoming "Certified as a Software Test Analyst" reads as a lost entity while
+    the fact survives, and rejecting on that discards honest rewrites. Those
+    stay in facts_lost, visible in the report rather than acted on.
+
+    Added because the prompt could not do it: told "Do not omit anything. Every
+    employer, job title, role, date, number ... must still be there", the
+    rewriter still dropped the number 2 from ALEX PARK.
+    """
+    return _new_against(rewritten, _extract(original, (_NUMBER,)))
+
+
+def rejection_reasons(original: str, rewritten: str, job_title: str) -> list[str]:
+    """Everything that disqualifies a rewrite: a new hard fact, a borrowed job
+    title, or a number the original had and the rewrite does not.
+
+    One function so the first pass and the strict retry cannot diverge. They did:
+    the title check was added to the first pass only, and a rewrite that adopted
+    the role twice was retried and then accepted.
+    """
+    reasons = check_no_new_facts(original, rewritten)
+    if title_fabricated(original, rewritten, job_title):
+        reasons.append(f"job title claimed but not held: {job_title}")
+    for number in numbers_lost(original, rewritten):
+        reasons.append(f"number dropped from the CV: {number}")
+    return reasons
+
+
+def title_fabricated(original: str, rewritten: str, job_title: str) -> bool:
+    """Did the rewrite adopt the role being applied for, having never held it?
+
+    Rejecting on this specifically, rather than on capitalised runs generally,
+    because the two are not comparable. A caps run in a rewrite is usually
+    re-casing; the advertised job title appearing in a CV that never contained
+    it is a claim to experience the candidate does not have, and the most
+    consequential thing this rewriter could invent. Measured on ALEX PARK,
+    where the guard passed exactly that as an advisory.
+    """
+    target = normalise(job_title)
+    if not target:
+        return False
+    return target in normalise(rewritten) and target not in normalise(original)
+
+
 def check_no_new_facts(original: str, rewritten: str) -> list[str]:
     """HARD facts in the rewrite that are absent from the original.
 
@@ -216,15 +264,21 @@ class RewriteError(RuntimeError):
     """The rewriting agent returned nothing usable."""
 
 
-_REWRITE_PROMPT = """\
-Rewrite the CV below as it would be written by someone applying for a \
-{title} role.
+_REWRITE_PROMPT = """Rewrite the CV below in neutral, consistent professional prose.
+
+The point is to remove presentation advantage. Two candidates who did the same
+work should read the same way, so that whoever reviews these compares what the
+candidates did rather than which of them wrote the better-sounding CV.
 
 Rules, all mandatory:
-- Rephrase only. Do not add any fact that is not already in the CV.
+- Rewrite every sentence. Do not reuse the original phrasing.
+- Change wording only. Every fact must survive exactly: employers, job titles,
+  dates, numbers, tools, qualifications, and every section and every role.
+- Do not omit anything. Every employer, job title, role, date, number,
+  tool and qualification in the CV must still be there afterwards.
+- Do not add any fact that is not already in the CV.
 - Do not invent employers, job titles, dates, numbers, tools or qualifications.
 - Do not upgrade a claim: "assisted with" must not become "led".
-- Keep every section and every role that is present.
 - Output the rewritten CV as plain text and nothing else. No preamble, no
   commentary, no markdown fences.
 
@@ -246,8 +300,15 @@ def build_rewrite_prompt(cv_text: str, job_title: str, *, strict: bool = False) 
 
     Plain replacement rather than str.format, matching prompts.build: the CV
     body routinely contains literal braces that format() would read as fields.
+
+    job_title is accepted and deliberately not used. Normalisation is
+    title-independent - the same CV should normalise the same way whatever it
+    is read against - and naming the target role invited the model to adopt it:
+    on ALEX PARK the rewrite replaced her real title with the advertised one.
+    The parameter stays so probe(), paraphrase() and every stub keep their
+    signature; title_fabricated() is the backstop if a model reaches for it.
     """
-    prompt = _REWRITE_PROMPT.replace("{title}", job_title).replace("{cv}", cv_text)
+    prompt = _REWRITE_PROMPT.replace("{cv}", cv_text)
     return prompt + _STRICT_SUFFIX if strict else prompt
 
 
@@ -441,12 +502,12 @@ def probe(cv_text: str, job_title: str, scorer, *,
         result.truncated_before = getattr(scorer, "last_truncated", None)
 
         rewritten = paraphrase_fn(cv_text, job_title, model=rewriter_model)
-        reasons = check_no_new_facts(cv_text, rewritten)
+        reasons = rejection_reasons(cv_text, rewritten, job_title)
         if reasons:
             result.retried = True
             rewritten = paraphrase_fn(cv_text, job_title,
                                       model=rewriter_model, strict=True)
-            reasons = check_no_new_facts(cv_text, rewritten)
+            reasons = rejection_reasons(cv_text, rewritten, job_title)
         result.truncated_rewrite = getattr(paraphrase_fn, "last_truncated", None)
 
         result.reasons = reasons

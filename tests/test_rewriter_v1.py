@@ -73,6 +73,12 @@ ORIGINAL = (
     "Managed 14 staff and cut costs 12%."
 )
 
+# A rewrite that changes wording and keeps every fact. The stubs used to drop 14
+# and 12% while asserting the guard passed them, which only held while loss was
+# unguarded; numeric loss now rejects, so a fixture meant to be faithful has to
+# actually be faithful.
+FAITHFUL = "Senior Engineer, Umoja Bank, 2019-2023. Led 14 staff, reduced costs 12%."
+
 
 def test_pure_paraphrase_passes():
     rewritten = (
@@ -185,11 +191,36 @@ def test_guard_does_not_reject_a_plausible_rephrasing_of_a_real_cv():
     assert old_guard_reasons, "fixture no longer reproduces the reported bug"
 
 
-def test_rewrite_prompt_names_the_role_and_forbids_invention():
+def test_rewrite_prompt_withholds_the_job_title():
+    """Normalisation is title-independent: the same CV should normalise the same
+    way whatever it is being read against.
+
+    The title used to be injected as "written by someone applying for a {title}
+    role", and on ALEX PARK against the computer-repair listing the model
+    replaced her real title, Intermediate Software Test Analyst, with Computer
+    Repair Technician - fabricating experience while the guard passed it as an
+    advisory caps run. Withholding the title removes the invitation."""
     prompt = rewriter_v1.build_rewrite_prompt("CV BODY", "Fullstack Engineer")
-    assert "Fullstack Engineer" in prompt
+    assert "Fullstack Engineer" not in prompt
     assert "CV BODY" in prompt
     assert "do not add" in prompt.lower()
+
+
+def test_rewrite_prompt_forbids_omission():
+    """Asking for substantial rephrasing cost content: on ALEX PARK the rewrite
+    dropped the employer Safeguard Insurance and the number 2. The guard cannot
+    catch that - it rejects additions, never omissions - so the prompt has to."""
+    prompt = rewriter_v1.build_rewrite_prompt("CV BODY", "Role").lower()
+    assert "do not omit" in prompt
+    assert "employer" in prompt
+
+
+def test_rewrite_prompt_asks_for_substantial_rephrasing():
+    """Five prohibitions and no positive instruction made returning the input
+    the safest way to comply - measured at 98% word overlap."""
+    prompt = rewriter_v1.build_rewrite_prompt("CV BODY", "Role").lower()
+    assert "rewrite every sentence" in prompt
+    assert "do not reuse" in prompt
 
 
 def test_strict_prompt_is_more_emphatic_than_the_normal_one():
@@ -212,7 +243,10 @@ def test_paraphrase_passes_the_prompt_to_the_caller_and_returns_text():
     assert seen["model"] == "test-model"
     assert seen["num_ctx"] == rewriter_v1.DEFAULT_NUM_CTX
     assert seen["seed"] == 0
-    assert "Fullstack Engineer" in seen["prompt"]
+    # The prompt withholds the target role - see
+    # test_rewrite_prompt_withholds_the_job_title.
+    assert "Fullstack Engineer" not in seen["prompt"]
+    assert "CV BODY" in seen["prompt"]
 
 
 def test_paraphrase_raises_on_empty_output():
@@ -352,7 +386,7 @@ def test_probe_reports_the_delta():
     result = rewriter_v1.probe(
         ORIGINAL, "Fullstack Engineer", _stub_scorer([4, 7]),
         candidate="ALEX PARK", job="startup_fullstack_engineer",
-        paraphrase_fn=_stub_paraphraser("Senior Engineer at Umoja Bank, 2019 to 2023."),
+        paraphrase_fn=_stub_paraphraser(FAITHFUL),
     )
     assert result.score_before == 4
     assert result.score_after == 7
@@ -365,7 +399,7 @@ def test_probe_reports_the_delta():
 def test_probe_records_zero_delta_when_phrasing_does_not_matter():
     result = rewriter_v1.probe(
         ORIGINAL, "Role", _stub_scorer([5, 5]),
-        paraphrase_fn=_stub_paraphraser("Senior Engineer, Umoja Bank, 2019-2023."),
+        paraphrase_fn=_stub_paraphraser(FAITHFUL),
     )
     assert result.delta == 0
     assert result.rejected is False
@@ -374,7 +408,7 @@ def test_probe_records_zero_delta_when_phrasing_does_not_matter():
 def test_probe_retries_once_when_the_rewrite_invents_a_fact():
     para = _stub_paraphraser(
         ORIGINAL + " Managed a budget of 40 million.",   # invents a number
-        "Senior Engineer at Umoja Bank, 2019 to 2023.",  # clean on retry
+        FAITHFUL,  # clean on retry
     )
     result = rewriter_v1.probe(ORIGINAL, "Role", _stub_scorer([4, 6]), paraphrase_fn=para)
     assert result.retried is True
@@ -409,7 +443,7 @@ def test_probe_records_a_caps_run_as_advisory_and_does_not_reject():
 
 def test_probe_records_truncation_of_both_scores_and_the_rewrite():
     scorer = _stub_scorer([4, 6], truncated=[False, True])
-    para = _stub_paraphraser("Senior Engineer, Umoja Bank, 2019-2023.")
+    para = _stub_paraphraser(FAITHFUL)
     para.last_truncated = False
     result = rewriter_v1.probe(ORIGINAL, "Role", scorer, paraphrase_fn=para)
     assert result.truncated_before is False
@@ -420,22 +454,26 @@ def test_probe_records_truncation_of_both_scores_and_the_rewrite():
 def test_probe_leaves_truncation_unknown_for_a_scorer_that_does_not_report_it():
     result = rewriter_v1.probe(
         ORIGINAL, "Role", _stub_scorer([4, 4]),
-        paraphrase_fn=_stub_paraphraser("Senior Engineer, Umoja Bank, 2019-2023."))
+        paraphrase_fn=_stub_paraphraser(FAITHFUL))
     assert result.truncated_before is None
     assert result.truncated_after is None
     assert result.truncated_rewrite is None
 
 
 def test_probe_records_length_ratio_and_facts_lost():
-    """A rewrite that drops a role passes the guard but scores lower for
-    content reasons, so the loss has to be visible on the row."""
-    short = "Senior Engineer at Umoja Bank."      # loses 2019, 2023, 14, 12%
+    """A rewrite that drops a named entity still passes the guard, and the loss
+    has to be visible on the row: it scores lower for content reasons, not
+    phrasing ones.
+
+    Numbers are the exception and are rejected outright - see
+    test_probe_rejects_a_rewrite_that_drops_a_number - so this drops the employer
+    while keeping every number."""
+    short = "Senior Engineer, 2019 to 2023. Managed 14 staff, cut costs 12%."
     result = rewriter_v1.probe(ORIGINAL, "Role", _stub_scorer([4, 2]),
                                paraphrase_fn=_stub_paraphraser(short))
     assert result.rejected is False
-    assert result.facts_lost == 4
+    assert result.facts_lost == 1              # "Umoja Bank"
     assert result.length_ratio == pytest.approx(len(short) / len(ORIGINAL))
-    assert result.length_ratio < 0.5
 
 
 def test_probe_records_no_loss_for_a_faithful_rewrite():
@@ -499,7 +537,7 @@ def test_probe_records_a_scoring_failure_without_raising():
 def test_probe_result_serialises_to_a_flat_dict():
     result = rewriter_v1.probe(
         ORIGINAL, "Role", _stub_scorer([4, 4]),
-        paraphrase_fn=_stub_paraphraser("Senior Engineer, Umoja Bank, 2019-2023."),
+        paraphrase_fn=_stub_paraphraser(FAITHFUL),
     )
     row = result.to_dict()
     assert row["delta"] == 0
@@ -889,3 +927,85 @@ def test_similarity_is_none_when_the_probe_errored_before_rewriting():
                                paraphrase_fn=explode)
     assert result.similarity is None
     assert result.error
+
+
+
+# --- job title fabrication ---------------------------------------------------
+
+def test_title_fabricated_when_the_rewrite_adopts_the_target_role():
+    """The Alex Park case: the rewrite claims the job being applied for."""
+    assert rewriter_v1.title_fabricated(
+        "Intermediate Software Test Analyst at West Edge",
+        "Computer Repair Technician at West Edge",
+        "Computer Repair Technician") is True
+
+
+def test_title_not_fabricated_when_the_original_already_had_it():
+    """A real computer repair technician must not be rejected for saying so."""
+    assert rewriter_v1.title_fabricated(
+        "Computer Repair Technician at West Edge",
+        "Computer Repair Technician, West Edge",
+        "Computer Repair Technician") is False
+
+
+def test_title_not_fabricated_when_the_rewrite_never_mentions_it():
+    assert rewriter_v1.title_fabricated(
+        "Software Test Analyst", "Software Testing Analyst",
+        "Computer Repair Technician") is False
+
+
+def test_probe_rejects_a_rewrite_that_adopts_the_job_title():
+    """Hard rejection, not advisory - this is the fabrication that matters most
+    on a CV, and the caps-run advisory let it through."""
+    fabricated = ("Computer Repair Technician at Umoja Bank, "
+                  "2019-2023, 14 people, 12%.")
+    # Twice: rejection triggers the strict retry, which here fabricates again.
+    para = _stub_paraphraser(fabricated, fabricated)
+    result = rewriter_v1.probe(ORIGINAL, "Computer Repair Technician",
+                               _stub_scorer([4, 9]), paraphrase_fn=para)
+    assert result.retried is True
+    assert result.rejected is True
+    assert any("title" in r.lower() for r in result.reasons)
+
+
+# --- numeric loss ------------------------------------------------------------
+
+def test_numbers_lost_reports_a_dropped_number():
+    """Measured on ALEX PARK: the rewrite dropped the number 2 while the prompt
+    explicitly forbade omission. Instructions did not hold; this does."""
+    assert rewriter_v1.numbers_lost("led 14 people over 3 years",
+                                    "led a team over 3 years") == ["14"]
+
+
+def test_numbers_lost_is_empty_when_every_number_survives():
+    assert rewriter_v1.numbers_lost("14 people, 12%",
+                                    "a team of 14, improving by 12%") == []
+
+
+def test_numbers_lost_ignores_pure_rewording():
+    assert rewriter_v1.numbers_lost("managed the team", "led the team") == []
+
+
+def test_rejection_reasons_covers_a_lost_number():
+    reasons = rewriter_v1.rejection_reasons("led 14 people", "led a team", "Role")
+    assert any("14" in r for r in reasons)
+
+
+def test_probe_rejects_a_rewrite_that_drops_a_number():
+    dropped = "Senior Engineer at Umoja Bank."      # loses 2019, 2023, 14, 12%
+    para = _stub_paraphraser(dropped, dropped)
+    result = rewriter_v1.probe(ORIGINAL, "Role", _stub_scorer([4, 2]),
+                               paraphrase_fn=para)
+    assert result.retried is True
+    assert result.rejected is True
+    assert any("number" in r.lower() for r in result.reasons)
+
+
+def test_capitalised_runs_lost_do_not_reject():
+    """Deliberately not rejected. "Certified Software Test Analyst" becoming
+    "Certified as a Software Test Analyst" registers as a lost caps run while
+    the fact plainly survives, so rejecting on it would discard honest rewrites.
+    Recorded in facts_lost and shown in the report diff instead."""
+    kept_numbers = "Lead Engineer, Umoja, 2019-2023, 14 staff, 12% gain."
+    reasons = rewriter_v1.rejection_reasons(ORIGINAL, kept_numbers, "Role")
+    assert reasons == []
