@@ -29,19 +29,16 @@ representing itself as good data.
 Usage:
     python judge.py --summaries combined/secretary/lerato_munche.json \\
         --job job_listings/job_listing_secretary.pdf \\
-        --parser-dir cv-parser/pipeline \\ ##
         --output judged/secretary/lerato_munche.json
 
     # multiple summary files also still works (e.g. one per grader run,
     # aggregate_results.py not used) -- depends on output of evaluator models
-    python judge.py --summaries s1.json s2.json --job job_listing.pdf --parser-dir cv-parser/pipeline
+    python judge.py --summaries s1.json s2.json --job job_listing.pdf
 
     # choose a different local Ollama model / host
     python judge.py --summaries summaries.json --job job.pdf \\
-        --parser-dir cv-parser/pipeline --model deepseek-r1:8b --host http://localhost:11434
+        --model deepseek-r1:8b --host http://localhost:11434
 
-Requirements:
-    pip install requests pymupdf
 """
 
 import argparse
@@ -71,11 +68,7 @@ def _parse_args():
         "--job", required=True,
         help="Path to the job listing PDF.",
     )
-    # parser.add_argument(
-    #     "--parser-dir", required=True,
-    #     help="Path to the cv-parser 'pipeline' directory (contains parsed_cv.py). "
-    #             "The job listing PDF is always read through this parser.",
-    # )
+    
     parser.add_argument(
         "--job-name", default=None,
         help="Job label to record in output (e.g. for the CSV 'job' column). "
@@ -264,76 +257,20 @@ def call_judge(prompt, model, host, num_predict, keep_alive, temperature=0.2,tim
 
 
 # =====================================================================
-# Output validation 
-# =====================================================================
-
-REQUIRED_TEXT_FIELDS = ("score_rationale", "key_strengths", "key_weaknesses", "final_evaluation")
-
-
-def validate_and_coerce(parsed, candidate_name):
-    """
-    Check the judge's parsed output against the schema judge.py asked for.
-
-    Returns (clean_dict, errors, blocking). 
-    clean_dict is always a best-effort dict (never None).
-    blocking is True when the result is unsafe to write as "clean" JSON:
-    the model's output wasn't a JSON object at all, or final_score could not
-    be read as a number.
-    """
-    errors = []
-
-    if not isinstance(parsed, dict):
-        return (
-            {"candidate": candidate_name, "final_score": None, "score_rationale": "",
-             "key_strengths": "", "key_weaknesses": "", "final_evaluation": ""},
-            ["judge output did not parse as a JSON object"],
-            True,
-        )
-
-    clean = {"candidate": str(parsed.get("candidate") or candidate_name)}
-
-    raw_score = parsed.get("final_score")
-    blocking = False
-    try:
-        score = int(round(float(raw_score)))
-    except (TypeError, ValueError):
-        errors.append(f"final_score missing or not numeric: {raw_score!r}")
-        score = None
-        blocking = True
-    else:
-        if not (0 <= score <= 10):
-            errors.append(f"final_score {score} out of expected range 0-10, clamped")
-            score = max(0, min(10, score))
-    clean["final_score"] = score
-
-    for key in REQUIRED_TEXT_FIELDS:
-        val = parsed.get(key)
-        if not isinstance(val, str) or not val.strip():
-            errors.append(f"{key} missing or empty")
-            val = val.strip() if isinstance(val, str) else ""
-        clean[key] = val.strip() if isinstance(val, str) else val
-
-    return clean, errors, blocking
-
-# =====================================================================
 # Output writing
 # =====================================================================
 
-def write_json_output(out_path, clean, errors):
+def write_json_output(out_path, result):
     """
-    Write validated output as JSON. If validation was blocking, refuse to
-    write the clean path (so nothing downstream can mistake a broken result
-    for a good one) and write the raw response to a sibling *.invalid.json
-    file instead, returning a non-zero-worthy failure flag.
+    Write the judge's raw output as JSON to out_path, exactly as returned
+    by the model (or `{}` if ollama_utils couldn't parse a JSON object out
+    of its reply at all)
     """
     out_path = Path(out_path)
 
-    save_json(clean,out_path.parent,out_path.name)
+    save_json(result,out_path.parent,out_path.name)
     print(f"\nSaved final evaluation to {out_path}")
-    if errors:
-        print("Note: written with non-blocking validation warnings:")
-        for e in errors:
-            print(f"  - {e}")
+    
     return True
 
     
@@ -368,21 +305,16 @@ def main():
     end_time = time.time()
     print(f"Model finished, time: {end_time - start_time:.4f}")
     
-    # if error:  # PARSE ERROR -- fall through and let validate_and_coerce flag it as blocking
-    #     print("\nWarning: could not parse model output as JSON. Raw response below:\n")
-    #     print(raw_response)
+    if error:
+        print(f"\nWarning: {error} -- writing model output as-is anyway.")
 
-    clean, errors, blocking = validate_and_coerce(parsed, candidate_name)
-    print(f"\nFinal score for {candidate_name}: {clean.get('final_score', '?')}/10")
-    print(f"Evaluation: {clean.get('final_evaluation', '')}")
-
+    print(f"\nFinal score for {candidate_name}: {parsed.get('final_score', '?')}/10")
+    print(f"Evaluation: {parsed.get('final_evaluation', '')}")
+ 
     if not args.output:
         return
-
-    write_ok = write_json_output(args.output, clean, errors)
-
-    if not write_ok:
-        sys.exit(1)
+ 
+    write_json_output(args.output, parsed)
 
 
 if __name__ == "__main__":
