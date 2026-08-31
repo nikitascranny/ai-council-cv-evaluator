@@ -1,10 +1,34 @@
-data/
+# --- shared ---
 __pycache__/
 *.pyc
-*.json
+.pytest_cache/
+.gitkeep
+
+# --- data and generated output ---
+data/
 logs/
+scripts/
 cv-parser/
 docs/
+*.json
 *.txt
-.gitkeep
-scripts/
+
+# --- parser / rewriter working files ---
+pipeline/.textcache/
+demo/
+Results/results/
+
+# Both written by tools/label_layout.py, which dirties the repo when run.
+# The committed labels live in tests/fixtures/layout_labels.json; the
+# .proposed.json file is the tool's suggestion, kept out until a human confirms it.
+tools/_pagedumps/
+tests/fixtures/layout_labels.proposed.json
+
+# Local-only working material: stale export zips and one-off model dumps.
+scratch/
+
+# Personal data - never goes to a shared repo.
+My CV/
+
+# Teammates' code, vendored locally for an end-to-end run. Not ours to commit.
+integration/
