@@ -22,8 +22,11 @@ import urllib.request
 from dataclasses import dataclass, field, asdict
 from pathlib import Path
 
-# prompts and run_evaluations live in pipeline/; this file lives at the root.
-sys.path.insert(0, str(Path(__file__).resolve().parent / "pipeline"))
+# prompts.py and run_evaluations.py live at the repo root; cv_parser.py lives
+# in parser/. This file lives one level down, in rewriter/.
+_ROOT = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(_ROOT))
+sys.path.insert(0, str(_ROOT / "parser"))
 
 import prompts  # noqa: E402
 import run_evaluations  # noqa: E402
@@ -604,7 +607,7 @@ def verify_determinism(cv_texts: dict, job_title: str, scorer,
 
 # --- 7. Batch run and reporting ---
 
-ROOT = Path(__file__).resolve().parent
+ROOT = Path(__file__).resolve().parent.parent
 CV_DIR = ROOT / "Batch1" / "CVs"
 JOB_DIR = ROOT / "Batch1" / "Job Listings"
 OUT = ROOT / "Results" / "rewriter_v1.jsonl"

@@ -20,8 +20,8 @@ Key behaviours, all deliberate:
     silently dropped vote.
 
 Usage:
-    python pipeline/run_evaluations.py --models qwen2.5:14b phi4
-    python pipeline/run_evaluations.py --dry-run          # cost estimate, no calls
+    python run_evaluations.py --models qwen2.5:14b phi4
+    python run_evaluations.py --dry-run          # cost estimate, no calls
 """
 
 import argparse
@@ -35,15 +35,14 @@ from pathlib import Path
 
 import prompts
 
-# cv_parser.py lives at the repo root; this file is run as
-# `python pipeline/run_evaluations.py`, so only pipeline/ is on the path.
-sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+# cv_parser.py lives in parser/, a sibling of this file at the repo root.
+ROOT = Path(__file__).resolve().parent
+sys.path.insert(0, str(ROOT / "parser"))
 import cv_parser  # noqa: E402
 
-ROOT = Path(__file__).resolve().parent.parent
 CV_DIR = ROOT / "Batch1" / "CVs"
 JOB_DIR = ROOT / "Batch1" / "Job Listings"
-CACHE = ROOT / "pipeline" / ".textcache"
+CACHE = ROOT / ".textcache"
 OUT = ROOT / "Results" / "votes.jsonl"
 OLLAMA = "http://localhost:11434/api/generate"
 

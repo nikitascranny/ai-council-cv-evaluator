@@ -5,8 +5,8 @@ from pathlib import Path
 
 import pytest
 
-ROOT = Path(__file__).resolve().parent.parent
-sys.path.insert(0, str(ROOT))
+ROOT = Path(__file__).resolve().parent.parent.parent
+sys.path.insert(0, str(ROOT / "parser"))
 
 import cv_parser  # noqa: E402
 from cv_parser import Block  # noqa: E402

@@ -6,7 +6,7 @@
     cv.sections_named("experience", "education")
     cv_parser.signals(cv)                 # structural findability signals
 
-From the shell:  python cv_parser.py "SOME CV.pdf"  -> JSON on stdout.
+From the shell:  python parser/cv_parser.py "SOME CV.pdf"  -> JSON on stdout.
 
 Five stages, in dependency order, one per section header below:
 

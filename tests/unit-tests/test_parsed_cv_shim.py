@@ -1,6 +1,6 @@
-"""The parser shim the team's models/document_utils.py imports.
+"""The parser shim the team's evaluator/document_utils.py imports.
 
-Their file does sys.path.insert(0, <models>/pipeline) then `import parsed_cv`,
+Their file does sys.path.insert(0, <evaluator>/pipeline) then `import parsed_cv`,
 so the shim's location is part of the contract: at the repo root it would not
 be found. Run in a subprocess - their conftest registers a fake parsed_cv in
 sys.modules at collection time, so an in-process import would read the stub.
@@ -11,8 +11,8 @@ import sys
 import textwrap
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent.parent
-SHIM_DIR = ROOT / "models" / "pipeline"
+ROOT = Path(__file__).resolve().parent.parent.parent
+SHIM_DIR = ROOT / "evaluator" / "pipeline"
 
 
 def run_isolated(body: str) -> str:
@@ -28,7 +28,7 @@ def run_isolated(body: str) -> str:
 
 
 def test_shim_sits_where_their_import_looks_for_it():
-    """models/pipeline/, because their insert is relative to document_utils.py."""
+    """evaluator/pipeline/, because their insert is relative to document_utils.py."""
     assert (SHIM_DIR / "parsed_cv.py").is_file()
 
 

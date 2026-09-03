@@ -14,7 +14,7 @@ import pytest
 
 import run_demo
 
-ROOT = Path(__file__).resolve().parent.parent
+ROOT = Path(__file__).resolve().parent.parent.parent
 
 
 # --- corpus discovery -------------------------------------------------------

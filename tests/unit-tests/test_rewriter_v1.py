@@ -6,9 +6,10 @@ from pathlib import Path
 
 import pytest
 
-ROOT = Path(__file__).resolve().parent.parent
+ROOT = Path(__file__).resolve().parent.parent.parent
 sys.path.insert(0, str(ROOT))
-sys.path.insert(0, str(ROOT / "pipeline"))
+sys.path.insert(0, str(ROOT / "rewriter"))
+sys.path.insert(0, str(ROOT / "parser"))
 
 import rewriter_v1  # noqa: E402
 

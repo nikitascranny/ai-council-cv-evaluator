@@ -5,7 +5,8 @@ __pycache__/
 .gitkeep
 
 # --- data and generated output ---
-data/
+data/judge-input/
+data/judge-output/
 logs/
 scripts/
 cv-parser/
@@ -14,15 +15,16 @@ docs/
 *.txt
 
 # --- parser / rewriter working files ---
-pipeline/.textcache/
+.textcache/
 demo/
 Results/results/
 
 # Both written by tools/label_layout.py, which dirties the repo when run.
-# The committed labels live in tests/fixtures/layout_labels.json; the
-# .proposed.json file is the tool's suggestion, kept out until a human confirms it.
+# The committed labels live in tests/unit-tests/fixtures/layout_labels.json;
+# the .proposed.json file is the tool's suggestion, kept out until a human
+# confirms it.
 tools/_pagedumps/
-tests/fixtures/layout_labels.proposed.json
+tests/unit-tests/fixtures/layout_labels.proposed.json
 
 # Local-only working material: stale export zips and one-off model dumps.
 scratch/
@@ -31,4 +33,6 @@ scratch/
 My CV/
 
 # Teammates' code, vendored locally for an end-to-end run. Not ours to commit.
-integration/
+# Anchored to the repo root so it doesn't also swallow tests/integration/,
+# which is ours.
+/integration/

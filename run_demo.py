@@ -28,6 +28,9 @@ ROOT = Path(__file__).resolve().parent
 INTEGRATION = ROOT / "integration"
 DEMO_RESULTS = ROOT / "Results" / "demo"
 
+# rewriter_v1.py lives in rewriter/, not at the repo root.
+sys.path.insert(0, str(ROOT / "rewriter"))
+
 # The team's real models, and what --fast falls back to.
 COUNCIL_MODELS = ["qwen2.5:14b", "phi4"]
 ESSENTIAL_MODEL = "qwen2.5:7b"
