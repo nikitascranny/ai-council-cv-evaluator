@@ -28,24 +28,30 @@ rewrite - the point is the user always gets two things to compare, and
 never an unflagged fabrication.
 """
 
+import sys
 import difflib
 from dataclasses import dataclass, field, asdict
 from pathlib import Path
+
+# ---------------- CONFIG & PATHS ----------------
+BASE_DIR = Path(__file__).resolve().parent
+ROOT_DIR = BASE_DIR.parent
+
+# Inject the pipeline folder so we can import document_utils and ollama_utils
+sys.path.insert(0, str(ROOT_DIR / "evaluator" / "pipeline"))
 
 from document_utils import extract_text_from_pdf, load_cv
 from ollama_utils import call_ollama_text
 from fact_guard import rejection_reasons, advisory_caps_runs
 
-# ---------------- CONFIG ----------------
-BASE_DIR = Path(__file__).resolve().parent
-CVS_FOLDER = BASE_DIR / "cvs"
-JOB_DESCRIPTIONS_FOLDER = BASE_DIR / "job descriptions"
+# Point to the correct directories based on the project layout
+CVS_FOLDER = ROOT_DIR / "cvs" / "Batch1"
+JOB_DESCRIPTIONS_FOLDER = ROOT_DIR / "data" / "job-listings"
 
 # The two independent rewriting agents. Kept distinct from
 # Evaluate_CV.py's EVALUATOR_MODELS on purpose - this file's job is
 # rewriting, not scoring, even though it happens to reuse the same models.
 AGENT_MODELS = ["phi4", "qwen2.5:14b"]
-
 # A full CV rewrite can run long - LERATO MUNCHE's CV alone is ~23,500
 # characters of full_text(). 4096 gives real headroom over the 1024 used
 # for JSON scoring replies, but a CV meaningfully larger than that in the
@@ -226,8 +232,8 @@ def main():
     import argparse
 
     ap = argparse.ArgumentParser(description="Test Rewriter Var2 against one CV and one job listing.")
-    ap.add_argument("--cv", help="CV filename inside cvs/ (defaults to the first one found)")
-    ap.add_argument("--job", help="Job listing filename inside 'job descriptions/' (defaults to the first one found)")
+    ap.add_argument("--cv", help="CV filename inside cvs/Batch1/ (defaults to the first one found)")
+    ap.add_argument("--job", help="Job listing filename inside data/job-listings/ (defaults to the first one found)")
     ap.add_argument("--job-title", help="Human-readable job title (defaults to the job PDF's filename, cleaned up)")
     ap.add_argument("--output", help="Optional text file path to save the results (e.g., output.txt)")
     args = ap.parse_args()
@@ -235,7 +241,7 @@ def main():
     cv_files = sorted(CVS_FOLDER.glob("*.pdf"))
     job_files = sorted(JOB_DESCRIPTIONS_FOLDER.glob("*.pdf"))
     if not cv_files or not job_files:
-        print("Need at least one CV in cvs/ and one job listing in 'job descriptions/' to run a test.")
+        print("Need at least one CV in cvs/Batch1/ and one job listing in data/job-listings/ to run a test.")
         return
 
     cv_path = (CVS_FOLDER / args.cv) if args.cv else cv_files[0]
