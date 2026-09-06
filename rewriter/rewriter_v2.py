@@ -201,24 +201,35 @@ def rewrite_cv(cv_text: str, job_text: str, job_title: str, candidate_name: str 
         _run_agent(cv_text, job_text, job_title, candidate_name, model)
         for model in AGENT_MODELS
     ]
+def save_results_to_file(results: list[RewriteResult], output_path: Path):
+    """Saves the rewritten CVs and metadata to a plain text file."""
+    with output_path.open("w", encoding="utf-8") as f:
+        for r in results:
+            f.write(f"{'=' * 60}\n")
+            f.write(f" AGENT: {r.agent_model}\n")
+            f.write(f"{'=' * 60}\n")
+            if r.error:
+                f.write(f"  [!] {r.error}\n\n")
+                continue
+            
+            f.write(f"  rejected: {r.rejected}   retried: {r.retried}   used_fallback: {r.used_fallback}\n")
+            if r.reasons:
+                f.write(f"  reasons: {r.reasons}\n")
+            if r.advisory:
+                f.write(f"  advisory (new capitalised runs): {r.advisory}\n")
+            f.write(f"  length_ratio: {r.length_ratio:.2f}   similarity: {r.similarity:.2f}\n\n")
+            f.write(r.rewritten_text)
+            f.write("\n\n")
 
 
 def main():
-    """
-    Manual test harness: run both agents against a single CV and a single
-    job listing pulled from the existing cvs/ and 'job descriptions/'
-    folders, and print what each agent produced.
-
-    Not the eventual graduate-facing entry point - this is a quick way to
-    exercise the rewrite/guard/retry/fallback logic against real CVs while
-    building it, before any UI or docx export sits in front of it.
-    """
     import argparse
 
     ap = argparse.ArgumentParser(description="Test Rewriter Var2 against one CV and one job listing.")
     ap.add_argument("--cv", help="CV filename inside cvs/ (defaults to the first one found)")
     ap.add_argument("--job", help="Job listing filename inside 'job descriptions/' (defaults to the first one found)")
     ap.add_argument("--job-title", help="Human-readable job title (defaults to the job PDF's filename, cleaned up)")
+    ap.add_argument("--output", help="Optional text file path to save the results (e.g., output.txt)")
     args = ap.parse_args()
 
     cv_files = sorted(CVS_FOLDER.glob("*.pdf"))
@@ -240,6 +251,12 @@ def main():
 
     results = rewrite_cv(cv_text, job_text, job_title, candidate_name=cv_path.stem)
 
+    # Save to file if output path is provided
+    if args.output:
+        out_path = Path(args.output)
+        save_results_to_file(results, out_path)
+        print(f"Results successfully saved to {out_path.resolve()}\n")
+
     for r in results:
         print(f"\n{'=' * 60}")
         print(f" AGENT: {r.agent_model}")
@@ -256,7 +273,6 @@ def main():
         print(f"  length_ratio: {r.length_ratio:.2f}   similarity: {r.similarity:.2f}")
         print()
         print(r.rewritten_text[:1000])
-
 
 if __name__ == "__main__":
     main()
