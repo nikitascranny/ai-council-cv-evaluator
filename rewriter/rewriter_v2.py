@@ -34,18 +34,31 @@ from dataclasses import dataclass, field, asdict
 from pathlib import Path
 
 # ---------------- CONFIG & PATHS ----------------
-BASE_DIR = Path(__file__).resolve().parent
-ROOT_DIR = BASE_DIR.parent
+# Repo layout, confirmed with the team:
+#
+#   ai-cv-eval-main/
+#   |-- common/               (document_utils.py, ollama_utils.py, results_io.py, fact_guard.py)
+#   |-- parser/cv_parser.py   (the one canonical CV parser)
+#   |-- data/cvs/Batch1, data/job-listings/
+#   |-- evaluator/...
+#   \-- rewriter/rewriter_v2.py   <- this file
+#
+# rewriter/ is a direct child of the repo root, sibling to common/ and
+# parser/ - so ROOT_DIR needs exactly one .parent from this file.
+BASE_DIR = Path(__file__).resolve().parent   # .../ai-cv-eval-main/rewriter
+ROOT_DIR = BASE_DIR.parent                    # .../ai-cv-eval-main
 
-# Inject the pipeline folder so we can import document_utils and ollama_utils
-sys.path.insert(0, str(ROOT_DIR / "evaluator" / "pipeline"))
+# document_utils.py, ollama_utils.py and fact_guard.py all live in the
+# shared common/ folder now - one sys.path insert covers all three,
+# rather than rewriter/ reaching into evaluator/'s own folder.
+sys.path.insert(0, str(ROOT_DIR / "common"))
 
 from document_utils import extract_text_from_pdf, load_cv
 from ollama_utils import call_ollama_text
 from fact_guard import rejection_reasons, advisory_caps_runs
 
-# Point to the correct directories based on the project layout
-CVS_FOLDER = ROOT_DIR / "cvs" / "Batch1"
+# Real project layout: data/cvs/Batch1, data/job-listings/
+CVS_FOLDER = ROOT_DIR / "data" / "cvs" / "Batch1"
 JOB_DESCRIPTIONS_FOLDER = ROOT_DIR / "data" / "job-listings"
 
 # The two independent rewriting agents. Kept distinct from
@@ -207,6 +220,8 @@ def rewrite_cv(cv_text: str, job_text: str, job_title: str, candidate_name: str 
         _run_agent(cv_text, job_text, job_title, candidate_name, model)
         for model in AGENT_MODELS
     ]
+
+
 def save_results_to_file(results: list[RewriteResult], output_path: Path):
     """Saves the rewritten CVs and metadata to a plain text file."""
     with output_path.open("w", encoding="utf-8") as f:
@@ -217,7 +232,7 @@ def save_results_to_file(results: list[RewriteResult], output_path: Path):
             if r.error:
                 f.write(f"  [!] {r.error}\n\n")
                 continue
-            
+
             f.write(f"  rejected: {r.rejected}   retried: {r.retried}   used_fallback: {r.used_fallback}\n")
             if r.reasons:
                 f.write(f"  reasons: {r.reasons}\n")
@@ -232,7 +247,7 @@ def main():
     import argparse
 
     ap = argparse.ArgumentParser(description="Test Rewriter Var2 against one CV and one job listing.")
-    ap.add_argument("--cv", help="CV filename inside cvs/Batch1/ (defaults to the first one found)")
+    ap.add_argument("--cv", help="CV filename inside data/cvs/Batch1/ (defaults to the first one found)")
     ap.add_argument("--job", help="Job listing filename inside data/job-listings/ (defaults to the first one found)")
     ap.add_argument("--job-title", help="Human-readable job title (defaults to the job PDF's filename, cleaned up)")
     ap.add_argument("--output", help="Optional text file path to save the results (e.g., output.txt)")
@@ -241,7 +256,7 @@ def main():
     cv_files = sorted(CVS_FOLDER.glob("*.pdf"))
     job_files = sorted(JOB_DESCRIPTIONS_FOLDER.glob("*.pdf"))
     if not cv_files or not job_files:
-        print("Need at least one CV in cvs/Batch1/ and one job listing in data/job-listings/ to run a test.")
+        print("Need at least one CV in data/cvs/Batch1/ and one job listing in data/job-listings/ to run a test.")
         return
 
     cv_path = (CVS_FOLDER / args.cv) if args.cv else cv_files[0]
@@ -279,6 +294,7 @@ def main():
         print(f"  length_ratio: {r.length_ratio:.2f}   similarity: {r.similarity:.2f}")
         print()
         print(r.rewritten_text[:1000])
+
 
 if __name__ == "__main__":
     main()
