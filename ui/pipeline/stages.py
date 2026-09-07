@@ -1,0 +1,147 @@
+"""The pipeline's stages, as generators of progress events.
+
+Each stage yields Events as it works and returns its result, so a caller writes
+
+    rows = yield from council_stage(...)
+
+and gets both the progress and the value. The console app printed instead,
+which is why it could only ever be driven from a terminal.
+
+Stages are independent on purpose: a lost model costs its own row, and the
+judge still runs on whatever came back.
+"""
+
+import time
+
+from ui.pipeline.events import Event
+
+
+def parse_stage(cv_path, deps, candidate: str = ""):
+    """Our parser. Runs first because everything downstream reads its output."""
+    yield Event("parse", "start", {"path": str(cv_path)}, candidate=candidate)
+    started = time.time()
+    cv = deps.load_cv(cv_path)
+    yield Event("parse", "done",
+                {"sections": [s.label for s in cv.sections],
+                 "chars": len(cv.full_text()),
+                 "multi_column_pages": list(cv.multi_column_pages or []),
+                 "warnings": list(cv.warnings or [])},
+                time.time() - started, candidate)
+    return cv
+
+
+def council_stage(job_text, cv_text, candidate, models, deps):
+    """Each evaluator in turn. One model failing must not end the run."""
+    rows = []
+    for model in models:
+        yield Event("council", "start", {"model": model}, candidate=candidate)
+        started = time.time()
+        try:
+            row = deps.evaluate_cv(job_text, cv_text, candidate, model)
+        except Exception as exc:
+            row = {"candidate": candidate, "score": None, "strengths": [],
+                   "weaknesses": [], "summary": "MODEL ERROR: {}".format(exc)}
+            yield Event("council", "failed", {"model": model, "error": str(exc)},
+                        time.time() - started, candidate)
+        else:
+            yield Event("council", "done",
+                        {"model": model, "score": row.get("score"),
+                         "summary": row.get("summary", "")},
+                        time.time() - started, candidate)
+        row["model"] = model
+        rows.append(row)
+    return rows
+
+
+def essential_stage(job_text, cv, candidate, model, deps):
+    """Scoped input rather than the whole CV - the point of sections_named()."""
+    yield Event("essential", "start", {"model": model}, candidate=candidate)
+    started = time.time()
+    scoped = cv.sections_named("experience", "education", "certifications")
+    result = deps.check_essential(job_text, scoped, candidate, model=model)
+    yield Event("essential", "done", {"summary": result.get("summary", "")},
+                time.time() - started, candidate)
+    return result
+
+
+def judge_stage(job_text, rows, candidate, model, deps):
+    """Aggregate the council's summaries into one independent verdict."""
+    yield Event("judge", "start", {"model": model}, candidate=candidate)
+    started = time.time()
+    parsed, error = deps.judge(job_text, rows, candidate, model)
+    if error:
+        yield Event("judge", "failed", {"error": str(error)},
+                    time.time() - started, candidate)
+        return {"candidate": candidate, "final_score": None, "error": str(error)}
+    yield Event("judge", "done",
+                {"final_score": parsed.get("final_score"),
+                 "final_evaluation": parsed.get("final_evaluation", "")},
+                time.time() - started, candidate)
+    return parsed
+
+
+# The attributes rewriter_v1.paraphrase records on itself after each call.
+# probe() reads last_truncated off paraphrase_fn (getattr(paraphrase_fn,
+# "last_truncated", None)) to fill ProbeResult.truncated_rewrite - the signal
+# that Ollama silently cut the rewrite prompt. capture_paraphrase must copy
+# these onto its own wrapper or that signal is always None for every run
+# started from the web UI, which is one of the two measured defects this
+# project sets out to catch.
+_PARAPHRASE_ATTRS = ("last_truncated", "last_prompt_eval_count", "last_prompt_chars")
+
+
+def capture_paraphrase(fn):
+    """Wrap a paraphrase function so the text it returned can be read back.
+
+    probe() takes paraphrase_fn as a parameter, so this captures the rewrite
+    without adding a field to ProbeResult - a full CV in every JSONL row would
+    bloat the research output the findings are read from.
+
+    The guard retries on rejection, calling this a second time. Keeping the last
+    call is deliberate: that is the text which was actually scored.
+    """
+    def wrapper(cv_text, job_title, **kwargs):
+        result = fn(cv_text, job_title, **kwargs)
+        wrapper.text = result
+        for attr in _PARAPHRASE_ATTRS:
+            setattr(wrapper, attr, getattr(fn, attr, None))
+        return result
+
+    wrapper.text = None
+    for attr in _PARAPHRASE_ATTRS:
+        setattr(wrapper, attr, None)
+    return wrapper
+
+
+def rewrite_stage(cv_text, job_title, scorer, deps, candidate: str = "",
+                  paraphrase_fn=None, rewriter_model=None):
+    """The phrasing-sensitivity probe, reported as a finding.
+
+    A rejected rewrite is a result about the rewriting model, not an error: it
+    means the paraphrase introduced a fact the original did not contain.
+
+    rewriter_model is passed through to probe() explicitly - left to its own
+    default, probe() paraphrases on the 14b even when the rest of the run is
+    in fast mode, and a memory-constrained machine cannot load it.
+    """
+    yield Event("rewrite", "start", {"job_title": job_title}, candidate=candidate)
+    started = time.time()
+    extra = {"paraphrase_fn": paraphrase_fn} if paraphrase_fn else {}
+    if rewriter_model:
+        extra["rewriter_model"] = rewriter_model
+    result = deps.probe(cv_text, job_title, scorer, **extra)
+    out = result if isinstance(result, dict) else vars(result)
+
+    # probe() returns a ProbeResult dataclass in production, and ProbeResult has
+    # no `new_facts` field - the invented facts that make a rejection a finding
+    # live in `reasons` (set from rejection_reasons() inside probe()). Read
+    # `reasons` first for that reason; `new_facts` is a fallback so dict-shaped
+    # fakes in tests keep working.
+    detail = {"rejected": bool(out.get("rejected")),
+              "delta": out.get("delta"),
+              "score_before": out.get("score_before"),
+              "score_after": out.get("score_after"),
+              "similarity": out.get("similarity"),
+              "new_facts": list(out.get("reasons") or out.get("new_facts") or [])}
+    yield Event("rewrite", "done", detail, time.time() - started, candidate)
+    return out
