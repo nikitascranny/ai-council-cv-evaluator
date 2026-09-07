@@ -22,22 +22,20 @@ from dataclasses import dataclass, field, asdict
 from pathlib import Path
 
 # prompts.py and run_evaluations.py live at the repo root; cv_parser.py lives
-# in parser/. This file lives one level down, in rewriter/.
+# in parser/; fact_guard.py now lives in common/, shared with rewriter_v2.py
+# and the evaluator side. This file lives one level down, in rewriter/.
 _ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(_ROOT))
 sys.path.insert(0, str(_ROOT / "parser"))
+sys.path.insert(0, str(_ROOT / "common"))
 
 import prompts  # noqa: E402
 import run_evaluations  # noqa: E402
 import cv_parser  # noqa: E402
 from fact_guard import (  # noqa: E402
-    _new_against,
-    advisory_caps_runs,
-    check_no_new_facts,
-    extract_facts,
     rejection_reasons,
+    advisory_caps_runs,
 )
-
 
 # --- The rewriting agent ---
 #
