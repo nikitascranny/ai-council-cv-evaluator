@@ -119,6 +119,16 @@ def extract_hard_facts(text: str) -> set[str]:
     return _extract(text, (_NUMBER, _QUALIFICATION))
 
 
+def extract_qualifications(text: str) -> set[str]:
+    """Degree and certification tokens on their own.
+
+    extract_hard_facts fuses these with numbers because the guard rejects on
+    both together. Read forwards, for a reviewer, they are a different kind of
+    claim from a figure and belong in their own list.
+    """
+    return _extract(text, (_QUALIFICATION,))
+
+
 def extract_caps_runs(text: str) -> set[str]:
     """Capitalised multi-word runs: organisations, job titles, product names."""
     return _extract(text, (_CAPS_RUN,))
