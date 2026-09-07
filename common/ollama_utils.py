@@ -11,6 +11,7 @@ of the same request/parse/error-handling logic.
 import re
 import json
 import requests
+from typing import Union
 
 OLLAMA_URL = "http://localhost:11434/api/chat"
 
@@ -31,7 +32,15 @@ def extract_json(text: str) -> dict:
     return json.loads(match.group(0))
 
 
-def call_ollama_json(model: str, prompt: str, num_predict: int = 1024, keep_alive: int = 0):
+def call_ollama_json(model: str,
+                     prompt: str,
+                     num_predict: int = 1024,
+                     keep_alive=0, # keep_alive can be str or int. int= in seconds. str e.g. 5m = 5 minutes
+                     host: str = OLLAMA_URL,
+                     temperature=None, # float
+                     timeout: int=3600 # guard against hung request (alive but stuck process). To refactor in evaluate files.
+                    ):
+
     """
     Send a single user-turn prompt to a local Ollama model and return the
     JSON object parsed out of its reply.
@@ -49,31 +58,39 @@ def call_ollama_json(model: str, prompt: str, num_predict: int = 1024, keep_aliv
     talking to Ollama, not about any particular caller's expected JSON
     shape (score/strengths/weaknesses vs. summary, etc).
     """
-    try:
-        response = requests.post(
-            OLLAMA_URL,
-            json={
-                "model": model,
-                "messages": [{"role": "user", "content": prompt}],
-                "stream": False,
-                "options": {"num_predict": num_predict},
-                "keep_alive": keep_alive,
-            },
-        )
-        response.raise_for_status()
-    except requests.exceptions.HTTPError as e:
-        return {}, f"REQUEST ERROR: {e}"
+    
+    parsed_text, error = call_ollama_text(
+        model=model,
+        prompt=prompt,
+        num_predict=num_predict,
+        keep_alive=keep_alive,
+        host=host,
+        temperature=temperature,
+        timeout=timeout
+    )
 
-    raw_reply = response.json()["message"]["content"]
-    cleaned = strip_think_tags(raw_reply)
+    if error:
+        return parsed_text, error
 
     try:
-        return extract_json(cleaned), None
+        parsed = extract_json(parsed_text)
     except (ValueError, json.JSONDecodeError):
-        return {}, "PARSE ERROR"
+        error = "PARSE ERROR"
+        return ({},error)
+
+    return (parsed,None)
 
 
-def call_ollama_text(model: str, prompt: str, num_predict: int = 1024, keep_alive: int = 0):
+
+def call_ollama_text(model: str,
+                     prompt: str,
+                     num_predict: int = 1024,
+                     keep_alive=0, # keep_alive can be str or int. int= in seconds. str e.g. 5m = 5 minutes
+                     host: str = OLLAMA_URL,
+                     temperature=None, # float
+                     timeout: int=3600 # guard against hung request (alive but stuck process). To refactor in evaluate files.
+                    ):
+
     """
     Send a single user-turn prompt to a local Ollama model and return its
     raw text reply - no JSON parsing. For tasks where the model's output
@@ -88,20 +105,27 @@ def call_ollama_text(model: str, prompt: str, num_predict: int = 1024, keep_aliv
     rather than a valid empty rewrite - silently accepting "" here would
     make a blank CV look like it passed every downstream check.
     """
+    options: dict[str, Union[int, float]] = {"num_predict": num_predict}
     try:
+        # gets the models reply from the local Ollama API and raises an exception if the request fails
         response = requests.post(
-            OLLAMA_URL,
+            host,
             json={
                 "model": model,
                 "messages": [{"role": "user", "content": prompt}],
                 "stream": False,
-                "options": {"num_predict": num_predict},
+                "options": options,
                 "keep_alive": keep_alive,
             },
+            timeout=timeout ## Use to avoid hung request
         )
         response.raise_for_status()
-    except requests.exceptions.HTTPError as e:
-        return "", f"REQUEST ERROR: {e}"
+
+    except requests.exceptions.RequestException as e: # includes HTTPError
+        # Catches connection failures (Ollama not running), timeouts, and HTTP error statuses alike, 
+        # so callers always get back a (dict,str) pair instead of an uncaught exception killing the run.
+        error = f"REQUEST ERROR: {e}"
+        return ({}, error)
 
     raw_reply = response.json()["message"]["content"]
     cleaned = strip_think_tags(raw_reply)
