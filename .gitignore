@@ -32,6 +32,7 @@ scratch/
 # Personal data - never goes to a shared repo.
 My CV/
 
+
 # Teammates' code, vendored locally for an end-to-end run. Not ours to commit.
 # Anchored to the repo root so it doesn't also swallow tests/integration/,
 # which is ours.
