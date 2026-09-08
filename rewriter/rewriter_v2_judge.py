@@ -254,9 +254,16 @@ exactly these keys:
   "recommended_rewrite": "<exactly one of {agent_names}>",
   "recommendation_reason": "<3-6 sentences comparing the rewrites against the job listing and \
 justifying the pick, referencing the fact-check results where relevant>",
-  "career_roadmap": "<a concrete, ordered set of next steps for this candidate to grow toward \
-this kind of role>"
+  "career_roadmap": [
+    {{"step": "<short name for this step, e.g. 'Apply for the role with Rewrite B'>",
+     "action": "<what the candidate should concretely do for this step>"}},
+    {{"step": "<next step>", "action": "<what to do>"}}
+  ]
 }}
+
+career_roadmap must be an ordered JSON array of step objects like the ones above - not a single \
+string - starting with applying to this job and continuing with realistic next steps: skills or \
+experience worth building, and the kind of roles to target after this one.
 """
 
 
@@ -267,7 +274,15 @@ this kind of role>"
 def _valid(parsed: dict, agent_names: list) -> bool:
     if not REQUIRED_KEYS <= parsed.keys():
         return False
-    return parsed.get("recommended_rewrite") in agent_names
+    if parsed.get("recommended_rewrite") not in agent_names:
+        return False
+    roadmap = parsed.get("career_roadmap")
+    if not isinstance(roadmap, list) or not roadmap:
+        return False
+    return all(
+        isinstance(step, dict) and step.get("step") and step.get("action")
+        for step in roadmap
+    )
 
 
 def call_judge_with_retries(prompt: str, agent_names: list, model: str, host: str,
