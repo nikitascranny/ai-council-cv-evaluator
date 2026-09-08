@@ -3,16 +3,12 @@ Unit tests for document_utils.py
 
 Covers:
 - extract_text_from_pdf(): reading a job description PDF page by page
-- load_cv(): delegating to parsed_cv.parse()
+- load_cv(): delegating to cv_parser.parse()
 
-Both pdfplumber and parsed_cv are external dependencies (a real PDF
-library and a separate teammate's module), so both are mocked/stubbed
-here rather than touching real files or real parsing logic. The
-"parsed_cv" stub itself is installed in conftest.py before this module
-is even imported.
+Both pdfplumber and cv_parser are mocked/stubbed here rather than touching
+real files or real parsing logic.
 """
 
-import sys
 from unittest.mock import MagicMock, patch
 
 import document_utils
@@ -80,9 +76,10 @@ def test_extract_text_all_blank_pages_returns_empty_string(mock_open):
 # load_cv
 # ---------------------------------------------------------------------------
 
-def test_load_cv_calls_parsed_cv_parse_with_string_path():
+@patch("document_utils.cv_parser.parse")
+def test_load_cv_calls_cv_parser_parse_with_string_path(mock_parse):
     fake_cv_object = MagicMock(name="ParsedCV")
-    sys.modules["parsed_cv"].parse = MagicMock(return_value=fake_cv_object)
+    mock_parse.return_value = fake_cv_object
 
     from pathlib import Path
     cv_path = Path("cvs") / "alice.pdf"
@@ -91,6 +88,6 @@ def test_load_cv_calls_parsed_cv_parse_with_string_path():
     # Compare against str(cv_path) rather than a hardcoded "cvs/alice.pdf":
     # Path joins with "/" on the class but renders with the OS-native
     # separator when stringified ("\\" on Windows, "/" on Linux/Mac), and
-    # load_cv() passes str(cv_path) straight through to parsed_cv.parse().
-    sys.modules["parsed_cv"].parse.assert_called_once_with(str(cv_path))
+    # load_cv() passes str(cv_path) straight through to cv_parser.parse().
+    mock_parse.assert_called_once_with(str(cv_path))
     assert result is fake_cv_object
