@@ -7,13 +7,12 @@ __pycache__/
 # --- data and generated output ---
 data/judge-input/
 data/judge-output/
+data/rewrite_results/
+data/rewrite_feedback/
 logs/
 scripts/
-cv-parser/
 docs/
 *.json
-*.txt
-
 # --- parser / rewriter working files ---
 .textcache/
 demo/
