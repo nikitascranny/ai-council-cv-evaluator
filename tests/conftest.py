@@ -11,10 +11,10 @@ under test on sys.path:
                (shared by evaluator/ and rewriter/)
   - evaluator/ essential_requirements.py, Evaluate_CV.py, judge.py
   - rewriter/  rewriter_v1.py, rewriter_v2.py, rewriter_v2_judge.py
-  - parser/    cv_parser.py
+  - parser/    cv_pdf_parser.py, cv_sections.py, txt_cv_parser.py, job_req_parser.py
 
 document_utils.py used to import a "parsed_cv" re-export shim that had to be
-stubbed here; it now imports cv_parser directly (see common/document_utils.py's
+stubbed here; it now imports cv_pdf_parser directly (see common/document_utils.py's
 docstring), so that stub is gone too.
 """
 

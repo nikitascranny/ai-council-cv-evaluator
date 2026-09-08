@@ -39,7 +39,7 @@ from pathlib import Path
 #
 #   ai-cv-eval-main/
 #   |-- common/               (document_utils.py, ollama_utils.py, results_io.py, fact_guard.py)
-#   |-- parser/cv_parser.py   (the one canonical CV parser)
+#   |-- parser/cv_pdf_parser.py   (the one canonical CV PDF parser)
 #   |-- data/cvs/Batch1, data/job-listings/
 #   |-- evaluator/...
 #   \-- rewriter/rewriter_v2.py   <- this file

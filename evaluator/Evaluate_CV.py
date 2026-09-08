@@ -16,7 +16,7 @@ evaluator/pipeline/Evaluate_CV.py):
     data/cvs/            - candidate CV PDFs, in per-batch subfolders
                             (Batch1/, batch2/, batch3/, batch4/, ...)
     common/              - document_utils.py, ollama_utils.py, results_io.py
-    parser/              - cv_parser.py, the one canonical CV parser
+    parser/              - cv_pdf_parser.py, the one canonical CV PDF parser
     results/             - created automatically for output JSON
 
 essential_requirements.py is a file used only by this script.

@@ -3,20 +3,19 @@ document_utils.py
 
 Shared helpers for pulling text out of the two kinds of PDF this project
 reads: job description listings (plain pdfplumber extraction) and
-candidate CVs (via cv_parser, which understands CV layout and section
+candidate CVs (via cv_pdf_parser, which understands CV layout and section
 structure).
 
 Lives in common/, alongside ollama_utils.py, results_io.py and
 fact_guard.py - shared by both evaluator/ and rewriter/, owned by neither.
 
-Imports cv_parser directly from parser/. There used to be a parsed_cv.py
+Imports cv_pdf_parser directly from parser/. There used to be a parsed_cv.py
 re-export shim at evaluator/pipeline/parsed_cv.py that existed only
 because this file's old sys.path insert (relative to its old location
 inside evaluator/pipeline/) needed a module literally named parsed_cv.
 Now that this file lives in common/, that indirection is gone: this
-imports cv_parser directly, and there is exactly one CV parser in the
-project, not one plus a re-export of it. Delete parsed_cv.py once this
-version is in place - nothing else should still be importing it.
+imports cv_pdf_parser directly, and there is exactly one CV PDF parser in
+the project, not one plus a re-export of it.
 """
 
 import sys
@@ -29,7 +28,7 @@ _PARSER_DIR = _ROOT / "parser"
 if str(_PARSER_DIR) not in sys.path:
     sys.path.insert(0, str(_PARSER_DIR))
 
-import cv_parser
+import cv_pdf_parser
 
 
 def extract_text_from_pdf(pdf_path) -> str:
@@ -45,7 +44,7 @@ def extract_text_from_pdf(pdf_path) -> str:
 
 def load_cv(cv_path):
     """
-    Parse a candidate CV PDF once via cv_parser and return the resulting
+    Parse a candidate CV PDF once via cv_pdf_parser and return the resulting
     CV object.
 
     Parsing is the expensive step (layout analysis + section detection),
@@ -54,4 +53,4 @@ def load_cv(cv_path):
     cv.sections_named(...) for section-scoped checks - from that same
     object, rather than re-parsing the same PDF once per thing they need.
     """
-    return cv_parser.parse(str(cv_path))
+    return cv_pdf_parser.parse(str(cv_path))

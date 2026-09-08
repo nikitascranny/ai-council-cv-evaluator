@@ -21,9 +21,10 @@ import urllib.request
 from dataclasses import dataclass, field, asdict
 from pathlib import Path
 
-# prompts.py and run_evaluations.py live at the repo root; cv_parser.py lives
-# in parser/; fact_guard.py now lives in common/, shared with rewriter_v2.py
-# and the evaluator side. This file lives one level down, in rewriter/.
+# prompts.py and run_evaluations.py live at the repo root; cv_pdf_parser.py
+# lives in parser/; fact_guard.py now lives in common/, shared with
+# rewriter_v2.py and the evaluator side. This file lives one level down, in
+# rewriter/.
 _ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(_ROOT))
 sys.path.insert(0, str(_ROOT / "parser"))
@@ -31,7 +32,7 @@ sys.path.insert(0, str(_ROOT / "common"))
 
 import prompts  # noqa: E402
 import run_evaluations  # noqa: E402
-import cv_parser  # noqa: E402
+import cv_pdf_parser  # noqa: E402
 from fact_guard import (  # noqa: E402
     rejection_reasons,
     advisory_caps_runs,
@@ -395,7 +396,7 @@ def title_from_slug(slug: str) -> str:
 
 def load_cvs(cv_dir: Path = CV_DIR) -> dict:
     """Candidate name -> full CV text. Parsed once, reused across every job."""
-    return {p.stem: cv_parser.parse(p).full_text()
+    return {p.stem: cv_pdf_parser.parse(p).full_text()
             for p in sorted(cv_dir.glob("*.pdf"))}
 
 

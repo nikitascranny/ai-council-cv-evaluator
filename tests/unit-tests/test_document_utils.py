@@ -3,10 +3,10 @@ Unit tests for document_utils.py
 
 Covers:
 - extract_text_from_pdf(): reading a job description PDF page by page
-- load_cv(): delegating to cv_parser.parse()
+- load_cv(): delegating to cv_pdf_parser.parse()
 
-Both pdfplumber and cv_parser are mocked/stubbed here rather than touching
-real files or real parsing logic.
+Both pdfplumber and cv_pdf_parser are mocked/stubbed here rather than
+touching real files or real parsing logic.
 """
 
 from unittest.mock import MagicMock, patch
@@ -76,8 +76,8 @@ def test_extract_text_all_blank_pages_returns_empty_string(mock_open):
 # load_cv
 # ---------------------------------------------------------------------------
 
-@patch("document_utils.cv_parser.parse")
-def test_load_cv_calls_cv_parser_parse_with_string_path(mock_parse):
+@patch("document_utils.cv_pdf_parser.parse")
+def test_load_cv_calls_cv_pdf_parser_parse_with_string_path(mock_parse):
     fake_cv_object = MagicMock(name="ParsedCV")
     mock_parse.return_value = fake_cv_object
 
@@ -88,6 +88,6 @@ def test_load_cv_calls_cv_parser_parse_with_string_path(mock_parse):
     # Compare against str(cv_path) rather than a hardcoded "cvs/alice.pdf":
     # Path joins with "/" on the class but renders with the OS-native
     # separator when stringified ("\\" on Windows, "/" on Linux/Mac), and
-    # load_cv() passes str(cv_path) straight through to cv_parser.parse().
+    # load_cv() passes str(cv_path) straight through to cv_pdf_parser.parse().
     mock_parse.assert_called_once_with(str(cv_path))
     assert result is fake_cv_object
