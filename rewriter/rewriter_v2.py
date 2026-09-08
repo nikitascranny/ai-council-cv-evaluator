@@ -232,7 +232,12 @@ def _safe_folder_name(name: str) -> str:
     belt-and-braces pass - strip anything that isn't safe on disk rather
     than trust the caller never hands us a stray "/" or ":".
     """
-    keep = "-_() "
+    # "." is deliberately kept: it's safe mid-name on every OS we care
+    # about (Windows/macOS/Linux) and this sanitizer is also applied to
+    # agent_model, where version-numbered tags like "qwen2.5" or
+    # "qwen2.5:14b" need their dot to survive - only the trailing-dot
+    # case (stripped below) and characters like ":" are actually unsafe.
+    keep = "-_(). "
     cleaned = "".join(c if (c.isalnum() or c in keep) else "_" for c in name)
     return cleaned.strip().strip(".") or "unnamed"
 
