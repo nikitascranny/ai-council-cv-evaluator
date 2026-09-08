@@ -35,6 +35,14 @@ import cv_parser  # noqa: E402
 from fact_guard import (  # noqa: E402
     rejection_reasons,
     advisory_caps_runs,
+    normalise,
+    extract_facts,
+    extract_hard_facts,
+    extract_caps_runs,
+    _new_against,
+    numbers_lost,
+    check_no_new_facts,
+    title_fabricated,
 )
 
 # --- The rewriting agent ---
