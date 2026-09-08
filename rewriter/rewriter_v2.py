@@ -29,6 +29,7 @@ never an unflagged fabrication.
 """
 
 import sys
+import csv
 import difflib
 from dataclasses import dataclass, field, asdict
 from pathlib import Path
@@ -60,11 +61,12 @@ from fact_guard import rejection_reasons, advisory_caps_runs
 # Real project layout: data/cvs/Batch1, data/job-listings/
 CVS_FOLDER = ROOT_DIR / "data" / "cvs" / "Batch1"
 JOB_DESCRIPTIONS_FOLDER = ROOT_DIR / "data" / "job-listings"
+REWRITE_RESULTS_FOLDER = ROOT_DIR / "data" / "rewrite_results"
 
 # The two independent rewriting agents. Kept distinct from
 # Evaluate_CV.py's EVALUATOR_MODELS on purpose - this file's job is
 # rewriting, not scoring, even though it happens to reuse the same models.
-AGENT_MODELS = ["phi4", "qwen2.5:14b"]
+AGENT_MODELS = ["phi4","qwen2.5:14b"]
 # A full CV rewrite can run long - LERATO MUNCHE's CV alone is ~23,500
 # characters of full_text(). 4096 gives real headroom over the 1024 used
 # for JSON scoring replies, but a CV meaningfully larger than that in the
@@ -222,25 +224,69 @@ def rewrite_cv(cv_text: str, job_text: str, job_title: str, candidate_name: str 
     ]
 
 
-def save_results_to_file(results: list[RewriteResult], output_path: Path):
-    """Saves the rewritten CVs and metadata to a plain text file."""
-    with output_path.open("w", encoding="utf-8") as f:
-        for r in results:
-            f.write(f"{'=' * 60}\n")
-            f.write(f" AGENT: {r.agent_model}\n")
-            f.write(f"{'=' * 60}\n")
-            if r.error:
-                f.write(f"  [!] {r.error}\n\n")
-                continue
+def _safe_folder_name(name: str) -> str:
+    """
+    Job titles and candidate names end up as path components. They come
+    from filename-derived strings (see job_title_from_filename in
+    run_batch.py and cv_path.stem in main()) so this is mostly a
+    belt-and-braces pass - strip anything that isn't safe on disk rather
+    than trust the caller never hands us a stray "/" or ":".
+    """
+    keep = "-_() "
+    cleaned = "".join(c if (c.isalnum() or c in keep) else "_" for c in name)
+    return cleaned.strip().strip(".") or "unnamed"
 
-            f.write(f"  rejected: {r.rejected}   retried: {r.retried}   used_fallback: {r.used_fallback}\n")
-            if r.reasons:
-                f.write(f"  reasons: {r.reasons}\n")
-            if r.advisory:
-                f.write(f"  advisory (new capitalised runs): {r.advisory}\n")
-            f.write(f"  length_ratio: {r.length_ratio:.2f}   similarity: {r.similarity:.2f}\n\n")
+
+def save_results(results: list[RewriteResult]):
+    """
+    Saves the rewritten CVs in individual text files and stores the metadata 
+    for all runs in a single CSV file, structured inside
+    data/rewrite_results/<job_title>/<candidate_name>/ - job title first so
+    that running the same candidate against several jobs produces separate
+    output folders instead of each job's results overwriting the last.
+    """
+    if not results:
+        return None
+
+    # Determine job title / candidate name and create the target directory
+    job_title = _safe_folder_name(results[0].job_title)
+    candidate_name = _safe_folder_name(results[0].candidate)
+    target_dir = REWRITE_RESULTS_FOLDER / job_title / candidate_name
+    target_dir.mkdir(parents=True, exist_ok=True)
+
+    # Save rewritten text per model
+    for r in results:
+        # agent_model may be a tag like "qwen2.5:7b" - the colon is fine in
+        # an Ollama model name, but on NTFS a ":" in a filename is read as
+        # an alternate-data-stream separator, not a literal character. That
+        # silently splits the write into a 0-byte visible file plus a
+        # hidden stream holding the actual text, so sanitize before use.
+        safe_model_name = _safe_folder_name(r.agent_model)
+        text_file_path = target_dir / f"{safe_model_name}.txt"
+        with text_file_path.open("w", encoding="utf-8") as f:
             f.write(r.rewritten_text)
-            f.write("\n\n")
+
+    # Save metadata to a single CSV file
+    csv_file_path = target_dir / "metadata.csv"
+    
+    # We exclude the large text fields to keep the CSV clean and purely metadata-focused
+    fieldnames = [
+        "candidate", "job_title", "agent_model", "used_fallback",
+        "rejected", "retried", "reasons", "advisory",
+        "length_ratio", "similarity", "error"
+    ]
+    
+    with csv_file_path.open("w", encoding="utf-8", newline="") as f:
+        writer = csv.DictWriter(f, fieldnames=fieldnames)
+        writer.writeheader()
+        
+        for r in results:
+            row_dict = r.to_dict()
+            # Filter the dictionary to only include the specific fieldnames
+            filtered_row = {k: v for k, v in row_dict.items() if k in fieldnames}
+            writer.writerow(filtered_row)
+            
+    return target_dir
 
 
 def main():
@@ -250,7 +296,6 @@ def main():
     ap.add_argument("--cv", help="CV filename inside data/cvs/Batch1/ (defaults to the first one found)")
     ap.add_argument("--job", help="Job listing filename inside data/job-listings/ (defaults to the first one found)")
     ap.add_argument("--job-title", help="Human-readable job title (defaults to the job PDF's filename, cleaned up)")
-    ap.add_argument("--output", help="Optional text file path to save the results (e.g., output.txt)")
     args = ap.parse_args()
 
     cv_files = sorted(CVS_FOLDER.glob("*.pdf"))
@@ -263,6 +308,8 @@ def main():
     job_path = (JOB_DESCRIPTIONS_FOLDER / args.job) if args.job else job_files[0]
     job_title = args.job_title or job_path.stem.replace("job_listing_", "").replace("_", " ").title()
 
+    candidate_name = cv_path.stem
+
     print(f"CV: {cv_path.name}")
     print(f"Job: {job_path.name}  (title: {job_title})\n")
 
@@ -270,13 +317,12 @@ def main():
     cv_text = cv.full_text()
     job_text = extract_text_from_pdf(job_path)
 
-    results = rewrite_cv(cv_text, job_text, job_title, candidate_name=cv_path.stem)
+    results = rewrite_cv(cv_text, job_text, job_title, candidate_name=candidate_name)
 
-    # Save to file if output path is provided
-    if args.output:
-        out_path = Path(args.output)
-        save_results_to_file(results, out_path)
-        print(f"Results successfully saved to {out_path.resolve()}\n")
+    # Save outputs to structured directories
+    saved_dir = save_results(results)
+    if saved_dir:
+        print(f"Results successfully saved to {saved_dir.resolve()}\n")
 
     for r in results:
         print(f"\n{'=' * 60}")
@@ -291,7 +337,8 @@ def main():
             print(f"  reasons: {r.reasons}")
         if r.advisory:
             print(f"  advisory (new capitalised runs): {r.advisory}")
-        print(f"  length_ratio: {r.length_ratio:.2f}   similarity: {r.similarity:.2f}")
+        if r.length_ratio is not None and r.similarity is not None:
+            print(f"  length_ratio: {r.length_ratio:.2f}   similarity: {r.similarity:.2f}")
         print()
         print(r.rewritten_text[:1000])
 
