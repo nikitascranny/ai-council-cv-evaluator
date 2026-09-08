@@ -258,7 +258,6 @@ class TestBuildPrompt:
 
         assert "JOB TEXT HERE" in prompt
         assert "SUMMARIES HERE" in prompt
-        assert "CANDIDATE: Lerato Munche" in prompt
 
     def test_requests_expected_json_schema_keys(self):
         prompt = judge.build_prompt("job", "summaries", "Candidate X")

@@ -208,8 +208,6 @@ JOB LISTING:
 {job_text}
 \"\"\"
 
-CANDIDATE: {candidate_name}
-
 REVIEWER SUMMARIES:
 \"\"\"
 {summaries_text}
