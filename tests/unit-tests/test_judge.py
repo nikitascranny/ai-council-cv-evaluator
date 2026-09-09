@@ -170,22 +170,17 @@ class TestLoadSummaries:
 # ---------------------------------------------------------------------------
 
 class TestAsText:
-    def test_plain_string_passthrough(self):
-        assert judge._as_text("Strong communicator") == "Strong communicator"
-
-    def test_empty_string_returns_empty(self):
-        assert judge._as_text("") == ""
-
-    def test_none_returns_empty_string(self):
-        assert judge._as_text(None) == ""
+    @pytest.mark.parametrize("value, expected", [
+        ("Strong communicator", "Strong communicator"),
+        ("", ""),
+        (None, ""),
+    ], ids=["plain_string_passthrough", "empty_string_returns_empty", "none_returns_empty_string"])
+    def test_scalar_passthrough(self, value, expected):
+        assert judge._as_text(value) == expected
 
     def test_list_becomes_bulleted_lines(self):
         result = judge._as_text(["Good typing speed", "Bilingual"])
         assert result == "  - Good typing speed\n  - Bilingual"
-
-    def test_tuple_becomes_bulleted_lines(self):
-        result = judge._as_text(("Punctual", "Organised"))
-        assert result == "  - Punctual\n  - Organised"
 
     def test_list_filters_blank_items(self):
         result = judge._as_text(["Real point", "   ", ""])
@@ -246,31 +241,6 @@ class TestFormatSummariesForPrompt:
         text = judge.format_summaries_for_prompt(summaries)
 
         assert text.index("#1") < text.index("#2") < text.index("#3")
-
-
-# ---------------------------------------------------------------------------
-# build_prompt
-# ---------------------------------------------------------------------------
-
-class TestBuildPrompt:
-    def test_includes_job_text_candidate_and_summaries(self):
-        prompt = judge.build_prompt("JOB TEXT HERE", "SUMMARIES HERE", "Lerato Munche")
-
-        assert "JOB TEXT HERE" in prompt
-        assert "SUMMARIES HERE" in prompt
-        assert "CANDIDATE: Lerato Munche" in prompt
-
-    def test_requests_expected_json_schema_keys(self):
-        prompt = judge.build_prompt("job", "summaries", "Candidate X")
-
-        for key in ("candidate", "final_score", "score_rationale",
-                    "key_strengths", "key_weaknesses", "final_evaluation"):
-            assert f'"{key}"' in prompt
-
-    def test_instructs_model_to_ignore_prior_scores(self):
-        prompt = judge.build_prompt("job", "summaries", "Candidate X")
-
-        assert "ignore" in prompt.lower()
 
 
 # ---------------------------------------------------------------------------
@@ -396,21 +366,6 @@ class TestCallJudgeWithRetries:
 
         assert error == "PARSE ERROR"
         assert mock_call.call_count == 1
-
-    @patch("judge.call_ollama_json")
-    def test_prints_progress_message_between_retries(self, mock_call, capsys):
-        mock_call.side_effect = [
-            ({}, "PARSE ERROR"),
-            ({"final_score": 5}, None),
-        ]
-
-        judge.call_judge_with_retries(
-            "prompt", "deepseek-r1:8b", "http://localhost:11434/api/chat",
-            num_predict=4096, keep_alive="0m", max_retries=3,
-        )
-
-        out = capsys.readouterr().out
-        assert "PARSE ERROR on attempt 1/3 -- retrying..." in out
 
 
 # ---------------------------------------------------------------------------

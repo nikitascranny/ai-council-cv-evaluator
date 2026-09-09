@@ -46,7 +46,8 @@ import json
 import sys
 import time
 from pathlib import Path
-
+_ROOT_DIR = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(_ROOT_DIR / "common"))
 from ollama_utils import call_ollama_json
 from results_io import save_json
 from document_utils import extract_text_from_pdf
@@ -206,8 +207,6 @@ JOB LISTING:
 \"\"\"
 {job_text}
 \"\"\"
-
-CANDIDATE: {candidate_name}
 
 REVIEWER SUMMARIES:
 \"\"\"

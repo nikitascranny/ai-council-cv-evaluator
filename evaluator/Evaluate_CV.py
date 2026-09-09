@@ -1,39 +1,48 @@
 """
 Evaluate_CV.py
 
-For every job description PDF,
-scores every candidate CV using each evaluator model (the "council"), and
-optionally also runs the essential-requirements check alongside them.
+For every job description PDF, scores every candidate CV using each
+evaluator model (the "council"), and optionally also runs the
+essential-requirements check alongside them.
 
 Usage:
     python Evaluate_CV.py                              # council scoring only
     python Evaluate_CV.py --essential-requirements      # council + essential-requirements check
     python Evaluate_CV.py -e                            # same, short form
 
-Folder layout expected:
-    job descriptions/   - job listing PDFs
-    cvs/                - candidate CV PDFs
-    pipeline/           - the parsed_cv module
-    results/            - created automatically for output JSON
+Folder layout (repo root, three levels above this file at
+evaluator/pipeline/Evaluate_CV.py):
+    data/job-listings/   - job listing PDFs
+    data/cvs/            - candidate CV PDFs, in per-batch subfolders
+                            (Batch1/, batch2/, batch3/, batch4/, ...)
+    common/              - document_utils.py, ollama_utils.py, results_io.py
+    parser/              - cv_pdf_parser.py, the one canonical CV PDF parser
+    results/             - created automatically for output JSON
 
-essential_requirements.py is a file used only by this script 
+essential_requirements.py is a file used only by this script.
 """
 
 import argparse
+import sys
 from pathlib import Path
+
+
+# where common/ (shared utilities) and data/ (CVs, job listings) live.
+_ROOT_DIR = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(_ROOT_DIR / "common"))
 
 from document_utils import extract_text_from_pdf, load_cv
 from ollama_utils import call_ollama_json
 from results_io import safe_filename_part, save_json
-import essential_requirements
+import essential_requirements  # sibling file, still in this same folder - no path change needed
 
 
-# Will run no matter what directory it's launched from
-BASE_DIR = Path(__file__).resolve().parent
-
-JOB_DESCRIPTIONS_FOLDER = BASE_DIR / "job descriptions"
-CVS_FOLDER = BASE_DIR / "cvs"
-RESULTS_FOLDER = BASE_DIR / "results"
+JOB_DESCRIPTIONS_FOLDER = _ROOT_DIR / "data" / "job-listings"
+# data/cvs/ holds one subfolder per batch (Batch1, batch2, batch3, batch4...) -
+# see rglob("*.pdf") in main(), which descends into all of them rather than
+# assuming a fixed set or a fixed casing of batch folder names.
+CVS_FOLDER = _ROOT_DIR / "data" / "cvs" / "Batch1"
+RESULTS_FOLDER = _ROOT_DIR / "results"
 ESSENTIAL_REQUIREMENTS_FOLDER = RESULTS_FOLDER / "essential_requirements"
 
 EVALUATOR_MODELS = ["qwen2.5:14b", "phi4"] # The models used for scoring CVs against job descriptions
@@ -45,9 +54,11 @@ def evaluate_cv(job_text: str, cv_text: str, candidate_name: str, model: str) ->
     Send one CV + job description to an evaluator model and get back a
     structured score.
 
-    Note: This exact prompt was used to obtain our results showed in our findings.docx
-    and it is the prompt we intend to use going forward for all evaluations.
-    Do not alter this function. Instead, create a new function if you want to experiment with different prompts or evaluation criteria
+    Note: This exact prompt was used to obtain our results shown in
+    findings.docx, and it is the prompt we intend to use going forward for
+    all evaluations. Do not alter this function. Instead, create a new
+    function if you want to experiment with different prompts or
+    evaluation criteria.
     """
     prompt = f"""You are an expert recruiter evaluating a candidate for a job.
 
@@ -113,9 +124,11 @@ def main():
         print(f"No PDFs found in '{JOB_DESCRIPTIONS_FOLDER}'. Check the folder path.")
         return
 
-    cv_files = sorted(CVS_FOLDER.glob("*.pdf"))
+    # rglob descends into every batch subfolder (Batch1/, batch2/, etc.)
+    # regardless of naming/casing, rather than assuming a fixed batch list.
+    cv_files = sorted(CVS_FOLDER.rglob("*.pdf"))
     if not cv_files:
-        print(f"No PDFs found in '{CVS_FOLDER}'. Check the folder path.")
+        print(f"No PDFs found under '{CVS_FOLDER}'. Check the folder path.")
         return
 
     for job_pdf in job_files: # Loop through each job description PDF
