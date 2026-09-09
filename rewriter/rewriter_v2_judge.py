@@ -67,7 +67,7 @@ FEEDBACK_DIR = _ROOT_DIR / "data" / "rewrite_feedback"
 # (phi4, qwen2.5:14b) that produced the two CVs being judged here.
 DEFAULT_MODEL = "deepseek-r1:8b"
 DEFAULT_HOST = "http://localhost:11434/api/chat"
-DEFAULT_NUM_PREDICT = 2048
+DEFAULT_NUM_PREDICT = 4096
 DEFAULT_NUM_CTX = 8192
 REQUIRED_KEYS = {"candidate", "job_title", "recommended_rewrite", "recommendation_reason", "career_roadmap"}
 
