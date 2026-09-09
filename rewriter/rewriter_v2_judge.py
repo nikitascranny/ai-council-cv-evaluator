@@ -6,10 +6,12 @@ i.e. one folder under data/rewrite_results/<job_title>/<candidate>/), reads
 both agents' rewritten CVs plus their metadata.csv, reads the respective job
 listing PDF (via document_utils.extract_text_from_pdf - see common/
 document_utils.py), and asks a local Ollama model acting as a "judge" for
-two things:
+three things:
 
   * which rewrite to submit for this job, and why
   * a suggested career roadmap
+  * a few alternative career paths outside this job listing, based on the
+    candidate's demonstrated skills and strengths
 
 rewriter_v2.py deliberately stops at producing the two rewrites side by side.
 
@@ -69,7 +71,8 @@ DEFAULT_MODEL = "deepseek-r1:8b"
 DEFAULT_HOST = "http://localhost:11434/api/chat"
 DEFAULT_NUM_PREDICT = 4096
 DEFAULT_NUM_CTX = 8192
-REQUIRED_KEYS = {"candidate", "job_title", "recommended_rewrite", "recommendation_reason", "career_roadmap"}
+REQUIRED_KEYS = {"candidate", "job_title", "recommended_rewrite", "recommendation_reason",
+                 "career_roadmap", "alternative_careers"}
 
 
 # =====================================================================
@@ -246,6 +249,9 @@ is a real quality signal, not a detail to ignore.
 3. Suggest a concrete career roadmap for this candidate: realistic next steps, skills or \
 experience worth building, and the kind of roles to target next, given their background and \
 this job listing.
+4. Separately, set this job listing aside and suggest 2-3 alternative career paths that fit \
+the skills and strengths evident in the candidate's CV, but are meaningfully different from \
+"{submission.job_title}".
 
 Respond with ONLY a single valid JSON object (no markdown fences, no extra commentary), with \
 exactly these keys:
@@ -259,12 +265,17 @@ justifying the pick, referencing the fact-check results where relevant>",
     {{"step": "<short name for this step, e.g. 'Apply for the role with Rewrite B'>",
      "action": "<what the candidate should concretely do for this step>"}},
     {{"step": "<next step>", "action": "<what to do>"}}
-  ]
+  ],
+  "alternative_careers": ["<a different role or career path, distinct from '{submission.job_title}'>", "<another one>"]
 }}
 
 career_roadmap must be an ordered JSON array of step objects like the ones above - not a single \
 string - starting with applying to this job and continuing with realistic next steps: skills or \
 experience worth building, and the kind of roles to target after this one.
+
+alternative_careers must be a JSON array of 2-3 short strings, each naming one specific role or \
+career path (not "{submission.job_title}" itself) that suits the candidate's demonstrated \
+skills and strengths.
 """
 
 
@@ -280,10 +291,13 @@ def _valid(parsed: dict, agent_names: list) -> bool:
     roadmap = parsed.get("career_roadmap")
     if not isinstance(roadmap, list) or not roadmap:
         return False
-    return all(
-        isinstance(step, dict) and step.get("step") and step.get("action")
-        for step in roadmap
-    )
+    if not all(isinstance(step, dict) and step.get("step") and step.get("action")
+               for step in roadmap):
+        return False
+    alt_careers = parsed.get("alternative_careers")
+    if not isinstance(alt_careers, list) or not alt_careers:
+        return False
+    return all(isinstance(career, str) and career.strip() for career in alt_careers)
 
 
 def call_judge_with_retries(prompt: str, agent_names: list, model: str, host: str,
