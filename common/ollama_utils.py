@@ -38,7 +38,8 @@ def call_ollama_json(model: str,
                      keep_alive=0, # keep_alive can be str or int. int= in seconds. str e.g. 5m = 5 minutes
                      host: str = OLLAMA_URL,
                      temperature=None, # float
-                     timeout: int=3600 # guard against hung request (alive but stuck process). To refactor in evaluate files.
+                     timeout: int=3600, # guard against hung request (alive but stuck process). To refactor in evaluate files.
+                     num_ctx: int = None, # context window size in tokens; None leaves Ollama's default (usually 4096)
                     ):
 
     """
@@ -66,7 +67,8 @@ def call_ollama_json(model: str,
         keep_alive=keep_alive,
         host=host,
         temperature=temperature,
-        timeout=timeout
+        timeout=timeout,
+        num_ctx=num_ctx,
     )
 
     if error:
@@ -88,7 +90,8 @@ def call_ollama_text(model: str,
                      keep_alive=0, # keep_alive can be str or int. int= in seconds. str e.g. 5m = 5 minutes
                      host: str = OLLAMA_URL,
                      temperature=None, # float
-                     timeout: int=3600 # guard against hung request (alive but stuck process). To refactor in evaluate files.
+                     timeout: int=3600, # guard against hung request (alive but stuck process). To refactor in evaluate files.
+                     num_ctx: int = None, # context window size in tokens; None leaves Ollama's default (usually 4096)
                     ):
 
     """
@@ -106,6 +109,8 @@ def call_ollama_text(model: str,
     make a blank CV look like it passed every downstream check.
     """
     options: dict[str, Union[int, float]] = {"num_predict": num_predict}
+    if num_ctx is not None:
+        options["num_ctx"] = num_ctx
     try:
         # gets the models reply from the local Ollama API and raises an exception if the request fails
         response = requests.post(

@@ -68,6 +68,7 @@ FEEDBACK_DIR = _ROOT_DIR / "data" / "rewrite_feedback"
 DEFAULT_MODEL = "deepseek-r1:8b"
 DEFAULT_HOST = "http://localhost:11434/api/chat"
 DEFAULT_NUM_PREDICT = 2048
+DEFAULT_NUM_CTX = 8192
 REQUIRED_KEYS = {"candidate", "job_title", "recommended_rewrite", "recommendation_reason", "career_roadmap"}
 
 
@@ -287,7 +288,7 @@ def _valid(parsed: dict, agent_names: list) -> bool:
 
 def call_judge_with_retries(prompt: str, agent_names: list, model: str, host: str,
                              num_predict: int, temperature: float, timeout: int,
-                             max_retries: int):
+                             max_retries: int, num_ctx: int = DEFAULT_NUM_CTX):
     """
     Call the judge model, retrying on a parse failure or a reply that
     doesn't name one of the actual agents (mirrors evaluator/judge.py's
@@ -299,8 +300,8 @@ def call_judge_with_retries(prompt: str, agent_names: list, model: str, host: st
     while True:
         attempt += 1
         parsed, error = call_ollama_json(
-            model, prompt, num_predict=num_predict, keep_alive="5m",
-            host=host, temperature=temperature, timeout=timeout,
+            model, prompt, num_predict=num_predict, keep_alive="5m", #TODO
+            host=host, temperature=temperature, timeout=timeout, num_ctx=num_ctx,
         )
         if error and error.startswith("REQUEST ERROR"):
             sys.exit(f"err: could not get a response from ollama at {host} ({error}). "
@@ -346,6 +347,10 @@ def _parse_args():
     ap.add_argument("--model", default=DEFAULT_MODEL, help=f"Judge model (default: {DEFAULT_MODEL}).")
     ap.add_argument("--host", default=DEFAULT_HOST, help=f"Ollama host (default: {DEFAULT_HOST}).")
     ap.add_argument("--num-predict", type=int, default=DEFAULT_NUM_PREDICT)
+    ap.add_argument("--num-ctx", type=int, default=DEFAULT_NUM_CTX,
+                     help="Context window size in tokens (default: %(default)s). "
+                          "Judge prompts (job listing + every rewrite) can exceed "
+                          "Ollama's 4096-token default, causing a 400 error.")
     ap.add_argument("--temperature", type=float, default=0.2)
     ap.add_argument("--timeout", type=int, default=3600)
     ap.add_argument("--max-retries", type=int, default=3)
@@ -395,7 +400,7 @@ def main():
         parsed, error = call_judge_with_retries(
             prompt, agent_names, args.model, args.host,
             num_predict=args.num_predict, temperature=args.temperature,
-            timeout=args.timeout, max_retries=args.max_retries,
+            timeout=args.timeout, max_retries=args.max_retries, num_ctx=args.num_ctx,
         )
         print(f"  done in {time.time() - start:.1f}s")
 
