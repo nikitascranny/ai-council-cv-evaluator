@@ -1,23 +1,19 @@
 """
 rewriter_v2.py
 
-Rewriter Variant 2 (graduate use). Given one candidate's CV and one job
-listing, runs two independent rewriting agents that each tailor the CV
-toward the job, and returns both results for the user to compare.
+Rewriter Variant 2 (graduate use). Given one candidate's CV and a job
+title, runs two independent rewriting agents that each tailor the CV
+toward that role, and returns both results for the user to compare.
 
-Unlike rewriter_v1.py, this variant DELIBERATELY gives each agent the full
-job listing, not just the title - the goal here is tailoring, not measuring
-phrasing sensitivity. That makes the fact guard more important, not less:
-a model that can see the actual requirements has more temptation to quietly
-upgrade a claim to match one. See fact_guard.py for the shared check.
-
-What this file does NOT do yet, on purpose:
-- No judge agent. The two rewrites are returned as-is for the caller to
-  display side by side; reconciling/critiquing them is a separate,
-  not-yet-built step.
-- No docx export. rewrite_cv() returns plain text plus structured metadata
-  (RewriteResult) specifically so that export step can be built later
-  without reshaping this data - not built now.
+Each agent is given only the job TITLE, not the full job listing text -
+the same design rewriter_v1.py uses for its phrasing-sensitivity probe.
+Previously this variant deliberately passed the full listing (see git
+history for that version); that's been dropped in favour of title-only
+so both variants share the same input shape. The fact guard matters just
+as much either way: fact_guard.title_fabricated() still checks the
+rewrite hasn't claimed to already hold job_title, and the rest of the
+guard (new numbers, new qualifications) is independent of how much job
+context the model saw. See fact_guard.py for the shared check.
 
 Guard behaviour if an agent's rewrite is still flagged after one strict
 retry: rather than showing the user a rewrite we can't vouch for, or
@@ -54,7 +50,7 @@ ROOT_DIR = BASE_DIR.parent                    # .../ai-cv-eval-main
 # rather than rewriter/ reaching into evaluator/'s own folder.
 sys.path.insert(0, str(ROOT_DIR / "common"))
 
-from document_utils import extract_text_from_pdf, load_cv
+from document_utils import load_cv
 from ollama_utils import call_ollama_text
 from fact_guard import rejection_reasons, advisory_caps_runs
 
@@ -103,10 +99,12 @@ class RewriteResult:
         return asdict(self)
 
 
-_REWRITE_PROMPT = """You are helping a candidate tailor their CV for a specific job application.
+_REWRITE_PROMPT = """You are helping a candidate tailor their CV for a job application.
+
+The candidate is applying for the following role: {job_title}
 
 Rewrite the CV below so that it highlights the experience, skills and
-achievements most relevant to the job description, and reads clearly and
+achievements most relevant to that role, and reads clearly and
 professionally throughout.
 
 Rules, all mandatory:
@@ -124,9 +122,6 @@ Rules, all mandatory:
 - Output the rewritten CV as plain text and nothing else. No preamble, no
   commentary, no markdown fences.
 
-JOB DESCRIPTION:
-{job_text}
-
 CV:
 {cv_text}
 """
@@ -142,23 +137,29 @@ already works in the advertised role unless the CV itself says so.
 """
 
 
-def build_rewrite_prompt(cv_text: str, job_text: str, job_title: str, *, strict: bool = False) -> str:
+def build_rewrite_prompt(cv_text: str, job_title: str, *, strict: bool = False) -> str:
     """
     Plain string replacement rather than str.format/f-string: a CV body can
     contain literal curly braces (template artifacts, copy-paste from other
     tools), which .format() would misread as fields.
 
-    job_title isn't inserted into the prompt directly - the model reads the
-    full job_text and infers the role from that, same as a human tailoring
-    a CV would. job_title is still passed through to the guard
-    (fact_guard.title_fabricated, via rejection_reasons) as the specific
-    string to check the rewrite hasn't claimed to already hold.
+    job_title IS inserted directly into the prompt now (unlike
+    rewriter_v1.build_rewrite_prompt, which deliberately withholds it to
+    avoid the model adopting the role - see that function's docstring).
+    v2 needs the model to know what it's tailoring for, since there's no
+    job description left to infer it from, so this is a real trade-off:
+    telling the model the target role makes it more likely to slip into
+    writing as if the candidate already holds it. That's exactly the
+    failure title_fabricated() (via rejection_reasons(), called from
+    _run_agent) exists to catch - a rewrite that does this gets a strict
+    retry and, if it still fails, falls back to the original CV rather
+    than reaching the caller unflagged.
     """
-    prompt = _REWRITE_PROMPT.replace("{job_text}", job_text).replace("{cv_text}", cv_text)
+    prompt = _REWRITE_PROMPT.replace("{job_title}", job_title).replace("{cv_text}", cv_text)
     return prompt + _STRICT_SUFFIX if strict else prompt
 
 
-def _run_agent(cv_text: str, job_text: str, job_title: str, candidate_name: str, model: str) -> RewriteResult:
+def _run_agent(cv_text: str, job_title: str, candidate_name: str, model: str) -> RewriteResult:
     """
     One agent's full attempt: rewrite, guard, retry once with a strict
     reminder if flagged, and fall back to the original CV text if the
@@ -170,7 +171,7 @@ def _run_agent(cv_text: str, job_text: str, job_title: str, candidate_name: str,
         original_text=cv_text, rewritten_text=cv_text,
     )
 
-    prompt = build_rewrite_prompt(cv_text, job_text, job_title)
+    prompt = build_rewrite_prompt(cv_text, job_title)
     text, error = call_ollama_text(model, prompt, num_predict=REWRITE_NUM_PREDICT)
     if error:
         result.error = error
@@ -179,7 +180,7 @@ def _run_agent(cv_text: str, job_text: str, job_title: str, candidate_name: str,
     reasons = rejection_reasons(cv_text, text, job_title)
     if reasons:
         result.retried = True
-        strict_prompt = build_rewrite_prompt(cv_text, job_text, job_title, strict=True)
+        strict_prompt = build_rewrite_prompt(cv_text, job_title, strict=True)
         text, error = call_ollama_text(model, strict_prompt, num_predict=REWRITE_NUM_PREDICT)
         if error:
             result.error = error
@@ -209,7 +210,7 @@ def _run_agent(cv_text: str, job_text: str, job_title: str, candidate_name: str,
     return result
 
 
-def rewrite_cv(cv_text: str, job_text: str, job_title: str, candidate_name: str = "") -> list[RewriteResult]:
+def rewrite_cv(cv_text: str, job_title: str, candidate_name: str = "") -> list[RewriteResult]:
     """
     Run both independent rewriting agents against one candidate/job pair
     and return both results, for the caller to display side by side.
@@ -219,7 +220,7 @@ def rewrite_cv(cv_text: str, job_text: str, job_title: str, candidate_name: str 
     is producing the two candidate rewrites plus their guard status.
     """
     return [
-        _run_agent(cv_text, job_text, job_title, candidate_name, model)
+        _run_agent(cv_text, job_title, candidate_name, model)
         for model in AGENT_MODELS
     ]
 
@@ -320,9 +321,8 @@ def main():
 
     cv = load_cv(cv_path)
     cv_text = cv.full_text()
-    job_text = extract_text_from_pdf(job_path)
 
-    results = rewrite_cv(cv_text, job_text, job_title, candidate_name=candidate_name)
+    results = rewrite_cv(cv_text, job_title, candidate_name=candidate_name)
 
     # Save outputs to structured directories
     saved_dir = save_results(results)
