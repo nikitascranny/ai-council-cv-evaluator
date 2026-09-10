@@ -86,5 +86,17 @@ def sse_frame(event) -> str:
 
     json.dumps escapes newlines, which matters: a model summary containing one
     would otherwise end the frame early and truncate the message.
+
+    The run/done event's payload never goes over the wire. It rides on the
+    event so the registry can lift it into run.payloads, and the browser has
+    no use for it - the page reads a finished run back over HTTP. Sending it
+    anyway meant streaming the whole CV text and every rewrite to a client
+    that discards them, and candidate mode's payload holds RewriteResult
+    objects, which json.dumps cannot encode at all: the run finished and then
+    died on its last frame, taking the "done" link with it.
     """
-    return "data: {}\n\n".format(json.dumps(event.to_dict(), ensure_ascii=False))
+    data = event.to_dict()
+    if "payload" in data.get("detail", {}):
+        data["detail"] = {k: v for k, v in data["detail"].items()
+                          if k != "payload"}
+    return "data: {}\n\n".format(json.dumps(data, ensure_ascii=False))
