@@ -8,8 +8,11 @@ decides how to render them.
 from dataclasses import dataclass, field
 
 # "run" is the envelope event carrying the finished payload; "rank" is emitted
-# by batch runs as the ordering firms up.
-STAGES = ("parse", "council", "essential", "judge", "rewrite", "rank", "run")
+# by batch runs as the ordering firms up. "rewrite_v2" is candidate mode's
+# only working stage - distinct from "rewrite", which is reviewer mode's
+# phrasing-sensitivity probe and measures something else entirely.
+STAGES = ("parse", "council", "essential", "judge", "rewrite", "rewrite_v2",
+          "rank", "run")
 STATES = ("start", "progress", "done", "failed")
 
 

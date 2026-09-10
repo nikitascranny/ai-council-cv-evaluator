@@ -23,12 +23,12 @@ from pathlib import Path
 from urllib.parse import parse_qs, urlparse
 
 from ui.pipeline import candidate as candidate_mod
-from ui.pipeline import corpus, evaluation
+from ui.pipeline import corpus, deps as deps_mod, evaluation
 from ui.pipeline import runs as runs_mod
 from ui.pipeline.backends import Settings
 from ui.pipeline.deps import MissingTeamCode, team_deps
 from ui.pipeline.events import Event
-from ui import pages, report
+from ui import docx_export, pages, report
 
 PORT = 8000
 
@@ -36,11 +36,16 @@ PORT = 8000
 @dataclass
 class Response:
     status: int
-    body: str
+    body: "str | bytes"
     content_type: str = "text/html; charset=utf-8"
     headers: dict = field(default_factory=dict)
 
     def bytes(self) -> bytes:
+        """A .docx body arrives already encoded - it is zip archive bytes, not
+        text, and .encode() on it would raise. Pages stay str and encode here
+        as before, so every existing caller is unaffected."""
+        if isinstance(self.body, bytes):
+            return self.body
         return self.body.encode("utf-8")
 
 
@@ -109,23 +114,89 @@ def reviewer(form):
 
 @route("GET", "/candidate")
 def candidate_view(form):
-    """Candidate mode's page, driven through the real adapter.
+    """The CV/listing picker, or an honest empty state.
 
-    No CV-picking form exists yet for this mode - that is a separate task -
-    so this calls generate() with placeholder inputs purely to ask the seam
-    "is rewriter v2 wired up", the same question a real request would ask.
-    NotAvailable is ui.pipeline.candidate's honest answer while BACKEND is None; a
-    teammate setting BACKEND changes what this page renders without anything
-    here needing to change.
+    generate() is not called here - asking "is v2 importable" is what
+    candidate_mod.probe() is for, and calling generate() with placeholder
+    arguments to find out (as this route used to) would now start a real
+    two-model rewrite the moment the seam works.
     """
     try:
-        candidate_mod.generate("", "")
+        candidate_mod.probe()
     except candidate_mod.NotAvailable as exc:
         return Response(200, pages.candidate_page(str(exc)))
-    return Response(200, pages.candidate_page(
-        "Rewriter v2 is wired up, but this page does not yet let you pick a "
-        "CV and a job listing for it - that part is still being built.",
-        available=True))
+    jobs, cvs = corpus.discover_jobs(), corpus.discover_cvs()
+    if not jobs or not cvs:
+        return Response(200, pages.candidate_page(
+            "No job listings or CVs were found in the corpus.", available=True))
+    return Response(200, pages.candidate_form(jobs, cvs, corpus.label_for))
+
+
+@route("POST", "/candidate/run")
+def candidate_run(form):
+    job = next(iter(form.get("job", [])), None)
+    cv = next(iter(form.get("cv", [])), None)
+    if not job or not cv:
+        return Response(400, pages.layout(
+            "Nothing selected",
+            "<div class='card'>Pick a job listing and your CV.</div>"))
+
+    def runner():
+        deps = deps_mod.team_deps()
+        return evaluation.run_candidate(
+            Path(job), Path(cv), deps, candidate_mod.generate)
+
+    try:
+        run_id = runs_mod.REGISTRY.start(runner, mode="candidate")
+    except runs_mod.RunBusy:
+        return Response(409, pages.layout(
+            "Busy", "<div class='card'>A run is already in progress. Wait for "
+                    "it to finish, or reload its page.</div>"))
+    return Response(303, "", headers={"Location": "/run/" + run_id})
+
+
+@route("GET", r"/candidate/([0-9a-f]+)")
+def candidate_results(form, run_id):
+    run = runs_mod.REGISTRY.get(run_id)
+    if run is None or not run.payloads:
+        return Response(404, pages.layout(
+            "Not ready",
+            "<div class='card'>That run has not produced a rewrite yet.</div>"))
+    return Response(200, pages.candidate_results(run_id, run.payloads[0]))
+
+
+@route("GET", r"/candidate/([0-9a-f]+)/download/(\d+)")
+def candidate_download(form, run_id, index):
+    """One agent's version as a .docx.
+
+    A fallback is refused rather than served: its text is the candidate's own
+    CV, and handing that back as a download named like a rewrite is the
+    confusion the guard exists to prevent. The page disables the button, and
+    this refuses the hand-typed URL behind it.
+    """
+    run = runs_mod.REGISTRY.get(run_id)
+    if run is None or not run.payloads:
+        return Response(404, pages.layout(
+            "Not ready",
+            "<div class='card'>That run has not produced a rewrite yet.</div>"))
+    results = run.payloads[0].get("rewrites") or []
+    idx = int(index)
+    if idx >= len(results):
+        return Response(404, pages.layout(
+            "Not found", "<div class='card'>No such version.</div>"))
+    result = results[idx]
+    if result.used_fallback:
+        return Response(409, pages.layout(
+            "Not a rewrite",
+            "<div class='card'>That version is your original CV - the check "
+            "rejected the rewrite - so there is nothing to download.</div>"))
+    name = docx_export.filename_for(result)
+    return Response(
+        200, docx_export.docx_bytes(result),
+        content_type="application/vnd.openxmlformats-officedocument"
+                     ".wordprocessingml.document",
+        headers={"Content-Disposition":
+                 'attachment; filename="{}"'.format(name)})
 
 
 @route("GET", "/runs")
@@ -232,10 +303,11 @@ def reviewer_run(form):
 
 @route("GET", r"/run/([0-9a-f]+)")
 def run_view(form, run_id):
-    if runs_mod.REGISTRY.get(run_id) is None:
+    run = runs_mod.REGISTRY.get(run_id)
+    if run is None:
         return Response(404, pages.layout(
             "Not found", "<div class='card'>No such run.</div>"))
-    return Response(200, pages.live_view(run_id))
+    return Response(200, pages.live_view(run_id, run.mode))
 
 
 @route("GET", r"/run/([0-9a-f]+)/report")

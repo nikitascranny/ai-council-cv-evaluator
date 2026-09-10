@@ -145,3 +145,28 @@ def rewrite_stage(cv_text, job_title, scorer, deps, candidate: str = "",
               "new_facts": list(out.get("reasons") or out.get("new_facts") or [])}
     yield Event("rewrite", "done", detail, time.time() - started, candidate)
     return out
+
+
+def rewrite_v2_stage(cv_text, job_text, job_title, candidate_name, generate):
+    """Rewriter v2's two agents, for candidate mode.
+
+    v2 runs both agents itself and returns when both are done, so unlike
+    council_stage this cannot report per-agent progress without reaching
+    inside it. One start event and one done event naming both agents is the
+    honest granularity - a fake per-agent row that jumped from 0 to 2 would
+    tell the user less than nothing.
+
+    Both agents failing is not an exception here: v2 records the failure on
+    each result's .error and returns them anyway, and the page shows that
+    rather than a blank screen.
+    """
+    yield Event("rewrite_v2", "start", {"job_title": job_title},
+                candidate=candidate_name)
+    started = time.time()
+    results = generate(cv_text, job_text, job_title, candidate_name)
+    yield Event("rewrite_v2", "done",
+                {"agents": [r.agent_model for r in results],
+                 "fallbacks": [r.agent_model for r in results if r.used_fallback],
+                 "errors": [r.error for r in results if getattr(r, "error", None)]},
+                time.time() - started, candidate_name)
+    return results

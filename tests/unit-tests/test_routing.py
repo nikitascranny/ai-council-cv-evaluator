@@ -8,6 +8,7 @@ testable in-process. The handler class is a thin shell over it.
 import io
 import re
 import threading
+from unittest import mock
 from pathlib import Path
 
 import app
@@ -396,28 +397,93 @@ def test_the_live_view_names_the_current_candidate_and_resets_the_board(
     assert "escapeHtml(name)" in body
 
 
-def test_candidate_mode_says_v2_is_not_ready_rather_than_faking_it():
+def test_candidate_mode_offers_a_picker_now_that_v2_exists():
+    """This used to assert "Not available yet". v2 landed, so the honest
+    page is a form - and asserting the old message would now be asserting
+    that the UI lies about a component that works."""
     body = app.dispatch("GET", "/candidate", {}).bytes().decode("utf-8")
-    assert "Not available yet" in body
-    assert "v2" in body
+    assert "Not available" not in body
+    assert "action='/candidate/run'" in body
 
 
-# --- M2: /candidate must actually call ui.pipeline.candidate.generate() ------------
+def test_an_unreachable_rewriter_says_so_rather_than_showing_a_dead_form():
+    def boom():
+        raise app.candidate_mod.NotAvailable("rewriter v2 could not be loaded")
+    with mock.patch.object(app.candidate_mod, "probe", boom):
+        body = app.dispatch("GET", "/candidate", {}).bytes().decode("utf-8")
+    assert "Not available" in body
+    assert "rewriter v2" in body
 
 
-def test_candidate_page_changes_once_a_backend_is_wired_up(monkeypatch):
-    """The route hardcoded its message and never called generate(), so
-    ui.pipeline.candidate was dead outside its own tests. Setting BACKEND must
-    change what this page renders, proving the call is real."""
-    default_body = app.dispatch("GET", "/candidate", {}).bytes().decode("utf-8")
+def test_rendering_the_form_does_not_start_a_rewrite():
+    """The old route called generate() with placeholder arguments purely to
+    ask whether the backend was wired up. Harmless when v2 did not exist;
+    against the real v2 that runs two 14B models to draw a form."""
+    called = []
+    with mock.patch.object(app.candidate_mod, "generate",
+                           lambda *a, **k: called.append(a)):
+        app.dispatch("GET", "/candidate", {})
+    assert called == []
 
-    monkeypatch.setattr(app.candidate_mod, "BACKEND",
-                        lambda cv_path, job_title: "out/improved.docx")
-    wired_body = app.dispatch("GET", "/candidate", {}).bytes().decode("utf-8")
 
-    assert wired_body != default_body
-    assert "Not available yet" not in wired_body
-    assert "wired up" in wired_body.lower()
+def test_a_run_needs_both_a_cv_and_a_job():
+    assert app.dispatch("POST", "/candidate/run", {"job": ["j.pdf"]}).status == 400
+    assert app.dispatch("POST", "/candidate/run", {"cv": ["c.pdf"]}).status == 400
+
+
+def _finished_run(results):
+    """A completed candidate run in the registry, without touching Ollama."""
+    payload = {"candidate": "Jane Doe", "job_title": "Secretary",
+               "rewrites": results}
+    run_id = app.runs_mod.REGISTRY.start(
+        lambda: iter([Event("run", "done", {"payload": payload}, 0.0,
+                            "Jane Doe")]), mode="candidate")
+    app.runs_mod.REGISTRY.get(run_id).finished.wait(timeout=5)
+    return run_id
+
+
+def _rewrite(**kw):
+    from types import SimpleNamespace
+    base = dict(candidate="Jane Doe", job_title="Secretary", agent_model="phi4",
+                original_text="orig", rewritten_text="A rewritten CV.",
+                used_fallback=False, rejected=False, reasons=[], error=None)
+    base.update(kw)
+    return SimpleNamespace(**base)
+
+
+def test_the_results_page_shows_both_versions_with_their_own_downloads():
+    run_id = _finished_run([_rewrite(agent_model="phi4"),
+                            _rewrite(agent_model="qwen2.5:14b")])
+    body = app.dispatch("GET", "/candidate/" + run_id, {}).bytes().decode("utf-8")
+    assert "phi4" in body and "qwen2.5:14b" in body
+    assert "/download/0" in body and "/download/1" in body
+
+
+def test_a_fallback_version_is_labelled_and_cannot_be_downloaded():
+    """used_fallback means the text IS the candidate's original CV. Offering
+    it as a download named like a rewrite is the confusion the guard exists
+    to prevent, so the button is disabled and the URL behind it refuses."""
+    run_id = _finished_run([_rewrite(used_fallback=True)])
+    body = app.dispatch("GET", "/candidate/" + run_id, {}).bytes().decode("utf-8")
+    assert "not a rewrite" in body.lower()
+    assert "disabled" in body
+    assert app.dispatch("GET", "/candidate/{}/download/0".format(run_id), {}).status == 409
+
+
+def test_downloading_a_version_serves_a_real_docx():
+    import io as _io, zipfile
+    run_id = _finished_run([_rewrite()])
+    resp = app.dispatch("GET", "/candidate/{}/download/0".format(run_id), {})
+    assert resp.status == 200
+    assert "wordprocessingml" in resp.content_type
+    assert "attachment" in resp.headers["Content-Disposition"]
+    assert zipfile.is_zipfile(_io.BytesIO(resp.bytes()))
+
+
+def test_an_unknown_run_or_version_is_a_404_not_a_crash():
+    assert app.dispatch("GET", "/candidate/deadbeef", {}).status == 404
+    run_id = _finished_run([_rewrite()])
+    assert app.dispatch("GET", "/candidate/{}/download/7".format(run_id), {}).status == 404
 
 
 # --- C1: a failed candidate must not vanish from the batch UI --------------
@@ -481,3 +547,32 @@ def test_a_candidate_failure_event_names_the_candidate_and_the_error(
     ).bytes().decode("utf-8")
     assert "escapeHtml(e.candidate" in body
     assert "escapeHtml(e.detail.error" in body
+
+
+# --- the live view serves both modes ---------------------------------------
+
+
+def test_a_candidate_run_shows_its_own_stages_not_the_evaluators():
+    """Reviewer's five rows would leave council, essential and judge stuck on
+    'waiting' forever in a mode that never runs them - three silent failures
+    to anyone reading the board."""
+    run_id = _finished_run([_rewrite()])
+    body = app.dispatch("GET", "/run/" + run_id, {}).bytes().decode("utf-8")
+    assert "stage-rewrite_v2" in body
+    assert "stage-council" not in body and "stage-judge" not in body
+
+
+def test_a_candidate_run_finishes_by_pointing_at_the_rewrites():
+    run_id = _finished_run([_rewrite()])
+    body = app.dispatch("GET", "/run/" + run_id, {}).bytes().decode("utf-8")
+    assert "/candidate/" + run_id in body
+    assert "/report" not in body
+
+
+def test_a_reviewer_run_still_points_at_its_report():
+    run_id = app.runs_mod.REGISTRY.start(
+        lambda: iter([Event("run", "done", {"payload": {}}, 0.0, "Jane")]))
+    app.runs_mod.REGISTRY.get(run_id).finished.wait(timeout=5)
+    body = app.dispatch("GET", "/run/" + run_id, {}).bytes().decode("utf-8")
+    assert "/run/{}/report".format(run_id) in body
+    assert "stage-council" in body

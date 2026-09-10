@@ -16,8 +16,12 @@ class RunBusy(RuntimeError):
 
 
 class Run:
-    def __init__(self, run_id):
+    def __init__(self, run_id, mode: str = "reviewer"):
         self.id = run_id
+        # Which mode started this run. The live view is shared, but its stage
+        # rows and its "done" link differ, and only the starting route knows
+        # which kind of run this is.
+        self.mode = mode
         self.events = []
         self.payloads = []
         self.done = False
@@ -31,13 +35,13 @@ class RunRegistry:
         self._lock = threading.Lock()
         self._current = None
 
-    def start(self, runner) -> str:
+    def start(self, runner, mode: str = "reviewer") -> str:
         """runner is a zero-argument callable returning an Event iterator."""
         with self._lock:
             if self._current is not None and not self._runs[self._current].done:
                 raise RunBusy("a run is already in progress")
             run_id = uuid.uuid4().hex[:12]
-            run = Run(run_id)
+            run = Run(run_id, mode)
             self._runs[run_id] = run
             self._current = run_id
 

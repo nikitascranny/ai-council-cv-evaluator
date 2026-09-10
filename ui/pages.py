@@ -83,12 +83,32 @@ def reviewer_form(jobs, cvs, status, settings, label_for) -> str:
     return layout("Reviewer - AI CV Evaluator", body, mode="reviewer")
 
 
-def live_view(run_id: str) -> str:
-    """Stage list that fills in from the event stream."""
+_STAGES = {
+    "reviewer": ("parse", "council", "essential", "judge", "rewrite"),
+    "candidate": ("parse", "rewrite_v2"),
+}
+
+
+def stages_for(mode: str) -> tuple:
+    """Which rows the progress board shows.
+
+    Candidate mode runs two of the five reviewer stages, and showing the
+    other three stuck on "waiting" forever would read as three things that
+    silently failed rather than three that were never asked for.
+    """
+    return _STAGES.get(mode, _STAGES["reviewer"])
+
+
+def live_view(run_id: str, mode: str = "reviewer") -> str:
+    """Stage list that fills in from the event stream.
+
+    One view for both modes: the event stream, the board and the failure list
+    are identical, and only the stage names and where "done" points differ.
+    """
     rows = "".join(
         "<tr id='stage-{s}'><td>{s}</td><td class='state'>waiting</td>"
         "<td class='detail'></td></tr>".format(s=s)
-        for s in ("parse", "council", "essential", "judge", "rewrite"))
+        for s in stages_for(mode))
     script = """
     const source = new EventSource('/run/RUNID/events');
     let currentCandidate = null;
@@ -119,7 +139,7 @@ def live_view(run_id: str) -> str:
       ensureCandidate(e.candidate);
       if (e.stage === 'run' && e.state === 'done') {
         document.getElementById('done').innerHTML =
-          "<a href='/run/RUNID/report'>Open the full report</a>";
+          "<a href='DONEHREF'>DONETEXT</a>";
         return;
       }
       if (e.stage === 'run' && e.state === 'failed') {
@@ -133,7 +153,7 @@ def live_view(run_id: str) -> str:
         document.getElementById('failures-card').hidden = false;
         return;
       }
-      if (e.stage === 'rank') { renderRanking(e.detail.ranking); return; }
+      if (e.stage === 'rank') { RANKCALL return; }
       const row = document.getElementById('stage-' + e.stage);
       if (!row) return;
       row.querySelector('.state').textContent = e.state;
@@ -141,23 +161,39 @@ def live_view(run_id: str) -> str:
         Object.entries(e.detail).map(([k, v]) => k + ': ' + v).join('  ');
     };
     source.addEventListener('end', () => source.close());
-    function renderRanking(ranking) {
+    RANKFN
+    """.replace("RUNID", run_id)
+    # Candidate mode never emits a rank event - one CV, no shortlist - so its
+    # page ships neither the renderer nor the card. Leaving them in would put
+    # an empty "Ranking" panel and a /report link on a page that has no report.
+    ranking_fn = """function renderRanking(ranking) {
       document.getElementById('ranking').innerHTML =
         '<h3>Ranking</h3><table>' + ranking.map((r, i) =>
           '<tr><td>' + (i + 1) + '</td><td><a href="/run/RUNID/report/' +
           r.payload_index + '">' + escapeHtml(r.candidate) +
           '</a></td><td>' + (r.final_score === null ? '-' : r.final_score) +
           '</td></tr>').join('') + '</table>';
-    }
-    """.replace("RUNID", run_id)
+    }"""
+    if mode == "candidate":
+        script = (script.replace("DONEHREF", "/candidate/" + run_id)
+                        .replace("DONETEXT", "See your rewritten CV")
+                        .replace("RANKCALL", "").replace("RANKFN", ""))
+        ranking_card = ""
+    else:
+        script = (script.replace("DONEHREF", "/run/" + run_id + "/report")
+                        .replace("DONETEXT", "Open the full report")
+                        .replace("RANKCALL", "renderRanking(e.detail.ranking);")
+                        .replace("RANKFN", ranking_fn))
+        ranking_card = "<div class='card' id='ranking'></div>"
     body = ("<div class='card'><h2>Running</h2>"
             "<p id='candidate'></p>"
             "<table id='board'>{rows}</table>"
             "<p id='done'></p></div>"
             "<div class='card' id='failures-card' hidden>"
             "<h2>Failed candidates</h2><ul id='failures'></ul></div>"
-            "<div class='card' id='ranking'></div>"
-            "<script>{script}</script>").format(rows=rows, script=script)
+            "{ranking_card}"
+            "<script>{script}</script>").format(rows=rows, script=script,
+                                                ranking_card=ranking_card)
     return layout("Running - AI CV Evaluator", body)
 
 
@@ -173,16 +209,90 @@ def runs_index(rows) -> str:
 
 
 def candidate_page(message: str, available: bool = False) -> str:
-    """`available` distinguishes "the backend is not wired up" (the honest
-    default, since rewriter v2 does not exist yet) from "it is wired up but
-    this page has no CV-picking form" (I2/M2's actual-adapter case) - the two
-    are different messages and must not share the same "Not available yet"
-    heading.
+    """The honest empty state: rewriter v2 could not be reached at all.
+
+    `available` is kept for the case where v2 imports but the corpus is empty,
+    so "we cannot load the rewriter" and "there is nothing to rewrite" do not
+    share a heading - they are different problems with different fixes.
     """
-    heading = "Not built yet." if available else "Not available yet."
+    heading = "Nothing to rewrite." if available else "Not available."
     body = ("<div class='card'><h2>Candidate</h2>"
             "<p>Aim your CV at a listing you are applying for. The result is a "
             "Word document you can edit.</p>"
             "<div class='empty'><b>{}</b><p>{}</p></div>"
             "</div>").format(heading, html.escape(message))
     return layout("Candidate - AI CV Evaluator", body, mode="candidate")
+
+
+def candidate_form(jobs, cvs, label_for) -> str:
+    """Pick one CV and one listing. Single-select on both, unlike reviewer
+    mode: v2 rewrites one CV for one job, and the two agents it runs are the
+    comparison here - a second CV would just double an already slow run."""
+    body = ("<div class='card'><h2>Candidate</h2>"
+            "<p>Aim your CV at a listing you are applying for. Two models each "
+            "rewrite it, so you can compare and download whichever reads "
+            "better.</p>"
+            "<form method='post' action='/candidate/run'>"
+            "<label for='job'>Job listing</label>"
+            "<select id='job' name='job'>{jobs}</select>"
+            "<label for='cv'>Your CV</label>"
+            "<select id='cv' name='cv' size='10'>{cvs}</select>"
+            "<p><button type='submit'>Rewrite my CV</button></p>"
+            "</form></div>").format(jobs=_options(jobs, label_for),
+                                    cvs=_options(cvs, label_for))
+    return layout("Candidate - AI CV Evaluator", body, mode="candidate")
+
+
+def _rewrite_card(run_id: str, index: int, result) -> str:
+    """One agent's version, with the guard's verdict stated before the text.
+
+    The verdict goes above the rewrite, not below it, because a fallback is
+    not a rewrite at all and reading it as one for three paragraphs before
+    finding that out is the exact confusion rewriter_v2 warns against.
+    """
+    error = getattr(result, "error", None)
+    if error:
+        return ("<div class='card'><h3>{model}</h3>"
+                "<div class='empty'><b>This model failed.</b><p>{err}</p></div>"
+                "</div>").format(model=html.escape(result.agent_model),
+                                 err=html.escape(str(error)))
+
+    if result.used_fallback:
+        note = ("<div class='empty'><b>This is your original CV, not a "
+                "rewrite.</b><p>The check found the rewrite added information "
+                "your CV does not contain, so it was discarded.</p></div>")
+        button = "<p><button type='button' disabled>Nothing to download</button></p>"
+    else:
+        note = ""
+        if result.rejected:
+            note = ("<div class='empty'><b>Flagged.</b><p>Read this against "
+                    "your original before sending it anywhere.</p></div>")
+        button = ("<p><a href='/candidate/{rid}/download/{idx}'>"
+                  "<button type='button'>Download as Word</button></a></p>"
+                  ).format(rid=html.escape(run_id), idx=index)
+
+    reasons = ""
+    if result.reasons:
+        reasons = "<ul>{}</ul>".format("".join(
+            "<li>{}</li>".format(html.escape(str(r))) for r in result.reasons))
+
+    return ("<div class='card'><h3>{model}</h3>{note}{reasons}{button}"
+            "<pre class='rewrite'>{text}</pre></div>").format(
+                model=html.escape(result.agent_model), note=note,
+                reasons=reasons, button=button,
+                text=html.escape(result.rewritten_text or ""))
+
+
+def candidate_results(run_id: str, payload) -> str:
+    """Both versions side by side, each with its own download."""
+    results = payload.get("rewrites") or []
+    cards = "".join(_rewrite_card(run_id, i, r) for i, r in enumerate(results))
+    header = ("<div class='card'><h2>{cand}</h2>"
+              "<p>Rewritten for <b>{job}</b> by {n} models. They differ - that "
+              "is the point. Read both and pick the one that represents you "
+              "honestly.</p></div>").format(
+                  cand=html.escape(payload.get("candidate", "Your CV")),
+                  job=html.escape(payload.get("job_title", "the listing")),
+                  n=len(results))
+    return layout("Your rewritten CV - AI CV Evaluator", header + cards,
+                  mode="candidate")

@@ -159,3 +159,36 @@ def run_batch(job_path, cv_paths, settings, deps, out_dir=None):
 
     yield Event("rank", "done", {"ranking": rank(payloads)})
     return payloads
+
+
+def run_candidate(job_path, cv_path, deps, generate):
+    """Candidate mode: parse the CV, then rewrite it toward one listing.
+
+    Deliberately not a branch inside run_single. The two modes share only the
+    parse - reviewer mode scores a CV against a listing and produces a report,
+    candidate mode rewrites it and produces two documents - and folding them
+    together would put a settings flag in front of every stage that only one
+    of them runs.
+
+    The RewriteResults ride home on the run's payload so the results page and
+    the download route can both read them back without re-running two 14B
+    models to recover what was already computed.
+    """
+    job_path, cv_path = Path(job_path), Path(cv_path)
+    candidate = cv_path.stem
+    job_title = title_from_slug(job_path.stem)
+    started = time.time()
+
+    cv = yield from stages.parse_stage(cv_path, deps, candidate)
+    job_text = deps.extract_text(job_path)
+
+    results = yield from stages.rewrite_v2_stage(
+        cv.full_text(), job_text, job_title, candidate, generate)
+
+    payload = new_payload(job_path.stem, candidate)
+    payload.update({"mode": "candidate", "job_title": job_title,
+                    "job_text": job_text, "cv_text": cv.full_text(),
+                    "rewrites": results})
+    yield Event("run", "done", {"payload": payload},
+                time.time() - started, candidate)
+    return payload

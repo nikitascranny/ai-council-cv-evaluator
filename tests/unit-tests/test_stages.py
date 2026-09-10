@@ -7,6 +7,7 @@ run, and a rejected rewrite is a result rather than an error.
 
 import types
 
+from ui.pipeline import stages
 from ui.pipeline.deps import Deps
 from ui.pipeline.stages import (capture_paraphrase, council_stage, essential_stage,
                          judge_stage, parse_stage, rewrite_stage)
@@ -214,3 +215,52 @@ def test_rewrite_stage_omits_rewriter_model_when_not_given():
 def test_every_event_carries_the_candidate_for_batch_runs():
     events, _ = _drain(council_stage("job", "cv", "ALEX", ["phi4"], _deps()))
     assert all(e.candidate == "ALEX" for e in events)
+
+
+# --- candidate mode's rewrite stage ----------------------------------------
+
+
+def _rw(**kw):
+    from types import SimpleNamespace
+    base = dict(agent_model="phi4", used_fallback=False, error=None)
+    base.update(kw)
+    return SimpleNamespace(**base)
+
+
+def _drain(gen):
+    events = []
+    try:
+        while True:
+            events.append(next(gen))
+    except StopIteration as stop:
+        return events, stop.value
+
+
+def test_rewrite_v2_stage_reports_both_agents_and_returns_their_results():
+    results = [_rw(agent_model="phi4"), _rw(agent_model="qwen2.5:14b")]
+    events, got = _drain(stages.rewrite_v2_stage(
+        "cv", "job", "Secretary", "Jane", lambda *a: results))
+    assert [(e.stage, e.state) for e in events] == [
+        ("rewrite_v2", "start"), ("rewrite_v2", "done")]
+    assert got == results
+    assert events[1].detail["agents"] == ["phi4", "qwen2.5:14b"]
+
+
+def test_the_done_event_names_which_agents_fell_back():
+    """The board is the only place a user sees progress, so a run where the
+    guard rejected a rewrite must not look identical to one where it did not."""
+    results = [_rw(agent_model="phi4"),
+               _rw(agent_model="qwen2.5:14b", used_fallback=True)]
+    events, _ = _drain(stages.rewrite_v2_stage(
+        "cv", "job", "Secretary", "Jane", lambda *a: results))
+    assert events[1].detail["fallbacks"] == ["qwen2.5:14b"]
+
+
+def test_an_agent_error_is_reported_not_raised():
+    """v2 records a failed model on result.error and returns anyway, so both
+    slots still reach the page. Raising here would lose the good one too."""
+    results = [_rw(), _rw(agent_model="qwen2.5:14b", error="timeout")]
+    events, got = _drain(stages.rewrite_v2_stage(
+        "cv", "job", "Secretary", "Jane", lambda *a: results))
+    assert events[1].detail["errors"] == ["timeout"]
+    assert len(got) == 2
