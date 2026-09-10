@@ -1,6 +1,6 @@
 """What the CV states, for the reviewer to read directly.
 
-rewriter_v1 extracts these token classes to catch a rewrite that invented
+fact_guard extracts these token classes to catch a rewrite that invented
 something. Nothing else in the pipeline shows a reviewer the CV's own claims
 laid out, so the same extractors are read forwards here.
 
@@ -14,10 +14,10 @@ import sys
 from pathlib import Path
 
 _ROOT = Path(__file__).resolve().parent.parent
-if str(_ROOT / "rewriter") not in sys.path:
-    sys.path.insert(0, str(_ROOT / "rewriter"))
+if str(_ROOT / "common") not in sys.path:
+    sys.path.insert(0, str(_ROOT / "common"))
 
-import rewriter_v1  # noqa: E402
+import fact_guard  # noqa: E402
 
 
 def _verbatim(cv_text: str, token: str) -> str:
@@ -46,10 +46,10 @@ def facts_of(cv_text: str) -> dict:
     if not cv_text:
         return {"numbers": [], "qualifications": [], "organisations": []}
     qualifications = {_verbatim(cv_text, q)
-                       for q in rewriter_v1.extract_qualifications(cv_text)}
+                       for q in fact_guard.extract_qualifications(cv_text)}
     organisations = {_verbatim(cv_text, o)
-                      for o in rewriter_v1.extract_caps_runs(cv_text)}
-    return {"numbers": sorted(rewriter_v1.load_bearing_numbers(cv_text)),
+                      for o in fact_guard.extract_caps_runs(cv_text)}
+    return {"numbers": sorted(fact_guard.load_bearing_numbers(cv_text)),
             "qualifications": sorted(qualifications, key=str.casefold),
             "organisations": sorted(organisations, key=str.casefold)}
 

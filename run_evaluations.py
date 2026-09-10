@@ -35,10 +35,13 @@ from pathlib import Path
 
 import prompts
 
-# cv_parser.py lives in parser/, a sibling of this file at the repo root.
+# cv_pdf_parser.py and cv_sections.py live in parser/, a sibling of this file
+# at the repo root. extract()/parse()/EXTRACTORS are PDF-specific (cv_pdf_parser);
+# ParsedCV/PARSER_VERSION are the modality-agnostic data model (cv_sections).
 ROOT = Path(__file__).resolve().parent
 sys.path.insert(0, str(ROOT / "parser"))
-import cv_parser  # noqa: E402
+import cv_pdf_parser  # noqa: E402
+import cv_sections  # noqa: E402
 
 CV_DIR = ROOT / "Batch1" / "CVs"
 JOB_DIR = ROOT / "Batch1" / "Job Listings"
@@ -82,7 +85,7 @@ def extract(pdf: Path, extractor: str = "pymupdf", parser: str = "flat") -> str:
     comparison stops being a comparison, which is the same trap the per-extractor
     split already guards against.
 
-    parser="flat"        the original behaviour: cv_parser.extract()
+    parser="flat"        the original behaviour: cv_pdf_parser.extract()
     parser="structured"  geometry-aware parsing, which repairs reading order on
                          two-column CVs. Cached as the full ParsedCV JSON so the
                          UI and the essential-requirements agent can reuse it
@@ -94,18 +97,18 @@ def extract(pdf: Path, extractor: str = "pymupdf", parser: str = "flat") -> str:
         cached = directory / (pdf.stem + ".txt")
         if cached.exists():
             return cached.read_text(encoding="utf-8")
-        text = cv_parser.extract(pdf, extractor)
+        text = cv_pdf_parser.extract(pdf, extractor)
         cached.write_text(text, encoding="utf-8")
         return text
 
-    directory = CACHE / f"structured_v{cv_parser.PARSER_VERSION}" / extractor
+    directory = CACHE / f"structured_v{cv_sections.PARSER_VERSION}" / extractor
     directory.mkdir(parents=True, exist_ok=True)
     cached = directory / (pdf.stem + ".json")
 
     cv = None
     if cached.exists():
         try:
-            cv = cv_parser.ParsedCV.from_dict(
+            cv = cv_sections.ParsedCV.from_dict(
                 json.loads(cached.read_text(encoding="utf-8")))
         except (json.JSONDecodeError, KeyError):
             # A torn cache entry must not brick every later run. write_text is
@@ -118,7 +121,7 @@ def extract(pdf: Path, extractor: str = "pymupdf", parser: str = "flat") -> str:
             # module's promise that it is safe to re-run after a crash.
             cv = None
     if cv is None:
-        cv = cv_parser.parse(pdf, extractor)
+        cv = cv_pdf_parser.parse(pdf, extractor)
         cached.write_text(json.dumps(cv.to_dict(), indent=1), encoding="utf-8")
 
     # Warn on the cache HIT as well as the miss. Scanned/image-only pages are
@@ -214,7 +217,7 @@ def main():
     ap.add_argument("--num-ctx", type=int, default=8192,
                     help="8192 fits the longest CV + longest listing + output")
     ap.add_argument("--prompt-version", default="v1_plain", choices=list(prompts.VERSIONS))
-    ap.add_argument("--extractor", default="pymupdf", choices=cv_parser.EXTRACTORS,
+    ap.add_argument("--extractor", default="pymupdf", choices=cv_pdf_parser.EXTRACTORS,
                     help="pypdf reproduces the original Batch1 text; pymupdf is cleaner")
     ap.add_argument("--parser", default="flat", choices=("flat", "structured"),
                     help="flat reproduces the original text; structured repairs "

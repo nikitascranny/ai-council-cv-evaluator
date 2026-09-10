@@ -5,6 +5,12 @@ the team's code vendored from their branches. The September reorg committed
 that code to evaluator/ instead, and left _integration() pointing at a path
 that no longer exists. This is its replacement.
 
+The second reorg then split that code again: the modules shared by both
+evaluator/ and rewriter/ - document_utils, ollama_utils, results_io,
+fact_guard - moved to common/, and the CV parser to parser/cv_pdf_parser.py.
+So the modules this resolves against now come from four directories, not two,
+and common/ is the one that must exist for anything here to import at all.
+
 Runners take a Deps rather than importing any of this directly, so the test
 suite never loads the team's modules and never reaches Ollama.
 """
@@ -19,7 +25,7 @@ ROOT = Path(__file__).resolve().parent.parent.parent
 
 
 class MissingTeamCode(RuntimeError):
-    """evaluator/ or rewriter/ is not where it should be."""
+    """One of common/, evaluator/, parser/ or rewriter/ is not where it should be."""
 
 
 @dataclass
@@ -36,15 +42,18 @@ class Deps:
 
 def team_deps(root: Path = ROOT) -> Deps:
     root = Path(root)
+    common = root / "common"
     evaluator = root / "evaluator"
+    parser = root / "parser"
     rewriter = root / "rewriter"
-    for directory in (evaluator, rewriter):
+    for directory in (common, evaluator, parser, rewriter):
         if not directory.is_dir():
             raise MissingTeamCode(
-                "{} not found under {}. The evaluator, judge and rewriter live "
-                "there since the September reorg.".format(directory.name, root))
+                "{} not found under {}. The shared modules, evaluator, judge, "
+                "parser and rewriter live there since the September "
+                "reorg.".format(directory.name, root))
 
-    for directory in (evaluator, rewriter, root):
+    for directory in (common, evaluator, parser, rewriter, root):
         if str(directory) not in sys.path:
             sys.path.insert(0, str(directory))
 
