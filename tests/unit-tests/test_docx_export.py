@@ -83,3 +83,66 @@ def test_a_colon_in_the_model_tag_does_not_reach_the_filename():
 def test_empty_rewritten_text_still_produces_a_readable_document():
     raw = docx_export.docx_bytes(_result(rewritten_text=""))
     assert zipfile.is_zipfile(io.BytesIO(raw))
+
+
+# --- markdown a model emits despite being told not to -----------------------
+
+
+def _doc(text):
+    return docx_export.build_document(_result(rewritten_text=text))
+
+
+def _visible(doc):
+    return "\n".join(p.text for p in doc.paragraphs if p.text.strip())
+
+
+def test_bold_markers_become_bold_not_literal_asterisks():
+    """phi4 emitted 26 markdown markers from a prompt that asked for plain
+    text, so a candidate's finished CV read **Jason Muller** with the
+    asterisks showing. qwen2.5 emitted none from the same prompt - no
+    wording reliably stops it, so the export has to cope."""
+    doc = _doc("**Jason Muller**\nPretoria, South Africa")
+    assert "**" not in _visible(doc)
+    bolded = [r.text for p in doc.paragraphs for r in p.runs if r.bold]
+    assert "Jason Muller" in bolded
+
+
+def test_text_around_a_bold_run_survives():
+    doc = _doc("**Acting Assistant Manager** | Uncle Dave's | 2019-2020")
+    text = _visible(doc)
+    assert "Uncle Dave's" in text and "2019-2020" in text
+    assert "**" not in text
+
+
+def test_markdown_bullets_become_real_list_items():
+    doc = _doc("- Supported daily site operations\n- Handled escalations")
+    bullets = [p for p in doc.paragraphs if p.style.name == "List Bullet"]
+    assert len(bullets) == 2
+    assert bullets[0].text == "Supported daily site operations"
+
+
+def test_hash_headings_become_word_headings():
+    doc = _doc("## Professional Experience\nAssistant Manager")
+    styles = [p.style.name for p in doc.paragraphs if p.text.strip()]
+    assert any(s.startswith("Heading") for s in styles)
+
+
+def test_each_line_is_its_own_paragraph():
+    """Splitting on blank lines buried single newlines inside one paragraph,
+    and Word does not render those as breaks - a whole CV arrived as two
+    unbroken slabs."""
+    doc = _doc("JASON MULLER\nPretoria\nPROFESSIONAL PROFILE\nAdaptable.")
+    assert len([p for p in doc.paragraphs if p.text.strip()]) == 4 + 2
+
+
+def test_an_unpaired_asterisk_is_left_alone():
+    """More likely the candidate's own punctuation than a formatting
+    instruction, and eating it would silently alter their CV."""
+    assert "2 * 3" in _visible(_doc("Throughput was 2 * 3 units"))
+
+
+def test_plain_text_is_unchanged_by_the_markdown_handling():
+    """qwen2.5 emits no markdown; its output must pass through untouched."""
+    doc = _doc("JASON MULLER\nCustomer service professional.")
+    assert "JASON MULLER" in _visible(doc)
+    assert not any(r.bold for p in doc.paragraphs for r in p.runs)

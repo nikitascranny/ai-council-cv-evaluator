@@ -17,6 +17,7 @@ later with no memory of the warning.
 """
 
 import io
+import re
 
 from docx import Document
 
@@ -35,19 +36,70 @@ _FLAGGED_WARNING = (
     "before sending it anywhere.")
 
 
-def _add_body(document, text: str):
-    """One paragraph per blank-line-separated block of the rewritten text.
+_BOLD = re.compile(r"\*\*(.+?)\*\*")
+_HEADING = re.compile(r"^(#{1,6})\s+(.*)$")
+_BULLET = re.compile(r"^\s*[-*+]\s+(.*)$")
 
-    Deliberately flat. rewritten_text is plain text with no structure a
-    model reliably emits, so inventing headings here would be guesswork
-    dressed as formatting. parser/cv_sections.py already does real heading
-    detection and is the right basis for that later - it is another team
-    member's module and a separate change.
+
+def _add_runs(paragraph, text: str):
+    """Write text into a paragraph, turning **bold** into actual bold runs.
+
+    Split rather than stripped: the markers have to become formatting, not
+    vanish and not survive as literal asterisks. Anything that is not a
+    matched pair is left exactly as written - a lone ** in a CV is far more
+    likely to be the candidate's own punctuation than a formatting
+    instruction we should silently eat.
     """
-    for block in text.replace("\r\n", "\n").split("\n\n"):
-        block = block.strip()
-        if block:
-            document.add_paragraph(block)
+    position = 0
+    for match in _BOLD.finditer(text):
+        if match.start() > position:
+            paragraph.add_run(text[position:match.start()])
+        paragraph.add_run(match.group(1)).bold = True
+        position = match.end()
+    if position < len(text):
+        paragraph.add_run(text[position:])
+    return paragraph
+
+
+def _add_body(document, text: str):
+    """The rewritten text as Word paragraphs, honouring the markdown a model
+    emits whether or not it was asked for.
+
+    Both agents are told to output plain text with no markdown. phi4 emits it
+    anyway - 26 markers in the first CV that passed the guard, so a
+    candidate's finished document read **Jason Muller** with the asterisks
+    visible. qwen2.5 emitted none from the same prompt, so this is one
+    model's habit rather than a fault in the instruction, and no wording will
+    reliably stop it. Converting beats stripping: what the model marks up is
+    headings and job titles, which is real structure the candidate wants.
+
+    One paragraph per line, not per blank-line block. Models emit one logical
+    line at a time - a heading, a role, a bullet - and rarely hard-wrap prose,
+    so splitting on blank lines collapsed a whole CV into a couple of
+    paragraphs with newlines buried inside them, which Word does not render
+    as breaks at all.
+    """
+    for line in text.replace("\r\n", "\n").split("\n"):
+        # A markdown hard break is two trailing spaces. Every line is already
+        # its own paragraph here, so it carries no meaning and would survive
+        # only as trailing whitespace in Word.
+        line = line.rstrip()
+        if not line.strip():
+            continue
+
+        heading = _HEADING.match(line)
+        if heading:
+            level = min(len(heading.group(1)), 4)
+            _add_runs(document.add_heading("", level=level), heading.group(2))
+            continue
+
+        bullet = _BULLET.match(line)
+        if bullet:
+            _add_runs(document.add_paragraph("", style="List Bullet"),
+                      bullet.group(1))
+            continue
+
+        _add_runs(document.add_paragraph(), line)
 
 
 def build_document(result) -> "Document":
