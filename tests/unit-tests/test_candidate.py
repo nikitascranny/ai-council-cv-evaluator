@@ -55,3 +55,48 @@ def test_an_unreachable_rewriter_names_v2_so_the_ui_can_say_what_is_missing(monk
 def test_the_module_backend_is_used_when_none_is_passed(monkeypatch):
     monkeypatch.setattr(candidate, "BACKEND", lambda *a: [_result()])
     assert len(candidate.generate("cv", "job", "Secretary")) == 1
+
+
+# --- what the guard's verdict means in plain words --------------------------
+
+
+def test_a_dropped_number_is_not_reported_as_an_invention():
+    """The two are opposites. Telling someone their rewrite "added
+    information" when the guard's complaint was that it dropped half their
+    numbers points them at the wrong problem entirely - and truncation makes
+    dropped the common case, not the rare one."""
+    said = candidate.describe_rejection(["number dropped from the CV: 2015"])
+    assert "left out" in said
+    assert "added" not in said
+
+
+def test_an_invented_fact_is_reported_as_one():
+    said = candidate.describe_rejection(["phd"])
+    assert "added information" in said
+    assert "left out" not in said
+
+
+def test_a_borrowed_job_title_is_named_as_its_own_failure():
+    said = candidate.describe_rejection(
+        ["job title claimed but not held: Web Dev Manager"])
+    assert "job title" in said
+
+
+def test_several_kinds_are_all_reported():
+    said = candidate.describe_rejection(
+        ["phd", "number dropped from the CV: 4",
+         "job title claimed but not held: Web Dev Manager"])
+    assert "added information" in said and "left out" in said
+    assert "job title" in said
+
+
+def test_no_reasons_does_not_invent_a_cause():
+    """A fallback with an empty reasons list must not assert why."""
+    said = candidate.describe_rejection([])
+    assert "could not confirm" in said
+
+
+def test_classification_does_not_repeat_a_kind():
+    kinds = candidate.classify_reasons(
+        ["number dropped from the CV: 4", "number dropped from the CV: 7"])
+    assert kinds == [candidate.DROPPED]

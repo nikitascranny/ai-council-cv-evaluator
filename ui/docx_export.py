@@ -19,15 +19,16 @@ later with no memory of the warning.
 import io
 
 from docx import Document
+
+from ui.pipeline import candidate
 from docx.shared import Pt
 
 # The guard rejected this agent's rewrite twice, so rewritten_text is the
 # candidate's ORIGINAL CV. Saying that plainly is the entire job of this
 # paragraph - "fallback" is our word, not something a candidate would parse.
-_FALLBACK_WARNING = (
-    "This is your original CV, not a rewrite. The automated check found that "
-    "the rewritten version added information your CV does not contain, so it "
-    "was discarded rather than shown to you as if it were sound.")
+_FALLBACK_PREFIX = "This is your original CV, not a rewrite. "
+_FALLBACK_SUFFIX = (" It was discarded rather than shown to you as if it were "
+                    "sound.")
 
 _FLAGGED_WARNING = (
     "The automated check flagged this rewrite. Read it against your original "
@@ -64,7 +65,10 @@ def build_document(result) -> "Document":
         document.add_paragraph("Tailored for: {}".format(result.job_title))
 
     if result.used_fallback:
-        document.add_paragraph(_FALLBACK_WARNING)
+        document.add_paragraph(
+            _FALLBACK_PREFIX
+            + candidate.describe_rejection(getattr(result, "reasons", None))
+            + _FALLBACK_SUFFIX)
     elif result.rejected:
         document.add_paragraph(_FLAGGED_WARNING)
 

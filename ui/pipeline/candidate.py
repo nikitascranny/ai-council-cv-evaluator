@@ -50,6 +50,59 @@ def _load_backend():
     return rewriter_v2.rewrite_cv
 
 
+ADDED = "added"
+DROPPED = "dropped"
+TITLE = "title"
+
+
+def classify_reasons(reasons) -> list:
+    """Which kinds of failure the guard actually found.
+
+    rejection_reasons mixes three distinct verdicts, and they are not
+    variations on one theme: a new hard fact means the model invented
+    something, a lost number means it left something out, and a borrowed job
+    title means it claimed a role the candidate has never held. Telling a
+    candidate their rewrite "added information your CV does not contain" when
+    the guard's complaint was that it DROPPED half their numbers is not a
+    rounding error in the wording - it points them at the wrong problem.
+
+    Truncation makes this the common case rather than the rare one: a CV over
+    the rewriter's token budget comes back with its tail missing, and every
+    number in that tail is reported as dropped.
+    """
+    kinds = []
+    for reason in reasons or []:
+        text = str(reason)
+        if text.startswith("number dropped from the CV"):
+            kind = DROPPED
+        elif text.startswith("job title claimed but not held"):
+            kind = TITLE
+        else:
+            kind = ADDED
+        if kind not in kinds:
+            kinds.append(kind)
+    return kinds
+
+
+def describe_rejection(reasons) -> str:
+    """One plain sentence for why the guard rejected a rewrite."""
+    kinds = classify_reasons(reasons)
+    parts = []
+    if ADDED in kinds:
+        parts.append("added information your CV does not contain")
+    if DROPPED in kinds:
+        parts.append("left out details your CV does contain")
+    if TITLE in kinds:
+        parts.append("claimed a job title you have not held")
+    if not parts:
+        return "The check could not confirm the rewrite matched your CV."
+    if len(parts) == 1:
+        body = parts[0]
+    else:
+        body = ", ".join(parts[:-1]) + " and " + parts[-1]
+    return "The check found that the rewrite " + body + "."
+
+
 def probe():
     """Raise NotAvailable unless rewriter v2 can be reached.
 

@@ -5,6 +5,7 @@ The run report has its own renderer in ui/report.py and its own inline CSS;
 these are the pages around it - picking a mode, choosing inputs, listing runs.
 """
 
+from ui.pipeline import candidate as candidate_mod
 import html
 
 _CSS = """
@@ -259,8 +260,9 @@ def _rewrite_card(run_id: str, index: int, result) -> str:
 
     if result.used_fallback:
         note = ("<div class='empty'><b>This is your original CV, not a "
-                "rewrite.</b><p>The check found the rewrite added information "
-                "your CV does not contain, so it was discarded.</p></div>")
+                "rewrite.</b><p>{} It was discarded rather than shown to you "
+                "as if it were sound.</p></div>").format(
+                    html.escape(candidate_mod.describe_rejection(result.reasons)))
         button = "<p><button type='button' disabled>Nothing to download</button></p>"
     else:
         note = ""
