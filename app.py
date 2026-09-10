@@ -375,8 +375,13 @@ class Handler(BaseHTTPRequestHandler):
                     self.wfile.flush()
                     return
                 time.sleep(0.3)
-        except (BrokenPipeError, ConnectionResetError):
-            # The viewer closed the tab mid-run - the common case, not a bug.
+        except ConnectionError:
+            # The viewer closed the tab, or navigated to the results the
+            # stream just told them about - the common case, not a bug.
+            # ConnectionError rather than the two subclasses it used to name:
+            # Windows aborts a socket the client walks away from with
+            # ConnectionAbortedError (WinError 10053), which is neither, so
+            # following the run's own "done" link printed a traceback.
             return
 
     def do_GET(self):
