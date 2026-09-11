@@ -9,10 +9,12 @@ from dataclasses import dataclass, field
 
 # "run" is the envelope event carrying the finished payload; "rank" is emitted
 # by batch runs as the ordering firms up. "rewrite_v2" is candidate mode's
-# only working stage - distinct from "rewrite", which is reviewer mode's
+# rewrite - distinct from "rewrite", which is reviewer mode's
 # phrasing-sensitivity probe and measures something else entirely.
+# "feedback" is rewriter_v2_judge's verdict on those rewrites, distinct again
+# from "judge", which scores a CV.
 STAGES = ("parse", "council", "essential", "judge", "rewrite", "rewrite_v2",
-          "rank", "run")
+          "feedback", "rank", "run")
 STATES = ("start", "progress", "done", "failed")
 
 

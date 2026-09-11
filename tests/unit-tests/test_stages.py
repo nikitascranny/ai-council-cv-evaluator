@@ -98,6 +98,18 @@ def test_essential_stage_scopes_the_cv_rather_than_sending_all_of_it():
     assert seen["scoped"] == "scoped"
 
 
+def test_a_rewrite_has_no_sections_so_the_essential_check_reads_all_of_it():
+    seen = {}
+
+    def check(job_text, text, candidate, model):
+        seen["text"] = text
+        return {"summary": "meets"}
+
+    _drain(essential_stage("job", "the whole rewrite", "ALEX", "qwen",
+                           _deps(check_essential=check)))
+    assert seen["text"] == "the whole rewrite"
+
+
 def test_judge_failure_is_reported_as_an_event_and_a_none_score():
     events, verdict = _drain(judge_stage(
         "job", [], "ALEX", "deepseek", _deps(judge=lambda *a: (None, "timed out"))))
@@ -239,7 +251,7 @@ def _drain(gen):
 def test_rewrite_v2_stage_reports_both_agents_and_returns_their_results():
     results = [_rw(agent_model="phi4"), _rw(agent_model="qwen2.5:14b")]
     events, got = _drain(stages.rewrite_v2_stage(
-        "cv", "job", "Secretary", "Jane", lambda *a: results))
+        "cv", "Secretary", "Jane", lambda *a: results))
     assert [(e.stage, e.state) for e in events] == [
         ("rewrite_v2", "start"), ("rewrite_v2", "done")]
     assert got == results
@@ -252,7 +264,7 @@ def test_the_done_event_names_which_agents_fell_back():
     results = [_rw(agent_model="phi4"),
                _rw(agent_model="qwen2.5:14b", used_fallback=True)]
     events, _ = _drain(stages.rewrite_v2_stage(
-        "cv", "job", "Secretary", "Jane", lambda *a: results))
+        "cv", "Secretary", "Jane", lambda *a: results))
     assert events[1].detail["fallbacks"] == ["qwen2.5:14b"]
 
 
@@ -261,6 +273,27 @@ def test_an_agent_error_is_reported_not_raised():
     slots still reach the page. Raising here would lose the good one too."""
     results = [_rw(), _rw(agent_model="qwen2.5:14b", error="timeout")]
     events, got = _drain(stages.rewrite_v2_stage(
-        "cv", "job", "Secretary", "Jane", lambda *a: results))
+        "cv", "Secretary", "Jane", lambda *a: results))
     assert events[1].detail["errors"] == ["timeout"]
     assert len(got) == 2
+
+
+def test_feedback_stage_reports_the_recommendation():
+    events, got = _drain(stages.feedback_stage(
+        [_rw()], "job", "Secretary", "Jane",
+        lambda *a: ({"recommended_rewrite": "phi4"}, None)))
+    assert [(e.stage, e.state) for e in events] == [
+        ("feedback", "start"), ("feedback", "done")]
+    assert events[1].detail["recommended"] == "phi4"
+    assert got == {"recommended_rewrite": "phi4"}
+
+
+def test_a_failed_rewrite_judge_costs_the_feedback_not_the_run():
+    def raises(*a):
+        raise RuntimeError("timed out")
+
+    for feedback in (lambda *a: (None, "timed out"), raises):
+        events, got = _drain(stages.feedback_stage(
+            [_rw()], "job", "Secretary", "Jane", feedback))
+        assert events[-1].state == "failed"
+        assert "timed out" in got["error"]

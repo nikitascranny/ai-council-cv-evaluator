@@ -7,6 +7,8 @@ already consume, so the report renderer is untouched by the move to a web UI.
 import json
 import types
 
+import pytest
+
 from ui.pipeline.backends import Settings
 from ui.pipeline.deps import Deps
 from ui.pipeline import evaluation
@@ -201,3 +203,171 @@ def test_describe_run_survives_a_half_written_file(tmp_path):
     bad = tmp_path / "broken.json"
     bad.write_text("{not json", encoding="utf-8")
     assert "unreadable" in evaluation.describe_run(bad)
+
+
+# --- candidate mode: rewrite, evaluate, or both -----------------------------
+
+
+def _version(**kw):
+    base = dict(agent_model="phi4", rewritten_text="rewritten cv",
+                used_fallback=False, rejected=False, reasons=[], error=None)
+    base.update(kw)
+    return types.SimpleNamespace(**base)
+
+
+def _generate(cv_text, job_title, candidate_name):
+    return [_version(), _version(agent_model="qwen2.5:14b")]
+
+
+def _refuse_to_generate(*args):
+    raise AssertionError("evaluate-only must not start a rewrite")
+
+
+def _feedback(results, job_text, job_title, candidate_name):
+    return {"recommended_rewrite": results[0].agent_model}, None
+
+
+def _candidate_run(tmp_path, action, deps=None, generate=_generate,
+                   feedback=_feedback):
+    return _drain(evaluation.run_candidate(
+        tmp_path / "job_listing_secretary.pdf", tmp_path / "ALEX PARK.pdf",
+        deps or _deps(), generate, feedback, action=action,
+        settings=Settings(council=["phi4"])))
+
+
+def _done(events):
+    return [e.stage for e in events if e.state == "done"]
+
+
+def test_rewrite_only_never_reaches_the_council(tmp_path):
+    events, payload = _candidate_run(tmp_path, evaluation.REWRITE)
+    assert _done(events) == ["parse", "rewrite_v2", "feedback", "run"]
+    assert len(payload["rewrites"]) == 2
+    assert payload["feedback"] == {"recommended_rewrite": "phi4"}
+    assert not {"council", "essential", "judge"} & payload.keys()
+
+
+def test_evaluate_only_never_starts_a_rewrite(tmp_path):
+    events, payload = _candidate_run(tmp_path, evaluation.EVALUATE,
+                                     generate=_refuse_to_generate)
+    assert _done(events) == ["parse", "council", "essential", "judge", "run"]
+    assert payload["judge"]["final_score"] == 8
+    assert payload["essential"]["summary"] == "meets"
+    assert payload["rewrites"] == []
+    assert "feedback" not in payload
+
+
+def test_evaluate_and_rewrite_scores_the_original_before_rewriting(tmp_path):
+    seen = []
+
+    def evaluate_cv(job_text, cv_text, candidate, model):
+        seen.append(cv_text)
+        return {"score": 6, "summary": "ok"}
+
+    events, payload = _candidate_run(tmp_path, evaluation.EVALUATE_REWRITE,
+                                     _deps(evaluate_cv=evaluate_cv))
+    assert _done(events) == ["parse", "council", "essential", "judge",
+                             "rewrite_v2", "feedback", "run"]
+    assert seen == ["cv text"]
+    assert len(payload["rewrites"]) == 2
+
+
+def test_an_unknown_candidate_action_is_refused(tmp_path):
+    with pytest.raises(ValueError):
+        _candidate_run(tmp_path, "publish")
+
+
+def test_the_rewrite_judge_sees_the_rewrites_and_the_listing(tmp_path):
+    seen = {}
+
+    def feedback(results, job_text, job_title, candidate_name):
+        seen.update(agents=[r.agent_model for r in results], job_text=job_text,
+                    job_title=job_title, candidate=candidate_name)
+        return {"recommended_rewrite": "phi4"}, None
+
+    _, payload = _candidate_run(tmp_path, evaluation.REWRITE, feedback=feedback)
+    assert seen == {"agents": ["phi4", "qwen2.5:14b"], "job_text": "job text",
+                    "job_title": "Secretary", "candidate": "ALEX PARK"}
+    assert payload["feedback"] == {"recommended_rewrite": "phi4"}
+
+
+def _source(**overrides):
+    """A finished evaluate-and-rewrite payload to re-evaluate from."""
+    base = {"job": "job_listing_secretary", "candidate": "ALEX PARK",
+            "mode": "candidate", "action": evaluation.EVALUATE_REWRITE,
+            "job_title": "Secretary", "job_text": "job text",
+            "cv_text": "cv text",
+            "council": [{"model": "phi4", "score": 4}],
+            "essential": {"summary": "partly meets"},
+            "judge": {"final_score": 5},
+            "rewrites": [_version(),
+                         _version(agent_model="qwen2.5:14b",
+                                  rewritten_text="qwen's version")]}
+    base.update(overrides)
+    return base
+
+
+def _reevaluate(source, index, deps=None):
+    return _drain(evaluation.run_reevaluation(
+        source, index, deps or _deps(), settings=Settings(council=["phi4"])))
+
+
+def test_reevaluation_scores_the_rewrite_not_the_original():
+    seen = []
+
+    def evaluate_cv(job_text, cv_text, candidate, model):
+        seen.append((job_text, cv_text))
+        return {"score": 7, "summary": "better"}
+
+    events, payload = _reevaluate(_source(), 1, _deps(evaluate_cv=evaluate_cv))
+    assert seen == [("job text", "qwen's version")]
+    assert _done(events) == ["council", "essential", "judge", "run"]
+    assert payload["action"] == evaluation.REEVALUATE
+    assert payload["agent_model"] == "qwen2.5:14b"
+    assert payload["council"][0]["score"] == 7
+
+
+def test_reevaluation_carries_the_original_scores_to_compare_against():
+    _, payload = _reevaluate(_source(), 0)
+    assert payload["before"] == {"council": [{"model": "phi4", "score": 4}],
+                                 "essential": {"summary": "partly meets"},
+                                 "judge": {"final_score": 5}}
+
+
+def test_the_essential_check_reads_sections_of_a_cv_but_all_of_a_rewrite(tmp_path):
+    """A parsed CV is scoped to three sections, as in reviewer mode. A rewrite
+    is plain text with no sections, so it can only be checked whole."""
+    seen = []
+
+    def check(job_text, text, candidate, model):
+        seen.append(text)
+        return {"summary": "meets"}
+
+    deps = _deps(check_essential=check)
+    _candidate_run(tmp_path, evaluation.EVALUATE, deps)
+    _reevaluate(_source(), 1, deps)
+    assert seen == ["scoped", "qwen's version"]
+
+
+def test_reevaluating_again_still_compares_against_the_original():
+    """The question is whether the rewrite beats the CV the candidate started
+    with, not whether the council agreed with itself last time."""
+    _, first = _reevaluate(_source(), 0)
+    _, second = _reevaluate(first, 0)
+    assert second["before"]["judge"]["final_score"] == 5
+
+
+def test_a_rewrite_only_source_has_nothing_to_compare_against():
+    source = _source(action=evaluation.REWRITE)
+    del source["council"], source["essential"], source["judge"]
+    _, payload = _reevaluate(source, 0)
+    assert payload["before"] is None
+
+
+def test_a_fallback_is_never_scored_as_a_rewrite():
+    """Its text is the original CV - scoring it under the model's name would
+    report the original's score as the rewrite's."""
+    source = _source(rewrites=[_version(used_fallback=True,
+                                        rewritten_text="cv text")])
+    with pytest.raises(ValueError):
+        _reevaluate(source, 0)

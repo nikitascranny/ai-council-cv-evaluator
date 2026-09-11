@@ -54,10 +54,17 @@ def council_stage(job_text, cv_text, candidate, models, deps):
 
 
 def essential_stage(job_text, cv, candidate, model, deps):
-    """Scoped input rather than the whole CV - the point of sections_named()."""
+    """Scoped input rather than the whole CV - the point of sections_named().
+
+    cv may also be plain text - a rewrite from candidate mode, which has no
+    sections to scope to - and is then sent whole.
+    """
     yield Event("essential", "start", {"model": model}, candidate=candidate)
     started = time.time()
-    scoped = cv.sections_named("experience", "education", "certifications")
+    if isinstance(cv, str):
+        scoped = cv
+    else:
+        scoped = cv.sections_named("experience", "education", "certifications")
     result = deps.check_essential(job_text, scoped, candidate, model=model)
     yield Event("essential", "done", {"summary": result.get("summary", "")},
                 time.time() - started, candidate)
@@ -147,7 +154,7 @@ def rewrite_stage(cv_text, job_title, scorer, deps, candidate: str = "",
     return out
 
 
-def rewrite_v2_stage(cv_text, job_text, job_title, candidate_name, generate):
+def rewrite_v2_stage(cv_text, job_title, candidate_name, generate):
     """Rewriter v2's two agents, for candidate mode.
 
     v2 runs both agents itself and returns when both are done, so unlike
@@ -163,10 +170,34 @@ def rewrite_v2_stage(cv_text, job_text, job_title, candidate_name, generate):
     yield Event("rewrite_v2", "start", {"job_title": job_title},
                 candidate=candidate_name)
     started = time.time()
-    results = generate(cv_text, job_text, job_title, candidate_name)
+    results = generate(cv_text, job_title, candidate_name)
     yield Event("rewrite_v2", "done",
                 {"agents": [r.agent_model for r in results],
                  "fallbacks": [r.agent_model for r in results if r.used_fallback],
                  "errors": [r.error for r in results if getattr(r, "error", None)]},
                 time.time() - started, candidate_name)
     return results
+
+
+def feedback_stage(results, job_text, job_title, candidate_name, feedback):
+    """rewriter_v2_judge on the finished rewrites: which to send, a career
+    roadmap, and other careers the CV suits.
+
+    Reported rather than raised when it fails, on the same principle as a
+    lost council model: the rewrites it comments on are already done, and a
+    judge that timed out must not cost the candidate those.
+    """
+    yield Event("feedback", "start", {}, candidate=candidate_name)
+    started = time.time()
+    try:
+        parsed, error = feedback(results, job_text, job_title, candidate_name)
+    except Exception as exc:
+        parsed, error = None, exc
+    if error:
+        yield Event("feedback", "failed", {"error": str(error)},
+                    time.time() - started, candidate_name)
+        return {"error": str(error)}
+    yield Event("feedback", "done",
+                {"recommended": parsed.get("recommended_rewrite")},
+                time.time() - started, candidate_name)
+    return parsed

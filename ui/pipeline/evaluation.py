@@ -15,7 +15,9 @@ import re
 import time
 from pathlib import Path
 
+from ui.pipeline import candidate as candidate_mod
 from ui.pipeline import stages
+from ui.pipeline.backends import Settings
 from ui.pipeline.corpus import title_from_slug
 from ui.pipeline.events import Event
 
@@ -161,34 +163,129 @@ def run_batch(job_path, cv_paths, settings, deps, out_dir=None):
     return payloads
 
 
-def run_candidate(job_path, cv_path, deps, generate):
-    """Candidate mode: parse the CV, then rewrite it toward one listing.
+# What a candidate can ask for. Reviewer mode toggles optional stages around a
+# fixed core; candidate mode has no core - scoring and rewriting are each
+# useful alone - so the candidate picks one of these instead.
+REWRITE = "rewrite"
+EVALUATE = "evaluate"
+EVALUATE_REWRITE = "evaluate_rewrite"
+CANDIDATE_ACTIONS = (REWRITE, EVALUATE, EVALUATE_REWRITE)
+# Not offered on the form: it starts from a finished rewrite, not from a PDF.
+REEVALUATE = "reevaluate"
 
-    Deliberately not a branch inside run_single. The two modes share only the
-    parse - reviewer mode scores a CV against a listing and produces a report,
-    candidate mode rewrites it and produces two documents - and folding them
-    together would put a settings flag in front of every stage that only one
-    of them runs.
+
+def _evaluate(job_text, cv, candidate, settings, deps):
+    """Council, essential requirements, then judge - reviewer mode's scoring
+    with nothing left optional, and without its report.
+
+    cv is the ParsedCV for the candidate's own CV, or plain text for a
+    rewrite. The essential check reads three sections of a parsed CV; a
+    rewrite has none, so it is checked whole, which makes the before/after
+    essential summaries a looser comparison than the council's scores.
+    """
+    cv_text = cv if isinstance(cv, str) else cv.full_text()
+    rows = yield from stages.council_stage(
+        job_text, cv_text, candidate, settings.council, deps)
+    essential = yield from stages.essential_stage(
+        job_text, cv, candidate, settings.essential_model, deps)
+    verdict = yield from stages.judge_stage(
+        job_text, rows, candidate, settings.judge, deps)
+    return {"council": rows, "essential": essential, "judge": verdict}
+
+
+def run_candidate(job_path, cv_path, deps, generate, feedback,
+                  action=EVALUATE_REWRITE, settings=None):
+    """Candidate mode: parse the CV, then score it, rewrite it, or both.
+
+    generate and feedback are candidate.generate and candidate.feedback in
+    the app - rewriter v2 and its judge, which every rewrite is followed by.
+
+    Deliberately not a branch inside run_single. Reviewer mode produces a
+    saved report and optional research probes; candidate mode produces scores
+    and documents for one person, and folding them together would put a
+    settings flag in front of every stage that only one of them runs.
+
+    When both are asked for, scoring runs first, so the candidate sees where
+    their CV stood before any rewriting.
 
     The RewriteResults ride home on the run's payload so the results page and
     the download route can both read them back without re-running two 14B
     models to recover what was already computed.
     """
+    if action not in CANDIDATE_ACTIONS:
+        raise ValueError("unknown candidate action: {}".format(action))
+    settings = settings or Settings()
     job_path, cv_path = Path(job_path), Path(cv_path)
     candidate = cv_path.stem
     job_title = title_from_slug(job_path.stem)
     started = time.time()
 
     cv = yield from stages.parse_stage(cv_path, deps, candidate)
+    cv_text = cv.full_text()
     job_text = deps.extract_text(job_path)
 
-    results = yield from stages.rewrite_v2_stage(
-        cv.full_text(), job_text, job_title, candidate, generate)
-
     payload = new_payload(job_path.stem, candidate)
-    payload.update({"mode": "candidate", "job_title": job_title,
-                    "job_text": job_text, "cv_text": cv.full_text(),
-                    "rewrites": results})
+    payload.update({"mode": "candidate", "action": action,
+                    "job_title": job_title, "job_text": job_text,
+                    "cv_text": cv_text, "rewrites": []})
+
+    if action in (EVALUATE, EVALUATE_REWRITE):
+        scores = yield from _evaluate(job_text, cv, candidate, settings, deps)
+        payload.update(scores)
+
+    if action in (REWRITE, EVALUATE_REWRITE):
+        payload["rewrites"] = yield from stages.rewrite_v2_stage(
+            cv_text, job_title, candidate, generate)
+        payload["feedback"] = yield from stages.feedback_stage(
+            payload["rewrites"], job_text, job_title, candidate, feedback)
+
+    yield Event("run", "done", {"payload": payload},
+                time.time() - started, candidate)
+    return payload
+
+
+def run_reevaluation(source, index, deps, settings=None):
+    """Put one rewritten version back through the council and the judge.
+
+    source is the finished candidate payload the version came from; the
+    rewrite is scored against the same listing the original was.
+
+    The original CV's scores are carried forward as "before", and a
+    re-evaluation of a re-evaluation keeps the ORIGINAL's scores rather than
+    the previous attempt's: what a candidate wants to know is whether the
+    rewrite beats the CV they started with. A rewrite-only source has no
+    scores to carry, and "before" stays None rather than pretending otherwise.
+
+    The rewrite rides along on the payload as its only version, so the
+    results page can offer its download and another re-evaluation.
+    """
+    settings = settings or Settings()
+    result = source["rewrites"][index]
+    if not candidate_mod.is_rewrite(result):
+        raise ValueError("that version is the original CV, not a rewrite")
+    candidate = source.get("candidate", "")
+    job_text = source.get("job_text") or ""
+    text = result.rewritten_text or ""
+    started = time.time()
+
+    scores = yield from _evaluate(job_text, text, candidate, settings, deps)
+
+    if source.get("action") == REEVALUATE:
+        before = source.get("before")
+    elif source.get("council"):
+        before = {"council": source["council"],
+                  "essential": source.get("essential"),
+                  "judge": source.get("judge")}
+    else:
+        before = None
+
+    payload = new_payload(source.get("job", ""), candidate)
+    payload.update({"mode": "candidate", "action": REEVALUATE,
+                    "job_title": source.get("job_title", ""),
+                    "job_text": job_text, "cv_text": text,
+                    "agent_model": result.agent_model,
+                    "rewrites": [result], "before": before})
+    payload.update(scores)
     yield Event("run", "done", {"payload": payload},
                 time.time() - started, candidate)
     return payload

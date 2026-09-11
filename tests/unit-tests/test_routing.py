@@ -431,13 +431,14 @@ def test_a_run_needs_both_a_cv_and_a_job():
     assert app.dispatch("POST", "/candidate/run", {"cv": ["c.pdf"]}).status == 400
 
 
-def _finished_run(results):
+def _finished_run(results, action="rewrite", **extra):
     """A completed candidate run in the registry, without touching Ollama."""
     payload = {"candidate": "Jane Doe", "job_title": "Secretary",
-               "rewrites": results}
+               "rewrites": results, "action": action}
+    payload.update(extra)
     run_id = app.runs_mod.REGISTRY.start(
         lambda: iter([Event("run", "done", {"payload": payload}, 0.0,
-                            "Jane Doe")]), mode="candidate")
+                            "Jane Doe")]), mode="candidate", action=action)
     app.runs_mod.REGISTRY.get(run_id).finished.wait(timeout=5)
     return run_id
 
@@ -457,6 +458,14 @@ def test_the_results_page_shows_both_versions_with_their_own_downloads():
     body = app.dispatch("GET", "/candidate/" + run_id, {}).bytes().decode("utf-8")
     assert "phi4" in body and "qwen2.5:14b" in body
     assert "/download/0" in body and "/download/1" in body
+
+
+def test_a_rewrite_wraps_inside_its_card_rather_than_running_off_it():
+    """Models write whole paragraphs on one line, and a <pre> keeps them that
+    way unless told to wrap - the text ran straight out of the card."""
+    run_id = _finished_run([_rewrite()])
+    body = app.dispatch("GET", "/candidate/" + run_id, {}).bytes().decode("utf-8")
+    assert "pre.rewrite { white-space: pre-wrap; overflow-wrap: anywhere; }" in body
 
 
 def test_a_fallback_version_is_labelled_and_cannot_be_downloaded():
@@ -576,3 +585,160 @@ def test_a_reviewer_run_still_points_at_its_report():
     body = app.dispatch("GET", "/run/" + run_id, {}).bytes().decode("utf-8")
     assert "/run/{}/report".format(run_id) in body
     assert "stage-council" in body
+
+
+# --- candidate mode: rewrite, evaluate, or both, then re-evaluate -----------
+
+
+def test_the_candidate_form_offers_rewrite_evaluate_and_both():
+    body = app.pages.candidate_form([Path("job_listing_secretary.pdf")],
+                                    [Path("ALEX PARK.pdf")], lambda p: p.stem)
+    for action in ("rewrite", "evaluate", "evaluate_rewrite"):
+        assert "name='action' value='{}'".format(action) in body
+
+
+def test_each_candidate_action_shows_only_the_stages_it_runs():
+    for action, shown, hidden in (
+            ("rewrite", ["parse", "rewrite_v2", "feedback"],
+             ["council", "essential", "judge"]),
+            ("evaluate", ["parse", "council", "essential", "judge"],
+             ["rewrite_v2", "feedback"]),
+            ("evaluate_rewrite",
+             ["parse", "council", "essential", "judge", "rewrite_v2",
+              "feedback"],
+             ["rewrite"]),
+            ("reevaluate", ["council", "essential", "judge"],
+             ["parse", "rewrite_v2", "feedback"])):
+        body = app.pages.live_view("abc123", "candidate", action)
+        assert all("stage-{}'".format(s) in body for s in shown), action
+        assert not any("stage-{}'".format(s) in body for s in hidden), action
+
+
+def test_starting_a_candidate_run_runs_the_action_that_was_picked(monkeypatch):
+    seen = {}
+
+    def fake_run_candidate(job, cv, deps, generate, feedback, action):
+        seen["action"] = action
+        yield Event("run", "done", {"payload": {}})
+
+    monkeypatch.setattr(app.evaluation, "run_candidate", fake_run_candidate)
+    monkeypatch.setattr(app.deps_mod, "team_deps", lambda: object())
+    response = app.dispatch("POST", "/candidate/run",
+                            {"job": ["j.pdf"], "cv": ["c.pdf"],
+                             "action": ["evaluate"]})
+    assert response.status == 303
+    run_id = response.headers["Location"].rsplit("/", 1)[-1]
+    app.runs_mod.REGISTRY.wait(run_id, timeout=5)
+    assert seen["action"] == "evaluate"
+    assert app.runs_mod.REGISTRY.get(run_id).action == "evaluate"
+
+
+def test_an_unknown_candidate_action_is_a_400():
+    response = app.dispatch("POST", "/candidate/run",
+                            {"job": ["j.pdf"], "cv": ["c.pdf"],
+                             "action": ["publish"]})
+    assert response.status == 400
+
+
+def test_an_evaluation_shows_the_scores_and_why():
+    run_id = _finished_run(
+        [], action="evaluate",
+        council=[{"model": "phi4", "score": 6, "summary": "Solid admin record."}],
+        essential={"summary": "Meets the typing requirement."},
+        judge={"final_score": 7, "final_evaluation": "A good fit."})
+    body = app.dispatch("GET", "/candidate/" + run_id, {}).bytes().decode("utf-8")
+    assert "class='score'>7<" in body
+    assert "Solid admin record." in body and "A good fit." in body
+    assert "Meets the typing requirement." in body
+    assert "/download/" not in body
+
+
+def test_each_real_rewrite_can_go_back_to_the_council_but_a_fallback_cannot():
+    run_id = _finished_run([_rewrite(),
+                            _rewrite(agent_model="qwen2.5:14b", used_fallback=True)])
+    body = app.dispatch("GET", "/candidate/" + run_id, {}).bytes().decode("utf-8")
+    assert "/candidate/{}/reevaluate/0".format(run_id) in body
+    assert "/reevaluate/1" not in body
+
+
+def test_reevaluating_a_fallback_or_a_missing_version_is_refused():
+    run_id = _finished_run([_rewrite(used_fallback=True)])
+    reevaluate = "/candidate/{}/reevaluate/{}".format
+    assert app.dispatch("POST", reevaluate(run_id, 0), {}).status == 409
+    assert app.dispatch("POST", reevaluate(run_id, 5), {}).status == 404
+    assert app.dispatch("POST", reevaluate("deadbeef", 0), {}).status == 404
+
+
+def test_reevaluating_starts_a_new_run_on_the_chosen_version(monkeypatch):
+    seen = {}
+
+    def fake_reevaluation(source, index, deps):
+        seen["picked"] = source["rewrites"][index].agent_model
+        yield Event("run", "done", {"payload": {}})
+
+    monkeypatch.setattr(app.evaluation, "run_reevaluation", fake_reevaluation)
+    monkeypatch.setattr(app.deps_mod, "team_deps", lambda: object())
+    source_id = _finished_run([_rewrite(), _rewrite(agent_model="qwen2.5:14b")])
+
+    response = app.dispatch(
+        "POST", "/candidate/{}/reevaluate/1".format(source_id), {})
+    assert response.status == 303
+    new_id = response.headers["Location"].rsplit("/", 1)[-1]
+    assert new_id != source_id
+    app.runs_mod.REGISTRY.wait(new_id, timeout=5)
+    assert seen["picked"] == "qwen2.5:14b"
+
+    board = app.dispatch("GET", "/run/" + new_id, {}).bytes().decode("utf-8")
+    assert "stage-council'" in board and "stage-parse'" not in board
+
+
+def test_a_reevaluation_shows_the_original_score_beside_the_new_one():
+    run_id = _finished_run(
+        [_rewrite(agent_model="qwen2.5:14b")], action="reevaluate",
+        agent_model="qwen2.5:14b",
+        council=[{"model": "phi4", "score": 8, "summary": "Clearer."}],
+        essential={"summary": "Now meets all of them."},
+        judge={"final_score": 8},
+        before={"council": [{"model": "phi4", "score": 5}],
+                "essential": {"summary": "Partly meets them."},
+                "judge": {"final_score": 4}})
+    body = app.dispatch("GET", "/candidate/" + run_id, {}).bytes().decode("utf-8")
+    assert "Your original CV scored <b>4</b>" in body
+    assert "<td>phi4</td><td>8</td><td>5</td>" in body
+    assert "Now meets all of them." in body and "Partly meets them." in body
+
+
+def test_the_rewrite_judges_recommendation_roadmap_and_careers_are_shown():
+    run_id = _finished_run(
+        [_rewrite(agent_model="phi4"), _rewrite(agent_model="qwen2.5:14b")],
+        feedback={"recommended_rewrite": "qwen2.5:14b",
+                  "recommendation_reason": "It leads with the typing speed.",
+                  "career_roadmap": [{"step": "Apply",
+                                      "action": "Send the qwen version."}],
+                  "alternative_careers": ["Office manager", "Legal secretary"]})
+    body = app.dispatch("GET", "/candidate/" + run_id, {}).bytes().decode("utf-8")
+    assert "Recommended: <b>qwen2.5:14b</b>" in body
+    assert "It leads with the typing speed." in body
+    assert "Send the qwen version." in body and "Legal secretary" in body
+    # Read before the versions it compares, not after them.
+    assert body.index("Which version to send") < body.index("<pre class='rewrite'>")
+    assert "qwen2.5:14b <small>&middot; recommended</small>" in body
+    assert "phi4 <small>" not in body
+
+
+def test_recommending_a_fallback_says_it_is_the_original_cv():
+    run_id = _finished_run(
+        [_rewrite(), _rewrite(agent_model="qwen2.5:14b", used_fallback=True)],
+        feedback={"recommended_rewrite": "qwen2.5:14b",
+                  "recommendation_reason": "Safer.", "career_roadmap": [],
+                  "alternative_careers": []})
+    body = app.dispatch("GET", "/candidate/" + run_id, {}).bytes().decode("utf-8")
+    assert "That version is your original CV." in body
+
+
+def test_a_failed_rewrite_judge_still_shows_the_rewrites():
+    run_id = _finished_run([_rewrite()], feedback={"error": "timed out"})
+    body = app.dispatch("GET", "/candidate/" + run_id, {}).bytes().decode("utf-8")
+    assert "The rewrite judge failed: timed out" in body
+    assert "/download/0" in body
+    assert "/candidate/{}/reevaluate/0".format(run_id) in body

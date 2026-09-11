@@ -132,6 +132,11 @@ def candidate_view(form):
     return Response(200, pages.candidate_form(jobs, cvs, corpus.label_for))
 
 
+_BUSY = Response(409, pages.layout(
+    "Busy", "<div class='card'>A run is already in progress. Wait for it to "
+            "finish, or reload its page.</div>"))
+
+
 @route("POST", "/candidate/run")
 def candidate_run(form):
     job = next(iter(form.get("job", [])), None)
@@ -140,18 +145,23 @@ def candidate_run(form):
         return Response(400, pages.layout(
             "Nothing selected",
             "<div class='card'>Pick a job listing and your CV.</div>"))
+    action = next(iter(form.get("action", [])), evaluation.EVALUATE_REWRITE)
+    if action not in evaluation.CANDIDATE_ACTIONS:
+        return Response(400, pages.layout(
+            "Nothing selected",
+            "<div class='card'>Pick whether to rewrite your CV, evaluate it, "
+            "or both.</div>"))
 
     def runner():
         deps = deps_mod.team_deps()
         return evaluation.run_candidate(
-            Path(job), Path(cv), deps, candidate_mod.generate)
+            Path(job), Path(cv), deps, candidate_mod.generate,
+            candidate_mod.feedback, action)
 
     try:
-        run_id = runs_mod.REGISTRY.start(runner, mode="candidate")
+        run_id = runs_mod.REGISTRY.start(runner, mode="candidate", action=action)
     except runs_mod.RunBusy:
-        return Response(409, pages.layout(
-            "Busy", "<div class='card'>A run is already in progress. Wait for "
-                    "it to finish, or reload its page.</div>"))
+        return _BUSY
     return Response(303, "", headers={"Location": "/run/" + run_id})
 
 
@@ -161,8 +171,44 @@ def candidate_results(form, run_id):
     if run is None or not run.payloads:
         return Response(404, pages.layout(
             "Not ready",
-            "<div class='card'>That run has not produced a rewrite yet.</div>"))
+            "<div class='card'>That run has not finished yet.</div>"))
     return Response(200, pages.candidate_results(run_id, run.payloads[0]))
+
+
+@route("POST", r"/candidate/([0-9a-f]+)/reevaluate/(\d+)")
+def candidate_reevaluate(form, run_id, index):
+    """Score one rewritten version with the council and the judge again.
+
+    Refusals are decided here, before the redirect: raised on the worker
+    thread instead, they would leave the live view sitting on "waiting" with
+    nothing to say why.
+    """
+    run = runs_mod.REGISTRY.get(run_id)
+    if run is None or not run.payloads:
+        return Response(404, pages.layout(
+            "Not ready",
+            "<div class='card'>That run has not produced a rewrite yet.</div>"))
+    source = run.payloads[0]
+    results = source.get("rewrites") or []
+    idx = int(index)
+    if idx >= len(results):
+        return Response(404, pages.layout(
+            "Not found", "<div class='card'>No such version.</div>"))
+    if not candidate_mod.is_rewrite(results[idx]):
+        return Response(409, pages.layout(
+            "Not a rewrite",
+            "<div class='card'>That version is your original CV, not a "
+            "rewrite, so there is nothing new to score.</div>"))
+
+    def runner():
+        return evaluation.run_reevaluation(source, idx, deps_mod.team_deps())
+
+    try:
+        new_id = runs_mod.REGISTRY.start(
+            runner, mode="candidate", action=evaluation.REEVALUATE)
+    except runs_mod.RunBusy:
+        return _BUSY
+    return Response(303, "", headers={"Location": "/run/" + new_id})
 
 
 @route("GET", r"/candidate/([0-9a-f]+)/download/(\d+)")
@@ -295,9 +341,7 @@ def reviewer_run(form):
         run_id = runs_mod.REGISTRY.start(
             _runner_for(Path(job), [Path(c) for c in cvs], settings))
     except runs_mod.RunBusy:
-        return Response(409, pages.layout(
-            "Busy", "<div class='card'>A run is already in progress. Wait for "
-                    "it to finish, or reload its page.</div>"))
+        return _BUSY
     return Response(303, "", headers={"Location": "/run/" + run_id})
 
 
@@ -307,7 +351,7 @@ def run_view(form, run_id):
     if run is None:
         return Response(404, pages.layout(
             "Not found", "<div class='card'>No such run.</div>"))
-    return Response(200, pages.live_view(run_id, run.mode))
+    return Response(200, pages.live_view(run_id, run.mode, run.action))
 
 
 @route("GET", r"/run/([0-9a-f]+)/report")

@@ -32,11 +32,19 @@ The app has two modes, linked from the home page:
   one CV selected, Reviewer mode also ranks the candidates by the judge's
   final score.
 
-- **Candidate** — intended to take one CV and a target job and produce an
-  improved version of that CV. It depends on "rewriter v2", a teammate's
-  component that generates the rewritten document; that component is not
-  built yet, so Candidate mode currently reports plainly that it is not
-  available rather than faking a result (see `ui/pipeline/candidate.py`).
+- **Candidate** — pick one CV and a target job, then choose what to do:
+  - **Rewrite** — rewriter v2's two models each tailor the CV to the job
+    title; download either version as a Word document. The rewrite judge
+    (`rewriter_v2_judge.py`) then recommends which version to send, and
+    suggests a career roadmap and alternative careers.
+  - **Evaluate** — the council scores the CV against the listing, the
+    essential-requirements model summarises which must-haves it meets, and
+    the judge gives an overall verdict.
+  - **Evaluate and rewrite** — both, scoring the original first.
+
+  Any real rewrite (not a fact-guard fallback) can then be sent back through
+  the council with **Re-evaluate this version**, and its new scores are shown
+  beside the original CV's.
 
 ## Layout
 
