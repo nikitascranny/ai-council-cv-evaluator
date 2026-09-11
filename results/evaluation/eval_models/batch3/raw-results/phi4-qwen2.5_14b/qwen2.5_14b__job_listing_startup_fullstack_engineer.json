@@ -1,0 +1,82 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Adaptability to diverse work environments",
+      "Strong customer service and communication skills"
+    ],
+    "weaknesses": [
+      "Lack of technical skills in TypeScript/React and backend development",
+      "No experience in energy sector or real-time energy orchestration"
+    ],
+    "summary": "Kevin Jones lacks the technical skills and industry-specific experience required for the full-stack engineering role at Pulsegrid.",
+    "candidate": "professional_cv_kevin_jones"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Can lift heavy boxes",
+      "Fast learner when motivated"
+    ],
+    "weaknesses": [
+      "Lacks relevant work experience",
+      "No evidence of technical skills",
+      "Minimal commitment to the job"
+    ],
+    "summary": "The candidate does not meet the job requirements and demonstrates a lack of commitment to technical roles.",
+    "candidate": "bad_cv_jason_muller"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Adaptability in fast-moving environments",
+      "Customer service and complaint resolution"
+    ],
+    "weaknesses": [
+      "Lack of technical background in software engineering",
+      "No experience with TypeScript/React or backend languages like Go",
+      "No experience in distributed systems, event-driven architectures or time-series data"
+    ],
+    "summary": "Jason Muller lacks the technical skills and experience required for the full-stack engineering role at Pulsegrid, but shows adaptability and customer service skills.",
+    "candidate": "professional_cv_jason_muller"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Business development and brand positioning",
+      "Customer experience improvement"
+    ],
+    "weaknesses": [
+      "Lack of technical skills and experience",
+      "No evidence of experience with TypeScript/React or backend development",
+      "No experience in the energy sector or distributed systems"
+    ],
+    "summary": "The candidate lacks the technical background and direct experience with software development or the energy sector that the job requires.",
+    "candidate": "professional_cv_sarah_lynne_van_der_merwe"
+  },
+  {
+    "score": 1,
+    "strengths": [
+      "willingness to work",
+      "ability to work independently"
+    ],
+    "weaknesses": [
+      "lack of relevant technical skills",
+      "inconsistent work history",
+      "poor communication"
+    ],
+    "summary": "The candidate does not meet the essential requirements of the job and lacks relevant experience and technical skills.",
+    "candidate": "bad_cv_kevin_jones"
+  },
+  {
+    "score": 1,
+    "strengths": [],
+    "weaknesses": [
+      "Lacks relevant technical skills and experience",
+      "No evidence of deep understanding of distributed systems or production software",
+      "No demonstrated experience with the technologies mentioned in the job description"
+    ],
+    "summary": "The candidate does not meet the basic requirements for the position and lacks the necessary technical skills and experience.",
+    "candidate": "bad_cv_sarah_lynne_van_der_merwe"
+  }
+]

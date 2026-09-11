@@ -1,0 +1,8 @@
+{
+  "candidate": "bad_cv_jason_muller",
+  "final_score": 2,
+  "score_rationale": "The candidate demonstrates learning agility and assertive communication, but lacks essential experience in full-stack engineering, production systems, and distributed technologies required for a founding role.",
+  "key_strengths": "Fast learning ability, assertive communication skills",
+  "key_weaknesses": "No relevant technical experience, lack of evidence in operating production services or understanding distributed systems",
+  "final_evaluation": "The candidate does not meet the essential requirements for a founding Full-Stack Engineer at Pulsegrid. The absence of demonstrated experience in production software, backend development (Go), and distributed systems is a significant barrier to success in this role."
+}

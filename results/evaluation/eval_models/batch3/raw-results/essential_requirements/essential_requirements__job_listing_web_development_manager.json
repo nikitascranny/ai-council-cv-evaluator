@@ -1,0 +1,26 @@
+[
+  {
+    "summary": "The candidate's work experience in management, although in a non-technical field, suggests potential leadership skills. However, the CV does not provide evidence of 5+ years of professional web/software engineering experience, nor does it demonstrate experience leading teams through significant technical change. There is no indication of experience in modern web stacks, CI/CD, cloud infrastructure, or agile delivery with distributed or hybrid teams.",
+    "candidate": "bad_cv_jason_muller"
+  },
+  {
+    "summary": "The candidate's employment history shows a diverse background, but it is unclear whether they have 5+ years of professional web/software engineering experience or any line-management experience. Their technical skills are not detailed, making it uncertain if they have a strong background in modern web stacks or experience leading teams through significant technical change. Their communication skills are not evidenced, and there is no information about their experience with agile delivery or running a hybrid team. However, their high school diploma suggests they have some educational background, which might be transferable to their soft skills.",
+    "candidate": "bad_cv_kevin_jones"
+  },
+  {
+    "summary": "The candidate's experience as a Senior Executive Team Leader is a reasonable/close match for line-managing engineers and leading transformational initiatives. However, the essential requirement for 5+ years of professional web/software engineering experience, strong background in modern web stacks, and leading teams through significant technical change are clearly not met. The role's communication and agile delivery experience requirements are also unclear from the provided CV.",
+    "candidate": "bad_cv_sarah_lynne_van_der_merwe"
+  },
+  {
+    "summary": "The candidate does not clearly meet the essential requirement of 5+ years of professional web/software engineering experience, with at least 2 years line-managing engineers. The experience in managing a team is closely related but not explicitly stated. The candidate's background in digital-asset research shows strong analytical skills but does not directly relate to the technical and team management requirements of the role.",
+    "candidate": "professional_cv_jason_muller"
+  },
+  {
+    "summary": "The candidate's experience in adapting to multiple industries and roles is a reasonable match for the cross-functional experience required in the web development team. However, the essential requirements for 5+ years of professional web/software engineering experience, leading a team through significant technical change, and a strong background in modern web stacks are not clearly met by the provided CV.",
+    "candidate": "professional_cv_kevin_jones"
+  },
+  {
+    "summary": "The candidate has a reasonable match with the essential requirements, having experience in managing a team (2018-2022) and developing leadership skills. However, the CV does not clearly demonstrate 5+ years of professional web/software engineering experience or a strong background in modern web stacks, which are essential requirements for the role.",
+    "candidate": "professional_cv_sarah_lynne_van_der_merwe"
+  }
+]

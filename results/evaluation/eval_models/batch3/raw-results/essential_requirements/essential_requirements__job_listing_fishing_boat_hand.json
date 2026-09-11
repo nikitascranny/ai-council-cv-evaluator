@@ -1,0 +1,26 @@
+[
+  {
+    "summary": "The candidate's experience as an assistant manager at a car wash demonstrates some management and customer service skills, which could be a reasonable match for the reliability and punctuality requirement. However, there is no evidence of sea experience or the ability to handle heavy, repetitive manual work in all weathers, which are clearly essential requirements. The candidate's self-taught skills and crypto entrepreneurship might provide some basic numeracy but are not directly relevant to the essential requirements of the job.",
+    "candidate": "bad_cv_jason_muller"
+  },
+  {
+    "summary": "The candidate's employment history shows a variety of roles, some of which are likely to provide transferable skills related to punctuality and working with time constraints. However, there is no clear evidence of previous time on boats or physical work in all weathers, which are essential requirements. Basic numeracy skills are implied, but there is no direct mention of them. The candidate's ability to meet the essential requirement for sea legs is uncertain based on the provided information.",
+    "candidate": "bad_cv_kevin_jones"
+  },
+  {
+    "summary": "The candidate's experience does not clearly meet the essential requirements for the role of Boat Hand / Deckhand. They lack relevant maritime experience and do not demonstrate physical fitness or comfort with heavy, repetitive manual work. However, their role as a Senior Executive Team Leader shows some leadership and reliability, which could be seen as a reasonable match for the requirement of being punctual and reliable. The candidate's achievements do not provide evidence for the essential requirements of basic numeracy, safety procedures, or experience with potting or netting.",
+    "candidate": "bad_cv_sarah_lynne_van_der_merwe"
+  },
+  {
+    "summary": "The candidate's experience in supporting daily site operations and maintaining service continuity at a car wash shows reasonable transferable skills related to reliability and punctuality, which are essential for the role. However, the candidate's background in digital-asset research and secondary education does not clearly meet the essential requirements for physical work, handling shellfish, or working on an inshore fishing vessel.",
+    "candidate": "professional_cv_jason_muller"
+  },
+  {
+    "summary": "The candidate demonstrates reliable and punctual work habits, basic numeracy, and the ability to adapt to diverse work environments, which are reasonable matches for the essential requirements. However, the candidate lacks specific experience in the physical and manual tasks such as hauling, baiting, and grading pots and shellfish, as well as handling tangle nets and handlines, which are clearly not met by the CV provided.",
+    "candidate": "professional_cv_kevin_jones"
+  },
+  {
+    "summary": "The candidate's experience in managing end-to-end consulting processes and leading teams shows a high level of reliability and punctuality, which are essential requirements. Their experience with stock oversight and operations planning is a reasonable match for the physical and organizational responsibilities of the role. However, their background in business administration and leadership development does not clearly demonstrate the necessary physical and maritime experience, such as handling heavy manual work or time on boats, which are essential requirements.",
+    "candidate": "professional_cv_sarah_lynne_van_der_merwe"
+  }
+]

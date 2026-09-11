@@ -1,0 +1,90 @@
+[
+  {
+    "score": 5,
+    "strengths": [
+      "Adaptability and practical problem-solving skills demonstrated in varied work environments.",
+      "Independent work and strong communication skills developed in customer service roles.",
+      "Basic digital literacy with familiarity in Microsoft Office."
+    ],
+    "weaknesses": [
+      "Lack of direct IT support experience or knowledge of specific technologies like Windows 11, Microsoft 365, or Intune.",
+      "No demonstrated experience with programming or educational technology, crucial for the coding enrichment aspect of the role.",
+      "Absence of safeguarding training or experience in educational environments."
+    ],
+    "summary": "The candidate shows strong adaptability and communication skills but lacks specific IT and educational experience required for the role.",
+    "candidate": "professional_cv_kevin_jones"
+  },
+  {
+    "score": 4,
+    "strengths": [
+      "Demonstrates strong problem-solving and adaptability skills, which are valuable for IT support and working with young people.",
+      "Good interpersonal communication skills, beneficial for customer service and engaging with students and staff."
+    ],
+    "weaknesses": [
+      "Lacks specific IT support experience and knowledge of Windows 11, Microsoft 365, and Intune, which are essential for the role.",
+      "No experience in educational settings or programming, which are crucial for the coding enrichment component of the job.",
+      "No evidence of safeguarding awareness or experience in technology education environments."
+    ],
+    "summary": "The candidate has strong interpersonal and problem-solving skills but lacks the specific IT and educational experience necessary for the IT Technician & Coding Enrichment Lead role.",
+    "candidate": "professional_cv_jason_muller"
+  },
+  {
+    "score": 4,
+    "strengths": [
+      "Strong leadership and team coordination skills, which can be beneficial in managing after-school coding clubs and assisting in classroom technology support.",
+      "Experience in customer engagement and communication, valuable for explaining technology clearly and working with young people.",
+      "Entrepreneurial mindset and interest in practical business improvement may translate into effective problem-solving and initiative-taking in a school IT setting."
+    ],
+    "weaknesses": [
+      "Lack of direct experience in IT support or educational technology, which are key components of the job.",
+      "No demonstrated knowledge of Windows 11, Microsoft 365, or Intune, which are essential for the role.",
+      "Absence of programming skills in Python or Scratch, which are necessary for assisting with KS3 programming lessons and running the Code Club."
+    ],
+    "summary": "The candidate has strong leadership and communication skills but lacks the necessary IT and programming experience required for the role.",
+    "candidate": "professional_cv_sarah_lynne_van_der_merwe"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Has experience in managing staff and handling difficult situations, which may help in classroom support and first-line IT support.",
+      "Shows fast learning capabilities which could be beneficial in upskilling for the required IT and programming knowledge."
+    ],
+    "weaknesses": [
+      "Lacks specific IT support experience or familiarity with the required technology such as Windows 11, Microsoft 365, and Intune.",
+      "No evident programming skills or experience in working with young people.",
+      "Limited formal education and no demonstrated commitment to further qualifications or training."
+    ],
+    "summary": "The candidate lacks the necessary IT skills and experience, as well as the enthusiasm for working with young people, which are critical for this role.",
+    "candidate": "bad_cv_jason_muller"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Willingness to work and learn",
+      "Basic technical skills like typing and understanding Excel"
+    ],
+    "weaknesses": [
+      "Lack of relevant IT or education experience",
+      "Inconsistent employment history",
+      "Limited evidence of programming or technical support skills",
+      "Apparent disinterest in working with young people or in an education setting"
+    ],
+    "summary": "The candidate lacks the relevant IT skills, experience, and enthusiasm required for the role, although they show a willingness to work and learn.",
+    "candidate": "bad_cv_kevin_jones"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Demonstrates a general ability to lead initiatives and engage with teams, which can be valuable in coordinating the Code Club and supporting students.",
+      "Shows experience in managing projects, albeit on a different scale, which may translate into organizing school IT tasks and robotics challenges."
+    ],
+    "weaknesses": [
+      "Lacks specific IT support experience and technical skills necessary for the role, such as familiarity with Windows 11, Microsoft 365, or Intune.",
+      "Has no demonstrated experience in educational settings or working directly with young people, which is crucial for the coding enrichment aspects of the job.",
+      "The absence of relevant programming skills in Python or Scratch is a significant drawback for assisting with coding lessons.",
+      "Her work experience does not align with the technical and educational demands of the position."
+    ],
+    "summary": "While Sarah-Lynne shows some general leadership and project management abilities, she lacks the specific technical skills, educational experience, and programming knowledge required for the IT Technician & Coding Enrichment Lead role.",
+    "candidate": "bad_cv_sarah_lynne_van_der_merwe"
+  }
+]

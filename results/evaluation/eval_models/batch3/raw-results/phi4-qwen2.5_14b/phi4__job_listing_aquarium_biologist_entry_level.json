@@ -1,0 +1,94 @@
+[
+  {
+    "score": 4,
+    "strengths": [
+      "Demonstrates strong team coordination and supervisory experience.",
+      "Exhibits adaptability and problem-solving skills in fast-paced environments.",
+      "Has a good understanding of operational support and workflow management."
+    ],
+    "weaknesses": [
+      "Lacks relevant academic qualifications in Marine Biology, Zoology, or related life sciences.",
+      "No direct experience or familiarity with aquatic animal husbandry or life support systems.",
+      "Limited evidence of physical fitness for tasks like lifting and working in humid environments."
+    ],
+    "summary": "The candidate has strong supervisory and operational skills but lacks relevant academic and practical experience in aquatic biology and husbandry.",
+    "candidate": "professional_cv_jason_muller"
+  },
+  {
+    "score": 4,
+    "strengths": [
+      "Shows adaptability and resilience across various roles, which can be beneficial for a dynamic work environment like an aquarium.",
+      "Demonstrates strong independent work and problem-solving skills."
+    ],
+    "weaknesses": [
+      "Lacks a relevant degree in Marine Biology, Zoology, Aquatic Biology, or a related life science, which is an essential requirement.",
+      "Has no specific experience in aquatic animal husbandry, water quality testing, or life support systems maintenance.",
+      "Does not possess the physical fitness or willingness for the dirty and repetitive tasks required by the role."
+    ],
+    "summary": "While the candidate exhibits adaptability and problem-solving skills, the lack of relevant academic background and specific experience in aquatic environments significantly weakens their fit for the role.",
+    "candidate": "professional_cv_kevin_jones"
+  },
+  {
+    "score": 4,
+    "strengths": [
+      "Demonstrates strong leadership and operational management skills, which could be beneficial in team coordination roles within the aquarium.",
+      "Possesses a proven track record in improving customer experience and stakeholder communication, relevant for engaging with visitors."
+    ],
+    "weaknesses": [
+      "Lacks specific education or experience in marine biology, zoology, or related life sciences as required.",
+      "No evidence of hands-on experience with aquatic life support systems or familiarity with aquarium husbandry.",
+      "No indication of physical fitness or ability to perform tasks like lifting and working in challenging conditions."
+    ],
+    "summary": "The candidate has strong leadership and communication skills but lacks the specific educational background and practical experience in aquatic biology and life support systems required for the Aquarium Biologist role.",
+    "candidate": "professional_cv_sarah_lynne_van_der_merwe"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Candidate can lift heavy boxes, meeting the physical fitness requirement.",
+      "Demonstrated ability to manage tasks and responsibilities as an Assistant Manager.",
+      "Exhibited some problem-solving skills when dealing with difficult customers.",
+      "Fast learner when motivated, which is beneficial for on-the-job training."
+    ],
+    "weaknesses": [
+      "Lacks relevant education or practical experience in marine biology or related fields.",
+      "No evidence of understanding water chemistry or the nitrogen cycle.",
+      "No experience in animal care or life support system maintenance.",
+      "Work history does not demonstrate reliability or responsibility.",
+      "Lacks required observational skills and attention to detail for record-keeping.",
+      "Limited evidence of strong work ethic or genuine willingness to do repetitive, dirty tasks."
+    ],
+    "summary": "The candidate lacks the necessary educational background, relevant experience, and demonstrated skills to meet the essential requirements of the Aquarium Biologist position.",
+    "candidate": "bad_cv_jason_muller"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Willingness to work",
+      "Diverse work history showing adaptability"
+    ],
+    "weaknesses": [
+      "Lack of relevant education and experience",
+      "Resistance to working weekends and rota-based hours",
+      "Limited physical fitness and no evidence of relevant skills",
+      "No understanding or interest in aquatic life support systems"
+    ],
+    "summary": "The candidate lacks the educational background, relevant experience, and specific skills required for the Aquarium Biologist role, and is unwilling to meet key working conditions.",
+    "candidate": "bad_cv_kevin_jones"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Demonstrates ambition and initiative through founding a consultancy",
+      "Experience in leading transformational initiatives at a retail level"
+    ],
+    "weaknesses": [
+      "Lack of relevant educational background in marine biology, zoology, or aquatic biology",
+      "No practical experience in aquatic animal husbandry or aquarium maintenance",
+      "Absence of evidence for skills related to water quality testing or life support systems maintenance",
+      "Unrelated professional experience, primarily in business and retail"
+    ],
+    "summary": "The candidate's experience and skills are largely irrelevant to the technical and hands-on requirements of an Aquarium Biologist position.",
+    "candidate": "bad_cv_sarah_lynne_van_der_merwe"
+  }
+]

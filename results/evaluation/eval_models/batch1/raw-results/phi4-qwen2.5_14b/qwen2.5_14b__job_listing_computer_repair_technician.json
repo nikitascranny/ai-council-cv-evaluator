@@ -1,0 +1,132 @@
+[
+  {
+    "score": 8,
+    "strengths": [
+      "Rich experience in global partnerships and internal communications",
+      "Strong background in project management and technology ecosystems"
+    ],
+    "weaknesses": [
+      "Limited direct technical development experience as listed on resume",
+      "No specific mention of aligning project plans to address gaps efficiently"
+    ],
+    "summary": "The candidate has substantial relevant work experience and a range of skills, but there are some gaps that may need additional up-skilling.",
+    "candidate": "LERATO MUNCHE"
+  },
+  {
+    "score": 4,
+    "strengths": [
+      "Strong communication skills",
+      "Experience in user-centric approaches"
+    ],
+    "weaknesses": [
+      "Lack of technical repair experience",
+      "Irrelevant work background for the role"
+    ],
+    "summary": "Geoff Nitschke's extensive research and design background does not align with the practical, hands-on computer repair tasks required at Brenda & Mick's Computer Repairs.",
+    "candidate": "GEOFF NITSCHKE"
+  },
+  {
+    "score": 4,
+    "strengths": [
+      "problem-solving skills",
+      "attention to detail"
+    ],
+    "weaknesses": [
+      "lack of direct IT repair experience",
+      "no local reference or indication of ability to relocate"
+    ],
+    "summary": "The candidate demonstrates strong analytical and problem-solving abilities but lacks specific IT repair experience and is not based locally, making them less suitable for the role.",
+    "candidate": "JORDAN VELDMAN"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "strong in software testing and automation",
+      "experienced in documenting test plans and training new hires"
+    ],
+    "weaknesses": [
+      "lacks practical PC/laptop repair skills",
+      "no experience working with older or less technologically savvy customers"
+    ],
+    "summary": "The candidate excels in software testing but falls short of the required technical and customer service skills for a computer repair role.",
+    "candidate": "ALEX PARK"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Excellent communication and interpersonal skills",
+      "Reliability and dependability in all tasks"
+    ],
+    "weaknesses": [
+      "Lack of practical PC/laptop repair experience",
+      "Limited direct relevance to the job role"
+    ],
+    "summary": "Karabo Refilwe Ndlovu demonstrates strong administrative and organizational skills, but lacks the technical computer repair experience required for the position.",
+    "candidate": "NDLOVU KARABO REFILWE"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Advanced IT certifications and technical skills",
+      "Experience in managing teams and projects"
+    ],
+    "weaknesses": [
+      "Lack of direct experience in basic computer repairs or customer service roles",
+      "High level of qualifications that may not align with the part-time, casual nature of the job"
+    ],
+    "summary": "The candidate possesses a high level of IT expertise but lacks relevant experience in basic computer repair and customer interaction, making them overqualified for this specific role.",
+    "candidate": "PATRICK MARAIS"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "cash-flow modelling",
+      "report writing"
+    ],
+    "weaknesses": [
+      "lack of practical PC/laptop repair skills",
+      "no experience in customer service or technical support roles"
+    ],
+    "summary": "Pontus Pontious lacks the necessary hands-on technical and customer service experience for this role, but has strong analytical and reporting skills.",
+    "candidate": "PONTUS PONTIOUS"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "leadership and strategic thinking",
+      "digital marketing expertise"
+    ],
+    "weaknesses": [
+      "lacks hands-on technical repair skills",
+      "no experience in direct customer service for repairs"
+    ],
+    "summary": "The candidate excels in digital strategy and leadership but lacks the necessary practical computer repair skills and direct customer service experience required for this role.",
+    "candidate": "RIAAN GOVEN"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "advanced technical skills",
+      "strong communication and interpersonal skills"
+    ],
+    "weaknesses": [
+      "lack of direct computer repair experience",
+      "no relevant work history in a customer-facing repair environment"
+    ],
+    "summary": "The candidate possesses strong technical and communication abilities but lacks the specific hands-on experience required for this role.",
+    "candidate": "THE DANIEL"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "technical expertise in cloud engineering",
+      "experience with data management and analysis"
+    ],
+    "weaknesses": [
+      "lack of practical PC/laptop repair skills",
+      "no relevant work experience in computer repairs or customer service roles"
+    ],
+    "summary": "Emile Mokoena's background in cloud engineering and data analysis does not align well with the hands-on technical and customer service requirements of a computer repair role.",
+    "candidate": "EMILE MOKOENA"
+  }
+]

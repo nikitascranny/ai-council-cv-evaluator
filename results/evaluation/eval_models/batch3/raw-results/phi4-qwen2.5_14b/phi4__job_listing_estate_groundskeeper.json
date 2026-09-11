@@ -1,0 +1,98 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Has experience in team coordination and on-site supervision.",
+      "Demonstrates adaptability in fast-moving environments."
+    ],
+    "weaknesses": [
+      "Lacks proven groundskeeping or countryside management experience.",
+      "No evidence of excellent physical fitness or comfort with outdoor tracking.",
+      "No experience with bloodhounds, airsoft equipment, or military-style tracking.",
+      "No demonstrated ability to maintain discretion in a confidential setting."
+    ],
+    "summary": "While Jason Muller has some relevant skills in team coordination and adaptability, he lacks the specific groundskeeping, physical fitness, and discretion required for this role.",
+    "candidate": "professional_cv_jason_muller"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Demonstrates adaptability and resilience in varied operational environments.",
+      "Has experience in customer service and communication, which may aid in discreet guest interactions."
+    ],
+    "weaknesses": [
+      "Lacks specific experience in groundskeeping or countryside management.",
+      "No proven background in tracking, military, or pursuit-oriented roles.",
+      "No experience with handling or working with animals, such as hounds.",
+      "Has not demonstrated the required level of physical fitness or comfort with outdoor activities.",
+      "Limited exposure to roles involving discretion at the level required for this position."
+    ],
+    "summary": "The candidate shows adaptability and some relevant customer service skills, but lacks the specific experience and qualifications necessary for the Groundskeeper & 'Hunt' Coordinator role.",
+    "candidate": "professional_cv_kevin_jones"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Experienced in team coordination and leadership, which can be beneficial for managing tracking teams.",
+      "Strong in stakeholder communication, which may help in enforcing safety frameworks and managing guest interactions."
+    ],
+    "weaknesses": [
+      "Lacks direct experience in groundskeeping, gamekeeping, or countryside management.",
+      "No background in tracking, search & rescue, or pursuit-oriented activities.",
+      "No familiarity with handling animals, particularly bloodhounds, or experience with outdoor, physical work environments.",
+      "Limited experience with high physical fitness demands, which are essential for covering rough moor and woodland terrain.",
+      "No experience with firearms, airsoft, or similar equipment required for the role.",
+      "No demonstrated ability to work alone in remote areas without phone signal."
+    ],
+    "summary": "While Sarah-Lynne has strong leadership and communication skills, her lack of relevant experience in countryside management, tracking, and physical outdoor activities makes her a poor fit for this role.",
+    "candidate": "professional_cv_sarah_lynne_van_der_merwe"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Quick learner when motivated, indicating potential for up-skilling"
+    ],
+    "weaknesses": [
+      "Lack of relevant work experience in groundskeeping or countryside management",
+      "No evidence of physical fitness or experience with tracking, hounds, or similar pursuits",
+      "Lacks the discretion and reliability necessary for the role",
+      "No mention of comfort with the concept of live-action experiences or working alone in remote areas"
+    ],
+    "summary": "The candidate lacks relevant experience, physical fitness, and the necessary discretion and reliability for the Groundskeeper & Hunt Coordinator role.",
+    "candidate": "bad_cv_jason_muller"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Shows willingness to work",
+      "Expresses flexibility in location"
+    ],
+    "weaknesses": [
+      "Lacks relevant experience in groundskeeping, gamekeeping, or countryside management",
+      "No experience with tracking, search & rescue, military, or pursuit-oriented activities",
+      "Discomfort with working odd hours and remotely",
+      "No evidence of physical fitness or ability to work in difficult conditions",
+      "Lacks familiarity with working with dogs, especially bloodhounds",
+      "No demonstrated ability to maintain discretion or handle sensitive situations"
+    ],
+    "summary": "The candidate's lack of relevant experience and skills, combined with apparent discomfort with the role's requirements, makes them a poor fit for the Groundskeeper & 'Hunt' Coordinator position at Blackmoor Hall Estate.",
+    "candidate": "bad_cv_kevin_jones"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Demonstrates ability to lead and initiate projects",
+      "Experienced in managing teams and overseeing operations"
+    ],
+    "weaknesses": [
+      "Lacks relevant groundskeeping, gamekeeping, or countryside management experience",
+      "No experience with physical fitness requirements or outdoor work",
+      "No demonstrated experience with tracking, search & rescue, or military work",
+      "Lacks experience in working with animals or dogs",
+      "No experience with security or immersive theatre roles",
+      "Insufficient evidence of discretion or confidentiality in past roles"
+    ],
+    "summary": "The candidate lacks the necessary relevant experience and skills for the Groundskeeper & Hunt Coordinator role, particularly in groundskeeping, physical fitness, and discretion.",
+    "candidate": "bad_cv_sarah_lynne_van_der_merwe"
+  }
+]

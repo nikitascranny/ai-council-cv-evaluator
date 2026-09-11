@@ -1,0 +1,125 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Strong problem-solving and technical skills from software development experience",
+      "Attention to detail from testing and quality assurance work"
+    ],
+    "weaknesses": [
+      "No relevant groundskeeping, tracking, or outdoor experience",
+      "Lacks physical fitness and survival skills required for the role",
+      "No evidence of discretion or handling sensitive situations"
+    ],
+    "summary": "Candidate's software development background is entirely unrelated to the physical, outdoor, and security-focused requirements of the Groundskeeper role.",
+    "candidate": "beginner_sa"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Strong leadership and technical expertise in software engineering",
+      "Ability to follow instructions and maintain discretion"
+    ],
+    "weaknesses": [
+      "No relevant experience in groundskeeping, estate management, or pursuit-oriented roles",
+      "Lacks physical fitness, tracking, and outdoor survival skills required for the role"
+    ],
+    "summary": "Candidate's extensive software engineering background is entirely unrelated to the physical, outdoor, and pursuit-specific requirements of the Groundskeeper & Hunt Coordinator role.",
+    "candidate": "senior_sa"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Adaptability and technical problem-solving skills from software engineering experience",
+      "Strong communication and collaboration skills from team roles"
+    ],
+    "weaknesses": [
+      "No relevant experience in groundskeeping, tracking, or outdoor management",
+      "Lacks physical fitness, hunting/tracking background, and discretion required for the role",
+      "No evidence of comfort with the unconventional 'hunting' premise or ability to work alone in remote areas"
+    ],
+    "summary": "Candidate lacks all essential qualifications for the role, including outdoor management experience, physical capabilities, and alignment with the unconventional 'hunting' premise.",
+    "candidate": "beginner_american"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Adaptability and quick learning in technical environments",
+      "Basic understanding of project management and teamwork"
+    ],
+    "weaknesses": [
+      "No relevant outdoor/groundskeeping experience",
+      "Lacks physical fitness and tracking skills required for the role",
+      "No exposure to security, hunting, or pursuit-oriented work"
+    ],
+    "summary": "The candidate's software engineering background and technical skills are entirely unrelated to the physical, outdoor, and security-focused requirements of the Groundskeeper role.",
+    "candidate": "beginner_chinese"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong technical and leadership experience in software engineering",
+      "Proven ability to lead projects and mentor teams"
+    ],
+    "weaknesses": [
+      "No relevant experience in groundskeeping, estate management, or tracking/pursuit activities",
+      "Lacks physical fitness, outdoor survival, and discretion-related skills required for the role"
+    ],
+    "summary": "The candidate's software engineering background and leadership experience are highly relevant to technical roles, but the position requires outdoor management, tracking, and physical skills that are entirely absent from their profile.",
+    "candidate": "intermediate_american"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong technical background in software engineering",
+      "Leadership and mentoring experience"
+    ],
+    "weaknesses": [
+      "No relevant experience in groundskeeping, tracking, or outdoor pursuits",
+      "Lacks physical fitness and survival skills required for the role",
+      "No evidence of discretion or handling sensitive situations"
+    ],
+    "summary": "Candidate lacks all essential qualifications for a role requiring outdoor survival skills, tracking experience, and discretion, with a background entirely focused on software engineering.",
+    "candidate": "middle_chinese"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong technical background in software engineering",
+      "Experience in project management and system design"
+    ],
+    "weaknesses": [
+      "No relevant experience in groundskeeping, tracking, or outdoor management",
+      "Lacks physical fitness and survival skills required for the role"
+    ],
+    "summary": "Candidate lacks essential outdoor, tracking, and estate management experience required for the role despite having strong technical skills.",
+    "candidate": "middle_sa"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong technical leadership and problem-solving experience",
+      "Proven ability to manage complex systems and teams"
+    ],
+    "weaknesses": [
+      "No relevant experience in groundskeeping, tracking, or outdoor pursuits",
+      "Lacks physical fitness and survival skills required for the role",
+      "No evidence of discretion, NDA compliance, or comfort with the 'hunting' premise"
+    ],
+    "summary": "Candidate's extensive tech background is entirely unrelated to the estate management, tracking, and discretion requirements of the role.",
+    "candidate": "senior_american"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong technical leadership and systems engineering experience",
+      "Proven ability to manage complex projects and teams"
+    ],
+    "weaknesses": [
+      "No relevant experience in groundskeeping, outdoor management, or physical pursuit roles",
+      "Lack of physical fitness, tracking, or hunting-related skills",
+      "No background in event coordination, guest safety, or discrete record-keeping"
+    ],
+    "summary": "The candidate's extensive software engineering experience is entirely misaligned with the physical, outdoor, and discretion-based requirements of the Groundskeeper & Hunt Coordinator role.",
+    "candidate": "senior_chinese"
+  }
+]

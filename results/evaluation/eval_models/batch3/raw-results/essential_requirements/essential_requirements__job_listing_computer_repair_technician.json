@@ -1,0 +1,26 @@
+[
+  {
+    "summary": "The candidate's experience as an assistant manager indicates they have the ability to handle difficult customers and manage tasks, which aligns with the essential requirement of being friendly and patient with older customers. However, there is no clear evidence of practical PC/laptop repair skills. The CV does not provide specific details on whether the candidate can work Saturdays or is local to the area. The role requires basic practical PC/laptop repair skills, which are unclear from the provided information.",
+    "candidate": "bad_cv_jason_muller"
+  },
+  {
+    "summary": "The candidate meets the essential requirement of basic PC/laptop repair skills through their various employment experiences, which included dealing with issues in a customer service role. They are also a reasonable/close match for being friendly and patient with older customers, as their experience in call centre work suggests they can handle interactions with people who did not want to be called. However, it is unclear whether they can work Saturdays and are reliable, as these aspects are not directly addressed in their CV.",
+    "candidate": "bad_cv_kevin_jones"
+  },
+  {
+    "summary": "The candidate's experience in leadership and operations at a retail store is a reasonable match for the role's essential requirements, particularly in terms of customer service and basic problem-solving. However, there is no evidence of direct technical computer repair skills, and the required ability to work on Saturdays is unclear from the CV.",
+    "candidate": "bad_cv_sarah_lynne_van_der_merwe"
+  },
+  {
+    "summary": "The candidate's CV does not clearly demonstrate the essential requirement of basic PC/laptop repair skills. However, the role of Assistant Manager, while not directly related, suggests strong organizational and customer service skills which could be transferable. The candidate's ability to explain complex information in a clear and approachable manner aligns with the requirement of being friendly and patient with older customers. Their self-directed learning in customer service and operations is relevant to the job's essential requirements.",
+    "candidate": "professional_cv_jason_muller"
+  },
+  {
+    "summary": "The candidate's experience in customer service and support roles closely matches the essential requirement of being friendly and patient with older customers. Their adaptability and practical judgement could be transferable to the role of diagnosing and fixing everyday computer problems. However, their background does not clearly indicate specific technical PC/laptop repair skills, which are essential for the position.",
+    "candidate": "professional_cv_kevin_jones"
+  },
+  {
+    "summary": "The candidate's experience in managing end-to-end processes and improving customer experience aligns closely with the essential requirement of serving customers and diagnosing/easy-fixing computer issues. However, there is no clear evidence of basic PC/laptop repair skills or the ability to work Saturdays, which are essential requirements for the role.",
+    "candidate": "professional_cv_sarah_lynne_van_der_merwe"
+  }
+]

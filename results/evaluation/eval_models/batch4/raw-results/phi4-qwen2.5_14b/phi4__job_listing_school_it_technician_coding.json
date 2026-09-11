@@ -1,0 +1,31 @@
+[
+  {
+    "score": 6,
+    "strengths": [
+      "Demonstrates strong first-line troubleshooting and maintenance skills which align with the technical requirements of the IT support role.",
+      "Experience in incident identification, escalation, and preventive maintenance is relevant for keeping school IT running smoothly.",
+      "Independent working and adaptability are crucial for handling unexpected issues in a school environment."
+    ],
+    "weaknesses": [
+      "Lacks formal IT qualifications and practical IT support experience, especially in an educational setting.",
+      "No experience with Windows 11, Microsoft 365, or Intune, which are essential for the role.",
+      "No prior experience with programming languages like Python or Scratch, which are necessary for supporting coding activities."
+    ],
+    "summary": "The candidate has strong foundational skills in troubleshooting and maintenance but lacks specific IT and educational experience required for the role.",
+    "candidate": "Ralph_Son_of_a_Shepard_IT_Transition_CV"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Demonstrates excellent record-keeping and disciplined work ethic, which are transferable to maintaining IT asset registers and licences.",
+      "Possesses strong problem-solving and independent work skills, valuable for troubleshooting and first-line IT support."
+    ],
+    "weaknesses": [
+      "Lacks practical IT support experience and working knowledge of necessary software like Windows 11, Microsoft 365, or Intune.",
+      "Does not have any background in programming, which is essential for assisting with coding activities and the robotics challenge.",
+      "No experience in an educational setting or working with young people, which is crucial for this hybrid role."
+    ],
+    "summary": "While the candidate shows strong independent work and problem-solving skills, they lack essential IT experience and familiarity with programming, making them a weaker fit for the IT Technician & Coding Enrichment Lead role.",
+    "candidate": "Ralph_Son_of_a_Shepard_Farm_CV"
+  }
+]

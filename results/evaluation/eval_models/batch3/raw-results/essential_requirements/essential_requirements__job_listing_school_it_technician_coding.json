@@ -1,0 +1,26 @@
+[
+  {
+    "summary": "The candidate's experience in managing staff and dealing with difficult customers may reasonably align with providing first-line IT support. However, the lack of clear IT support experience, practical programming ability, or basic knowledge of Windows 11, Microsoft 365, or Intune makes it difficult to fully assess their suitability. Their enthusiasm for working with young people is not evidenced, and there is no indication of their willingness to undergo a DBS check.",
+    "candidate": "bad_cv_jason_muller"
+  },
+  {
+    "summary": "The candidate has no clear IT support experience, which is an essential requirement. However, their varied employment history shows practical experience in working with technology, which could be a reasonable match for the practical IT support experience. Their call centre experience may reasonably indicate basic programming ability, as they were required to follow a script, which could loosely relate to debugging simple code. The education background shows a completed high school diploma, which is a minimum requirement. The candidate's ability to explain technology clearly and their willingness to undergo a DBS check are also demonstrated. However, the lack of specific IT support and programming experience is a significant gap.",
+    "candidate": "bad_cv_kevin_jones"
+  },
+  {
+    "summary": "The candidate's experience as a Senior Executive Team Leader and Chief Vision Officer aligns reasonably well with the essential requirement of practical IT support experience, as both involve leading and optimizing operations. However, the candidate does not clearly demonstrate practical IT support experience or working knowledge of Windows 11, Microsoft 365, or Intune. Basic programming ability is also unclear from the provided information.",
+    "candidate": "bad_cv_sarah_lynne_van_der_merwe"
+  },
+  {
+    "summary": "The candidate has a reasonable/close match for the essential requirements, including practical IT support experience and a working knowledge of Windows 11 and Microsoft 365. Their self-directed learning indicates an interest in and ability to learn programming, which could be a reasonable match for the basic programming ability requirement. However, the candidate's background is in a different industry, and there is no evidence of direct IT technician or coding enrichment experience, making those requirements unclear from the CV.",
+    "candidate": "professional_cv_jason_muller"
+  },
+  {
+    "summary": "The candidate's experience in supporting operational tasks and customer service roles provides a reasonable match for the essential requirement of practical IT support experience. Their ability to adapt to changing workflows and handle high-volume interactions suggests a solution-focused approach that could be transferable to the role. However, the candidate's experience does not clearly demonstrate a working knowledge of Windows 11, Microsoft 365, or Intune, which are essential requirements. Basic programming ability, while not explicitly evidenced, could be inferred from their customer service role's emphasis on clear communication.",
+    "candidate": "professional_cv_kevin_jones"
+  },
+  {
+    "summary": "The candidate does not clearly meet the essential requirements for the IT Technician & Coding Enrichment Lead role. Their professional experience does not evidence practical IT support experience or working knowledge of Windows 11, Microsoft 365, or Intune. However, their experience in managing and leading a business consultancy could be seen as a reasonable close match to their enthusiasm and ability to work with young people. The essential requirement for basic programming ability to help 11-14 year olds debug their code is not met, and their education does not indicate any programming skills. The candidate’s background in business administration and leadership could be relevant to the role's responsibilities, but specific IT and coding experience are lacking.",
+    "candidate": "professional_cv_sarah_lynne_van_der_merwe"
+  }
+]

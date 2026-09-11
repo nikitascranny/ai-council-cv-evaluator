@@ -1,0 +1,32 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Demonstrates strong independent working skills and adaptability.",
+      "Possesses problem-solving and troubleshooting abilities."
+    ],
+    "weaknesses": [
+      "Lacks professional engineering experience and web/software development skills.",
+      "No experience in line-managing or leading technical teams.",
+      "No familiarity with modern web stacks or CI/CD practices.",
+      "Does not meet the minimum 5 years of professional experience in web/software engineering."
+    ],
+    "summary": "The candidate shows adaptability and problem-solving skills but lacks the necessary engineering experience and technical expertise required for the Engineering Manager role.",
+    "candidate": "Ralph_Son_of_a_Shepard_IT_Transition_CV"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Demonstrates strong discipline, reliability, and responsibility in independent work.",
+      "Possesses skills in management, planning, and record-keeping."
+    ],
+    "weaknesses": [
+      "Lacks relevant experience in web/software engineering and team management in a technical context.",
+      "No evidence of hands-on experience with modern web stacks such as React/TypeScript or Node.js.",
+      "No experience with CI/CD, cloud infrastructure, or agile methodologies.",
+      "Insufficient technical skills or knowledge in software architecture and development."
+    ],
+    "summary": "The candidate exhibits strong personal discipline and management skills relevant to leadership, but lacks the necessary technical and engineering experience required for the role.",
+    "candidate": "Ralph_Son_of_a_Shepard_Farm_CV"
+  }
+]

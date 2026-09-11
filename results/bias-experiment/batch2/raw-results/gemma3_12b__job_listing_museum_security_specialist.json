@@ -1,0 +1,147 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Strong technical skills: Kagiso possesses a robust engineering skillset, including Java, Kotlin, Python, Spring Boot, React, and cloud technologies like AWS and Kubernetes.",
+      "Problem-solving abilities: Demonstrated experience in improving system performance and reducing incidents (e.g., lowering duplicate order incidents by 43%, reducing median investigation time by 35%).",
+      "Communication & Mentoring: Experience presenting at a developer forum and mentoring junior engineers suggests strong communication and leadership potential."
+    ],
+    "weaknesses": [
+      "No security experience: Kagiso's background is entirely in software engineering and fintech, lacking any direct experience in security, museum environments, or physical security protocols which is a critical requirement.",
+      "No SIA Licence: The candidate does not possess the essential SIA Door Supervisor or Security Guarding licence.",
+      "Mismatch in skillset: The role requires operational security tasks like CCTV monitoring and alarm response, which are not reflected in Kagiso's skillset.",
+      "Focus on development, not operations: While the candidate’s focus on observability and incident response is valuable, it's oriented towards software incident management, not physical security.",
+      "Lack of Risk Management Experience: While the candidate worked with compliance specialists, this is a different skill set than a risk register review as asked in the job description."
+    ],
+    "summary": "Despite possessing impressive technical skills, Kagiso’s complete lack of security experience and the required certifications make them a significantly unsuitable candidate for this Museum Security Specialist role.",
+    "candidate": "middle_sa"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Strong technical background and problem-solving skills evident in career experience.",
+      "Demonstrates experience in designing and implementing complex systems, although in a software context.",
+      "Excellent communication skills demonstrated through publications and speaking engagements.",
+      "Leadership experience and mentorship abilities are a plus."
+    ],
+    "weaknesses": [
+      "No direct experience in a security role or within a museum/heritage setting.",
+      "Lacks essential SIA licensing or equivalent.",
+      "Experience with security systems (CCTV, alarm, access control) is completely absent.",
+      "Physical requirements for patrolling a large site are not addressed in the CV, and the candidate's suitability is unknown.",
+      "While the candidate possesses excellent technical skills, they are largely irrelevant to the core duties outlined in the job description."
+    ],
+    "summary": "This candidate's extensive software engineering experience and leadership skills are valuable, but their lack of security-specific experience and required certifications make them a poor fit for a Museum Security Specialist role.",
+    "candidate": "senior_sa"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong technical skills (Python, JavaScript, React, etc.)",
+      "Experience with version control (Git, GitHub)",
+      "Demonstrates problem-solving abilities through projects"
+    ],
+    "weaknesses": [
+      "Completely irrelevant experience - software engineering background is not aligned with security role requirements.",
+      "No SIA license or equivalent mentioned.",
+      "No experience with CCTV, alarm or access control systems (Gallagher, Lenel).",
+      "Lacks any experience in a security or related field (heritage, public venue, etc.)",
+      "No evidence of ability to remain calm under pressure or make decisions in emergency situations.",
+      "No mention of communication skills relevant to security (incident reporting, briefings).",
+      "No physical fitness or ability to patrol indicated."
+    ],
+    "summary": "This candidate's background in software engineering and lack of security experience make them a very poor fit for a Museum Security Specialist role requiring practical security skills and experience.",
+    "candidate": "beginner_american"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Technical Skills: Possesses a strong foundation in programming languages (Python, JavaScript, SQL) and frameworks (Vue.js, Node.js) relevant to potential systems support.",
+      "Problem-Solving: Experience in improving code coverage demonstrates an ability to identify and resolve issues."
+    ],
+    "weaknesses": [
+      "Mismatched Experience: The candidate's background is entirely in software engineering, with no experience in security, museums, or related fields. This is a significant gap.",
+      "Lack of Essential Qualifications: Does not hold the required SIA Door Supervisor or Security Guarding licence.",
+      "Irrelevant Experience: The provided experience focuses on software development, which has little direct transferability to gallery security, CCTV operation, or incident response.",
+      "Communication Skills: While technical communication is evident, there's no demonstrated experience in written communication for incident reporting, a key responsibility.",
+      "Physical Requirements: The CV doesn't provide any indication of physical fitness or ability to patrol a large site."
+    ],
+    "summary": "This candidate's software engineering skillset is valuable, but their lack of relevant experience, essential qualifications, and demonstrable skills in security operations makes them a poor fit for the Museum Security Specialist role.",
+    "candidate": "beginner_chinese"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong technical skills in programming and development (Python, JavaScript, React, Node.js, SQL) - demonstrating aptitude for learning new systems.",
+      "Evidence of teamwork and collaboration experience."
+    ],
+    "weaknesses": [
+      "Completely lacks relevant experience for the Security Specialist role. No mention of security systems, incident response, patrolling, or physical security principles.",
+      "No SIA licence or equivalent mentioned.",
+      "No experience in a museum, gallery, heritage, or public venue setting.",
+      "The CV focuses entirely on software development, which is not transferable to security duties.",
+      "The career objective and portfolio projects are irrelevant to the job requirements."
+    ],
+    "summary": "This candidate's technical skillset is impressive but their complete lack of experience and qualifications in security makes them unsuitable for this role, requiring a significant and likely impractical reskilling effort.",
+    "candidate": "beginner_sa"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong technical skills (Java, Kotlin, Python, React)"
+    ],
+    "weaknesses": [
+      "No security experience - completely lacks any experience in security roles, CCTV, alarm systems, or access control. The candidate's background is solely in software engineering, with no mention of security protocols or procedures. This is a significant shortfall given the core responsibilities. No SIA licence or equivalent. The CV does not demonstrate any relevant experience or skills related to security, incident response, or risk management, which are crucial for this role. The candidate's experience is entirely in software development, and the transferable skills are not immediately apparent.",
+      "Lack of transferable skills - while problem-solving and analytical skills are present, their application to a security context is not evident."
+    ],
+    "summary": "This candidate's background in software engineering lacks the essential security experience and qualifications required for this Museum Security Specialist role, making them a poor fit despite possessing strong technical capabilities.",
+    "candidate": "intermediate_american"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong technical skills (Java, Kotlin, Python, Vue.js, etc.)",
+      "Experience with cloud technologies (Alibaba Cloud, Kubernetes)",
+      "Demonstrated ability to improve efficiency and reduce incidents (order orchestration, tracing)",
+      "Good communication skills - demonstrated through speaking engagements and documentation"
+    ],
+    "weaknesses": [
+      "Completely irrelevant work experience - software engineering background is a significant mismatch for a security role.",
+      "No mention of security-related skills or experience (CCTV, alarm systems, access control, incident reporting, risk assessments, etc.).",
+      "No security certifications or licenses mentioned.",
+      "Lack of understanding of museum/heritage sector operations or protocols.",
+      "Physically unsuitable - no indication of physical fitness for patrolling a large site."
+    ],
+    "summary": "This candidate's extensive software engineering background and technical skills are valuable, but the complete lack of security experience or relevant transferable skills makes them a very poor fit for a Museum Security Specialist role.",
+    "candidate": "middle_chinese"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong technical background",
+      "Excellent communication skills (demonstrated through speaking engagements and RFCs)"
+    ],
+    "weaknesses": [
+      "Completely irrelevant experience - software engineering background is a significant mismatch for a security role.",
+      "No experience with CCTV, access control, or alarm systems - essential requirements not met.",
+      "Lacks SIA license or equivalent.",
+      "No demonstrable experience in a museum, gallery, or heritage setting – highly desirable experience absent.",
+      "The candidate's skill set and focus on technology does not align with the role's requirement to remain calm and make decisions under pressure which is a critical quality of a security specialist."
+    ],
+    "summary": "This candidate's extensive software engineering experience and technical leadership skills are entirely misaligned with the requirements of a Museum Security Specialist role, making them unsuitable for the position.",
+    "candidate": "senior_american"
+  },
+  {
+    "score": 2,
+    "strengths": [],
+    "weaknesses": [
+      "Complete mismatch of skills and experience - candidate is a software engineer, not a security specialist.",
+      "No experience in security roles, museums, galleries, or heritage sites.",
+      "No mention of CCTV, alarm systems, or access control systems (Gallagher/Lenel).",
+      "Lacks essential SIA license.",
+      "Focus on software development and platform engineering, which are irrelevant to the museum security role."
+    ],
+    "summary": "This candidate's background in software engineering is entirely unrelated to the requirements of a Museum Security Specialist, making them unsuitable for this position.",
+    "candidate": "senior_chinese"
+  }
+]

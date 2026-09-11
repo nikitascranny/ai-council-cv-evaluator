@@ -1,0 +1,38 @@
+[
+  {
+    "summary": "The candidate's background is in software engineering and teaching, which do not directly align with the essential requirements of the boat hand/deckhand position. However, their ability to work in a team and their punctuality as a teaching assistant could be seen as reasonable matches. The physical fitness, sea legs, and early start requirements are clearly not met by the CV. Essential requirements related to handling and processing fish, and basic numeracy for catch tallies, are unclear from the CV.",
+    "candidate": "beginner_american"
+  },
+  {
+    "summary": "The candidate appears to meet the essential requirements of being physically fit and comfortable with heavy, repetitive manual work, having sea legs with previous time on boats, being reliable and punctual, having basic numeracy, and being willing to work early starts and long days. However, the exact details of the candidate's experience, such as the specific type of boat work and exact numerical skills, are not clearly stated. There is no evidence of severe seasickness history or any STCW Basic Safety Training.",
+    "candidate": "beginner_chinese"
+  },
+  {
+    "summary": "The candidate appears to meet the essential requirement of physical fitness and previous boat experience. However, it is unclear if the candidate's availability aligns with the start date and they lack evidence of basic numeracy skills. The candidate’s punctuality and willingness to work early shifts are also not clearly stated.",
+    "candidate": "beginner_sa"
+  },
+  {
+    "summary": "The candidate's background in computer engineering and AWS certification does not directly relate to the job requirements. However, their physical fitness and ability to work in all weathers, along with their reliability and punctuality, could reasonably be inferred. The essential requirements related to handling boats and equipment, basic numeracy, and willingness to work early and long shifts are not clearly demonstrated in the provided CV.",
+    "candidate": "intermediate_american"
+  },
+  {
+    "summary": "The candidate's physical fitness and ability to handle heavy, repetitive work appear to meet the essential requirement. Their previous experience working on boats, particularly in a commercial setting, is a reasonable match. However, the candidate's availability and punctuality are unclear from the CV, and they do not mention having basic numeracy skills for catch tallies and grading.",
+    "candidate": "middle_chinese"
+  },
+  {
+    "summary": "The candidate's background in computer engineering and AWS certification do not clearly meet the essential requirements for the role. However, their previous experience as a contributor to engineering guilds and a presentation on practical API operations may be considered a reasonable match for basic numeracy and problem-solving skills related to the job. The candidate does not provide evidence of physical fitness, sea legs, or previous boat experience, which are essential requirements.",
+    "candidate": "middle_sa"
+  },
+  {
+    "summary": "The candidate's experience in technical leadership and system design aligns closely with some of the responsibilities, such as handling equipment and performing maintenance, though this is not their primary field. Their physical fitness and ability to work in adverse conditions are less clear from the CV. The candidate's experience with reliability and incident management may be transferable to some aspects of the role, but specific experience with handling pots, nets, and shellfish is not evident.",
+    "candidate": "senior_american"
+  },
+  {
+    "summary": "候选人的CV与Kestrel Bay Fishing Co.的职位描述相比，大多数要求并不相关，没有直接体现与渔业或出海工作相关的经验或技能。基本的身体条件和适应性、海上工作经验可能通过培训获得，但目前CV中并未展示。然而，候选人的技术领导力和项目管理经验较为突出，这些可能对团队协作和培训新员工有益。",
+    "candidate": "senior_chinese"
+  },
+  {
+    "summary": "The candidate's education and experience in software engineering and computer science do not clearly meet the essential requirements for a boat hand/deckhand position. However, their engineering excellence award and experience in adaptive workload-routing could be seen as a reasonable match for their ability to handle complex tasks and potentially understand basic numeracy and safety procedures. There is no evidence of sea experience or physical labor experience that are essential requirements for the role.",
+    "candidate": "senior_sa"
+  }
+]

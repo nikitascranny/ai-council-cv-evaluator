@@ -1,0 +1,26 @@
+[
+  {
+    "summary": "The candidate's experience does not clearly meet the essential requirements for the position. The candidate's background in managing staff and dealing with customers is relevant but does not align closely with the technical and development skills required. The 'Crypto Entrepreneur' experience shows adaptability and a willingness to learn, but it is not closely related to the technical skills needed for the role. The candidate lacks evidence of shipping production software with strong experience in TypeScript/React and a backend language, and does not demonstrate experience in operating services in production or in distributed systems fundamentals.",
+    "candidate": "bad_cv_jason_muller"
+  },
+  {
+    "summary": "The candidate has significant experience in software development and could potentially meet the essential requirements with reasonable leeway. Their experience in shipping production software could be a close match, and their comfort with ambiguity and velocity might be inferred from their varied employment history. However, their lack of specific experience in TypeScript/React, Go, or operating services in production is a clear mismatch. Their educational background and experience in other fields suggest they could learn and adapt, but these are not direct matches to the essential requirements.",
+    "candidate": "bad_cv_kevin_jones"
+  },
+  {
+    "summary": "The candidate's experience does not clearly meet the essential requirements for the position. Key responsibilities such as designing, building, and shipping full-stack features, operating services in production, and writing RFCs are not evidenced. The candidate's experience is more aligned with customer service and brand consulting rather than software engineering. However, the candidate's experience with transformational initiatives could be seen as related to the ability to shape what is built next. The candidate's education and achievements are not directly relevant to the technical skills required for the role.",
+    "candidate": "bad_cv_sarah_lynne_van_der_merwe"
+  },
+  {
+    "summary": "The candidate's experience is not clearly aligned with the essential requirements for the role. They have some transferable skills, such as communication and operational organization, but lack direct experience in software development, especially in TypeScript/React or backend languages. Their self-directed learning in financial-market research demonstrates a solid grasp of analytical judgment and information evaluation, which could be relevant, but it does not directly address the distributed systems or production operations experience required.",
+    "candidate": "professional_cv_jason_muller"
+  },
+  {
+    "summary": "The candidate's experience is primarily in customer service and operations roles, which do not directly align with the technical requirements of the position. However, their ability to adapt to different workflows and environments could be seen as relevant to the role's need for comfort with ambiguity. Technical skills such as experience with TypeScript/React or backend languages are not evident in the provided CV, and the candidate's experience does not clearly meet the essential requirements for this role.",
+    "candidate": "professional_cv_kevin_jones"
+  },
+  {
+    "summary": "The candidate's experience does not clearly meet the essential requirements of the role. There is no evidence of shipping production software, operating services in production, or working with TypeScript/React and backend languages like Go. However, the candidate's background in managing end-to-end projects and coordinating teams could be seen as a reasonable match for some of the responsibilities, such as working directly with founders and customers to shape what they build next. The candidate's business administration studies and executive leadership development could also provide relevant skills for the role, particularly in terms of communication and stakeholder management.",
+    "candidate": "professional_cv_sarah_lynne_van_der_merwe"
+  }
+]

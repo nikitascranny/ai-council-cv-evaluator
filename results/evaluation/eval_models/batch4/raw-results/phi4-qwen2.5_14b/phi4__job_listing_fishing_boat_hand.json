@@ -1,0 +1,32 @@
+[
+  {
+    "score": 6,
+    "strengths": [
+      "The candidate has strong physical fitness and is accustomed to working in demanding rural conditions, which aligns with the physically demanding nature of the boat hand role.",
+      "Ralph has experience with independent field work, which may help in adapting to the solitary aspects of the job when working alongside the skipper.",
+      "His skills in handling livestock could be transferable to managing shellfish and finfish, especially with the potential for up-skilling."
+    ],
+    "weaknesses": [
+      "Lack of direct experience in fishing or working on boats, which is a preferred requirement for the role.",
+      "No specific experience with maritime safety procedures, essential for a role on a fishing vessel.",
+      "Absence of experience in specific tasks like handling and grading shellfish, shooting and hauling nets, or maintaining fishing equipment."
+    ],
+    "summary": "Ralph possesses physical fitness and independent work experience, but lacks direct maritime experience, posing challenges in meeting some of the essential role requirements.",
+    "candidate": "Ralph_Son_of_a_Shepard_Farm_CV"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Demonstrates reliability and punctuality through a decade of independent work.",
+      "Exhibits strong adaptability and problem-solving skills in a safety-critical field."
+    ],
+    "weaknesses": [
+      "Lacks experience in maritime or fishing-related activities, critical for a Boat Hand role.",
+      "No evidence of physical fitness or comfort with heavy manual work in all weather conditions.",
+      "Does not have sea legs or experience on boats, which is strongly preferred for this position.",
+      "Lacks relevant skills such as netting, shellfish grading, and working on a fishing vessel."
+    ],
+    "summary": "The candidate shows strong work ethic and adaptability but lacks the essential maritime and physical experience required for the role.",
+    "candidate": "Ralph_Son_of_a_Shepard_IT_Transition_CV"
+  }
+]

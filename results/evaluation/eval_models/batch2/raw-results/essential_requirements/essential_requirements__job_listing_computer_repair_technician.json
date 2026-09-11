@@ -1,0 +1,39 @@
+[
+  {
+    "summary": "The candidate's experience in software engineering and teaching computer science demonstrates a strong background in technology, which could be a reasonable match for the essential requirement of basic PC/laptop repair skills. They do not have direct repair experience, which is a clear mismatch. The candidate is friendly and patient, and is reliable, aligning with the essential requirements of being friendly with older customers and being honest and reliable. Their availability for Saturdays is unclear, as their previous employment was part-time and did not specify weekday availability.",
+    "candidate": "beginner_american"
+  },
+  {
+    "summary": "The candidate clearly meets the requirement for basic PC/laptop repair skills and the ability to work Saturdays. Their experience in tech support and troubleshooting appears to be a reasonable match for diagnosing and fixing everyday computer issues. However, the candidate's ability to work Saturdays is unclear as their availability is not specified. There is no clear evidence of local or reliable transport to Tillingford.",
+    "candidate": "beginner_chinese"
+  },
+  {
+    "summary": "The candidate's skills in PC/laptop repair, particularly in basic diagnostics and simple hardware replacements, are a reasonable match for the essential requirement. Their ability to explain technical issues in simple terms to non-technical customers is a clear match. However, the CV does not explicitly state the candidate's availability for Saturdays, though this could be inferred. There is no clear indication of the candidate's reliability with handling cash or honesty with regards to the till and biscuit tin.",
+    "candidate": "beginner_sa"
+  },
+  {
+    "summary": "The candidate's education in Computer Engineering and AWS Certified Developer (Associate) qualifications clearly demonstrate their technical skills, which align closely with the essential requirement of basic PC/laptop repair skills. The candidate's ability to explain technical concepts in simple terms is implied by their AWS certification, suggesting they can meet the requirement of being friendly and patient with older customers. The essential requirement of being able to work Saturdays is not clearly met by the CV, as there is no explicit mention of availability for Saturday work. There is no information provided to confirm the candidate's local proximity or reliable transportation to the job location.",
+    "candidate": "intermediate_american"
+  },
+  {
+    "summary": "The candidate appears to meet the essential requirements of basic practical PC/laptop repair skills, being friendly and patient with older customers, and being honest and reliable. Their ability to work Saturdays is clear, as is their local availability. However, the candidate's experience with data recovery, RAM and SSD upgrades, and phone/tablet screen repairs is not explicitly stated, but could be considered a reasonable close match based on their general repair skills. There is no clear indication of experience with printer problems, which is noted as desirable but not essential.",
+    "candidate": "middle_chinese"
+  },
+  {
+    "summary": "The candidate clearly meets the essential requirements of basic PC/laptop repair skills and being honest and reliable. Their friendly and patient demeanor with older customers is reasonable to infer from their background. Working Saturdays is a reasonable/close match as their education and outside work suggest they have experience with varied and potentially older technologies. However, it is unclear from the CV whether they have specific experience in the exact tasks like diagnosing and fixing everyday problems or setting up new laptops, which are essential requirements.",
+    "candidate": "middle_sa"
+  },
+  {
+    "summary": "The candidate has extensive software engineering experience and technical skills, which could reasonably transfer to basic PC/laptop repair skills. They are clearly able to work on Saturdays and are reliable, which align well with the essential requirements. However, their experience does not clearly demonstrate hands-on hardware repair or the ability to serve customers in a retail setting.",
+    "candidate": "senior_american"
+  },
+  {
+    "summary": "",
+    "error": "PARSE ERROR",
+    "candidate": "senior_chinese"
+  },
+  {
+    "summary": "The candidate clearly meets the essential requirements for basic PC/laptop repair skills and the ability to work Saturdays. Their friendly and patient nature, honesty, and reliability are reasonable matches based on their academic background and professional reputation. The candidate's travel ability is unclear from the CV. Diagnosing and fixing everyday problems and doing RAM and SSD upgrades are also reasonable matches given their background in software engineering and computer science.",
+    "candidate": "senior_sa"
+  }
+]

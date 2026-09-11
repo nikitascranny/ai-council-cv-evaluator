@@ -1,0 +1,28 @@
+[
+  {
+    "score": 6,
+    "strengths": [
+      "reliable and methodical approach to problem-solving",
+      "independent working and adaptability"
+    ],
+    "weaknesses": [
+      "lacks formal IT qualifications",
+      "no direct experience in computer repair"
+    ],
+    "summary": "Ralph has strong foundational skills in troubleshooting and maintenance but lacks specific IT repair experience and formal qualifications.",
+    "candidate": "Ralph_Son_of_a_Shepard_IT_Transition_CV"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "dependable and reliable",
+      "excellent record-keeping"
+    ],
+    "weaknesses": [
+      "no direct computer repair experience",
+      "no relevant technical skills or education"
+    ],
+    "summary": "Ralph has strong reliability and organizational skills but lacks the necessary technical and computer repair experience for the position.",
+    "candidate": "Ralph_Son_of_a_Shepard_Farm_CV"
+  }
+]

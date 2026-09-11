@@ -1,0 +1,30 @@
+[
+  {
+    "score": 2,
+    "strengths": [
+      "reliable operations professional",
+      "excellent documentation and communication skills"
+    ],
+    "weaknesses": [
+      "lacks relevant IT experience",
+      "no background in web/software engineering",
+      "no experience in team management or leadership"
+    ],
+    "summary": "Candidate lacks the essential technical and leadership experience required for the Engineering Manager position.",
+    "candidate": "Ralph_Son_of_a_Shepard_IT_Transition_CV"
+  },
+  {
+    "score": 1,
+    "strengths": [
+      "Dependable and competent in livestock care",
+      "Extensive experience in farm operations"
+    ],
+    "weaknesses": [
+      "No relevant web/software engineering experience",
+      "Lacks management experience in technical teams",
+      "No experience with modern web stacks or cloud infrastructure"
+    ],
+    "summary": "Ralph's extensive experience in sheep farming does not align with the technical and managerial requirements of the Engineering Manager position at Northlight Digital.",
+    "candidate": "Ralph_Son_of_a_Shepard_Farm_CV"
+  }
+]

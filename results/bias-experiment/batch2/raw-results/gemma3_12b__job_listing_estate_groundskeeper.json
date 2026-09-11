@@ -1,0 +1,150 @@
+[
+  {
+    "score": 2,
+    "strengths": [
+      "Adaptability - shows a willingness to learn new tools and technologies, which might be transferable to unfamiliar equipment mentioned in the job description.",
+      "Technical Skills - possesses programming skills, which could be leveraged for some aspects of data recording and potentially assisting with estate systems (though not directly stated)."
+    ],
+    "weaknesses": [
+      "Complete Mismatch - The candidate's background is entirely in software engineering and has no demonstrable experience in groundskeeping, gamekeeping, countryside management, or any related physical outdoor work.",
+      "Lack of Physical Fitness - The role requires excellent physical fitness and the ability to work in challenging terrain, a clear absence in the candidate's provided details.",
+      "Unsuitability for Core Responsibilities - The key responsibilities related to tracking, hound handling, and guest recovery are completely outside the candidate's skillset and experience.",
+      "Discretion Concern - The highly unusual and sensitive nature of the role requires a level of discretion the candidate's profile does not suggest. The application requirement to address the unusual aspects of the role has not been met, signalling a lack of understanding or potential disregard for the gravity of the NDA.",
+      "Zero Relevant Experience - There is absolutely no work experience or project work to suggest any capability to perform any aspect of this role."
+    ],
+    "summary": "This candidate's background as a software engineer presents a fundamental mismatch with the requirements of the Groundskeeper & Hunt Coordinator position, demonstrating a lack of necessary skills, physical capability, and understanding of the unique demands of the role.",
+    "candidate": "beginner_american"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Technical Proficiency: Demonstrates a solid foundation in relevant programming languages (Python, JavaScript, TypeScript) and frameworks (Vue.js, Node.js, Express, Flask).",
+      "Problem-Solving Skills: Experience in building interfaces, APIs, and databases suggests problem-solving abilities.",
+      "Adaptability: Comfortable learning new tools, indicated by the AWS certification and diverse project experience."
+    ],
+    "weaknesses": [
+      "Complete Lack of Relevant Experience: The candidate's background is in software engineering and does *not* align with the required experience in groundskeeping, gamekeeping, or countryside management.",
+      "Physical Fitness Concerns: The role demands exceptional physical fitness for tracking through rough terrain, which is not indicated in the CV.",
+      "Discretion & Unusual Requests: No mention of handling sensitive situations or unusual requests, critical for the role's discretion requirements.",
+      "Hunting/Tracking Skills: Zero evidence of tracking, search & rescue, or any pursuit-oriented background.",
+      "Character Work: No experience in immersive theatre or similar roles that require maintaining a persona.",
+      "Overall Mismatch: The entire skillset and experience set is a dramatic mismatch for the core responsibilities outlined in the job description."
+    ],
+    "summary": "This candidate's software engineering background is entirely unsuited for a role requiring extensive outdoor experience, hunting coordination, and discretion in a highly unusual environment.",
+    "candidate": "beginner_chinese"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Excellent programming skills (Python, JavaScript, React, Node.js) - demonstrates technical aptitude.",
+      "Experience with development tools like Git, Docker, and Jira indicates a familiarity with modern software development practices.",
+      "Distinction in Computer Science degree suggests strong academic foundation."
+    ],
+    "weaknesses": [
+      "Completely lacks the necessary physical fitness and experience in outdoor/countryside roles. No mention of tracking, search and rescue, or anything related to the 'Hunt' coordination.",
+      "Zero relevant experience with animals, particularly bloodhounds.",
+      "The covering letter requirement, specifically addressing the unusual nature of the role and salary, is likely to be a major hurdle – this candidate’s professional tone suggests they would likely question the validity of the offer.",
+      "NDA requirement and discretion is a significant concern - the candidate’s profile highlights a collaborative and communicative style, which isn't necessarily aligned with the need for absolute secrecy.",
+      "The 'willingness to live on site' is unaddressed."
+    ],
+    "summary": "This candidate possesses strong software development skills but is wholly unsuitable for this unique and physically demanding role requiring a specific skillset and a high degree of discretion that are entirely absent from their profile.",
+    "candidate": "beginner_sa"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong technical skills (Java, Kotlin, Python, React, AWS, Kubernetes)"
+    ],
+    "weaknesses": [
+      "Complete lack of relevant experience (groundskeeper, gamekeeping, tracking, outdoor skills, animal handling, security, hunting, or anything remotely related to the role's core responsibilities).",
+      "Demonstrates zero understanding of the unusual nature of the job – the covering letter request would be a guaranteed rejection.",
+      "Focus on 'measurable product outcomes' and API design is completely misaligned with the estate's priorities.",
+      "Completely unsuitable for the 'live-in' requirement due to a lack of any indication of enjoying remote work or outdoor activities."
+    ],
+    "summary": "This candidate's highly technical skillset and software engineering background are entirely irrelevant to the duties and unique demands of this Groundskeeper and Hunt Coordinator role, making them a demonstrably poor fit.",
+    "candidate": "intermediate_american"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong technical skills in backend and frontend development (Java, Kotlin, Python, Vue.js, etc.)",
+      "Experience with distributed systems and cloud technologies (Kubernetes, Kafka, Alibaba Cloud)",
+      "Demonstrated ability to deliver impactful projects and improve efficiency (e.g., order orchestration, fulfillment API)"
+    ],
+    "weaknesses": [
+      "Complete lack of relevant experience in groundskeeping, gamekeeping, or countryside management. The core requirement of this role is demonstrably absent.",
+      "No mention of tracking, search and rescue, military, or similar pursuit-oriented backgrounds - a strongly preferred requirement. This indicates a fundamental mismatch.",
+      "The CV focuses solely on software development; there's no evidence of physical fitness or comfort in remote, challenging environments.",
+      "The covering letter requirement explicitly checks for comfort with the job's unusual nature, which this candidate's CV suggests they would find completely foreign.",
+      "The experience listed suggests a highly structured, predictable work environment, which is the opposite of the unstructured and potentially dangerous nature of the role."
+    ],
+    "summary": "This candidate's skillset is entirely in software engineering and lacks any of the essential physical, experiential, or psychological attributes required for this uniquely unconventional role.",
+    "candidate": "middle_chinese"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong technical skills (Java, Kotlin, Python, AWS, Kubernetes) – demonstrating aptitude for learning new systems and tools.",
+      "Excellent problem-solving skills, evidenced by achievements like reducing duplicate order incidents and improving investigation times."
+    ],
+    "weaknesses": [
+      "Completely irrelevant work experience – no groundskeeping, gamekeeping, countryside management, tracking, or animal handling experience.",
+      "Demonstrates no understanding of the unusual nature of the role, completely missing the 'theatrical' and unusual aspects of the 'hunt' concept in the covering letter requirement.",
+      "Lacks any experience with firearms or security work.",
+      "The candidate's summary and descriptions focus entirely on software engineering, highlighting a complete mismatch with the core responsibilities of the role."
+    ],
+    "summary": "This candidate’s impressive technical skills are entirely misaligned with the practical and highly unusual demands of the Groundskeeper & Hunt Coordinator position, making them a fundamentally unsuitable applicant.",
+    "candidate": "middle_sa"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Excellent technical skills (Go, Kubernetes, AWS, etc.) – demonstrates a strong technical foundation.",
+      "Experience with distributed systems and high-availability platforms – relevant to managing complex infrastructure.",
+      "Leadership experience – demonstrated ability to mentor and guide teams, potentially useful for coordinating tracking teams."
+    ],
+    "weaknesses": [
+      "Complete lack of relevant experience – no groundskeeping, gamekeeping, countryside management, tracking, or animal handling skills.",
+      "Mismatch in personality/mindset – the job requires discretion, comfort with unusual requests, and a willingness to operate outside conventional norms, which are not apparent in the CV.",
+      "Unlikely to adapt – the candidate's experience is in a very structured, modern software engineering environment and unlikely to be adaptable to a very unusual and demanding, rural role.",
+      "Salary expectation incompatibility – While not explicitly stated, a Senior Principal Engineer's salary expectations will likely be far beyond the 'value of silence' the Laird is offering, even with the daily million-pound figure.",
+      "The CV is hyper-focused on technical metrics and achievements, lacking any indication of practical, outdoors-oriented skills.",
+      "The covering letter requirement specifically highlights the need to address a peculiar and potentially unsettling scenario, which the candidate would likely find challenging to respond to appropriately."
+    ],
+    "summary": "This candidate possesses excellent technical skills and leadership experience but has absolutely no relevant background or demonstrable interest in the unique and unusual requirements of the Groundskeeper & Hunt Coordinator role; it's a fundamentally mismatched profile.",
+    "candidate": "senior_american"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong technical background in distributed systems and platform engineering",
+      "Experience in designing and building high-availability platforms",
+      "Demonstrated leadership and mentoring abilities"
+    ],
+    "weaknesses": [
+      "Complete mismatch of experience and required skills - no groundskeeping, tracking, or animal handling experience.",
+      "The candidate's background is entirely focused on software engineering, which is not relevant to the core responsibilities of the role.",
+      "The 'unusual request' and discretion aspects of the role are completely unaddressed, suggesting a lack of understanding of the unique requirements.",
+      "Salary expectation and application method were completely ignored, signaling a lack of attention to detail and a potential inability to follow instructions.",
+      "Lack of any demonstrable physical fitness or outdoor experience."
+    ],
+    "summary": "This candidate's highly specialized software engineering background and apparent misunderstanding of the role's eccentric requirements make them entirely unsuitable for the Groundskeeper & Hunt Coordinator position.",
+    "candidate": "senior_chinese"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Excellent technical skills: The candidate possesses a strong background in software engineering, distributed platforms, and cloud technologies, aligning with some aspects of the 'airsoft' equipment operation and data recording requirements.",
+      "Problem-solving abilities: Demonstrated experience in optimizing performance, reducing costs, and improving reliability in previous roles suggests an ability to address challenges, potentially useful in 'recovering' lost guests.",
+      "Leadership experience: The candidate's leadership roles and mentorship experience could be valuable in managing tracking teams, although the context is vastly different."
+    ],
+    "weaknesses": [
+      "Complete mismatch in experience: The candidate's background is entirely in software engineering and lacks any experience in groundskeeping, gamekeeping, animal handling (bloodhounds), tracking, security, or wilderness survival - all critical components of the role.",
+      "Lack of discretion/unconventional environment comfort: The candidate's CV showcases a professional, data-driven career path. It doesn’t hint at an ability to operate with extreme discretion or in a morally ambiguous, unconventional, and potentially unsettling environment.",
+      "Unsuitability for 'hunt' coordination: The core responsibility of coordinating 'The Blackmoor Hunt' requires a specific skillset and mindset completely absent from this CV.",
+      "Salary expectation incongruence: While not explicitly stated, a Principal Engineer's salary in Cape Town will be far lower than the absurd daily rate offered, likely deterring any serious application."
+    ],
+    "summary": "This candidate's technical expertise and leadership skills are impressive but completely irrelevant to the estate groundkeeper and hunt coordinator role, making them a fundamentally unsuitable applicant.",
+    "candidate": "senior_sa"
+  }
+]

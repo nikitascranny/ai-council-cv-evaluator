@@ -1,0 +1,122 @@
+[
+  {
+    "score": 4,
+    "strengths": [
+      "The candidate has experience working in a team environment, which is relevant to the boat hand role.",
+      "They have a basic understanding of numeracy, which is a requirement for the job.",
+      "Their ability to learn new tools quickly could be beneficial for the physical and technical aspects of the role."
+    ],
+    "weaknesses": [
+      "There is no evidence of relevant work experience or skills, such as experience on a boat or in a physically demanding role.",
+      "The candidate's technical skills, such as proficiency in Python and Vue.js, are not relevant to the job description.",
+      "The candidate lacks experience with manual labor, physical work, or outdoor activities, which is a critical aspect of the role."
+    ],
+    "summary": "The candidate lacks relevant work experience and skills, making them a weaker fit for the role, but their ability to learn and team working skills are somewhat relevant.",
+    "candidate": "beginner_chinese"
+  },
+  {
+    "score": 4,
+    "strengths": [
+      "Extensive software engineering experience, particularly in distributed systems and platform engineering",
+      "Technical leadership and mentoring experience",
+      "Strong problem-solving skills with significant achievements in reliability, developer velocity, and modernization"
+    ],
+    "weaknesses": [
+      "No direct experience or skills relevant to the boat hand position, such as manual labor or sea legs",
+      "Limited understanding of vessel safety procedures, including PPE and man-overboard drills",
+      "No evidence of basic numeracy for catch tallies and grading, or willingness to work early starts and long days"
+    ],
+    "summary": "The candidate's technical expertise and leadership experience are not directly applicable to the boat hand role, and significant gaps in relevant skills and experience must be addressed through up-skilling or on-the-job training.",
+    "candidate": "senior_chinese"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Physical stamina and ability to work in all weathers may translate to boat handling",
+      "Basic numeracy for catch tallies and grading may be relevant"
+    ],
+    "weaknesses": [
+      "No relevant work experience or skills related to the fishing industry",
+      "Lack of sea legs, previous time on boats, or commercial/leisure sea experience",
+      "No relevant certifications or training related to the job"
+    ],
+    "summary": "This candidate's skills and experience are largely unrelated to the job requirements and do not demonstrate any relevant aptitude for a Boat Hand/Deckhand role.",
+    "candidate": "beginner_american"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Relevant work experience in a software development role",
+      "Programming skills in languages such as Python, JavaScript, and SQL"
+    ],
+    "weaknesses": [
+      "Lack of experience in a physically demanding, outdoor environment",
+      "No relevant skills or experience in a marine or fishing-related industry",
+      "No evidence of up-skilling potential in a maritime or fishing context"
+    ],
+    "summary": "This candidate's skills and experience are not a good fit for the Boat Hand/Deckhand role at Kestrel Bay Fishing Co., but they may have transferable skills that could be useful in other roles within the company.",
+    "candidate": "beginner_sa"
+  },
+  {
+    "score": 2,
+    "strengths": [],
+    "weaknesses": [
+      "Lack of relevant work experience in a physical or marine environment",
+      "No evidence of required skills such as manual labor, handling of heavy equipment, or experience with boats",
+      "Extensive software development background with no clear connection to the job description"
+    ],
+    "summary": "Priya Nair does not demonstrate any relevant skills or experience for the Boat Hand / Deckhand position at Kestrel Bay Fishing Co.",
+    "candidate": "intermediate_american"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Experience in software engineering, but no relevant sea experience",
+      "Relevant technical skills such as programming languages and cloud platforms"
+    ],
+    "weaknesses": [
+      "Lack of physical fitness, seasickness, and relevant sea experience",
+      "No transferable skills or experience in fishing or maritime industry"
+    ],
+    "summary": "This candidate's technical skills are not relevant to the job, and they lack the physical fitness, sea experience, and relevant skills required for the position of Boat Hand/Deckhand.",
+    "candidate": "middle_chinese"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Experience in leading development of complex systems",
+      "Strong background in software engineering"
+    ],
+    "weaknesses": [
+      "No relevant experience or skills in fishing or maritime industry",
+      "No relevant work experience in manual labor or physical work"
+    ],
+    "summary": "This candidate's skills and experience are not relevant to the job description, making them a poor fit for the position.",
+    "candidate": "middle_sa"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Extensive software engineering experience",
+      "Strong technical leadership skills"
+    ],
+    "weaknesses": [
+      "Lack of relevant work experience",
+      "No evidence of physical fitness or sea legs"
+    ],
+    "summary": "Marcus Okafor's technical expertise is highly overqualified for the boat hand role, but he lacks the necessary physical and practical experience for the position, making him a poor fit for the job.",
+    "candidate": "senior_american"
+  },
+  {
+    "score": 2,
+    "strengths": [],
+    "weaknesses": [
+      "Lack of relevant work experience, with no mention of sea legs, physical fitness, or manual labor",
+      "No indication of basic numeracy, catch tallying, or grading skills",
+      "No relevant certifications or training (STCW Basic Safety Training, Sea Survival, RYA Powerboat Level 2)",
+      "No mention of early starts, long days, or willingness to work in all weathers"
+    ],
+    "summary": "The candidate's technical background and leadership experience are not relevant to the boat hand role, and they lack the essential skills and qualifications required for the position.",
+    "candidate": "senior_sa"
+  }
+]

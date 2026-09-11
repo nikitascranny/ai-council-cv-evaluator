@@ -1,0 +1,31 @@
+[
+  {
+    "score": 7,
+    "strengths": [
+      "The candidate has strong experience in troubleshooting and maintenance, which aligns with the job's requirement for diagnosing and fixing everyday computer problems.",
+      "Experience in accurate record-keeping and prioritization under pressure is relevant for managing the shop's notebook system and handling customer interactions.",
+      "Independent working skills are beneficial for the part-time role with minimal supervision."
+    ],
+    "weaknesses": [
+      "Lack of direct experience in PC/laptop repair, which is essential for this role.",
+      "No specific customer service experience, particularly with older customers, which is desirable.",
+      "The candidate has no formal IT qualifications, though they are self-directing their transition into IT."
+    ],
+    "summary": "The candidate has transferable skills in troubleshooting and independent work, but lacks direct PC repair experience and customer service experience with older clients.",
+    "candidate": "Ralph_Son_of_a_Shepard_IT_Transition_CV"
+  },
+  {
+    "score": 4,
+    "strengths": [
+      "Demonstrates reliability and independent working capability.",
+      "Exhibits strong problem-solving skills and attention to detail through record-keeping and equipment maintenance."
+    ],
+    "weaknesses": [
+      "Lacks direct experience in computer repair and IT skills.",
+      "No prior customer service experience, particularly with older customers.",
+      "Limited exposure to electronics beyond basic farm machinery maintenance."
+    ],
+    "summary": "The candidate shows potential through independence and problem-solving skills but lacks direct experience and technical knowledge in computer repair and customer service.",
+    "candidate": "Ralph_Son_of_a_Shepard_Farm_CV"
+  }
+]

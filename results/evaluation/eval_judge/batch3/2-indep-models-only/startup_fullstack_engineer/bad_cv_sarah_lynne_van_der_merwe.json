@@ -1,0 +1,8 @@
+{
+  "candidate": "bad_cv_sarah_lynne_van_der_merwe",
+  "final_score": 2,
+  "score_rationale": "The candidate's claimed strengths do not align with the essential technical requirements of the role, while the consistent weaknesses highlight a significant lack of relevant experience and skills.",
+  "key_strengths": "Leadership experience, consultancy founding",
+  "key_weaknesses": "Lack of full-stack engineering experience, no technical skills matching the job description (React/TypeScript, Go, distributed systems), no evidence of production service ownership",
+  "final_evaluation": "The candidate does not meet the essential technical requirements for this role, particularly the need for hands-on experience with React/TypeScript, Go, and distributed systems. Their claimed strengths are not relevant to the technical demands of the position."
+}

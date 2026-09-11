@@ -1,0 +1,28 @@
+[
+  {
+    "score": 6,
+    "strengths": [
+      "reliable operations professional with 10 years of experience in first-line troubleshooting and maintenance",
+      "demonstrates strong documentation and prioritization skills"
+    ],
+    "weaknesses": [
+      "no formal IT qualifications or direct experience in an education setting",
+      "lacks specific technical skills listed as essential, such as Windows 11, Microsoft 365, and Intune"
+    ],
+    "summary": "Ralph shows excellent reliability and troubleshooting abilities but lacks the specific IT and educational background required for the role.",
+    "candidate": "Ralph_Son_of_a_Shepard_IT_Transition_CV"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "dependable and skilled in livestock management",
+      "excellent record-keeping"
+    ],
+    "weaknesses": [
+      "no IT experience or programming skills",
+      "no education or training in IT services or computing"
+    ],
+    "summary": "The candidate lacks the essential IT and programming skills required for the position, despite showing strengths in other areas.",
+    "candidate": "Ralph_Son_of_a_Shepard_Farm_CV"
+  }
+]

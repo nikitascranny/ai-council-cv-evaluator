@@ -1,0 +1,79 @@
+[
+  {
+    "score": 5,
+    "strengths": [
+      "versatile and adaptable",
+      "customer service and communication skills"
+    ],
+    "weaknesses": [
+      "lack of specific computer repair experience",
+      "no evidence of up-skilling in IT or repair fields"
+    ],
+    "summary": "Kevin Jones has a broad range of customer service and communication skills but lacks specific computer repair experience or evidence of relevant up-skilling.",
+    "candidate": "professional_cv_kevin_jones"
+  },
+  {
+    "score": 4,
+    "strengths": [
+      "Adaptable and customer-focused",
+      "Proven ability to manage and coordinate operations"
+    ],
+    "weaknesses": [
+      "Lacks direct experience in computer repair",
+      "No relevant technical skills mentioned"
+    ],
+    "summary": "Jason Muller shows adaptability and customer service skills but lacks direct experience in computer repair and relevant technical skills.",
+    "candidate": "professional_cv_jason_muller"
+  },
+  {
+    "score": 4,
+    "strengths": [
+      "Retail operations and team leadership",
+      "Customer experience improvement"
+    ],
+    "weaknesses": [
+      "Lacks practical PC/laptop repair skills",
+      "No direct experience in computer repair"
+    ],
+    "summary": "Sarah-Lynne Van der Merwe has strong retail and customer service experience, but lacks the technical skills and direct experience in computer repair that the position requires.",
+    "candidate": "professional_cv_sarah_lynne_van_der_merwe"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "willing to work",
+      "learns from experience"
+    ],
+    "weaknesses": [
+      "unreliable work history",
+      "lack of relevant technical skills"
+    ],
+    "summary": "Kevin's employment history and lack of specific technical skills do not align well with the role's requirements, despite his willingness to work.",
+    "candidate": "bad_cv_kevin_jones"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Can lift heavy boxes",
+      "Fast learner when motivated"
+    ],
+    "weaknesses": [
+      "Lacks relevant work experience",
+      "Minimal demonstrated PC repair skills",
+      "Objective does not align with the job"
+    ],
+    "summary": "Jason 'Jazz Hands' Muller lacks the necessary PC repair skills and relevant work experience to fit the role of a computer repair person at Brenda & Mick's, and his career objectives are misaligned with the position.",
+    "candidate": "bad_cv_jason_muller"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Motivational leadership in branding"
+    ],
+    "weaknesses": [
+      "Lacks practical repair skills, relevant work experience, and direct applicability to the role"
+    ],
+    "summary": "Sarah-Lynne lacks the technical skills and direct experience relevant to the computer repair role, and her career highlights do not align with the job requirements.",
+    "candidate": "bad_cv_sarah_lynne_van_der_merwe"
+  }
+]

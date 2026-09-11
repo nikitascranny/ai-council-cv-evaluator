@@ -1,0 +1,8 @@
+{
+  "candidate": "professional_cv_jason_muller",
+  "final_score": 2,
+  "score_rationale": "The candidate lacks essential technical skills and experience required for the role, despite having some transferable strengths.",
+  "key_strengths": "Adaptability, communication skills, operational organization",
+  "key_weaknesses": "No direct experience with TypeScript/React, Go, distributed systems, or production software engineering",
+  "final_evaluation": "Jason Muller has some transferable skills but does not meet the core technical requirements for this Full-Stack Engineer role at Pulsegrid."
+}

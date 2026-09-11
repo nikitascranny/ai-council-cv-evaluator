@@ -1,0 +1,8 @@
+{
+  "candidate": "senior_sa",
+  "final_score": 7,
+  "score_rationale": "The candidate has strong technical and leadership experience aligning with core job requirements, but the lack of explicit React experience and some uncertainty around distributed systems fundamentals and operational excellence in production environments are notable gaps.",
+  "key_strengths": "Extensive experience with Go, TypeScript, Kafka, and distributed systems; proven ability to lead architectural changes and improve operational reliability in high-velocity settings.",
+  "key_weaknesses": "No clear evidence of React/TypeScript frontend experience despite the job requiring it; some ambiguity around direct experience with distributed systems fundamentals and on-call responsibilities.",
+  "final_evaluation": "The candidate is technically well-suited for the backend and systems roles within the job, but the frontend React requirement and lack of documented operational experience may require further clarification during interviews."
+}

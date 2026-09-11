@@ -1,0 +1,137 @@
+[
+  {
+    "score": 4,
+    "strengths": [
+      "The candidate has a strong work ethic and reliability demonstrated by her previous roles, which is essential for punctuality and commitment in the fishing job.",
+      "She has a background in leading and mentoring teams, suggesting potential for working closely with the skipper as a partner on the boat.",
+      "Her experience in developing systems for handling high volumes of data/events suggests adaptability to the varying tasks and conditions faced at sea."
+    ],
+    "weaknesses": [
+      "Priya lacks experience in physically demanding, manual labor, particularly in the fishing industry, which is crucial for the role.",
+      "There is no evidence of Priya having previous sea experience, which is strongly preferred for adapting to boat work and handling marine equipment.",
+      "Her background in software engineering does not provide the necessary skills for tasks such as handling and grading shellfish or working with fishing gear."
+    ],
+    "summary": "Priya Nair exhibits strong work ethics and team leadership qualities but lacks the physical, manual skills and sea experience required for the Boat Hand position at Kestrel Bay Fishing Co.",
+    "candidate": "intermediate_american"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Demonstrates punctuality and reliability through consistent roles.",
+      "Has experience with learning new tools and working in teams, which can be transferable to adapting to a new work environment."
+    ],
+    "weaknesses": [
+      "Lacks relevant experience in physical, manual labor and maritime work.",
+      "No evidence of physical fitness or experience working in maritime conditions.",
+      "Does not possess required sea legs or any experience on boats.",
+      "Lacks basic numeracy skills related to fishing tasks and catch tallies."
+    ],
+    "summary": "The candidate's skills and experience do not align well with the physical and maritime demands of the boat hand role, although their reliability and adaptability are positive traits.",
+    "candidate": "beginner_american"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Physically fit and punctual due to past experience with long hours and demanding schedules in tech and teaching roles",
+      "Reliable and comfortable with routine and repetitive tasks, as evidenced by experience in software engineering and teaching"
+    ],
+    "weaknesses": [
+      "Lacks direct experience in fishing or maritime work, which is essential for the role",
+      "No physical experience with heavy, repetitive manual work in maritime settings",
+      "No evidence of basic numeracy skills specific to fishing catch tallies and grading",
+      "No prior experience with boats or sea survival, which is desirable for the position"
+    ],
+    "summary": "The candidate's skills in software development and teaching do not align with the physical and maritime demands of the boat hand position, lacking essential experience and skills required for the job.",
+    "candidate": "beginner_chinese"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "The candidate demonstrates strong problem-solving skills and attention to detail through their software development experience.",
+      "They have a collaborative working style, evidenced by their role in cross-functional sprint teams and peer programming facilitation."
+    ],
+    "weaknesses": [
+      "Lacks the physical fitness and manual labor experience required for a boat hand role.",
+      "No prior maritime experience or sea legs, which is essential for working on a fishing vessel.",
+      "Does not possess the specific skills related to fishing, such as handling crab and lobster pots or maintaining fishing equipment."
+    ],
+    "summary": "The candidate is well-suited for a software development role but lacks the physical, maritime, and specific fishing skills required for the boat hand position.",
+    "candidate": "beginner_sa"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Experienced in working with teams and mentoring early-career engineers.",
+      "Has a history of completing demanding projects and delivering significant improvements."
+    ],
+    "weaknesses": [
+      "No relevant experience in physical or maritime work environments.",
+      "Lacks necessary skills for manual labor and specific fishing vessel operations.",
+      "No evidence of physical fitness or sea legs, which are crucial for the role.",
+      "Lacks familiarity with fishing equipment and safety procedures."
+    ],
+    "summary": "Kagiso Ndlovu has strong teamwork and project management skills but lacks the physical, maritime, and specific technical skills required for the boat hand position.",
+    "candidate": "middle_sa"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Demonstrates punctuality and reliability, important traits for the role",
+      "Experienced in technical leadership and mentorship, indicating potential adaptability and learning capability"
+    ],
+    "weaknesses": [
+      "Lack of relevant experience in fishing or maritime work",
+      "No physical fitness or hands-on maritime skills evident from career in software engineering",
+      "Does not meet essential requirement of having 'sea legs' or experience on boats",
+      "Limited alignment with job's physical and environmental demands"
+    ],
+    "summary": "Marcus Okafor's technical and leadership skills suggest potential for up-skilling, but his lack of maritime experience and physical readiness present significant challenges for the boat hand role.",
+    "candidate": "senior_american"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Physically robust due to demanding software engineering role",
+      "Possesses strong punctuality and reliability skills from professional experience",
+      "Demonstrates potential for learning and adapting to new challenges"
+    ],
+    "weaknesses": [
+      "Lack of relevant maritime or fishing experience",
+      "No demonstrated physical fitness for heavy, repetitive manual labor",
+      "No experience with sea travel or handling fishing equipment",
+      "Lacks basic numeracy for catch tallies and grading as related to fishing tasks",
+      "No history of working with early start times or long days outdoors"
+    ],
+    "summary": "Chen Haoran has strong professional skills and reliability but lacks relevant maritime experience and the physical skills necessary for a boat hand role.",
+    "candidate": "senior_chinese"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Physically fit and potentially reliable as inferred from demanding technical work",
+      "Possessing a strong work ethic and punctuality from professional experience"
+    ],
+    "weaknesses": [
+      "Lack of relevant maritime or physical labor experience",
+      "No evidence of familiarity with fishing vessel operations or manual tasks related to fishing",
+      "Absence of sea legs or experience working on boats",
+      "No history of dealing with outdoor, weather-related work conditions"
+    ],
+    "summary": "The candidate's professional background in software engineering indicates a strong work ethic and reliability but lacks the specific maritime experience and physical labor skills required for the boat hand position.",
+    "candidate": "senior_sa"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Demonstrates leadership and technical planning skills through mentoring and leading design reviews.",
+      "Exhibits problem-solving abilities by reducing incidents and improving processes."
+    ],
+    "weaknesses": [
+      "Lack of relevant experience in the fishing industry and boat handling.",
+      "No physical fitness or experience with manual, weather-dependent work.",
+      "No familiarity with marine safety procedures or vessel operations."
+    ],
+    "summary": "The candidate lacks relevant experience and skills for a physically demanding role on a fishing vessel, despite strong technical and leadership skills in software engineering.",
+    "candidate": "middle_chinese"
+  }
+]

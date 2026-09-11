@@ -1,0 +1,123 @@
+[
+  {
+    "score": 9,
+    "strengths": [
+      "12+ years of professional experience with a proven track record in leading technical modernization programs, including monolith decomposition and reliability improvements",
+      "Strong background in distributed systems, cloud infrastructure (AWS), CI/CD, and observability practices",
+      "Demonstrated leadership in mentoring engineers and driving measurable business outcomes through technical strategy"
+    ],
+    "weaknesses": [
+      "No explicit mention of React/TypeScript frontend or .NET experience, though Go and Java are listed",
+      "Limited direct experience with accessibility standards (WCAG) or transport/booking systems"
+    ],
+    "summary": "Marcus Okafor is a highly qualified candidate with extensive experience in technical leadership, modernization programs, and cloud infrastructure, though his lack of direct exposure to React/TypeScript and transport-specific systems may require some up-skilling.",
+    "candidate": "senior_american"
+  },
+  {
+    "score": 9,
+    "strengths": [
+      "12+ years of professional experience with proven leadership in leading teams through major technical transformations (e.g., monolith decomposition, reliability programs)",
+      "Strong background in cloud infrastructure (Alibaba Cloud, Kubernetes, Terraform) and CI/CD practices, aligning with the job's requirements for AWS and automated testing",
+      "Demonstrated ability to improve system reliability, reduce incident frequency, and drive measurable business outcomes through technical modernization"
+    ],
+    "weaknesses": [
+      "Limited explicit mention of React/TypeScript frontend experience or .NET/Node.js backend expertise, though TypeScript proficiency is noted",
+      "No direct reference to accessibility standards (WCAG) or inclusive design practices in the CV"
+    ],
+    "summary": "The candidate excels in technical leadership, cloud infrastructure, and team modernization but may require upskilling in specific frontend/backend stacks and accessibility practices to fully align with the role's requirements.",
+    "candidate": "senior_chinese"
+  },
+  {
+    "score": 9,
+    "strengths": [
+      "Proven experience leading technical transformations (monolith to microservices) with measurable outcomes (e.g., 41% p99 response time reduction)",
+      "Strong alignment with required tech stack (React/TypeScript, Node.js, AWS, CI/CD) and leadership experience managing senior engineers",
+      "Relevant industry experience in payments/logistics systems, with expertise in cloud infrastructure and observability"
+    ],
+    "weaknesses": [
+      "No explicit mention of direct line-management experience with a team of 8 engineers (only mentions mentoring/senior engineer growth)",
+      "Limited explicit reference to accessibility standards (WCAG) or hybrid team agile delivery experience"
+    ],
+    "summary": "Exceptional technical leadership and system modernization experience with strong alignment to core requirements, though minor gaps exist in team-size-specific management and accessibility focus.",
+    "candidate": "senior_sa"
+  },
+  {
+    "score": 7,
+    "strengths": [
+      "Strong backend and frontend technical skills (TypeScript, Spring Boot, FastAPI, Vue.js) aligned with modern web stacks",
+      "Experience with CI/CD, observability (OpenTelemetry), and cloud infrastructure (Alibaba Cloud, Kubernetes)",
+      "Leadership experience in mentoring engineers and leading technical design reviews"
+    ],
+    "weaknesses": [
+      "No explicit line-management experience (only mentoring mentioned) despite 2+ years requirement",
+      "No direct experience with React or .NET, and limited exposure to monolith decomposition/architecture migrations",
+      "No mention of accessibility standards (WCAG) or transport/travel industry experience"
+    ],
+    "summary": "Candidate has strong technical depth and leadership potential but lacks explicit line-management experience and some key technical stack alignment with the role's requirements.",
+    "candidate": "middle_chinese"
+  },
+  {
+    "score": 6,
+    "strengths": [
+      "Strong technical stack alignment with React/TypeScript, backend languages (Spring Boot, FastAPI), and cloud infrastructure (AWS).",
+      "Experience with CI/CD, observability, and distributed systems (Kafka, Kubernetes) relevant to platform modernisation.",
+      "Demonstrated ability to lead technical projects (e.g., Internal Developer Hub, Inventory Event Stream) and improve system reliability."
+    ],
+    "weaknesses": [
+      "No explicit line-management experience (essential requirement not met; candidate's role is 'Software Engineer' with no mention of team leadership).",
+      "Lack of direct experience with Node.js/.NET (preferred backend stacks) and no mention of agile delivery frameworks (Scrum/Kanban)."
+    ],
+    "summary": "Candidate has strong technical skills and project leadership experience but lacks essential line-management experience and explicit agile delivery expertise required for the role.",
+    "candidate": "middle_sa"
+  },
+  {
+    "score": 5,
+    "strengths": [
+      "Familiarity with modern web technologies (React, TypeScript, Node.js)",
+      "AWS Certified Cloud Practitioner",
+      "Experience with testing frameworks (Jest) and CI/CD tools (GitHub Actions)"
+    ],
+    "weaknesses": [
+      "No line-management experience (required for the role)",
+      "No evidence of leading technical transformations or architecture work",
+      "Insufficient professional experience (only 1 year of internship)"
+    ],
+    "summary": "Candidate lacks required leadership experience and technical depth for an Engineering Manager role but shows foundational technical skills relevant to the stack.",
+    "candidate": "beginner_sa"
+  },
+  {
+    "score": 4,
+    "strengths": [
+      "Familiarity with modern web stacks (React/TypeScript, Node.js), CI/CD tools (GitHub Actions), and cloud infrastructure (AWS)",
+      "Experience with agile methodologies and collaborative teamwork"
+    ],
+    "weaknesses": [
+      "No relevant leadership experience (only teaching assistant role, not line-managing engineers)",
+      "Insufficient professional experience (only 1 year of internship and academic roles, far below the 5+ years requirement)"
+    ],
+    "summary": "Candidate lacks the required 5+ years of professional experience and 2+ years of engineering leadership experience essential for the role.",
+    "candidate": "beginner_american"
+  },
+  {
+    "score": 4,
+    "strengths": [
+      "Basic technical skills in relevant web stacks (Vue.js, Node.js, TypeScript)",
+      "Experience with agile practices and code quality improvements",
+      "AWS certification and interest in cloud infrastructure"
+    ],
+    "weaknesses": [
+      "No leadership experience or team management history",
+      "Insufficient technical depth in required backend stacks (.NET, AWS infrastructure)",
+      "No evidence of leading technical transformations or architecture work"
+    ],
+    "summary": "Candidate lacks essential leadership experience and technical depth required for engineering management role, though shows basic technical competence and learning potential.",
+    "candidate": "beginner_chinese"
+  },
+  {
+    "score": null,
+    "strengths": [],
+    "weaknesses": [],
+    "summary": "PARSE ERROR",
+    "candidate": "intermediate_american"
+  }
+]

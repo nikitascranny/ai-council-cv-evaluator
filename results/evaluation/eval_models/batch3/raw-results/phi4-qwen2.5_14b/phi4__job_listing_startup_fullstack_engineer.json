@@ -1,0 +1,93 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Fast learner when motivated",
+      "Strong opinions and can communicate assertively"
+    ],
+    "weaknesses": [
+      "Lack of relevant technical experience",
+      "No demonstrated experience in software development or full-stack engineering",
+      "Absence of educational background in computer science or related fields",
+      "Limited professional work experience",
+      "No evidence of having operated services in production or understanding of distributed systems"
+    ],
+    "summary": "The candidate lacks the essential technical skills, relevant experience, and educational background required for the role of a founding full-stack engineer at Pulsegrid.",
+    "candidate": "bad_cv_jason_muller"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Adaptability in fast-moving environments",
+      "Clear interpersonal communication"
+    ],
+    "weaknesses": [
+      "Lack of relevant technical experience",
+      "No experience with TypeScript/React, Go, or backend languages",
+      "No experience with production software deployment or incident response",
+      "No demonstrated knowledge of distributed systems or event-driven architectures"
+    ],
+    "summary": "The candidate lacks the essential technical skills, relevant work experience, and domain knowledge required for the Full-Stack Engineer role at Pulsegrid.",
+    "candidate": "professional_cv_jason_muller"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Demonstrates strong adaptability and the ability to work independently.",
+      "Has a practical, service-oriented approach and good communication skills."
+    ],
+    "weaknesses": [
+      "Lacks experience in full-stack software development and production software.",
+      "No evidence of familiarity with TypeScript/React, Go, or distributed systems.",
+      "Limited technical background in the required domains such as Kafka, TimescaleDB, or event-driven architectures.",
+      "Educational background does not meet the minimum technical requirements."
+    ],
+    "summary": "Kevin Jones shows strong adaptability and communication skills but lacks the technical expertise and relevant experience in full-stack engineering necessary for the role.",
+    "candidate": "professional_cv_kevin_jones"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Strong leadership and stakeholder communication skills",
+      "Experience in team coordination and operational management"
+    ],
+    "weaknesses": [
+      "Lacks technical skills and experience in software development",
+      "No experience with TypeScript, React, Go, or data engineering technologies like Kafka and TimescaleDB",
+      "No relevant experience in the engineering or energy sectors"
+    ],
+    "summary": "While Sarah-Lynne has strong leadership and communication skills, her lack of technical experience in software development and relevant industry knowledge makes her a poor fit for the founding full-stack engineer role at Pulsegrid.",
+    "candidate": "professional_cv_sarah_lynne_van_der_merwe"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Demonstrates enthusiasm and initiative by founding a consultancy",
+      "Has experience in leadership and management roles"
+    ],
+    "weaknesses": [
+      "Lacks technical experience and skills in full-stack engineering",
+      "No relevant experience with React/TypeScript, Go, or data platforms like Kafka",
+      "Limited evidence of operating services in production or understanding distributed systems",
+      "Absence of relevant technical achievements or experience"
+    ],
+    "summary": "Sarah-Lynne has strong leadership and initiative but lacks the essential technical skills and experience required for the full-stack engineering role at Pulsegrid.",
+    "candidate": "bad_cv_sarah_lynne_van_der_merwe"
+  },
+  {
+    "score": 1,
+    "strengths": [
+      "Can provide explanations for gaps in employment",
+      "Experience in various jobs indicating adaptability"
+    ],
+    "weaknesses": [
+      "Lack of relevant technical skills (TypeScript/React, Go)",
+      "No experience with production software development",
+      "Insufficient professional work history in relevant fields",
+      "Negative attitude towards teamwork and authority",
+      "Inconsistent employment history with voluntary and involuntary departures"
+    ],
+    "summary": "The candidate does not meet the essential requirements or possess the technical skills necessary for the role, and has limited professional experience in relevant areas.",
+    "candidate": "bad_cv_kevin_jones"
+  }
+]

@@ -1,0 +1,172 @@
+[
+  {
+    "score": 8,
+    "strengths": [
+      "Strong programming skills (Python, JavaScript, TypeScript) align directly with the coding enrichment aspects of the role.",
+      "Experience in debugging and explaining code (Peer Programming Facilitator) demonstrates a good aptitude for supporting students.",
+      "Experience with React, Node.js, and Express indicates a solid understanding of web development, which could be useful for maintaining the school website and VLE.",
+      "Practical development experience within a team (FreeState Digital Labs) suggests ability to work collaboratively and respond to changing requirements.",
+      "Enthusiasm for technology and a passion for problem-solving are implied through project portfolio and certifications."
+    ],
+    "weaknesses": [
+      "No direct experience in an educational setting, although the peer programming role demonstrates transferable skills.",
+      "Lacks specific experience with the hardware/infrastructure mentioned (Windows, Intune, Active Directory) – will require training.",
+      "No direct experience with robotics or Micro:bit, although basic programming skills are transferable.",
+      "The CV doesn’t explicitly demonstrate safeguarding awareness; this would need to be explored during interview."
+    ],
+    "summary": "Naledi possesses a strong technical foundation and a passion for teaching code, making them a good fit for the role, but requires some training on school-specific systems and procedures.",
+    "candidate": "beginner_sa"
+  },
+  {
+    "score": 7,
+    "strengths": [
+      "Strong programming skills (Python, JavaScript, TypeScript) - aligns with the coding enrichment lead responsibilities.",
+      "Experience with React, Node.js, Express, and Flask - demonstrates familiarity with modern web development technologies.",
+      "Experience as a Teaching Assistant - shows comfort and ability to explain technical concepts, a crucial skill for the role.",
+      "Project experience indicates a practical understanding of software development principles and the ability to build and deploy applications (QueueWise, Campus Cart).",
+      "Git and GitHub experience signifies a collaborative workflow and ability to manage code effectively.",
+      "Enthusiasm for technology and a growth mindset (AWS certification, hackathon participation)."
+    ],
+    "weaknesses": [
+      "Lacks direct experience in an education setting beyond being a Teaching Assistant - while positive, it's not the same as working within a school environment.",
+      "No mention of Windows 11 or Microsoft 365 - essential for the IT support technician aspect of the role. This is a potential gap.",
+      "No experience with Intune or Active Directory/Entra ID - critical tools for device management as mentioned in the job description.",
+      "The candidate's focus appears heavily skewed towards software development rather than IT support, potentially impacting their ability to balance the 70/30 split in responsibilities.",
+      "No mention of network troubleshooting, which is a desirable skill.",
+      "The CV does not explicitly mention safeguarding awareness, a mandatory requirement – this would need to be explored during interview."
+    ],
+    "summary": "While Jordan possesses strong technical skills and teaching experience, a significant gap exists in their practical IT support knowledge, requiring potential upskilling to meet the full scope of the job description.",
+    "candidate": "beginner_american"
+  },
+  {
+    "score": 7,
+    "strengths": [
+      "Basic programming ability: Demonstrates proficiency in Python, JavaScript, and TypeScript, exceeding the 'confident enough in Python and/or Scratch' requirement.",
+      "IT Support Potential: Experience building APIs and user interfaces, coupled with comfort in using tools like Git and Docker, suggests an aptitude for IT support tasks.",
+      "Enthusiasm for Working with Young People: Previous experience as a Computer Science Teaching Assistant indicates a genuine interest in explaining technology to others and working with students.",
+      "Problem-solving skills: Experience in debugging and contributing to increased test coverage highlights problem-solving abilities.",
+      "Adaptability: The candidate's varied experience and certifications show a willingness to learn new technologies and adapt to new environments.",
+      "Cloud Knowledge: AWS certification provides a baseline understanding of cloud concepts, which might be useful in the future."
+    ],
+    "weaknesses": [
+      "Lack of Direct IT Experience: No direct experience as an IT technician, meaning a learning curve is expected for the 70% technician workload.",
+      "No Windows/Microsoft 365/Intune Experience: The candidate doesn't explicitly mention experience with core technologies listed in the 'Essential Requirements' section.",
+      "No Experience in an Education Setting (as a Technician): While they have teaching assistant experience, this is not the same as IT support within a school environment.",
+      "No Network Knowledge: Lacks experience with network basics (VLANs, switches, Wi-Fi troubleshooting), which could be a challenge given the 'characterful' server room.",
+      "Geographic Location: The candidate is located in China, which may present logistical challenges and a requirement for relocation.",
+      "Coding Enrichment Limited: Project experience focuses on application development, rather than explicitly robotics or coding challenge preparation."
+    ],
+    "summary": "While the candidate possesses strong programming skills and some experience working with students, their lack of direct IT technician experience and relevant school environment experience necessitates consideration of a training plan to bridge the gap.",
+    "candidate": "beginner_chinese"
+  },
+  {
+    "score": 7,
+    "strengths": [
+      "Strong technical skills: Candidate demonstrates proficiency in various relevant technologies like Python, Java, Spring Boot, React, and cloud platforms (AWS, Kubernetes).",
+      "Problem-solving abilities: Experience in identifying and resolving issues (e.g., duplicate order incidents, slow application completion) and implementing solutions (e.g., idempotency handling, asynchronous processing).",
+      "Coding and debugging experience:  Possesses Python and React experience, aligning with the coding enrichment aspect of the role and demonstrating ability to assist students in debugging.",
+      "Mentoring and leadership:  Experience mentoring junior engineers suggests patience and ability to explain technical concepts.",
+      "Experience with APIs: Familiarity with API design and documentation is a transferable skill beneficial for website/VLE maintenance.",
+      "Experience with CI/CD and Observability: Demonstrates awareness of modern development practices."
+    ],
+    "weaknesses": [
+      "Lack of education/experience in a school environment: Candidate's experience is solely in the commercial sector, lacking direct exposure to the specific challenges and nuances of a school IT environment.",
+      "No explicit network experience: While the candidate's skillset is robust, the job description highlights a need for someone comfortable with basic network troubleshooting, and the CV doesn't explicitly demonstrate this.",
+      "No experience with device management tools: The role mentions Intune, which the candidate doesn't have direct experience with.",
+      "Overly focused on Backend and full stack development: The role has a significant support focus which the candidate’s CV doesn't heavily emphasize."
+    ],
+    "summary": "While the candidate possesses strong technical skills and a demonstrated ability to solve problems, their lack of experience in an educational setting and specific IT support role represents a potential learning curve and requires assessment of adaptability.",
+    "candidate": "intermediate_american"
+  },
+  {
+    "score": 7,
+    "strengths": [
+      "Strong technical skills: Possesses a broad range of relevant technologies (Java, Kotlin, Python, Vue.js, MySQL, Redis, Kubernetes, etc.) aligning with the need for general IT support and coding assistance.",
+      "Coding experience: Demonstrable experience with Python and Vue.js, which are relevant for Scratch/Python/Micro:bit and front-end activities respectively.",
+      "Problem-solving abilities: Experience with debugging and improving systems (e.g., idempotency handling, asynchronous pipelines, OpenTelemetry implementation) suggests a strong problem-solving aptitude.",
+      "Communication & Mentoring: Experience mentoring junior engineers and giving presentations highlights the ability to explain technical concepts clearly, crucial for working with students.",
+      "Cloud and DevOps familiarity: Experience with Alibaba Cloud and Kubernetes aligns well with the potential need to manage and troubleshoot server infrastructure, though details are limited."
+    ],
+    "weaknesses": [
+      "Lack of direct education experience: No explicit experience within a school or educational setting, which is a desirable but not essential trait.",
+      "Limited detail on hardware experience: While the candidate has experience with backend and frontend technologies, there's little mentioned about specific hardware troubleshooting or device management (Intune, imaging, etc.), which is a significant portion of the role.",
+      "No network experience: No mention of networking basics (VLANs, switches, Wi-Fi troubleshooting), an area that could be tested heavily in the ‘characterful’ server room.",
+      "Geographic location: Located in China, which would require significant relocation, posing logistical challenges and potentially impacting salary expectations.",
+      "Limited mention of safeguarding: While enthusiasm for working with young people is implied, there's no specific mention of safeguarding awareness, a critical requirement."
+    ],
+    "summary": "This candidate possesses strong technical skills and experience that could be valuable to the role, but lacks direct education experience and specific hardware/network skills, while geographic location presents a logistical hurdle.",
+    "candidate": "middle_chinese"
+  },
+  {
+    "score": 7,
+    "strengths": [
+      "Strong programming skills: Candidate demonstrates proficiency in Python, Java, Kotlin, React, and TypeScript, aligning with the 'basic programming ability' requirement.",
+      "Experience with relevant technologies: Candidate's familiarity with Microsoft 365, AWS, Kubernetes, and Kafka, demonstrates capability in a technical environment.",
+      "Experience mentoring: The candidate has experience coaching junior engineers, which suggests a good aptitude for explaining technology clearly to young people.",
+      "Problem-solving and analytical skills: Demonstrated by proactively identifying and resolving issues like duplicate order incidents and improving investigation times.",
+      "Project leadership: Candidate has experience leading development teams and projects, demonstrating organizational skills."
+    ],
+    "weaknesses": [
+      "Lack of direct education experience: The candidate has no prior experience in an education setting, which is a desirable (but not essential) skill listed in the job description.",
+      "Limited device management experience: While proficient in cloud technologies, there's no mention of experience with Intune or similar device management systems, crucial for the technical support aspect.",
+      "Network knowledge: The 'characterful' server room and Wi-Fi troubleshooting mentioned in the job description are areas where the candidate's experience seems limited.",
+      "Focus on backend and web development: While programming experience is good, the role involves a blend of IT support and coding enrichment, and the CV leans heavily towards development rather than general IT maintenance."
+    ],
+    "summary": "Kagiso possesses strong programming and development skills and demonstrates a clear ability to problem-solve and mentor, but lacks direct experience in IT support or an educational environment.",
+    "candidate": "middle_sa"
+  },
+  {
+    "score": 6,
+    "strengths": [
+      "Strong technical skills: Demonstrates expertise in languages like Python (relevant for coding enrichment), and platforms like Kubernetes and Docker which are transferable to managing IT infrastructure.",
+      "Leadership and Mentorship: Experience mentoring engineers suggests potential for guiding and supporting students in coding activities.",
+      "Problem-solving: Experience in incident reviews and observability improvements demonstrates ability to troubleshoot and resolve technical issues.",
+      "Experience with distributed systems: Useful for understanding network infrastructure and maintaining Wi-Fi."
+    ],
+    "weaknesses": [
+      "Lack of Education Sector Experience: No direct experience in education, which is a desirable (not essential) criteria. This would require a learning curve to adapt to the school environment and safeguarding procedures.",
+      "No IT Support Specific Experience: While technically proficient, the CV lacks specific experience in providing first-line IT support, device imaging, and classroom AV management, which are core components of the role. The 'characterful' server room experience would be an interesting conversation point, but isn't directly relevant.",
+      "Curriculum Knowledge: Doesn't explicitly demonstrate knowledge of KS3 programming activities (Scratch, Python).",
+      "Limited Google Workspace Experience: While mentions of API governance could be helpful, it does not explicitly mention Google Classroom or Google Workspace administration which is desirable."
+    ],
+    "summary": "While technically very strong and possessing leadership qualities, this candidate's lack of direct IT support experience and education sector experience requires careful consideration and potentially a structured onboarding process to ensure a successful transition.",
+    "candidate": "senior_chinese"
+  },
+  {
+    "score": 4,
+    "strengths": [
+      "Strong technical skills: Demonstrates proficiency in multiple languages (Go, Python, Java, TypeScript, SQL) and platforms (AWS, Kubernetes, Docker, GitHub Actions) which are valuable for IT support and potentially coding enrichment.",
+      "Problem-solving abilities: Experience in designing and troubleshooting complex systems, like the payments platform and shipment tracking platform, suggests strong problem-solving skills applicable to IT issues.",
+      "Mentorship Experience: Has experience in mentoring engineers, indicating potential for positive interaction with students.",
+      "Coding ability: Explicitly mentions Python, fulfilling a basic requirement.",
+      "Understanding of modern practices: Familiarity with SRE, API governance, and CI/CD aligns with current IT best practices."
+    ],
+    "weaknesses": [
+      "Lack of Education/Experience in an Educational Setting: No experience working in schools or with young people, which is a significant drawback given the role's emphasis on interaction and safeguarding.",
+      "Overqualification: Candidate's extensive experience as a Principal Software Engineer is far beyond the requirements of an IT Technician and Coding Enrichment Lead; suggesting lack of interest in the role.",
+      "Mismatch of Responsibilities: The role's core functions (device management, AV support, Wi-Fi troubleshooting) are not reflected in the candidate's experience. They focus on high-level architecture and design.",
+      "Missing Relevant Tools: While proficient in Intune-like tools, the CV doesn't explicitly mention device management experience which is a key responsibility.",
+      "Focus on High-Level Systems: The emphasis is on designing and architecting complex platforms rather than the hands-on IT support needed for this position."
+    ],
+    "summary": "While possessing excellent technical skills, Marcus Okafor's extensive experience and lack of education or experience in a school setting make him an unlikely fit for this role focused on basic IT support and student engagement.",
+    "candidate": "senior_american"
+  },
+  {
+    "score": 4,
+    "strengths": [
+      "Strong technical background: Possesses a deep understanding of software architecture, distributed systems, and cloud technologies (AWS, Kubernetes, Kafka, etc.).",
+      "Programming ability: Demonstrates proficiency in multiple programming languages including Python, which aligns with the coding enrichment lead aspect of the role.",
+      "Problem-solving skills: Experience in improving system performance, reducing costs, and enhancing reliability, suggesting strong analytical abilities.",
+      "Leadership experience: Has mentored junior engineers, showcasing potential for guiding and supporting students in the Code Club and KS3 programming activities."
+    ],
+    "weaknesses": [
+      "Lack of education sector experience: No direct experience in education, which is a desirable (but not essential) requirement.",
+      "Overqualified: The candidate's experience and seniority significantly exceed the requirements of the role, raising concerns about engagement and retention.",
+      "Limited direct student interaction: While there's mentorship experience, there's no explicit experience working directly with students in a classroom or similar setting, impacting immediate suitability for the enrichment lead aspect.",
+      "Scale of experience mismatch: The scope of projects handled (multi-billion dollar payment platforms) is vastly different from the modest IT infrastructure and robotics challenge described in the job description.",
+      "No evidence of safeguarding awareness: While willingness to train is mentioned in the requirements, there's no demonstrated awareness or experience in safeguarding procedures on the CV."
+    ],
+    "summary": "This candidate possesses exceptional technical skills but appears significantly overqualified and lacks direct experience within an educational setting, raising questions about job satisfaction and suitability for a role primarily focused on student interaction and a relatively small-scale IT environment.",
+    "candidate": "senior_sa"
+  }
+]

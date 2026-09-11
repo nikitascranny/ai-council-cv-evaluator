@@ -1,0 +1,131 @@
+[
+  {
+    "score": 5,
+    "strengths": [
+      "Strong technical foundation in software development and problem-solving.",
+      "Experience in debugging and assisting others with technical issues.",
+      "Ability to work in a team and adapt to new tasks quickly."
+    ],
+    "weaknesses": [
+      "Lack of hands-on hardware repair experience.",
+      "Limited direct customer service experience.",
+      "No demonstrated experience with physical repairs or maintaining hardware."
+    ],
+    "summary": "Jordan has a strong technical background and problem-solving skills, but lacks specific hardware repair experience and direct customer service experience needed for the role.",
+    "candidate": "beginner_american"
+  },
+  {
+    "score": 4,
+    "strengths": [
+      "Comfortable with technical problem-solving, as evidenced by experience with API endpoints and unit testing.",
+      "Experience in guiding others, which may translate to patience and explaining technical issues to customers."
+    ],
+    "weaknesses": [
+      "Lacks hands-on experience with physical computer repair, such as reseating RAM or cleaning hardware.",
+      "No demonstrated experience in customer service, particularly in a retail or repair shop environment.",
+      "Limited familiarity with specific repair-related tools and components typically required in the role."
+    ],
+    "summary": "The candidate has strong technical problem-solving skills but lacks hands-on experience in physical computer repair and customer service, which are essential for this role.",
+    "candidate": "beginner_chinese"
+  },
+  {
+    "score": 4,
+    "strengths": [
+      "Strong problem-solving skills demonstrated through software development projects",
+      "Good communication and collaboration experience, important for customer service"
+    ],
+    "weaknesses": [
+      "Lack of practical PC/laptop repair skills",
+      "No experience with hardware components such as RAM or SSDs",
+      "No previous experience in customer-facing roles or retail environments"
+    ],
+    "summary": "While Naledi has strong technical problem-solving and collaboration skills, they lack the practical PC repair experience and customer service background needed for this role.",
+    "candidate": "beginner_sa"
+  },
+  {
+    "score": 4,
+    "strengths": [
+      "Demonstrates strong technical skills and problem-solving abilities",
+      "Experience with backend systems and API design",
+      "Evidence of leadership and mentoring experience"
+    ],
+    "weaknesses": [
+      "Lacks hands-on hardware repair experience",
+      "No experience with customer service in a retail environment",
+      "No familiarity with specific hardware brands or common consumer tech issues"
+    ],
+    "summary": "Priya has strong technical and leadership skills but lacks the practical hardware repair and customer service experience needed for the job.",
+    "candidate": "intermediate_american"
+  },
+  {
+    "score": 4,
+    "strengths": [
+      "Strong technical skills in software engineering, particularly with backend services, API design, and programming languages like Java and Python.",
+      "Experience in building reliable systems and improving processes, demonstrated by reducing incidents and lead times in previous roles."
+    ],
+    "weaknesses": [
+      "Lack of direct experience with hardware repairs, which is essential for the role.",
+      "No demonstrated experience in customer service or dealing with non-technical customers.",
+      "Limited evidence of hands-on repair work, focusing primarily on software and system development."
+    ],
+    "summary": "While Zhang Wei has excellent technical skills and experience in software development, they lack the specific hardware repair skills and customer service experience required for the computer repair position.",
+    "candidate": "middle_chinese"
+  },
+  {
+    "score": 4,
+    "strengths": [
+      "Has a strong technical background with experience in software engineering and backend services, indicating problem-solving skills.",
+      "Experience with a variety of technologies such as Java, Python, and cloud platforms like AWS which suggests adaptability."
+    ],
+    "weaknesses": [
+      "Lacks specific experience in hands-on PC/laptop repair, which is essential for the role.",
+      "Does not have experience with customer service in a retail environment, particularly dealing with non-technical customers.",
+      "No demonstrated experience with the specific hardware issues mentioned (e.g., RAM, SSD, screen replacements)."
+    ],
+    "summary": "While Kagiso Ndlovu has strong technical skills and problem-solving experience, they lack hands-on repair experience and customer service skills necessary for the role at Brenda & Mick's Computer Repairs.",
+    "candidate": "middle_sa"
+  },
+  {
+    "score": 4,
+    "strengths": [
+      "Possesses strong problem-solving and technical skills, evidenced by extensive experience in software engineering and platform design.",
+      "Demonstrates leadership and mentoring abilities, suggesting potential to grow and adapt to new roles."
+    ],
+    "weaknesses": [
+      "Lacks direct experience with basic PC/laptop repair and customer service skills required for the role.",
+      "Does not have a background in practical, hands-on repair work typical of computer repair shop environments.",
+      "The candidate's qualifications and experience are far more advanced than necessary for the part-time, entry-level position."
+    ],
+    "summary": "While Zanele has excellent technical skills and leadership experience, these do not align with the practical, customer-facing skills required for the computer repair role.",
+    "candidate": "senior_sa"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "High-level technical skills and strong problem-solving capabilities",
+      "Experience in mentoring and technical leadership"
+    ],
+    "weaknesses": [
+      "Lack of practical PC/laptop repair experience",
+      "Not accustomed to customer service and face-to-face interactions",
+      "No prior experience in a retail or repair shop setting"
+    ],
+    "summary": "Marcus Okafor has strong technical and leadership skills but lacks the practical repair experience and customer service skills required for the computer repair shop role.",
+    "candidate": "senior_american"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Strong technical background and experience in software engineering.",
+      "Proven leadership and mentoring abilities.",
+      "Ability to handle complex projects and improve system reliability."
+    ],
+    "weaknesses": [
+      "Lack of practical PC/laptop repair skills as required by the job.",
+      "Limited experience with customer service and hands-on hardware troubleshooting.",
+      "No direct experience with the types of devices and issues mentioned in the job description."
+    ],
+    "summary": "While Chen Haoran has extensive technical expertise and leadership skills, the candidate lacks the hands-on repair skills and customer service experience essential for this part-time computer repair position.",
+    "candidate": "senior_chinese"
+  }
+]

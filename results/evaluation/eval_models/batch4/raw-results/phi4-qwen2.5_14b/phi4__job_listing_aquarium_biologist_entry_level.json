@@ -1,0 +1,31 @@
+[
+  {
+    "score": 6,
+    "strengths": [
+      "The candidate has a strong background in animal welfare and handling, which is transferable to aquatic animal husbandry.",
+      "Ralph has demonstrated disciplined record-keeping and attention to detail, aligning with the role's requirements.",
+      "His experience in managing daily operations and working independently under demanding conditions shows physical fitness and reliability."
+    ],
+    "weaknesses": [
+      "Lacks formal education in Marine Biology, Zoology, Aquatic Biology, or related life sciences, as required for the role.",
+      "No direct experience with aquatic life or life support systems (LSS) maintenance.",
+      "Absence of SCUBA certification or related experience, although there is willingness to train, which is desirable but not essential."
+    ],
+    "summary": "Ralph's extensive experience in livestock management demonstrates transferable skills and physical capability, but lacks specific academic qualifications and direct experience in aquatic biology or husbandry.",
+    "candidate": "Ralph_Son_of_a_Shepard_Farm_CV"
+  },
+  {
+    "score": 4,
+    "strengths": [
+      "Demonstrates strong skills in record-keeping, prioritization, and methodical troubleshooting, which are transferable to aquarium maintenance tasks.",
+      "Shows experience in maintaining and monitoring equipment, similar to the maintenance of aquarium life support systems."
+    ],
+    "weaknesses": [
+      "Lacks formal education in marine biology or a related life science, which is a key essential requirement.",
+      "No prior experience in aquariums, aquatic life support systems, or relevant biology fields.",
+      "Limited understanding of water chemistry and the nitrogen cycle, which are crucial for the role."
+    ],
+    "summary": "While the candidate has relevant skills in maintenance and record-keeping, they lack the specific educational background and experience in aquatic biology and life support systems essential for the role.",
+    "candidate": "Ralph_Son_of_a_Shepard_IT_Transition_CV"
+  }
+]

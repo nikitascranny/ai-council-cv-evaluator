@@ -1,0 +1,38 @@
+[
+  {
+    "summary": "The candidate's experience is primarily in software engineering and teaching, which do not directly align with the essential requirements for a Museum Security Specialist. However, the candidate's ability to work in a professional environment and their strong written communication skills from the teaching role could be considered a reasonable match. The essential requirements such as experience in a security role, valid SIA license, and knowledge of CCTV and alarm systems are clearly not met based on the provided CV.",
+    "candidate": "beginner_american"
+  },
+  {
+    "summary": "The candidate clearly meets the requirement for at least 3 years of experience in a security role, a valid SIA Door Supervisor or Security Guarding licence, and strong communication skills. The experience in patrolling and handling security systems is a reasonable/close match. However, it is unclear if the candidate has the specific experience with high-value object protection or the ability to work on a rolling rota including weekends and overnight shifts.",
+    "candidate": "beginner_chinese"
+  },
+  {
+    "summary": "The candidate clearly meets the essential requirement of minimum 3 years' experience in a security role, as well as the ability to remain calm and make sound decisions under pressure. The candidate's experience with monitoring and operating security systems, and their communication skills for incident reporting, are also closely aligned with the job's requirements. However, the physical ability to patrol a large multi-floor site for extended periods is unclear from the CV, and the candidate does not specify having a valid SIA Door Supervisor or Security Guarding licence.",
+    "candidate": "beginner_sa"
+  },
+  {
+    "summary": "The candidate's educational background and professional certification do not clearly meet the essential requirements for the Museum Security Specialist role. There is no evidence of security-related experience or a relevant license. However, the candidate's technical skills in operating systems could be considered a reasonable match for the role's technology-related tasks.",
+    "candidate": "intermediate_american"
+  },
+  {
+    "summary": "The candidate's experience in security roles, especially in a museum setting, closely matches the essential requirement of 3 years' experience in such an environment. Their valid SIA Door Supervisor licence and working knowledge of CCTV and intruder alarm systems clearly meet the essential requirements. However, it is unclear from the CV if the candidate has extensive experience with high-value object protection or art/cultural property security, which is listed as desirable. The candidate's ability to remain calm under pressure and write incident reports is evident, suggesting they meet these essential requirements. Physical capability to patrol the site is also implied but not explicitly stated.",
+    "candidate": "middle_chinese"
+  },
+  {
+    "summary": "The candidate's background in computer engineering and AWS certification are not directly relevant to the security role. However, their experience in contributing to engineering guilds and presenting at a developer forum could be transferable to the technical aspects of the role, such as understanding CCTV and access-control systems. The essential requirements of security experience, SIA licence, and incident reporting are not evidenced in the CV, making them unclearly met.",
+    "candidate": "middle_sa"
+  },
+  {
+    "summary": "The candidate's experience does not clearly meet the essential requirement of minimum 3 years' experience in a security role. However, their experience in technical leadership and incident management may reasonably align with some responsibilities, such as incident reporting and risk management. The candidate's physical capabilities are not evidenced, and there is no mention of relevant licenses or security system knowledge.",
+    "candidate": "senior_american"
+  },
+  {
+    "summary": "The candidate's experience as a software engineer is clearly not aligned with the museum security specialist role. However, their technical leadership and reliability practices may be considered as a reasonable match for the ability to make sound decisions under pressure. The candidate lacks relevant security experience, necessary licenses, and specific security systems knowledge.",
+    "candidate": "senior_chinese"
+  },
+  {
+    "summary": "The candidate's MSc and BSc degrees in Software Engineering and Computer Science do not directly align with the essential requirements for a Museum Security Specialist. However, their technical experience, particularly their work on adaptive workload-routing, could be seen as a reasonable match for the working knowledge of CCTV, intruder alarm, and access-control systems. There is no evidence of relevant security experience or the SIA Door Supervisor or Security Guarding licence, which are clearly not met. Their ability to make decisions and communicate is inferred from their professional experience but not explicitly stated.",
+    "candidate": "senior_sa"
+  }
+]

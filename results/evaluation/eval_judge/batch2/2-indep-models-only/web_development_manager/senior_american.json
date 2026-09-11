@@ -1,0 +1,8 @@
+{
+  "candidate": "senior_american",
+  "final_score": 8,
+  "score_rationale": "The candidate has strong leadership and technical expertise in distributed systems and modernization, but lacks specific experience with React/TypeScript and .NET, which are essential for the role.",
+  "key_strengths": "Extensive experience leading technical teams through significant change, including monolith decomposition and platform modernization. Strong background in distributed systems, cloud infrastructure (AWS), CI/CD, and automated testing.",
+  "key_weaknesses": "Limited experience with React/TypeScript and .NET, which are required for the booking platform. No direct experience in the travel or transport industry, which is desirable.",
+  "final_evaluation": "The candidate is a strong fit for the technical and leadership aspects of the role, but may need to gain experience or upskill in React/TypeScript, .NET, and the travel/transport sector to fully meet the requirements."
+}

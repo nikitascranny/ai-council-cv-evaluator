@@ -1,0 +1,84 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "adaptability to various work environments",
+      "customer service and communication skills"
+    ],
+    "weaknesses": [
+      "lack of relevant experience in groundskeeping, tracking, or immersive experiences",
+      "inability to address the unique requirements of the position"
+    ],
+    "summary": "Kevin Jones lacks the specific experience and skills required for the position, particularly in groundskeeping, tracking, and immersive event management, despite his adaptability and customer service skills.",
+    "candidate": "professional_cv_kevin_jones"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Minimal work experience",
+      "Claims of being a fast learner"
+    ],
+    "weaknesses": [
+      "Lack of relevant work experience",
+      "Inability to handle basic responsibilities",
+      "No skills matching job requirements"
+    ],
+    "summary": "Jason Muller is highly unsuitable for the position due to a complete mismatch between his skills, experience, and the requirements of the role.",
+    "candidate": "bad_cv_jason_muller"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Willingness to work for high pay",
+      "Ability to work independently"
+    ],
+    "weaknesses": [
+      "Gaps in employment history",
+      "Lack of relevant skills and experience",
+      "Poor punctuality and reliability"
+    ],
+    "summary": "Kevin Jones lacks the necessary experience, skills, and reliability for the position and would likely struggle to meet the role's demanding requirements.",
+    "candidate": "bad_cv_kevin_jones"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "synergy",
+      "branding advice (unverified)"
+    ],
+    "weaknesses": [
+      "lacks relevant work experience",
+      "unrelated skills",
+      "missing essential requirements"
+    ],
+    "summary": "The candidate's background is largely irrelevant and lacks the specific skills and experience required for the position.",
+    "candidate": "bad_cv_sarah_lynne_van_der_merwe"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Adaptable and customer-service oriented",
+      "Some experience in team coordination"
+    ],
+    "weaknesses": [
+      "No relevant experience in groundskeeping or hunting",
+      "Lack of experience with tracking, search & rescue, or military background",
+      "Inexperience with live-in and remote work"
+    ],
+    "summary": "The candidate lacks the essential experience and background required for the unique and specific role of Estate Groundskeeper & Hunt Coordinator at Blackmoor Hall, with no indication of up-skilling potential in the necessary areas.",
+    "candidate": "professional_cv_jason_muller"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Experience in customer engagement and team coordination",
+      "Background in brand development and retail operations"
+    ],
+    "weaknesses": [
+      "No relevant experience in groundskeeping or hunting",
+      "Lacks skills in tracking, search and rescue, and outdoor activities"
+    ],
+    "summary": "The candidate has some experience in customer engagement and team coordination but lacks the specific skills and experience required for groundskeeping and hunting-related tasks.",
+    "candidate": "professional_cv_sarah_lynne_van_der_merwe"
+  }
+]

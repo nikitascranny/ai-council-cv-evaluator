@@ -1,0 +1,120 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Strong attention to detail from software testing experience",
+      "Ability to learn new tools and systems quickly"
+    ],
+    "weaknesses": [
+      "No relevant degree or experience in marine biology/aquatic husbandry",
+      "Lack of hands-on experience with life support systems or water chemistry"
+    ],
+    "summary": "Candidate lacks essential qualifications for aquatic biology role but demonstrates transferable skills from software engineering background.",
+    "candidate": "beginner_american"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Attention to detail from software development experience",
+      "Strong problem-solving skills demonstrated through technical projects"
+    ],
+    "weaknesses": [
+      "No relevant degree in marine biology or aquatic sciences",
+      "No experience with aquarium maintenance, water chemistry, or life support systems"
+    ],
+    "summary": "Candidate lacks essential qualifications for aquatic biology role but demonstrates technical problem-solving skills from software engineering background.",
+    "candidate": "beginner_chinese"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Attention to detail from software testing experience",
+      "Structured approach to problem-solving"
+    ],
+    "weaknesses": [
+      "No relevant degree or experience in marine biology/aquatic systems",
+      "No practical skills in water chemistry, LSS maintenance, or animal husbandry"
+    ],
+    "summary": "Candidate lacks essential qualifications and experience in marine biology, aquatic systems, and hands-on animal care required for the role.",
+    "candidate": "beginner_sa"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Strong technical background in software engineering",
+      "Leadership and mentoring experience"
+    ],
+    "weaknesses": [
+      "No relevant education or experience in marine biology/aquatic animal husbandry",
+      "Lack of practical skills in water chemistry, LSS maintenance, or animal care"
+    ],
+    "summary": "The candidate is a software engineer with no relevant education, experience, or skills in marine biology, aquatic husbandry, or life support system maintenance, making them a poor fit for the Aquarium Biologist role.",
+    "candidate": "middle_chinese"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Strong attention to detail and systematic approach from software engineering experience",
+      "Demonstrated ability to follow complex processes and implement solutions"
+    ],
+    "weaknesses": [
+      "No relevant academic background in marine biology or aquatic sciences",
+      "No experience with aquatic animal husbandry, life support systems, or water chemistry"
+    ],
+    "summary": "Candidate lacks essential qualifications in marine biology and aquatic husbandry required for the role, with relevant experience limited to software engineering.",
+    "candidate": "middle_sa"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Attention to detail from technical work",
+      "Ability to follow structured processes"
+    ],
+    "weaknesses": [
+      "No relevant education or experience in marine biology/aquatic systems",
+      "No evidence of physical labor or life support system maintenance experience"
+    ],
+    "summary": "Candidate's extensive software engineering background lacks essential qualifications for aquatic husbandry, including relevant education, hands-on experience with life support systems, and physical labor readiness required for the role.",
+    "candidate": "senior_american"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Strong educational background in engineering",
+      "Proven leadership and technical expertise in software development"
+    ],
+    "weaknesses": [
+      "No relevant academic qualification in marine biology, zoology, or aquatic sciences",
+      "No experience with aquatic life support systems, water chemistry, or animal husbandry",
+      "Career entirely focused on software engineering with no overlap with job requirements"
+    ],
+    "summary": "Candidate lacks essential qualifications and experience for an aquarium biologist role, with a career entirely unrelated to marine biology or aquatic husbandry.",
+    "candidate": "senior_sa"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong technical background in software engineering",
+      "Leadership and mentoring experience"
+    ],
+    "weaknesses": [
+      "No relevant education or experience in marine biology/aquatic husbandry",
+      "No evidence of physical labor experience or water chemistry knowledge"
+    ],
+    "summary": "Candidate lacks essential qualifications in marine biology, aquatic systems, and physical maintenance tasks required for the role.",
+    "candidate": "intermediate_american"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong attention to detail from software engineering experience",
+      "Ability to follow structured processes and technical documentation"
+    ],
+    "weaknesses": [
+      "No relevant degree or experience in marine biology/aquatic sciences",
+      "No evidence of physical work experience, water chemistry knowledge, or animal care skills required for the role"
+    ],
+    "summary": "Candidate's extensive software engineering background is entirely unrelated to the aquatic biology, life support systems maintenance, and animal husbandry requirements of the role.",
+    "candidate": "senior_chinese"
+  }
+]

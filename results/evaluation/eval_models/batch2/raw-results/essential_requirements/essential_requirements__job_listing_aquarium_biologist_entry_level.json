@@ -1,0 +1,38 @@
+[
+  {
+    "summary": "The candidate does not clearly meet the essential requirement of a degree in Marine Biology, Zoology, Aquatic Biology or a related life science. However, their experience in software development and teaching can reasonably relate to the strong observational and attention to detail skills required. The role's physical demands and ability to work weekends are not evidenced in the CV, though they are essential requirements. There is no clear indication of relevant practical experience in aquarium life support systems.",
+    "candidate": "beginner_american"
+  },
+  {
+    "summary": "The candidate's degree in Aquatic Biology and practical experience in maintaining aquatic systems, including filter cleaning and water testing, clearly meet the essential requirements. Their willingness to perform physical tasks and attention to detail are reasonable matches. However, their specific record-keeping habits and physical fitness details are unclear from the CV.",
+    "candidate": "beginner_chinese"
+  },
+  {
+    "summary": "The candidate meets the essential requirement for a degree in Marine Biology, Zoology, Aquatic Biology or a related life science. The candidate's willingness to carry out physical tasks is inferred from relevant experience but not explicitly stated. The candidate's physical fitness and ability to work weekends are unclear from the provided information. Observational skills and attention to detail are not explicitly mentioned but are reasonable inferences from the listed experience.",
+    "candidate": "beginner_sa"
+  },
+  {
+    "summary": "The candidate's education in Computer Engineering does not clearly meet the essential requirement of a degree in Marine Biology, Zoology, Aquatic Biology or a related life science. However, their recent acquisition of the AWS Certified Developer Associate certification suggests a strong willingness to learn and adapt, which could be seen as a reasonable match for the essential requirement of being willing to carry out physical, dirty and repetitive tasks. There is no clear indication of the candidate's physical fitness, ability to work weekends, or understanding of water chemistry and the nitrogen cycle, which are clearly not met or unclear from the CV.",
+    "candidate": "intermediate_american"
+  },
+  {
+    "summary": "The candidate's degree in Marine Biology and related coursework clearly meet the essential requirement for a degree in a relevant field. Their willingness to perform physical tasks and attention to detail are reasonable matches for the job requirements. However, it is unclear from the CV if they have hands-on experience with filtration systems or water quality testing.",
+    "candidate": "middle_chinese"
+  },
+  {
+    "summary": "The candidate's education in Computer Engineering does not meet the essential requirement of a degree in Marine Biology, Zoology, Aquatic Biology or a related life science. However, their experience as a contributor to engineering guilds and presenting at a developer forum shows a strong background in technical skills and public speaking, which could be considered a reasonable/close match for the role's requirements. No clear evidence of physical fitness, water chemistry understanding, or relevant practical experience in aquatic life support systems is provided.",
+    "candidate": "middle_sa"
+  },
+  {
+    "summary": "The candidate's background in software engineering does not clearly meet the essential requirements of the aquarium biologist position. However, their technical leadership and experience in systems design, reliability, and incident management could be seen as a reasonable match for the job's responsibilities. The candidate does not provide evidence of a relevant degree or practical experience in marine biology, zoology, or aquatic biology, which are essential requirements.",
+    "candidate": "senior_american"
+  },
+  {
+    "summary": "Candidate's degree in Software Engineering does not meet the essential requirement of a degree in Marine Biology, Zoology, Aquatic Biology or a related life science. However, their strong technical background, including experience with systems design and reliability, may be relevant for some aspects of the job, such as maintaining life support systems. The candidate's physical fitness and willingness to carry out repetitive tasks is evident from their work history, but there is no direct evidence of water chemistry understanding or observational skills.",
+    "candidate": "senior_chinese"
+  },
+  {
+    "summary": "The candidate's education in software engineering and computer science does not meet the essential requirement of a degree in Marine Biology, Zoology, Aquatic Biology or a related life science. However, their strong background in engineering and innovation shows a willingness to carry out physical tasks and demonstrates attention to detail, which could be considered a close match. No clear evidence of physical fitness, relevant experience, or the ability to work weekends and holidays is provided.",
+    "candidate": "senior_sa"
+  }
+]

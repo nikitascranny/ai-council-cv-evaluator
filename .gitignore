@@ -5,14 +5,11 @@ __pycache__/
 .gitkeep
 
 # --- data and generated output ---
-data/judge-input/
-data/judge-output/
-data/rewrite_results/
-data/rewrite_feedback/
 logs/
 scripts/
 docs/
-*.json
+# judge run-state sentinels
+.done/
 # --- parser / rewriter working files ---
 .textcache/
 demo/

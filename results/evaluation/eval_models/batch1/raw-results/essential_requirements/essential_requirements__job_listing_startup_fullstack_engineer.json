@@ -1,0 +1,42 @@
+[
+  {
+    "summary": "The candidate has relevant experience in test analysis and documentation, which could be closely related to the full-stack development role, but this is not the primary focus of the job. The essential requirement of 4+ years of shipping production software, strong experience in TypeScript/React, and at least one backend language is not clearly met. Experience in backend languages like Go, Rust, Node, or Java is not evident. Comfort with production operations and distributed systems fundamentals is not directly shown, though they have experience in maintaining tests and monitoring CI/CD pipelines. Excellent communication skills are evident, as shown by their ability to explain technical matters. Genuine excitement about energy and real-world problems is not directly evidenced in the CV.",
+    "candidate": "ALEX PARK"
+  },
+  {
+    "summary": "The candidate has relevant experience in data engineering and machine learning, which closely aligns with the full-stack development role. They have experience with data processing, analysis, and reporting, as well as software development in Python and SQL, which are closely related to the TypeScript/React and Go backend requirements. However, the candidate lacks direct experience in shipping production software and operating services in production, which are essential requirements for the role.",
+    "candidate": "EMILE MOKOENA"
+  },
+  {
+    "summary": "The candidate's experience primarily focuses on UX research and design, which does not clearly meet the essential requirement of shipping production software. However, their experience with customer research and product alignment with user needs could be seen as a reasonable match for understanding and improving customer-facing services. Their technical skills are not evidenced, and they lack experience with backend languages such as Go, which are essential for the role.",
+    "candidate": "GEOFF NITSCHKE"
+  },
+  {
+    "summary": "The candidate's experience in architectural projects, technical documentation, and client coordination demonstrates strong analytical and problem-solving skills, which are closely aligned with the essential requirement of 'comfort with ambiguity and velocity.' However, there is no direct evidence of experience in shipping production software, TypeScript/React, or backend languages like Go, which are clearly essential requirements. The candidate's background in sustainable design and project management is relevant but not directly aligned with the technical roles in the job description.",
+    "candidate": "JORDAN VELDMAN"
+  },
+  {
+    "summary": "The candidate clearly meets the requirements for project management and coordination, as evidenced by their Project Manager Certificate and experience in roles such as Host Site Liaison and Global Partnerships Manager. Their experience in building strategic partnerships and managing relationships aligns closely with the essential requirements. The candidate's internet governance experience and volunteering roles are also a strong match. However, the clarity of their technical skills and specific project management tools used is less clear from the CV provided.",
+    "candidate": "LERATO MUNCHE"
+  },
+  {
+    "summary": "The candidate's experience aligns well with the essential requirements in terms of records management and information science, which can be reasonably transferred to software development. However, there is no clear evidence of experience with TypeScript/React or Go backend services, and the role requires strong production experience, which is not explicitly demonstrated. The candidate's comfort with ambiguity and velocity, as well as excellent communication skills, are strongly implied from the work experience. ",
+    "candidate": "NDLOVU KARABO REFILWE"
+  },
+  {
+    "summary": "The candidate has a reasonable match with the essential requirements. Their experience in shipping production software, especially in cybersecurity and related fields, aligns with the TypeScript/React and backend languages. They have operated services in production and shown a solid grasp of distributed systems fundamentals. However, there is no direct evidence of working with Go, and their role history suggests more experience in security and compliance rather than full-stack engineering. The candidate's communication skills and ability to explain technical trade-offs could be a strong fit, and their excitement about real-world problems is evident. The role's ambiguity and velocity would likely be a stretch, but not entirely out of scope given their background.",
+    "candidate": "PATRICK MARAIS"
+  },
+  {
+    "summary": "The candidate does not clearly meet the essential requirement of 4+ years shipping production software, though their experience in financial analysis and administrative roles suggests potential for relevant transferable skills. They have strong analytical and reporting experience, which could be valuable, but their direct software development experience is unclear. Comfort with ambiguity and velocity is not directly evidenced but is implied given their varied roles and responsibilities. Their education in finance and economics provides a solid foundation for understanding energy and climate issues.",
+    "candidate": "PONTUS PONTIOUS"
+  },
+  {
+    "summary": "The candidate meets the essential requirement of 4+ years of experience in shipping production software, although the specific technologies (TypeScript/React, Go) are not explicitly mentioned. The candidate's experience in developing and managing web products, as well as their exposure to technical tools like Miro, InVision, and Figma, suggests a reasonable match for the design and development of product surfaces. The candidate's experience in managing digital marketing and operational efficiency aligns closely with the role's emphasis on ambiguity and velocity. However, the candidate's background does not clearly demonstrate experience with distributed systems fundamentals or operating services in production, which are key requirements for this role.",
+    "candidate": "RIAAN GOVEN"
+  },
+  {
+    "summary": "The candidate's background in business information systems and roles as a business analyst provide a reasonable match for the technical and software development skills required. However, there is no clear evidence of experience in full-stack development with TypeScript/React and Go, nor experience operating services in production, which are key essential requirements. The candidate's communication skills and experience with software tools suggest potential for meeting the requirement for comfort with ambiguity and velocity, but this is not explicitly stated.",
+    "candidate": "THE DANIEL"
+  }
+]

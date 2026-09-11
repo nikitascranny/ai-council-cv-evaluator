@@ -1,0 +1,83 @@
+[
+  {
+    "score": 4,
+    "strengths": [
+      "adaptability",
+      "customer service and complaint resolution"
+    ],
+    "weaknesses": [
+      "lack of IT support experience",
+      "no background in education"
+    ],
+    "summary": "Jason Muller's background in customer service and adaptability are positive attributes, but the lack of IT support and educational experience significantly limits his fit for the IT Technician & Coding Enrichment Lead role.",
+    "candidate": "professional_cv_jason_muller"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Versatile and adaptable",
+      "Practical problem-solving skills"
+    ],
+    "weaknesses": [
+      "Lack of IT and educational background",
+      "No direct experience with coding or IT support"
+    ],
+    "summary": "Kevin Jones lacks the specific IT and educational background required for the position, despite being versatile and adaptable in various work environments.",
+    "candidate": "professional_cv_kevin_jones"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Strong business and retail leadership skills",
+      "Experience in customer engagement and team coordination"
+    ],
+    "weaknesses": [
+      "Lack of IT support experience",
+      "No direct experience in education or coding"
+    ],
+    "summary": "The candidate has strong business and leadership skills but lacks the specific IT and educational experience required for the role.",
+    "candidate": "professional_cv_sarah_lynne_van_der_merwe"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Can lift heavy boxes",
+      "Fast learner when motivated"
+    ],
+    "weaknesses": [
+      "Lack of relevant work experience",
+      "Insufficient technical skills",
+      "No evidence of genuine enthusiasm for working with young people"
+    ],
+    "summary": "Candidate does not meet the essential requirements of the job description and lacks relevant experience or enthusiasm for the role.",
+    "candidate": "bad_cv_jason_muller"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "willing to work",
+      "some problem-solving skills"
+    ],
+    "weaknesses": [
+      "inconsistent employment history",
+      "lack of relevant IT and education experience",
+      "poor communication and teamwork skills"
+    ],
+    "summary": "Kevin Jones lacks the necessary IT and educational experience, and his employment history and interpersonal skills do not align with the requirements of the IT Technician & Coding Enrichment Lead position.",
+    "candidate": "bad_cv_kevin_jones"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Passion for engagement",
+      "Motivational"
+    ],
+    "weaknesses": [
+      "Lack of relevant IT experience",
+      "No evidence of basic programming ability",
+      "No experience working with young people"
+    ],
+    "summary": "The candidate lacks the essential IT and programming skills required for the role and has no relevant experience working with young people or in an educational setting.",
+    "candidate": "bad_cv_sarah_lynne_van_der_merwe"
+  }
+]

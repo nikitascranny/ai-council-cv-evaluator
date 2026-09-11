@@ -1,0 +1,30 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "physically fit",
+      "dependable",
+      "capable of working independently in challenging conditions"
+    ],
+    "weaknesses": [
+      "no experience on boats",
+      "lacks relevant sea-based skills",
+      "no evidence of marine safety or fishing certifications"
+    ],
+    "summary": "Ralph has a strong work ethic and physical fitness but lacks the specific maritime experience and qualifications needed for this role.",
+    "candidate": "Ralph_Son_of_a_Shepard_Farm_CV"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "reliable and independent working",
+      "demonstrated ability to maintain equipment"
+    ],
+    "weaknesses": [
+      "lack of direct experience in fishing or maritime environments",
+      "no relevant certifications or formal training in maritime safety"
+    ],
+    "summary": "Candidate lacks direct experience and qualifications in the fishing industry, but shows potential in reliability and equipment maintenance.",
+    "candidate": "Ralph_Son_of_a_Shepard_IT_Transition_CV"
+  }
+]

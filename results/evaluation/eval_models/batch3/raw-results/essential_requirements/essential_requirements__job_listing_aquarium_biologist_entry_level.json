@@ -1,0 +1,26 @@
+[
+  {
+    "summary": "The candidate does not clearly meet the essential requirements for the role. They lack a formal degree in a relevant field, though they may have gained some related experience through their crypto entrepreneurship, which could be seen as practical experience. The candidate also does not demonstrate a physical fitness level or willingness to carry out the required dirty and repetitive tasks, and there is no indication of relevant work experience in aquatic biology or animal husbandry.",
+    "candidate": "bad_cv_jason_muller"
+  },
+  {
+    "summary": "The candidate's High School Diploma is a reasonable close match to the essential requirement of a degree in a related field. The employment history shows a range of roles, which may provide transferable skills in physical labor and attention to detail, but does not clearly demonstrate experience in aquatic animal husbandry or water chemistry. There is no clear evidence that the candidate can meet the physical demands of the role, such as lifting up to 25 kg, and there is no mention of relevant training or certifications.",
+    "candidate": "bad_cv_kevin_jones"
+  },
+  {
+    "summary": "The candidate's experience in leadership and business consultancy may be a reasonable match for the strong observational skills and attention to detail required, as well as the ability to work in a structured environment. However, the essential requirements for a degree in Marine Biology, Zoology, Aquatic Biology or a related life science, and the physical tasks such as filter cleaning and water quality testing are not clearly met by the information provided in the CV.",
+    "candidate": "bad_cv_sarah_lynne_van_der_merwe"
+  },
+  {
+    "summary": "The candidate's experience does not clearly meet the essential requirements for the position. The role of Acting Assistant Manager at a car wash and Independent Digital-Asset Researcher are not closely related to the job's essential requirements. However, the candidate's self-directed learning in customer service and operations could be considered a reasonable close match. The candidate’s education and professional development in financial-market research do not align with the essential requirements of the role.",
+    "candidate": "professional_cv_jason_muller"
+  },
+  {
+    "summary": "The candidate's experience in customer service and logistics shows strong adaptability and a solution-focused approach, which could reasonably match the essential requirement of willingness to carry out physical, dirty and repetitive tasks. However, the education section does not clearly indicate a relevant degree in Marine Biology, Zoology, Aquatic Biology or a related life science, which is an essential requirement. There is no specific mention of water chemistry, filtration systems, or physical fitness, making these requirements unclear from the CV.",
+    "candidate": "professional_cv_kevin_jones"
+  },
+  {
+    "summary": "The candidate's experience in business administration and executive leadership development provides a reasonable match for the strong observational skills and attention to detail required, but lacks direct experience in aquatic biology or filtration systems. Their ability to manage and lead teams, along with their hands-on business experience, aligns with the physical and rota work requirements. However, the candidate's CV does not evidence any relevant formal education or practical experience in marine biology, zoology, or aquatics, which are essential requirements.",
+    "candidate": "professional_cv_sarah_lynne_van_der_merwe"
+  }
+]

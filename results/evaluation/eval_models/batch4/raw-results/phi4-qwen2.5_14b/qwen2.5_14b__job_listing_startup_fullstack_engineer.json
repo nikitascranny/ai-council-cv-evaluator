@@ -1,0 +1,29 @@
+[
+  {
+    "score": 2,
+    "strengths": [
+      "Strong in independent work and maintenance",
+      "Good at documentation and communication"
+    ],
+    "weaknesses": [
+      "Lacks formal IT qualifications and experience",
+      "No relevant experience in full-stack engineering or energy sector",
+      "Insufficient experience with technologies mentioned in job description"
+    ],
+    "summary": "The candidate lacks the necessary technical background and experience in full-stack development and the energy sector to fit the role, despite having strong operational and maintenance skills.",
+    "candidate": "Ralph_Son_of_a_Shepard_IT_Transition_CV"
+  },
+  {
+    "score": 1,
+    "strengths": [
+      "Highly competent in livestock care and management",
+      "Experienced in independent field work and teamwork"
+    ],
+    "weaknesses": [
+      "No relevant experience in software engineering",
+      "Lacks essential technical skills and background"
+    ],
+    "summary": "The candidate has no relevant experience or skills in software engineering or the technical fields required for the position.",
+    "candidate": "Ralph_Son_of_a_Shepard_Farm_CV"
+  }
+]

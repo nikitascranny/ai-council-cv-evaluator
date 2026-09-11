@@ -1,0 +1,94 @@
+[
+  {
+    "score": 5,
+    "strengths": [
+      "Demonstrates adaptability and resilience across various operational roles, which is beneficial for handling diverse tasks.",
+      "Strong communication skills and experience in customer-facing roles, useful for liaising with staff, volunteers, and external parties."
+    ],
+    "weaknesses": [
+      "Lacks specific experience in security roles, particularly within a museum or similar environment.",
+      "Does not have the required SIA Door Supervisor or Security Guarding license.",
+      "Missing experience with CCTV, intruder alarm, and access-control systems, critical for the role.",
+      "No demonstrated ability to handle high-pressure situations like security incidents, theft, or emergencies."
+    ],
+    "summary": "While Kevin Jones shows adaptability and strong communication skills, he lacks specific experience and qualifications in security, which are crucial for the Museum Security Specialist position.",
+    "candidate": "professional_cv_kevin_jones"
+  },
+  {
+    "score": 4,
+    "strengths": [
+      "Demonstrates adaptability and problem-solving skills in fast-paced environments.",
+      "Has experience in team coordination and supervision."
+    ],
+    "weaknesses": [
+      "Lacks direct experience in security roles, particularly in museums or heritage sites.",
+      "Does not meet essential requirement of SIA Door Supervisor or Security Guarding licence.",
+      "No experience with CCTV, intruder alarm, or access-control systems.",
+      "No prior experience in conducting patrols or monitoring security systems."
+    ],
+    "summary": "The candidate shows potential in adaptability and team coordination but lacks essential security experience and specific skills required for the Museum Security Specialist role.",
+    "candidate": "professional_cv_jason_muller"
+  },
+  {
+    "score": 4,
+    "strengths": [
+      "Experience in managing daily operations and team coordination, which may translate to supervising object movements and security operations.",
+      "Background in retail operations, including opening and closing procedures, relevant to conducting gallery sweeps and secure lock-up."
+    ],
+    "weaknesses": [
+      "Lack of direct experience in security roles, particularly within a museum or similar environment.",
+      "No evidence of working knowledge of CCTV, intruder alarm, or access-control systems.",
+      "Absence of required qualifications such as an SIA Door Supervisor or Security Guarding license.",
+      "No experience in responding to incidents like theft, vandalism, or fire alarms, nor in completing incident reports."
+    ],
+    "summary": "The candidate has relevant operational management experience but lacks direct security experience and necessary qualifications for the role.",
+    "candidate": "professional_cv_sarah_lynne_van_der_merwe"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Demonstrates ability to lead and manage tasks in a previous role as an Assistant Manager",
+      "Shows learning from experiences, particularly in the crypto industry",
+      "Has physical ability to lift heavy boxes"
+    ],
+    "weaknesses": [
+      "Lacks relevant experience in security or museum settings",
+      "Does not possess necessary technical skills like knowledge of CCTV or alarm systems",
+      "No evidence of required communication skills or incident report writing experience",
+      "Has no certification such as SIA Door Supervisor or Security Guarding licence",
+      "Insufficient evidence of ability to remain calm under pressure or make sound decisions",
+      "Lack of education or training relevant to security operations"
+    ],
+    "summary": "The candidate has some leadership experience and physical capability, but lacks the specific skills, relevant experience, and certifications necessary for the Museum Security Specialist role.",
+    "candidate": "bad_cv_jason_muller"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Shows willingness to work and some adaptability in varied job roles"
+    ],
+    "weaknesses": [
+      "Lacks specific security experience and qualifications",
+      "No evidence of required skills such as CCTV operation or incident report writing",
+      "Has a history of leaving jobs, which may be a concern for reliability",
+      "Does not meet essential requirements like SIA Door Supervisor or Security Guarding licence",
+      "Has a personal statement indicating a preference against weekend work"
+    ],
+    "summary": "The candidate lacks the specific experience, qualifications, and reliability required for the Museum Security Specialist role.",
+    "candidate": "bad_cv_kevin_jones"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Demonstrates ambition and initiative by founding her own consultancy"
+    ],
+    "weaknesses": [
+      "Lacks relevant experience in security roles or working in a museum/galleries setting",
+      "No evidence of skills related to security systems operation or incident response",
+      "Education and certifications are unrelated to security or museum operations",
+      "No relevant achievements or experience in security or emergency response"
+    ],
+    "summary": "The candidate shows initiative but lacks the specific skills and relevant experience required for a Museum Security Specialist role.",
+    "candidate": "bad_cv_sarah_lynne_van_der_merwe"
+  }
+]

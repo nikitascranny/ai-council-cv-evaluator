@@ -1,0 +1,26 @@
+[
+  {
+    "summary": "The candidate does not clearly meet any of the essential requirements. Experience as an assistant manager does not align with the security role. There is no evidence of security-related experience, relevant qualifications, or knowledge of security systems. The candidate also lacks detailed communication skills or incident reporting experience.",
+    "candidate": "bad_cv_jason_muller"
+  },
+  {
+    "summary": "The candidate has no clear experience in a security role, which is an essential requirement. However, they could potentially meet the requirement for a valid SIA Door Supervisor or Security Guarding licence if it is a regional equivalent. The candidate’s experience in various roles, including retail and admin, shows adaptability and communication skills, which could be transferable to the role. There is no evidence of physical ability to patrol a large multi-floor site, willingness to work shifts, or knowledge of CCTV, intruder alarm, and access-control systems.",
+    "candidate": "bad_cv_kevin_jones"
+  },
+  {
+    "summary": "The candidate's experience as a Senior Executive Team Leader, including conducting high-level inventory optimization and opening and closing the store, could be considered a reasonable match for the security role's essential requirements. However, there is no clear evidence of relevant security experience or the necessary SIA Door Supervisor or Security Guarding licence. The candidate’s communication skills and willingness to take initiative are positive points, but they do not specifically address the need for experience in a security role, handling incidents, or working with security systems.",
+    "candidate": "bad_cv_sarah_lynne_van_der_merwe"
+  },
+  {
+    "summary": "The candidate's experience as Acting Assistant Manager shows strong communication and leadership skills, which could be considered a reasonable match for the essential requirement of strong written and verbal communication skills. The self-directed digital-asset researcher role demonstrates self-motivated and analytical skills, which may relate to the ability to write incident reports, but this is not clearly stated. There is no evidence of security experience, relevant certifications, or physical ability to patrol a large site, which are all clearly not met by the CV.",
+    "candidate": "professional_cv_jason_muller"
+  },
+  {
+    "summary": "The candidate's experience in customer service and cross-functional roles provides a reasonable match for the essential requirement of strong written and verbal communication skills. However, the candidate lacks specific experience in security roles, which is a clearly essential requirement. Physical ability and flexibility for shifts are also not evidenced, though the role's nature suggests these would be important.",
+    "candidate": "professional_cv_kevin_jones"
+  },
+  {
+    "summary": "The candidate has no clear experience in a security role, which is an essential requirement. However, their role as a Senior Retail Team Leader involves some relevant experience, such as managing a team and overseeing operations, which could be considered a reasonable match for some responsibilities. Their education and development may also provide some transferable skills related to communication and leadership, but these are not directly aligned with the essential requirements of the role.",
+    "candidate": "professional_cv_sarah_lynne_van_der_merwe"
+  }
+]

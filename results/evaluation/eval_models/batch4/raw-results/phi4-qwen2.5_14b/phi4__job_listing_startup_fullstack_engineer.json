@@ -1,0 +1,31 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Demonstrates strong problem-solving skills and adaptability, which are valuable for a technical role.",
+      "Has experience in maintaining detailed records and managing priorities, indicating good organizational skills."
+    ],
+    "weaknesses": [
+      "Lacks experience with required technologies like React, TypeScript, Go, Kafka, and TimescaleDB.",
+      "Does not have any professional experience in software development or related engineering roles.",
+      "Does not have experience in distributed systems or real-time data handling, which are crucial for this role."
+    ],
+    "summary": "The candidate shows adaptability and organizational skills but lacks the technical expertise and experience required for the Full-Stack Engineer role at Pulsegrid.",
+    "candidate": "Ralph_Son_of_a_Shepard_IT_Transition_CV"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Demonstrates strong record-keeping and disciplined management skills.",
+      "Exhibits clear communication and teamwork abilities."
+    ],
+    "weaknesses": [
+      "Lacks relevant technical skills in full-stack development, particularly in TypeScript, React, Go, Kafka, and TimescaleDB.",
+      "No experience in software development or operating production services.",
+      "Absence of experience in distributed systems, incident response, or working within a high-velocity startup environment.",
+      "Limited potential for immediate up-skilling to meet the technical and fast-paced requirements of the role."
+    ],
+    "summary": "The candidate's skills in management and record-keeping do not align with the technical and dynamic requirements of a full-stack engineering position at Pulsegrid.",
+    "candidate": "Ralph_Son_of_a_Shepard_Farm_CV"
+  }
+]

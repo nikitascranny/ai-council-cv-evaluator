@@ -1,0 +1,134 @@
+[
+  {
+    "score": 7,
+    "strengths": [
+      "Strong project management and partnership development skills",
+      "Experience in global communications and brand promotion"
+    ],
+    "weaknesses": [
+      "Limited direct IT technical skillset mentioned (e.g., JavaScript, Python)",
+      "No explicit mention of previous experience in similar managerial roles"
+    ],
+    "summary": "The candidate demonstrates significant experience in strategic partnerships and internal communications but may benefit from further developing specific IT-related skills.",
+    "candidate": "LERATO MUNCHE"
+  },
+  {
+    "score": 5,
+    "strengths": [
+      "strong background in records and information management",
+      "attention to detail and compliance with regulations"
+    ],
+    "weaknesses": [
+      "lacks direct experience in security roles or museum settings",
+      "no evidence of specific technical skills related to CCTV, alarms, access-control systems"
+    ],
+    "summary": "Candidate has a robust educational and professional history in managing records and ensuring compliance but lacks the necessary practical experience required for a security role within a museum.",
+    "candidate": "NDLOVU KARABO REFILWE"
+  },
+  {
+    "score": 5,
+    "strengths": [
+      "extensive security and investigative background",
+      "experience in managing and developing surveillance strategies"
+    ],
+    "weaknesses": [
+      "lacks direct experience in museum/gallery security",
+      "overemphasis on cyber and technical security skills which are not directly relevant to the role"
+    ],
+    "summary": "Patrick A. Marais has significant expertise in security management but lacks specific experience in museum security, making him a moderate fit for the position.",
+    "candidate": "PATRICK MARAIS"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Strong leadership and communication skills",
+      "Experience in conducting user research and analysis"
+    ],
+    "weaknesses": [
+      "No experience in security or museum management",
+      "Lack of technical skills relevant to the role, such as operating CCTV systems"
+    ],
+    "summary": "Geoff Nitschke has strong general professional competencies but lacks direct experience in security operations for museums or galleries.",
+    "candidate": "GEOFF NITSCHKE"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Strong analytical skills",
+      "Project management experience"
+    ],
+    "weaknesses": [
+      "Lack of security or museum experience",
+      "No relevant SIA licence"
+    ],
+    "summary": "The candidate has strong project management and analytical abilities but lacks the specific security background, certifications, and direct experience required for the position.",
+    "candidate": "JORDAN VELDMAN"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Strong communication skills",
+      "Organisational and analytical abilities"
+    ],
+    "weaknesses": [
+      "No relevant security experience or qualifications",
+      "Lack of direct museum operations involvement"
+    ],
+    "summary": "Pontus Pontious demonstrates strong communication and organizational skills but lacks the specific security background, certifications, and museum experience required for this role.",
+    "candidate": "PONTUS PONTIOUS"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Strong communication skills",
+      "Experience in project management and strategy development"
+    ],
+    "weaknesses": [
+      "Lack of direct experience in museum security or similar roles",
+      "No relevant certifications or experience with access-control systems"
+    ],
+    "summary": "The candidate possesses strong leadership and strategic planning abilities but lacks the specific background required for a Museum Security Specialist role.",
+    "candidate": "RIAAN GOVEN"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "strong analytical skills",
+      "ability to document and track defects"
+    ],
+    "weaknesses": [
+      "lack of security experience",
+      "no relevant qualifications or licenses for the role"
+    ],
+    "summary": "Alex Park lacks direct experience in security roles, necessary certifications, or related work history that align with the museum's requirements.",
+    "candidate": "ALEX PARK"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Technical skills in cloud technologies and data engineering",
+      "Experience with AWS certifications"
+    ],
+    "weaknesses": [
+      "Lack of experience in security roles",
+      "No relevant work experience in museum or heritage sites",
+      "Inadequate physical abilities for the job as described"
+    ],
+    "summary": "The candidate has strong technical background but lacks direct experience in security, museums, and physical requirements of the role.",
+    "candidate": "EMILE MOKOENA"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong in business analysis, communication and strategic thinking",
+      "Experienced with Treasury systems"
+    ],
+    "weaknesses": [
+      "No experience in security roles",
+      "Lacks relevant certifications such as SIA Door Supervisor or Security Guarding license",
+      "No familiarity with CCTV, intruder alarm, and access-control systems"
+    ],
+    "summary": "The candidate's background is highly aligned with business analysis but lacks the necessary skills and direct experience required for a Museum Security Specialist role.",
+    "candidate": "THE DANIEL"
+  }
+]

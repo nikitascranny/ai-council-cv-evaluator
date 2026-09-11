@@ -1,0 +1,8 @@
+{
+  "candidate": "intermediate_american",
+  "final_score": 8,
+  "score_rationale": "Priya Nair has strong full-stack experience and familiarity with distributed systems, but lacks direct Go experience and clear evidence of operating services in production, which are important for the role.",
+  "key_strengths": "Extensive full-stack development experience with TypeScript/React and backend languages (Java, Kotlin), strong event-driven architecture skills with Kafka, and proven ability to work in fast-paced, ambiguous environments.",
+  "key_weaknesses": "No direct experience with Go, the preferred backend language, and limited mention of hands-on production service experience (metrics, tracing, incident response).",
+  "final_evaluation": "Priya Nair is a strong candidate with excellent alignment in core technical skills and adaptability, but her lack of Go experience and ambiguous evidence of production service ownership may require further assessment in the take-home or pair session."
+}

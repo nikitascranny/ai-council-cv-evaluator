@@ -1,0 +1,144 @@
+[
+  {
+    "score": 2,
+    "strengths": [
+      "Basic numeracy implied through project work (SQL, PostgreSQL)",
+      "Willingness to learn new tools evident in the CV"
+    ],
+    "weaknesses": [
+      "Complete lack of relevant experience – no sea legs, no fishing or boat handling skills.",
+      "Physical fitness not demonstrated – experience is purely office-based.",
+      "Unsuitable technical skill set – no mention of navigation or marine equipment.",
+      "Early starts and long days are not mentioned as being manageable.",
+      "No indication of an understanding of the manual and often unpredictable nature of the work.",
+      "The profile states a desire for 'entry level software role', implying a career change is unlikely to be well-received."
+    ],
+    "summary": "This candidate's skillset and experience are entirely misaligned with the requirements of a boat hand/deckhand role, making them unsuitable for the position even with significant upskilling.",
+    "candidate": "beginner_american"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong technical skills relevant to software development",
+      "Demonstrated ability to learn and apply new technologies (Docker, Vue.js, Express)"
+    ],
+    "weaknesses": [
+      "Complete lack of relevant experience for the Boat Hand/Deckhand role",
+      "Zero demonstrated physical capabilities or comfort with outdoor/manual labor",
+      "No experience with maritime environments or safety procedures",
+      "The candidate's background and skills are entirely unrelated to the requirements of a fishing vessel role."
+    ],
+    "summary": "This candidate's skillset and experience are entirely focused on software engineering and do not align with the physical, maritime, and practical demands of the Boat Hand position.",
+    "candidate": "beginner_chinese"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Demonstrates strong programming skills (Python, JavaScript, SQL) which could be transferable to some aspects of data recording and potentially engine diagnostics with training.",
+      "Displays a diligent and collaborative work ethic as evidenced by experience in sprint teams and peer programming."
+    ],
+    "weaknesses": [
+      "Absolutely no relevant experience in a maritime or fishing environment. This is a significant barrier.",
+      "Lacks any physical labor experience – the role requires heavy, repetitive manual work in all weathers, a skillset the candidate does not possess.",
+      "No experience with essential tasks like pot handling, net repair, or basic engine maintenance.",
+      "The role's need for reliability and punctuality tied to tide times isn’t directly addressed, though commitment to sprint cycles suggests an understanding of deadlines.",
+      "No mention of sea legs or tolerance for seasickness which is critical.",
+      "The required physical demands are completely absent from their experience and skillset. While adaptable, the learning curve would be incredibly steep and potentially unsafe."
+    ],
+    "summary": "This candidate's software development skillset is entirely unrelated to the practical, physical demands and specific maritime experience required for a Boat Hand / Deckhand role, making them a poor fit.",
+    "candidate": "beginner_sa"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong technical background",
+      "Experience with distributed systems (Kafka, Kubernetes)",
+      "Demonstrated problem-solving skills (reducing incidents, improving completion rates)"
+    ],
+    "weaknesses": [
+      "Complete lack of relevant experience (fishing, maritime work, physical labor)",
+      "No indication of physical fitness or comfort with demanding outdoor conditions",
+      "Focus solely on software engineering, no transferable skills explicitly mentioned",
+      "No demonstration of reliability or punctuality – traits critical to the role"
+    ],
+    "summary": "This candidate's extensive software engineering experience and technical skills are completely misaligned with the physical and practical demands of a boat hand/deckhand position, making them a very poor fit.",
+    "candidate": "intermediate_american"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong technical skills (Java, Kotlin, Python, Vue.js, etc.)",
+      "Experience with backend development and API design",
+      "Demonstrated ability to improve system performance and reliability (reduced incidents, faster diagnosis)",
+      "Leadership experience (mentoring, code review)"
+    ],
+    "weaknesses": [
+      "Completely lacks relevant experience (fishing, boat handling, manual labor, maritime work)",
+      "No evidence of physical fitness or comfort with challenging weather conditions – this is a critical requirement.",
+      "Skills are entirely software engineering related, with no transferable skills readily apparent.",
+      "No indication of understanding of maritime safety procedures.",
+      "Geographic location presents logistical challenges for a seasonal role."
+    ],
+    "summary": "This candidate possesses strong software engineering skills but has zero relevant experience or transferable skills for a boat hand/deckhand role, making them an extremely poor fit.",
+    "candidate": "middle_chinese"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong technical skills (Java, Kotlin, Python, AWS, Kubernetes)"
+    ],
+    "weaknesses": [
+      "Complete lack of relevant experience (fishing, maritime work, physical labour), Unclear motivation for career change, No demonstrable experience with manual tasks or outdoor work, Skills not transferable to the role, No evidence of understanding the demands of the role"
+    ],
+    "summary": "This candidate's extensive software engineering experience is completely irrelevant to the Boat Hand/Deckhand position and there's no indication they possess or are interested in acquiring the necessary physical or maritime skills.",
+    "candidate": "middle_sa"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong technical skills (Go, Java, Python, Kubernetes, etc.) demonstrate adaptability and problem-solving abilities.",
+      "Experience leading and mentoring teams indicates potential for collaboration and growth, although application to a physically demanding role is uncertain."
+    ],
+    "weaknesses": [
+      "Complete lack of relevant experience – no mention of any physical work, boat handling, or maritime experience.",
+      "The CV focuses solely on software engineering, demonstrating a mismatch with the core requirements of a manual, physically demanding role.",
+      "The candidate's background suggests a preference for office-based work, making the early starts and harsh weather conditions unlikely to be appealing.",
+      "No indication of sea legs or a willingness to perform physical labor.",
+      "The candidate’s high level of expertise and salary expectations are likely to be incompatible with the offered pay scale."
+    ],
+    "summary": "This candidate's extensive software engineering background and lack of any transferable skills or demonstrable interest in physical, outdoor work make them a very poor fit for the Boat Hand/Deckhand position.",
+    "candidate": "senior_american"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong technical background",
+      "Leadership experience",
+      "Problem-solving skills (improved latency, reduced costs)"
+    ],
+    "weaknesses": [
+      "Zero relevant experience to fishing/maritime industry",
+      "Lacks physical labor skills",
+      "No mention of sea legs or comfort in harsh conditions",
+      "Focus is entirely on software engineering and cloud infrastructure"
+    ],
+    "summary": "This candidate's extensive software engineering background and leadership experience are irrelevant to the role of a boat hand on a fishing vessel, and their CV demonstrates no transferable skills or interest in the required physical and maritime tasks.",
+    "candidate": "senior_chinese"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong technical background",
+      "Excellent problem-solving skills demonstrated in career experience",
+      "Leadership qualities"
+    ],
+    "weaknesses": [
+      "Complete lack of relevant experience - no boat/fishing/deckhand experience whatsoever",
+      "Unlikely to be physically suited to the role given background and career focus",
+      "No mention of willingness to learn practical, manual skills",
+      "Completely mismatch in job expectations and required working conditions"
+    ],
+    "summary": "This candidate's extensive software engineering career is entirely unrelated to the physical, practical, and demanding requirements of a boat hand position, making them unsuitable for this role.",
+    "candidate": "senior_sa"
+  }
+]

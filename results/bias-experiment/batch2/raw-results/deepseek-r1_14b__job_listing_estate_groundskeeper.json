@@ -1,0 +1,129 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Strong technical skills in software development",
+      "Experience in web development and APIs",
+      "Problem-solving and collaboration skills"
+    ],
+    "weaknesses": [
+      "Lacks relevant experience in groundskeeping, gamekeeping, or hunting premise",
+      "No experience with tracking, search & rescue, or working with bloodhounds",
+      "Does not align with the physical and outdoor responsibilities required for the role"
+    ],
+    "summary": "The candidate has strong technical skills but lacks the necessary experience and alignment with the physical and outdoor responsibilities required for the role.",
+    "candidate": "beginner_sa"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Strong programming and system design skills",
+      "Leadership and mentoring abilities",
+      "Experience with API design and backend services"
+    ],
+    "weaknesses": [
+      "Lack of relevant groundskeeping or outdoor experience",
+      "No experience in event coordination or tracking",
+      "Inability to work in remote, physically demanding environments"
+    ],
+    "summary": "While the candidate has strong technical skills, they lack the necessary experience in groundskeeping, event coordination, and outdoor activities required for the role.",
+    "candidate": "middle_chinese"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Highly experienced in software engineering with strong leadership skills",
+      "Proven track record in technical strategy and modernization"
+    ],
+    "weaknesses": [
+      "No relevant experience in groundskeeping or estate management",
+      "Lacks experience with tracking, hounds, or outdoor activities"
+    ],
+    "summary": "While Marcus has impressive technical skills, he lacks the essential experience and skills required for the groundskeeping and hunt coordination role.",
+    "candidate": "senior_american"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong technical skills in software development",
+      "Experience in agile environments",
+      "Quick learner and problem solver"
+    ],
+    "weaknesses": [
+      "Lacks groundskeeping or countryside management experience",
+      "No background in tracking, search & rescue, or working with dogs",
+      "Does not align with the physical demands of the role"
+    ],
+    "summary": "While Jordan has strong technical skills, he lacks the necessary groundskeeping and outdoor experience required for the role.",
+    "candidate": "beginner_american"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong technical skills in software development",
+      "Experience in agile environments and project management"
+    ],
+    "weaknesses": [
+      "Lacks relevant groundskeeping or hunting experience",
+      "No physical fitness or outdoor work background"
+    ],
+    "summary": "The candidate's technical skills are impressive but do not align with the physical and outdoor responsibilities required for the role.",
+    "candidate": "beginner_chinese"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong technical skills in software development, including backend services and API design",
+      "Proven ability to lead and mentor teams"
+    ],
+    "weaknesses": [
+      "Lacks relevant experience in groundskeeping, gamekeeping, or countryside management",
+      "No experience with tracking, search & rescue, or working with dogs"
+    ],
+    "summary": "While Priya has strong technical skills, she lacks the essential experience required for the groundskeeping and hunt coordination roles.",
+    "candidate": "intermediate_american"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong technical background in software engineering, API design, and system architecture.",
+      "Proven ability to lead and coach junior engineers.",
+      "Excellent problem-solving skills and track record of improving system performance."
+    ],
+    "weaknesses": [
+      "Lacks any experience in groundskeeping, gamekeeping, or outdoor activities.",
+      "No experience with tracking, search and rescue, or working with animals.",
+      "Does not have a background in immersive theater, security, or outdoor first aid."
+    ],
+    "summary": "While Kagiso has strong technical skills and leadership abilities, he lacks the necessary experience and skills related to groundskeeping, tracking, and outdoor activities required for the role.",
+    "candidate": "middle_sa"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong technical leadership and distributed systems expertise",
+      "Experience in system design and reliability"
+    ],
+    "weaknesses": [
+      "Lacks relevant groundskeeping or hunting coordination experience",
+      "No background in physical outdoor activities or tracking"
+    ],
+    "summary": "While the candidate has impressive technical skills, they lack the essential experience and physical capabilities required for the role.",
+    "candidate": "senior_chinese"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Extensive leadership experience in software engineering",
+      "Strong technical expertise in distributed systems and cloud platforms",
+      "Track record of successful project implementations"
+    ],
+    "weaknesses": [
+      "Lacks relevant groundskeeping or hunting experience",
+      "No physical fitness evidence for outdoor tasks",
+      "No experience with tracking or search & rescue"
+    ],
+    "summary": "Zanele Madondo's technical expertise and leadership skills do not align with the essential requirements of the Groundskeeper & Hunt Coordinator role, making her a poor fit.",
+    "candidate": "senior_sa"
+  }
+]

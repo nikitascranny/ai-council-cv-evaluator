@@ -1,0 +1,82 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "team coordination and on-site supervision",
+      "customer service and complaint resolution"
+    ],
+    "weaknesses": [
+      "lack of security experience",
+      "no relevant certifications"
+    ],
+    "summary": "Jason Muller demonstrates strong interpersonal and team management skills but lacks the specific security experience and certifications required for the position.",
+    "candidate": "professional_cv_jason_muller"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "versatile work experience",
+      "adaptability"
+    ],
+    "weaknesses": [
+      "lacks specific security experience",
+      "does not meet essential security qualifications"
+    ],
+    "summary": "Kevin Jones demonstrates versatility and adaptability but lacks the specific security experience and qualifications required for the Museum Security Specialist role.",
+    "candidate": "professional_cv_kevin_jones"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Strong leadership and team management skills",
+      "Experience in customer engagement and operational management"
+    ],
+    "weaknesses": [
+      "Lacks direct security experience",
+      "No specific experience with museum operations or high-value object protection"
+    ],
+    "summary": "Candidate demonstrates strong leadership and customer service skills but lacks direct experience in security or museum operations.",
+    "candidate": "professional_cv_sarah_lynne_van_der_merwe"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Can lift heavy boxes",
+      "Fast learner when motivated"
+    ],
+    "weaknesses": [
+      "Lack of relevant work experience",
+      "Misalignment with job objective",
+      "Minimal detail provided"
+    ],
+    "summary": "Jason 'Jazz Hands' Muller lacks the relevant experience and skills necessary for the Museum Security Specialist role and his career objective is misaligned with the job description.",
+    "candidate": "bad_cv_jason_muller"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "willing to work",
+      "learned from past experiences"
+    ],
+    "weaknesses": [
+      "inconsistent employment history",
+      "lack of relevant security experience"
+    ],
+    "summary": "Kevin lacks the necessary security experience and has an inconsistent employment history, making him a poor fit for the role despite a willingness to work.",
+    "candidate": "bad_cv_kevin_jones"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "High self-regard",
+      "Motivational content creator"
+    ],
+    "weaknesses": [
+      "Lack of relevant work experience",
+      "No demonstrable security skills",
+      "Inability to provide references or specific achievements"
+    ],
+    "summary": "The candidate does not meet the essential requirements for the position and lacks relevant professional experience in security or museum operations.",
+    "candidate": "bad_cv_sarah_lynne_van_der_merwe"
+  }
+]

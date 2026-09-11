@@ -1,0 +1,190 @@
+[
+  {
+    "score": 9,
+    "strengths": [
+      "Strong alignment with required backend skills (Java, Kotlin, Python, Spring Boot).",
+      "Excellent experience with frontend technologies (React, TypeScript).",
+      "Proven experience operating services in production, including observability, alerting, and incident response (demonstrated through OpenTelemetry tracing and incident diagnosis time reduction).",
+      "Direct experience scaling data platforms (Kafka, Redis) as highlighted in the job description.",
+      "Evidence of strong communication skills (leading technical design reviews, speaking at meetups, documenting APIs).",
+      "Demonstrated ability to own services end-to-end and drive improvements (order orchestration, fulfillment API, onboarding workflows).",
+      "Experience mentoring junior engineers and contributing to technical planning aligns with the ‘early culture’ aspect of the role.",
+      "Developer portal project showcases initiative and understanding of developer experience – a nice-to-have in a full-stack role."
+    ],
+    "weaknesses": [
+      "While Go is preferred, the candidate's experience is primarily in Java, Kotlin, and Python. However, they possess a strong foundational understanding of programming principles that should facilitate a relatively quick transition.",
+      "No explicit mention of TimeScaleDB (although PostgreSQL experience is relevant).",
+      "Lacks direct experience in the energy sector, though the enthusiasm requirement should allow for quicker learning. The job description states they'll teach this.",
+      "No mention of Kubernetes beyond deployment, potentially missing depth in orchestration aspects of the platform."
+    ],
+    "summary": "Priya presents a highly qualified profile with extensive relevant experience and a strong track record of delivering impactful results, making her an excellent fit for Pulsegrid's demanding Full-Stack Engineer role.",
+    "candidate": "intermediate_american"
+  },
+  {
+    "score": 9,
+    "strengths": [
+      "Extensive experience (12+ years) aligns with the '4+ years shipping production software' requirement.",
+      "Strong proficiency in Go, a preferred backend language, is explicitly stated.",
+      "Demonstrated experience operating services in production with observability, alerting, and incident response, directly addressing a key responsibility.",
+      "Experience scaling event-driven data platforms (Kafka) and working with time-series data aligns with desirable skills.",
+      "Excellent communication skills are implied by experience leading teams, giving technical presentations, and collaborating with product and operations.",
+      "Experience mentoring engineers and contributing to technical leadership aligns with the 'help interview and onboard' responsibility and demonstrates a focus on team culture.",
+      "Proven ability to drive modernization programs and improve reliability indicates a strong problem-solving aptitude.",
+      "Experience in multiple industries (payments, logistics, cloud infrastructure) provides a broad perspective."
+    ],
+    "weaknesses": [
+      "While the candidate possesses a wide range of skills, their experience in the energy sector is lacking (not essential, but a bonus).",
+      "The CV doesn't explicitly highlight experience with React/TypeScript, although general programming proficiency is evident.",
+      "While equity is mentioned as a motivator, it's not clear from the CV whether the candidate is particularly motivated by equity compensation. This can be explored in an interview.",
+      "The fast-paced, chaotic nature described in the job description requires a specific resilience, which needs to be assessed during the interview process."
+    ],
+    "summary": "Marcus is an exceptionally qualified candidate with a wealth of relevant experience and a strong track record of technical leadership and problem-solving, making him a highly suitable fit for Pulsegrid's Founding Full-Stack Engineer role, although further assessment of TypeScript/React experience and adaptability to a high-velocity environment is recommended.",
+    "candidate": "senior_american"
+  },
+  {
+    "score": 9,
+    "strengths": [
+      "Exceptional experience (12+ years) significantly exceeding the 4+ years required.",
+      "Strong backend expertise with Go, a preferred language, and familiarity with TypeScript.",
+      "Proven experience operating services in production, including observability, alerting, and incident response (2am pages).",
+      "Deep understanding of distributed systems fundamentals (queues, idempotency, consistency trade-offs) demonstrated through experience with Kafka, Kubernetes, Cassandra, and TiDB.",
+      "Excellent communication skills implied by leading technical direction, creating RFCs, and giving talks (speaker experience).",
+      "Demonstrated experience scaling event-driven data platforms.",
+      "Experience with mentoring and onboarding engineers, aligning with the desired cultural contribution.",
+      "Experience in modernization projects and reliability programs are highly relevant.",
+      "Genuine enthusiasm for hard problems implied by diverse experience in payments, logistics, and cloud infrastructure."
+    ],
+    "weaknesses": [
+      "Lack of explicit experience with React/TypeScript (listed as essential). While he has TypeScript experience, dedicated React experience isn't clear.",
+      "No explicit mention of energy sector domain knowledge – requires onboarding.",
+      "While startup experience isn't a *hard* requirement, the candidate's background is primarily in larger organizations, which might influence adaptability to the Pulsegrid's fast-paced environment – however, the significant modernization experience should offset this.",
+      "Location - While based in Shenzhen, China, timezone and remote working arrangements would need to be carefully considered."
+    ],
+    "summary": "This candidate's extensive experience in building and operating distributed systems, strong Go expertise, and leadership qualities make him an exceptionally strong fit for Pulsegrid, despite a slight gap in React/TypeScript experience.",
+    "candidate": "senior_chinese"
+  },
+  {
+    "score": 9,
+    "strengths": [
+      "Extensive experience (12+ years) significantly exceeds the 4+ years required, demonstrating a strong foundation.",
+      "Strong Go proficiency, a preferred language, is explicitly mentioned.",
+      "Significant experience with distributed systems, queues (Kafka), and time-series data (Cassandra, Redis) aligns perfectly with the 'Scale our event-driven data platform' requirement.",
+      "Proven leadership experience and mentorship skills directly address the 'Help interview and onboard the next ten engineers' responsibility and cultural contribution.",
+      "Experience operating services in production, including observability, alerting and incident response, fulfills a core requirement.",
+      "Excellent communication skills are implied by the candidate's leadership roles and presentation experience.",
+      "Demonstrated ability to deliver features and iterate quickly (monthly to several times per week releases), showcases the required velocity.",
+      "Experience with architectural governance and RFCs is a significant plus for the role’s responsibilities."
+    ],
+    "weaknesses": [
+      "While the candidate has TypeScript experience, it isn't explicitly highlighted as much as Go, although it is listed as a language.",
+      "No direct experience in the energy sector; however, the enthusiasm requirement is subjective and likely compensable by their demonstrable learning ability and strong technical foundation.",
+      "Experience is primarily in South Africa; adapting to a UK/EU timezone and potentially a new cultural dynamic (though remote) might present a minor adjustment.",
+      "No mention of React/TypeScript specifically, only TypeScript as a language. While this isn't a blocker, the job description prioritized React expertise."
+    ],
+    "summary": "Zanele's extensive experience, strong technical foundation, and leadership capabilities make them an exceptional fit for this role, despite a slight lack of direct energy sector experience and emphasis on React.",
+    "candidate": "senior_sa"
+  },
+  {
+    "score": 8,
+    "strengths": [
+      "Strong backend skills (Java, Kotlin, Python, Spring Boot, FastAPI) align well with the Go preference and overall need for backend development.",
+      "Experience with frontend technologies (Vue.js, TypeScript, Nuxt.js) matches the React/TypeScript requirement.",
+      "Demonstrated experience operating services in production with observability, alerting, and incident response aligns with a key responsibility.",
+      "Familiarity with distributed systems components (Kafka, Redis, Elasticsearch, Kubernetes) is highly relevant to scaling the data platform.",
+      "Led technical initiatives and mentored junior engineers, indicating potential for contributing to team culture and onboarding.",
+      "Developer Portal project demonstrates initiative and focus on developer velocity, a key aspect of the role.",
+      "Quantifiable impact in previous roles (e.g., reducing incident diagnosis time by 33%, improving application completion by 20%) shows a results-oriented approach."
+    ],
+    "weaknesses": [
+      "Go experience is not explicitly mentioned; while other backend languages are acceptable, this would require adaptation.",
+      "While Kafka experience exists, depth of experience with TimeScaleDB (a key requirement) is not evident and would require upskilling.",
+      "Energy sector domain knowledge is absent, though the job description states this can be taught.",
+      "Startup experience is not demonstrated, which is a desirable, but not essential, attribute.",
+      "Location in Hangzhou, China presents potential timezone and communication challenges, despite the remote-first nature of the role."
+    ],
+    "summary": "Zhang Wei possesses a strong technical foundation and experience in building and operating production services, making him a strong candidate who would require some upskilling in specific technologies and familiarity with the energy sector.",
+    "candidate": "middle_chinese"
+  },
+  {
+    "score": 8,
+    "strengths": [
+      "Strong backend experience with Java, Kotlin, and Spring Boot, aligning well with the 'at least one backend language' requirement.",
+      "Experience with React and TypeScript, a core frontend technology for Pulsegrid.",
+      "Demonstrated experience operating services in production, including observability, alerting, and incident response - a crucial requirement.",
+      "Experience with Kafka and Redis, directly relevant to the data platform scale requirements.",
+      "Clear evidence of ownership and initiative, as seen in leading development and building internal tools.",
+      "Strong communication skills implicitly demonstrated through presenting at a developer forum and coaching junior engineers.",
+      "Product-minded approach and focus on improving developer experience aligns with Pulsegrid's culture of continuous improvement."
+    ],
+    "weaknesses": [
+      "No direct experience with Go, the preferred backend language (though other languages are acceptable).",
+      "Lacks specific experience with event-driven architectures, Time-series data, or streaming systems that are 'desirable' but not essential.",
+      "No explicit mention of contributing to open-source projects or side projects – a desirable trait.",
+      "While experience with AWS is listed, it doesn't specify the depth of understanding of distributed systems principles, which is a core requirement.",
+      "Doesn't mention experience demoing to investors or customers."
+    ],
+    "summary": "Kagiso possesses a strong foundation in the core technologies and operational experience required for the role, making them a highly suitable candidate, though some upskilling in Go and deeper distributed systems understanding would be beneficial.",
+    "candidate": "middle_sa"
+  },
+  {
+    "score": 7,
+    "strengths": [
+      "Strong foundation in essential technologies: TypeScript, React, Node.js, and PostgreSQL.",
+      "Experience with full-stack development demonstrated through projects and internship.",
+      "Exposure to production-relevant practices: testing (Jest), version control (Git, GitHub Actions), and containerization (Docker).",
+      "Demonstrated ability to work in a team and contribute to a sprint cycle.",
+      "Genuine enthusiasm and a learning mindset suggested by certifications and involvement in hackathons."
+    ],
+    "weaknesses": [
+      "Limited production software shipping experience (internship is a good start, but not the 4+ years required).",
+      "Lack of explicit experience with distributed systems technologies (Kafka, TimescaleDB, Redis) - though the architecture knowledge from projects suggests potential for rapid upskilling.",
+      "No mention of on-call responsibilities or incident response – a key aspect of the role.",
+      "While projects demonstrate initiative, they don't directly align with the energy sector domain.",
+      "Experience with Go is not mentioned; while the job description is flexible, it’s a notable absence."
+    ],
+    "summary": "Naledi possesses a solid technical foundation and a proactive approach to learning, making them a promising candidate who would require some targeted onboarding and development to fully meet the role’s requirements.",
+    "candidate": "beginner_sa"
+  },
+  {
+    "score": 6,
+    "strengths": [
+      "Solid foundational skills in TypeScript, React, and JavaScript align with the frontend requirements.",
+      "Experience with backend development using Node.js and Python (Flask) demonstrates adaptability and potential for Go adoption.",
+      "Experience with PostgreSQL and Docker shows familiarity with database management and containerization – valuable for production environments.",
+      "Internship experience involved building customer-facing features, giving the candidate a glimpse into the end-to-end development lifecycle.",
+      "Exposure to Agile methodologies and code reviews provides a good base for collaborating in a fast-paced team."
+    ],
+    "weaknesses": [
+      "Lacks direct experience with Go, Kafka, TimescaleDB, or Redis – significant gaps for the core responsibilities.",
+      "Limited production software shipping experience (internship is not equivalent to full production ownership).",
+      "The 'Junior' designation and limited experience suggest a steep learning curve required to meet the '4+ years' requirement.",
+      "No explicit evidence of operating services in production, including observability, alerting, or incident response – critical for this role.",
+      "Doesn't explicitly demonstrate comfort with ambiguity and velocity; leans more towards structured environments.",
+      "No mention of distributed systems fundamentals beyond basic experience with databases"
+    ],
+    "summary": "While Jordan possesses a strong technical foundation and shows potential, the lack of direct experience with key technologies and production operations presents a significant challenge for this demanding full-stack engineer role.",
+    "candidate": "beginner_american"
+  },
+  {
+    "score": 6,
+    "strengths": [
+      "Demonstrates proficiency in TypeScript and JavaScript, aligning with the core frontend requirement.",
+      "Experience with Vue.js is relevant to the React/TypeScript frontend work.",
+      "Exposure to backend development with Node.js and Flask shows a foundational understanding of backend technologies.",
+      "Has experience with Git and GitHub, essential for collaborative software development.",
+      "Experience writing unit tests demonstrates a commitment to code quality.",
+      "Exposure to Docker suggests familiarity with deployment concepts, although limited."
+    ],
+    "weaknesses": [
+      "Lacks direct experience with Go, Rust, or Java, the preferred backend languages. This is a significant gap.",
+      "Limited production software shipping experience (internship only) doesn't meet the 4+ years requirement.",
+      "No mention of experience operating services in production – observability, alerting, incident response - a critical aspect of the role.",
+      "No demonstrated experience with distributed systems fundamentals (queues, idempotency, consistency trade-offs).",
+      "Communication skills are unproven, and the ability to explain technical trade-offs to both technical and non-technical audiences isn't evident.",
+      "No demonstrated interest or knowledge of energy sector domain expertise.",
+      "The candidate's experience level is significantly lower than what the role demands."
+    ],
+    "summary": "While the candidate possesses some relevant technical skills and a strong academic background, their limited production experience and lack of core skills (Go, production operations, distributed systems) make them a less suitable fit for this senior, full-stack role.",
+    "candidate": "beginner_chinese"
+  }
+]

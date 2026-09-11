@@ -1,0 +1,8 @@
+{
+  "candidate": "bad_cv_sarah_lynne_van_der_merwe",
+  "final_score": 2,
+  "score_rationale": "The candidate's CV shows no evidence of the essential technical skills and experience required for the role, such as full-stack engineering with React/TypeScript and Go, or operating services in production with distributed systems knowledge.",
+  "key_strengths": "None identified that directly align with the job listing's essential requirements.",
+  "key_weaknesses": "Lacks experience with TypeScript/React, Go, and distributed systems (Kafka, TimescaleDB, etc.). No evidence of shipping production software or operating services in production.",
+  "final_evaluation": "The candidate does not appear to meet the essential technical requirements for this role based on the provided CV summary."
+}

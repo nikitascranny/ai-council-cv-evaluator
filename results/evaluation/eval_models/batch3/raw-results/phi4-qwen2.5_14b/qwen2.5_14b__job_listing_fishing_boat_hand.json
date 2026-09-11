@@ -1,0 +1,82 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Adaptability in fast-moving environments",
+      "Practical problem-solving"
+    ],
+    "weaknesses": [
+      "No experience related to fishing or maritime work",
+      "Lack of physical fitness evidence relevant to the job"
+    ],
+    "summary": "Jason Muller lacks direct experience in maritime work and fishing, though his adaptability and problem-solving skills suggest some potential for up-skilling.",
+    "candidate": "professional_cv_jason_muller"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Versatile and adaptable",
+      "Practical problem-solving skills"
+    ],
+    "weaknesses": [
+      "No maritime experience",
+      "Lack of physical manual labor background"
+    ],
+    "summary": "Kevin Jones lacks the essential maritime experience and physical readiness required for the job, despite his versatility and problem-solving skills.",
+    "candidate": "professional_cv_kevin_jones"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Can lift heavy boxes",
+      "Fast learner when motivated"
+    ],
+    "weaknesses": [
+      "No relevant work experience",
+      "Objective does not align with the job",
+      "Poor reliability"
+    ],
+    "summary": "The candidate lacks relevant experience and the job objectives do not match, with significant concerns around reliability and suitability for the role.",
+    "candidate": "bad_cv_jason_muller"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Willing to work",
+      "Claims to have learned from past experiences"
+    ],
+    "weaknesses": [
+      "History of leaving jobs involuntarily or being asked to leave",
+      "Lack of relevant skills or experience",
+      "Negative attitude towards mornings and authority"
+    ],
+    "summary": "Kevin Jones lacks the necessary skills, experience, and positive attitude required for the position of Boat Hand at Kestrel Bay Fishing Co.",
+    "candidate": "bad_cv_kevin_jones"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Motivational content creation",
+      "Logo and branding"
+    ],
+    "weaknesses": [
+      "Lack of relevant work experience",
+      "No demonstrated physical fitness"
+    ],
+    "summary": "The candidate lacks relevant fishing industry experience and physical capability, making them unsuitable for the role.",
+    "candidate": "bad_cv_sarah_lynne_van_der_merwe"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong leadership and operational management skills",
+      "Experience in stakeholder communication and brand development"
+    ],
+    "weaknesses": [
+      "No relevant maritime or fishing experience",
+      "Lacks the physical fitness and manual work skills required for the role"
+    ],
+    "summary": "The candidate's background in retail and consultancy does not align with the physical and maritime requirements of a boat hand position.",
+    "candidate": "professional_cv_sarah_lynne_van_der_merwe"
+  }
+]

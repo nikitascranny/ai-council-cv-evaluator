@@ -1,0 +1,92 @@
+[
+  {
+    "score": 4,
+    "strengths": [
+      "Demonstrates adaptability and team coordination, which are beneficial in a dynamic work environment.",
+      "Possesses strong interpersonal communication skills, useful for coordination and safety procedures on board."
+    ],
+    "weaknesses": [
+      "Lacks relevant maritime experience or sea legs, which are crucial for a boat hand position.",
+      "No evidence of physical fitness or experience with heavy, repetitive manual work in wet conditions.",
+      "Limited exposure to maritime safety protocols and vessel operations.",
+      "Does not have a driving license, which is desirable for occasional deliveries."
+    ],
+    "summary": "The candidate shows adaptability and communication skills but lacks essential maritime experience and physical fitness for the role.",
+    "candidate": "professional_cv_jason_muller"
+  },
+  {
+    "score": 4,
+    "strengths": [
+      "Demonstrates adaptability and resilience across various work environments.",
+      "Has experience working independently and in varied workplace settings."
+    ],
+    "weaknesses": [
+      "Lacks specific experience in maritime or fishing-related roles.",
+      "No evidence of physical fitness or experience working in wet, early, and physically demanding conditions.",
+      "No history of working on boats or in roles requiring sea legs."
+    ],
+    "summary": "While the candidate shows adaptability and independent work experience, they lack the specific maritime skills and physical fitness required for the deckhand position.",
+    "candidate": "professional_cv_kevin_jones"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Demonstrates ability to work under challenging conditions as seen in the role at Uncle Dave’s Car Wash",
+      "Has motivation to learn quickly and adapt as suggested by his crypto entrepreneurship"
+    ],
+    "weaknesses": [
+      "Lack of direct experience with boats or fishing operations",
+      "No evidence of being physically fit for the demanding physical work described in the job",
+      "Poor punctuality and reliability indicated by oversleeping at previous job",
+      "No relevant formal education or training in fishing or maritime safety"
+    ],
+    "summary": "The candidate lacks direct experience and necessary physical fitness for the demanding role of Boat Hand/Deckhand, though he shows potential for quick learning.",
+    "candidate": "bad_cv_jason_muller"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Willingness to work and flexibility regarding job location",
+      "Basic numeracy skills implied by previous customer service role"
+    ],
+    "weaknesses": [
+      "Lack of relevant maritime or physical labor experience",
+      "History of punctuality issues",
+      "Inability to work early mornings or in adverse conditions",
+      "Difficulty with authority and teamwork, which are crucial in a small crew",
+      "Severe seasickness not ruled out, which is critical for an offshore role"
+    ],
+    "summary": "The candidate lacks the necessary maritime experience, physical fitness, and punctuality required for the physically demanding and early-start role of a boat hand on a fishing vessel.",
+    "candidate": "bad_cv_kevin_jones"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Strong leadership and coordination skills demonstrated through roles in team leadership and stakeholder communication.",
+      "Experience in operational management and improving customer experience, which could translate to managing day-to-day operations on a fishing vessel."
+    ],
+    "weaknesses": [
+      "Lack of relevant maritime experience or familiarity with commercial fishing operations.",
+      "No evidence of physical fitness or comfort with manual, repetitive work in varying weather conditions.",
+      "No prior experience with boats, which is preferred for this role.",
+      "No history of maritime safety training or relevant certifications."
+    ],
+    "summary": "While Sarah-Lynne possesses strong leadership and operational management skills, she lacks the specific maritime experience and physical suitability required for a boat hand on a fishing vessel.",
+    "candidate": "professional_cv_sarah_lynne_van_der_merwe"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Demonstrates strong communication and leadership skills",
+      "Has experience with high-level strategic planning and management"
+    ],
+    "weaknesses": [
+      "Lacks relevant experience in fishing or maritime work",
+      "No evidence of physical fitness or comfort with manual labor in all weather conditions",
+      "No previous experience or training related to boat handling or fishing activities",
+      "Does not meet essential requirements such as sea legs, punctuality for tide times, or basic numeracy for catch tallies"
+    ],
+    "summary": "The candidate lacks relevant experience, skills, and physical fitness required for the physically demanding role of a Boat Hand / Deckhand on an inshore fishing vessel.",
+    "candidate": "bad_cv_sarah_lynne_van_der_merwe"
+  }
+]

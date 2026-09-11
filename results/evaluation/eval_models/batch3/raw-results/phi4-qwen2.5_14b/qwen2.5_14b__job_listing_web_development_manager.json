@@ -1,0 +1,84 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Business development and brand positioning",
+      "Retail operations and team leadership"
+    ],
+    "weaknesses": [
+      "Lacks relevant web/software engineering experience",
+      "No experience in leading technical teams through significant change",
+      "No hands-on coding experience in relevant technologies"
+    ],
+    "summary": "The candidate demonstrates strong business and retail leadership skills but lacks the technical background and experience required for the engineering management role.",
+    "candidate": "professional_cv_sarah_lynne_van_der_merwe"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Minimalist approach to daily tasks",
+      "Adaptability to change"
+    ],
+    "weaknesses": [
+      "Lack of relevant professional experience",
+      "Insufficient technical and leadership skills"
+    ],
+    "summary": "The candidate does not meet the essential requirements of the Engineering Manager position and lacks the necessary professional experience and technical skills.",
+    "candidate": "bad_cv_jason_muller"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "willing to work",
+      "some experience in various roles"
+    ],
+    "weaknesses": [
+      "lacks relevant professional experience",
+      "poor employment history",
+      "lack of specific technical skills"
+    ],
+    "summary": "Kevin Jones does not meet the essential requirements for the Engineering Manager position due to a lack of relevant professional experience and specific technical skills.",
+    "candidate": "bad_cv_kevin_jones"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Passionate about leadership",
+      "Has some relevant experience in a leadership role"
+    ],
+    "weaknesses": [
+      "Lacks specific technical skills and experience",
+      "Insufficient evidence of successful project leadership",
+      "No clear track record of delivering complex technical projects"
+    ],
+    "summary": "Candidate lacks the technical and project management experience required for the role, despite some leadership experience.",
+    "candidate": "bad_cv_sarah_lynne_van_der_merwe"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Adaptable and proactive in managing customer service and operational issues.",
+      "Demonstrates clear communication and approachable leadership style."
+    ],
+    "weaknesses": [
+      "Lacks the required technical and software engineering background.",
+      "No relevant experience in team management within a software development context.",
+      "No evidence of deep knowledge in web development stacks (React/TypeScript, Node.js, .NET)."
+    ],
+    "summary": "The candidate shows potential in leadership and customer service but lacks the technical background and relevant experience in software engineering management.",
+    "candidate": "professional_cv_jason_muller"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Practical problem-solving",
+      "Adaptability"
+    ],
+    "weaknesses": [
+      "Lack of relevant web/software engineering experience",
+      "No experience in leading technical teams through significant change"
+    ],
+    "summary": "Kevin Jones lacks the technical and leadership experience required for the Engineering Manager role, despite demonstrating adaptability and problem-solving skills in various operational roles.",
+    "candidate": "professional_cv_kevin_jones"
+  }
+]

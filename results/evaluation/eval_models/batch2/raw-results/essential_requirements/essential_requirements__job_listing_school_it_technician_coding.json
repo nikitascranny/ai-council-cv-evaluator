@@ -1,0 +1,38 @@
+[
+  {
+    "summary": "The candidate clearly meets the essential requirement for practical IT support experience through their role as a Software Engineering Intern. Their experience with programming languages such as Python aligns closely with the essential requirement for basic programming ability. However, their role as a Computer Science Teaching Assistant is not directly related to the technical IT support responsibilities, though it demonstrates their ability to work with young people and explain technology. There is no clear evidence of working knowledge of Windows 11, Microsoft 365, or Intune in their experience.",
+    "candidate": "beginner_american"
+  },
+  {
+    "summary": "The candidate clearly meets the essential requirements for practical IT support experience, working knowledge of Windows 11 and Microsoft 365, and basic programming ability. Their enthusiasm for working with young people and explaining technology is evident, though not explicitly stated. However, their experience in network basics, particularly VLANs and Wi-Fi troubleshooting, is unclear from the CV. Their background in education or IT technician roles is not explicitly mentioned.",
+    "candidate": "beginner_chinese"
+  },
+  {
+    "summary": "The candidate clearly meets the essential requirement for practical IT support experience and a working knowledge of Windows 11, Microsoft 365, and Intune. The candidate's basic programming ability in Python and Scratch is a reasonable match for the essential requirement. Genuine enthusiasm for working with young people is demonstrated, and the candidate is willing to undergo an enhanced DBS check. However, there is no clear evidence of network basics or experience in an education setting, which are not essential but would be beneficial.",
+    "candidate": "beginner_sa"
+  },
+  {
+    "summary": "The candidate meets the essential requirements for practical IT support experience and working knowledge of Windows 11 and Microsoft 365. Their basic programming ability in Python is a reasonable match, and their enthusiasm for working with young people is evident. However, there is no clear evidence of experience in running an after-school coding club or assisting in coding lessons, which are key responsibilities.",
+    "candidate": "intermediate_american"
+  },
+  {
+    "summary": "The candidate clearly meets the essential requirements for practical IT support experience and a working knowledge of Windows 11, Microsoft 365, and Intune. Their basic programming skills, particularly in Python, closely match the essential requirement, as does their enthusiasm for working with young people. The CV does not provide clear evidence of basic programming ability in Scratch, and there is no indication of the candidate's experience with safeguarding or their willingness to undergo an enhanced DBS check.",
+    "candidate": "middle_chinese"
+  },
+  {
+    "summary": "The candidate clearly meets the essential requirement of practical IT support experience and has a working knowledge of Windows 11 and Microsoft 365. Their basic programming ability, especially with AWS Certified Developer – Associate, is a reasonable/close match for the essential requirement of basic programming ability. However, it is unclear from the CV whether they have experience working with young people in an educational setting, which is an essential requirement.",
+    "candidate": "middle_sa"
+  },
+  {
+    "summary": "The candidate clearly meets the requirement for practical IT support experience and working knowledge of Windows 11 and Microsoft 365. Their experience in leading technical projects and mentoring engineers shows a strong technical background, which can be reasonably matched to the basic programming ability requirement. However, it is unclear from the CV whether the candidate has experience in an education setting, nor does it mention any experience with coding clubs or after-school programs, which are essential requirements.",
+    "candidate": "senior_american"
+  },
+  {
+    "summary": "该候选人在技术支持经验、编程能力以及对年轻人的热情方面与职位要求有合理的匹配。然而，他的背景主要集中在企业级软件开发和大型技术平台的构建上，缺乏学校IT技术支持的具体经验。",
+    "candidate": "senior_chinese"
+  },
+  {
+    "summary": "The candidate clearly meets the essential requirement for practical IT support experience and working knowledge of Windows 11 and Microsoft 365. Their background in software engineering and computer science provides a reasonable match for basic programming ability and enthusiasm for working with young people. However, it is unclear whether they have direct experience in the school setting or with the specific technologies required for this role.",
+    "candidate": "senior_sa"
+  }
+]

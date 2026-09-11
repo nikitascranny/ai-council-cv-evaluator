@@ -1,0 +1,10 @@
+[
+  {
+    "summary": "The candidate's experience in operating services in production, continuous training in farm safety and biosecurity, and the ability to work under pressure in ambiguous situations could reasonably align with the essential requirements. However, the experience in shipping production software and specific technical skills such as TypeScript, React, Go, and distributed systems are not evident in the CV, making it unclear if they meet these essential requirements.",
+    "candidate": "Ralph_Son_of_a_Shepard_Farm_CV"
+  },
+  {
+    "summary": "The candidate's experience in managing operations and equipment maintenance demonstrates a solid grasp of observability and incident response, which aligns with the essential requirements. Their ability to manage priorities and maintain logs closely matches the need for strong communication and service management. However, their background does not clearly indicate experience with TypeScript/React, backend languages like Go, or the required production software shipping experience.",
+    "candidate": "Ralph_Son_of_a_Shepard_IT_Transition_CV"
+  }
+]

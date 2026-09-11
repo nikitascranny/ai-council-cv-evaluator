@@ -1,0 +1,122 @@
+[
+  {
+    "score": 5,
+    "strengths": [
+      "Strong technical background in software development",
+      "Experience in building and maintaining web applications",
+      "Ability to learn and adapt quickly"
+    ],
+    "weaknesses": [
+      "Lacks practical hardware repair experience",
+      "No experience in a retail or customer service role",
+      "Focus on software rather than hardware troubleshooting"
+    ],
+    "summary": "While Jordan has strong technical skills, he lacks direct experience in hardware repair and retail customer service, which are essential for the role.",
+    "candidate": "beginner_american"
+  },
+  {
+    "score": 5,
+    "strengths": [
+      "Strong technical background with relevant programming skills that could be applied to software-related repairs.",
+      "Experience in diagnosing and solving complex system issues which could translate to troubleshooting hardware/software problems."
+    ],
+    "weaknesses": [
+      "Lacks direct experience in hardware repairs or computer repair work, which is a core aspect of the job.",
+      "Primarily comes from a software engineering background, which may not fully align with the practical, hands-on repair tasks required."
+    ],
+    "summary": "While Kagiso has strong technical skills, his lack of direct experience in computer repairs and hardware troubleshooting makes him a less than ideal fit for the role.",
+    "candidate": "middle_sa"
+  },
+  {
+    "score": 5,
+    "strengths": [
+      "Strong technical expertise in software engineering and leadership",
+      "Honest and reliable character"
+    ],
+    "weaknesses": [
+      "Lacks hands-on hardware repair experience",
+      "No experience in a small repair shop environment",
+      "Potential inability to explain technical issues to older customers without jargon"
+    ],
+    "summary": "Marcus has strong technical skills but lacks essential hardware repair experience and may struggle to fit into the small shop environment.",
+    "candidate": "senior_american"
+  },
+  {
+    "score": 5,
+    "strengths": [
+      "Extensive technical background in distributed systems and platform engineering",
+      "Strong leadership and mentoring experience",
+      "High reliability and honesty"
+    ],
+    "weaknesses": [
+      "Lack of hands-on hardware repair experience",
+      "No direct customer service experience in a repair setting",
+      "Primarily software-focused background"
+    ],
+    "summary": "The candidate has strong technical skills but lacks direct experience in hardware repairs and customer service, which are essential for the role.",
+    "candidate": "senior_chinese"
+  },
+  {
+    "score": 5,
+    "strengths": [
+      "Extensive technical expertise in software engineering and cloud systems",
+      "Proven leadership and reliability in previous roles"
+    ],
+    "weaknesses": [
+      "Lack of direct hardware repair experience",
+      "Potential need for up-skilling in basic computer repair tasks"
+    ],
+    "summary": "Zanele has strong technical skills but may need to adapt to the specific hardware repair and customer service focus of the role.",
+    "candidate": "senior_sa"
+  },
+  {
+    "score": 4,
+    "strengths": [
+      "Strong technical skills in software development, including Python, JavaScript, and experience with REST APIs and web applications; ability to explain technical concepts to others through teaching experience; availability to work in Beijing area."
+    ],
+    "weaknesses": [
+      "Lacks direct experience in hardware repair or computer maintenance; primarily focused on software development rather than hardware troubleshooting; no mention of experience with customer service in a repair shop setting."
+    ],
+    "summary": "While the candidate has strong technical skills, the role requires practical hardware repair experience, which is absent in the candidate's background.",
+    "candidate": "beginner_chinese"
+  },
+  {
+    "score": 4,
+    "strengths": [
+      "Strong technical skills in software development, including React, Node.js, and PostgreSQL; ability to work in a team and deliver projects; experience in testing and quality assurance; willingness to learn and adapt to new environments."
+    ],
+    "weaknesses": [
+      "Lacks direct experience in hardware repair or computer diagnostics; primarily focused on software development rather than hands-on repair work; no experience in customer service or retail environments; may need significant upskilling in hardware repair techniques and customer interaction."
+    ],
+    "summary": "Naledi has strong technical skills but lacks direct experience in hardware repair or customer service, which are critical for the role. While she has the potential to learn, her current background is more aligned with software development rather than computer repair.",
+    "candidate": "beginner_sa"
+  },
+  {
+    "score": 4,
+    "strengths": [
+      "Strong technical background with skills in troubleshooting and system design",
+      "Experienced in mentoring and technical planning"
+    ],
+    "weaknesses": [
+      "Lacks direct experience in computer hardware repair or customer service in a repair shop",
+      "Focus on software engineering may not fully align with hardware repair requirements"
+    ],
+    "summary": "Priya has strong technical skills but lacks direct experience in computer repair and customer service, making her a less ideal fit for the role.",
+    "candidate": "intermediate_american"
+  },
+  {
+    "score": 4,
+    "strengths": [
+      "Strong technical background in software engineering",
+      "Experience in diagnosing and resolving technical issues",
+      "Leadership and mentoring skills"
+    ],
+    "weaknesses": [
+      "Lacks direct experience in hardware repair or computer troubleshooting",
+      "No experience in a retail or customer service environment",
+      "Geographically located in Hangzhou, China, while the position is in Tillingford, UK"
+    ],
+    "summary": "The candidate has strong technical skills but lacks relevant experience in computer repair or customer service, which are critical for the role.",
+    "candidate": "middle_chinese"
+  }
+]

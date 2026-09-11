@@ -1,0 +1,38 @@
+[
+  {
+    "summary": "The candidate meets the essential requirement of having experience with TypeScript and React, as evidenced by their internship where they built React interface components. The requirement for backend experience in at least one language is a reasonable/close match given their experience with Express API endpoints and PostgreSQL queries. However, it is unclear whether they have experience in Go or other backend languages. The candidate also meets the requirement for comfort with ambiguity and velocity, having participated in agile development practices. The requirement for production experience in services is a reasonable/close match given their involvement in raising code coverage and participating in code reviews. The requirement for operating services in production is not clearly met, as this experience is not explicitly mentioned.",
+    "candidate": "beginner_american"
+  },
+  {
+    "summary": "The candidate clearly meets the requirement of 4+ years of experience in shipping production software with strong expertise in TypeScript/React and Go. The candidate's experience in operating services in production and comfort with ambiguity and velocity is also a reasonable match. However, the CV does not provide clear evidence of solid grasp of distributed systems fundamentals or experience in event-driven architectures, time-series data, or streaming systems.",
+    "candidate": "beginner_chinese"
+  },
+  {
+    "summary": "The candidate meets several essential requirements, including experience in shipping production software with TypeScript/React and Go, and comfort with production operations. The candidate also demonstrates excellent communication skills and a passion for real-world problems. However, the exact experience with distributed systems fundamentals is unclear, and the candidate's role does not clearly indicate involvement in scaling event-driven data platforms.",
+    "candidate": "beginner_sa"
+  },
+  {
+    "summary": "The candidate's background in full-stack development with TypeScript/React and backend languages (AWS Certified Developer) meets the essential requirements. Experience with production operations, distributed systems fundamentals, and communication are reasonable matches. However, the candidate's expected graduation date in 2024 is unclear and may not meet the 4+ years of production software experience required.",
+    "candidate": "intermediate_american"
+  },
+  {
+    "summary": "The candidate has 4+ years of experience shipping production software and is proficient in TypeScript/React and Go, meeting the essential requirements. Their experience with observability, alerting, and incident response also aligns well with the production operations requirements. The candidate's communication skills and passion for real-world problems are evident, closely matching the job description. However, it is unclear from the CV whether the candidate has experience with distributed systems fundamentals, event-driven architectures, or scaling data platforms, which are essential requirements.",
+    "candidate": "middle_chinese"
+  },
+  {
+    "summary": "The candidate has a relevant educational background and has demonstrated experience in software development through an AWS certification. However, there is no clear evidence of significant production software experience or working knowledge of TypeScript, React, or Go. The role's essential requirements related to production experience, TypeScript/React, and Go are not clearly met based on the provided CV.",
+    "candidate": "middle_sa"
+  },
+  {
+    "summary": "The candidate clearly meets the requirement of 4+ years shipping production software and has strong experience in TypeScript/React and Go. Their experience with incident reviews, observability, and reliability practices aligns closely with the essential requirements. However, their experience is primarily in financial services and logistics rather than energy or real-time orchestration, which might be a slight mismatch.",
+    "candidate": "senior_american"
+  },
+  {
+    "summary": "The candidate clearly meets the requirement of 4+ years of shipping production software with strong experience in TypeScript/React and Go. They also meet the requirement of having operated services in production and have a solid grasp of distributed systems fundamentals. The candidate's experience with event-driven architectures and a background in engineering leadership are reasonable/close matches to the essential requirements. There is no clear indication of the candidate's comfort with ambiguity and velocity, which may need further clarification.",
+    "candidate": "senior_chinese"
+  },
+  {
+    "summary": "The candidate clearly meets the requirement of 4+ years of experience in shipping production software with experience in TypeScript/React and Go. The Engineering Excellence Award and co-inventorship of a patent suggest a strong background in software engineering, closely matching the essential requirements. However, it is unclear from the CV whether the candidate has operated services in production or has a solid grasp of distributed systems fundamentals, which are listed as essential requirements.",
+    "candidate": "senior_sa"
+  }
+]
