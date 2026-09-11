@@ -1,0 +1,25 @@
+{
+  "candidate": "EMILE MOKOENA",
+  "job_title": "Computer Repair Technician",
+  "recommended_rewrite": "qwen2.5:14b",
+  "recommendation_reason": "Rewrite B (qwen2.5:14b) directly addresses the job's requirements by adding a 'Technical Support Volunteer' role that explicitly mentions virus cleanups, hardware upgrades, and customer service—key responsibilities in the job listing. It avoids the irrelevant cloud/data science focus of Rewrite A (phi4), which was flagged for dropping critical numbers and retaining unrelated terms like 'AWS' and 'machine learning.' Rewrite B’s tailored volunteer experience aligns with the practical repair and customer interaction skills the job demands, while its fact-check status (no fallback) confirms its relevance.",
+  "career_roadmap": [
+    {
+      "step": "Apply for the role with Rewrite B",
+      "action": "Submit the qwen2.5:14b rewrite to Mick@brendaandmicksrepairs-example.co.uk, emphasizing the 'Technical Support Volunteer' experience and practical repair skills mentioned."
+    },
+    {
+      "step": "Build hands-on repair certifications",
+      "action": "Enroll in a certified computer repair course (e.g., CompTIA A+) to strengthen credibility in hardware diagnostics and repairs, addressing the job’s emphasis on practical skills over cloud expertise."
+    },
+    {
+      "step": "Transition to IT Support roles",
+      "action": "Target entry-level IT Support Technician roles at small businesses or repair shops, leveraging the combination of customer service experience and technical skills demonstrated in the CV."
+    }
+  ],
+  "alternative_careers": [
+    "IT Support Specialist",
+    "Data Recovery Technician",
+    "Systems Administrator"
+  ]
+}

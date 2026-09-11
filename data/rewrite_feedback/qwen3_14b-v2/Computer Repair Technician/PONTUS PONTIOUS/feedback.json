@@ -1,0 +1,25 @@
+{
+  "candidate": "PONTUS PONTIOUS",
+  "job_title": "Computer Repair Technician",
+  "recommended_rewrite": "phi4",
+  "recommendation_reason": "Phi4's rewrite directly aligns with the job listing by explicitly listing key responsibilities and essential requirements in dedicated sections, which are critical for a role emphasizing practical skills and customer service. While both rewrites lack technical repair experience in the original CV, phi4's version uses retried tailoring to highlight relevant terms like 'Windows XP' and 'RAM upgrades,' which match the job's requirements. Qwen2.5:14b's shorter, more generic format lacks this direct alignment, making phi4's version more effective for this specific application.",
+  "career_roadmap": [
+    {
+      "step": "Apply for the role with Rewrite A",
+      "action": "Submit the phi4-tailored CV to Mick via email, emphasizing the 'Key Responsibilities Relevant to the Role' section and practical skills mentioned in the advisory notes."
+    },
+    {
+      "step": "Build hands-on repair experience",
+      "action": "Enroll in a short-term computer repair certification course (e.g., CompTIA A+) or volunteer at local repair workshops to gain practical hardware/software troubleshooting experience."
+    },
+    {
+      "step": "Target IT support roles",
+      "action": "Apply for entry-level IT Support Technician positions at small businesses or tech startups to leverage transferable skills in problem-solving, customer communication, and data management."
+    }
+  ],
+  "alternative_careers": [
+    "IT Support Specialist",
+    "Technical Support Analyst",
+    "Data Recovery Technician"
+  ]
+}

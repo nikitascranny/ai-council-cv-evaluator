@@ -1,0 +1,25 @@
+{
+  "candidate": "bad_cv_sarah_lynne_van_der_merwe",
+  "job_title": "Startup Fullstack Engineer",
+  "recommended_rewrite": "phi4",
+  "recommendation_reason": "Although both rewrites fail to align with the job's technical requirements (e.g., no mention of Go, React, or distributed systems), Rewrite A (phi4) was fact-checked as valid without fallbacks, suggesting better reliability. Rewrite B (qwen2.5:14b) was explicitly flagged for omitting a critical detail (2021) and relied on fallbacks, indicating lower quality. While neither rewrite addresses the job's core competencies, phi4's cleaner structure and fewer flagged issues make it marginally preferable for submission, despite its lack of technical relevance.",
+  "career_roadmap": [
+    {
+      "step": "Apply for the role with Rewrite A",
+      "action": "Submit the phi4 rewrite to Pulsegrid, emphasizing any technical experience (even if vague) and expressing eagerness to learn Go/React/Kafka as part of onboarding."
+    },
+    {
+      "step": "Upskill in required tech stack",
+      "action": "Enroll in online courses for Go, TypeScript/React, and distributed systems (e.g., Kafka, Redis) to bridge the skills gap for future startup roles."
+    },
+    {
+      "step": "Build a portfolio project",
+      "action": "Create a GitHub repository demonstrating full-stack development (React frontend + Go backend) with observability tools, targeting energy/infrastructure use cases."
+    }
+  ],
+  "alternative_careers": [
+    "Technical Product Manager (bridging engineering and business needs)",
+    "DevOps Engineer (focused on observability and infrastructure scaling)",
+    "Systems Architect (specializing in distributed systems for energy/emissions applications)"
+  ]
+}

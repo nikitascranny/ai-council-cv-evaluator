@@ -1,0 +1,33 @@
+{
+  "candidate": "THE DANIEL",
+  "job_title": "Computer Repair Technician",
+  "recommended_rewrite": "phi4",
+  "recommendation_reason": "Rewrite A by model 'phi4' is the better choice because it more closely matches the requirements of the job listing, particularly in highlighting relevant experience and skills in customer service, problem-solving, and technical abilities. The fact-check results indicate that 'phi4' did not fall back to the original text and was not rejected, which suggests a stronger alignment with the job listing's requirements. In contrast, Rewrite B by model 'qwen2.5:14b' while still relevant, did not as closely match the job listing's focus on practical computer repair skills and customer service.",
+  "career_roadmap": [
+    {
+      "step": "Apply for the role with Rewrite A",
+      "action": "Submit the rewritten CV to Brenda & Mick's Computer Repairs and schedule an interview"
+    },
+    {
+      "step": "Gain practical experience",
+      "action": "Consider volunteering or taking on a part-time job at a computer repair shop to build hands-on experience in hardware installation, system diagnostics, and virus clean-ups"
+    },
+    {
+      "step": "Develop technical skills",
+      "action": "Enroll in courses or online tutorials to improve skills in areas such as RAM and SSD upgrades, Windows updates, and basic networking"
+    },
+    {
+      "step": "Pursue certifications",
+      "action": "Look into certifications such as CompTIA A+ or equivalent to demonstrate expertise in computer repair and maintenance"
+    },
+    {
+      "step": "Network and seek recommendations",
+      "action": "Attend industry events and conferences, and ask previous employers or mentors to provide recommendations for future job opportunities"
+    }
+  ],
+  "alternative_careers": [
+    "Technical Support Specialist",
+    "IT Project Manager",
+    "Digital Asset Manager"
+  ]
+}

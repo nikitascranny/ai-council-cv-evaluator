@@ -1,0 +1,29 @@
+{
+  "candidate": "bad_cv_kevin_jones",
+  "job_title": "Startup Fullstack Engineer",
+  "recommended_rewrite": "qwen2.5:14b",
+  "recommendation_reason": "While Rewrite A attempts to frame Kevin's experience in a positive light, it ultimately feels overly sanitized and dishonest. Rewrite B, despite its bluntness, actually showcases resilience and adaptability, qualities highly valued in a fast-paced startup environment, as explicitly stated in the job description. The 'fact-check' revealing that Rewrite B had to retry and fell back to original text highlights that it's not attempting to fabricate experience, but rather trying to convey reality. The honesty of Rewrite B's self-assessment (weaknesses, hobbies) – even if awkwardly phrased – is far more likely to resonate with a team seeking a candid and relatable engineer. It might need careful editing, but it's a much more authentic starting point than Rewrite A's overly polished and somewhat fabricated portrayal.",
+  "career_roadmap": [
+    {
+      "step": "Apply for the role with Rewrite B (edited)",
+      "action": "Carefully edit Rewrite B to be more professional while maintaining the same honesty, e.g., rephrasing the ‘Personal Statement’ and ‘Weaknesses’ sections. Focus on extracting and amplifying transferable skills from the ‘Various Jobs’ experience."
+    },
+    {
+      "step": "Build Foundational Skills",
+      "action": "Dedicate time to improving TypeScript/React skills through online courses and personal projects. Focus on building a portfolio that demonstrates practical application of these technologies."
+    },
+    {
+      "step": "Network with Startup Engineers",
+      "action": "Attend virtual meetups, join online communities, and connect with engineers at early-stage startups to learn about industry trends and potential opportunities. Leverage LinkedIn to build connections."
+    },
+    {
+      "step": "Target Junior Fullstack Engineer Roles",
+      "action": "Once the TypeScript/React skills are solid, actively search for Junior Fullstack Engineer roles at startups or companies with a fast-paced development culture."
+    }
+  ],
+  "alternative_careers": [
+    "Technical Support Engineer",
+    "Freelance Web Developer",
+    "DevOps Engineer"
+  ]
+}

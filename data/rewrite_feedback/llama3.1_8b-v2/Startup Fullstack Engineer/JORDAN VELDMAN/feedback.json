@@ -1,0 +1,24 @@
+{
+  "candidate": "JORDAN VELDMAN",
+  "job_title": "Startup Fullstack Engineer",
+  "recommended_rewrite": "qwen2.5:14b",
+  "recommendation_reason": "Rewrite B by model qwen2.5:14b is recommended over Rewrite A by phi4 because it better matches the job listing's requirements, particularly in the technical skills section, where it includes relevant technologies such as React/TypeScript, Go, and Kafka. Rewrite B also has a higher level of abstraction, making it more concise and easier to scan. The fact-check results for Rewrite B indicate that it was generated with minimal errors and no need for fallbacks. This suggests that Rewrite B is a more effective representation of the candidate's qualifications and experience.",
+  "career_roadmap": [
+    {
+      "step": "Apply for the role with Rewrite B",
+      "action": "Submit the rewritten CV to the job listing and schedule an introductory call with the CTO"
+    },
+    {
+      "step": "Gain relevant experience in event-driven architectures",
+      "action": "Look for opportunities to work on projects or contribute to open-source initiatives that involve event-driven architectures, such as Kafka or NATS"
+    },
+    {
+      "step": "Develop skills in a backend language",
+      "action": "Pursue online courses or certification programs to learn a backend language such as Go or Rust, and apply this knowledge to personal projects or contributions to open-source initiatives"
+    }
+  ],
+  "alternative_careers": [
+    "Cloud Infrastructure Engineer",
+    "Data Engineer"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "candidate": "RIAAN GOVEN",
+  "job_title": "Startup Fullstack Engineer",
+  "recommended_rewrite": "phi4",
+  "recommendation_reason": "Both rewrites are identical and equally misaligned with the job listing, as neither addresses the candidate's lack of software engineering experience or technical skills required (e.g., Go, React/TypeScript, distributed systems). However, 'phi4' was processed first, and the fact-check issues (e.g., '0.1%', 'event driven data platforms') are superficially relevant to the job listing's terminology. Neither rewrite resolves the fundamental mismatch between the candidate's digital marketing background and the engineering role, but 'phi4' is selected by default.",
+  "career_roadmap": [
+    {
+      "step": "Apply for the role with Rewrite A",
+      "action": "Submit the CV using the 'phi4' rewrite, but explicitly note in the application that the candidate is actively building technical skills (e.g., through bootcamps or open-source projects) to bridge the gap between their current experience and the job's requirements."
+    },
+    {
+      "step": "Upskill in Core Tech Stack",
+      "action": "Enroll in a full-stack engineering bootcamp (e.g., Le Wagon, General Assembly) focusing on React/TypeScript, Go, and distributed systems to gain hands-on development experience within 6–12 months."
+    },
+    {
+      "step": "Transition to Tech-Adjacent Roles",
+      "action": "Target roles like 'Product Manager' or 'Tech Entrepreneur' in startups, leveraging marketing experience while gradually building technical credibility through side projects or mentorship."
+    }
+  ],
+  "alternative_careers": [
+    "Digital Product Manager in Tech Startups",
+    "Tech Entrepreneur (Energy/Climate Sector)",
+    "Growth Hacker with Engineering Focus"
+  ]
+}

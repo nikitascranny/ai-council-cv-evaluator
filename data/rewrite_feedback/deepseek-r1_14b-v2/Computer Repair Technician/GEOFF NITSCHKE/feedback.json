@@ -1,0 +1,25 @@
+{
+  "candidate": "GEOFF NITSCHKE",
+  "job_title": "Computer Repair Technician",
+  "recommended_rewrite": "qwen2.5:14b",
+  "recommendation_reason": "Rewrite B better aligns with the job listing by presenting Geoff in a senior UX role, which may appeal to Mick's need for a capable and patient technician. While both rewrites lack explicit repair skills, Rewrite B's structure suggests a more professional fit.",
+  "career_roadmap": [
+    {
+      "step": "Apply for the role with Rewrite B",
+      "action": "Submit Rewrite B to Mick, highlighting transferable skills like customer interaction and problem-solving."
+    },
+    {
+      "step": "Gain Technical Certification",
+      "action": "Enroll in a course like CompTIA A+ to bridge the technical skills gap."
+    },
+    {
+      "step": "Seek Part-Time Technician Role",
+      "action": "Apply for part-time roles to gain hands-on experience in computer repairs."
+    }
+  ],
+  "alternative_careers": [
+    "UX Researcher",
+    "Product Manager",
+    "Technical Writer"
+  ]
+}

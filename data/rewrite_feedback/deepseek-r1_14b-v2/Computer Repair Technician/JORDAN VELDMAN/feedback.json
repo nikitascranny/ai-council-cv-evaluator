@@ -1,0 +1,29 @@
+{
+  "candidate": "JORDAN VELDMAN",
+  "job_title": "Computer Repair Technician",
+  "recommended_rewrite": "qwen2.5:14b",
+  "recommendation_reason": "Rewrite B is more suitable for the job listing as it avoids flagged issues and maintains consistency with the original CV, which is crucial for a role requiring practical repair skills and reliability. The advisory notes highlight Microsoft Office experience, aligning with the job's need for technical proficiency and customer interaction.",
+  "career_roadmap": [
+    {
+      "step": "Apply for the role with Rewrite B",
+      "action": "Submit the qwen2.5:14b CV to Mick at Brenda & Mick's Computer Repairs, emphasizing hands-on repair skills and customer service experience."
+    },
+    {
+      "step": "Gain practical computer repair experience",
+      "action": "Seek part-time roles or volunteer opportunities to practice diagnosing and fixing common hardware and software issues."
+    },
+    {
+      "step": "Build technical certifications",
+      "action": "Pursue certifications like CompTIA A+ to demonstrate foundational IT repair skills, enhancing employability in repair roles."
+    },
+    {
+      "step": "Target IT support roles",
+      "action": "Apply for positions like IT Support Specialist, leveraging repair experience and customer service skills to provide technical assistance in broader IT environments."
+    }
+  ],
+  "alternative_careers": [
+    "Technical Project Coordinator",
+    "Facilities Manager",
+    "IT Training Instructor"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "candidate": "JORDAN VELDMAN",
+  "job_title": "Computer Repair Technician",
+  "recommended_rewrite": "qwen2.5:14b",
+  "recommendation_reason": "Rewrite B by model qwen2.5:14b is recommended because it is the only one that does not fall back to the original text, indicating a more successful rewriting process. The advisory notes suggest that Rewrite B made minor adjustments to the candidate's experience, which aligns with the job listing's request for a background in architecture and project management. The fact-check results show that Rewrite B did not drop any essential numbers from the candidate's CV, which is important for the job listing's requirement of 'basic, practical PC/laptop repair skills'.",
+  "career_roadmap": [
+    {
+      "step": "Apply with Rewrite B",
+      "action": "Submit the candidate's application with Rewrite B to the job posting for the Computer Repair Technician position."
+    },
+    {
+      "step": "Build IT skills",
+      "action": "Acquire technical skills in PC and laptop repair, such as data recovery, phone and tablet screen repairs, and experience with Windows XP."
+    },
+    {
+      "step": "Gain hands-on experience",
+      "action": "Volunteer or intern at a local computer repair shop to gain hands-on experience in fixing various computer-related issues."
+    },
+    {
+      "step": "Pursue certification",
+      "action": "Consider obtaining certifications in computer repair, such as CompTIA A+, to enhance job prospects and skills."
+    }
+  ],
+  "alternative_careers": [
+    "Technical Writer",
+    "IT Project Manager"
+  ]
+}

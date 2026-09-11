@@ -1,0 +1,25 @@
+{
+  "candidate": "ALEX PARK",
+  "job_title": "Startup Fullstack Engineer",
+  "recommended_rewrite": "qwen2.5:14b",
+  "recommendation_reason": "While both rewrites are misaligned with the job's core requirements (full-stack development, Go/TypeScript, distributed systems), Rewrite B is more concise and maintains higher wording similarity to the original CV, which may help avoid flagging during automated screening. However, neither rewrite addresses the essential technical stack (React/TypeScript, Go) or operational experience required. The fact-check results show no fallbacks, but the content remains irrelevant to the role. This suggests the candidate's current profile is not a strong fit for the position.",
+  "career_roadmap": [
+    {
+      "step": "Apply for the role with Rewrite B",
+      "action": "Submit the qwen2.5:14b rewrite, but include a cover letter explicitly addressing the gap in full-stack development experience and expressing eagerness to upskill in Go/TypeScript and distributed systems."
+    },
+    {
+      "step": "Upskill in Full-Stack Development",
+      "action": "Enroll in online courses (e.g., Udemy, Coursera) to gain proficiency in React/TypeScript and Go, while building a portfolio of personal projects demonstrating full-stack capabilities."
+    },
+    {
+      "step": "Transition to Engineering Roles",
+      "action": "Apply for junior/mid-level full-stack engineer roles at startups or tech companies, emphasizing transferable skills (testing, CI/CD, collaboration) and the new technical stack acquired."
+    }
+  ],
+  "alternative_careers": [
+    "Test Automation Lead",
+    "DevOps Engineer",
+    "Technical Program Manager"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "candidate": "THE DANIEL",
+  "job_title": "Computer Repair Technician",
+  "recommended_rewrite": "qwen2.5:14b",
+  "recommendation_reason": "Rewrite B (qwen2.5:14b) directly aligns with the job’s technical requirements, explicitly listing skills like 'RAM and SSD Upgrades,' 'Virus Clean-Up,' and 'System Diagnostics'—all critical for the role. The fact-check notes confirm it included relevant keywords from the job listing (e.g., 'basic pc,' 'laptop repair'). While Rewrite A (phi4) emphasizes unrelated skills (e.g., 'Business Analysis,' 'Python'), its low wording similarity (0.46) and inclusion of irrelevant details (e.g., 'South Africa courses') make it less suitable. Rewrite B’s shorter length (0.82x) and higher relevance justify its stronger fit for this hands-on, customer-facing repair role.",
+  "career_roadmap": [
+    {
+      "step": "Apply for the role with Rewrite B",
+      "action": "Submit the qwen2.5:14b CV to Mick at mick@brendaandmicksrepairs-example.co.uk, emphasizing the 'Customer Service' and 'Technical Troubleshooting' skills listed."
+    },
+    {
+      "step": "Gain hands-on repair experience",
+      "action": "Enroll in a certified computer repair course (e.g., CompTIA A+) or volunteer at local repair shops to build practical skills in hardware diagnostics and customer communication."
+    },
+    {
+      "step": "Pursue IT Support roles",
+      "action": "Transition to IT Support Technician roles in small businesses or repair centers, leveraging the candidate’s business analysis background for process improvement and customer service."
+    }
+  ],
+  "alternative_careers": [
+    "IT Support Specialist",
+    "Help Desk Technician",
+    "Technical Sales Representative"
+  ]
+}

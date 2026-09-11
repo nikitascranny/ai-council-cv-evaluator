@@ -1,0 +1,29 @@
+{
+  "candidate": "RIAAN GOVEN",
+  "job_title": "Computer Repair Technician",
+  "recommended_rewrite": "qwen2.5:14b",
+  "recommendation_reason": "Although both rewrites have issues (rejected by fact-check), Rewrite B ('qwen2.5:14b') is the better choice because it doesn't drop any important information or skills that might be relevant to the Computer Repair Technician role. For instance, it still mentions RAM and SSD upgrades, which are part of the key responsibilities. In contrast, Rewrite A ('phi4') dropped '2018' from the candidate's work experience, which could be a significant gap in their employment history.",
+  "career_roadmap": [
+    {
+      "step": "Apply with Rewrite B",
+      "action": "Submit the rewritten CV with Rewrite B to the Computer Repair Technician role at Brenda and Mick's Computer Repairs"
+    },
+    {
+      "step": "Build hardware repair skills",
+      "action": "Take online courses or attend workshops to develop practical skills in hardware repair, such as reseating RAM and cleaning fans"
+    },
+    {
+      "step": "Gain experience with IT support",
+      "action": "Volunteer or take on a part-time job in IT support to build experience in troubleshooting and resolving everyday technical issues"
+    },
+    {
+      "step": "Pursue a degree in a relevant field",
+      "action": "Enroll in a degree program in computer science, information technology, or a related field to further develop skills and knowledge"
+    }
+  ],
+  "alternative_careers": [
+    "IT Support Specialist",
+    "Technical Writer",
+    "Digital Asset Manager"
+  ]
+}

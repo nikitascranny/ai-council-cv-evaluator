@@ -1,0 +1,29 @@
+{
+  "candidate": "EMILE MOKOENA",
+  "job_title": "Computer Repair Technician",
+  "recommended_rewrite": "qwen2.5:14b",
+  "recommendation_reason": "Rewrite B is more aligned with the job requirements as it emphasizes technical support experience and customer service, which are key for the role. The fact-check for Rewrite B shows no issues, indicating it's a more reliable and tailored version. It effectively highlights relevant skills and experience, such as diagnosing hardware/software issues and working with older customers.",
+  "career_roadmap": [
+    {
+      "step": "Apply for the role with Rewrite B",
+      "action": "Submit the CV targeting the Computer Repair Technician position, focusing on the technical support and customer service experience highlighted in Rewrite B."
+    },
+    {
+      "step": "Gain hands-on experience",
+      "action": "Seek additional part-time or volunteer opportunities in computer repair or technical support to strengthen practical skills."
+    },
+    {
+      "step": "Pursue certifications",
+      "action": "Consider obtaining certifications in computer repair or customer service to further enhance qualifications."
+    },
+    {
+      "step": "Apply for field technician roles",
+      "action": "After gaining experience, apply for roles like Field Technician or Technical Sales Engineer, leveraging repair and customer interaction skills."
+    }
+  ],
+  "alternative_careers": [
+    "Cloud Support Engineer",
+    "Technical Trainer",
+    "IT Customer Support Specialist"
+  ]
+}

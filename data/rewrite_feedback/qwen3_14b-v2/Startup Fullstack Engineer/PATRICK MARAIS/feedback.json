@@ -1,0 +1,25 @@
+{
+  "candidate": "PATRICK MARAIS",
+  "job_title": "Startup Fullstack Engineer",
+  "recommended_rewrite": "phi4",
+  "recommendation_reason": "Both rewrites are identical and fail to align with the job listing's technical requirements (e.g., no mention of React/TypeScript, Go, or distributed systems). Fact-checks reveal both rewrites used fallback text and dropped critical numbers, indicating poor tailoring. However, phi4 was selected arbitrarily as neither rewrite is suitable for this role, but the task requires a choice.",
+  "career_roadmap": [
+    {
+      "step": "Pivot to Technical Roles",
+      "action": "Pursue certifications in full-stack development (e.g., React, Go) and highlight transferable skills like project management and systems analysis in applications."
+    },
+    {
+      "step": "Target Cybersecurity Engineering",
+      "action": "Leverage existing cybersecurity expertise in roles like Cybersecurity Engineer or Security Analyst, which align with both current skills and the startup's need for robust systems."
+    },
+    {
+      "step": "Build a Tech Portfolio",
+      "action": "Develop open-source projects or contribute to technical communities to demonstrate coding proficiency, even if not directly mentioned in the current CV."
+    }
+  ],
+  "alternative_careers": [
+    "Cybersecurity Architect",
+    "Technical Program Manager",
+    "DevOps Engineer"
+  ]
+}

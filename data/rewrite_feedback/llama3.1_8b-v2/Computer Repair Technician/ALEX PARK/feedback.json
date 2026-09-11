@@ -1,0 +1,28 @@
+{
+  "candidate": "ALEX PARK",
+  "job_title": "Computer Repair Technician",
+  "recommended_rewrite": "phi4",
+  "recommendation_reason": "The phi4 rewrite is the recommended choice because it is fact-checked as accurate and doesn't fall back to the original text. It also highlights the candidate's basic PC/laptop repair skills and friendly customer service experience, which are essential requirements for the job. In contrast, the qwen2.5:14b rewrite has a lower wording similarity to the original CV and includes a professional profile that is not relevant to the job listing.",
+  "career_roadmap": [
+    {
+      "step": "Apply with Rewrite A",
+      "action": "Submit the phi4 rewrite with Alex Park as the CV and follow up with an email to mick@brendaandmicksrepairs-example.co.uk."
+    },
+    {
+      "step": "Build PC repair skills",
+      "action": "Consider taking online courses or attending workshops to improve PC repair skills, particularly in data recovery and phone/tablet screen repairs."
+    },
+    {
+      "step": "Gain experience in customer service",
+      "action": "Look for part-time or volunteer opportunities in retail or customer-facing roles to build on the candidate's existing customer service experience."
+    },
+    {
+      "step": "Explore related IT roles",
+      "action": "Research and target roles in IT support, help desk, or technical sales, where the candidate can leverage their existing skills and experience."
+    }
+  ],
+  "alternative_careers": [
+    "Technical Sales Representative",
+    "IT Support Specialist"
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "candidate": "EMILE MOKOENA",
+  "job_title": "Computer Repair Technician",
+  "recommended_rewrite": "qwen2.5:14b",
+  "recommendation_reason": "Rewrite B is the superior choice because it directly addresses the job's requirements by emphasizing customer service and troubleshooting skills, omitting the overly technical cloud engineer background. While Rewrite A attempts to include more detail, it's flagged as having numerous issues (dropped numbers and fallback to original text), indicating a failure to accurately tailor the CV. Rewrite B presents Emile as a candidate with practical repair skills and a relevant volunteer experience, aligning perfectly with the desired profile. The volunteer experience highlights the interpersonal and problem-solving abilities explicitly sought by the employer, which is critical in this role. Rewrite B maintains a more reasonable length and focuses on the transferable skills needed, unlike the overly detailed Rewrite A which is confusing in this context.",
+  "career_roadmap": [
+    {
+      "step": "Apply for the role",
+      "action": "Submit Rewrite B and be prepared to discuss practical repair experience during the informal interview."
+    },
+    {
+      "step": "Gain experience & Build Local Reputation",
+      "action": "Work diligently, resolve customer issues efficiently, and actively seek feedback from Mick and Brenda to improve diagnostic and repair skills. Consider documenting common repairs and solutions in a personal notebook."
+    },
+    {
+      "step": "Expand Repair Skills",
+      "action": "After 6-12 months, proactively request to handle more complex repairs or learn new skills from Mick, focusing on areas like phone/tablet repairs or data recovery. This demonstrates initiative and a willingness to grow."
+    },
+    {
+      "step": "Consider Certifications (Optional)",
+      "action": "If desired, pursue entry-level A+ or CompTIA Network+ certifications to formalize existing skills and broaden knowledge, potentially opening up roles with larger companies."
+    },
+    {
+      "step": "Explore Full-Time Role & Further Specialization",
+      "action": "If the full-time opportunity arises, pursue it. Based on interests, consider specializing further – e.g., becoming a mobile device repair specialist, a data recovery technician, or a network troubleshooter.  Look at local IT support roles that may be available."
+    }
+  ],
+  "alternative_careers": [
+    "IT Support Specialist",
+    "Help Desk Technician",
+    "Field Service Technician"
+  ]
+}

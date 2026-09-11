@@ -1,0 +1,25 @@
+{
+  "candidate": "bad_cv_kevin_jones",
+  "job_title": "Startup Fullstack Engineer",
+  "recommended_rewrite": "qwen2.5:14b",
+  "recommendation_reason": "Although both rewrites fail to address the job's technical requirements, Rewrite B (qwen2.5:14b) maintains closer alignment with the original CV's structure and wording (similarity 0.85), making it more consistent with the candidate's actual background. Rewrite A (phi4) invents a 'founding full stack engineer' claim without technical substantiation, which would be flagged by hiring teams. Neither rewrite addresses essential requirements like Go/TypeScript experience or distributed systems, but Rewrite B's candid tone (e.g., 'I need money and I am willing to work') is more honest about the candidate's mismatch with the role.",
+  "career_roadmap": [
+    {
+      "step": "Apply for the role with Rewrite B",
+      "action": "Submit the qwen2.5:14b rewrite with a cover letter explicitly acknowledging the skill gap and committing to upskilling in Go, TypeScript, and distributed systems."
+    },
+    {
+      "step": "Build technical foundation",
+      "action": "Complete a fullstack development bootcamp with focus on Go/TypeScript, and contribute to open-source projects involving Kafka/TimescaleDB to address the job's technical requirements."
+    },
+    {
+      "step": "Pursue junior roles",
+      "action": "Apply for junior/fullstack developer positions at startups or scaleups to gain production experience while continuing technical education."
+    }
+  ],
+  "alternative_careers": [
+    "Customer Success Engineer at SaaS companies",
+    "Technical Support Specialist with energy sector focus",
+    "Product Analyst in climate tech startups"
+  ]
+}

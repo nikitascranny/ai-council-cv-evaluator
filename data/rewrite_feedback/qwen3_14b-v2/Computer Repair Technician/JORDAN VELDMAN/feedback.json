@@ -1,0 +1,25 @@
+{
+  "candidate": "JORDAN VELDMAN",
+  "job_title": "Computer Repair Technician",
+  "recommended_rewrite": "qwen2.5:14b",
+  "recommendation_reason": "While both rewrites fail to align the candidate's architectural background with the job's technical requirements, Rewrite B (qwen2.5:14b) avoids the fact-check issues of Rewrite A (phi4), which dropped critical numbers and relied on fallbacks. Rewrite B is slightly more concise and maintains higher wording similarity to the original, though neither version addresses the job's core needs (e.g., repair skills, customer service for older adults). However, Rewrite B's cleaner structure and lack of fact-check flags make it a marginally better choice for submission, despite its irrelevance to the role.",
+  "career_roadmap": [
+    {
+      "step": "Apply for the role with Rewrite B",
+      "action": "Submit the qwen2.5:14b rewrite to Brenda & Mick's, emphasizing transferable skills like problem-solving and client coordination, while acknowledging the lack of direct repair experience."
+    },
+    {
+      "step": "Pursue foundational IT/repair training",
+      "action": "Enroll in a certified computer repair course (e.g., CompTIA A+ or Microsoft Technology Associate) to gain practical skills in hardware diagnostics, OS troubleshooting, and customer service for technical issues."
+    },
+    {
+      "step": "Build a portfolio of repair work",
+      "action": "Volunteer for local nonprofits or offer discounted repair services to build hands-on experience and demonstrate competence in the role's key responsibilities (e.g., RAM upgrades, virus cleanups)."
+    }
+  ],
+  "alternative_careers": [
+    "IT Support Specialist",
+    "Technical Sales Engineer",
+    "Project Manager in Tech Consulting"
+  ]
+}

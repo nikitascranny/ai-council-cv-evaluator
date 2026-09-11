@@ -1,0 +1,25 @@
+{
+  "candidate": "PATRICK MARAIS",
+  "job_title": "Computer Repair Technician",
+  "recommended_rewrite": "phi4",
+  "recommendation_reason": "Both rewrites are identical and poorly aligned with the job's requirements, but phi4's advisory note about 'implemented cctv' (though irrelevant to computer repair) slightly edges it over qwen2.5:14b. However, neither rewrite addresses the job's practical repair needs or drops irrelevant certifications. The candidate's background in cyber security and management is mismatched for this role, making both rewrites suboptimal.",
+  "career_roadmap": [
+    {
+      "step": "Apply for the role with Rewrite A",
+      "action": "Submit Rewrite A with a cover letter explicitly highlighting any basic repair skills (e.g., 'experience with CCTV installation implies hardware troubleshooting') and willingness to learn entry-level repair tasks"
+    },
+    {
+      "step": "Upskill in Practical Repair",
+      "action": "Enroll in a certified computer repair course (e.g., CompTIA A+) to gain hands-on experience with RAM, SSDs, and common hardware repairs"
+    },
+    {
+      "step": "Target IT Support Roles",
+      "action": "Apply for IT support or helpdesk positions to bridge the gap between current expertise and practical repair experience"
+    }
+  ],
+  "alternative_careers": [
+    "Cybersecurity Analyst",
+    "IT Infrastructure Manager",
+    "Technical Sales Engineer"
+  ]
+}

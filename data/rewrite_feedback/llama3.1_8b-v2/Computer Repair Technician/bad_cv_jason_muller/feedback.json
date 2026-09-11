@@ -1,0 +1,25 @@
+{
+  "candidate": "bad_cv_jason_muller",
+  "job_title": "Computer Repair Technician",
+  "recommended_rewrite": "phi4",
+  "recommendation_reason": "Rewrite A ('phi4') is a better fit for the job listing, as it more closely matches the requirements and skills needed for the role. It also passes fact-checking without issues, while Rewrite B ('qwen2.5:14b') has some factual inaccuracies and a lower wording similarity to the original CV. Rewrite A's objective and skills section are also more aligned with the job's emphasis on practical skills, customer service, and reliability.",
+  "career_roadmap": [
+    {
+      "step": "Apply for the role with Rewrite A",
+      "action": "Submit the rewritten CV to Brenda & Mick's Computer Repairs and prepare for an informal interview"
+    },
+    {
+      "step": "Build repair skills and experience",
+      "action": "Consider taking online courses or attending workshops to learn more about PC/laptop repair, and potentially volunteer or intern at a similar shop to gain hands-on experience"
+    },
+    {
+      "step": "Pursue certification or further education",
+      "action": "Look into certifications like CompTIA A+ or ITIL, or consider enrolling in a related degree program to increase job prospects and earning potential"
+    }
+  ],
+  "alternative_careers": [
+    "Help Desk Specialist",
+    "IT Support Analyst",
+    "Digital Media Technician"
+  ]
+}

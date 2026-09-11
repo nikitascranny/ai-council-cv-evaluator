@@ -1,0 +1,25 @@
+{
+  "candidate": "bad_cv_sarah_lynne_van_der_merwe",
+  "job_title": "Startup Fullstack Engineer",
+  "recommended_rewrite": "phi4",
+  "recommendation_reason": "Rewrite A (phi4) is the recommended choice because it more accurately represents the candidate's skills and experience. Although it has a lower wording similarity to the original CV (0.59), it does not invent or drop any facts. In contrast, Rewrite B (qwen2.5:14b) is flagged as rejected and uses a fallback to the original text, indicating that it may not accurately represent the candidate's background. Additionally, Rewrite A's fact-check result shows that it tried to retry, which suggests that it was attempting to align with the job listing more closely.",
+  "career_roadmap": [
+    {
+      "step": "Apply to the role with Rewrite A",
+      "action": "Submit the rewritten CV to the job listing and proceed with the application process"
+    },
+    {
+      "step": "Build event-driven architecture skills",
+      "action": "Take online courses or attend workshops to learn about event-driven architectures, Kafka, NATS, time-series data, and streaming systems"
+    },
+    {
+      "step": "Gain experience with a programming language other than JavaScript",
+      "action": "Learn a new programming language such as Go, Rust, or Java and apply it to personal projects or contribute to open-source projects"
+    }
+  ],
+  "alternative_careers": [
+    "Technical Program Manager",
+    "DevOps Engineer",
+    "Cloud Architect"
+  ]
+}

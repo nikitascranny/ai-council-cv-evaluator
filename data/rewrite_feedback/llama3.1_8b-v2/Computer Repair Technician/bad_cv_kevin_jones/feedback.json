@@ -1,0 +1,25 @@
+{
+  "candidate": "bad_cv_kevin_jones",
+  "job_title": "Computer Repair Technician",
+  "recommended_rewrite": "phi4",
+  "recommendation_reason": "Rewrite A ('phi4') is the better choice because it more closely matches the job listing's requirements, particularly in highlighting the candidate's customer service skills, basic technical troubleshooting experience, and willingness to learn. Although both rewrites share some similarities, 'phi4' better addresses the essential requirements, such as the ability to work with older customers, honesty, and reliability. The fact-check results also indicate that 'phi4' is less likely to be flagged as a rejected rewrite.",
+  "career_roadmap": [
+    {
+      "step": "Apply for the role with Rewrite A",
+      "action": "Submit the rewritten CV and covering letter for the Computer Repair Technician position at Brenda & Mick's Computer Repairs."
+    },
+    {
+      "step": "Develop technical skills",
+      "action": "Take online courses or attend workshops to learn about basic PC/laptop repair, data recovery, and phone/tablet screen repairs."
+    },
+    {
+      "step": "Gain industry experience",
+      "action": "Consider internships or part-time roles in computer repair shops or IT services to build hands-on experience and expand professional network."
+    }
+  ],
+  "alternative_careers": [
+    "Technical Support Specialist",
+    "Help Desk Technician",
+    "IT Help Desk Assistant"
+  ]
+}

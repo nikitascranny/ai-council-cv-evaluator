@@ -1,0 +1,28 @@
+{
+  "candidate": "GEOFF NITSCHKE",
+  "job_title": "Startup Fullstack Engineer",
+  "recommended_rewrite": "qwen2.5:14b",
+  "recommendation_reason": "Rewrite B from model qwen2.5:14b is recommended because it better aligns with the job listing's requirements. The rewrite includes relevant technical skills like 'Driving user-centric culture through mentoring and embedding research practices' which can be applied to full-stack engineering roles. The fact-check results indicate that this rewrite was not flagged for inaccuracies, and it has a higher wording similarity to the original CV, suggesting that it retained the candidate's original strengths and experiences.",
+  "career_roadmap": [
+    {
+      "step": "Apply with Rewrite B",
+      "action": "Submit the rewritten CV (Rewrite B) for the Startup Fullstack Engineer role and prepare for the interview process."
+    },
+    {
+      "step": "Gain backend development experience",
+      "action": "Enroll in online courses or attend workshops to learn backend development skills, such as Go programming, and gain practical experience through personal projects or contributing to open-source projects."
+    },
+    {
+      "step": "Explore cloud infrastructure and DevOps",
+      "action": "Learn about cloud infrastructure and DevOps practices, and explore how to apply these skills to full-stack engineering roles."
+    },
+    {
+      "step": "Consider a master's degree",
+      "action": "Pursue a master's degree in Computer Science or a related field to further develop technical skills and gain advanced knowledge in full-stack engineering."
+    }
+  ],
+  "alternative_careers": [
+    "Cloud Architect",
+    "DevOps Engineer"
+  ]
+}

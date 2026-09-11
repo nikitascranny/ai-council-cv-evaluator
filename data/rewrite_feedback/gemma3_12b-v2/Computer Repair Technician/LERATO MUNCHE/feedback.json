@@ -1,0 +1,33 @@
+{
+  "candidate": "LERATO MUNCHE",
+  "job_title": "Computer Repair Technician",
+  "recommended_rewrite": "qwen2.5:14b",
+  "recommendation_reason": "The qwen2.5:14b rewrite consistently produced outputs that were more focused on highlighting transferable skills and framing experience in a way that aligns with a basic technical support role. While the phi4 rewrite attempted tailoring, it introduced inconsistencies and irrelevant details, often flagged during fact-checking. Qwen’s rewrite was generally more concise, using stronger action verbs and prioritizing descriptions of problem-solving and customer interaction, key aspects of a technical support position. This made it easier to see how her experience in roles like CEO, Global Partnerships Manager, and even Youth Internet Governance Coordinator could translate into providing technical support.",
+  "career_roadmap": [
+    {
+      "step": "Apply for the role with Rewrite B",
+      "action": "Tailor the rewritten resume (qwen2.5:14b) further emphasizing troubleshooting, communication, and customer service skills. Highlight relevant experiences like CEO, Project Manager, and Public Relations Advisor, focusing on problem-solving and stakeholder management."
+    },
+    {
+      "step": "Gain Basic Technical Certifications",
+      "action": "Pursue CompTIA A+ or similar certifications to demonstrate foundational IT knowledge and validate technical abilities.  Focus on hardware, software, networking, and security basics."
+    },
+    {
+      "step": "Entry-Level Technical Support",
+      "action": "Apply for entry-level technical support roles in a helpdesk, call center, or field service environment.  Gain practical experience in troubleshooting and resolving user issues."
+    },
+    {
+      "step": "Develop Specialized Skills",
+      "action": "Identify a specialization within IT (e.g., networking, cybersecurity, cloud computing) and pursue further training and certifications. Contribute to internal documentation, seek mentorship from experienced technicians, and consider shadowing more senior employees."
+    },
+    {
+      "step": "Advanced Technical Support/IT Support Specialist",
+      "action": "Progress to more complex technical support roles, involving advanced troubleshooting, system administration, and network management. Consider taking on leadership roles within the technical support team, perhaps mentoring newer technicians."
+    }
+  ],
+  "alternative_careers": [
+    "IT Project Manager",
+    "Technical Sales Representative",
+    "Business Analyst (focusing on IT solutions)"
+  ]
+}

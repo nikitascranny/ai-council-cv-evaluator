@@ -1,0 +1,25 @@
+{
+  "candidate": "LERATO MUNCHE",
+  "job_title": "Startup Fullstack Engineer",
+  "recommended_rewrite": "qwen2.5:14b",
+  "recommendation_reason": "The qwen2.5:14b rewrite more accurately aligned the candidate's technical skills (JavaScript, Python, HTML/CSS) with the job listing's requirements while omitting non-technical roles that were flagged as mismatched. It maintained the candidate's project management experience but reframed it to emphasize collaboration with engineering teams, which better fits the 'Startup Fullstack Engineer' role. Phi4's rewrite retained ambiguous political and policy roles that were explicitly flagged as irrelevant by the fact-check.",
+  "career_roadmap": [
+    {
+      "step": "Apply for the role with Technical Emphasis",
+      "action": "Submit application focusing on technical skills (JavaScript, Python, HTML/CSS) and project management experience relevant to engineering workflows, omitting non-technical political roles."
+    },
+    {
+      "step": "Upskill in Cloud Architecture",
+      "action": "Complete AWS or Azure certification to strengthen backend development capabilities required for fullstack engineering roles."
+    },
+    {
+      "step": "Transition to Senior Software Engineer",
+      "action": "Target roles at tech startups requiring both frontend/backend development and cross-functional team leadership experience."
+    }
+  ],
+  "alternative_careers": [
+    "Product Manager (Tech Startup)",
+    "Digital Policy Advisor",
+    "Tech Communications Director"
+  ]
+}

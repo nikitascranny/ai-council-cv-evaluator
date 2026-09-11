@@ -1,0 +1,24 @@
+{
+  "candidate": "EMILE MOKOENA",
+  "job_title": "Startup Fullstack Engineer",
+  "recommended_rewrite": "qwen2.5:14b",
+  "recommendation_reason": "Rewrite B is a better fit for the job listing as it more closely matches the requirements for a Startup Fullstack Engineer. The fact-check results indicate that Rewrite B used fallback to the original text, which suggests that it made strategic decisions to prioritize relevant information over minor inconsistencies. The rewrite also highlights the candidate's experience with event-driven data platforms, which is a key requirement for the job. Furthermore, the rewrite's wording similarity to the original text is 0.81, indicating that it has maintained the essence of the candidate's qualifications while presenting them in a more targeted and concise manner.",
+  "career_roadmap": [
+    {
+      "step": "Apply for the role with Rewrite B",
+      "action": "Submit Rewrite B as the CV and prepare for the interview process"
+    },
+    {
+      "step": "Develop distributed systems skills",
+      "action": "Invest time in learning distributed systems fundamentals, queues, idempotency, and consistency trade-offs to strengthen the candidate's application for future roles"
+    },
+    {
+      "step": "Gain experience with event-driven architectures",
+      "action": "Look for opportunities to work with event-driven architectures, such as Kafka or NATS, to build on the candidate's existing experience and make them more competitive for future roles"
+    }
+  ],
+  "alternative_careers": [
+    "Cloud Engineering Manager",
+    "Data Architecture Consultant"
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "candidate": "PATRICK MARAIS",
+  "job_title": "Computer Repair Technician",
+  "recommended_rewrite": "qwen2.5:14b",
+  "recommendation_reason": "While both rewrites attempted to tailor the CV, Rewrite B (qwen2.5:14b) performed better overall despite also being flagged for dropped numbers and fallback to original content. The dropped numbers indicate a struggle in understanding the specificity of the job's needs, but the rewrite maintains a level of professional language and structure slightly better aligned with a business environment than Rewrite A. Rewrite A’s fact-check issues were significantly more extensive and impactful, suggesting a more problematic level of misunderstanding of the original CV's content. Although both need improvement, Rewrite B represents a less destructive starting point for further refinement.",
+  "career_roadmap": [
+    {
+      "step": "Apply for the role",
+      "action": "Submit Rewrite B with a brief cover letter emphasizing customer service and practical repair skills; be prepared to demonstrate basic repair skills during the informal interview."
+    },
+    {
+      "step": "Initial Performance & Learning",
+      "action": "Focus on mastering the 'easy stuff' and building rapport with customers. Proactively observe and learn from Mick's repair techniques."
+    },
+    {
+      "step": "Upskilling & Data Recovery",
+      "action": "Express interest in learning data recovery techniques, showcasing a desire for increased responsibility and value."
+    },
+    {
+      "step": "Advanced Troubleshooting & Diagnostics",
+      "action": "Gradually take on more complex repair tasks under Mick's guidance. Consider a short online course in advanced diagnostics."
+    },
+    {
+      "step": "Potential Full-Time Role",
+      "action": "If offered a full-time position, embrace the opportunity and continue to build expertise in computer repair and customer service. Look into A+ certification for formal validation of skills."
+    },
+    {
+      "step": "Branch Management Opportunity",
+      "action": "With experience gained, explore leadership positions, utilizing past branch management experience, and offering similar improvements."
+    }
+  ],
+  "alternative_careers": [
+    "IT Support Specialist",
+    "Cybersecurity Analyst (entry-level)",
+    "Loss Prevention Investigator"
+  ]
+}
