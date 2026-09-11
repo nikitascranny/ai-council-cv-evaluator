@@ -1,0 +1,3 @@
+candidate,job_title,agent_model,used_fallback,rejected,retried,reasons,advisory,length_ratio,similarity,error
+JORDAN VELDMAN,Startup Fullstack Engineer,phi4,False,False,True,[],[],0.984144960362401,0.8488298545224542,
+JORDAN VELDMAN,Startup Fullstack Engineer,qwen2.5:14b,False,False,False,[],"['jordan veldman cape town', 'microsoft office experience', 'technical skills']",0.5851803915224074,0.5137903861308116,

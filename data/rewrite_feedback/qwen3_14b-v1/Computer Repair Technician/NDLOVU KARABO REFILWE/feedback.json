@@ -1,0 +1,24 @@
+{
+  "candidate": "NDLOVU KARABO REFILWE",
+  "job_title": "Computer Repair Technician",
+  "recommended_rewrite": "qwen2.5:14b",
+  "recommendation_reason": "The 'qwen2.5:14b' rewrite more accurately aligned the candidate's non-technical archival/records management experience with the job listing's emphasis on organizational skills and attention to detail, while avoiding overtly misleading claims about technical competencies. The 'phi4' rewrite was flagged for implying direct computer repair experience that the candidate's resume does not support. The 'qwen2.5:14b' version focused on transferable skills like data management and classification, which better matched the job listing's requirements for 'attention to detail' and 'organizational skills' than the original text.",
+  "career_roadmap": [
+    {
+      "step": "Pursue Technical Certification",
+      "action": "Enroll in a CompTIA A+ or similar computer repair certification program to build foundational technical skills required for the role."
+    },
+    {
+      "step": "Gain Hands-On Experience",
+      "action": "Seek internships or entry-level positions in IT support or computer repair to develop practical troubleshooting and hardware/software repair skills."
+    },
+    {
+      "step": "Transition to IT Support Roles",
+      "action": "Apply for junior IT technician or help desk roles that align with the candidate's growing technical skills and organizational strengths."
+    },
+    {
+      "step": "Specialize in Enterprise IT",
+      "action": "Advance to roles like IT systems technician or network support specialist by combining technical expertise with the candidate's existing administrative experience."
+    }
+  ]
+}

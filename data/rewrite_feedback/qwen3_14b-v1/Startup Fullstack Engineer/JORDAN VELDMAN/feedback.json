@@ -1,0 +1,24 @@
+{
+  "candidate": "JORDAN VELDMAN",
+  "job_title": "Startup Fullstack Engineer",
+  "recommended_rewrite": "qwen2.5:14b",
+  "recommendation_reason": "Rewrite B (qwen2.5:14b) explicitly includes technical skills directly aligned with the job listing (React/TypeScript, Go, Kafka, TimescaleDB, Redis) despite its shorter length. The advisory notes confirm this alignment, while Rewrite A (phi4) lacks these critical technologies. Both rewrites are fact-checked as valid, but Rewrite B’s targeted skillset matches the job’s requirements for a fullstack engineer working with distributed systems. Its concise format also better highlights relevant competencies compared to Rewrite A’s more generic architectural focus.",
+  "career_roadmap": [
+    {
+      "step": "Apply for the role with Rewrite B",
+      "action": "Submit the qwen2.5:14b rewrite to Pulsegrid, emphasizing alignment with their tech stack (Go, Kafka, etc.) and production experience managing complex projects."
+    },
+    {
+      "step": "Build Full-Stack Engineering Experience",
+      "action": "Transition into hands-on software development by contributing to open-source projects or building a portfolio of fullstack applications using React/TypeScript and Go."
+    },
+    {
+      "step": "Deepen Distributed Systems Knowledge",
+      "action": "Take courses or earn certifications in distributed systems, cloud architecture, and microservices to bridge architectural experience with engineering requirements."
+    },
+    {
+      "step": "Target Senior Engineering Roles",
+      "action": "Apply for senior fullstack engineer or backend developer roles at tech startups, emphasizing both architectural planning and coding execution experience."
+    }
+  ]
+}

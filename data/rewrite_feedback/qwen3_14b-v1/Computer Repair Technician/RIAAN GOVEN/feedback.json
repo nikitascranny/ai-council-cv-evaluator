@@ -1,0 +1,20 @@
+{
+  "candidate": "RIAAN GOVEN",
+  "job_title": "Computer Repair Technician",
+  "recommended_rewrite": "qwen2.5:14b",
+  "recommendation_reason": "The qwen2.5:14b rewrite was flagged for retaining irrelevant percentages (e.g., 100% in Account Management) and inflated metrics (500% growth in social media), which misalign with the technical, hands-on requirements of a Computer Repair Technician role. Despite fallbacks, it still emphasizes digital marketing and product management experience, which are unrelated to hardware troubleshooting or IT support. The phi4 model was not evaluated, but the qwen2.5:14b version is explicitly flagged as a quality signal issue, making it less suitable than an untested alternative.",
+  "career_roadmap": [
+    {
+      "step": "Pivot Skill Set",
+      "action": "Enroll in CompTIA A+ or similar certifications to build foundational technical skills in computer hardware, software, and networking relevant to repair technician roles."
+    },
+    {
+      "step": "Gain Practical Experience",
+      "action": "Pursue entry-level roles like IT Support Specialist or Hardware Technician Assistant to acquire hands-on repair experience and industry-specific knowledge."
+    },
+    {
+      "step": "Target Senior Roles",
+      "action": "After 1-2 years of technical experience, aim for Senior Computer Repair Technician or IT Support Manager positions, leveraging certifications and practical skills."
+    }
+  ]
+}

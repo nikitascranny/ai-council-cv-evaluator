@@ -1,0 +1,28 @@
+{
+  "candidate": "LERATO MUNCHE",
+  "job_title": "Computer Repair Technician",
+  "recommended_rewrite": "phi4",
+  "recommendation_reason": "The phi4 rewrite more effectively aligned the candidate's non-technical background with the job listing's emphasis on hands-on technical skills by explicitly highlighting transferable abilities (e.g., problem-solving, project management) while acknowledging gaps in direct computer repair experience. The qwen2.5:14b version fell back to original text in critical areas like hardware/software troubleshooting, which were not mentioned in the resume. Fact-checking revealed the original resume lacked relevant technical certifications or repair experience, making phi4's contextual adaptation more suitable for a non-matching candidate.",
+  "career_roadmap": [
+    {
+      "step": "Apply for the role with Rewrite B",
+      "action": "Submit the phi4-rewritten resume to the Computer Repair Technician position, emphasizing transferable skills like problem-solving, project management, and communication while requesting consideration for on-the-job training."
+    },
+    {
+      "step": "Pursue Technical Certifications",
+      "action": "Enroll in CompTIA A+ or Microsoft Certified Technician courses to gain foundational knowledge in computer hardware, software troubleshooting, and customer service required for the role."
+    },
+    {
+      "step": "Gain Hands-On Experience",
+      "action": "Volunteer at local community tech centers or take on freelance repair work to build practical experience with hardware diagnostics, OS installation, and networking."
+    },
+    {
+      "step": "Target Entry-Level IT Roles",
+      "action": "Apply for positions like Help Desk Technician or IT Support Specialist to transition into technical roles, using certifications and newly acquired repair experience as qualifications."
+    },
+    {
+      "step": "Specialize in Repair Management",
+      "action": "Advance to roles like IT Field Service Technician or Managed Service Provider (MSP) Support Specialist after 2-3 years of hands-on experience, focusing on complex system repairs and client management."
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "candidate": "PATRICK MARAIS",
+  "job_title": "Computer Repair Technician",
+  "recommended_rewrite": "phi4",
+  "recommendation_reason": "phi4's rewrite better aligned with the job listing's emphasis on technical skills and certifications by explicitly mentioning relevant competencies like hardware/software troubleshooting and customer service, which were missing in the original resume. qwen2.5:14b's rewrite fell back to generic project management terms, failing to address the job's core requirements. Fact-check results confirmed phi4's version avoided overstating unrelated experience (e.g., security investigations) while focusing on transferable skills like problem-solving and attention to detail, which are critical for computer repair roles.",
+  "career_roadmap": [
+    {
+      "step": "Apply for the role with Rewrite A",
+      "action": "Submit the phi4-rewritten resume to the Computer Repair Technician position, emphasizing transferable skills like problem-solving, customer service, and attention to detail from security and project management roles."
+    },
+    {
+      "step": "Earn Relevant Certifications",
+      "action": "Obtain CompTIA A+ or similar certifications to bridge the gap between current experience and the technical requirements of the role."
+    },
+    {
+      "step": "Gain Hands-On Experience",
+      "action": "Volunteer or take on freelance computer repair work to build practical technical skills and demonstrate competence in hardware/software troubleshooting."
+    },
+    {
+      "step": "Target Advanced IT Roles",
+      "action": "After securing the Computer Repair Technician role, pursue advancement into IT support specialist or network administrator positions by developing expertise in system diagnostics and enterprise-level troubleshooting."
+    }
+  ]
+}

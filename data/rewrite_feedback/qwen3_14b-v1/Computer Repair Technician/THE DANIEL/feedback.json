@@ -1,0 +1,24 @@
+{
+  "candidate": "THE DANIEL",
+  "job_title": "Computer Repair Technician",
+  "recommended_rewrite": "qwen2.5:14b",
+  "recommendation_reason": "Rewrite B (qwen2.5:14b) aligns more directly with the job’s practical requirements, explicitly listing skills like 'RAM and SSD Upgrades,' 'Windows Updates and Virus Clean-Up,' and 'System Diagnostics,' which match the role’s key responsibilities. Its fact-check notes highlight relevant terms from the job listing (e.g., 'basic networking,' 'customer relations'), indicating stronger targeting. Rewrite A (phi4) focuses on abstract business skills (e.g., 'Business Analysis,' 'SQL') that are irrelevant to the hands-on, customer-facing repair role, despite its higher length and wording similarity to the original CV. The job emphasizes local, practical experience over formal qualifications, making Rewrite B’s concise, targeted approach more effective.",
+  "career_roadmap": [
+    {
+      "step": "Apply for the role with Rewrite B",
+      "action": "Submit the qwen2.5:14b rewrite to Brenda & Mick's Computer Repairs, ensuring to mention specific skills like 'virus clean-up' and 'customer service' during the informal interview."
+    },
+    {
+      "step": "Build hands-on repair experience",
+      "action": "Volunteer or take on freelance computer repair work to strengthen practical skills in hardware diagnostics, OS troubleshooting, and customer communication, which are critical for the role."
+    },
+    {
+      "step": "Pursue relevant certifications",
+      "action": "Earn certifications like CompTIA A+ or Microsoft Certified: Windows 10 to enhance credibility and open doors to more advanced IT support or repair roles."
+    },
+    {
+      "step": "Transition to full-time IT roles",
+      "action": "Target roles such as IT Support Technician or Field Service Engineer, leveraging local repair experience and certifications to move into more specialized or higher-paying positions."
+    }
+  ]
+}

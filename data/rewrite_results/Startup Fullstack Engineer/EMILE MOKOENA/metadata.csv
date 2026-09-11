@@ -1,0 +1,3 @@
+candidate,job_title,agent_model,used_fallback,rejected,retried,reasons,advisory,length_ratio,similarity,error
+EMILE MOKOENA,Startup Fullstack Engineer,phi4,False,False,True,[],['experienced cloud engineer'],0.9918111753371869,0.705982905982906,
+EMILE MOKOENA,Startup Fullstack Engineer,qwen2.5:14b,False,False,True,[],['work experience lead machine learning engineer'],1.0289017341040463,0.815,

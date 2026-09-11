@@ -1,0 +1,24 @@
+{
+  "candidate": "ALEX PARK",
+  "job_title": "Startup Fullstack Engineer",
+  "recommended_rewrite": "qwen2.5:14b",
+  "recommendation_reason": "While both rewrites fail to align with the job’s core requirements (full-stack development, React/TypeScript, backend languages like Go), the qwen2.5:14b rewrite is more concise and maintains higher wording similarity to the original, which may preserve some context. The phi4 rewrite explicitly mentions 'founding full stack engineer' in advisory notes but lacks technical alignment, risking misrepresentation. The qwen version, though still mismatched, avoids overtly false claims and is structurally cleaner, making it slightly more defensible for application.",
+  "career_roadmap": [
+    {
+      "step": "Apply for the role with qwen2.5:14b",
+      "action": "Submit the qwen2.5:14b rewrite to Pulsegrid, emphasizing any transferable skills (e.g., collaboration, testing automation) while acknowledging the mismatch in technical expertise."
+    },
+    {
+      "step": "Upskill in Full-Stack Development",
+      "action": "Enroll in a full-stack development bootcamp or course focusing on React/TypeScript, Node.js/Go, and cloud deployment to bridge the technical gap."
+    },
+    {
+      "step": "Transition to Engineering Roles",
+      "action": "Apply for junior or mid-level full-stack developer roles at startups, leveraging the testing experience as a foundation for quality assurance and collaboration."
+    },
+    {
+      "step": "Pursue Senior Engineering Positions",
+      "action": "After gaining 1–2 years of full-stack experience, target senior roles at high-growth startups, emphasizing leadership in end-to-end feature development and distributed systems."
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+candidate,job_title,agent_model,used_fallback,rejected,retried,reasons,advisory,length_ratio,similarity,error
+JORDAN VELDMAN,Computer Repair Technician,phi4,True,True,True,"['number dropped from the CV: 01', 'number dropped from the CV: 02', 'number dropped from the CV: 04', 'number dropped from the CV: 05', 'number dropped from the CV: 07', 'number dropped from the CV: 08', 'number dropped from the CV: 09', 'number dropped from the CV: 12']","['professional profile', 'rivermede architects september', 'secondary education', 'technical software skills']",1.0,1.0,
+JORDAN VELDMAN,Computer Repair Technician,qwen2.5:14b,False,False,True,[],['microsoft office jordan veldman experience candidate senior architectural technologist marchetti'],0.970878498624818,0.980466288594833,

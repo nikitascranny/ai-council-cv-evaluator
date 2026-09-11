@@ -1,0 +1,24 @@
+{
+  "candidate": "EMILE MOKOENA",
+  "job_title": "Startup Fullstack Engineer",
+  "recommended_rewrite": "qwen2.5:14b",
+  "recommendation_reason": "Rewrite B (qwen2.5:14b) has higher wording similarity (0.81 vs 0.71) and more detailed bullet points, which better align with the job listing's emphasis on technical execution (e.g., 're-projected data using ArcGIS' shows precision). While neither rewrite matches the required full-stack/Go expertise, Rewrite B's structure better highlights transferable skills like distributed systems (via Kafka-like data processing) and production readiness, which are implicitly valued by the job. The fact-check confirms no fabricated claims, ensuring authenticity.",
+  "career_roadmap": [
+    {
+      "step": "Apply for the role with Rewrite B",
+      "action": "Submit the qwen2.5:14b version to Pulsegrid, emphasizing cloud infrastructure and data pipeline experience as a foundation for full-stack learning."
+    },
+    {
+      "step": "Upskill in Full-Stack Tech",
+      "action": "Enroll in React/TypeScript and Go courses (e.g., freeCodeCamp, The Odin Project) to bridge the technical gap required for the role."
+    },
+    {
+      "step": "Build a Portfolio Project",
+      "action": "Create a full-stack application using React/Go with Kafka/TimescaleDB integration to demonstrate hands-on experience aligned with the job listing."
+    },
+    {
+      "step": "Target Hybrid Roles",
+      "action": "Apply for roles like 'Cloud Full-Stack Engineer' or 'Data Infrastructure Developer' at startups, leveraging both current cloud expertise and newly acquired full-stack skills."
+    }
+  ]
+}

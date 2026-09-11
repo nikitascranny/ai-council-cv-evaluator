@@ -1,0 +1,24 @@
+{
+  "candidate": "PONTUS PONTIOUS",
+  "job_title": "Startup Fullstack Engineer",
+  "recommended_rewrite": "qwen2.5:14b",
+  "recommendation_reason": "Rewrite B (qwen2.5:14b) directly addresses the job's technical requirements by explicitly mentioning self-study in TypeScript/React/Go and distributed systems (Kafka, Redis), which aligns with Pulsegrid's tech stack. The 'Additional Skills' section adds critical context about the candidate's proactive learning, which is essential for a fast-paced startup. While Rewrite A (phi4) focuses on finance skills, it lacks any mention of relevant tech expertise, making it misaligned with the role. The fact-check results confirm Rewrite B's higher wording similarity to the original while adding targeted skills, making it more credible and aligned with the job's needs.",
+  "career_roadmap": [
+    {
+      "step": "Apply for the role with Rewrite B",
+      "action": "Submit the qwen2.5:14b rewrite to Pulsegrid, emphasizing the 'Additional Skills' section and the candidate's commitment to learning full-stack development technologies."
+    },
+    {
+      "step": "Build technical proficiency",
+      "action": "Complete hands-on projects using TypeScript/React/Go and gain experience with event-driven architectures (Kafka, TimescaleDB) through personal projects or open-source contributions."
+    },
+    {
+      "step": "Target junior/full-stack roles",
+      "action": "Apply for junior or early-stage full-stack engineer roles at startups to gain operational experience with production systems, incident response, and distributed systems."
+    },
+    {
+      "step": "Pursue senior engineering roles",
+      "action": "After 1-2 years of startup experience, aim for senior full-stack engineer roles with a focus on scaling systems and leading technical initiatives in high-growth environments."
+    }
+  ]
+}

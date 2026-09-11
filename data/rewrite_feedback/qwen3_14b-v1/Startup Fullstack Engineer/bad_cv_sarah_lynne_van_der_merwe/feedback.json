@@ -1,0 +1,24 @@
+{
+  "candidate": "bad_cv_sarah_lynne_van_der_merwe",
+  "job_title": "Startup Fullstack Engineer",
+  "recommended_rewrite": "phi4",
+  "recommendation_reason": "Both rewrites are misaligned with the job's technical requirements, but phi4's rewrite (though still poor) retains more factual consistency and avoids the explicit number omission error in qwen2.5:14b's version. However, neither rewrite addresses the job's core needs (e.g., full-stack engineering experience, distributed systems, Go/TypeScript). The candidate's CV remains fundamentally unsuitable for this role due to lack of relevant technical experience and skills.",
+  "career_roadmap": [
+    {
+      "step": "Build Technical Foundations",
+      "action": "Enroll in intensive courses for React/TypeScript, Go, and distributed systems (e.g., Coursera, Udemy, or freeCodeCamp). Focus on hands-on projects demonstrating full-stack development and production system operations."
+    },
+    {
+      "step": "Gain Practical Experience",
+      "action": "Contribute to open-source projects or build a portfolio of engineering projects (e.g., a real-time dashboard with Kafka/TimescaleDB). Highlight these in a new, technically accurate CV."
+    },
+    {
+      "step": "Target Junior/Mid-Level Roles",
+      "action": "Apply for junior or mid-level full-stack engineer roles at startups or tech companies to gain experience with modern toolchains and agile workflows."
+    },
+    {
+      "step": "Specialize in Energy Tech",
+      "action": "Pursue domain-specific knowledge in energy systems, demand response, or IoT through certifications or partnerships with industry organizations to align with niche sectors like Pulsegrid."
+    }
+  ]
+}

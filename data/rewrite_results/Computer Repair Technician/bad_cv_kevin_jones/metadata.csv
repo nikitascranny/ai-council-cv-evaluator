@@ -1,0 +1,3 @@
+candidate,job_title,agent_model,used_fallback,rejected,retried,reasons,advisory,length_ratio,similarity,error
+bad_cv_kevin_jones,Computer Repair Technician,phi4,False,False,True,[],"['computer repair person', 'covering letter', 'dear mick', 'mick s computer repairs', 'mick s computer repairs application', 'your phone number']",2.0380014074595354,0.39191290824261277,
+bad_cv_kevin_jones,Computer Repair Technician,qwen2.5:14b,False,False,False,[],[],1.0070372976776918,0.4444444444444444,

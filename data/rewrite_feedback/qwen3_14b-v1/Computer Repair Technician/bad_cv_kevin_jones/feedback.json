@@ -1,0 +1,24 @@
+{
+  "candidate": "bad_cv_kevin_jones",
+  "job_title": "Computer Repair Technician",
+  "recommended_rewrite": "qwen2.5:14b",
+  "recommendation_reason": "Rewrite B (qwen2.5:14b) more directly aligns with the job’s emphasis on practical repair skills and customer service, explicitly mentioning 'basic computer repair and troubleshooting' in the employment history. While Rewrite A (phi4) includes a covering letter, its CV lacks focused technical details and includes irrelevant skills (e.g., 'making coffee'). Rewrite B’s fact-check indicates no retries or fallbacks, suggesting higher reliability. The job prioritizes hands-on ability over broad experience, making Rewrite B’s targeted language more effective.",
+  "career_roadmap": [
+    {
+      "step": "Apply for the role with Rewrite B",
+      "action": "Submit the qwen2.5:14b rewrite to Brenda & Mick's Computer Repairs, ensuring the covering letter (if needed) mirrors the CV’s emphasis on repair skills and customer service."
+    },
+    {
+      "step": "Build Technical Proficiency",
+      "action": "Enroll in a certified computer repair course (e.g., CompTIA A+) to gain formal credentials and deepen hands-on skills in hardware troubleshooting and OS maintenance."
+    },
+    {
+      "step": "Target Entry-Level Tech Roles",
+      "action": "Apply for roles like 'Help Desk Technician' or 'Field Service Technician' at small IT firms or retail chains to gain structured experience and expand technical expertise."
+    },
+    {
+      "step": "Specialize in Repair Services",
+      "action": "Pursue advanced certifications (e.g., PC hardware repair) and seek roles at repair shops or manufacturers to transition into full-time, specialized technician positions."
+    }
+  ]
+}

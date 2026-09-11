@@ -1,0 +1,24 @@
+{
+  "candidate": "bad_cv_jason_muller",
+  "job_title": "Computer Repair Technician",
+  "recommended_rewrite": "phi4",
+  "recommendation_reason": "Rewrite A (phi4) better aligns with the job's emphasis on practical repair skills, customer service with older adults, and reliability. It explicitly mentions patience, explaining technical concepts without jargon, and local availability—all critical for the role. While Rewrite B (qwen2.5:14b) is shorter and less tailored, its vague skills (e.g., 'Microsoft Word') and humorous tone ('School of Hard Knocks') risk appearing unprofessional. Both rewrites passed fact-checks, but phi4's version directly addresses the job's essential requirements more comprehensively.",
+  "career_roadmap": [
+    {
+      "step": "Apply for the role with Rewrite A",
+      "action": "Submit the phi4 rewrite to Mick via email, emphasizing the 'Relevance to Brenda & Mick's Computer Repairs Role' section and practical skills like RAM reseating and virus clean-ups."
+    },
+    {
+      "step": "Build targeted technical skills",
+      "action": "Enroll in a short course on basic PC hardware repair, Windows troubleshooting, and data recovery to strengthen credentials for future roles."
+    },
+    {
+      "step": "Pursue formal certification",
+      "action": "Earn a CompTIA A+ or similar certification to transition into more specialized IT support roles while maintaining hands-on repair experience."
+    },
+    {
+      "step": "Expand to IT support roles",
+      "action": "Apply for entry-level IT support positions at small businesses or repair shops to gain structured experience and build a portfolio of resolved technical issues."
+    }
+  ]
+}

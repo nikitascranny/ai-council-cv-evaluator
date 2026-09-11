@@ -1,0 +1,3 @@
+candidate,job_title,agent_model,used_fallback,rejected,retried,reasons,advisory,length_ratio,similarity,error
+PONTUS PONTIOUS,Startup Fullstack Engineer,phi4,False,False,True,[],['professional summary'],1.0733218588640276,0.4396200814111262,
+PONTUS PONTIOUS,Startup Fullstack Engineer,qwen2.5:14b,False,False,False,[],['additional skills'],1.0516351118760758,0.8032564450474898,

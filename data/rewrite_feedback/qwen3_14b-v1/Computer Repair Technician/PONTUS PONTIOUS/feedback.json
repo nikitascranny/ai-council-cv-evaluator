@@ -1,0 +1,24 @@
+{
+  "candidate": "PONTUS PONTIOUS",
+  "job_title": "Computer Repair Technician",
+  "recommended_rewrite": "phi4",
+  "recommendation_reason": "Phi4's rewrite directly aligns with the job listing's structure and priorities, explicitly listing key responsibilities, essential requirements, and desirable skills in dedicated sections. While longer, this format mirrors the employer's own phrasing (e.g., 'diagnose and fix everyday problems') and emphasizes practical repair skills. Qwen2.5:14b's rewrite, though more concise, lacks tailored sections for the role's specific needs and retains a stronger focus on financial/analytical skills irrelevant to the job. Phi4's fact-check results confirm no fallback was needed, ensuring accuracy in mapping the candidate's experience to the role.",
+  "career_roadmap": [
+    {
+      "step": "Apply for the role with Rewrite A",
+      "action": "Submit the phi4-rewritten CV to Mick via email, emphasizing the 'Key Responsibilities Relevant to the Role' section and practical repair experience mentioned in the original CV."
+    },
+    {
+      "step": "Build hands-on repair expertise",
+      "action": "Enroll in a certified computer repair course (e.g., CompTIA A+) to gain formal credentials and deepen technical skills in hardware diagnostics, Windows troubleshooting, and data recovery."
+    },
+    {
+      "step": "Target senior technician roles",
+      "action": "After 6–12 months of experience, apply for full-time senior technician positions at small repair shops, highlighting advanced skills like Windows XP maintenance and printer problem resolution."
+    },
+    {
+      "step": "Pursue entrepreneurial opportunities",
+      "action": "Within 2–3 years, consider opening a standalone repair shop or partnering with local businesses to offer on-site computer repair services, leveraging the 'staff discount' and 'job security' benefits mentioned in the job listing."
+    }
+  ]
+}

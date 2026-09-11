@@ -1,0 +1,3 @@
+candidate,job_title,agent_model,used_fallback,rejected,retried,reasons,advisory,length_ratio,similarity,error
+THE DANIEL,Startup Fullstack Engineer,phi4,False,False,True,[],"['pulsegrid role', 'relevant experience', 'south africa courses', 'south africa specialization', 'systems design', 'technical skills']",1.5142340713962945,0.4283727399165508,
+THE DANIEL,Startup Fullstack Engineer,qwen2.5:14b,False,False,False,[],"['interpersonal skills information management languages', 'management south africa bcom hons business information systems', 'south african skills business analysis sql python critical thinking data analysis automation reporting collaboration communication']",0.788974243108902,0.555765595463138,

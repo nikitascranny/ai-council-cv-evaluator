@@ -1,0 +1,20 @@
+{
+  "candidate": "GEOFF NITSCHKE",
+  "job_title": "Computer Repair Technician",
+  "recommended_rewrite": "qwen2.5:14b",
+  "recommendation_reason": "Both rewrites are factually consistent with the original CV but fail to align with the job's practical technical and customer service requirements. Rewrite B is slightly more concise and emphasizes actionable outcomes (e.g., 'simplification opportunities within research operations') compared to Rewrite A's broader, less specific claims. However, neither addresses the job's core needs (e.g., hardware repair, customer explanation skills). The fact-check results confirm no fabricated details, but the mismatch remains critical.",
+  "career_roadmap": [
+    {
+      "step": "Pivot to Technical Training",
+      "action": "Enroll in a certified computer repair course (e.g., CompTIA A+ or Microsoft MTA) to gain foundational hardware/software troubleshooting skills, then apply for the role with a revised, job-specific CV."
+    },
+    {
+      "step": "Build Practical Experience",
+      "action": "Volunteer or take an entry-level IT support role to develop hands-on repair experience and customer service skills, focusing on clear communication with non-technical users."
+    },
+    {
+      "step": "Target Specialized Roles",
+      "action": "Transition to roles like Field Service Technician or IT Hardware Specialist, leveraging certifications and experience to move into more advanced repair or consulting positions."
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "candidate": "bad_cv_jason_muller",
+  "job_title": "Startup Fullstack Engineer",
+  "recommended_rewrite": "qwen2.5:14b",
+  "recommendation_reason": "Rewrite B (qwen2.5:14b) directly addresses technical requirements mentioned in the job listing, including explicit references to TypeScript/React, Go, Kafka, TimescaleDB, and Redis—key technologies listed in the role’s responsibilities. While both rewrites have low wording similarity to the original CV, Rewrite B’s fact-check indicates no retries or fallbacks, suggesting stronger alignment with the job’s technical demands. Rewrite A (phi4) lacks specific technical skill mentions and includes less relevant experience (e.g., car wash management), making it less competitive for a role requiring distributed systems and backend expertise.",
+  "career_roadmap": [
+    {
+      "step": "Apply for the role with Rewrite B",
+      "action": "Submit the qwen2.5:14b rewrite to Pulsegrid, emphasizing the technical skills section and projects involving event-driven architectures and distributed systems."
+    },
+    {
+      "step": "Build distributed systems expertise",
+      "action": "Enroll in courses or contribute to open-source projects involving Kafka, Redis, and TimescaleDB to strengthen technical credibility for similar startup roles."
+    },
+    {
+      "step": "Target early-stage tech startups",
+      "action": "Apply for founding engineer roles at startups focused on infrastructure, IoT, or energy tech, leveraging the candidate’s demonstrated adaptability and interest in real-world problems."
+    },
+    {
+      "step": "Develop backend proficiency",
+      "action": "Deepen Go language skills and gain hands-on experience with production-grade systems to meet the 4+ years of shipping software requirement."
+    }
+  ]
+}

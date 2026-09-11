@@ -1,0 +1,24 @@
+{
+  "candidate": "GEOFF NITSCHKE",
+  "job_title": "Startup Fullstack Engineer",
+  "recommended_rewrite": "qwen2.5:14b",
+  "recommendation_reason": "Both rewrites are factually consistent with the original CV, but neither aligns with the job's technical requirements. The candidate's background in UX research and design does not match the role's demands for full-stack engineering skills (React/TypeScript, Go, distributed systems). However, Rewrite B is slightly more concise and uses active verbs (e.g., 'Spearheaded,' 'Advocated') that may marginally improve perceived competence in a non-technical context. The fact-check results indicate no critical errors in either version, but neither addresses the fundamental misalignment between the candidate's profile and the job's requirements.",
+  "career_roadmap": [
+    {
+      "step": "Pivot to Technical Skills",
+      "action": "Enroll in a coding bootcamp or online course (e.g., FreeCodeCamp, Udemy) to gain proficiency in full-stack web development, focusing on React/TypeScript and backend technologies like Go or Node.js."
+    },
+    {
+      "step": "Build a Technical Portfolio",
+      "action": "Develop open-source projects or contribute to GitHub repositories that demonstrate full-stack engineering capabilities, particularly in areas relevant to startup environments (e.g., scalable architectures, API development)."
+    },
+    {
+      "step": "Transition to Engineering Roles",
+      "action": "Apply for junior or mid-level software engineering roles at startups, emphasizing newly acquired technical skills and any relevant transferable experience (e.g., problem-solving, project management)."
+    },
+    {
+      "step": "Specialize in Startup Tech",
+      "action": "Focus on mastering technologies and frameworks common in startup ecosystems (e.g., cloud services, DevOps tools) while networking with engineers in the startup community through events and meetups."
+    }
+  ]
+}

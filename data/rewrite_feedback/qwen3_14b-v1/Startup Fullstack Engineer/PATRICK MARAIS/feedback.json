@@ -1,0 +1,28 @@
+{
+  "candidate": "PATRICK MARAIS",
+  "job_title": "Startup Fullstack Engineer",
+  "recommended_rewrite": "qwen2.5:14b",
+  "recommendation_reason": "The qwen2.5:14b rewrite more effectively aligned the candidate's non-technical background with the job listing's requirements by emphasizing transferable skills (project management, problem-solving, team leadership) while explicitly acknowledging gaps in technical expertise (e.g., 'seeking to upskill in JavaScript/Python'). Phi4's rewrite failed to address the critical mismatch between the candidate's experience (security, investigations) and the job's core requirements (fullstack engineering, agile development), falling back on vague statements about 'cross-functional collaboration' without addressing technical proficiency. The qwen2.5:14b version also proactively suggested skill-building steps, which better demonstrates self-awareness for a startup role.",
+  "career_roadmap": [
+    {
+      "step": "Apply for the role with Rewrite B",
+      "action": "Submit application using the qwen2.5:14b version, focusing on transferable skills (project management, stakeholder alignment) and expressing eagerness to upskill in required tech stack (JavaScript/Python/React)."
+    },
+    {
+      "step": "Build Technical Foundations",
+      "action": "Enroll in free/low-cost courses (e.g., freeCodeCamp, Coursera's Python for Everybody) to gain proficiency in JavaScript, Python, and fullstack frameworks. Complete personal projects (e.g., portfolio website, simple SaaS tool)."
+    },
+    {
+      "step": "Gain Startup Experience",
+      "action": "Apply for remote internships or freelance gigs at early-stage startups to gain hands-on experience with agile workflows, MVP development, and startup-specific challenges."
+    },
+    {
+      "step": "Pursue Certification",
+      "action": "Earn a certification (e.g., Google's Professional Certificate in Full Stack Development) to validate technical skills and demonstrate commitment to the field."
+    },
+    {
+      "step": "Target Senior Roles",
+      "action": "After 6-12 months of technical upskilling and startup experience, apply for Senior Fullstack Engineer roles at scaleups, emphasizing leadership experience from previous roles (e.g., managing teams, driving project outcomes)."
+    }
+  ]
+}

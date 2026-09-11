@@ -1,0 +1,28 @@
+{
+  "candidate": "bad_cv_kevin_jones",
+  "job_title": "Startup Fullstack Engineer",
+  "recommended_rewrite": "phi4",
+  "recommendation_reason": "While neither rewrite aligns with the job's technical requirements, phi4's rewrite includes an advisory note explicitly mentioning 'founding full stack engineer', which directly matches the job's title. However, both rewrites lack critical technical details (e.g., Go/TypeScript experience, distributed systems knowledge) and instead focus on irrelevant skills like 'making coffee'. phi4's version is longer and more verbose, but qwen2.5:14b's rewrite is even more dismissive of the role's requirements (e.g., 'I need money and I am willing to work'). Neither is suitable, but phi4's advisory note shows a marginal alignment with the 'founding engineer' context.",
+  "career_roadmap": [
+    {
+      "step": "Apply for the role with Rewrite B",
+      "action": "Submit the phi4 rewrite but immediately follow up with a revised CV highlighting technical skills in React/TypeScript, Go, and distributed systems (e.g., Kafka/TimescaleDB) with specific examples from past roles"
+    },
+    {
+      "step": "Upskill in core tech stack",
+      "action": "Complete a structured course in fullstack development (e.g., React/TypeScript, Go) and gain hands-on experience with event-driven architectures and time-series databases"
+    },
+    {
+      "step": "Build a portfolio project",
+      "action": "Create an open-source project or side project demonstrating energy/infrastructure-related applications (e.g., a real-time dashboard using Kafka and React)"
+    },
+    {
+      "step": "Target junior/mid-level roles",
+      "action": "Apply for junior/mid-level fullstack engineer roles at startups with similar tech stacks (e.g., SaaS, IoT, or energy tech companies) to gain relevant experience"
+    },
+    {
+      "step": "Pursue early-stage startup roles",
+      "action": "Focus on roles at pre-Series A startups to build the 'founding engineer' context required by companies like Pulsegrid"
+    }
+  ]
+}

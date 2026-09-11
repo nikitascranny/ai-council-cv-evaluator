@@ -1,0 +1,24 @@
+{
+  "candidate": "ALEX PARK",
+  "job_title": "Computer Repair Technician",
+  "recommended_rewrite": "phi4",
+  "recommendation_reason": "Rewrite A (phi4) explicitly includes essential skills from the job listing (e.g., 'Basic, practical PC/laptop repair skills', 'friendly and patient with customers') in the Key Skills section, directly aligning with the role’s requirements. While both rewrites lack strong emphasis on hands-on repair experience, phi4’s version maintains higher wording similarity to the original CV (0.93 vs. 0.74) and avoids the ‘Full-Stack Developer’ title in Rewrite B, which misrepresents the candidate’s actual background. Phi4’s version also retains the original CV’s mention of ‘honest and reliable,’ a critical requirement for the role. Although both rewrites are fact-checked as accurate, phi4’s closer alignment with the job’s practical skill focus makes it a stronger fit.",
+  "career_roadmap": [
+    {
+      "step": "Apply for the role with Rewrite A",
+      "action": "Submit the phi4 version of the CV to Mick via email or in person, emphasizing the ‘Basic, practical PC/laptop repair skills’ and customer service experience in the Key Skills section."
+    },
+    {
+      "step": "Upskill in Hardware Repair",
+      "action": "Enroll in a certified computer hardware repair course (e.g., CompTIA A+ or IT Essentials) to bridge the gap between software testing experience and hands-on repair requirements."
+    },
+    {
+      "step": "Target Entry-Level Repair Roles",
+      "action": "Apply for part-time or freelance computer repair positions at local shops or IT service providers to gain practical experience and build a portfolio of repairs."
+    },
+    {
+      "step": "Transition to Specialized Roles",
+      "action": "After 6–12 months of on-the-job experience, pursue roles like ‘Field Service Technician’ or ‘IT Support Specialist’ with emphasis on customer-facing repair and troubleshooting."
+    }
+  ]
+}

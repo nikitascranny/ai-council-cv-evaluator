@@ -1,0 +1,71 @@
+EMILE MOKOENA
+Location: Gaborone, Botswana — Cell: (+267) 71 234 567 — Email: emile.mokoena.demo@example.com — Links: Emile Mokoena — LinkedIn
+
+PROFESSIONAL SUMMARY
+A dedicated professional with hands-on experience in troubleshooting and resolving technical issues. Skilled in basic computer repair, data recovery, and customer service. Currently working towards enhancing practical skills in computer repair and customer interaction.
+
+SKILLS AND TECHNOLOGIES
+Cloud Technologies: AWS, Kubernetes, Amazon RDS, EC2, S3, IAM, VPC
+Tools: Git, GitHub, HTML, CSS, Docker, Kubernetes
+Languages & Platforms: Python, SQL, Power BI, Microsoft Excel
+Databases & Reporting: Amazon RDS, SQL Server Management Studio (SSMS), SQL Server Reporting Services (SSRS)
+
+WORK EXPERIENCE
+Technical Support Volunteer — Various Local Community Centers — Gaborone, Botswana
+October 2022 – Present
+• Provided on-site technical support to local community members, including basic computer repairs, software troubleshooting, and hardware upgrades.
+• Assisted in diagnosing and resolving issues such as slow laptop performance, virus clean-ups, and Windows update failures.
+• Conducted customer service training to improve communication skills and patience when dealing with non-technical customers.
+• Kept workstations organized and maintained a tidy work environment.
+
+Junior Data Engineer — Northgate Archive Solutions — Gaborone, Botswana
+October 2024 – December 2024
+• Validated Kalahari Retail Group account opening files against the company’s vault and database, ensuring 100% data accuracy.
+• Created M-Files reports for clients using Report Builder and SQL Server Management Studio, enhancing report clarity by 15%.
+• Automated dashboards and reports using Power BI and SQL Server Management Studio to track warehouse capacity, client distribution, and staffing, resulting in a 25% increase in operational efficiency.
+• Improved billing processes by 5% through the creation of a Daily Indexing Report using SQL Server Reporting Services (SSRS).
+• Updated records in an internal archive database using MS Excel and data indexing to ensure accurate data management.
+
+Lead Machine Learning Engineer — Nimbus AI Collective — Gaborone, Botswana (Remote)
+July 2022 – June 2024
+• Processed and preprocessed over 100 GB of satellite imagery data using Python libraries.
+• Re-projected data for 10+ projects from a specialized regional CRS to a standard CRS using ArcGIS.
+• Enhanced data preprocessing accuracy by 20% through advanced Python libraries.
+• Collected data from public environmental registries through web scraping, ensuring accurate data integration.
+• Conducted data analysis for public transportation networks, leading to a 10% improvement in operational efficiency.
+
+Data Science Intern — Glacier Analytics — Gaborone, Botswana (Remote)
+October 2022 – January 2023
+• Managed 10+ repositories using Git for seamless collaboration and code integrity.
+• Conducted exploratory data analysis on a regional taxi industry dataset to inform strategic investment decisions.
+• Provided insights contributing to a 20% increase in investment returns.
+• Conducted statistical analysis and generated reports that improved decision-making processes.
+
+Data Science Intern — Beacon Foundation — Gaborone, Botswana (Remote)
+October 2022 – October 2022
+• Developed and optimized machine learning classifiers with an accuracy of 85%.
+• Performed statistical analysis on data from multiple sources, generating reports that improved decision-making processes.
+• Conducted data analysis and visualization leading to actionable insights that improved business strategies by 20%.
+
+VOLUNTARY AND PART-TIME
+Machine Learning Engineer — Nimbus AI Collective — Gaborone, Botswana (Remote)
+August 2022 – February 2024
+• Led AI Innovation challenges involving data science, machine learning engineering, and artificial intelligence.
+• Successfully deployed 3 community-driven applications.
+
+CERTIFICATIONS
+• AWS Developer – Associate (In Progress)
+• AWS Solutions Architect – Associate
+Credential ID supersecret
+• Kubernetes and Cloud Native Associate
+Credential ID LF-supersecret
+• AWS Certified Cloud Practitioner
+Credential ID supersecret
+
+EDUCATION
+• Diploma in Cloud Engineering – AltSchool Africa
+July 2026
+• Postgraduate/Professional Diploma in Procurement and Supply – Chartered Institute of Procurement and Supply
+November 2025
+• Applied Data Science – WorldQuant University
+October 2024

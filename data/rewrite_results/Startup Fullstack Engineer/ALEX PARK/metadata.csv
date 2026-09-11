@@ -1,0 +1,3 @@
+candidate,job_title,agent_model,used_fallback,rejected,retried,reasons,advisory,length_ratio,similarity,error
+ALEX PARK,Startup Fullstack Engineer,phi4,False,False,False,[],"['founding full stack engineer', 'relevant experience', 'this cv']",1.0852067721343326,0.37775647171620325,
+ALEX PARK,Startup Fullstack Engineer,qwen2.5:14b,False,False,False,[],['full stack developer west edge'],0.9567027477102414,0.8524923702950152,

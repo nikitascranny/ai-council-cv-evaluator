@@ -1,0 +1,28 @@
+{
+  "candidate": "bad_cv_sarah_lynne_van_der_merwe",
+  "job_title": "Computer Repair Technician",
+  "recommended_rewrite": "qwen2.5:14b",
+  "recommendation_reason": "Rewrite B (qwen2.5:14b) aligns better with the job listing’s emphasis on practical repair skills, customer service, and technical problem-solving, using straightforward language that avoids buzzwords. While both rewrites lack relevant technical experience, Rewrite B’s fact-check confirms it retained all numerical data (e.g., 100%, 47) and avoided fallbacks, indicating higher reliability. Rewrite A (phi4) uses vague, non-technical jargon and was flagged for dropping critical numbers, making it less credible for a role requiring concrete, hands-on skills.",
+  "career_roadmap": [
+    {
+      "step": "Apply for the role with Rewrite B",
+      "action": "Submit the qwen2.5:14b rewrite to Mick@brendaandmicksrepairs-example.co.uk, emphasizing any transferable skills (e.g., customer service, problem-solving) and willingness to learn repair techniques on the job."
+    },
+    {
+      "step": "Upskill in Computer Repair",
+      "action": "Enroll in a certified computer repair course (e.g., CompTIA A+ or local vocational training) to gain foundational technical skills, focusing on hardware diagnostics, OS troubleshooting, and basic component upgrades."
+    },
+    {
+      "step": "Pursue Entry-Level Tech Support Roles",
+      "action": "Apply for part-time or entry-level positions in computer repair shops, IT support, or electronics stores to build hands-on experience and demonstrate reliability with practical tasks like RAM reseating or virus clean-ups."
+    },
+    {
+      "step": "Transition to Specialized Technician Roles",
+      "action": "After 6–12 months of experience, target roles requiring advanced skills (e.g., data recovery, screen repair) and consider certifications in specific areas (e.g., Windows XP maintenance, printer troubleshooting) to align with the job listing’s desirable requirements."
+    },
+    {
+      "step": "Explore Management or Freelance Opportunities",
+      "action": "With 2–3 years of experience, pursue supervisory roles in repair shops or freelance computer repair services, leveraging the flexibility and trust-based culture highlighted in the job listing’s ‘What We Offer’ section."
+    }
+  ]
+}

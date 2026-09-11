@@ -1,0 +1,3 @@
+candidate,job_title,agent_model,used_fallback,rejected,retried,reasons,advisory,length_ratio,similarity,error
+bad_cv_sarah_lynne_van_der_merwe,Startup Fullstack Engineer,phi4,False,False,True,[],['this cv'],1.1656908665105385,0.5870020964360587,
+bad_cv_sarah_lynne_van_der_merwe,Startup Fullstack Engineer,qwen2.5:14b,True,True,True,"['1', 'number dropped from the CV: 2021']",[],1.0,1.0,

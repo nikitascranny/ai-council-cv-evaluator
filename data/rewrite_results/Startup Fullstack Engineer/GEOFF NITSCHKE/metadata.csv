@@ -1,0 +1,3 @@
+candidate,job_title,agent_model,used_fallback,rejected,retried,reasons,advisory,length_ratio,similarity,error
+GEOFF NITSCHKE,Startup Fullstack Engineer,phi4,False,False,False,[],[],1.0666251556662516,0.8781954887218045,
+GEOFF NITSCHKE,Startup Fullstack Engineer,qwen2.5:14b,False,False,False,[],['supported ux'],0.9431299294312993,0.8805732484076433,

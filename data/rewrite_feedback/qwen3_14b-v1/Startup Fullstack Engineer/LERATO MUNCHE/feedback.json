@@ -1,0 +1,24 @@
+{
+  "candidate": "LERATO MUNCHE",
+  "job_title": "Startup Fullstack Engineer",
+  "recommended_rewrite": "phi4",
+  "recommendation_reason": "phi4's rewrite better aligns with the job listing by emphasizing technical skills (JavaScript, Python, HTML/CSS) and project management experience relevant to a fullstack engineer role, while qwen2.5:14b retained excessive focus on non-technical partnership and marketing roles. phi4 also streamlined the resume to highlight coding and product management skills, which are critical for a startup engineering position, as noted in the fact-check results.",
+  "career_roadmap": [
+    {
+      "step": "Apply for the role with Rewrite B",
+      "action": "Submit the phi4-optimized resume to the Startup Fullstack Engineer position, ensuring technical skills and project management experience are front-facing."
+    },
+    {
+      "step": "Upskill in Fullstack Development",
+      "action": "Enroll in advanced courses (e.g., React, Node.js, cloud platforms) and complete coding bootcamps to bridge gaps between current skills and senior engineering expectations."
+    },
+    {
+      "step": "Gain Startup-Specific Experience",
+      "action": "Pursue internships or freelance projects with startups to build a portfolio demonstrating agile development, rapid prototyping, and end-to-end product delivery."
+    },
+    {
+      "step": "Target Senior Engineering Roles",
+      "action": "Apply for roles like Senior Fullstack Engineer or Tech Lead at scaleups, leveraging the candidate's unique blend of technical expertise and cross-functional collaboration experience."
+    }
+  ]
+}

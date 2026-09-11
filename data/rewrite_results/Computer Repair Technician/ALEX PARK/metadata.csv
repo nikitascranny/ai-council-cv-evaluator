@@ -1,0 +1,3 @@
+candidate,job_title,agent_model,used_fallback,rejected,retried,reasons,advisory,length_ratio,similarity,error
+ALEX PARK,Computer Repair Technician,phi4,False,False,True,[],[],1.0266444629475437,0.9337349397590361,
+ALEX PARK,Computer Repair Technician,qwen2.5:14b,False,False,False,[],"['alex park west edge', 'professional profile with']",0.8517901748542881,0.7438370846730975,

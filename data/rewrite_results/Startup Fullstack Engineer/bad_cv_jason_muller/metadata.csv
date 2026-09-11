@@ -1,0 +1,3 @@
+candidate,job_title,agent_model,used_fallback,rejected,retried,reasons,advisory,length_ratio,similarity,error
+bad_cv_jason_muller,Startup Fullstack Engineer,phi4,False,False,True,[],"['founding full stack engineer', 'this cv']",1.8849706129303108,0.2536997885835095,
+bad_cv_jason_muller,Startup Fullstack Engineer,qwen2.5:14b,False,False,False,[],"['high school completed', 'jason muller email', 'redis projects and contributions', 'technical skills']",1.5079764903442485,0.2877030162412993,

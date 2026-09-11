@@ -1,0 +1,24 @@
+{
+  "candidate": "NDLOVU KARABO REFILWE",
+  "job_title": "Startup Fullstack Engineer",
+  "recommended_rewrite": "phi4",
+  "recommendation_reason": "The phi4 rewrite better aligns with the job listing's emphasis on technical skills by rephrasing non-technical experience into transferable soft skills (e.g., 'organizing disposal of records' becomes 'implementing retention schedules'). However, the fact-check reveals the candidate lacks core fullstack engineering skills (e.g., coding, frameworks) required for the role. Both rewrites failed to address this gap, but phi4's cleaner structure and focus on process-oriented language made it slightly more aligned with the job's collaborative, problem-solving tone.",
+  "career_roadmap": [
+    {
+      "step": "Upskill in Fullstack Development",
+      "action": "Enroll in a coding bootcamp or online course (e.g., FreeCodeCamp, Udemy) to learn JavaScript/TypeScript, React, Node.js, and cloud platforms like AWS. Build a portfolio of projects demonstrating both front-end and back-end capabilities."
+    },
+    {
+      "step": "Gain Technical Experience",
+      "action": "Seek internships or freelance opportunities in software development, focusing on startups to align with the job's context. Contribute to open-source projects to demonstrate collaboration and technical proficiency."
+    },
+    {
+      "step": "Pursue Entry-Level Developer Roles",
+      "action": "Apply for junior/fullstack developer positions at startups, emphasizing transferable skills (e.g., project management, attention to detail) alongside newly acquired technical competencies."
+    },
+    {
+      "step": "Specialize in Startup-Specific Tech",
+      "action": "Deepen expertise in scalable architectures, DevOps, and agile methodologies to target senior roles in high-growth tech environments."
+    }
+  ]
+}

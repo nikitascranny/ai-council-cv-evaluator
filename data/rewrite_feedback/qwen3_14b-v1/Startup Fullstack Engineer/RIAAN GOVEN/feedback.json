@@ -1,0 +1,24 @@
+{
+  "candidate": "RIAAN GOVEN",
+  "job_title": "Startup Fullstack Engineer",
+  "recommended_rewrite": "qwen2.5:14b",
+  "recommendation_reason": "The qwen2.5:14b rewrite better aligns with the technical focus of a Fullstack Engineer role by emphasizing hands-on development experience (JavaScript, Python, CMS systems) and project-specific achievements, despite fallbacks on flagged issues. It avoids overstated percentages (e.g., 'Account Management100') that might seem subjective for a technical role, while retaining relevant metrics like the 500% social media growth. The phi4 version, though fact-checked, lacks the same level of technical detail and project specificity critical for a startup engineering position.",
+  "career_roadmap": [
+    {
+      "step": "Apply for the role with Rewrite B",
+      "action": "Submit the qwen2.5:14b rewrite to the Startup Fullstack Engineer position, highlighting technical skills (JavaScript, Python, CMS systems) and measurable achievements (e.g., 500% social media growth, digital ecosystem development)."
+    },
+    {
+      "step": "Enhance Fullstack Technical Depth",
+      "action": "Deepen expertise in modern fullstack frameworks (React, Node.js, Django) and cloud platforms (AWS, Azure) through courses or open-source contributions to bridge any gaps between current experience and startup engineering expectations."
+    },
+    {
+      "step": "Target Startup Engineering Roles",
+      "action": "Pursue roles like Fullstack Engineer or Tech Lead at scale-up startups, leveraging the Masters in Digital Business and UX Design credentials to demonstrate both technical and product-oriented capabilities."
+    },
+    {
+      "step": "Build Startup-Specific Portfolio",
+      "action": "Develop a portfolio showcasing startup-relevant projects (e.g., PWA development, API integrations) and contribute to open-source tools used in agile environments to align with startup culture."
+    }
+  ]
+}

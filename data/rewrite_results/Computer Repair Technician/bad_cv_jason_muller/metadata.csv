@@ -1,0 +1,3 @@
+candidate,job_title,agent_model,used_fallback,rejected,retried,reasons,advisory,length_ratio,similarity,error
+bad_cv_jason_muller,Computer Repair Technician,phi4,False,False,False,[],"['education high school passed', 'mick s computer repairs', 'mick s computer repairs role']",1.6314021830394627,0.30180180180180183,
+bad_cv_jason_muller,Computer Repair Technician,qwen2.5:14b,False,False,False,[],"['computer repair person', 'mick s computer repairs']",0.9689336691855583,0.6894586894586895,

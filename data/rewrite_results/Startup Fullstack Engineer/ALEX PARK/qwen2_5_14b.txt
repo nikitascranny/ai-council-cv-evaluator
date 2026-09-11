@@ -1,0 +1,62 @@
+Alex Park – Full-Stack Developer
+West Edge, Namibia
+Contact Number: 060 000 0000
+Email: alex.Park@example.com
+
+Professional Profile
+I am a Certified Software Test Analyst with experience in planning and executing test plans, and documenting and tracking defects throughout all phases of the Software Development Lifecycle. My skills in testing front-end and back-end applications, along with proficiency in tools such as Playwright and JEST, make me well-suited for roles that require end-to-end testing and automation. Additionally, my experience in developing and documenting Test Plans, as well as my ability to collaborate across teams, positions me as a valuable contributor to any engineering team.
+
+Key Skills
+• Conducting Test Analysis of requirements and generating Test Plans.
+• Querying Test Data from various SQL databases.
+• Tracking defects, determining root causes, and monitoring defect trends.
+• Building reports (dashboards) on sprint progress, testing tasks, and risks.
+• Automating Test scenarios using various testing tools and maintaining automated tests.
+• Creating and reviewing merge requests.
+• Communicating with teams in various ceremonies and providing feedback on feature impact.
+• Collaborating across teams throughout the end-to-end process.
+• Providing training to new recruits on Testing fundamentals.
+
+Education and Qualifications
+Tertiary
+• ISTQB Foundations of a Test Analyst Certificate: SASTQB
+• Bachelor of Commerce – Honours in Management: Cape Atlantic University (CAU)
+• Bachelor of Administration in Management and Public Administration (Undergrad): Cape Atlantic University (CAU)
+Secondary
+• National Senior Certificate: Harbour View High School
+
+Career Summary
+April 2017 – Present
+Intermediate Test Analyst – Operations Platform in the Retail IT Department: Meridian Investment Services (Pty) Ltd
+Key responsibilities
+• Conducting Test Analysis on Requirements.
+• Developing and documenting Test Plans.
+• Obtaining Test Data for various testing scenarios via database queries and APIs.
+• Executing Test Plans using functional and non-functional methods of testing.
+• Automating tests on various APIs, including synchronous and asynchronous requests, and generating mock requests.
+• Maintaining tests and monitoring failures in CI/CD pipelines.
+• Reviewing and approving Merge requests.
+• Logging defects and conducting root cause analysis.
+• Attending Tech discussions, refinement, and grooming ceremonies.
+• Attending end-to-end discussions.
+• Providing user prod-support.
+• Training new recruits in Testing.
+• Documenting learning material and how-to guidelines.
+
+December 2016 – April 2017
+Work-Coordination – Shared Services Department: Meridian Investment Services (Pty) Ltd
+Key Responsibilities
+• Linking and indexing client service requests.
+• Allocating service requests to relevant teams in the Retail Operations division.
+• Identifying system issues.
+• Testing cases for newly implemented IT projects and providing feedback.
+• Assisting with training for new recruits.
+
+February 2016 – November 2016
+Insurance Consultant – AssureNet Insurance Group (Pty) Ltd
+Key Responsibilities
+• Client Servicing on various motor vehicle, household, and building insurance brands.
+• Providing clients with information and understanding regarding policy terms and conditions.
+• Assisting in claims procedures.
+• Assisting brokers in policy administration.
+• Cross-selling additional products and policies.

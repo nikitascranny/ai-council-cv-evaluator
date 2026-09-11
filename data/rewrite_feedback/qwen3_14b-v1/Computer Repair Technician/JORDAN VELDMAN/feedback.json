@@ -1,0 +1,24 @@
+{
+  "candidate": "JORDAN VELDMAN",
+  "job_title": "Computer Repair Technician",
+  "recommended_rewrite": "qwen2.5:14b",
+  "recommendation_reason": "The qwen2.5:14b rewrite better aligns with the job listing by emphasizing technical software (SQL, Python, AutoCAD, Revit) and project management skills, which are relevant to IT roles. While the original resume focuses on architecture, the rewrite highlights the candidate's transition into IT, addressing the job's need for problem-solving and digital tools. The fact-check confirms the rewrite maintains high similarity to the original while incorporating the advisory note about Microsoft Office and IT experience, making it more suitable for a Computer Repair Technician role than the phi4 version.",
+  "career_roadmap": [
+    {
+      "step": "Apply for the role with Rewrite B",
+      "action": "Submit the qwen2.5:14b resume to the Computer Repair Technician position, emphasizing technical software proficiency and project coordination experience."
+    },
+    {
+      "step": "Upskill in IT Hardware/Repair",
+      "action": "Enroll in CompTIA A+ or similar certification courses to bridge the gap between architectural software skills and hands-on computer repair expertise."
+    },
+    {
+      "step": "Gain Hands-On Experience",
+      "action": "Pursue internships or entry-level roles in IT support or computer repair to build practical troubleshooting and hardware diagnostic skills."
+    },
+    {
+      "step": "Transition to IT Specialization",
+      "action": "Target roles like IT Support Specialist or Systems Administrator, leveraging architectural project management experience and newfound technical certifications."
+    }
+  ]
+}
