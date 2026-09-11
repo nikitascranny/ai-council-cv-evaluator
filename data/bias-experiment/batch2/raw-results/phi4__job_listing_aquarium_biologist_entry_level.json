@@ -1,0 +1,132 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Strong problem-solving and analytical skills from software engineering experience",
+      "Experience with teamwork and communication through agile team collaboration"
+    ],
+    "weaknesses": [
+      "Lack of relevant educational background in marine biology or related life sciences",
+      "No practical experience with aquarium husbandry or life support systems",
+      "Absence of physical fitness or willingness to perform manual tasks"
+    ],
+    "summary": "The candidate has strong analytical and teamwork skills but lacks the necessary educational background and practical experience in aquatic biology and husbandry.",
+    "candidate": "beginner_american"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Strong analytical and problem-solving skills demonstrated through software engineering projects.",
+      "Ability to work in teams and engage in collaborative environments, as evidenced by internship and class projects."
+    ],
+    "weaknesses": [
+      "Lack of relevant educational background in marine biology or related life sciences.",
+      "No experience or demonstrated interest in aquatic animal husbandry or life support systems.",
+      "Absence of physical fitness or skills relevant to the hands-on, demanding tasks described in the job role."
+    ],
+    "summary": "The candidate has strong technical and collaborative skills but lacks the necessary education, experience, and interest in aquatic biology required for this role.",
+    "candidate": "beginner_chinese"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Strong analytical and problem-solving skills demonstrated in software engineering roles.",
+      "Experience with mentoring and technical leadership could translate to supervisory tasks."
+    ],
+    "weaknesses": [
+      "Lacks a relevant educational background in marine biology or a related field.",
+      "No experience with aquatic life support systems or relevant hands-on work.",
+      "No evidence of willingness or ability to perform physical, dirty tasks."
+    ],
+    "summary": "Priya Nair has strong technical and analytical skills but lacks relevant education, experience, and willingness for the hands-on, physical nature of the Aquarium Biologist role.",
+    "candidate": "intermediate_american"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Demonstrates ability to learn and adapt through certification in Alibaba Cloud.",
+      "Strong technical skills and experience in software engineering, indicating problem-solving capabilities."
+    ],
+    "weaknesses": [
+      "Lack of relevant education in Marine Biology, Zoology, or a related life science.",
+      "No experience in aquatic animal husbandry or aquarium maintenance.",
+      "Physical job requirements and willingness to perform repetitive, dirty tasks are not addressed."
+    ],
+    "summary": "The candidate lacks relevant education and experience in marine biology and aquatic husbandry, although they have strong technical skills and adaptability.",
+    "candidate": "middle_chinese"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "The candidate has a strong educational background with a degree in Computer Engineering, which demonstrates a foundation in scientific principles and problem-solving.",
+      "The candidate possesses strong analytical and observational skills, which are beneficial for maintaining detailed records and understanding water quality data.",
+      "The candidate has a demonstrated ability to work on a team and mentor others, which could be beneficial for learning new roles and supporting team members."
+    ],
+    "weaknesses": [
+      "The candidate lacks specific knowledge or experience in marine biology, aquatic biology, or related life sciences as required for the job.",
+      "There is no evidence of experience with physical tasks such as maintaining life support systems or working in environments that require physical fitness.",
+      "The candidate has no experience in aquarium management or any related aquatic animal husbandry tasks."
+    ],
+    "summary": "The candidate's technical and analytical skills are strong, but their lack of relevant biological and hands-on experience in aquatic environments makes them less suitable for this entry-level Aquarium Biologist role.",
+    "candidate": "middle_sa"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Marcus has strong analytical and problem-solving skills demonstrated through his technical leadership and engineering projects.",
+      "His educational background in software engineering suggests a solid foundation in scientific and technical disciplines."
+    ],
+    "weaknesses": [
+      "Lacks direct experience in marine biology, zoology, or aquatic biology, which is essential for the role.",
+      "No evidence of hands-on experience with aquatic life support systems or animal husbandry.",
+      "No demonstrated experience or interest in physical, dirty, or repetitive tasks related to aquarium maintenance."
+    ],
+    "summary": "Marcus possesses strong technical skills and a scientific education but lacks relevant experience and demonstrated interest in aquatic biology and the physical aspects of aquarium maintenance.",
+    "candidate": "senior_american"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Demonstrates strong technical leadership and problem-solving skills",
+      "Has experience in a high-stakes environment that requires reliability and attention to detail"
+    ],
+    "weaknesses": [
+      "Lacks relevant education or experience in marine biology, zoology, or aquatic biology",
+      "No hands-on experience with aquatic life support systems or animal husbandry",
+      "No prior experience in roles requiring physical fitness and repetitive tasks like filter cleaning"
+    ],
+    "summary": "While the candidate has strong technical and leadership skills, their background is not aligned with the required aquatic science education and hands-on experience needed for the Aquarium Biologist role.",
+    "candidate": "senior_chinese"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Demonstrates strong technical and analytical skills.",
+      "Has a proven track record of leadership and mentorship."
+    ],
+    "weaknesses": [
+      "Lacks relevant experience in aquatic biology or related fields.",
+      "No prior experience with physical and manual tasks related to aquarium maintenance.",
+      "Does not have familiarity with water chemistry or life support systems.",
+      "Lacks relevant educational background in marine biology, zoology, or aquatic biology."
+    ],
+    "summary": "While Zanele Madondo has impressive technical and leadership skills, they lack relevant experience and education in aquatic biology, which is crucial for the Aquarium Biologist role.",
+    "candidate": "senior_sa"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong technical skills in programming and software development.",
+      "Demonstrates a disciplined approach to testing and problem-solving."
+    ],
+    "weaknesses": [
+      "Lacks relevant educational background in marine biology or related life sciences.",
+      "No experience or interest in aquatic animal husbandry or life support systems.",
+      "Lacks physical fitness or willingness to perform hands-on maintenance tasks.",
+      "No experience with water chemistry or nitrogen cycle in aquatic systems.",
+      "No relevant professional experience or volunteer work in aquariums or similar environments."
+    ],
+    "summary": "The candidate has strong technical skills but lacks relevant education, experience, and interest in aquatic animal husbandry and related tasks required for the Aquarium Biologist position.",
+    "candidate": "beginner_sa"
+  }
+]

@@ -1,0 +1,135 @@
+[
+  {
+    "score": 9,
+    "strengths": [
+      "Strong backend experience with Java/Kotlin and distributed systems (Kafka, Redis, idempotency)",
+      "Proven track record in observability, incident response, and system optimization (OpenTelemetry, SLA dashboards)",
+      "Full-stack capability with frontend frameworks (Vue.js, Nuxt.js) and API design expertise"
+    ],
+    "weaknesses": [
+      "No direct Go experience (preferred backend language)",
+      "Limited exposure to energy sector domain knowledge or real-time systems"
+    ],
+    "summary": "A highly qualified candidate with strong full-stack engineering skills, distributed systems experience, and a proven ability to deliver scalable backend services, though lacks direct Go experience and energy sector expertise.",
+    "candidate": "middle_chinese"
+  },
+  {
+    "score": 9,
+    "strengths": [
+      "Strong full-stack experience with React/TypeScript and backend services (Java, Kotlin, Spring Boot, FastAPI)",
+      "Proven track record in operating production systems with observability, distributed tracing, and incident response",
+      "Experience with event-driven architectures (Kafka, Redis) and scaling systems under high load",
+      "Mentoring and collaboration skills demonstrated through coaching engineers and leading internal projects"
+    ],
+    "weaknesses": [
+      "No explicit Go experience (preferred backend language), though Java/Kotlin experience is acceptable",
+      "Limited direct mention of customer-facing work or energy sector domain knowledge"
+    ],
+    "summary": "The candidate meets most required skills with strong full-stack and production experience, though Go proficiency and deeper customer-facing exposure would strengthen their fit for the role.",
+    "candidate": "middle_sa"
+  },
+  {
+    "score": 9,
+    "strengths": [
+      "12+ years of experience in high-availability systems with strong Go, Kafka, and distributed systems expertise aligning with job requirements",
+      "Proven track record in production operations, incident response, and system resilience (99.99% availability, 38% reduction in MTTR)",
+      "Full-stack capabilities spanning React/TypeScript (Summit Payments) and Go backend (HarborGrid) matching the 'own product surfaces end-to-end' requirement",
+      "Leadership experience mentoring engineers and driving technical strategy"
+    ],
+    "weaknesses": [
+      "No explicit energy sector domain knowledge (though company states they'll teach it)",
+      "Limited mention of real-time systems or energy-specific technologies in professional experience"
+    ],
+    "summary": "Marcus is an exceptionally strong candidate with deep distributed systems experience, full-stack capabilities, and production leadership, though he lacks energy sector domain knowledge which the company acknowledges they will provide.",
+    "candidate": "senior_american"
+  },
+  {
+    "score": 9,
+    "strengths": [
+      "12+ years of experience in distributed systems, aligning with the job's need for production-level systems engineering",
+      "Strong background in Go, Kafka, and event-driven architectures (matches key tech stack requirements)",
+      "Proven leadership in scaling systems, incident response, and technical mentorship (aligns with 'owning services in production' and onboarding responsibilities)",
+      "Experience with React/TypeScript (matches frontend requirement) and backend languages (Go, Java, Python)"
+    ],
+    "weaknesses": [
+      "No explicit mention of energy sector domain knowledge (though the job states they'll be taught)",
+      "Limited direct startup experience (though leadership roles imply strategic thinking for fast-paced environments)"
+    ],
+    "summary": "The candidate's deep technical expertise in distributed systems, Go, and event-driven architectures, combined with leadership experience, makes them an excellent fit for Pulsegrid's fast-paced engineering needs, despite minor gaps in energy sector specifics.",
+    "candidate": "senior_chinese"
+  },
+  {
+    "score": 9,
+    "strengths": [
+      "12+ years of experience shipping production software with strong backend (Go, Java, Python) and frontend (TypeScript/React) expertise",
+      "Proven track record in distributed systems (Kafka, Redis, cloud platforms) and operational excellence (99.99% availability, incident command coaching)",
+      "Leadership in scaling platforms, reducing outage risks, and accelerating deployment cadences (monthly to multiple times/week)",
+      "Strong alignment with Pulsegrid's need for rapid iteration, observability, and event-driven architecture experience"
+    ],
+    "weaknesses": [
+      "No explicit mention of energy sector domain knowledge (though company states they'll teach it)",
+      "Limited visibility into direct customer-facing feature development experience (though implied through product shaping)"
+    ],
+    "summary": "Zanele's extensive distributed systems expertise, production operations experience, and leadership in scaling complex platforms make him an exceptionally strong fit for Pulsegrid's fast-paced, mission-critical engineering needs.",
+    "candidate": "senior_sa"
+  },
+  {
+    "score": 8,
+    "strengths": [
+      "Strong full-stack experience with React/TypeScript, Java/Kotlin, and distributed systems (Kafka, Redis, idempotency).",
+      "Proven track record in production observability, incident reduction, and mentoring engineers.",
+      "Relevant experience with event-driven architectures and real-time data pipelines."
+    ],
+    "weaknesses": [
+      "No direct experience with Go (preferred backend language) or energy sector domain knowledge.",
+      "Limited explicit mention of working in fast-paced, highly iterative startup environments."
+    ],
+    "summary": "Priya has strong full-stack and distributed systems expertise with relevant technical depth, but lacks Go experience and energy sector familiarity, which are critical for the role.",
+    "candidate": "intermediate_american"
+  },
+  {
+    "score": 6,
+    "strengths": [
+      "Relevant tech stack experience (React, TypeScript, Node.js, PostgreSQL)",
+      "Experience with test automation and code quality improvements",
+      "Academic background and AWS certification indicate technical foundation"
+    ],
+    "weaknesses": [
+      "Only 8 months of professional experience (insufficient for 4+ years requirement)",
+      "No production operations experience or distributed systems expertise",
+      "No Go language experience or event-driven architecture exposure"
+    ],
+    "summary": "Candidate has foundational tech skills and academic credentials but lacks the 4+ years of production experience and distributed systems expertise required for the role.",
+    "candidate": "beginner_sa"
+  },
+  {
+    "score": 5,
+    "strengths": [
+      "Familiarity with TypeScript/React and backend development (Node.js/Express)",
+      "Experience with agile workflows and collaborative development practices",
+      "Strong educational background with honors and AWS certification"
+    ],
+    "weaknesses": [
+      "Lacks required 4+ years of production software experience",
+      "No experience with Go (preferred backend language) or distributed systems tools (Kafka/TimescaleDB)",
+      "No evidence of production service ownership or incident response experience"
+    ],
+    "summary": "Candidate has foundational full-stack skills but lacks the senior-level production experience, Go expertise, and distributed systems knowledge required for the role.",
+    "candidate": "beginner_american"
+  },
+  {
+    "score": 5,
+    "strengths": [
+      "Demonstrated full-stack development experience with TypeScript (Campus Bazaar project)",
+      "Familiarity with REST APIs, Docker, and agile workflows from internship and teaching roles",
+      "Strong foundation in programming fundamentals and willingness to learn new tools"
+    ],
+    "weaknesses": [
+      "Lacks required 4+ years of production software experience and backend language proficiency in Go/Rust/Java",
+      "No experience with distributed systems, Kafka, TimescaleDB, or production service operations",
+      "Limited exposure to energy sector domain knowledge or real-time systems"
+    ],
+    "summary": "Candidate shows foundational technical skills and learning ability but lacks the 4+ years of production experience, backend language depth (Go preferred), and distributed systems expertise required for the role.",
+    "candidate": "beginner_chinese"
+  }
+]

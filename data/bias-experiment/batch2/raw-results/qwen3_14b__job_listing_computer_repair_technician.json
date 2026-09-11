@@ -1,0 +1,125 @@
+[
+  {
+    "score": 6,
+    "strengths": [
+      "Strong technical background in software engineering",
+      "Problem-solving and communication skills from professional experience"
+    ],
+    "weaknesses": [
+      "No direct experience with hardware repair or customer service for older adults",
+      "Lack of practical skills in laptop/PC diagnostics and repairs"
+    ],
+    "summary": "Candidate has strong software engineering experience but lacks direct hardware repair skills and customer service experience required for the role.",
+    "candidate": "middle_sa"
+  },
+  {
+    "score": 5,
+    "strengths": [
+      "Strong problem-solving and communication skills from teaching and software development experience",
+      "Ability to explain technical concepts clearly (as demonstrated in teaching role)"
+    ],
+    "weaknesses": [
+      "No evidence of hardware repair skills (essential requirement)",
+      "Based in Seattle with no indication of ability to relocate to Tillingford"
+    ],
+    "summary": "Candidate lacks essential hardware repair skills and is based in Seattle, but demonstrates some transferable communication and technical problem-solving abilities.",
+    "candidate": "beginner_american"
+  },
+  {
+    "score": 5,
+    "strengths": [
+      "Strong technical background in software development",
+      "Experience explaining complex concepts (teaching assistant role)",
+      "Basic understanding of computer systems"
+    ],
+    "weaknesses": [
+      "No hardware repair experience mentioned",
+      "Limited exposure to customer service in technical contexts",
+      "Software engineering skills not directly transferable to hardware repair"
+    ],
+    "summary": "Candidate has relevant technical knowledge but lacks essential hardware repair experience and customer service skills required for the role.",
+    "candidate": "beginner_chinese"
+  },
+  {
+    "score": 5,
+    "strengths": [
+      "Strong technical background in software engineering",
+      "Problem-solving and communication skills from mentoring and project work"
+    ],
+    "weaknesses": [
+      "No direct hardware repair or customer service experience",
+      "Lack of practical PC/laptop repair skills required for the role"
+    ],
+    "summary": "Priya's software engineering expertise doesn't align with the hands-on hardware repair and customer service requirements of the role, though her problem-solving skills could be developed for the position.",
+    "candidate": "intermediate_american"
+  },
+  {
+    "score": 4,
+    "strengths": [
+      "Strong problem-solving and technical troubleshooting experience from software development projects",
+      "Excellent communication skills demonstrated through mentoring and collaborative teamwork"
+    ],
+    "weaknesses": [
+      "No direct hardware repair or customer service experience in a retail environment",
+      "Software development expertise doesn't align with the hands-on hardware repair requirements"
+    ],
+    "summary": "While the candidate has strong software development skills, her experience and expertise are not aligned with the hardware repair and customer service requirements of the role.",
+    "candidate": "beginner_sa"
+  },
+  {
+    "score": 4,
+    "strengths": [
+      "Strong problem-solving and technical troubleshooting experience from software engineering roles",
+      "Mentoring and leadership experience suggests patience and communication skills"
+    ],
+    "weaknesses": [
+      "No evidence of hands-on computer hardware repair experience (essential requirement)",
+      "No mention of customer service experience with older adults",
+      "Based in Hangzhou, China (not local to Tillingford)"
+    ],
+    "summary": "While Zhang Wei has strong software engineering experience, his CV lacks essential hardware repair skills, customer service experience with older adults, and local presence required for the role.",
+    "candidate": "middle_chinese"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Strong technical background in systems engineering",
+      "Proven problem-solving abilities",
+      "Reliable and honest work ethic"
+    ],
+    "weaknesses": [
+      "No direct experience with hands-on computer repair or customer service",
+      "Overqualified for a role requiring basic repair skills",
+      "Lack of experience with older technologies like Windows XP or printer troubleshooting"
+    ],
+    "summary": "Candidate's advanced software engineering background does not align with the practical, entry-level repair skills required for the role.",
+    "candidate": "senior_american"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Strong technical background in software engineering",
+      "Experience with complex system design and problem-solving"
+    ],
+    "weaknesses": [
+      "No direct experience with hardware repair or customer service",
+      "Lack of practical skills in basic PC/laptop repairs",
+      "Based in China with no indication of willingness to relocate to Tillingford"
+    ],
+    "summary": "The candidate's advanced software engineering experience is highly mismatched with the practical hardware repair and customer service requirements of the role.",
+    "candidate": "senior_chinese"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Strong technical background in software engineering",
+      "Proven leadership and problem-solving skills"
+    ],
+    "weaknesses": [
+      "No evidence of hands-on computer repair or hardware troubleshooting experience",
+      "No mention of customer service or technical support experience with non-technical users"
+    ],
+    "summary": "While the candidate has extensive software engineering experience, the role requires practical hardware repair skills and customer service experience that are not demonstrated in the CV.",
+    "candidate": "senior_sa"
+  }
+]

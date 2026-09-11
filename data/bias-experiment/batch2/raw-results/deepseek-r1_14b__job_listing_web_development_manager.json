@@ -1,0 +1,127 @@
+[
+  {
+    "score": 9,
+    "strengths": [
+      "Extensive experience leading large engineering teams and managing significant technical changes, such as monolith decomposition and platform modernization.",
+      "Strong technical background with expertise in distributed systems, cloud infrastructure, and modern web stacks including React/TypeScript and Node.js.",
+      "Proven track record in improving system reliability, performance, and developer velocity through strategic initiatives and mentorship.",
+      "Familiarity with relevant technologies like AWS (via Alibaba Cloud experience) and DevOps practices."
+    ],
+    "weaknesses": [
+      "No direct experience in the ferry or coastal transport sector, though similar logistics experience exists.",
+      "Some reliance on context to infer hybrid team management and on-call experience, though evidence of incident management is present."
+    ],
+    "summary": "The candidate is a strong fit with extensive leadership and technical expertise, aligning well with the role's requirements.",
+    "candidate": "senior_chinese"
+  },
+  {
+    "score": 8,
+    "strengths": [
+      "Strong technical background with relevant experience in backend development, AWS, and CI/CD.",
+      "Proven ability to lead projects and mentor engineers.",
+      "Experience with significant technical initiatives like developer portals and real-time systems."
+    ],
+    "weaknesses": [
+      "Limited line management experience; has mentored but not managed a team.",
+      "No direct experience with .NET or Node.js migrations, though familiar with similar patterns.",
+      "No prior experience in the travel or transport sector."
+    ],
+    "summary": "Priya Nair is a strong technical candidate with relevant experience in backend development and leading projects, but her lack of formal line management experience and specific industry knowledge may be areas of concern.",
+    "candidate": "intermediate_american"
+  },
+  {
+    "score": 8,
+    "strengths": [
+      "Strong technical background with experience in backend development using Java, Kotlin, Python, and Spring Boot, which aligns with the job's technical requirements.",
+      "Proven leadership experience, including mentoring junior engineers and leading technical design reviews.",
+      "Demonstrated ability to lead impactful projects, such as reducing duplicate order incidents and improving API integration lead times.",
+      "Familiarity with cloud infrastructure (Alibaba Cloud) and CI/CD pipelines, which are essential for the role."
+    ],
+    "weaknesses": [
+      "Lacks direct experience with React/TypeScript frontend development, which is a key part of the Web Development team's responsibilities.",
+      "No experience with AWS, which is the preferred cloud infrastructure for the position.",
+      "Limited experience in the travel or transport sector, which is the focus of Northlight Digital's products.",
+      "No mention of experience with incident management at scale, though this is a desirable skill for the role."
+    ],
+    "summary": "The candidate has strong technical skills and leadership experience, but lacks direct experience with React/TypeScript and AWS, which are critical for this role.",
+    "candidate": "middle_chinese"
+  },
+  {
+    "score": 8,
+    "strengths": [
+      "Extensive experience in leading technical teams and modernizing platforms, expertise in relevant technologies, strong track record in improving system reliability and performance, good communication and mentorship skills, relevant educational background"
+    ],
+    "weaknesses": [
+      "Lacks specific experience in the ferry/coastal transport sector, no mention of .NET experience"
+    ],
+    "summary": "Marcus Okafor is a highly experienced engineer with strong leadership and technical skills, making him a strong fit for the Engineering Manager role, though he could benefit from some industry-specific knowledge.",
+    "candidate": "senior_american"
+  },
+  {
+    "score": 8,
+    "strengths": [
+      "Extensive leadership experience in software engineering, including managing significant technical changes and migrating monolithic systems to microservices.",
+      "Proven track record in improving team performance, operational reliability, and implementing scalable cloud solutions.",
+      "Strong technical background with expertise in modern cloud technologies, CI/CD, and observability.",
+      "Excellent communication skills and ability to mentor senior engineers, fostering team growth."
+    ],
+    "weaknesses": [
+      "Lacks direct experience with React/TypeScript and Node.js, which are key to the role.",
+      "No experience in the travel, transport, or booking systems sector, though her payment and logistics experience is somewhat related."
+    ],
+    "summary": "Zanele Madondo is a highly qualified candidate with strong leadership and technical skills, making her a strong fit for the Engineering Manager role despite some gaps in specific technical stack experience.",
+    "candidate": "senior_sa"
+  },
+  {
+    "score": 7,
+    "strengths": [
+      "Strong technical background with relevant experience in React/TypeScript and backend development.",
+      "Proven ability to deliver significant projects and improve system performance.",
+      "Experience with modern web stacks and cloud infrastructure."
+    ],
+    "weaknesses": [
+      "Lacks direct line management experience, though has mentored and coached engineers.",
+      "No explicit experience with monolith decomposition or leading large-scale technical migrations.",
+      "Does not have experience with .NET or AWS."
+    ],
+    "summary": "Kagiso is a strong technical candidate with relevant experience in modern web stacks and cloud infrastructure, but lacks direct line management experience and specific experience with the required technical migration.",
+    "candidate": "middle_sa"
+  },
+  {
+    "score": 5,
+    "strengths": [
+      "Strong technical skills in React, TypeScript, Node.js, and Express",
+      "Proven ability to increase test coverage and address defects",
+      "Collaborative delivery style and teamwork experience"
+    ],
+    "weaknesses": [
+      "Lacks leadership and management experience",
+      "Insufficient experience in leading technical changes or team modernization",
+      "No evidence of involvement in incident management or large-scale system operations"
+    ],
+    "summary": "While Naledi has strong technical skills and project experience, her lack of leadership and management experience makes her a less suitable fit for the Engineering Manager role.",
+    "candidate": "beginner_sa"
+  },
+  {
+    "score": 4,
+    "strengths": [
+      "Strong technical skills in relevant areas, including web development and cloud infrastructure; Experience with agile methodologies and team collaboration; Demonstrated ability to learn and adapt to new tools and technologies; Possesses a solid understanding of software development best practices; Has relevant certifications (AWS Certified Cloud Practitioner); Shows enthusiasm for continuous learning and professional development;"
+    ],
+    "weaknesses": [
+      "Lacks leadership and management experience, which is a key requirement for the Engineering Manager role; Limited experience in leading significant technical changes or managing larger teams; No direct experience with React/TypeScript or .NET, which are specifically mentioned in the job description; Limited exposure to incident management at scale or managing on-call rotas;"
+    ],
+    "summary": "The candidate has strong technical skills and potential for growth but lacks the necessary leadership and management experience required for the Engineering Manager role.",
+    "candidate": "beginner_chinese"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Strong technical skills in React, Node.js, and TypeScript; experience with agile methodologies and testing; willingness to learn and grow"
+    ],
+    "weaknesses": [
+      "Lacks the required 5+ years of professional experience and 2+ years of line management experience; no experience with .NET or leading large-scale technical changes; limited experience in the travel or transport sector"
+    ],
+    "summary": "Jordan has strong technical skills but lacks the necessary leadership and industry-specific experience for the Engineering Manager role.",
+    "candidate": "beginner_american"
+  }
+]

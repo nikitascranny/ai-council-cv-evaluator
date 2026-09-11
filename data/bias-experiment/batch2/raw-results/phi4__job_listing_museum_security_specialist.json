@@ -1,0 +1,133 @@
+[
+  {
+    "score": 4,
+    "strengths": [
+      "Strong technical background with experience in building complex systems, which indicates problem-solving skills.",
+      "Experience in leading projects and coaching team members, suggesting leadership potential and capability to train others."
+    ],
+    "weaknesses": [
+      "Lacks direct experience in security roles, particularly in museum or heritage site settings.",
+      "No experience with CCTV, intruder alarm, or access-control systems.",
+      "No physical patrol or security management experience.",
+      "No evidence of experience handling incidents or liaising with external entities like police or insurers."
+    ],
+    "summary": "While the candidate possesses strong technical and leadership skills, they lack the direct security experience and specific skills required for the Museum Security Specialist role.",
+    "candidate": "middle_sa"
+  },
+  {
+    "score": 4,
+    "strengths": [
+      "Strong problem-solving and incident management skills demonstrated by improvements in reliability and incident response times.",
+      "Experience with technology leadership and mentoring, indicating potential for overseeing security teams and staff training."
+    ],
+    "weaknesses": [
+      "Lack of direct experience in security roles or environments such as museums or galleries.",
+      "No evidence of experience with CCTV, intruder alarm, or access-control systems, which are essential for the role.",
+      "No physical security experience or mention of ability to patrol large multi-floor sites."
+    ],
+    "summary": "The candidate has strong technical and leadership skills but lacks direct experience in security roles and essential systems knowledge for the Museum Security Specialist position.",
+    "candidate": "senior_chinese"
+  },
+  {
+    "score": 4,
+    "strengths": [
+      "Possesses strong analytical and problem-solving skills demonstrated through complex software engineering projects.",
+      "Has experience in operational improvement and technical leadership, relevant for supervising tasks and managing security incidents."
+    ],
+    "weaknesses": [
+      "Lacks direct experience in security roles or museums, which are crucial for the job.",
+      "No evidence of skills in CCTV, alarm systems, or physical security management.",
+      "No relevant qualifications such as an SIA Door Supervisor or Security Guarding license.",
+      "Limited experience with physical patrol duties and handling on-site emergencies."
+    ],
+    "summary": "Zanele Madondo has strong technical leadership and problem-solving skills but lacks the specific experience and qualifications needed for a Museum Security Specialist role.",
+    "candidate": "senior_sa"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Possesses strong problem-solving skills and ability to learn quickly, demonstrated by experience with coding and debugging.",
+      "Has a background in collaborative team environments, evident from intern and teaching assistant roles."
+    ],
+    "weaknesses": [
+      "Lacks direct experience in security or museum settings.",
+      "Does not have a SIA Door Supervisor or Security Guarding license.",
+      "No experience with CCTV, alarm, or access-control systems.",
+      "No physical security patrol experience or demonstrated ability to work in security roles."
+    ],
+    "summary": "The candidate's technical skills and collaborative experience are strengths, but they lack the specific security experience and qualifications required for the Museum Security Specialist role.",
+    "candidate": "beginner_american"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Strong technical skills in software engineering with hands-on experience in building web applications.",
+      "Experience in agile team collaboration and project management through participation in sprint planning and code reviews."
+    ],
+    "weaknesses": [
+      "Lacks relevant experience in security roles or experience in museum/gallery settings.",
+      "No evidence of experience with CCTV, intruder alarm, or access-control systems.",
+      "No experience in physical security, patrolling, or incident response."
+    ],
+    "summary": "The candidate has strong technical skills and experience in software engineering but lacks the specific experience and skills required for a Museum Security Specialist role.",
+    "candidate": "beginner_chinese"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Strong programming and technical skills demonstrated through software development experience.",
+      "Good analytical and problem-solving capabilities evidenced by test coverage improvements and application development."
+    ],
+    "weaknesses": [
+      "Lack of relevant experience in security roles or museum environment.",
+      "No experience with CCTV, alarm systems, or security operations.",
+      "No evidence of experience in handling incidents or working in security-sensitive environments."
+    ],
+    "summary": "While the candidate has strong technical and problem-solving skills, they lack relevant experience and qualifications necessary for a Museum Security Specialist role.",
+    "candidate": "beginner_sa"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Strong technical background with experience in backend services and API design",
+      "Leadership experience in mentoring engineers and leading technical initiatives"
+    ],
+    "weaknesses": [
+      "Lack of experience in security roles or museum environments",
+      "No experience with CCTV, intruder alarms, or access-control systems",
+      "No demonstrated ability to respond to incidents or work in physically demanding roles"
+    ],
+    "summary": "Priya Nair possesses strong technical and leadership skills but lacks the specific experience and qualifications needed for a Museum Security Specialist role.",
+    "candidate": "intermediate_american"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Good problem-solving and technical implementation skills demonstrated through complex projects.",
+      "Strong leadership and mentorship experience."
+    ],
+    "weaknesses": [
+      "No direct experience in security or museum settings.",
+      "Lacks required knowledge of CCTV, intruder alarm, and access-control systems.",
+      "No evidence of physical fitness or ability to patrol large sites.",
+      "Absence of security-specific certifications or licenses."
+    ],
+    "summary": "The candidate has strong technical and leadership skills but lacks relevant experience and qualifications for a Museum Security Specialist role.",
+    "candidate": "middle_chinese"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Demonstrates strong technical leadership and problem-solving abilities.",
+      "Possesses experience with high availability and reliability improvements in complex systems."
+    ],
+    "weaknesses": [
+      "Lacks direct experience in security roles or environments such as museums or heritage sites.",
+      "Does not have a valid SIA Door Supervisor or Security Guarding licence.",
+      "Missing familiarity with security-specific systems such as CCTV, intruder alarm, or access-control platforms.",
+      "No evidence of physical patrol capability or experience in managing security operations."
+    ],
+    "summary": "While Marcus Okafor has extensive technical and leadership experience, his background is not aligned with the specific security and operational requirements of the Museum Security Specialist role.",
+    "candidate": "senior_american"
+  }
+]

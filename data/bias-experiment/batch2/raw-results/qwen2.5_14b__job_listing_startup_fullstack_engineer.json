@@ -1,0 +1,120 @@
+[
+  {
+    "score": 9,
+    "strengths": [
+      "Strong experience in distributed systems and cloud platforms",
+      "Proven track record in leading technical initiatives and improving system resilience"
+    ],
+    "weaknesses": [
+      "Experience primarily with Java rather than Go",
+      "Lack of direct experience in the energy sector"
+    ],
+    "summary": "Zanele Madondo is a highly skilled and experienced Principal Software Engineer with a strong background in distributed systems and cloud platforms, making them a strong fit for the Founding Full-Stack Engineer role at Pulsegrid.",
+    "candidate": "senior_sa"
+  },
+  {
+    "score": 8,
+    "strengths": [
+      "Experienced in distributed systems and event-driven architectures",
+      "Proven track record in technical leadership and system design"
+    ],
+    "weaknesses": [
+      "No direct experience in the energy sector",
+      "Limited experience with TypeScript/React"
+    ],
+    "summary": "Marcus Okafor is a strong candidate with extensive experience in distributed systems and technical leadership, though lacks direct experience in the energy sector and TypeScript/React.",
+    "candidate": "senior_american"
+  },
+  {
+    "score": 8,
+    "strengths": [
+      "Strong background in distributed systems and event-driven architectures",
+      "Experience in high availability platforms and technical leadership"
+    ],
+    "weaknesses": [
+      "Experience primarily in China and not in European or UK contexts",
+      "Limited direct experience in the energy sector"
+    ],
+    "summary": "Chen Haoran is a strong candidate with extensive experience in distributed systems and technical leadership, but lacks direct experience in the energy sector and European/UK work contexts.",
+    "candidate": "senior_chinese"
+  },
+  {
+    "score": 7,
+    "strengths": [
+      "Experience with backend languages like Java, Kotlin, and Python",
+      "Strong in frontend technologies such as React and TypeScript"
+    ],
+    "weaknesses": [
+      "No direct experience with Go backend language",
+      "Limited exposure to the energy sector"
+    ],
+    "summary": "Priya Nair is a skilled software engineer with a solid background in backend and frontend technologies, but lacks specific experience with Go and the energy sector.",
+    "candidate": "intermediate_american"
+  },
+  {
+    "score": 7,
+    "strengths": [
+      "Strong background in backend services with Java and Kotlin",
+      "Experience in observability and API design"
+    ],
+    "weaknesses": [
+      "Lack of direct experience with Go, preferred backend language in the job description",
+      "No direct experience in the energy sector"
+    ],
+    "summary": "Kagiso Ndlovu has relevant technical skills and experience, but lacks direct experience in Go and the energy sector, which are key for this position.",
+    "candidate": "middle_sa"
+  },
+  {
+    "score": 6,
+    "strengths": [
+      "Strong background in backend development with Java, Kotlin, and Python",
+      "Experience with key tech stacks like Spring Boot, FastAPI, and Kubernetes"
+    ],
+    "weaknesses": [
+      "Limited experience with TypeScript/React frontend, which is essential for the role",
+      "No direct experience in the energy sector or event-driven architectures"
+    ],
+    "summary": "Zhang Wei has a solid technical foundation but lacks specific skills required for the role, such as TypeScript/React and experience in the energy sector.",
+    "candidate": "middle_chinese"
+  },
+  {
+    "score": 5,
+    "strengths": [
+      "Experience with web application development using Vue.js and REST APIs",
+      "Participation in agile team environments and code reviews"
+    ],
+    "weaknesses": [
+      "Lack of experience with TypeScript/React and Go, essential for the role",
+      "No direct experience with distributed systems or event-driven architectures"
+    ],
+    "summary": "Candidate shows promise in web application development but lacks the specific skill set and experience required for the full-stack engineering role at Pulsegrid.",
+    "candidate": "beginner_chinese"
+  },
+  {
+    "score": 5,
+    "strengths": [
+      "Good programming fundamentals",
+      "Experience with React and TypeScript"
+    ],
+    "weaknesses": [
+      "Lacks the required 4+ years of experience",
+      "No experience with Go or Kafka"
+    ],
+    "summary": "Naledi Molefe shows promise with foundational skills but lacks the depth and experience required for the founding full-stack engineer role at Pulsegrid.",
+    "candidate": "beginner_sa"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Basic understanding of web development",
+      "Experience with React and Express"
+    ],
+    "weaknesses": [
+      "Lacks industry experience",
+      "No experience with Go or Kafka",
+      "Insufficient experience in distributed systems"
+    ],
+    "summary": "The candidate has basic technical skills but lacks the required experience and specific skills for the position.",
+    "candidate": "beginner_american"
+  }
+]

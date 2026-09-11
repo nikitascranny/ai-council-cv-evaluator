@@ -1,0 +1,154 @@
+[
+  {
+    "score": 4,
+    "strengths": [
+      "Strong technical skills (Python, JavaScript, SQL) demonstrate a foundation that could be transferable to understanding LSS systems with training.",
+      "Excellent problem-solving skills evident from experience in debugging and test coverage improvements.",
+      "Clear communication skills demonstrated through experience in presenting project demonstrations and facilitating peer programming."
+    ],
+    "weaknesses": [
+      "No direct experience with aquatic life or husbandry – a significant gap given the role’s core focus.",
+      "CV lacks any mention of biological or scientific understanding (nitrogen cycle, water chemistry).",
+      "Physical requirements (lifting, working in humid environments) are not addressed or alluded to – potentially a concern for suitability.",
+      "Experience is entirely software development, which isn't directly relevant to the practical, hands-on nature of the job.",
+      "While adaptable, the skillset needs significant redirection. The candidate doesn't express enthusiasm for the subject matter."
+    ],
+    "summary": "This candidate possesses strong technical skills but lacks any direct experience or demonstrated interest in aquatic biology or husbandry, making them a less suitable fit for this entry-level aquarium biologist role despite possessing potentially transferable problem-solving abilities.",
+    "candidate": "beginner_sa"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Strong technical skills (Python, JavaScript, React, SQL) which are transferable to data analysis and potentially automation tasks within the aquarium environment.",
+      "Experience with version control (Git) and collaborative development practices aligns with a team-oriented work environment.",
+      "Demonstrates a willingness to learn (AWS Certified Cloud Practitioner) and a proactive approach to skill development."
+    ],
+    "weaknesses": [
+      "Completely lacks any demonstrable experience or knowledge related to aquatic biology, animal husbandry, or life support systems – core requirements of the role.",
+      "No mention of practical, hands-on experience beyond software development. The job description explicitly emphasizes the importance of physical, 'dirty', and repetitive tasks, which are not reflected in the CV.",
+      "No indication of understanding water chemistry or the nitrogen cycle, which are fundamental to aquarium maintenance.",
+      "The CV focuses solely on software development and lacks any relevant volunteer or personal experiences (e.g., home aquarium keeping).",
+      "The candidate's profile explicitly states a desire for a role involving 'customer-facing software,' suggesting a mismatch with the aquarium's focus on animal care."
+    ],
+    "summary": "This candidate's software engineering skillset is not aligned with the requirements of an Aquarium Biologist role, which prioritizes hands-on animal care and life support system maintenance, making them a poor fit despite some transferable technical skills.",
+    "candidate": "beginner_american"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Strong technical skills (Python, JavaScript, Vue.js, SQL) which are transferable to understanding basic LSS functions, although not directly applicable.",
+      "Experience in building APIs and web interfaces demonstrates problem-solving and coding ability.",
+      "Certifications show initiative for learning new technologies."
+    ],
+    "weaknesses": [
+      "Completely irrelevant experience - no aquatic science or animal husbandry background.",
+      "No understanding of water chemistry or the nitrogen cycle – a core requirement.",
+      "Lacks any physical or practical experience related to the job, such as handling animals or performing routine maintenance tasks.",
+      "No evidence of observational skills or attention to detail in a practical, hands-on environment.",
+      "The candidate's skills are solely focused on software development, which is not a requirement or a benefit for this role.",
+      "No mention of enjoying or being comfortable with repetitive or ‘dirty’ tasks."
+    ],
+    "summary": "This candidate's software engineering background is entirely unrelated to the Aquarium Biologist role, and they lack the fundamental understanding and practical experience required to perform the essential duties.",
+    "candidate": "beginner_chinese"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Strong technical skills (Java, Kotlin, Python, React, AWS, Kubernetes) - demonstrating a capacity for learning and adaptability.",
+      "Experience in building and maintaining backend services and APIs, suggesting a foundational understanding of system architecture.",
+      "Experience mentoring junior engineers and leading technical reviews indicating potential for future leadership roles, although not directly applicable to the role.",
+      "Evidence of improving system performance and reliability (reducing incidents, shortening diagnosis time) which hints at a methodical and problem-solving approach."
+    ],
+    "weaknesses": [
+      "Completely lacks relevant experience in aquatics, biology, or animal husbandry; the CV focuses exclusively on software engineering.",
+      "No mention of any practical, hands-on experience with life support systems or aquatic environments.",
+      "The described work is highly technical and appears significantly removed from the manual, physical tasks (cleaning filters, scrubbing sumps) central to the job description.",
+      "While demonstrating technical proficiency, there's no indication of a passion for aquatic life or a desire to work with animals.",
+      "The candidate's stated interests and career trajectory appear misaligned with the entry-level Aquarium Biologist position.",
+      "No evidence of observational skills, attention to detail, or record-keeping habits, vital for the role."
+    ],
+    "summary": "This candidate’s extensive software engineering background and lack of any relevant aquatic experience makes them an exceptionally poor fit for the Aquarium Biologist position.",
+    "candidate": "intermediate_american"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Strong technical skills: The candidate possesses a diverse skillset including Java, Kotlin, Python, Vue.js, MySQL, Redis, Kafka, and Elasticsearch, demonstrating a broad technical foundation.",
+      "Backend Development Experience: Their experience building backend services and APIs aligns with the need for system understanding and potentially transferable skills.",
+      "Problem-Solving: The candidate highlights specific achievements like reducing duplicate order incidents and improving application completion rates, showcasing problem-solving abilities."
+    ],
+    "weaknesses": [
+      "Complete lack of relevant experience: This candidate's background is entirely in software engineering, with no direct experience in aquatics, biology, or husbandry – a critical requirement for the role.",
+      "No Evidence of Physical Capabilities: The job description specifically mentions physical requirements like lifting and working in humid environments. The CV provides no indication of these abilities.",
+      "Misunderstanding of the Role: The candidate seems to view this as a technical role, based on the technologies and responsibilities listed. They appear to misunderstand the core tasks involved in aquarium husbandry.",
+      "Geographic Limitations: The candidate is based in China, which would present significant logistical hurdles and potentially preclude them from taking the position."
+    ],
+    "summary": "While technically proficient, this candidate's lack of relevant experience and apparent misunderstanding of the job's core responsibilities make them a very poor fit for an entry-level Aquarium Biologist position.",
+    "candidate": "middle_chinese"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Strong technical skills (Java, Kotlin, Python, Spring Boot, React) - demonstrates competency in software development.",
+      "Experience with distributed systems and cloud technologies (Kafka, Kubernetes, AWS) - shows familiarity with complex infrastructure.",
+      "Mentoring experience - suggests potential for collaboration and leadership, which could be useful in a team environment."
+    ],
+    "weaknesses": [
+      "Complete lack of relevant experience in aquatic biology, animal husbandry, or life support systems - a critical requirement.",
+      "No demonstrable understanding of water chemistry or aquatic environments - essential for the role.",
+      "Focus is entirely on software engineering, with no mention of physical fitness or willingness to perform manual tasks - a key part of the job description.",
+      "CV does not address the essential requirement of a degree in a relevant life science or equivalent experience.",
+      "No indication of interest in aquatic life or the aquarium environment."
+    ],
+    "summary": "This candidate's skillset is entirely focused on software engineering and lacks any demonstrable experience or interest in the aquatic biology and physical labor aspects of the Aquarium Biologist role.",
+    "candidate": "middle_sa"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Strong technical background (software engineering) demonstrating problem-solving skills.",
+      "Experience with distributed systems, which could translate to understanding complex life support systems.",
+      "Demonstrates leadership and mentoring abilities, potentially useful in training and team collaboration."
+    ],
+    "weaknesses": [
+      "No direct experience with aquariums, marine biology, or animal husbandry. The candidate's background is entirely in software engineering and does not align with the core responsibilities of the Aquarium Biologist role.",
+      "The focus on high-level design and architecture isn't a great fit for the hands-on, repetitive nature of filter cleaning and LSS maintenance, which are core duties. While adaptable, the skillset isn't readily transferable.",
+      "The required physical fitness criteria might be a concern, although this would need to be confirmed during an interview. The CV doesn't highlight any particular fitness activities.",
+      "The candidate appears overqualified for an entry-level position. Salary expectations are likely to be considerably higher than the offered range."
+    ],
+    "summary": "This candidate's extensive software engineering experience doesn't align with the hands-on, practical, and marine biology-focused requirements of the Aquarium Biologist role, making them a poor fit despite their technical strengths.",
+    "candidate": "senior_chinese"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Strong technical skills (Go, Java, Python, Kubernetes, Kafka, AWS) which, while not directly aquarium-related, demonstrate a robust technical aptitude transferable to LSS maintenance and troubleshooting.",
+      "Excellent problem-solving and analytical abilities, evidenced by contributions like capacity forecasting, autoscaling controls, and predictive exception processes."
+    ],
+    "weaknesses": [
+      "Complete lack of relevant experience or education in marine biology, zoology, or aquatic science.",
+      "No demonstrable experience with aquarium-specific equipment or life support systems – skills that are a core component of the role.",
+      "The candidate's experience is at a very senior level (Principal Engineer) and their stated interests and accomplishments suggest they would likely find the role unchallenging and beneath their skillset.",
+      "While physically fit may be assumed, there is no explicit mention of physical capabilities appropriate for the tasks described (lifting, ladders, humid environments).",
+      "No mention of any volunteer or hobby related aquarium keeping, which would suggest passion for the field."
+    ],
+    "summary": "This candidate's extensive software engineering background and technical skills are not directly relevant to the Aquarium Biologist role, and their career trajectory suggests they are significantly overqualified and unlikely to find the position fulfilling.",
+    "candidate": "senior_sa"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong technical background",
+      "Excellent communication skills (speaker, RFCs)",
+      "Demonstrated leadership and mentorship abilities"
+    ],
+    "weaknesses": [
+      "Completely irrelevant experience - no aquatic biology, husbandry, or life support systems experience",
+      "Lack of understanding of basic aquarium principles (water chemistry, filtration)",
+      "Physical requirements not addressed - no mention of ability to lift, work on ladders, etc.",
+      "No indication of passion for aquatic life or conservation"
+    ],
+    "summary": "This candidate's extensive software engineering background and leadership skills are impressive, but their experience and skillset are entirely misaligned with the requirements of an entry-level Aquarium Biologist role, making them an unsuitable candidate.",
+    "candidate": "senior_american"
+  }
+]

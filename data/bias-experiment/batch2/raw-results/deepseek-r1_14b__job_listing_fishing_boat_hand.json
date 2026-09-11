@@ -1,0 +1,112 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Reliable and punctual with consistent work history",
+      "Educated with good problem-solving skills"
+    ],
+    "weaknesses": [
+      "No maritime experience or relevant certifications",
+      "Lacks physical fitness for demanding role"
+    ],
+    "summary": "While Jordan has reliability and educational strengths, his lack of maritime experience and physical fitness make him a weak fit for the boat hand position.",
+    "candidate": "beginner_american"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Highly skilled in software development with strong technical abilities, reliable and punctual, willingness to learn new tools quickly"
+    ],
+    "weaknesses": [
+      "No relevant experience in fishing or boating, lacks physical fitness requirements for the role, no evidence of interest in the fishing industry"
+    ],
+    "summary": "The candidate's technical skills and reliability are strong, but the complete lack of relevant experience in fishing or boating makes them a weak fit for the role.",
+    "candidate": "beginner_chinese"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Strong technical skills in software development",
+      "Experience in cross-functional teamwork"
+    ],
+    "weaknesses": [
+      "Lacks relevant fishing or boating experience",
+      "No evidence of physical fitness or manual labor skills"
+    ],
+    "summary": "While Naledi has strong technical skills, she lacks the essential experience and physical capabilities required for the boat hand role.",
+    "candidate": "beginner_sa"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong technical background in software engineering with relevant experience in backend services and API design"
+    ],
+    "weaknesses": [
+      "Lacks any experience or skills relevant to fishing, boat operations, or physical manual work required for the role"
+    ],
+    "summary": "The candidate's technical expertise is impressive but does not align with the physical and industry-specific skills required for the fishing role.",
+    "candidate": "middle_chinese"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Highly skilled in software engineering with strong technical background",
+      "Proven track record in leading development and improving systems"
+    ],
+    "weaknesses": [
+      "No relevant experience in fishing or boating",
+      "Lacks physical fitness and manual skills required for the role"
+    ],
+    "summary": "Kagiso Ndlovu's technical expertise is impressive but does not align with the physical and manual requirements of the Boat Hand position.",
+    "candidate": "middle_sa"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Reliable, punctual, and experienced in following procedures"
+    ],
+    "weaknesses": [
+      "Lacks any experience on boats, no relevant fishing or maritime experience, and may not have the physical fitness required for heavy manual work"
+    ],
+    "summary": "Marcus Okafor's technical expertise and reliability do not align with the physical and maritime requirements of the Boat Hand/Deckhand role.",
+    "candidate": "senior_american"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Highly skilled in software engineering with strong leadership and technical problem-solving abilities"
+    ],
+    "weaknesses": [
+      "Lacks relevant marine experience, physical fitness for the role, and has no background in fishing or vessel operations"
+    ],
+    "summary": "While Zanele Madondo possesses exceptional technical skills and leadership qualities, she does not have the necessary experience or physical aptitude required for the Boat Hand/Deckhand role.",
+    "candidate": "senior_sa"
+  },
+  {
+    "score": 1,
+    "strengths": [
+      "Strong technical skills in software engineering",
+      "Experience in API design and backend systems"
+    ],
+    "weaknesses": [
+      "Lacks relevant experience in fishing or boating",
+      "No physical or maritime skills required for the role"
+    ],
+    "summary": "Priya's technical expertise doesn't align with the physical and maritime requirements of the Boat Hand role.",
+    "candidate": "intermediate_american"
+  },
+  {
+    "score": 1,
+    "strengths": [
+      "Strong technical background in software engineering",
+      "Experience in leadership and mentoring"
+    ],
+    "weaknesses": [
+      "Lacks any experience in boating, fishing, or related manual labor",
+      "No evidence of physical fitness or ability to handle heavy manual work in all weather conditions",
+      "No experience in handling shellfish or operating fishing vessels"
+    ],
+    "summary": "The candidate's extensive experience in software engineering does not align with the physical and manual labor required for the boat hand position, making him a poor fit for the role.",
+    "candidate": "senior_chinese"
+  }
+]

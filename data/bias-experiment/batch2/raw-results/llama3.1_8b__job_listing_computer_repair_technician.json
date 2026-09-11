@@ -1,0 +1,113 @@
+[
+  {
+    "score": 4,
+    "strengths": [
+      "Strong programming skills, especially in languages like Python, JavaScript, and TypeScript",
+      "Experience with React, Node.js, Express, and PostgreSQL, which could be useful for simple tasks",
+      "Good understanding of software development processes, including testing and version control"
+    ],
+    "weaknesses": [
+      "No direct experience with PC/laptop repair or hardware issues",
+      "Lack of relevant work experience in a similar field or industry",
+      "Overemphasis on software development and no indication of ability to learn or apply practical skills"
+    ],
+    "summary": "While Naledi has strong software development skills, they lack the necessary practical experience and skills to excel in a role requiring PC/laptop repair and hardware maintenance.",
+    "candidate": "beginner_sa"
+  },
+  {
+    "score": 4,
+    "strengths": [
+      "Experience in API design and implementation, which could be relevant to the job's 'easy stuff'",
+      "Proven ability to work with and explain complex technical concepts to non-technical people, which could be beneficial for customer interactions",
+      "Familiarity with cloud platforms, such as AWS, which could be useful for the job"
+    ],
+    "weaknesses": [
+      "Lack of direct experience in PC/laptop repair, which is a crucial requirement for the job",
+      "No mention of patience or ability to deal with printer problems, which are listed as desirable skills",
+      "Extensive software engineering background, which may not directly translate to the job's hands-on requirements"
+    ],
+    "summary": "While Kagiso has some relevant technical skills and experience working with complex systems, there is a significant gap in his background that makes him a less-than-ideal fit for the job, which requires hands-on PC/laptop repair and customer service skills.",
+    "candidate": "middle_sa"
+  },
+  {
+    "score": 4,
+    "strengths": [
+      "Strong technical background in distributed systems and platform engineering",
+      "Leadership experience as Principal Software Engineer",
+      "Good communication and problem-solving skills"
+    ],
+    "weaknesses": [
+      "Lack of direct experience in computer repair and customer service",
+      "No relevant work experience in a retail or customer-facing environment",
+      "Potential mismatch in skills and experience for the job"
+    ],
+    "summary": "While the candidate has strong technical skills and leadership experience, their background is not directly relevant to the job, and they may require significant up-skilling to succeed in this role.",
+    "candidate": "senior_chinese"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Comfortable collaborating in agile teams",
+      "Learning unfamiliar tools quickly"
+    ],
+    "weaknesses": [
+      "Lack of direct experience with PC/laptop repair",
+      "No relevant work experience in customer-facing role"
+    ],
+    "summary": "The candidate has some transferable skills, but is largely unqualified and inexperienced for a computer repair role, requiring significant up-skilling and a radical career change",
+    "candidate": "beginner_american"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong backend development skills, particularly in Java, Spring Boot, and AWS",
+      "Experience with distributed systems and observability tools"
+    ],
+    "weaknesses": [
+      "Lack of direct experience in PC/laptop repair and customer-facing roles",
+      "Significant mismatch between technical skills and job requirements"
+    ],
+    "summary": "While Priya has impressive technical skills, they appear to be a poor fit for the role of Computer Repair Person, with little to no experience in the required areas.",
+    "candidate": "intermediate_american"
+  },
+  {
+    "score": 2,
+    "strengths": [],
+    "weaknesses": [
+      "Lack of relevant skills and experience for the job, significant mismatch between required and provided skills and experience"
+    ],
+    "summary": "The candidate has a strong technical background, but it does not align with the requirements of the job, making them a poor fit for the position.",
+    "candidate": "middle_chinese"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "12+ years of experience in software engineering",
+      "Strong technical leadership skills"
+    ],
+    "weaknesses": [
+      "No relevant hands-on experience in computer repair or IT support",
+      "Lack of evidence of practical skills in PC/laptop repair, virus clean-ups, or hardware upgrades"
+    ],
+    "summary": "The candidate has extensive experience in software engineering, but lacks the required skills and experience for a computer repair role, making them an unlikely fit for this position.",
+    "candidate": "senior_american"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Relevant work experience in software engineering and technical leadership, Demonstrates deep implementation capability and architecture governance"
+    ],
+    "weaknesses": [
+      "Lack of relevant skills and experience for the job, No evidence of hands-on PC/laptop repair skills, No experience with customer-facing roles, Significant mismatch between required skills and candidate's background"
+    ],
+    "summary": "The candidate's extensive experience in software engineering and technical leadership does not align with the required skills for the Computer Repair Person role, making them an unlikely fit for the position.",
+    "candidate": "senior_sa"
+  },
+  {
+    "score": null,
+    "strengths": [],
+    "weaknesses": [],
+    "summary": "PARSE ERROR",
+    "candidate": "beginner_chinese"
+  }
+]

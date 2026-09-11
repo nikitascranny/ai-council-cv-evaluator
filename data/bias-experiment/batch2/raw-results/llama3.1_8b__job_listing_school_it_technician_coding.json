@@ -1,0 +1,143 @@
+[
+  {
+    "score": 8,
+    "strengths": [
+      "Jordan has extensive technical skills relevant to the role, including Python, JavaScript, and experience with Windows 11, Microsoft 365, and Intune.",
+      "He has hands-on experience with device management, having used Docker to deploy the QueueWise application.",
+      "Jordan's experience as a Computer Science Teaching Assistant demonstrates his ability to communicate complex technical concepts to students, which is transferable to explaining technology to pupils in the school setting.",
+      "He has a strong background in programming, with experience in languages such as Python, JavaScript, and TypeScript, and has created practice exercises and study guides for programming fundamentals."
+    ],
+    "weaknesses": [
+      "Jordan's lack of direct experience in an education setting, particularly in IT support, may require additional training or on-the-job support.",
+      "The role requires a more extensive understanding of network basics, including VLANs, switches, and Wi-Fi troubleshooting, which is not explicitly mentioned in his CV."
+    ],
+    "summary": "Jordan is a strong technical candidate with excellent programming skills and experience, but may require additional training or support to adapt to the school's specific IT environment and education setting.",
+    "candidate": "beginner_american"
+  },
+  {
+    "score": 8,
+    "strengths": [
+      "Strong technical skills in programming languages (Python, JavaScript) and frameworks (Vue.js, Node.js)",
+      "Experience with software development (Cascade Digital Technology Co., Ltd.) and teaching (Beijing University of Posts and Telecommunications)",
+      "Good understanding of Agile development methodologies and Git version control",
+      "Ability to learn and adapt quickly, as demonstrated by self-directed learning and certification in AWS Cloud Practitioner"
+    ],
+    "weaknesses": [
+      "Lack of direct experience in education technology and IT support, as well as specific knowledge of Microsoft tools (Windows, Intune)",
+      "Some uncertainty about ability to debug code for 11-14 year olds, as this is a key requirement of the role"
+    ],
+    "summary": "The candidate has strong technical skills and relevant experience, but may require up-skilling and training to fulfill the specific requirements of the IT Technician & Coding Enrichment Lead role.",
+    "candidate": "beginner_chinese"
+  },
+  {
+    "score": 8,
+    "strengths": [
+      "Strong technical skills in backend development, API design, and distributed systems",
+      "Relevant experience in delivering complex systems with a focus on performance and reliability",
+      "Evidence of leadership and mentoring skills, including technical planning and code review",
+      "Proficiency in programming languages and technologies such as Python, Java, and Spring Boot"
+    ],
+    "weaknesses": [
+      "Limited experience working directly with students or in an educational setting",
+      "Lack of specific experience with Windows 11, Microsoft 365, and Intune",
+      "Some of the required skills, such as safeguarding and network basics, are not explicitly mentioned in the CV"
+    ],
+    "summary": "Priya Nair is a strong technical candidate with a focus on backend development and systems design, but may require additional training or experience to be fully qualified for the role of IT Technician & Coding Enrichment Lead",
+    "candidate": "intermediate_american"
+  },
+  {
+    "score": 8,
+    "strengths": [
+      "Strong background in software engineering with experience in relevant technologies (Java, Kotlin, Python, Spring Boot, AWS)",
+      "Excellent problem-solving skills demonstrated through successful delivery of complex projects",
+      "Evidence of mentoring and coaching experience, which could translate to working with students",
+      "Good experience with cloud platforms (AWS, Kubernetes) and data management (PostgreSQL, Redis)",
+      "Strong API design and testing skills, which could be applied to developing coding activities for students"
+    ],
+    "weaknesses": [
+      "Lack of direct experience in education or youth-related settings",
+      "No obvious evidence of experience with programming languages commonly used in education (Scratch, Python, Micro:bit)",
+      "Some technical skills may be more relevant to industry than education (e.g. Kafka, S3)"
+    ],
+    "summary": "Kagiso has a strong technical background and problem-solving skills, but may require some additional training or experience in education-specific areas to excel in this role.",
+    "candidate": "middle_sa"
+  },
+  {
+    "score": 8,
+    "strengths": [
+      "Deep technical expertise in distributed systems, platforms, and languages aligns with the job requirements",
+      "Strong track record of improving reliability, scalability, and developer velocity in previous roles",
+      "Experience with cloud infrastructure, Kubernetes, and Terraform suggests adaptability to educational setting"
+    ],
+    "weaknesses": [
+      "Lack of direct experience in education or IT support roles may require additional training or on-the-job learning",
+      "Technical focus on payments and logistics may require some bridge to educational context, but transferable skills exist",
+      "No explicit mention of communication or teaching skills, which are essential for the role"
+    ],
+    "summary": "Chen Haoran's technical expertise and leadership experience make him a strong candidate, but additional training or on-the-job learning may be necessary to adapt to the educational context and emphasis on communication and teaching skills",
+    "candidate": "senior_chinese"
+  },
+  {
+    "score": 7,
+    "strengths": [
+      "Strong technical background in software engineering, with experience in various programming languages and frameworks",
+      "Experience in mentoring and leading technical design reviews",
+      "Familiarity with cloud platforms, including Alibaba Cloud and Kubernetes"
+    ],
+    "weaknesses": [
+      "Lack of direct experience in an educational setting, which is a key requirement for the role",
+      "No explicit mention of experience with Windows 11, Microsoft 365, or Intune, which are essential tools for the job",
+      "CV is focused on technical skills, but doesn't demonstrate a genuine enthusiasm for working with young people, which is a key aspect of the role"
+    ],
+    "summary": "While Zhang Wei has a strong technical background and some relevant experience, there are significant gaps in his CV that make it difficult to see how he would be a strong fit for the role, particularly in terms of working with young people and using essential IT tools.",
+    "candidate": "middle_chinese"
+  },
+  {
+    "score": 6,
+    "strengths": [
+      "Strong programming fundamentals in languages like Python, JavaScript, and SQL",
+      "Experience with backend APIs, React, and Express",
+      "Good understanding of software engineering concepts and testing practices",
+      "Relevant work experience as a Graduate Software Developer Intern"
+    ],
+    "weaknesses": [
+      "Limited experience with education settings and working with young people",
+      "Lack of specific experience with Intune or similar device management systems",
+      "No direct experience with classroom technology or teaching"
+    ],
+    "summary": "While Naledi Molefe has a strong technical background and relevant work experience, there are significant gaps in education and IT support experience, which may impact their ability to excel in this role.",
+    "candidate": "beginner_sa"
+  },
+  {
+    "score": 6,
+    "strengths": [
+      "Extensive experience in software engineering and technical leadership",
+      "Strong background in distributed systems design and API governance",
+      "Mentorship and staff-level experience relevant to the role's expectations",
+      "Programming skills in languages like Go, Python, and Java"
+    ],
+    "weaknesses": [
+      "Lack of direct experience in IT support and education",
+      "No evident experience with Windows 11, Microsoft 365, or Intune",
+      "No clear indication of ability to work with 11-14 year olds on coding tasks"
+    ],
+    "summary": "Marcus Okafor has a strong technical background, but significant gaps in experience and skills relevant to the IT Technician & Coding Enrichment Lead role make him a moderate fit.",
+    "candidate": "senior_american"
+  },
+  {
+    "score": 6,
+    "strengths": [
+      "Extensive experience in software engineering and technical leadership, which demonstrates potential for IT support and programming tasks",
+      "Familiarity with programming languages such as Python, which is relevant for supporting KS3 programming lessons and Code Club",
+      "Strong understanding of cloud and data technologies, which could be applied to maintaining the school's website and VLE",
+      "Leadership experience and ability to guide teams, which may be beneficial for supporting the Head of Computing and other staff members"
+    ],
+    "weaknesses": [
+      "Lack of direct experience in education or IT support, which may require significant on-the-job training and adaptation",
+      "Limited evidence of relevant programming experience with young people, which is a key aspect of the role",
+      "No clear indication of IT support experience or knowledge of Windows 11, Microsoft 365, and Intune"
+    ],
+    "summary": "While Zanele Madondo has a strong technical background and leadership experience, she lacks direct experience in education and IT support, making it uncertain whether she would be a strong fit for this role.",
+    "candidate": "senior_sa"
+  }
+]

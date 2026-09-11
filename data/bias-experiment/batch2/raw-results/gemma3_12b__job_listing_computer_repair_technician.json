@@ -1,0 +1,150 @@
+[
+  {
+    "score": 4,
+    "strengths": [
+      "Technical Aptitude: Naledi possesses a strong foundation in software development principles and technologies (Python, JavaScript, React, SQL) which are transferable to PC/laptop repair tasks.",
+      "Problem-Solving Skills: Experience in debugging and testing (expanding Jest coverage, addressing defects) demonstrates problem-solving abilities useful for diagnosing computer issues.",
+      "Adaptability: Demonstrated ability to learn and apply new technologies (AWS Certified Cloud Practitioner), indicating a willingness to learn new repair techniques.",
+      "Communication: Experience in peer programming and facilitating workshops suggests a capability to explain technical concepts, although this needs verification."
+    ],
+    "weaknesses": [
+      "Lack of Direct Hardware Experience: The CV demonstrates no direct experience with physical hardware repair, a core requirement of the role. Their skills are primarily software-focused.",
+      "Mismatch in Experience Level: The candidate's background as a graduate software developer is significantly more advanced than the role's requirements, potentially leading to boredom or underutilization.",
+      "Unclear Customer Interaction Skills: While they have peer interaction experience, there’s no evidence of experience dealing with less tech-savvy customers, a crucial aspect of the role.",
+      "Location/Commitment: While not stated, relocating from South Africa presents logistical and potential commitment challenges."
+    ],
+    "summary": "Naledi's strong technical skills and problem-solving abilities could be adapted to the role with significant training, but the lack of hardware experience and advanced skillset represent a considerable mismatch with the job's core requirements and level.",
+    "candidate": "beginner_sa"
+  },
+  {
+    "score": 4,
+    "strengths": [
+      "Strong technical skills (Java, Kotlin, Python, Spring Boot, React) suggesting an aptitude for problem-solving.",
+      "Experience with backend services and APIs could be leveraged for diagnosing and resolving complex issues.",
+      "Experience coaching junior engineers indicates potential for customer interaction and explaining technical concepts.",
+      "Proven ability to improve system visibility and reduce investigation time, suggesting a methodical approach to troubleshooting."
+    ],
+    "weaknesses": [
+      "CV heavily skewed towards software engineering and backend development; lacks direct experience in PC/laptop repair.",
+      "No mention of physical repair skills like reseating RAM or screen replacements, essential for the role.",
+      "The sophistication of the candidate's experience (Kubernetes, Kafka) seems significantly above the requirements of a small, local repair shop. This could lead to boredom or frustration.",
+      "The 'cash-in-hand' preference and informal nature of the role are unlikely to appeal to someone with this level of experience and qualifications.",
+      "No evidence of patience or experience with older customers or legacy systems (Windows XP) – a key requirement."
+    ],
+    "summary": "While technically skilled, this candidate's experience and aspirations are a significant mismatch for the advertised role, making them an unlikely fit despite transferable skills.",
+    "candidate": "middle_sa"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Strong technical skills (Python, JavaScript, React) – demonstrates adaptability, which could be useful for fixing varied issues.",
+      "Experience with APIs and databases – suggests ability to troubleshoot and potentially diagnose software-related problems.",
+      "Experience teaching – implies some ability to explain technical concepts, a crucial skill for interacting with customers."
+    ],
+    "weaknesses": [
+      "Completely mismatch in career focus – the candidate's background is in software engineering, a vastly different field than computer repair.",
+      "No demonstrated experience in hardware repair – the job requires hands-on repair skills like reseating RAM, replacing screens, and dealing with physical faults, which are absent from the CV.",
+      "Overly formal and technical – the CV's language and presentation suggest a lack of understanding of the shop’s informal, approachable environment. \"REST APIs\" and \"JWT authentication\" aren't relevant here.",
+      "Geographic location – Seattle, Washington, makes immediate employment highly unlikely and suggests a lack of consideration for the job's location."
+    ],
+    "summary": "While the candidate possesses strong technical skills and some communication abilities, their lack of hardware experience and drastically different career trajectory make them a very poor fit for this particular role.",
+    "candidate": "beginner_american"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Technical Skills: Possesses a range of technical skills (Python, JavaScript, Vue.js) that could be transferable to basic PC repair tasks, particularly diagnosing software issues.",
+      "Problem-Solving: Experience in debugging and creating solutions for software problems indicates a potential for troubleshooting hardware and software issues.",
+      "Adaptability: Experience with a variety of technologies suggests a willingness to learn new systems, which would be beneficial in a diverse repair environment."
+    ],
+    "weaknesses": [
+      "Mismatched Skills: The candidate's skillset is heavily focused on software development and lacks direct experience with hardware repair, which is a core requirement.",
+      "Lack of Relevant Experience: No mention of hardware repair, component replacement, or any practical experience with PCs/laptops.",
+      "Communication: The CV is very technical, and the candidate may struggle to explain technical issues to non-technical customers, a crucial aspect of the role.",
+      "Location: The candidate is based in China, which makes immediate employment highly unlikely and the 'local or able to get to Tillingford reliably' requirement impossible to fulfill."
+    ],
+    "summary": "While the candidate demonstrates strong technical abilities and problem-solving skills, their lack of hardware repair experience and geographic location make them a very poor fit for this hands-on, customer-facing computer repair role.",
+    "candidate": "beginner_chinese"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Strong technical skills (Java, Kotlin, Python, React) - demonstrates a solid programming foundation.",
+      "Experience with APIs - relevant to understanding and potentially fixing software-related issues.",
+      "Problem-solving abilities - evidenced by reducing incident diagnosis time and improving application completion rates.",
+      "Mentoring experience - shows potential for patience and ability to explain technical concepts (important for customer interaction)."
+    ],
+    "weaknesses": [
+      "Overqualified - the candidate's skillset and experience are significantly beyond the requirements of the role.",
+      "Lack of direct hardware repair experience - the CV focuses solely on software development, with no mention of physical repair work.",
+      "Potentially uninterested - the role's casual and informal nature, and its focus on basic repairs, may not appeal to someone with this level of technical expertise.",
+      "No indication of interest in older systems - the job description specifically mentions Windows XP, which the candidate's experience doesn't cover.",
+      "Salary expectations - a software engineer of this caliber likely commands a much higher salary than £12.50/hr, making the 'cash-in-hand' aspect even less appealing."
+    ],
+    "summary": "While Priya possesses excellent technical skills, her background and experience are drastically mismatched for a hands-on computer repair shop role, suggesting a very low likelihood of suitability or long-term interest.",
+    "candidate": "intermediate_american"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Strong technical skills: Candidate possesses a wide range of backend, frontend, and data technologies, suggesting a solid technical foundation.",
+      "Problem-solving ability: Experience in diagnosing and resolving issues (reducing incident diagnosis time by 33%) demonstrates a capability to troubleshoot and improve systems – potentially applicable to computer repair.",
+      "Mentoring experience: Shows ability to explain technical concepts and guide others, which aligns with the need for patient customer interaction."
+    ],
+    "weaknesses": [
+      "Mismatched skillset: Candidate's experience is heavily focused on complex software engineering projects, which is far removed from the required skills of basic PC/laptop repair (RAM reseating, screen replacement).",
+      "Lack of relevant experience: No mention of physical hardware repair, operating system troubleshooting (beyond basic development context), or direct customer interaction in a repair setting.",
+      "Potential communication barrier: While the candidate demonstrates communication skills in a professional setting, translating that to explaining technical issues to non-technical customers in a friendly and patient manner is not evident.",
+      "Geographic limitations: Located in China, raising concerns about logistical feasibility and time zone differences."
+    ],
+    "summary": "This candidate's extensive software engineering background and advanced technical skills don’t align with the practical, customer-facing requirements of a hands-on computer repair role, making them a poor fit for the position.",
+    "candidate": "middle_chinese"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Excellent technical skills and experience (Go, Java, Python, Kubernetes, AWS, etc.)"
+    ],
+    "weaknesses": [
+      "Overqualified: The candidate's experience and skillset far exceed the requirements of the role. Their focus is on complex distributed systems and platform engineering, which is not relevant to basic computer repairs. The informal, small-shop environment would likely be a significant culture clash.  The candidate demonstrates a high level of expertise and responsibility that does not align with the casual nature of the shop. The pay offered would be a major deterrent. There's no indication of hands-on PC/laptop repair experience. ",
+      "Lack of demonstrable PC repair skills: The CV highlights software engineering and system design, not practical hardware repair. Although he has excellent technical ability, he lacks the core ability to fix a laptop with tea in it, or a printer that has just stopped, as highlighted in the job description.",
+      "Unlikely to be interested: The candidate's profile showcases a career trajectory focused on leadership and complex projects. A part-time, low-paying role in a small repair shop seems unlikely to appeal.",
+      "No indication of personality fit: While friendly and patient are listed as essential, there's no evidence in the CV to suggest Marcus possesses these qualities – nor is there an emphasis on these skills.",
+      "Location - may not be local, or interested in relocating"
+    ],
+    "summary": "This candidate is vastly overqualified and appears to be seeking senior-level leadership positions, making them an unsuitable fit for the entry-level, hands-on computer repair role.",
+    "candidate": "senior_american"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong technical background with extensive experience in distributed systems and cloud technologies.",
+      "Demonstrates leadership and mentorship skills, suggesting potential for training/guidance of others (though in a much larger context).",
+      "Excellent communication skills, evidenced by speaking engagements and technical documentation."
+    ],
+    "weaknesses": [
+      "Significant mismatch in skillset – candidate's expertise is in high-level software engineering and distributed systems, far beyond the scope of basic PC/laptop repair.",
+      "No evidence of practical hardware repair skills, which are essential for the role (RAM reseating, screen replacement, etc.).",
+      "Experience level and salary expectations are drastically higher than what the job offers. A senior engineer with this background would be vastly overqualified.",
+      "The CV's tone and language are entirely unsuitable for the casual, friendly environment described in the job posting."
+    ],
+    "summary": "This candidate's skillset and experience are completely misaligned with the requirements of a small, family-run computer repair shop seeking a general fixer.",
+    "candidate": "senior_chinese"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Problem-solving aptitude (implied through engineering experience)",
+      "Technical communication skills (demonstrated in CV writing)"
+    ],
+    "weaknesses": [
+      "Overqualified - possesses advanced skills far beyond the scope of the role.",
+      "Lack of direct hardware repair experience - CV focuses solely on software engineering.",
+      "Unlikely to be interested - career trajectory and responsibilities suggest a disinterest in the type of work offered.",
+      "Geographic location presents a significant barrier.",
+      "Salary expectations likely to be misaligned - current pay rate is far below the candidate's market value."
+    ],
+    "summary": "This candidate's extensive software engineering background and senior-level experience are dramatically misaligned with the shop assistant/computer repair person role, making them an extremely unlikely fit.",
+    "candidate": "senior_sa"
+  }
+]

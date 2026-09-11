@@ -1,0 +1,148 @@
+[
+  {
+    "score": 9,
+    "strengths": [
+      "Strong experience in both frontend (TypeScript) and backend (Go) technologies as required by the role.",
+      "Demonstrated ability to operate and improve services in production, aligning with the role's responsibilities for observability and incident response.",
+      "Experience in designing and working with event-driven architectures, including Kafka, which is relevant for scaling the data platform.",
+      "Proven track record of leadership and mentoring, which is valuable for shaping company culture and onboarding new engineers.",
+      "Familiarity with distributed systems fundamentals, aligning with the role's requirement for understanding consistency, queues, and idempotency."
+    ],
+    "weaknesses": [
+      "Lack of explicit experience in the energy sector or related domains like demand response or BMS/SCADA, though this is not essential.",
+      "No direct mention of experience with React or specific work with front-end development, despite strong backend and systems engineering background."
+    ],
+    "summary": "Marcus Okafor is an excellent fit for the role, with extensive experience in relevant technologies and systems, complemented by leadership and operational skills, with minor gaps in React and energy domain knowledge.",
+    "candidate": "senior_american"
+  },
+  {
+    "score": 9,
+    "strengths": [
+      "Extensive experience with full-stack development, including frontend (TypeScript) and backend (Go) technologies, aligning with the job's requirements.",
+      "Operational experience in production environments, including metrics, tracing, and incident response, which matches the job's emphasis on service ownership and on-call participation.",
+      "Proven ability to drive technical strategy, architectural improvements, and operational maturity, relevant to shaping the product roadmap and leading engineering initiatives.",
+      "Strong leadership and mentorship experience, which is beneficial for the role's responsibility of onboarding new engineers and shaping the company culture."
+    ],
+    "weaknesses": [
+      "Lack of specific experience with energy sector domain knowledge, although not essential, it could be beneficial for the role.",
+      "No direct experience with Kafka, TimescaleDB, or Redis, which are part of the job's technical stack, though familiarity with similar technologies suggests adaptability."
+    ],
+    "summary": "Zanele Madondo is an exceptionally strong candidate for the role, with substantial experience in relevant technologies, operational service ownership, and leadership, with minor gaps in specific energy sector knowledge and certain technical tools.",
+    "candidate": "senior_sa"
+  },
+  {
+    "score": 8,
+    "strengths": [
+      "Strong experience in full-stack development with React/TypeScript and backend languages like Java and Python, aligning with the technical skills required.",
+      "Proven ability to operate and improve services in production, with experience in observability and reducing incident diagnosis time.",
+      "Experience with event-driven architectures and data streaming technologies like Kafka, aligning well with the company's tech stack.",
+      "Leadership and mentoring experience, which is valuable for helping onboard new engineers as mentioned in the role."
+    ],
+    "weaknesses": [
+      "Lacks specific experience with Go, which is preferred for backend services at Pulsegrid.",
+      "No explicit experience with TimescaleDB or Redis, which are part of the company's data platform.",
+      "No prior experience in the energy sector, which is desirable for the role."
+    ],
+    "summary": "Priya is a strong fit with solid full-stack experience, particularly in event-driven systems, and leadership skills, but would need to upskill in Go and learn more about the energy sector.",
+    "candidate": "intermediate_american"
+  },
+  {
+    "score": 8,
+    "strengths": [
+      "Solid experience with full-stack development including React/TypeScript and backend languages (Java, Kotlin), aligning with the job's requirements.",
+      "Proven track record in operating services in production, evident from work on distributed tracing, service dashboards, and alerting.",
+      "Experience with Kafka and event-driven architectures, relevant for scaling Pulsegrid's event-driven data platform.",
+      "Strong mentorship and leadership demonstrated by coaching junior engineers and facilitating design discussions.",
+      "Genuine interest in improving system visibility and integration, crucial for a role that demands direct interaction with customers and fast iteration."
+    ],
+    "weaknesses": [
+      "Lack of experience with Go, the preferred backend language for the role, although Kotlin and Java are acceptable alternatives.",
+      "No explicit experience in the energy sector or with specific technologies like TimescaleDB, which are desirable for this role.",
+      "No demonstrated experience with TimescaleDB or similar technologies, which are essential for the data pipelines aspect of the job."
+    ],
+    "summary": "The candidate possesses strong full-stack development skills, relevant experience with event-driven systems, and a proven ability to operate and improve production services, though there is a need for upskilling in Go and energy sector technologies.",
+    "candidate": "middle_sa"
+  },
+  {
+    "score": 8,
+    "strengths": [
+      "Extensive experience with Go, Kafka, Kubernetes, and distributed systems, aligning well with the technical requirements.",
+      "Strong leadership and mentorship background, indicating capability in shaping team culture and guiding new engineers.",
+      "Track record of improving system reliability and developer velocity, crucial for high-paced startup environments.",
+      "Experience in operating services in production environments, covering key aspects like observability, alerting, and incident response."
+    ],
+    "weaknesses": [
+      "Lack of direct experience with the energy sector or domain-specific knowledge such as demand response and BMS/SCADA.",
+      "Limited experience with TypeScript/React for frontend development, although strong in backend engineering."
+    ],
+    "summary": "The candidate demonstrates strong alignment with the technical and operational demands of the role, with minor gaps in frontend technology and domain-specific knowledge.",
+    "candidate": "senior_chinese"
+  },
+  {
+    "score": 7,
+    "strengths": [
+      "Strong foundation in relevant programming languages and frameworks (TypeScript, React, Node.js).",
+      "Experience with full-stack development and database interactions (PostgreSQL).",
+      "Proven ability to work in cross-functional teams and contribute to project planning and execution.",
+      "Engagement in testing and quality assurance (expanded Jest test coverage)."
+    ],
+    "weaknesses": [
+      "Lack of direct experience with backend languages like Go or Rust.",
+      "No demonstrated experience with event-driven architectures or technologies like Kafka.",
+      "Limited exposure to operating services in production environments.",
+      "No prior startup experience which is desirable for the role."
+    ],
+    "summary": "Naledi has a solid technical foundation and relevant development experience, but lacks specific backend expertise and production operational experience required for the role.",
+    "candidate": "beginner_sa"
+  },
+  {
+    "score": 7,
+    "strengths": [
+      "Strong backend experience with Go-compatible languages (Java, Kotlin, Python)",
+      "Proven ability to design and deliver backend services with measurable impact",
+      "Experience with event-driven architectures and Kafka",
+      "Leadership and mentorship experience",
+      "Familiarity with CI/CD and cloud technologies relevant to the role"
+    ],
+    "weaknesses": [
+      "Lack of direct experience with TypeScript and React",
+      "No specific experience with Go, although languages like Java and Kotlin are somewhat compatible",
+      "No direct experience with TimescaleDB or Redis",
+      "Limited experience with energy sector domain knowledge"
+    ],
+    "summary": "The candidate has a strong background in backend engineering with relevant technologies, but lacks direct experience with TypeScript, React, and Go, which are crucial for the role.",
+    "candidate": "middle_chinese"
+  },
+  {
+    "score": 6,
+    "strengths": [
+      "Strong foundational skills in TypeScript/React and backend technologies such as Node.js and Express.",
+      "Hands-on experience with full-stack development and agile practices.",
+      "Familiarity with tools and technologies like Docker, GitHub, and PostgreSQL, relevant to the role."
+    ],
+    "weaknesses": [
+      "Lacks the required 4+ years of experience shipping production software.",
+      "No direct experience with Go, Kafka, or TimescaleDB, which are essential for the role.",
+      "Limited experience in operating services in production environments and with observability."
+    ],
+    "summary": "The candidate demonstrates a solid technical foundation and relevant skills but lacks the required experience in production environments and with specific technologies crucial for the role.",
+    "candidate": "beginner_american"
+  },
+  {
+    "score": 5,
+    "strengths": [
+      "Familiarity with TypeScript, React, and JavaScript relevant to the frontend requirements",
+      "Experience in building responsive web applications and REST APIs",
+      "Proven ability to work in agile teams, which is crucial for fast-paced environments",
+      "Strong foundational skills in full-stack development with Vue.js, Express, and MySQL"
+    ],
+    "weaknesses": [
+      "Lack of experience with Go, Kafka, TimescaleDB, and Redis, which are specified in the role",
+      "Limited experience in operating services in production and handling incident response",
+      "No direct experience with real-time energy orchestration or event-driven architectures",
+      "Insufficient experience in customer interaction and feature flag management"
+    ],
+    "summary": "The candidate has a solid foundation in relevant technologies and agile environments, but lacks specific experience with key technologies and real-world operational challenges outlined in the job description.",
+    "candidate": "beginner_chinese"
+  }
+]

@@ -1,0 +1,121 @@
+[
+  {
+    "score": 7,
+    "strengths": [
+      "Strong programming skills in Python, JavaScript, and TypeScript",
+      "Experience in web development frameworks like React and Node.js"
+    ],
+    "weaknesses": [
+      "Lack of direct IT support experience in an educational setting",
+      "Limited experience with Microsoft 365 and Intune"
+    ],
+    "summary": "Naledi Molefe has strong technical skills but lacks direct experience in IT support for educational settings, which is crucial for the role.",
+    "candidate": "beginner_sa"
+  },
+  {
+    "score": 6,
+    "strengths": [
+      "Strong programming skills in Python and JavaScript",
+      "Experience in web application development and API creation"
+    ],
+    "weaknesses": [
+      "Limited experience in IT support and hardware troubleshooting",
+      "No experience in an educational setting"
+    ],
+    "summary": "Lin Xiaoyu has strong technical skills but lacks the specific experience in IT support and education required for the role.",
+    "candidate": "beginner_chinese"
+  },
+  {
+    "score": 5,
+    "strengths": [
+      "Strong programming background",
+      "Experience in Python"
+    ],
+    "weaknesses": [
+      "Lacks direct IT support experience",
+      "No experience working with young people in an educational setting"
+    ],
+    "summary": "The candidate has a solid technical background and programming skills, but lacks the direct IT support and educational experience required for the role.",
+    "candidate": "beginner_american"
+  },
+  {
+    "score": 5,
+    "strengths": [
+      "Strong background in backend services, API design, and developer velocity",
+      "Experience with Python and some familiarity with Microsoft 365 tools"
+    ],
+    "weaknesses": [
+      "Lacks direct experience in educational IT settings",
+      "No formal training or experience with safeguarding children"
+    ],
+    "summary": "Zhang Wei possesses technical skills relevant to the IT role but lacks direct educational experience and specific qualifications required for working with young people.",
+    "candidate": "middle_chinese"
+  },
+  {
+    "score": 5,
+    "strengths": [
+      "Strong background in backend development and API creation",
+      "Experience with cloud services and automation tools"
+    ],
+    "weaknesses": [
+      "Lacks direct experience in educational technology or IT support",
+      "No evidence of experience working with young people or educational programming"
+    ],
+    "summary": "Kagiso Ndlovu possesses strong technical skills but lacks direct experience relevant to educational IT support and youth engagement.",
+    "candidate": "middle_sa"
+  },
+  {
+    "score": 4,
+    "strengths": [
+      "strong programming background in Python and Java",
+      "excellent problem-solving skills and project management"
+    ],
+    "weaknesses": [
+      "lacks education and experience in educational technology",
+      "no demonstrated experience working with youth"
+    ],
+    "summary": "Priya Nair's strong programming and technical skills are a plus, but the lack of experience in education and working with young people makes her a less suitable fit for the role.",
+    "candidate": "intermediate_american"
+  },
+  {
+    "score": 4,
+    "strengths": [
+      "Strong technical background in IT and programming",
+      "Experience in system design and reliability"
+    ],
+    "weaknesses": [
+      "Lacks direct experience in education or IT support roles",
+      "No evidence of working with young people or coding clubs"
+    ],
+    "summary": "While Marcus has a strong technical background, the role requires specific education and youth engagement experience which he lacks.",
+    "candidate": "senior_american"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Advanced technical skills in distributed systems and platform engineering",
+      "Proven track record in technical leadership and mentoring"
+    ],
+    "weaknesses": [
+      "Lack of direct experience in educational settings",
+      "Insufficient experience with Windows 11, Microsoft 365, and Intune",
+      "No direct experience with teaching or supporting young people"
+    ],
+    "summary": "Candidate has strong technical background but lacks relevant experience in education and direct IT support roles.",
+    "candidate": "senior_chinese"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Extensive software engineering experience",
+      "Strong technical background"
+    ],
+    "weaknesses": [
+      "Lacks relevant educational or vocational IT support experience",
+      "No experience in working with young people",
+      "Limited exposure to school IT systems"
+    ],
+    "summary": "While the candidate has a strong technical background and extensive software engineering experience, the role at St Aldhelm's requires specific IT support and youth engagement skills that the candidate does not possess.",
+    "candidate": "senior_sa"
+  }
+]

@@ -12,7 +12,7 @@ data/rewrite_feedback/
 logs/
 scripts/
 docs/
-*.json
+
 # --- parser / rewriter working files ---
 .textcache/
 demo/

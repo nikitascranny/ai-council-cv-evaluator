@@ -1,0 +1,122 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Strong communication skills demonstrated through teaching experience",
+      "Ability to learn new tools and technologies quickly"
+    ],
+    "weaknesses": [
+      "No relevant security experience or certifications (e.g., SIA licence)",
+      "No experience with CCTV, alarm systems, or exhibition security protocols"
+    ],
+    "summary": "The candidate lacks essential security qualifications, experience, and technical skills required for the Museum Security Specialist role.",
+    "candidate": "beginner_american"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Strong technical skills in software development",
+      "Experience in collaborative team environments"
+    ],
+    "weaknesses": [
+      "No relevant security experience or qualifications",
+      "Lacks required skills in CCTV, alarm systems, and incident reporting"
+    ],
+    "summary": "The candidate's background in software engineering is unrelated to the security specialist role, and they lack all essential qualifications and experience required for the position.",
+    "candidate": "beginner_chinese"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Strong communication and problem-solving skills demonstrated through software development and teaching roles",
+      "Ability to learn and adapt, evidenced by technical certifications and project experience"
+    ],
+    "weaknesses": [
+      "No relevant security experience or qualifications (e.g., SIA licence, museum security operations)",
+      "Lack of experience with CCTV, alarm systems, or incident reporting required for the role",
+      "Software development background unrelated to security operations or risk management"
+    ],
+    "summary": "Candidate lacks essential security qualifications, museum experience, and technical skills required for the role but demonstrates general adaptability and communication strengths.",
+    "candidate": "beginner_sa"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Strong communication and technical problem-solving skills",
+      "Experience leading projects and mentoring teams"
+    ],
+    "weaknesses": [
+      "No relevant security or museum experience",
+      "Lacks required SIA licence and security system expertise"
+    ],
+    "summary": "The candidate is a software engineer with no relevant security experience or qualifications for the Museum Security Specialist role.",
+    "candidate": "middle_chinese"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Strong technical problem-solving and leadership experience",
+      "Ability to manage complex systems and workflows"
+    ],
+    "weaknesses": [
+      "No relevant security or museum experience",
+      "Lacks required SIA licence and security system expertise"
+    ],
+    "summary": "Candidate's software engineering background lacks essential security experience, certifications, and museum-specific skills required for the role.",
+    "candidate": "senior_chinese"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong technical skills in software development and system design",
+      "Experience in mentoring and leadership within engineering teams"
+    ],
+    "weaknesses": [
+      "No relevant security or museum experience",
+      "Lacks required SIA licence and security system expertise",
+      "No evidence of incident reporting, alarm monitoring, or exhibition security experience"
+    ],
+    "summary": "Candidate's software engineering background is entirely unrelated to the security operations, museum protection, and physical security requirements of the role.",
+    "candidate": "intermediate_american"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong technical background in software engineering",
+      "Experience with system monitoring and incident reporting"
+    ],
+    "weaknesses": [
+      "No relevant security experience or SIA licence",
+      "No exposure to museum operations, CCTV systems, or high-value asset protection"
+    ],
+    "summary": "Candidate lacks essential security experience, SIA qualification, and exposure to museum operations required for the role.",
+    "candidate": "middle_sa"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong technical leadership and problem-solving experience",
+      "Proven ability to manage complex systems and teams"
+    ],
+    "weaknesses": [
+      "No relevant security or museum experience",
+      "Lacks required SIA licence and security system expertise",
+      "Irrelevant professional background for a security role"
+    ],
+    "summary": "Candidate's extensive software engineering experience is entirely unrelated to the security specialist role, with no evidence of required security qualifications, museum experience, or relevant technical skills.",
+    "candidate": "senior_american"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong technical leadership and engineering experience",
+      "Proven ability to implement complex systems and improve operational efficiency"
+    ],
+    "weaknesses": [
+      "No relevant security or museum experience",
+      "Lacks required SIA licence and technical skills for security systems (CCTV, alarms)"
+    ],
+    "summary": "Candidate's extensive software engineering background is entirely misaligned with the security specialist role's requirements, including lack of security experience, SIA licence, and relevant technical skills.",
+    "candidate": "senior_sa"
+  }
+]
