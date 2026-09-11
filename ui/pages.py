@@ -18,8 +18,24 @@ header a { color: #9fb4ff; text-decoration: none; }
 main { max-width: 880px; margin: 24px auto; padding: 0 18px; }
 .card { background: #fff; border: 1px solid #dfe2e8; border-radius: 8px;
         padding: 20px; margin-bottom: 18px; }
-.modes { display: flex; gap: 18px; }
-.modes a { flex: 1; text-decoration: none; color: inherit; }
+.hero { text-align: center; margin: 52px 0 30px; }
+.hero h1 { font-size: 38px; line-height: 1.15; letter-spacing: -.6px;
+           margin: 0 0 10px; }
+.hero p { margin: 0; color: #5b606b; font-size: 17px; }
+.modes { display: flex; flex-wrap: wrap; gap: 20px; align-items: stretch; }
+/* The anchor stretches so both cards end up the same height whatever the
+   description lengths are - a short card next to a tall one reads as an
+   afterthought rather than an equal choice. */
+.modes a { flex: 1 1 260px; display: flex; text-decoration: none;
+           color: inherit; }
+.modes .card { flex: 1; display: flex; flex-direction: column; margin: 0;
+               transition: border-color .15s, box-shadow .15s, transform .15s; }
+.modes a:hover .card { border-color: #16181d; transform: translateY(-2px);
+                       box-shadow: 0 6px 18px rgba(22, 24, 29, .12); }
+.modes .card h2 { margin: 0 0 10px; }
+.modes .card p { flex: 1; margin: 0 0 16px; color: #43474f; }
+.modes .go { font-weight: 600; }
+.modes a:hover .go { text-decoration: underline; }
 .empty { background: #fff8e6; border: 1px solid #e6cf8b; border-radius: 8px;
          padding: 16px; }
 label { display: block; margin: 10px 0 4px; font-weight: 600; }
@@ -31,6 +47,24 @@ td, th { text-align: left; padding: 6px 10px; border-bottom: 1px solid #e6e8ec;
          vertical-align: top; }
 label.choice { font-weight: 400; margin: 8px 0; }
 label.choice small { display: block; margin-left: 24px; color: #5b606b; }
+fieldset { border: 1px solid #dfe2e8; border-radius: 6px; margin: 18px 0 0;
+           padding: 4px 14px 14px; }
+legend { font-weight: 600; padding: 0 6px; }
+.hint { color: #5b606b; font-size: 14px; margin: 6px 0 8px; }
+.picker { border: 1px solid #c6cad2; border-radius: 6px; max-height: 260px;
+          overflow-y: auto; background: #fff; }
+/* Unselectable text: without this, shift-clicking a row to extend the
+   selection highlights the names instead of ticking the boxes. */
+.picker label { display: flex; align-items: center; gap: 10px; font-weight: 400;
+                margin: 0; padding: 7px 10px; cursor: pointer;
+                border-bottom: 1px solid #f0f1f4;
+                -webkit-user-select: none; user-select: none; }
+.picker label:last-child { border-bottom: 0; }
+.picker label:hover { background: #eef2ff; }
+.pickerbar { display: flex; align-items: center; gap: 10px; margin-top: 10px; }
+.pickerbar button { background: #fff; color: #16181d; border: 1px solid #c6cad2;
+                    padding: 5px 12px; font-size: 14px; }
+.pickerbar .count { color: #5b606b; font-size: 14px; }
 .actions { display: flex; flex-wrap: wrap; gap: 10px; margin: 12px 0; }
 .actions form, .actions a { margin: 0; }
 pre.rewrite { white-space: pre-wrap; overflow-wrap: anywhere; }
@@ -50,20 +84,91 @@ def layout(title: str, body: str, mode: str = None) -> str:
 
 
 def mode_picker() -> str:
-    body = ("<div class='modes'>"
+    body = ("<div class='hero'><h1>AI CV Evaluator</h1>"
+            "<p>Choose your desired mode.</p></div>"
+            "<div class='modes'>"
             "<a href='/reviewer'><div class='card'><h2>Reviewer</h2>"
             "<p>Assess candidates against a job listing. Shows the score, how "
             "much of it was wording rather than substance, and the facts the CV "
-            "states.</p></div></a>"
+            "states.</p><span class='go'>Open Reviewer &rarr;</span></div></a>"
             "<a href='/candidate'><div class='card'><h2>Candidate</h2>"
-            "<p>Aim your own CV at a listing you are applying for.</p>"
-            "</div></a></div>")
+            "<p>Aim your own CV at a listing you are applying for: see how it "
+            "scores, have it rewritten, or both.</p>"
+            "<span class='go'>Open Candidate &rarr;</span></div></a></div>")
     return layout("AI CV Evaluator", body)
 
 
 def _options(paths, label_for) -> str:
     return "".join("<option value='{}'>{}</option>".format(
         html.escape(str(p)), html.escape(label_for(p))) for p in paths)
+
+
+def _cv_checkboxes(paths, label_for) -> str:
+    """One tickable row per CV, in place of a ctrl-click multi-select.
+
+    Every row posts under the same `cv` name, so parse_qs hands the route the
+    same list of values the multi-select did.
+    """
+    return "".join(
+        "<label><input type='checkbox' name='cv' value='{}'><span>{}</span>"
+        "</label>".format(html.escape(str(p)), html.escape(label_for(p)))
+        for p in paths)
+
+
+# Named for what the reviewer gets out of them rather than for the stage that
+# implements them: "Phrasing-sensitivity probe" told a first-time user nothing
+# about what ticking it would do.
+_REVIEWER_OPTIONS = (
+    ("essential", False, "Check the essential requirements",
+     "Reads only the experience, education and certifications sections and "
+     "summarises which of the listing's essential requirements the CV clearly "
+     "meets, which are a near match, and which are missing or unclear. Adds "
+     "one model call per candidate."),
+    ("rewrite", True, "Check whether rewording changes the score",
+     "Scores the CV, has a model reword it without changing any facts, then "
+     "scores that version too. If the two scores differ much, the ranking is "
+     "reacting to how the CV is written rather than to what the candidate has "
+     "done. The report shows both scores, the difference, and a highlighted "
+     "diff of exactly what changed. Roughly doubles the time per candidate. "
+     "(Called the phrasing-sensitivity probe elsewhere in the project.)"),
+    ("fast", False, "Use smaller, faster models",
+     "Runs every stage on qwen2.5:7b instead of the larger defaults "
+     "(qwen2.5:14b and phi4 for the council, deepseek-r1:8b for the judge). "
+     "Much quicker, and it still runs on a machine that cannot load the big "
+     "models - but the scores are rougher, so use it for a dry run or a demo "
+     "rather than for results you intend to report."),
+)
+
+_CV_PICKER_SCRIPT = """
+(function () {
+  const box = document.getElementById('cvs');
+  const boxes = Array.from(box.querySelectorAll("input[type='checkbox']"));
+  const count = document.getElementById('cv-count');
+  let anchor = null;
+  function refresh() {
+    const n = boxes.filter((b) => b.checked).length;
+    count.textContent = n === 0 ? 'None selected yet'
+      : n + (n === 1 ? ' candidate selected' : ' candidates selected');
+  }
+  function setAll(on) { boxes.forEach((b) => { b.checked = on; }); refresh(); }
+  document.getElementById('cv-all').addEventListener('click', () => setAll(true));
+  document.getElementById('cv-none').addEventListener('click', () => setAll(false));
+  box.addEventListener('click', (event) => {
+    const hit = event.target;
+    if (hit.type !== 'checkbox') return;
+    // Shift-click fills in the run between the last box touched and this one,
+    // so picking a whole batch is two clicks rather than twenty.
+    if (event.shiftKey && anchor !== null) {
+      const here = boxes.indexOf(hit);
+      const [from, to] = [here, anchor].sort((a, b) => a - b);
+      boxes.slice(from, to + 1).forEach((b) => { b.checked = hit.checked; });
+    }
+    anchor = boxes.indexOf(hit);
+    refresh();
+  });
+  refresh();
+})();
+"""
 
 
 def reviewer_form(jobs, cvs, status, settings, label_for) -> str:
@@ -75,21 +180,31 @@ def reviewer_form(jobs, cvs, status, settings, label_for) -> str:
                 "</p></div></div>").format(html.escape(where))
         return layout("Reviewer - AI CV Evaluator", body, mode="reviewer")
 
+    options = "".join(
+        "<label class='choice'><input type='checkbox' name='{name}'{checked}> "
+        "<b>{label}</b><small>{note}</small></label>".format(
+            name=name, checked=" checked" if on else "",
+            label=html.escape(label), note=html.escape(note))
+        for name, on, label, note in _REVIEWER_OPTIONS)
+
     body = ("<div class='card'><h2>Reviewer</h2>"
             "<form method='post' action='/reviewer/run'>"
             "<label for='job'>Job listing</label>"
             "<select id='job' name='job'>{jobs}</select>"
-            "<label for='cv'>Candidates <small>(select more than one to "
-            "compare)</small></label>"
-            "<select id='cv' name='cv' multiple size='10'>{cvs}</select>"
-            "<label><input type='checkbox' name='essential'> Essential "
-            "requirements</label>"
-            "<label><input type='checkbox' name='rewrite' checked> "
-            "Phrasing-sensitivity probe</label>"
-            "<label><input type='checkbox' name='fast'> Fast models</label>"
+            "<fieldset><legend>Candidates</legend>"
+            "<p class='hint'>Tick everyone you want to compare - one click "
+            "each, and shift-click to take a whole run at once.</p>"
+            "<div class='picker' id='cvs'>{cvs}</div>"
+            "<div class='pickerbar'>"
+            "<button type='button' id='cv-all'>Select all</button>"
+            "<button type='button' id='cv-none'>Clear</button>"
+            "<span class='count' id='cv-count'></span></div></fieldset>"
+            "<fieldset><legend>Extra checks</legend>{options}</fieldset>"
             "<p><button type='submit'>Evaluate</button></p>"
             "</form></div>").format(jobs=_options(jobs, label_for),
-                                    cvs=_options(cvs, label_for))
+                                    cvs=_cv_checkboxes(cvs, label_for),
+                                    options=options)
+    body += "<script>{}</script>".format(_CV_PICKER_SCRIPT)
     return layout("Reviewer - AI CV Evaluator", body, mode="reviewer")
 
 
