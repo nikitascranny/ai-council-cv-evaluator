@@ -21,7 +21,9 @@ evaluator/pipeline/Evaluate_CV.py):
     data/cvs/            - candidate CV PDFs, in per-batch subfolders
                             (Batch1/, batch2/, batch3/, batch4/, ...)
     common/              - document_utils.py, ollama_utils.py, results_io.py
-    parser/              - cv_pdf_parser.py, the one canonical CV PDF parser
+    parser/              - cv_pdf_parser.py, the one canonical CV PDF parser,
+                            and job_req_parser.py for the essential check's
+                            job-listing side
     results/             - created automatically for output JSON
 
 essential_requirements.py is a file used only by this script.
@@ -32,14 +34,17 @@ import sys
 from pathlib import Path
 
 
-# where common/ (shared utilities) and data/ (CVs, job listings) live.
+# where common/ (shared utilities), parser/ (job_req_parser) and data/ (CVs,
+# job listings) live.
 _ROOT_DIR = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(_ROOT_DIR / "common"))
+sys.path.insert(0, str(_ROOT_DIR / "parser"))
 
 from document_utils import extract_text_from_pdf, load_cv
 from ollama_utils import call_ollama_json
 from results_io import safe_filename_part, save_json
 import essential_requirements  # sibling file, still in this same folder - no path change needed
+import job_req_parser
 
 
 JOB_DESCRIPTIONS_FOLDER = _ROOT_DIR / "data" / "job-listings"
@@ -164,6 +169,19 @@ def main():
             continue
         print(f"Loaded job description ({len(job_text)} characters)\n")
 
+        # Scoped once per job listing, not per candidate - the essential
+        # check reads only the requirements section, falling back to the
+        # whole listing when job_req_parser finds no requirements heading
+        # (same fallback essential_stage uses in the UI pipeline).
+        essential_job_text = job_text
+        if args.essential_requirements:
+            essential_job_text = (
+                job_req_parser.extract_requirements_section(job_text) or job_text
+            )
+            if essential_job_text is not job_text:
+                print(f"Scoped to essential requirements ({len(essential_job_text)} "
+                      f"of {len(job_text)} characters)\n")
+
         # Creates a dictionary to hold results for each evaluator model and a list for essential requirements results
         results_by_model = {model: [] for model in EVALUATOR_MODELS}
         essential_requirements_results = []
@@ -208,7 +226,7 @@ def main():
                 print(f"  Checking essential requirements ({ESSENTIAL_REQUIREMENTS_MODEL})...")
                 cv_sections_text = cv.sections_named("experience", "education", "certifications")
                 er_result = essential_requirements.evaluate_essential_requirement(
-                    job_text, cv_sections_text, candidate_name,
+                    essential_job_text, cv_sections_text, candidate_name,
                     model=ESSENTIAL_REQUIREMENTS_MODEL,
                 )
                 essential_requirements_results.append(er_result)
