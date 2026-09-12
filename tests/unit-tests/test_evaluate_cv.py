@@ -130,7 +130,7 @@ def test_parse_args_folders_can_be_overridden(monkeypatch, tmp_path):
 
 
 # ---------------------------------------------------------------------------
-# main - the folders and filenames run_evaluation.sh and aggregate_results.py
+# main - the folders and filenames run_evaluation.py and aggregate_results.py
 # depend on, with every PDF read and model call faked
 # ---------------------------------------------------------------------------
 

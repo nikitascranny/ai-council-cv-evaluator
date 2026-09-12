@@ -12,7 +12,7 @@ Usage:
     python Evaluate_CV.py -e --cvs data/cvs/Batch2 --jobs data/job-listings \
         --results results/evaluation/batch2              # other folders
 
-run_evaluation.sh (next to this file) runs this, aggregate_results.py and
+run_evaluation.py (next to this file) runs this, aggregate_results.py and
 judge.py in sequence over one CV folder and one job listing folder.
 
 Folder layout (repo root, three levels above this file at
