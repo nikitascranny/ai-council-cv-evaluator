@@ -326,6 +326,65 @@ class TestBuildPrompt:
 
 
 # ---------------------------------------------------------------------------
+# build_judge_prompt and judge_candidate - what the web app judges with
+# ---------------------------------------------------------------------------
+
+class TestBuildJudgePrompt:
+    def test_it_is_build_prompt_fed_the_formatted_summaries_and_check(self):
+        summaries = [{"candidate": "L", "strengths": ["a"], "weaknesses": "b",
+                      "summary": "c", "score": 6}]
+
+        prompt = judge.build_judge_prompt("job", summaries, "L", {"summary": "Meets."})
+
+        assert prompt == judge.build_prompt(
+            "job", judge.format_summaries_for_prompt(summaries), "L", "Meets.")
+
+    def test_a_failed_check_gives_the_council_only_prompt(self):
+        summaries = [{"candidate": "L", "summary": "c"}]
+
+        failed = judge.build_judge_prompt("job", summaries, "L",
+                                          {"summary": "", "error": "PARSE ERROR"})
+
+        assert failed == judge.build_judge_prompt("job", summaries, "L")
+
+    def test_keep_scores_passes_through(self):
+        prompt = judge.build_judge_prompt("job", [{"candidate": "L", "score": 9}], "L",
+                                          keep_scores=True)
+
+        assert "Prior score given: 9/10" in prompt
+
+
+class TestJudgeCandidate:
+    def _spy(self, monkeypatch, reply=({"final_score": 7}, None)):
+        seen = {}
+
+        def fake(prompt, model, host, **kwargs):
+            seen.update(prompt=prompt, model=model, host=host, **kwargs)
+            return reply
+
+        monkeypatch.setattr(judge, "call_judge_with_retries", fake)
+        return seen
+
+    def test_an_unreachable_ollama_is_an_error_not_an_exit(self, monkeypatch):
+        # On the web app's worker thread a SystemExit would end the run with
+        # nothing on the page to say why.
+        def exits(*a, **k):
+            raise SystemExit("err: could not get a response from ollama")
+
+        monkeypatch.setattr(judge, "call_judge_with_retries", exits)
+
+        parsed, error = judge.judge_candidate("job", [], "L")
+
+        assert parsed == {}
+        assert "could not get a response" in error
+
+    def test_a_parse_failure_comes_back_as_the_error(self, monkeypatch):
+        self._spy(monkeypatch, reply=({}, "PARSE ERROR"))
+
+        assert judge.judge_candidate("job", [], "L") == ({}, "PARSE ERROR")
+
+
+# ---------------------------------------------------------------------------
 # call_judge
 # ---------------------------------------------------------------------------
 
@@ -643,6 +702,19 @@ class TestMain:
             judge.main()
 
         assert "no reviewer summaries" in str(exc.value)
+
+    def test_command_line_sends_the_same_prompt_as_judge_candidate(self, monkeypatch):
+        entries = [
+            {"candidate": "Lerato", "summary": "Good fit."},
+            {"candidate": "Lerato", "summary": "Meets.", "type": judge.ESSENTIAL_TYPE},
+        ]
+        seen = self._capture_prompt(monkeypatch, entries)
+        self._argv(monkeypatch)
+
+        judge.main()
+
+        summaries, essential = judge.split_essential(entries)
+        assert seen["prompt"] == judge.build_judge_prompt("job text", summaries, "Lerato", essential)
 
 
 if __name__ == "__main__":

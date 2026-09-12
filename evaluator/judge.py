@@ -57,6 +57,20 @@ from ollama_utils import call_ollama_json
 from results_io import save_json
 from document_utils import extract_text_from_pdf
 
+# The judge's call settings: this script's command-line defaults, and what the
+# web app judges with too (ui/pipeline/deps.py, through judge_candidate) - one
+# set of values, so a candidate is judged the same way from either
+DEFAULT_MODEL = "deepseek-r1:8b"
+DEFAULT_HOST = "http://localhost:11434/api/chat"
+# Higher than the independent evaluators' budget: a reasoning model
+# (deepseek-r1) spends part of it on <think> before any JSON is written, and
+# if the budget is too low, the reply is truncated before the JSON is complete
+DEFAULT_NUM_PREDICT = 4096
+DEFAULT_MAX_RETRIES = 3
+DEFAULT_KEEP_ALIVE = "0m"
+DEFAULT_TEMPERATURE = 0.2
+DEFAULT_TIMEOUT = 3600
+
 # =====================================================================
 # Argument parsing (cmd) 
 # =====================================================================
@@ -81,36 +95,36 @@ def _parse_args():
                 "Defaults to the job PDF's filename stem.",
     )
     parser.add_argument(
-        "--model", default="deepseek-r1:8b",
-        help="Ollama model name to use as the judge (default: deepseek-r1:8b).",
+        "--model", default=DEFAULT_MODEL,
+        help=f"Ollama model name to use as the judge (default: {DEFAULT_MODEL}).",
     )
     parser.add_argument(
-        "--host", default="http://localhost:11434/api/chat",
-        help="Ollama host URL (default: http://localhost:11434/api/chat).",
+        "--host", default=DEFAULT_HOST,
+        help=f"Ollama host URL (default: {DEFAULT_HOST}).",
     )
     parser.add_argument(
-        "--num-predict", type=int, default=4096,
+        "--num-predict", type=int, default=DEFAULT_NUM_PREDICT,
         help="Max tokens the judge model may generate (default: 4096).", 
     )
     #set higher than indep evaluators, reasoning models (deepseek-r1) spend part of budget on <think>
     # before JSON is ever written. If value is too low, reply can truncate before JSON is complete.
     
     parser.add_argument(
-        "--max-retries",type=int,default=3,
+        "--max-retries",type=int,default=DEFAULT_MAX_RETRIES,
         help="Max attempts to get a JSON-parseable reply from the judge model before giving up and writing {}. default=3"
     )
 
     parser.add_argument(
-        "--keep-alive", default="0m",
-        help="How long Ollama keeps the judge model loaded after this call (default: '5m'). "
+        "--keep-alive", default=DEFAULT_KEEP_ALIVE,
+        help=f"How long Ollama keeps the judge model loaded after this call (default: '{DEFAULT_KEEP_ALIVE}'). "
     )
 
     parser.add_argument(
-        "--temperature",type=float,default=0.2
+        "--temperature",type=float,default=DEFAULT_TEMPERATURE
     )
 
     parser.add_argument(
-        "--timeout",type=int,default=3600
+        "--timeout",type=int,default=DEFAULT_TIMEOUT
     )
 
     parser.add_argument(
@@ -311,7 +325,22 @@ with exactly these keys:
 }}
 """
 
-def call_judge(prompt, model, host, num_predict, keep_alive, 
+
+def build_judge_prompt(job_text, summaries, candidate_name, essential=None, keep_scores=False):
+    """
+    The whole prompt for one candidate, from the reviewer summaries and the
+    essential-requirements check's entry (None for the council-only prompt).
+
+    called by main() and judge_candidate(), so the command
+    line and the web app cannot drift apart on what the judge is shown. 
+    A failed or empty check is left out (format_essential_for_prompt).
+    """
+    summaries_text = format_summaries_for_prompt(summaries, keep_scores=keep_scores)
+    return build_prompt(job_text, summaries_text, candidate_name,
+                        format_essential_for_prompt(essential))
+
+
+def call_judge(prompt, model, host, num_predict, keep_alive,
                temperature=0.2,timeout=3600,
                ):
     """
@@ -365,6 +394,36 @@ def call_judge_with_retries(prompt, model, host, num_predict, keep_alive,
         print(f"\n{error} on attempt {attempt}/{max_retries} -- retrying...")
     
 
+def judge_candidate(job_text, summaries, candidate_name, essential=None, *,
+                    model=DEFAULT_MODEL, host=DEFAULT_HOST,
+                    num_predict=DEFAULT_NUM_PREDICT, keep_alive=DEFAULT_KEEP_ALIVE,
+                    temperature=DEFAULT_TEMPERATURE, timeout=DEFAULT_TIMEOUT,
+                    max_retries=DEFAULT_MAX_RETRIES, keep_scores=False):
+    """
+    Judge one candidate with the prompt and call settings main() uses by
+    default - for callers other than command line (web app)
+
+    summaries: reviewer summaries only; essential is the essential-requirements check's 
+    result, or None for the council-only prompt.
+
+    Returns (parsed, error) (same as call_judge_with_retries). 
+    Never exits the process: call_judge's sys.exit when Ollama cannot be
+    reached comes back as an error (SystemExit on a web app's worker thread ends the run silently rather than reporting)
+    """
+    prompt = build_judge_prompt(job_text, summaries, candidate_name, essential, keep_scores)
+    try:
+        return call_judge_with_retries(
+            prompt, model, host,
+            num_predict=num_predict,
+            keep_alive=keep_alive,
+            temperature=temperature,
+            timeout=timeout,
+            max_retries=max_retries,
+        )
+    except SystemExit as exc:
+        return {}, str(exc)
+
+
 # =====================================================================
 # Output writing
 # =====================================================================
@@ -398,8 +457,9 @@ def main():
     job_name = args.job_name or Path(args.job).stem
 
     candidate_name = args.candidate or summaries[0].get("candidate", "Unknown candidate")
-    summaries_text = format_summaries_for_prompt(summaries, keep_scores=args.keep_scores)
-    essential_text = None if args.no_essential else format_essential_for_prompt(essential)
+    if args.no_essential:
+        essential = None
+    essential_text = format_essential_for_prompt(essential)
     if args.no_essential:
         print("Essential-requirements check: left out (--no-essential)")
     elif essential is None:
@@ -409,7 +469,8 @@ def main():
         print(f"Essential-requirements check: not usable ({reason}) -- left out of the prompt")
     else:
         print("Essential-requirements check: included")
-    prompt = build_prompt(job_text, summaries_text, candidate_name, essential_text)
+    prompt = build_judge_prompt(job_text, summaries, candidate_name, essential,
+                                keep_scores=args.keep_scores)
     print(f"prompt:\n{prompt}")
 
     print(f"Sending {len(summaries)} summary(ies) for '{candidate_name}' ({job_name}) to {args.model} at {args.host} ...")
