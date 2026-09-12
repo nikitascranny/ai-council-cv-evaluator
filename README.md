@@ -20,17 +20,49 @@ python app.py --no-browser
 
 Requires Python 3.13. Stop the server with Ctrl-C.
 
+## Batch evaluation (command line, use for experiments)
+
+To evaluate a folder of CVs against a folder of job listings without the web
+app, run the pipeline script:
+
+```
+python evaluator/run_evaluation.py --cvs data/cvs/Batch1 --out results/evaluation/batch1
+```
+
+It runs three steps in order:
+
+1. `Evaluate_CV.py` scores every CV against every job listing with each council
+   model, and runs the essential-requirements check.
+2. `aggregate_results.py` combines those into one file per job and candidate.
+3. `judge.py` gives each of those a final verdict, with the
+   essential-requirements summary in its own section of the prompt.
+
+`--no-essential` judges on the council's summaries alone. Running again on the
+same `--out` with `--from judge --no-essential` gives both conditions from one
+evaluation, in `judged/with-essential/` and `judged/council-only/`. A rerun
+skips pairs that already have a valid verdict. `--help` lists every option.
+
+Each run also adds a record to `<out>/run.json`: when it ran, the git commit,
+the models and options, and each stage's status, counts and timing. 
+
+Before any model call it checks that Ollama is running with every model
+pulled, that job listings are named `job_listing_<slug>.pdf`, and that no two CVs share a candidate name.
+
 ## Modes
 
 The app has two modes, linked from the home page:
 
 - **Reviewer** — pick a job listing and one or more CVs, run the evaluation,
   and read the report: parsed CV structure, each council model's score and
-  summary, the judge's final score, a facts-as-stated panel (numbers,
-  organisations and qualifications pulled from the CV text, not inferred),
-  and the phrasing-sensitivity delta from the rewrite probe. With more than
-  one CV selected, Reviewer mode also ranks the candidates by the judge's
-  final score.
+  summary, the essential-requirements summary, the judge's final score, a
+  facts-as-stated panel (numbers, organisations and qualifications pulled
+  from the CV text, not inferred), and the phrasing-sensitivity delta from
+  the rewrite probe. With more than one CV selected, Reviewer mode also ranks
+  the candidates by the judge's final score.
+
+  The essential-requirements check is ticked by default, and the judge reads
+  its summary alongside the council's; untick it for a council-only score.
+  The report and the saved-runs list say which the judge used.
 
 - **Candidate** — pick one CV and a target job, then choose what to do:
   - **Rewrite** — rewriter v2's two models each tailor the CV to the job
@@ -39,7 +71,7 @@ The app has two modes, linked from the home page:
     suggests a career roadmap and alternative careers.
   - **Evaluate** — the council scores the CV against the listing, the
     essential-requirements model summarises which must-haves it meets, and
-    the judge gives an overall verdict.
+    the judge gives an overall verdict from both.
   - **Evaluate and rewrite** — both, scoring the original first.
 
   Any real rewrite (not a fact-guard fallback) can then be sent back through
@@ -53,7 +85,7 @@ One folder per component, matching the rest of the repo:
 | | |
 |---|---|
 | `parser/` | PDF extraction — structure-aware CV parsing |
-| `evaluator/` | the council of evaluator models, the essential-requirements check and the judge |
+| `evaluator/` | the council of evaluator models, the essential-requirements check and the judge; also includes `aggregate_results.py` and `run_evaluation.py`, which run them as a batch |
 | `rewriter/` | rewriter v1 (the phrasing-sensitivity probe); v2 lands here |
 | `ui/` | this web app — `pages.py`, `report.py`, `facts.py` for what a reviewer sees, and `pipeline/` for the orchestration that drives the components above in order and reports progress |
 | `app.py` | the server entry point |

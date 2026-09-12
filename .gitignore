@@ -10,6 +10,9 @@ scripts/
 docs/
 # judge run-state sentinels
 .done/
+*.log
+#a run's failure list belongs with its results
+!failures.log 
 # --- parser / rewriter working files ---
 .textcache/
 demo/
