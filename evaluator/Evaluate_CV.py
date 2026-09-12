@@ -9,6 +9,11 @@ Usage:
     python Evaluate_CV.py                              # council scoring only
     python Evaluate_CV.py --essential-requirements      # council + essential-requirements check
     python Evaluate_CV.py -e                            # same, short form
+    python Evaluate_CV.py -e --cvs data/cvs/Batch2 --jobs data/job-listings \
+        --results results/evaluation/batch2              # other folders
+
+run_evaluation.sh (next to this file) runs this, aggregate_results.py and
+judge.py in sequence over one CV folder and one job listing folder.
 
 Folder layout (repo root, three levels above this file at
 evaluator/pipeline/Evaluate_CV.py):
@@ -104,6 +109,19 @@ def parse_args() -> argparse.Namespace: # Parse command-line arguments for the s
         help="Also run the essential-requirements check for each candidate, "
              "using ESSENTIAL_REQUIREMENTS_MODEL.",
     )
+    parser.add_argument(
+        "--cvs", type=Path, default=CVS_FOLDER,
+        help="Folder of candidate CV PDFs, searched recursively (default: data/cvs/Batch1).",
+    )
+    parser.add_argument(
+        "--jobs", type=Path, default=JOB_DESCRIPTIONS_FOLDER,
+        help="Folder of job listing PDFs (default: data/job-listings).",
+    )
+    parser.add_argument(
+        "--results", type=Path, default=RESULTS_FOLDER,
+        help="Folder to write result JSON into (default: results/). Essential-requirements "
+             "results go into its essential_requirements/ subfolder.",
+    )
     return parser.parse_args()
 
 
@@ -119,16 +137,19 @@ def main():
     else:
         print("Essential-requirements check: OFF (pass --essential-requirements to enable)")
 
-    job_files = sorted(JOB_DESCRIPTIONS_FOLDER.glob("*.pdf")) # Retrieve all job description PDFs from folder
+    results_folder = args.results
+    essential_requirements_folder = results_folder / ESSENTIAL_REQUIREMENTS_FOLDER.name
+
+    job_files = sorted(args.jobs.glob("*.pdf")) # Retrieve all job description PDFs from folder
     if not job_files:
-        print(f"No PDFs found in '{JOB_DESCRIPTIONS_FOLDER}'. Check the folder path.")
+        print(f"No PDFs found in '{args.jobs}'. Check the folder path.")
         return
 
     # rglob descends into every batch subfolder (Batch1/, batch2/, etc.)
     # regardless of naming/casing, rather than assuming a fixed batch list.
-    cv_files = sorted(CVS_FOLDER.rglob("*.pdf"))
+    cv_files = sorted(args.cvs.rglob("*.pdf"))
     if not cv_files:
-        print(f"No PDFs found under '{CVS_FOLDER}'. Check the folder path.")
+        print(f"No PDFs found under '{args.cvs}'. Check the folder path.")
         return
 
     for job_pdf in job_files: # Loop through each job description PDF
@@ -202,14 +223,14 @@ def main():
                 print(f"   {r.get('summary', '')}")
 
             filename = f"{model.replace(':', '_')}__{safe_filename_part(job_pdf.stem)}.json"
-            output_path = save_json(results, RESULTS_FOLDER, filename)
+            output_path = save_json(results, results_folder, filename)
             print(f"Results saved to {output_path}\n")
 
         # One JSON for the essential req check, if ran
         if args.essential_requirements:
             filename = f"essential_requirements__{safe_filename_part(job_pdf.stem)}.json"
             output_path = save_json(
-                essential_requirements_results, ESSENTIAL_REQUIREMENTS_FOLDER, filename
+                essential_requirements_results, essential_requirements_folder, filename
             )
             print(f"Essential-requirements results saved to {output_path}\n")
 
