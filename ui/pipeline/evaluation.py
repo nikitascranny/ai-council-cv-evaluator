@@ -179,9 +179,10 @@ def _evaluate(job_text, cv, candidate, settings, deps):
     with nothing left optional, and without its report.
 
     cv is the ParsedCV for the candidate's own CV, or plain text for a
-    rewrite. The essential check reads three sections of a parsed CV; a
-    rewrite has none, so it is checked whole, which makes the before/after
-    essential summaries a looser comparison than the council's scores.
+    rewrite. Either way the essential check reads the same three sections -
+    for a rewrite, stages.essential_stage segments the plain text itself to
+    find them, falling back to the whole rewrite only if that segmentation
+    finds none of the three.
     """
     cv_text = cv if isinstance(cv, str) else cv.full_text()
     rows = yield from stages.council_stage(

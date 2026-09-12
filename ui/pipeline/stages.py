@@ -11,9 +11,19 @@ Stages are independent on purpose: a lost model costs its own row, and the
 judge still runs on whatever came back.
 """
 
+import sys
 import time
+from pathlib import Path
 
 from ui.pipeline.events import Event
+
+# Pure text segmentation, no Ollama calls - safe to import directly rather
+# than route through Deps, same as ui/facts.py does for fact_guard.
+_ROOT = Path(__file__).resolve().parent.parent.parent
+if str(_ROOT / "parser") not in sys.path:
+    sys.path.insert(0, str(_ROOT / "parser"))
+
+import txt_cv_parser  # noqa: E402
 
 
 def parse_stage(cv_path, deps, candidate: str = ""):
@@ -53,18 +63,39 @@ def council_stage(job_text, cv_text, candidate, models, deps):
     return rows
 
 
+_ESSENTIAL_SECTIONS = ("experience", "education", "certifications")
+
+
+def _scope_rewrite(text: str) -> str:
+    """Section-scope a rewrite's plain text the same way a parsed CV is scoped.
+
+    txt_cv_parser segments on the same heading lexicon cv_pdf_parser uses, but
+    its own docstring calls it validated against exactly one sample - a
+    heading it misreads on a real rewrite could scope to the wrong section or
+    to nothing. Falling back to the whole rewrite in that case costs nothing
+    the old behaviour did not already accept, and avoids silently handing the
+    essential-requirements model less text than it needs.
+    """
+    sections = txt_cv_parser.segment_text(text)
+    scoped = "\n\n".join(s.text() for s in sections
+                         if s.label in _ESSENTIAL_SECTIONS and s.text()).strip()
+    return scoped or text
+
+
 def essential_stage(job_text, cv, candidate, model, deps):
     """Scoped input rather than the whole CV - the point of sections_named().
 
     cv may also be plain text - a rewrite from candidate mode, which has no
-    sections to scope to - and is then sent whole.
+    ParsedCV sections of its own - and is scoped by segmenting it with
+    txt_cv_parser first, falling back to the whole text if that finds none of
+    the three sections wanted.
     """
     yield Event("essential", "start", {"model": model}, candidate=candidate)
     started = time.time()
     if isinstance(cv, str):
-        scoped = cv
+        scoped = _scope_rewrite(cv)
     else:
-        scoped = cv.sections_named("experience", "education", "certifications")
+        scoped = cv.sections_named(*_ESSENTIAL_SECTIONS)
     result = deps.check_essential(job_text, scoped, candidate, model=model)
     yield Event("essential", "done", {"summary": result.get("summary", "")},
                 time.time() - started, candidate)

@@ -37,6 +37,17 @@ punctuation) across many candidates is untested; run this against a
 handful of real samples from both agents before trusting it the way
 cv_pdf_parser is trusted (cv_pdf_parser earned that via
 tests/fixtures/layout_labels.json, not assumption).
+
+ui.pipeline.stages.essential_stage now calls segment_text() directly to scope
+a rewrite before the essential-requirements check, with a whole-text fallback
+for exactly the failure mode above: if a rewrite's headings don't resolve
+through SECTION_LEXICON, segmentation finds none of the three wanted
+sections and the fallback sends the whole rewrite, same as before this module
+was wired in. So a bad heading match degrades to the old behaviour rather
+than silently scoping to the wrong or empty text - but that also means a
+heading that resolves to the WRONG label (matches the lexicon, just not the
+label a human would pick) fails silently: the fallback only catches "found
+nothing," not "found the wrong thing."
 """
 
 from pathlib import Path
@@ -54,12 +65,52 @@ from cv_sections import (
 )
 
 # Bullet markers a rewriter is likely to use. A bulleted line is body text,
-# never a heading, in every template this project has seen.
+# never a heading, in every template this project has seen. A marker only
+# counts as a bullet when followed by whitespace ("- Managed the budget") -
+# that space is what tells a real bullet apart from markdown emphasis
+# wrapping a heading ("**Experience**", "*Umoja Bank*"), which starts with
+# the same character but runs straight into the text.
 _BULLET_PREFIXES = ("•", "-", "*", "\u2013", "\u2014")
 
 # A heading is a standalone label, not the start or end of a sentence -
 # "Summary." or "responsibilities," never head a section in practice.
 _TRAILING_SENTENCE_PUNCT = (".", ",", ";")
+
+# Markdown emphasis a rewriter wraps a heading in. "**" first: checking "*"
+# first would strip one asterisk off each end of "**Experience**" and leave
+# "*Experience*" behind instead of unwrapping it fully.
+_EMPHASIS_WRAPPERS = ("**", "*")
+
+
+def _is_bullet(text: str) -> bool:
+    """True for a real list marker, false for markdown emphasis.
+
+    Both "* Managed the budget" and "*Umoja Bank*" start with "*"; only the
+    bullet has whitespace right after the marker. Without this distinction,
+    every bold- or italic-wrapped heading in a rewrite reads as a bullet and
+    is folded into whatever section happens to be open - GEOFF NITSCHKE's
+    phi4 rewrite lost Experience, Education, Skills, Certifications and
+    References this way, and sections_named() came back empty for it.
+    """
+    for marker in _BULLET_PREFIXES:
+        if text.startswith(marker):
+            return text[len(marker):len(marker) + 1] in (" ", "\t")
+    return False
+
+
+def _unwrap_emphasis(text: str) -> str:
+    """Strip one layer of symmetric markdown bold/italic wrapping.
+
+    "**Experience**" and "*Umoja Bank*" open and close with the same run of
+    asterisks with no space between the marker and the text - the same
+    property _is_bullet uses to rule them out as bullets. Isolated so a
+    heading is read, labelled and stored as "Experience", not "**Experience**".
+    """
+    for marker in _EMPHASIS_WRAPPERS:
+        n = len(marker)
+        if len(text) > 2 * n and text.startswith(marker) and text.endswith(marker):
+            return text[n:-n].strip()
+    return text
 
 
 def is_heading_plain(line: str) -> bool:
@@ -69,17 +120,25 @@ def is_heading_plain(line: str) -> bool:
     Short, standalone, not a bullet, not "label: value", doesn't trail off
     like a sentence. Deliberately permissive rather than strict - see the
     module docstring for why an over-eager match here is low-risk.
+
+    Bullet-checked before unwrapping emphasis and on everything else after:
+    a real bullet must be ruled out using the marker's original spacing, but
+    a bold- or italic-wrapped heading should be judged on the text inside
+    the wrapping, not the asterisks around it.
     """
     stripped = line.strip()
     if not stripped:
         return False
-    if stripped.startswith(_BULLET_PREFIXES):
+    if _is_bullet(stripped):
         return False
-    if _LABEL_VALUE.search(stripped):
+    text = _unwrap_emphasis(stripped)
+    if not text:
         return False
-    if stripped[-1] in _TRAILING_SENTENCE_PUNCT:
+    if _LABEL_VALUE.search(text):
         return False
-    words = normalise_heading(stripped).split()
+    if text[-1] in _TRAILING_SENTENCE_PUNCT:
+        return False
+    words = normalise_heading(text).split()
     if not words or len(words) > MAX_HEADING_WORDS:
         return False
     return True
@@ -103,7 +162,12 @@ def segment_text(text: str) -> list:
 
     for block in blocks:
         if is_heading_plain(block.text):
-            raw = block.text
+            # Unwrapped, not block.text: heading_label() would resolve either
+            # way (normalise_heading already strips the asterisks), but this
+            # is also what Section.text() prefixes the body with, and a
+            # rewrite scoped for the essential check should read "Experience",
+            # not "**Experience**".
+            raw = _unwrap_emphasis(block.text)
             label = heading_label(raw)
             if label is not None:
                 section = Section(label=label, heading=raw, raw_heading=None)

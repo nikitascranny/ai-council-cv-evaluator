@@ -98,7 +98,10 @@ def test_essential_stage_scopes_the_cv_rather_than_sending_all_of_it():
     assert seen["scoped"] == "scoped"
 
 
-def test_a_rewrite_has_no_sections_so_the_essential_check_reads_all_of_it():
+def test_a_rewrite_with_no_matching_headings_falls_back_to_the_whole_text():
+    """Plain prose that segment_text cannot resolve to any of the three
+    wanted sections must still reach the model - as the whole rewrite,
+    exactly what ran before txt_cv_parser was wired in."""
     seen = {}
 
     def check(job_text, text, candidate, model):
@@ -108,6 +111,28 @@ def test_a_rewrite_has_no_sections_so_the_essential_check_reads_all_of_it():
     _drain(essential_stage("job", "the whole rewrite", "ALEX", "qwen",
                            _deps(check_essential=check)))
     assert seen["text"] == "the whole rewrite"
+
+
+def test_a_rewrite_with_headings_is_scoped_the_same_as_a_parsed_cv():
+    """A rewrite whose headings DO resolve through the lexicon should be
+    scoped to those sections, not sent whole - the whole point of wiring
+    txt_cv_parser into the essential check."""
+    seen = {}
+    rewrite = ("Profile\nA short summary paragraph.\n\n"
+               "Experience\nFive years as a lab technician.\n\n"
+               "Education\nBSc Marine Biology.\n\n"
+               "References\nAvailable on request.")
+
+    def check(job_text, text, candidate, model):
+        seen["text"] = text
+        return {"summary": "meets"}
+
+    _drain(essential_stage("job", rewrite, "ALEX", "qwen",
+                           _deps(check_essential=check)))
+    assert "lab technician" in seen["text"]
+    assert "BSc Marine Biology" in seen["text"]
+    assert "short summary paragraph" not in seen["text"]
+    assert "Available on request" not in seen["text"]
 
 
 def test_judge_failure_is_reported_as_an_event_and_a_none_score():
