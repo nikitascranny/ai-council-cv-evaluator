@@ -105,3 +105,64 @@ def test_parse_args_short_flag_enables_essential_requirements(monkeypatch):
     args = ecv.parse_args()
 
     assert args.essential_requirements is True
+
+
+def test_parse_args_folders_default_to_the_module_constants(monkeypatch):
+    monkeypatch.setattr("sys.argv", ["Evaluate_CV.py"])
+
+    args = ecv.parse_args()
+
+    assert args.cvs == ecv.CVS_FOLDER
+    assert args.jobs == ecv.JOB_DESCRIPTIONS_FOLDER
+    assert args.results == ecv.RESULTS_FOLDER
+
+
+def test_parse_args_folders_can_be_overridden(monkeypatch, tmp_path):
+    monkeypatch.setattr("sys.argv", ["Evaluate_CV.py", "--cvs", str(tmp_path / "cvs"),
+                                     "--jobs", str(tmp_path / "jobs"),
+                                     "--results", str(tmp_path / "out")])
+
+    args = ecv.parse_args()
+
+    assert args.cvs == tmp_path / "cvs"
+    assert args.jobs == tmp_path / "jobs"
+    assert args.results == tmp_path / "out"
+
+
+# ---------------------------------------------------------------------------
+# main - the folders and filenames run_evaluation.sh and aggregate_results.py
+# depend on, with every PDF read and model call faked
+# ---------------------------------------------------------------------------
+
+def test_main_reads_and_writes_the_folders_it_is_given(monkeypatch, tmp_path):
+    from types import SimpleNamespace
+
+    jobs = tmp_path / "jobs"
+    cvs = tmp_path / "cvs" / "batch"
+    jobs.mkdir()
+    cvs.mkdir(parents=True)
+    (jobs / "job_listing_secretary.pdf").write_bytes(b"")
+    (cvs / "ALEX PARK.pdf").write_bytes(b"")
+    out = tmp_path / "out"
+    seen = {}
+
+    def check(job_text, sections_text, candidate_name, model):
+        seen["sections"] = sections_text
+        return {"candidate": candidate_name, "summary": "meets"}
+
+    cv = SimpleNamespace(full_text=lambda: "cv text",
+                         sections_named=lambda *labels: "scoped to " + ",".join(labels))
+    monkeypatch.setattr(ecv, "extract_text_from_pdf", lambda path: "job text")
+    monkeypatch.setattr(ecv, "load_cv", lambda path: cv)
+    monkeypatch.setattr(ecv, "evaluate_cv", lambda job, cv_text, name, model: {
+        "candidate": name, "score": 6, "strengths": [], "weaknesses": [], "summary": "ok"})
+    monkeypatch.setattr(ecv.essential_requirements, "evaluate_essential_requirement", check)
+    monkeypatch.setattr("sys.argv", ["Evaluate_CV.py", "-e", "--cvs", str(tmp_path / "cvs"),
+                                     "--jobs", str(jobs), "--results", str(out)])
+
+    ecv.main()
+
+    for model in ecv.EVALUATOR_MODELS:
+        assert (out / f"{model.replace(':', '_')}__job_listing_secretary.json").is_file()
+    assert (out / "essential_requirements" / "essential_requirements__job_listing_secretary.json").is_file()
+    assert seen["sections"] == "scoped to experience,education,certifications"
