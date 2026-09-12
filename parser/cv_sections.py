@@ -208,6 +208,16 @@ def normalise_heading(text: str) -> str:
     return " ".join(words)
 
 
+# "User Experience" (UX) names a discipline, not an employment section - a
+# heading like "Foundations of User Experience (UX)" is a course title, and
+# the bare "experience" key must not fire just because the word appears in
+# it. Keyed on the word immediately before the match rather than blocking the
+# phrase outright, so multi-word keys that genuinely end in "experience"
+# ("work experience", "professional experience", ...) are untouched - this
+# only ever suppresses the bare one-word "experience" key.
+_EXPERIENCE_FALSE_QUALIFIERS = {"user"}
+
+
 def heading_label(text: str) -> str | None:
     """Label for a heading phrase, or None if the vocabulary does not cover it.
 
@@ -220,6 +230,13 @@ def heading_label(text: str) -> str | None:
 
     Whole words, not raw substrings: a substring test fires on "experienced"
     and "skillset" and would mislabel prose that merely mentions the word.
+
+    One further carve-out, _EXPERIENCE_FALSE_QUALIFIERS: a bare "experience"
+    match immediately preceded by "user" is skipped. Without it, "Foundations
+    of User Experience (UX)" - a course title in RIAAN GOVEN's real rewrite,
+    sitting inside his Education section - resolved to "experience" and split
+    Education in two, filing that course and both degrees after it under
+    employment experience instead.
     """
     words = normalise_heading(text).split()
     if not words:
@@ -230,7 +247,12 @@ def heading_label(text: str) -> str | None:
         n = len(key_words)
         if n > len(words):
             continue
-        if any(words[i:i + n] == key_words for i in range(len(words) - n + 1)):
+        for i in range(len(words) - n + 1):
+            if words[i:i + n] != key_words:
+                continue
+            if (key_words == ["experience"] and i > 0
+                    and words[i - 1] in _EXPERIENCE_FALSE_QUALIFIERS):
+                continue
             if best is None or n > best[0]:
                 best = (n, label)
     return best[1] if best else None

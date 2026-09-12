@@ -410,6 +410,21 @@ def test_word_runs_not_raw_substrings():
     assert cv_sections.heading_label("Skillset Matrix") is None
 
 
+def test_user_experience_does_not_resolve_as_a_section():
+    """RIAAN GOVEN's real rewrite: "Foundations of User Experience (UX)" is a
+    course title inside Education. Before this carve-out it resolved to
+    "experience" on the bare one-word key, splitting his Education section in
+    two and filing that course and both degrees after it under employment
+    experience instead - a course/skill name, not a section, wrongly took over
+    a heading that plainly wasn't naming its own section (contrast
+    test_heading_naming_its_section_is_matched, where it was)."""
+    assert cv_sections.heading_label("Foundations of User Experience (UX)") is None
+    assert cv_sections.heading_label("USER EXPERIENCE") is None
+    # The qualifier check is scoped to the bare "experience" key alone - a
+    # heading that separately matches a real multi-word key must still work.
+    assert cv_sections.heading_label("User Work Experience") == "experience"
+
+
 def test_unmatched_heading_still_returns_none():
     assert cv_sections.heading_label("Hobbies and Interests") is None
     assert cv_sections.heading_label("Additional") is None
