@@ -102,18 +102,37 @@ def essential_stage(job_text, cv, candidate, model, deps):
     return result
 
 
-def judge_stage(job_text, rows, candidate, model, deps):
-    """Aggregate the council's summaries into one independent verdict."""
+def essential_in_prompt(essential) -> bool:
+    """Whether the judge's prompt includes this essential-requirements result.
+
+    The rule is judge.format_essential_for_prompt's - no result, a failed
+    check or an empty summary is left out - restated rather than imported,
+    because stages reach the team's Ollama-calling modules only through Deps.
+    tests/unit-tests/test_stages.py pins the two together.
+    """
+    if not essential or essential.get("error"):
+        return False
+    return bool(str(essential.get("summary") or "").strip())
+
+
+def judge_stage(job_text, rows, candidate, model, deps, essential=None):
+    """Aggregate the council's summaries into one independent verdict.
+
+    essential is the essential-requirements result when that check ran, and
+    the judge weighs it alongside the council unless it failed. The done
+    event says whether it did, since that changes what the score means.
+    """
     yield Event("judge", "start", {"model": model}, candidate=candidate)
     started = time.time()
-    parsed, error = deps.judge(job_text, rows, candidate, model)
+    parsed, error = deps.judge(job_text, rows, candidate, model, essential)
     if error:
         yield Event("judge", "failed", {"error": str(error)},
                     time.time() - started, candidate)
         return {"candidate": candidate, "final_score": None, "error": str(error)}
     yield Event("judge", "done",
                 {"final_score": parsed.get("final_score"),
-                 "final_evaluation": parsed.get("final_evaluation", "")},
+                 "final_evaluation": parsed.get("final_evaluation", ""),
+                 "with_essential": essential_in_prompt(essential)},
                 time.time() - started, candidate)
     return parsed
 

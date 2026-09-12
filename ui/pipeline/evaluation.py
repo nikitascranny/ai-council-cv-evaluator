@@ -78,12 +78,21 @@ def describe_run(path) -> str:
     scores = ", ".join("{} {}".format(row.get("model", "?"), row.get("score"))
                        for row in data.get("council", []))
     final = (data.get("judge") or {}).get("final_score")
-    return "{} -> {}  |  judge {}  |  {}".format(
-        data.get("candidate", path.stem), data.get("job", "?"), final, scores)
+    # A run saved before this was recorded says neither.
+    condition = {True: " (with essential check)",
+                 False: " (council only)"}.get(data.get("judge_saw_essential"), "")
+    return "{} -> {}  |  judge {}{}  |  {}".format(
+        data.get("candidate", path.stem), data.get("job", "?"), final, condition,
+        scores)
 
 
 def run_single(job_path, cv_path, settings, deps, out_dir=None):
-    """Parse, council, optional essential-requirements, judge, optional probe."""
+    """Parse, council, optional essential-requirements, judge, optional probe.
+
+    When the essential check runs, the judge reads it alongside the council;
+    judge_saw_essential records whether it actually did (a failed check is
+    left out), because the same score means something different either way.
+    """
     job_path, cv_path = Path(job_path), Path(cv_path)
     out_dir = Path(out_dir) if out_dir else DEMO_RESULTS
     candidate = cv_path.stem
@@ -103,12 +112,15 @@ def run_single(job_path, cv_path, settings, deps, out_dir=None):
                     "cv_text": cv.full_text(),
                     "sections": [s.label for s in cv.sections]})
 
+    essential = None
     if settings.essential:
-        payload["essential"] = yield from stages.essential_stage(
+        essential = yield from stages.essential_stage(
             job_text, cv, candidate, settings.essential_model, deps)
+        payload["essential"] = essential
 
     payload["judge"] = yield from stages.judge_stage(
-        job_text, rows, candidate, settings.judge, deps)
+        job_text, rows, candidate, settings.judge, deps, essential=essential)
+    payload["judge_saw_essential"] = stages.essential_in_prompt(essential)
 
     if settings.rewrite:
         scorer = deps.make_scorer(settings.council[0])
@@ -175,8 +187,9 @@ REEVALUATE = "reevaluate"
 
 
 def _evaluate(job_text, cv, candidate, settings, deps):
-    """Council, essential requirements, then judge - reviewer mode's scoring
-    with nothing left optional, and without its report.
+    """Council, essential requirements, then the judge reading both -
+    reviewer mode's scoring with nothing left optional, and without its
+    report.
 
     cv is the ParsedCV for the candidate's own CV, or plain text for a
     rewrite. Either way the essential check reads the same three sections -
@@ -190,8 +203,9 @@ def _evaluate(job_text, cv, candidate, settings, deps):
     essential = yield from stages.essential_stage(
         job_text, cv, candidate, settings.essential_model, deps)
     verdict = yield from stages.judge_stage(
-        job_text, rows, candidate, settings.judge, deps)
-    return {"council": rows, "essential": essential, "judge": verdict}
+        job_text, rows, candidate, settings.judge, deps, essential=essential)
+    return {"council": rows, "essential": essential, "judge": verdict,
+            "judge_saw_essential": stages.essential_in_prompt(essential)}
 
 
 def run_candidate(job_path, cv_path, deps, generate, feedback,

@@ -61,13 +61,15 @@ def team_deps(root: Path = ROOT) -> Deps:
     import Evaluate_CV
     import essential_requirements
     import judge as judge_mod
-    import ollama_utils
     import rewriter_v1
 
-    def judge_fn(job_text, rows, candidate, model):
-        summaries = judge_mod.format_summaries_for_prompt(rows)
-        prompt = judge_mod.build_prompt(job_text, summaries, candidate)
-        return ollama_utils.call_ollama_json(model, prompt, num_predict=1024)
+    def judge_fn(job_text, rows, candidate, model, essential=None):
+        # The command line's prompt and call settings, through the one
+        # function both use - so a web app score and a batch score of the
+        # same CV come from the same judging. It returns an error rather than
+        # exiting when Ollama is unreachable.
+        return judge_mod.judge_candidate(job_text, rows, candidate, essential,
+                                         model=model)
 
     return Deps(load_cv=document_utils.load_cv,
                 extract_text=document_utils.extract_text_from_pdf,

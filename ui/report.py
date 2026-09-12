@@ -116,10 +116,19 @@ def render_report(payload: dict) -> str:
         score = row.get("score")
         tiles.append(_tile(row.get("model", "?"),
                            "&mdash;" if score is None else score, "council"))
+    # Whether the judge read the essential-requirements check changes what its
+    # score means. A run saved before that was recorded says neither.
+    saw_essential = payload.get("judge_saw_essential")
     if judge:
         final = judge.get("final_score")
-        note = "MODEL ERROR: {}".format(judge["error"]) if judge.get("error") \
-            else "final verdict"
+        if judge.get("error"):
+            note = "MODEL ERROR: {}".format(judge["error"])
+        elif saw_essential is True:
+            note = "final verdict, with essential check"
+        elif saw_essential is False:
+            note = "final verdict, council only"
+        else:
+            note = "final verdict"
         tiles.append(_tile("judge", "&mdash;" if final is None else final, note))
     if rewrite:
         delta = rewrite.get("delta")
@@ -170,6 +179,16 @@ def render_report(payload: dict) -> str:
             html.escape(str(r.get("model", "?"))),
             html.escape(str(r.get("summary", ""))))
         for r in council)
+    essential = payload.get("essential")
+    if essential:
+        if essential.get("error"):
+            text = "CHECK FAILED: {}".format(essential["error"])
+        else:
+            text = str(essential.get("summary") or "")
+        if saw_essential is False:
+            text = (text + " (not given to the judge)").strip()
+        rows += ("<tr><td class='s'>&mdash;</td><td>essential requirements</td>"
+                 "<td>{}</td></tr>").format(html.escape(text))
     if judge:
         verdict = "MODEL ERROR: {}".format(judge["error"]) if judge.get("error") \
             else judge.get("final_evaluation", "")

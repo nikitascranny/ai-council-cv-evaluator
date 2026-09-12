@@ -7,6 +7,8 @@ run, and a rejected rewrite is a result rather than an error.
 
 import types
 
+import pytest
+
 from ui.pipeline import stages
 from ui.pipeline.deps import Deps
 from ui.pipeline.stages import (capture_paraphrase, council_stage, essential_stage,
@@ -140,6 +142,37 @@ def test_judge_failure_is_reported_as_an_event_and_a_none_score():
         "job", [], "ALEX", "deepseek", _deps(judge=lambda *a: (None, "timed out"))))
     assert [e for e in events if e.state == "failed"]
     assert verdict["final_score"] is None and "timed out" in verdict["error"]
+
+
+def test_judge_stage_hands_the_essential_result_to_the_judge():
+    seen = {}
+
+    def judge(job_text, rows, candidate, model, essential=None):
+        seen["essential"] = essential
+        return {"final_score": 7}, None
+
+    events, _ = _drain(judge_stage("job", [], "ALEX", "deepseek", _deps(judge=judge),
+                                   essential={"summary": "meets"}))
+    assert seen["essential"] == {"summary": "meets"}
+    assert events[-1].detail["with_essential"] is True
+
+
+def test_judge_stage_without_the_check_says_the_judge_had_the_council_alone():
+    events, _ = _drain(judge_stage("job", [], "ALEX", "deepseek", _deps()))
+    assert events[-1].detail["with_essential"] is False
+
+
+@pytest.mark.parametrize("essential", [
+    None, {}, {"summary": ""}, {"summary": "   "},
+    {"summary": "partial", "error": "PARSE ERROR"}, {"summary": "meets"},
+], ids=["none", "empty_dict", "empty_summary", "blank_summary", "failed", "usable"])
+def test_essential_in_prompt_agrees_with_what_judge_py_puts_in_the_prompt(essential):
+    """The rule is restated in stages rather than imported - this is what
+    keeps the recorded condition honest if judge.py's rule ever changes."""
+    import judge
+
+    expected = judge.format_essential_for_prompt(essential) is not None
+    assert stages.essential_in_prompt(essential) is expected
 
 
 def test_rewrite_rejection_is_a_finding_not_a_failure():

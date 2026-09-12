@@ -74,6 +74,70 @@ def test_optional_stages_run_only_when_enabled(tmp_path):
     assert payload["rewrite"]["delta"] == 2
 
 
+# --- what the judge is given, and the record of it --------------------------
+
+
+def _judge_spy(seen):
+    def judge(job_text, rows, candidate, model, essential=None):
+        seen.append(essential)
+        return {"final_score": 8, "final_evaluation": "good"}, None
+    return judge
+
+
+def _reviewer_run(tmp_path, settings, deps):
+    return _drain(evaluation.run_single(
+        tmp_path / "job_listing_secretary.pdf", tmp_path / "ALEX PARK.pdf",
+        settings, deps, out_dir=tmp_path))
+
+
+def test_a_ticked_essential_check_reaches_the_judge(tmp_path):
+    seen = []
+    _, payload = _reviewer_run(tmp_path, Settings(council=["phi4"], essential=True),
+                               _deps(judge=_judge_spy(seen)))
+    assert seen == [{"summary": "meets"}]
+    assert payload["judge_saw_essential"] is True
+
+
+def test_an_unticked_check_leaves_the_judge_with_the_council_alone(tmp_path):
+    seen = []
+    _, payload = _reviewer_run(tmp_path, Settings(council=["phi4"]),
+                               _deps(judge=_judge_spy(seen)))
+    assert seen == [None]
+    assert payload["judge_saw_essential"] is False
+
+
+def test_a_failed_check_is_recorded_as_not_seen_by_the_judge(tmp_path):
+    """judge.py leaves a failed check out of the prompt, so a score given
+    after one is a council-only score, and must be recorded as one."""
+    failed = {"summary": "", "error": "PARSE ERROR"}
+    _, payload = _reviewer_run(tmp_path, Settings(council=["phi4"], essential=True),
+                               _deps(check_essential=lambda *a, **k: failed))
+    assert payload["essential"] == failed
+    assert payload["judge_saw_essential"] is False
+
+
+def test_the_saved_run_records_the_condition(tmp_path):
+    _, payload = _reviewer_run(tmp_path, Settings(council=["phi4"], essential=True), _deps())
+    saved = json.loads(open(payload["_path"], encoding="utf-8").read())
+    assert saved["judge_saw_essential"] is True
+
+
+def test_candidate_scoring_always_gives_the_judge_the_check(tmp_path):
+    seen = []
+    _, payload = _candidate_run(tmp_path, evaluation.EVALUATE, _deps(judge=_judge_spy(seen)))
+    assert seen == [{"summary": "meets"}]
+    assert payload["judge_saw_essential"] is True
+
+
+def test_the_saved_runs_list_says_which_condition_the_judge_used(tmp_path):
+    for saw, words in ((True, "(with essential check)"), (False, "(council only)")):
+        path = tmp_path / "{}.json".format(saw)
+        path.write_text(json.dumps({"candidate": "A", "job": "j", "council": [],
+                                    "judge": {"final_score": 5},
+                                    "judge_saw_essential": saw}), encoding="utf-8")
+        assert "judge 5 " + words in evaluation.describe_run(path)
+
+
 def test_payload_carries_the_text_the_models_actually_read(tmp_path):
     """The report's whole point is showing the inputs, not just the scores."""
     _, payload = _drain(evaluation.run_single(

@@ -36,3 +36,28 @@ def test_team_deps_loads_the_real_modules_on_this_checkout():
     """Guards the import wiring itself - no model is called."""
     d = team_deps()
     assert callable(d.evaluate_cv) and callable(d.load_cv)
+
+
+def test_the_web_app_judges_through_the_command_lines_own_function(monkeypatch):
+    """judge.judge_candidate is the one place the prompt and the call settings
+    live. The web app used to build its own call - no essential check, a
+    quarter of the token budget, no retries - so the same CV could score
+    differently here and in a batch run."""
+    import judge
+
+    seen = []
+
+    def fake(job_text, summaries, candidate_name, essential=None, **kwargs):
+        seen.append(((job_text, summaries, candidate_name, essential), kwargs))
+        return {"final_score": 7}, None
+
+    monkeypatch.setattr(judge, "judge_candidate", fake)
+    d = team_deps()
+
+    assert d.judge("job", [{"summary": "ok"}], "ALEX", "deepseek-r1:8b",
+                   {"summary": "meets"}) == ({"final_score": 7}, None)
+    d.judge("job", [], "ALEX", "deepseek-r1:8b")
+
+    assert seen[0] == (("job", [{"summary": "ok"}], "ALEX", {"summary": "meets"}),
+                       {"model": "deepseek-r1:8b"})
+    assert seen[1][0][3] is None

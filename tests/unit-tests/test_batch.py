@@ -27,7 +27,7 @@ def _deps(scores):
     return Deps(load_cv=lambda p: _fake_cv(), extract_text=lambda p: "job",
                 evaluate_cv=lambda *a: {"score": 5, "summary": "ok"},
                 check_essential=lambda *a, **k: {},
-                judge=lambda job, rows, candidate, model: (
+                judge=lambda job, rows, candidate, model, essential=None: (
                     {"final_score": scores[candidate]}, None),
                 probe=lambda *a, **k: {}, make_scorer=lambda m: None,
                 paraphrase=lambda *a, **k: "")

@@ -119,11 +119,13 @@ def _cv_checkboxes(paths, label_for) -> str:
 # implements them: "Phrasing-sensitivity probe" told a first-time user nothing
 # about what ticking it would do.
 _REVIEWER_OPTIONS = (
-    ("essential", False, "Check the essential requirements",
+    ("essential", True, "Check the essential requirements",
      "Reads only the experience, education and certifications sections and "
      "summarises which of the listing's essential requirements the CV clearly "
-     "meets, which are a near match, and which are missing or unclear. Adds "
-     "one model call per candidate."),
+     "meets, which are a near match, and which are missing or unclear. The "
+     "judge reads that summary alongside the council's when it gives the "
+     "final score - untick this for a score from the council alone. Adds one "
+     "model call per candidate."),
     ("rewrite", True, "Check whether rewording changes the score",
      "Scores the CV, has a model reword it without changing any facts, then "
      "scores that version too. If the two scores differ much, the ranking is "
@@ -457,6 +459,9 @@ def _evaluation_card(payload) -> str:
         if judge.get(key))
     if payload.get("essential"):
         notes += _essential_note("Essential requirements:", payload["essential"])
+        if payload.get("judge_saw_essential") is False:
+            notes += ("<p><small>The overall score above was given without "
+                      "this check.</small></p>")
         if before and before.get("essential"):
             notes += _essential_note("Essential requirements, original CV:",
                                      before["essential"])

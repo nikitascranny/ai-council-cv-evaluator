@@ -103,6 +103,26 @@ def test_report_shows_the_judge_verdict():
     assert "borderline" in report.render_report(_payload())
 
 
+def test_report_shows_the_essential_check_and_that_the_judge_read_it():
+    html = report.render_report(_payload(
+        essential={"summary": "Meets the typing requirement."}, judge_saw_essential=True))
+    assert "<td>essential requirements</td><td>Meets the typing requirement.</td>" in html
+    assert '<div class="n">final verdict, with essential check</div>' in html
+
+
+def test_report_says_when_the_judge_scored_without_the_check():
+    html = report.render_report(_payload(
+        essential={"summary": "", "error": "PARSE ERROR"}, judge_saw_essential=False))
+    assert "CHECK FAILED: PARSE ERROR (not given to the judge)" in html
+    assert '<div class="n">final verdict, council only</div>' in html
+
+
+def test_a_run_saved_before_the_condition_was_recorded_claims_neither():
+    html = report.render_report(_payload())
+    assert '<div class="n">final verdict</div>' in html
+    assert "essential requirements" not in html
+
+
 def test_report_shows_the_rewrite_panes_when_a_probe_ran():
     html = report.render_report(_payload(
         rewrite={"score_before": 3, "score_after": 4, "delta": 1, "rejected": False},
