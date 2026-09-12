@@ -185,7 +185,7 @@ def main():
 
             if args.essential_requirements: # if essential req check is selected
                 print(f"  Checking essential requirements ({ESSENTIAL_REQUIREMENTS_MODEL})...")
-                cv_sections_text = cv.sections_named("experience", "education")
+                cv_sections_text = cv.sections_named("experience", "education", "certifications")
                 er_result = essential_requirements.evaluate_essential_requirement(
                     job_text, cv_sections_text, candidate_name,
                     model=ESSENTIAL_REQUIREMENTS_MODEL,
