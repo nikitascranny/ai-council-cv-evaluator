@@ -26,6 +26,11 @@ row itself (in an "errors" column) rather than blocking the write, since a
 half-populated CSV row is much lower-risk than a structurally-broken JSON file
 representing itself as good data.
 
+If the summaries carry an essential-requirements entry (aggregate_results.py
+adds one per candidate when given that check's results), it is taken out of
+the reviewer summaries and given its own section of the prompt. Pass
+--no-essential to leave it out, which reproduces the council-only prompt.
+
 Usage:
     python judge.py --summaries combined/secretary/lerato_munche.json \\
         --job job_listings/job_listing_secretary.pdf \\
@@ -113,6 +118,11 @@ def _parse_args():
         help="Include prior reviewers' numeric scores in the prompt (off by default, to reduce anchoring bias).",
     )
     parser.add_argument(
+        "--no-essential", action="store_true",
+        help="Leave the essential-requirements check out of the prompt even when the summaries "
+                "include one (reproduces the council-only condition).",
+    )
+    parser.add_argument(
         "--candidate", default=None,
         help="Candidate name to use. Defaults to the 'candidate' field from the first summary.",
     )
@@ -157,6 +167,29 @@ def load_summaries(paths):
     return summaries
 
 
+# Marks the essential-requirements check's entry among the summaries (see
+# aggregate_results.py). It is not a reviewer's summary - it has no score,
+# strengths or weaknesses - so it is split off before the reviewer summaries
+# are formatted, rather than being numbered in among them.
+ESSENTIAL_TYPE = "essential_requirements"
+
+
+def split_essential(entries):
+    """
+    Separate the essential-requirements check from the reviewer summaries.
+
+    Returns (summaries, essential), where essential is the first entry whose
+    "type" is ESSENTIAL_TYPE, or None. Entries without a "type" - every
+    combined file written before the check was aggregated - are all
+    reviewer summaries, exactly as before.
+    """
+    summaries = [e for e in entries if e.get("type") != ESSENTIAL_TYPE]
+    checks = [e for e in entries if e.get("type") == ESSENTIAL_TYPE]
+    if len(checks) > 1:
+        print(f"warning: {len(checks)} essential-requirements entries found; using the first.")
+    return summaries, (checks[0] if checks else None)
+
+
 # =====================================================================
 # Prompt construction 
 # =====================================================================
@@ -195,13 +228,59 @@ def format_summaries_for_prompt(summaries, keep_scores=False):
     return "\n\n".join(blocks)
 
 
-def build_prompt(job_text, summaries_text, candidate_name):
+def format_essential_for_prompt(essential):
+    """
+    The essential-requirements check as prompt text, or None when there is
+    nothing usable to show the judge: no entry, a check that failed (its
+    "error" field is set), or an empty summary. A failed check is left out
+    rather than passed through, so the judge never reads an error message as
+    an assessment of the candidate.
+    """
+    if not essential or essential.get("error"):
+        return None
+    summary = str(essential.get("summary") or "").strip()
+    return summary or None
+
+
+def build_prompt(job_text, summaries_text, candidate_name, essential_text=None):
+    """
+    essential_text is the essential-requirements check's summary (see
+    format_essential_for_prompt). Without it, the prompt is exactly the
+    council-only prompt from before the check was added, so results judged
+    that way stay reproducible. With it, the check gets its own section and
+    task step instead of posing as another reviewer's summary.
+
+    The section says the check read three CV sections - the scoping used by
+    Evaluate_CV.py and by the web app's essential stage alike.
+    """
+    essential_basis = ""
+    essential_block = ""
+    essential_step = ""
+    final_step = 3
+    if essential_text:
+        essential_basis = ", and on the separate essential requirements check"
+        essential_block = f"""ESSENTIAL REQUIREMENTS CHECK:
+A separate check read only the candidate's experience, education and certifications \
+sections, and summarised how well they meet the job listing's essential requirements. \
+It gives no score, and it saw less of the CV than the reviewers did, so a requirement \
+it reports as unclear may still be evidenced in the reviewer summaries.
+\"\"\"
+{essential_text}
+\"\"\"
+
+"""
+        essential_step = """3. Use the essential requirements check to decide whether the job \
+listing's essential requirements are met. Where it and the reviewers disagree, resolve it \
+using the evidence each one describes.
+"""
+        final_step = 4
+
     return f"""You are an impartial hiring judge. You will be given a job listing and \
 several independent summaries written by other reviewers about the same candidate's CV. \
 Each summary reflects one reviewer's read of the CV; the reviewers may disagree or \
 overlap. Some summaries may include a numeric score from that reviewer — ignore any such \
 score completely and do not let it influence you. Form your own independent judgement \
-based only on the strengths, weaknesses, and descriptive summary text provided.
+based only on the strengths, weaknesses, and descriptive summary text provided{essential_basis}.
 
 JOB LISTING:
 \"\"\"
@@ -213,12 +292,12 @@ REVIEWER SUMMARIES:
 {summaries_text}
 \"\"\"
 
-Your task:
+{essential_block}Your task:
 1. Weigh the strengths and weaknesses raised across all reviewer summaries against the \
 actual requirements in the job listing.
 2. Note any agreement or disagreement between reviewers, and resolve it using your own \
 judgement of relevance to the job listing.
-3. Produce ONE final, independent evaluation.
+{essential_step}{final_step}. Produce ONE final, independent evaluation.
 
 Respond with ONLY a single valid JSON object (no markdown fences, no extra commentary), \
 with exactly these keys:
@@ -312,13 +391,25 @@ def main():
     
     args = _parse_args()
 
-    summaries = load_summaries(args.summaries)
+    summaries, essential = split_essential(load_summaries(args.summaries))
+    if not summaries:
+        sys.exit("error: no reviewer summaries loaded (only an essential-requirements check)")
     job_text = extract_text_from_pdf(args.job)
     job_name = args.job_name or Path(args.job).stem
 
     candidate_name = args.candidate or summaries[0].get("candidate", "Unknown candidate")
     summaries_text = format_summaries_for_prompt(summaries, keep_scores=args.keep_scores)
-    prompt = build_prompt(job_text, summaries_text, candidate_name)
+    essential_text = None if args.no_essential else format_essential_for_prompt(essential)
+    if args.no_essential:
+        print("Essential-requirements check: left out (--no-essential)")
+    elif essential is None:
+        print("Essential-requirements check: none in the summaries")
+    elif essential_text is None:
+        reason = essential.get("error") or "empty summary"
+        print(f"Essential-requirements check: not usable ({reason}) -- left out of the prompt")
+    else:
+        print("Essential-requirements check: included")
+    prompt = build_prompt(job_text, summaries_text, candidate_name, essential_text)
     print(f"prompt:\n{prompt}")
 
     print(f"Sending {len(summaries)} summary(ies) for '{candidate_name}' ({job_name}) to {args.model} at {args.host} ...")

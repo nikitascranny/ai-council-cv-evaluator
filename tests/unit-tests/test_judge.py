@@ -62,6 +62,7 @@ class TestParseArgs:
         assert args.candidate is None
         assert args.output is None
         assert args.job_name is None
+        assert args.no_essential is False
 
     def test_temperature_and_timeout_have_correct_types_when_passed_on_cli(self, monkeypatch):
         # Regression check: these must have type=float / type=int in the
@@ -241,6 +242,87 @@ class TestFormatSummariesForPrompt:
         text = judge.format_summaries_for_prompt(summaries)
 
         assert text.index("#1") < text.index("#2") < text.index("#3")
+
+
+# ---------------------------------------------------------------------------
+# essential-requirements check: split_essential, format_essential_for_prompt,
+# and its section in build_prompt
+# ---------------------------------------------------------------------------
+
+class TestSplitEssential:
+    def test_entries_without_a_type_are_all_reviewer_summaries(self):
+        entries = [{"candidate": "A", "summary": "x"}, {"candidate": "A", "summary": "y"}]
+
+        assert judge.split_essential(entries) == (entries, None)
+
+    def test_the_essential_entry_is_separated_from_the_summaries(self):
+        council = [{"candidate": "A", "summary": "x", "model": "phi4"}]
+        check = {"candidate": "A", "summary": "meets most", "type": judge.ESSENTIAL_TYPE}
+
+        summaries, essential = judge.split_essential(council + [check])
+
+        assert summaries == council
+        assert essential == check
+
+    def test_more_than_one_check_uses_the_first_and_warns(self, capsys):
+        first = {"candidate": "A", "summary": "first", "type": judge.ESSENTIAL_TYPE}
+        second = {"candidate": "A", "summary": "second", "type": judge.ESSENTIAL_TYPE}
+
+        _, essential = judge.split_essential([first, second])
+
+        assert essential == first
+        assert "using the first" in capsys.readouterr().out
+
+
+class TestFormatEssentialForPrompt:
+    def test_the_summary_is_used(self):
+        assert judge.format_essential_for_prompt({"summary": " Meets all. "}) == "Meets all."
+
+    @pytest.mark.parametrize("entry", [
+        None,
+        {"summary": ""},
+        {"summary": "   "},
+        {"summary": "", "error": "PARSE ERROR"},
+        {"summary": "partial", "error": "CV PARSE ERROR: boom"},
+    ], ids=["no_entry", "empty_summary", "blank_summary", "failed_check", "error_with_text"])
+    def test_nothing_usable_is_none(self, entry):
+        # A failed check must never reach the judge as if it were an assessment.
+        assert judge.format_essential_for_prompt(entry) is None
+
+
+class TestBuildPrompt:
+    def test_without_the_check_there_is_no_essential_section(self):
+        prompt = judge.build_prompt("job", "summaries", "Lerato")
+
+        assert "ESSENTIAL REQUIREMENTS" not in prompt
+        assert "essential requirements check" not in prompt
+        assert "3. Produce ONE final, independent evaluation." in prompt
+
+    def test_an_empty_check_is_the_same_as_no_check(self):
+        assert judge.build_prompt("job", "s", "L", essential_text="") == \
+            judge.build_prompt("job", "s", "L")
+
+    def test_the_check_gets_its_own_section_after_the_reviewer_summaries(self):
+        prompt = judge.build_prompt("job", "summaries", "Lerato",
+                                    essential_text="Meets the typing requirement.")
+
+        assert (prompt.index("REVIEWER SUMMARIES:")
+                < prompt.index("ESSENTIAL REQUIREMENTS CHECK:")
+                < prompt.index("Your task:"))
+        assert "Meets the typing requirement." in prompt
+        assert "3. Use the essential requirements check" in prompt
+        assert "4. Produce ONE final, independent evaluation." in prompt
+
+    def test_the_check_is_not_among_the_reviewer_summaries(self):
+        prompt = judge.build_prompt("job", "summaries", "Lerato", essential_text="Meets.")
+
+        reviewer_block = prompt.split("REVIEWER SUMMARIES:")[1].split("ESSENTIAL REQUIREMENTS CHECK:")[0]
+        assert "Meets." not in reviewer_block
+
+    def test_braces_in_the_check_survive_literally(self):
+        prompt = judge.build_prompt("job", "s", "L", essential_text="uses {curly} braces")
+
+        assert "uses {curly} braces" in prompt
 
 
 # ---------------------------------------------------------------------------
@@ -497,6 +579,70 @@ class TestMain:
         judge.main()
 
         assert "(job)" in capsys.readouterr().out  # Path("job.pdf").stem == "job"
+
+    def _capture_prompt(self, monkeypatch, entries):
+        monkeypatch.setattr(judge, "load_summaries", lambda paths: entries)
+        monkeypatch.setattr(judge, "extract_text_from_pdf", lambda path: "job text")
+        monkeypatch.setattr(judge, "write_json_output", MagicMock(return_value=True))
+        seen = {}
+
+        def fake_retries(prompt, *a, **kw):
+            seen["prompt"] = prompt
+            return ({"candidate": "Lerato", "final_score": 8, "final_evaluation": "ok"}, None)
+
+        monkeypatch.setattr(judge, "call_judge_with_retries", fake_retries)
+        return seen
+
+    def test_an_essential_entry_in_the_summaries_reaches_the_prompt(self, monkeypatch, capsys):
+        seen = self._capture_prompt(monkeypatch, [
+            {"candidate": "Lerato", "summary": "Good fit."},
+            {"candidate": "Lerato", "summary": "Meets the typing requirement.",
+             "type": judge.ESSENTIAL_TYPE},
+        ])
+        self._argv(monkeypatch)
+
+        judge.main()
+
+        assert "ESSENTIAL REQUIREMENTS CHECK:" in seen["prompt"]
+        assert "Meets the typing requirement." in seen["prompt"]
+        assert "Grader summary #2" not in seen["prompt"]
+        assert "Essential-requirements check: included" in capsys.readouterr().out
+
+    def test_no_essential_flag_leaves_the_check_out(self, monkeypatch):
+        seen = self._capture_prompt(monkeypatch, [
+            {"candidate": "Lerato", "summary": "Good fit."},
+            {"candidate": "Lerato", "summary": "Meets.", "type": judge.ESSENTIAL_TYPE},
+        ])
+        self._argv(monkeypatch, "--no-essential")
+
+        judge.main()
+
+        assert "ESSENTIAL REQUIREMENTS" not in seen["prompt"]
+        assert "Meets." not in seen["prompt"]
+
+    def test_a_failed_check_is_left_out_and_said_so(self, monkeypatch, capsys):
+        seen = self._capture_prompt(monkeypatch, [
+            {"candidate": "Lerato", "summary": "Good fit."},
+            {"candidate": "Lerato", "summary": "", "error": "PARSE ERROR",
+             "type": judge.ESSENTIAL_TYPE},
+        ])
+        self._argv(monkeypatch)
+
+        judge.main()
+
+        assert "ESSENTIAL REQUIREMENTS" not in seen["prompt"]
+        assert "not usable (PARSE ERROR)" in capsys.readouterr().out
+
+    def test_summaries_holding_only_an_essential_entry_exit(self, monkeypatch):
+        self._capture_prompt(monkeypatch, [
+            {"candidate": "Lerato", "summary": "Meets.", "type": judge.ESSENTIAL_TYPE},
+        ])
+        self._argv(monkeypatch)
+
+        with pytest.raises(SystemExit) as exc:
+            judge.main()
+
+        assert "no reviewer summaries" in str(exc.value)
 
 
 if __name__ == "__main__":
