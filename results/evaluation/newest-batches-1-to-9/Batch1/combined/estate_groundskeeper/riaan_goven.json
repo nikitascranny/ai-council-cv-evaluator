@@ -1,0 +1,37 @@
+[
+  {
+    "score": 4,
+    "strengths": [
+      "Strong leadership experience in digital marketing and product management.",
+      "Proven ability to develop and implement digital strategies.",
+      "Excellent project management and account management skills."
+    ],
+    "weaknesses": [
+      "Lack of relevant experience in groundskeeping, gamekeeping, or countryside management.",
+      "No demonstrated physical fitness or experience with tracking and search & rescue activities.",
+      "No background in working with animals, particularly hounds, or experience in immersive theatre or security work."
+    ],
+    "summary": "The candidate has strong digital and leadership skills but lacks the essential experience and physical fitness required for the Groundskeeper & 'Hunt' Coordinator role.",
+    "candidate": "RIAAN GOVEN",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Proven leadership and strategic skills in digital marketing",
+      "Experience in user experience research and development"
+    ],
+    "weaknesses": [
+      "No relevant experience in groundskeeping or hunting",
+      "Lacks outdoor and physical fitness experience as required"
+    ],
+    "summary": "The candidate has strong leadership and digital marketing skills but lacks the essential outdoor and physical fitness experience required for the role.",
+    "candidate": "RIAAN GOVEN",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's experience in digital marketing and strategy development is a reasonable match for the role, but does not clearly meet the essential requirements for groundskeeping, gamekeeping, or countryside management experience. The physical fitness requirement is not evidenced in the CV, and there is no indication of tracking, search & rescue, military, or other pursuit-oriented background. The candidate's ability to work alone and in remote areas is not explicitly stated, and while they have a full clean driving licence, they do not mention living on site or being reachable by the Laird.",
+    "candidate": "RIAAN GOVEN",
+    "type": "essential_requirements"
+  }
+]

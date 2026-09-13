@@ -1,0 +1,39 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Excellent physical fitness implied by the active nature of software engineering work.",
+      "Potential comfort with working alone, given the often solitary nature of software engineering."
+    ],
+    "weaknesses": [
+      "Lacks proven groundskeeping, gamekeeping, or countryside management experience.",
+      "No relevant experience in tracking, search & rescue, military, or pursuit-oriented backgrounds.",
+      "No experience working with hounds or tracking dogs.",
+      "No evidence of familiarity with outdoor pursuits or countryside management.",
+      "Lacks relevant qualifications such as Mountain Leader award or outdoor first aid certificate.",
+      "No experience in immersive theatre, airsoft event marshalling, or private security work.",
+      "No evidence of unconditional discretion or confidentiality handling in personal or professional life."
+    ],
+    "summary": "The candidate has limited relevant experience and skills for the Groundskeeper & Hunt Coordinator role, primarily due to a background in software engineering with no direct experience in countryside management or related fields.",
+    "candidate": "SystemShock",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "software engineering background with potential for problem-solving"
+    ],
+    "weaknesses": [
+      "no relevant experience in groundskeeping, tracking, or live-action experiences; lacks the physical fitness and experience required for the job"
+    ],
+    "summary": "Jordan Mitchell's background in software engineering does not align with the job's requirements for physical labor, tracking expertise, and experience in groundskeeping or immersive experiences.",
+    "candidate": "SystemShock",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "",
+    "error": "PARSE ERROR",
+    "candidate": "SystemShock",
+    "type": "essential_requirements"
+  }
+]

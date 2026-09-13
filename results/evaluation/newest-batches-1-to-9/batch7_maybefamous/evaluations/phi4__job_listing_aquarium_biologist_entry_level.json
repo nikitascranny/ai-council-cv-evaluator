@@ -1,0 +1,59 @@
+[
+  {
+    "score": 4,
+    "strengths": [
+      "Demonstrates strong technical skills in software development, which indicates an ability to learn new systems and processes.",
+      "Has a relevant educational background with coursework in Web Systems and Database Design."
+    ],
+    "weaknesses": [
+      "Lacks direct experience in aquatic biology, marine systems, or animal husbandry.",
+      "No experience or certification in water chemistry or marine life support systems.",
+      "No prior experience working in an aquarium or similar life sciences environment."
+    ],
+    "summary": "Daniel Rossouw has strong technical skills and educational background but lacks direct experience and specific qualifications needed for an Aquarium Biologist role.",
+    "candidate": "Daniel_common"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Good organizational skills from managing software development projects",
+      "Strong problem-solving abilities demonstrated through bug fixes and app improvements"
+    ],
+    "weaknesses": [
+      "Lack of relevant education or experience in marine biology or related life sciences",
+      "No demonstrated understanding of aquatic systems or husbandry tasks",
+      "No experience with physical tasks such as equipment maintenance or working in humid environments"
+    ],
+    "summary": "Lauren Fischer has strong organizational and problem-solving skills, but lacks the relevant education, experience, and physical readiness required for an Aquarium Biologist role.",
+    "candidate": "Lauren_common"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Demonstrates problem-solving skills and attention to detail through software engineering experience.",
+      "Shows potential for up-skilling with a strong foundation in learning new frameworks and technologies."
+    ],
+    "weaknesses": [
+      "Lacks direct experience in marine biology, aquatics, or life sciences.",
+      "No prior experience with aquatic animal husbandry or life support systems.",
+      "Does not meet the essential requirement of a relevant degree in Marine Biology, Zoology, Aquatic Biology, or related field."
+    ],
+    "summary": "While the candidate has strong technical skills and a capacity for learning, they lack the specific qualifications and experience required for an entry-level Aquarium Biologist position.",
+    "candidate": "Linus"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Margaret Hamilton has a strong educational background in software engineering, indicating a good foundation in analytical and problem-solving skills.",
+      "Her experience in mobile app development demonstrates her ability to learn and apply new technologies, which could be advantageous for the up-skilling potential."
+    ],
+    "weaknesses": [
+      "Margaret lacks the required educational background in Marine Biology, Zoology, or a related life science.",
+      "She has no relevant experience in aquatic animal husbandry, life support systems, or aquarium maintenance.",
+      "Her skills and experience are primarily in software engineering, with no evidence of physical fitness or willingness to perform the manual tasks required for the role.",
+      "There is no indication of familiarity with water chemistry or the nitrogen cycle, which are essential for the position."
+    ],
+    "summary": "Margaret Hamilton's software engineering background shows strong analytical skills, but she lacks the necessary education, relevant experience, and physical suitability for the Aquarium Biologist role.",
+    "candidate": "Margaret"
+  }
+]

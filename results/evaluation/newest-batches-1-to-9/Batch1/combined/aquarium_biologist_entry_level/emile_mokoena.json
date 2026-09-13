@@ -1,0 +1,38 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Has strong analytical and technical skills, demonstrated through experience with data analysis and cloud technologies.",
+      "Shows potential for upskilling, indicated by current preparation for AWS Developer – Associate certification."
+    ],
+    "weaknesses": [
+      "Lacks relevant education in marine biology, zoology, or aquatic biology.",
+      "No direct experience in aquatic animal husbandry or aquarium maintenance.",
+      "Absence of practical experience with life support systems or aquatic environments.",
+      "Lacks familiarity with water chemistry and the nitrogen cycle, essential for the role."
+    ],
+    "summary": "Emile Mokoena has strong technical and analytical skills but lacks relevant education and direct experience in aquatic environments required for the Aquarium Biologist position.",
+    "candidate": "EMILE MOKOENA",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Technical skills in data management and cloud technologies",
+      "Experience in data analysis and reporting"
+    ],
+    "weaknesses": [
+      "Lack of relevant marine biology or zoology education",
+      "No experience in aquatic animal husbandry or life support systems",
+      "Insufficient practical skills for hands-on tasks"
+    ],
+    "summary": "The candidate possesses strong technical skills but lacks the specific education and practical experience required for the aquarium biologist position.",
+    "candidate": "EMILE MOKOENA",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's CV does not clearly demonstrate a degree in Marine Biology, Zoology, Aquatic Biology or a related field, though an applied data science course is relevant. Their experience with data processing, data analysis, and technical skills like Python and SQL could be closely related to the role's requirements. Physical fitness and willingness to perform dirty tasks are not evidenced, but observational skills and attention to detail are implied through their work with data accuracy and project management. Weekend work experience is not provided, but the candidate's flexible work history suggests adaptability. The candidate's right to work in the UK and ability to pass a background check are not addressed in the CV.",
+    "candidate": "EMILE MOKOENA",
+    "type": "essential_requirements"
+  }
+]

@@ -1,0 +1,37 @@
+[
+  {
+    "score": 4,
+    "strengths": [
+      "The candidate has strong communication and interpersonal skills, which align with the need to be friendly and patient with customers.",
+      "Demonstrates strong analytical and problem-solving abilities through work as a Business Analyst, which could be useful for diagnosing technical issues."
+    ],
+    "weaknesses": [
+      "Lacks practical experience in PC/laptop repair, which is essential for the role.",
+      "No evidence of experience with hardware components like RAM or SSDs, which are key responsibilities of the job.",
+      "The candidate’s work experience is primarily in business analysis, which does not directly relate to the technical demands of the job.",
+      "No evidence of familiarity with common consumer electronics issues or customer service in a repair shop setting."
+    ],
+    "summary": "The candidate has strong communication skills but lacks the practical PC repair experience and specific technical skills required for the role.",
+    "candidate": "THE DANIEL",
+    "model": "phi4"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Strong background in business analysis and information management",
+      "Experience in communication and interpersonal skills"
+    ],
+    "weaknesses": [
+      "Lack of practical PC/laptop repair skills",
+      "No relevant work experience in the computer repair field"
+    ],
+    "summary": "The candidate lacks the specific technical skills and practical experience required for computer repair, but demonstrates strong communication and business analysis skills.",
+    "candidate": "THE DANIEL",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's advanced education in business and information systems, along with their experience as a business analyst, provides a strong foundation that could be transferable to the role. However, the CV does not provide evidence of PC/laptop repair skills, and the required local or reliable commute to Tillingford is not addressed.",
+    "candidate": "THE DANIEL",
+    "type": "essential_requirements"
+  }
+]

@@ -1,0 +1,39 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Some experience in administrative roles, albeit limited and varied",
+      "Possesses basic typing skills and customer interaction experience"
+    ],
+    "weaknesses": [
+      "Lacks specific experience in secretarial or administrative roles in a professional setting",
+      "No demonstrated knowledge of essential software like Microsoft Word, Excel, and Outlook",
+      "Unstable employment history with frequent voluntary and involuntary job changes",
+      "Limited punctuality and reliability based on personal statement",
+      "No evidence of organization skills or ability to handle confidential information"
+    ],
+    "summary": "The candidate has some general administrative experience but lacks the specific skills, stability, and professionalism required for the secretarial position.",
+    "candidate": "bad_cv_kevin_jones",
+    "model": "phi4"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "willing to work",
+      "some understanding of basic administrative tasks"
+    ],
+    "weaknesses": [
+      "inconsistent employment history",
+      "lack of relevant experience in an office environment",
+      "negative attitude towards repetitive tasks and authority"
+    ],
+    "summary": "The candidate lacks the necessary experience, skills, and a positive attitude to fit the role effectively.",
+    "candidate": "bad_cv_kevin_jones",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate has no clear secretarial, receptionist, or office administration experience, but their variety of roles may include some transferable skills. Their experience in a call centre shows a confident telephone manner and client interaction. Good typing speed is implied but not confirmed. The candidate demonstrates strong organization from their varied roles, but gaps in employment and inconsistent employment history are noted. Discretion is not evidenced but is implied due to the nature of their previous roles.",
+    "candidate": "bad_cv_kevin_jones",
+    "type": "essential_requirements"
+  }
+]

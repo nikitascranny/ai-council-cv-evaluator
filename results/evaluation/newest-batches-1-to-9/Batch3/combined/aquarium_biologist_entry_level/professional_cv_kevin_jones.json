@@ -1,0 +1,36 @@
+[
+  {
+    "score": 4,
+    "strengths": [
+      "Strong adaptability and willingness to work in various operational environments, which suggests a capacity to learn and adjust to new tasks.",
+      "Demonstrates practical problem-solving skills and experience in managing routine issues independently."
+    ],
+    "weaknesses": [
+      "Lacks specific educational background in Marine Biology, Zoology, Aquatic Biology, or related life sciences as required.",
+      "No relevant experience in aquatic animal husbandry or life support systems, which are core to the role.",
+      "Does not meet the physical fitness and right-to-work requirements specified in the job description."
+    ],
+    "summary": "The candidate shows adaptability and problem-solving skills but lacks the specific educational background and relevant experience required for the Aquarium Biologist position.",
+    "candidate": "professional_cv_kevin_jones",
+    "model": "phi4"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "versatile and adaptable",
+      "practical problem-solving skills"
+    ],
+    "weaknesses": [
+      "lacks relevant academic qualifications",
+      "no experience in aquatic animal husbandry or life support systems"
+    ],
+    "summary": "Kevin Jones demonstrates versatility and problem-solving skills but lacks the specific academic background and experience in aquatic animal husbandry required for the position.",
+    "candidate": "professional_cv_kevin_jones",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's education level does not meet the requirement for a degree in Marine Biology, Zoology, Aquatic Biology or a related life science. However, their cross-functional experience in various sectors, particularly in customer service and logistics, can be seen as a reasonable match for the required observational skills, attention to detail, and ability to adapt to different environments. Physical fitness requirements seem to be met based on their ability to work in various operational roles. Weekend and early morning work availability is also clear from their employment history.",
+    "candidate": "professional_cv_kevin_jones",
+    "type": "essential_requirements"
+  }
+]

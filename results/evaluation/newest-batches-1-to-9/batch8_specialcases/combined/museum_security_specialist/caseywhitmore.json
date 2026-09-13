@@ -1,0 +1,34 @@
+[
+  {
+    "score": 2,
+    "strengths": [
+      "Exceptional technical skills and experience in software engineering",
+      "Extensive experience with distributed systems and high-level architecture"
+    ],
+    "weaknesses": [
+      "No experience in security roles or familiarity with security systems",
+      "Lack of relevant experience in museums, galleries, or heritage sites",
+      "No evidence of experience with CCTV, alarm systems, or access control platforms"
+    ],
+    "summary": "The candidate possesses exceptional technical skills but lacks relevant experience and qualifications for a museum security role.",
+    "candidate": "CaseyWhitmore",
+    "model": "phi4"
+  },
+  {
+    "score": 1,
+    "strengths": [
+      "None directly relevant to the security role"
+    ],
+    "weaknesses": [
+      "Lack of experience in security, museums, or related fields; no alignment with essential requirements"
+    ],
+    "summary": "The candidate's extensive background in software engineering does not align with the job's essential requirements for museum security, making them unsuitable for the position.",
+    "candidate": "CaseyWhitmore",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's experience is primarily in a technical field and does not demonstrate any relevant security or venue management experience, making it unclear if they meet the minimum 3 years' experience in a security role. Their educational background in Information Technology is relevant but does not directly address the technical security systems knowledge required. However, their note-taking and communication skills could be considered a reasonable match for the written and verbal communication skills needed for the role.",
+    "candidate": "CaseyWhitmore",
+    "type": "essential_requirements"
+  }
+]

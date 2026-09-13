@@ -1,0 +1,36 @@
+[
+  {
+    "score": 4,
+    "strengths": [
+      "The candidate has a strong background in data analysis and attention to detail, which is beneficial for tasks like water quality testing and record-keeping.",
+      "Strong organizational and communication skills are evident from the candidate's experience in various administrative roles."
+    ],
+    "weaknesses": [
+      "Lack of direct experience or education in marine biology or related life sciences, as required for the role.",
+      "No practical experience in aquatic environments, husbandry, or life support systems maintenance, which are core responsibilities of the position.",
+      "No demonstrated physical fitness for tasks such as lifting up to 25 kg or working in warm, humid environments."
+    ],
+    "summary": "While the candidate possesses strong analytical, organizational, and communication skills, they lack the specific educational background, relevant experience, and physical fitness required for the Aquarium Biologist position.",
+    "candidate": "PONTUS PONTIOUS",
+    "model": "phi4"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "strong analytical and organizational skills",
+      "ability to work with detailed data and reports"
+    ],
+    "weaknesses": [
+      "lack of relevant experience in aquatic biology or animal husbandry",
+      "no practical experience with life support systems or filtration"
+    ],
+    "summary": "Pontus Pontious has strong analytical skills but lacks the specific experience in aquatic animal care and life support systems required for the position.",
+    "candidate": "PONTUS PONTIOUS",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's educational background does not meet the essential requirement of a degree in Marine Biology, Zoology, Aquatic Biology, or a related life science. However, their experience in administrative and data analysis roles could be considered a reasonable match for the strong observational skills, attention to detail, and record keeping habits required. The physical fitness requirement is unclear due to the lack of relevant information in the CV.",
+    "candidate": "PONTUS PONTIOUS",
+    "type": "essential_requirements"
+  }
+]

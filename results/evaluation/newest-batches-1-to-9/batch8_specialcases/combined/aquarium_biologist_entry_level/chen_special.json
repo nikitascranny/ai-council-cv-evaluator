@@ -1,0 +1,36 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Basic understanding of technology and systems, which might aid in quickly learning aquarium life support systems",
+      "Physically fit and willing to work on a rotational basis including weekends and bank holidays"
+    ],
+    "weaknesses": [
+      "Lacks formal education or practical experience in marine biology or a related life science",
+      "No experience in aquarium husbandry or maintenance of life support systems",
+      "Limited evidence of experience with hands-on or physical tasks relevant to the role"
+    ],
+    "summary": "The candidate lacks relevant educational background and experience in marine biology or aquarium husbandry, which are essential for this role.",
+    "candidate": "Chen_Special",
+    "model": "phi4"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "strong technical background",
+      "previous experience in system maintenance and optimization"
+    ],
+    "weaknesses": [
+      "no relevant marine biology or aquatic animal husbandry experience",
+      "lacks hands-on practical skills for aquatic life support systems"
+    ],
+    "summary": "The candidate has a solid technical background but lacks direct relevance to aquatic biology and practical hands-on experience required for the position.",
+    "candidate": "Chen_Special",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate clearly meets the requirement for a degree in a related life science, has a reasonable match for willingness to perform physical tasks, and provides evidence for strong observational skills and attention to detail. However, the candidate's experience with water chemistry and the nitrogen cycle is unclear, and the exact lifting and working conditions experience is not explicitly stated.",
+    "candidate": "Chen_Special",
+    "type": "essential_requirements"
+  }
+]

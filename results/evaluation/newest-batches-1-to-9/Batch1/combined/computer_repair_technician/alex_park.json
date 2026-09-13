@@ -1,0 +1,37 @@
+[
+  {
+    "score": 4,
+    "strengths": [
+      "Good technical skills and experience with computers, particularly in testing and automation.",
+      "Strong analytical skills demonstrated through experience in test analysis and problem-solving.",
+      "Effective communication and training skills, evidenced by roles involving training and collaboration."
+    ],
+    "weaknesses": [
+      "Lacks direct experience in hands-on PC/laptop repair, which is essential for the role.",
+      "No specific experience with the type of hardware and software issues typical in a repair shop.",
+      "Unfamiliar with informal, customer-facing service environments, as opposed to technical IT roles."
+    ],
+    "summary": "While the candidate possesses strong technical and analytical skills, their experience does not align closely with the hands-on repair and customer service aspects required for this position.",
+    "candidate": "ALEX PARK",
+    "model": "phi4"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Experience in software testing and automation",
+      "Proficient in using various testing tools"
+    ],
+    "weaknesses": [
+      "Lacks practical PC/laptop repair skills",
+      "No experience in customer service or retail environment"
+    ],
+    "summary": "Alex Park lacks the practical hardware repair skills and customer service experience required for the role, but has a strong background in software testing.",
+    "candidate": "ALEX PARK",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's experience as an Intermediate Test Analyst and in coordinating services aligns closely with the requirement for basic PC/laptop repair skills, as both involve problem-solving and technical knowledge. Their ability to explain concepts to new recruits and their customer service role demonstrate friendliness and patience with older customers. The candidate’s role in obtaining and documenting test data, as well as their previous work in assisting with new recruit training, suggest they are honest and reliable. However, their experience does not explicitly mention PC/laptop repair skills, and it is unclear if they can work Saturdays or if they can reliably reach the workplace.",
+    "candidate": "ALEX PARK",
+    "type": "essential_requirements"
+  }
+]

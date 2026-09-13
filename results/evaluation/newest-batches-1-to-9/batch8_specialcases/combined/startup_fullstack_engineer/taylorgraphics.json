@@ -1,0 +1,43 @@
+[
+  {
+    "score": 9,
+    "strengths": [
+      "Has 8 years of experience with backend systems, including strong expertise in Go, which is a required skill.",
+      "Demonstrates leadership experience by leading cross-functional teams and mentoring engineers into senior roles.",
+      "Strong background in designing and scaling distributed systems, which aligns with the job's need for handling distributed systems fundamentals.",
+      "Experience with event-driven architectures using Kafka, which is desirable for the role.",
+      "Proven track record of reducing infrastructure costs and improving system reliability, indicating capability to manage production services and on-call duties.",
+      "Educational background in Distributed Systems and certifications in cloud infrastructure, enhancing understanding of production environments and technology stack.",
+      "Good communication and leadership skills, important for the role's emphasis on working directly with founders and customers."
+    ],
+    "weaknesses": [
+      "Lacks direct experience with TypeScript/React, which is essential for the role.",
+      "Limited experience with the energy sector, though not essential, could be beneficial given the company's focus on energy orchestration.",
+      "No mention of direct customer interaction or product feature development from design to production, which are key responsibilities of the role."
+    ],
+    "summary": "The candidate has a strong technical background and leadership experience that align well with the job's requirements, though they need to develop skills in TypeScript/React and gain experience in the energy sector.",
+    "candidate": "TaylorGraphics",
+    "model": "phi4"
+  },
+  {
+    "score": 7,
+    "strengths": [
+      "Experience in backend engineering with Go, Python, and Java",
+      "Strong background in microservices architecture and distributed systems",
+      "Leadership and mentorship skills"
+    ],
+    "weaknesses": [
+      "Lack of front-end experience with React/TypeScript",
+      "No direct experience in the energy or climate sector",
+      "Less emphasis on personal projects or open-source contributions"
+    ],
+    "summary": "Taylor Okafor is a strong backend engineer with extensive experience in system architecture and leadership, but lacks front-end skills and domain-specific knowledge in the energy sector.",
+    "candidate": "TaylorGraphics",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate meets the essential requirement of 4+ years shipping production software with experience in TypeScript/React and Node.js. The experience in managing microservices and building APIs closely aligns with the need to operate services in production. The candidate's educational background in distributed systems and relevant certifications indicate a solid grasp of distributed systems fundamentals. However, there is no explicit mention of experience with Go, Rust, or Java backend languages, which are listed as preferred. The candidate’s communication skills are implied through their leadership and mentoring roles, but no specific examples of technical trade-off explanations are provided.",
+    "candidate": "TaylorGraphics",
+    "type": "essential_requirements"
+  }
+]

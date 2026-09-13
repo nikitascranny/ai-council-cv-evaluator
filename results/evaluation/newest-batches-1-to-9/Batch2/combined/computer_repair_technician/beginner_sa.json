@@ -1,0 +1,36 @@
+[
+  {
+    "score": 4,
+    "strengths": [
+      "Strong programming and software development skills",
+      "Experience in teaching and facilitating peer programming"
+    ],
+    "weaknesses": [
+      "Lack of practical PC/laptop repair experience",
+      "No demonstrated experience in customer service or retail environments",
+      "No evidence of working with older technology or hardware repair tasks"
+    ],
+    "summary": "While Naledi Molefe has strong software development skills and experience in teaching, they lack the practical hardware repair skills and customer service experience necessary for this role.",
+    "candidate": "beginner_sa",
+    "model": "phi4"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "programming and development skills",
+      "experience in software development and testing"
+    ],
+    "weaknesses": [
+      "lack of practical PC/laptop repair skills",
+      "no relevant work experience in hardware repair or customer service"
+    ],
+    "summary": "Naledi Molefe has strong programming and development skills but lacks the practical hardware repair and customer service experience required for the position.",
+    "candidate": "beginner_sa",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's CV clearly meets the requirements for practical PC/laptop repair skills, reliability, and ability to work on Saturdays. The friendly and patient demeanor with older customers is a reasonable/close match, as is the local or reliable transport to Tillingford. However, there is no clear evidence of the candidate's ability to explain things without jargon or sighing, which could be a concern.",
+    "candidate": "beginner_sa",
+    "type": "essential_requirements"
+  }
+]

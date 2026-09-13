@@ -1,0 +1,19 @@
+[
+  {
+    "score": 7,
+    "strengths": [
+      "Has 4 years of experience in building backend services, fulfilling the essential requirement for production software experience.",
+      "Strong experience in Go, which is a preferred language for the role.",
+      "Experience with microservices architecture, which aligns with scaling and deploying full-stack features.",
+      "Proven ability to improve performance and reduce bug reports, demonstrating a focus on quality and efficiency."
+    ],
+    "weaknesses": [
+      "Limited frontend experience, particularly with React/TypeScript, which is required for this role.",
+      "No specific experience with event-driven architectures like Kafka or with time-series databases like TimescaleDB.",
+      "Lacks explicit experience with observability and on-call responsibilities.",
+      "No demonstrated experience with operating systems for real-time energy orchestration or domain knowledge in the energy sector."
+    ],
+    "summary": "Alex Turner has a strong foundation in backend engineering with relevant experience in Go, making them a strong candidate, though they lack frontend experience and domain-specific knowledge.",
+    "candidate": "Alex Turner"
+  }
+]

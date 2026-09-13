@@ -1,0 +1,37 @@
+[
+  {
+    "score": 4,
+    "strengths": [
+      "Demonstrates strong team coordination and supervision skills",
+      "Shows ability to work in fast-paced environments and maintain standards",
+      "Displays good problem-solving and communication skills"
+    ],
+    "weaknesses": [
+      "Lacks relevant education or experience in marine biology or related fields",
+      "No direct experience with aquatic systems or animal husbandry",
+      "No demonstrated knowledge of water chemistry or nitrogen cycle"
+    ],
+    "summary": "The candidate shows strong team and supervisory skills in fast-paced environments but lacks relevant educational background and direct experience in aquatic biology and husbandry.",
+    "candidate": "professional_cv_jason_muller",
+    "model": "phi4"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Adaptable and proactive in customer service and operational roles",
+      "Practical problem-solving and team coordination skills"
+    ],
+    "weaknesses": [
+      "No relevant education in marine biology, zoology, or aquatic science",
+      "Lack of hands-on experience in aquatic animal husbandry or life support systems"
+    ],
+    "summary": "Jason Muller lacks the necessary academic background and practical experience in aquatic biology or zoology, which are essential for the position, despite showing adaptability and problem-solving skills.",
+    "candidate": "professional_cv_jason_muller",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate does not clearly meet the requirement for a degree in Marine Biology, Zoology, Aquatic Biology or a related life science, as the only evidence of higher education is secondary school education. Their experience in customer service and operations might reasonably align with some aspects of the role, such as record keeping and attention to detail, but does not strongly suggest relevant technical knowledge in water chemistry or filter maintenance. The candidate's physical fitness, willingness to work varied hours, and ability to work in warm environments are clearly met. Their background does not provide clear evidence of a basic understanding of water chemistry or the nitrogen cycle in closed aquatic systems.",
+    "candidate": "professional_cv_jason_muller",
+    "type": "essential_requirements"
+  }
+]

@@ -1,0 +1,33 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Candidate has strong communication and leadership skills, which could be beneficial in customer interactions and team dynamics."
+    ],
+    "weaknesses": [
+      "Lacks practical PC/laptop repair skills which are essential for the role.",
+      "No relevant work experience in technical or IT repair fields.",
+      "Overemphasis on business administration and leadership in previous roles, not aligned with technical job requirements."
+    ],
+    "summary": "The candidate's experience and skills are more aligned with business leadership rather than the practical, hands-on technical work required for the computer repair position.",
+    "candidate": "bad_cv_sarah_lynne_van_der_merwe",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong in self-promotion and branding initiatives"
+    ],
+    "weaknesses": [
+      "Lacks technical skills, relevant work experience, and practical problem-solving abilities"
+    ],
+    "summary": "Sarah Lynne Van der Merwe is not a suitable candidate for the computer repair position as she lacks the necessary technical skills and practical experience.",
+    "candidate": "bad_cv_sarah_lynne_van_der_merwe",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's experience in leading initiatives and customer happiness initiatives could reasonably relate to being friendly and patient with older customers. However, there is no clear evidence of practical PC/laptop repair skills. The requirement for honesty and reliability is met by the candidate's role and achievements. Saturday availability is unclear as no specific days worked are mentioned. The candidate's local status is also unclear.",
+    "candidate": "bad_cv_sarah_lynne_van_der_merwe",
+    "type": "essential_requirements"
+  }
+]

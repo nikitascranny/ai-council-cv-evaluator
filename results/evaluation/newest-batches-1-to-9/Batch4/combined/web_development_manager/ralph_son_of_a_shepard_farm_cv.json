@@ -1,0 +1,38 @@
+[
+  {
+    "score": 2,
+    "strengths": [
+      "Demonstrates strong independent work ethic and responsibility in a demanding environment.",
+      "Possesses good record-keeping and planning skills through farm operations."
+    ],
+    "weaknesses": [
+      "Lacks professional web/software engineering experience.",
+      "No experience with line-managing engineers or leading technical projects.",
+      "No familiarity with modern web stacks, cloud infrastructure, or agile methodologies.",
+      "No relevant experience in software development or team leadership in a tech context."
+    ],
+    "summary": "The candidate shows strong independent work ethic and organizational skills but lacks the necessary technical, leadership, and engineering experience required for the Engineering Manager role.",
+    "candidate": "Ralph_Son_of_a_Shepard_Farm_CV",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "dependable and reliable in daily operations",
+      "excellent livestock welfare and handling"
+    ],
+    "weaknesses": [
+      "no relevant web/software engineering experience",
+      "no experience leading technical teams",
+      "lack of knowledge in modern web stacks and cloud infrastructure"
+    ],
+    "summary": "The candidate lacks the essential technical and managerial experience required for the engineering manager role, but demonstrates reliability and strong practical skills in a different field.",
+    "candidate": "Ralph_Son_of_a_Shepard_Farm_CV",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's experience does not clearly meet the professional web/software engineering requirements or the specific modern web stacks. However, their leadership experience in managing a team, particularly in a dynamic environment, could be seen as a reasonable match for leading teams through significant technical change. Communication and organizational skills, while not directly related to the technical stack, suggest they may have strong interpersonal and problem-solving abilities that could be transferable. The core technical requirements, such as specific programming languages and cloud infrastructure knowledge, are not evident from the provided CV.",
+    "candidate": "Ralph_Son_of_a_Shepard_Farm_CV",
+    "type": "essential_requirements"
+  }
+]

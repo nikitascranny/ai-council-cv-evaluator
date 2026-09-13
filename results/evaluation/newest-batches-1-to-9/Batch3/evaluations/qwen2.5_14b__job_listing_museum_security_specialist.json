@@ -1,0 +1,81 @@
+[
+  {
+    "score": 4,
+    "strengths": [
+      "Adaptable and has strong customer service skills",
+      "Experience in team coordination and workflow management"
+    ],
+    "weaknesses": [
+      "Lack of relevant security experience",
+      "No evidence of SIA licence or familiarity with security systems"
+    ],
+    "summary": "Candidate shows adaptability and team management skills, but lacks the specific security experience and qualifications needed for the role.",
+    "candidate": "professional_cv_jason_muller"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Versatile and adaptable with experience in various operational roles",
+      "Strong customer service and communication skills"
+    ],
+    "weaknesses": [
+      "Lack of relevant security experience in museums or heritage sites",
+      "Does not hold necessary SIA license"
+    ],
+    "summary": "Kevin Jones has a diverse background in operations and customer service but lacks the specific security experience and certifications required for the Museum Security Specialist role.",
+    "candidate": "professional_cv_kevin_jones"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Business development and brand positioning",
+      "Retail operations and team leadership"
+    ],
+    "weaknesses": [
+      "Lack of experience in security roles",
+      "No relevant certifications or experience with security systems"
+    ],
+    "summary": "The candidate lacks the necessary security experience and certifications for the role, but demonstrates strong business and leadership skills.",
+    "candidate": "professional_cv_sarah_lynne_van_der_merwe"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Can lift heavy boxes",
+      "Fast learner when motivated"
+    ],
+    "weaknesses": [
+      "No relevant work experience",
+      "Lacks essential security skills and certifications"
+    ],
+    "summary": "Candidate does not meet the basic requirements for the position and lacks relevant experience.",
+    "candidate": "bad_cv_jason_muller"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "willingness to work",
+      "ability to work independently"
+    ],
+    "weaknesses": [
+      "lack of relevant work experience",
+      "pattern of job instability",
+      "poor attitude"
+    ],
+    "summary": "The candidate lacks the essential experience and demonstrates a pattern of job instability and a negative attitude, making them unsuitable for the Museum Security Specialist position.",
+    "candidate": "bad_cv_kevin_jones"
+  },
+  {
+    "score": 1,
+    "strengths": [
+      "Passionate about motivational quotes",
+      "Has a vision for branding"
+    ],
+    "weaknesses": [
+      "No relevant security experience",
+      "Lacks essential skills and qualifications"
+    ],
+    "summary": "The candidate does not meet the essential requirements for the position and lacks relevant experience or qualifications.",
+    "candidate": "bad_cv_sarah_lynne_van_der_merwe"
+  }
+]

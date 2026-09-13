@@ -1,0 +1,39 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Strong analytical and problem-solving skills from experience as a business analyst",
+      "Excellent communication and interpersonal skills, relevant for coordinating teams",
+      "Good physical fitness likely inferred from being able to handle demanding roles"
+    ],
+    "weaknesses": [
+      "Lacks direct experience in groundskeeping or countryside management",
+      "No specific experience with tracking, hounds, or airsoft-style activities",
+      "No evidence of comfort with or experience in unusual or theatrical roles",
+      "No background in military, search & rescue, or similar pursuit-oriented activities"
+    ],
+    "summary": "The candidate possesses strong analytical and interpersonal skills but lacks specific experience and familiarity with the unique demands and environment of the Groundskeeper & Hunt Coordinator role.",
+    "candidate": "THE DANIEL",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong background in business analysis and systems management",
+      "Experience with compliance and process improvement"
+    ],
+    "weaknesses": [
+      "No experience in groundskeeping or hunting",
+      "Lack of relevant physical and outdoor skills",
+      "No background in security or tracking"
+    ],
+    "summary": "The candidate's business and systems analysis skills are impressive but entirely irrelevant to the job requirements, which demand specific physical and outdoor skills.",
+    "candidate": "THE DANIEL",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's CV does not clearly meet the essential requirement of groundskeeping, gamekeeping, or countryside management experience. However, their business analysis experience, particularly in process improvement and system requirements, could be considered a reasonable/close match for the tracking and pursuit-oriented background requirement. The CV does not provide evidence of physical fitness or working in remote, isolated areas, nor does it mention any related certifications or experience. The candidate does, however, demonstrate strong analytical and system-related skills, which could be transferable to the role.",
+    "candidate": "THE DANIEL",
+    "type": "essential_requirements"
+  }
+]

@@ -1,0 +1,41 @@
+[
+  {
+    "score": 7,
+    "strengths": [
+      "Jordan Mitchell has over 5 years of professional web/software engineering experience.",
+      "Experience in leading teams through significant technical changes, which aligns with the key responsibility of leading a major platform modernization.",
+      "Strong background in modern web stacks, including React/TypeScript and backend technologies.",
+      "Proven understanding of CI/CD, cloud infrastructure, and observability, which are essential for the role.",
+      "Good communication skills necessary for translating between engineers, product managers, and executives."
+    ],
+    "weaknesses": [
+      "The CV does not explicitly mention experience with .NET, which is part of the technical stack for the role.",
+      "Lacks specific mention of experience with AWS, which is preferred for the position.",
+      "No direct evidence of experience with accessibility standards and inclusive design practices.",
+      "Insufficient details on experience with distributed or hybrid teams in an agile delivery context.",
+      "No explicit mention of experience in incident management at scale."
+    ],
+    "summary": "Jordan Mitchell has relevant experience and skills for the Engineering Manager role, particularly in team leadership and modern web technologies, but lacks specific experience with .NET, AWS, and accessibility standards.",
+    "candidate": "SystemShock",
+    "model": "phi4"
+  },
+  {
+    "score": 6,
+    "strengths": [
+      "5+ years of professional web/software engineering experience",
+      "Strong background in modern web stacks (React/TypeScript, Node.js)"
+    ],
+    "weaknesses": [
+      "No explicit mention of line-managing engineers",
+      "Lack of experience in travel, transport or high-volume transactional booking systems"
+    ],
+    "summary": "Jordan Mitchell has the technical skills but lacks the direct management experience and industry-specific knowledge required for the Engineering Manager role.",
+    "candidate": "SystemShock",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate clearly meets the requirement of 5+ years of professional web/software engineering experience, and has a reasonable/close match for leading teams through significant technical change. The candidate's experience is not specifically in React/TypeScript and a backend language, but may be a reasonable/close match given the broad nature of the experience listed. The candidate's experience running agile delivery with distributed or hybrid teams is clearly met. The communication skills are clearly met, but the specific tools (CI/CD, cloud infrastructure) are not explicitly stated, making them a reasonable/close match. The requirement for at least 2 years line managing engineers is not clearly met based on the provided information.",
+    "candidate": "SystemShock",
+    "type": "essential_requirements"
+  }
+]

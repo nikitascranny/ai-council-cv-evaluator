@@ -1,0 +1,37 @@
+[
+  {
+    "score": 4,
+    "strengths": [
+      "The candidate has demonstrated leadership and team coordination skills, which are beneficial for working in a structured environment like an aquarium.",
+      "Experience in operational management could translate to managing routine maintenance tasks effectively."
+    ],
+    "weaknesses": [
+      "Lacks a relevant degree or practical experience in Marine Biology, Zoology, Aquatic Biology, or related life sciences.",
+      "No evidence of experience with aquarium systems, water chemistry, or animal husbandry.",
+      "No physical fitness or hands-on skills related to aquarium maintenance tasks are mentioned.",
+      "No background in working in environments that involve water quality testing or life support systems."
+    ],
+    "summary": "The candidate has strong leadership and operational management skills but lacks the necessary educational background, practical experience, and specific skills required for an Aquarium Biologist role.",
+    "candidate": "professional_cv_sarah_lynne_van_der_merwe",
+    "model": "phi4"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Business development and brand positioning",
+      "Retail operations and team leadership"
+    ],
+    "weaknesses": [
+      "Lack of relevant marine biology education or practical experience",
+      "No experience with aquatic animal husbandry or life support systems"
+    ],
+    "summary": "The candidate has strong business and retail management skills but lacks the necessary educational background and practical experience in marine biology or aquarium operations to meet the job requirements.",
+    "candidate": "professional_cv_sarah_lynne_van_der_merwe",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate does not clearly meet the requirement for a degree in Marine Biology, Zoology, Aquatic Biology or a related life science. However, their experience in managing end-to-end consulting processes and leading teams could be a reasonable match for the need for strong observational skills and attention to detail. The physical fitness and ability to work flexible shifts are clearly met. The education and development do not provide evidence for the basic understanding of water chemistry or the nitrogen cycle in closed aquatic systems.",
+    "candidate": "professional_cv_sarah_lynne_van_der_merwe",
+    "type": "essential_requirements"
+  }
+]

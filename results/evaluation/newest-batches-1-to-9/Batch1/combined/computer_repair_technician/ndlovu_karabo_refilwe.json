@@ -1,0 +1,38 @@
+[
+  {
+    "score": 6,
+    "strengths": [
+      "Strong organizational and administrative skills from extensive work in records management.",
+      "Excellent communication skills and experience in customer service.",
+      "Ability to work independently and in a team, important for a part-time role.",
+      "High level of attention to detail and problem-solving skills."
+    ],
+    "weaknesses": [
+      "Lacks direct experience in computer repair or IT troubleshooting.",
+      "No specific skills related to hardware upgrades or basic PC/laptop repairs.",
+      "Educational background is more aligned with information science and archives, not practical IT repair."
+    ],
+    "summary": "The candidate has strong organizational and communication skills, which are beneficial for the role, but lacks direct experience in computer repair, which is essential for this position.",
+    "candidate": "NDLOVU KARABO REFILWE",
+    "model": "phi4"
+  },
+  {
+    "score": 4,
+    "strengths": [
+      "excellent communication and interpersonal skills",
+      "organizational and administrative skills"
+    ],
+    "weaknesses": [
+      "lack of practical PC/laptop repair skills",
+      "no relevant work experience in computer repairs"
+    ],
+    "summary": "Candidate possesses strong administrative and communication skills but lacks practical computer repair experience and relevant technical skills.",
+    "candidate": "NDLOVU KARABO REFILWE",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's experience in records management and archival services clearly meets the requirement for honesty and reliability, as evidenced by their various roles in managing and preserving records. The candidate's work experience in handling and managing records, as well as their technical skills in digital archiving, closely matches the practical PC/laptop repair requirement. However, the requirement for friendly and patient communication with older customers is not clearly demonstrated, and there is no evidence of working on Saturdays.",
+    "candidate": "NDLOVU KARABO REFILWE",
+    "type": "essential_requirements"
+  }
+]

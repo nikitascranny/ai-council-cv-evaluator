@@ -1,0 +1,37 @@
+[
+  {
+    "score": 4,
+    "strengths": [
+      "The candidate has a strong foundation in technical skills and a proven ability to learn new tools quickly, which indicates adaptability.",
+      "The candidate's experience in managing tasks within agile teams shows potential for handling multiple responsibilities efficiently."
+    ],
+    "weaknesses": [
+      "The candidate lacks direct experience in secretarial, receptionist, or office administration roles, which are essential for this position.",
+      "There is no demonstrated proficiency in Microsoft Word, Excel, or Outlook, which are crucial for the role.",
+      "The candidate has no experience with practice management software or audio typing, both desirable skills for the job."
+    ],
+    "summary": "While the candidate shows adaptability and potential for up-skilling, the lack of relevant experience and specific skills required for the administrative role are significant drawbacks.",
+    "candidate": "beginner_chinese",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Excellent technical skills in software development",
+      "Strong educational background in Computer Science"
+    ],
+    "weaknesses": [
+      "Lack of relevant administrative or secretarial experience",
+      "Insufficient skills in Microsoft Office suite",
+      "No experience in finance or accounting"
+    ],
+    "summary": "The candidate possesses strong technical skills and education but lacks the specific administrative, secretarial, and financial knowledge required for the role.",
+    "candidate": "beginner_chinese",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's experience closely matches the job requirements, with no clear gaps. Previous experience in office administration, although not explicitly stated, is closely related. The CV does not specify the duration, but the candidate's attitude is noted as positive. The candidate's proficiency in Microsoft Office applications and typing speed are clearly met. The warm, professional way with clients and organizational skills are reasonably inferred from the candidate's profile. However, the requirement for handling confidential information is not directly addressed in the CV.",
+    "candidate": "beginner_chinese",
+    "type": "essential_requirements"
+  }
+]

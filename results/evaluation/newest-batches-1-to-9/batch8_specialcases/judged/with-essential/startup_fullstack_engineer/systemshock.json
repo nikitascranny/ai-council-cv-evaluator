@@ -1,0 +1,8 @@
+{
+  "candidate": "SystemShock",
+  "final_score": 6,
+  "score_rationale": "The candidate has 4+ years of shipping software and relevant TypeScript/React experience, which aligns well with key requirements. However, the backend language experience is less clear, and there are gaps in demonstrated knowledge of distributed systems and explicit enthusiasm for the energy sector, though some aspects can be reasonably inferred.",
+  "key_strengths": "4+ years of shipping production software, experience with TypeScript/React, solid grasp of distributed systems fundamentals, comfort with ambiguity and velocity, strong communication skills.",
+  "key_weaknesses": "Unclear or missing backend language experience (Go, Rust, Node, or Java), lack of direct experience with event-driven architectures or Kafka, no explicit mention of observability, on-call, or energy sector excitement.",
+  "final_evaluation": "The candidate appears well-suited based on their experience and technical skills (frontend and distributed systems), but there are uncertainties around their backend language proficiency and explicit enthusiasm for the energy domain. They might fit the role's technical demands and adaptability needs, but the lack of clear backend experience and domain excitement could be a concern for the CTO."
+}

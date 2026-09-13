@@ -1,0 +1,175 @@
+[
+  {
+    "score": 10,
+    "strengths": [
+      "PhD in Computer Science from MIT",
+      "Experience leading the architecture of planet-scale distributed systems"
+    ],
+    "weaknesses": [
+      "Candidate's CV does not reflect their true experience and qualifications"
+    ],
+    "summary": "The candidate is exceptionally overqualified and has outstanding experience and qualifications that far exceed the job requirements.",
+    "candidate": "CaseyWhitmore"
+  },
+  {
+    "score": 7,
+    "strengths": [
+      "4+ years of backend development experience in Go and Python",
+      "Experience with building REST APIs",
+      "AWS and Kubernetes certifications"
+    ],
+    "weaknesses": [
+      "No experience with TypeScript/React frontend development",
+      "Limited experience with event-driven architectures",
+      "No direct energy sector experience"
+    ],
+    "summary": "Jordan Mitchell has relevant backend development experience and technical certifications, but lacks frontend skills and direct energy sector experience.",
+    "candidate": "JordanMitchell5Star"
+  },
+  {
+    "score": 7,
+    "strengths": [
+      "4+ years of shipping production software",
+      "Solid grasp of distributed systems"
+    ],
+    "weaknesses": [
+      "No explicit mention of TypeScript/React experience",
+      "No energy sector domain knowledge"
+    ],
+    "summary": "Jordan Mitchell is a seasoned software engineer with relevant skills and experience, but lacks specific frontend experience and energy sector expertise.",
+    "candidate": "SystemShock"
+  },
+  {
+    "score": 7,
+    "strengths": [
+      "Experience in backend engineering with Go, Python, and Java",
+      "Strong background in microservices architecture and distributed systems",
+      "Leadership and mentorship skills"
+    ],
+    "weaknesses": [
+      "Lack of front-end experience with React/TypeScript",
+      "No direct experience in the energy or climate sector",
+      "Less emphasis on personal projects or open-source contributions"
+    ],
+    "summary": "Taylor Okafor is a strong backend engineer with extensive experience in system architecture and leadership, but lacks front-end skills and domain-specific knowledge in the energy sector.",
+    "candidate": "TaylorGraphics"
+  },
+  {
+    "score": 6,
+    "strengths": [
+      "Experience with backend systems in Go",
+      "AWS certification",
+      "Experience in service reliability"
+    ],
+    "weaknesses": [
+      "Lack of experience with TypeScript/React",
+      "No experience in the energy sector",
+      "No evidence of open-source contributions or side projects"
+    ],
+    "summary": "Marcus Vandenberg has relevant backend experience but lacks front-end skills and industry-specific knowledge.",
+    "candidate": "MegaMarcus"
+  },
+  {
+    "score": 6,
+    "strengths": [
+      "4 years of software development experience",
+      "Experience with React and TypeScript"
+    ],
+    "weaknesses": [
+      "Lacks experience with Go and backend development",
+      "No experience in the energy sector"
+    ],
+    "summary": "Priya Chetty has relevant frontend experience but lacks the backend and energy sector expertise required for the role.",
+    "candidate": "PriyaPicture"
+  },
+  {
+    "score": 6,
+    "strengths": [
+      "4 years of backend systems experience in Python, Java, and Go",
+      "Potential for up-skilling in TypeScript and React given existing software engineering background"
+    ],
+    "weaknesses": [
+      "Lacks experience with TypeScript and React, essential for frontend development",
+      "No experience in the energy sector or with event-driven architectures"
+    ],
+    "summary": "Samantha has strong backend experience but lacks the specific frontend skills and domain knowledge required for this role.",
+    "candidate": "SamanthaOne"
+  },
+  {
+    "score": 5,
+    "strengths": [
+      "Python and Go experience",
+      "API design and optimization"
+    ],
+    "weaknesses": [
+      "Poor grammar and spelling in CV",
+      "No TypeScript/React experience",
+      "Limited frontend experience"
+    ],
+    "summary": "The candidate has relevant backend experience but lacks the required frontend skills and has significant room for improvement in CV clarity and technical communication.",
+    "candidate": "BrendanPythno"
+  },
+  {
+    "score": 5,
+    "strengths": [
+      "有Python和Go的编程经验，适合后端开发",
+      "有PostgreSQL经验，符合数据库要求"
+    ],
+    "weaknesses": [
+      "缺少前端开发经验，特别是React/TypeScript",
+      "缺少能源领域或分布式系统的核心知识"
+    ],
+    "summary": "陈伟明在后端开发方面有不错的经验，但前端和能源领域知识不足，可能需要额外培训。",
+    "candidate": "Chen_Special"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "problem-solving skills",
+      "inventive thinking"
+    ],
+    "weaknesses": [
+      "lack of relevant professional experience",
+      "no evidence of full-stack engineering capabilities"
+    ],
+    "summary": "Candidate demonstrates strong survival and problem-solving skills but lacks relevant professional experience and technical skills for the role.",
+    "candidate": "Li_ExtraSpecial"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "strong analytical and statistical skills",
+      "proficient in Python, R, SQL"
+    ],
+    "weaknesses": [
+      "lacks full-stack engineering experience",
+      "no experience with Go, React/TypeScript or distributed systems"
+    ],
+    "summary": "The candidate possesses strong data analysis skills but lacks the necessary full-stack engineering experience and relevant technical skills outlined in the job description.",
+    "candidate": "MathNaledi"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Extensive experience in distributed systems and team leadership",
+      "High technical skill level"
+    ],
+    "weaknesses": [
+      "Poor interpersonal skills and attitude during interviews",
+      "Lacks direct experience with event-driven architectures and real-time energy orchestration"
+    ],
+    "summary": "Victoria Sterling demonstrates strong technical expertise but her attitude and communication skills during the interview indicate significant cultural and team integration risks.",
+    "candidate": "VictoriaSterlingSilver"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Demonstrates enthusiasm for software engineering roles"
+    ],
+    "weaknesses": [
+      "Lacks clear evidence of relevant work experience, technical skills, and domain knowledge"
+    ],
+    "summary": "The candidate appears enthusiastic but fails to provide any concrete evidence of the required skills or relevant experience for the role.",
+    "candidate": "HomerSimsSon"
+  }
+]

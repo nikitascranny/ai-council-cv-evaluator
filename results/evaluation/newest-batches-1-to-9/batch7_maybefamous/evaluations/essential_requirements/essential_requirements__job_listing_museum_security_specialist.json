@@ -1,0 +1,18 @@
+[
+  {
+    "summary": "The candidate's experience as a Software Engineer and Junior Developer does not clearly meet the requirement for at least 3 years' experience in a security role. However, the candidate's ability to work in a team and perform bug fixing and code reviews may be transferable to a security role. The candidate's physical fitness is not evidenced, and there is no mention of any security-related certifications or training. The required working knowledge of CCTV, intruder alarm, and access control systems is not evident, nor is the SIA Door Supervisor or Security Guarding licence. The candidate's communication skills are not directly related to the job requirements, and there is no clear indication of incident report writing experience.",
+    "candidate": "Daniel_common"
+  },
+  {
+    "summary": "The candidate's CV does not clearly meet the essential requirement of 3 years' experience in a security role. However, their relevant coursework and certifications show a strong background in software development, which may be a reasonable match for the technical aspects of the role. The candidate's ability to work in teams and improve apps through bug fixes and UX polish demonstrates some transferable skills related to communication and decision-making under pressure. There is no evidence of physical ability to patrol sites or experience with security systems, making these requirements unclear from the CV.",
+    "candidate": "Lauren_common"
+  },
+  {
+    "summary": "The candidate's experience as a Software Engineer and Junior Developer does not clearly meet the minimum 3 years' experience in a security role. However, their education and certifications in IT-related fields provide a reasonable match for the working knowledge of systems and communication skills required. The certifications, particularly the Django course, suggest some understanding of backend systems, which could be transferable. Physical and shift work ability is unclear from the CV. The SIA or regional equivalent licence is not evidenced.",
+    "candidate": "Linus"
+  },
+  {
+    "summary": "The candidate's experience in software engineering and development is relevant but does not meet the specific security role requirements. Their coursework and certifications in mobile application development and Flutter are a reasonable close match for the technical skills required, but they lack the specified experience in security roles and the necessary licensing. The ability to work flexible shifts could be transferable.",
+    "candidate": "Margaret"
+  }
+]

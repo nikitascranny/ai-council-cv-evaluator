@@ -1,0 +1,38 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Demonstrates strong problem-solving and independent working abilities",
+      "Shows commitment to continuous learning and adaptability"
+    ],
+    "weaknesses": [
+      "Lacks formal IT qualifications and experience in web/software engineering",
+      "No direct experience in line-managing engineers or leading technical projects",
+      "No background in the required technical stack (React/TypeScript, Node.js, .NET) or cloud infrastructure",
+      "Limited relevance of field operations experience to web development and engineering management"
+    ],
+    "summary": "The candidate shows potential for learning and adapting but lacks the necessary technical skills and leadership experience required for the Engineering Manager role.",
+    "candidate": "Ralph_Son_of_a_Shepard_IT_Transition_CV",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "reliable operations professional",
+      "excellent in field operations and asset support"
+    ],
+    "weaknesses": [
+      "no formal IT qualifications",
+      "lacks relevant web/software engineering experience",
+      "no experience in team management or technical leadership"
+    ],
+    "summary": "The candidate shows strong operational skills but lacks the necessary IT experience and qualifications for the Engineering Manager role.",
+    "candidate": "Ralph_Son_of_a_Shepard_IT_Transition_CV",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate does not meet the essential requirement of 5+ years of professional web/software engineering experience. However, their experience in managing priorities, coordinating with colleagues, and leading operations through changing conditions could reasonably align with the requirement for leading teams through significant technical change. Their background in field operations and asset support suggests a solid understanding of operational procedures and communication, which may be transferable to the role's need for communication skills. Formal qualifications in IT are lacking.",
+    "candidate": "Ralph_Son_of_a_Shepard_IT_Transition_CV",
+    "type": "essential_requirements"
+  }
+]

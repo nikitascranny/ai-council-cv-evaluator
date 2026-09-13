@@ -1,0 +1,37 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "The candidate has strong analytical skills and experience in leading research projects and facilitating workshops.",
+      "They have a proven track record of improving user experience and product alignment with customer needs."
+    ],
+    "weaknesses": [
+      "Lacks relevant experience in manual work, fishing, or maritime environments.",
+      "No evidence of physical fitness or experience with heavy, repetitive manual tasks.",
+      "No history of working on boats or familiarity with maritime safety procedures.",
+      "Does not meet the essential requirement of having 'sea legs' or previous time on boats."
+    ],
+    "summary": "The candidate excels in research and user experience roles but lacks the necessary physical, maritime, and safety experience required for the deckhand position.",
+    "candidate": "GEOFF NITSCHKE",
+    "model": "phi4"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Experience in qualitative and quantitative research methods",
+      "Strong communication and leadership skills"
+    ],
+    "weaknesses": [
+      "Lack of experience in physical labor and maritime work",
+      "No relevant experience in fishing or boat handling"
+    ],
+    "summary": "The candidate's background in research and leadership is impressive, but the role requires specific maritime and physical labor experience which the candidate lacks.",
+    "candidate": "GEOFF NITSCHKE",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's CV does not clearly demonstrate the required experience with heavy, repetitive manual work or previous time on boats. However, their relevant background in UX research and design shows strong reliability and punctuality, as well as the ability to work with diverse customer segments and conduct usability testing. Their willingness to work early starts and long days when the weather window allows is implied by their hybrid work experience. Basic numeracy is not evidenced, but the candidate's strong research and analytical skills may be transferable. No history of severe seasickness is mentioned, so this requirement is unclear.",
+    "candidate": "GEOFF NITSCHKE",
+    "type": "essential_requirements"
+  }
+]

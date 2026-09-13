@@ -1,0 +1,135 @@
+[
+  {
+    "score": 8,
+    "strengths": [
+      "Proven experience in project management and partnerships",
+      "Diverse skill set including IT project management, agile methodologies, and content creation"
+    ],
+    "weaknesses": [
+      "Limited industry-specific technical skills such as coding and development",
+      "No recent direct experience in the specific job role"
+    ],
+    "summary": "The candidate has a strong background in project management and partnership building, but may need to upskill in technical areas relevant to the job.",
+    "candidate": "LERATO MUNCHE"
+  },
+  {
+    "score": 4,
+    "strengths": [
+      "AWS certifications",
+      "experience with data engineering and preprocessing"
+    ],
+    "weaknesses": [
+      "Lacks full-stack experience with React/TypeScript and Go",
+      "No direct experience with energy sector or distributed systems"
+    ],
+    "summary": "The candidate shows promise in cloud technologies and data engineering but lacks the specific full-stack and energy sector expertise required for the position.",
+    "candidate": "EMILE MOKOENA"
+  },
+  {
+    "score": 4,
+    "strengths": [
+      "Excellent organizational and administrative skills",
+      "Experience in compliance and records management"
+    ],
+    "weaknesses": [
+      "Lack of experience in full-stack engineering or software development",
+      "No experience with technologies mentioned in the job description (React, TypeScript, Go, Kafka, TimescaleDB, Redis)"
+    ],
+    "summary": "The candidate has strong administrative and compliance background but lacks technical skills and experience relevant to the full-stack engineering role.",
+    "candidate": "NDLOVU KARABO REFILWE"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Experience in test automation using Playwright and JEST",
+      "Strong in test plan development and defect management"
+    ],
+    "weaknesses": [
+      "Lacks full-stack development experience",
+      "No experience in TypeScript/React or Go",
+      "No experience in distributed systems or event-driven architectures"
+    ],
+    "summary": "Candidate has strong testing background but lacks the technical skills and experience in full-stack development, TypeScript/React, Go, and distributed systems required for the role.",
+    "candidate": "ALEX PARK"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Strong background in UX research and design",
+      "Experience in qualitative and quantitative research"
+    ],
+    "weaknesses": [
+      "Lacks technical programming skills",
+      "No experience in energy sector or distributed systems"
+    ],
+    "summary": "The candidate has a strong background in UX research but lacks the technical skills and domain knowledge required for the position.",
+    "candidate": "GEOFF NITSCHKE"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Analytical problem-solving skills",
+      "Attention to detail in technical documentation"
+    ],
+    "weaknesses": [
+      "Lack of full-stack development experience",
+      "No experience with key technologies like TypeScript, React, Go, Kafka, TimescaleDB"
+    ],
+    "summary": "Candidate demonstrates strong analytical skills and project management experience but lacks technical skills and experience relevant to the full-stack engineering role.",
+    "candidate": "JORDAN VELDMAN"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "experience in risk management and compliance",
+      "leadership and team management"
+    ],
+    "weaknesses": [
+      "lack of technical programming and software development skills",
+      "no experience in the energy or tech sectors"
+    ],
+    "summary": "The candidate demonstrates strong leadership and risk management skills but lacks the technical background and relevant industry experience required for the position.",
+    "candidate": "PATRICK MARAIS"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "strong in financial analysis and data handling",
+      "excellent in report writing and data visualization"
+    ],
+    "weaknesses": [
+      "lacks experience in full-stack engineering and software development",
+      "no experience with relevant technologies like React/TypeScript, Go, Kafka, TimescaleDB"
+    ],
+    "summary": "Pontus Pontious has a strong background in financial analysis and reporting but lacks the technical skills and experience in full-stack engineering and relevant technologies as required for the position.",
+    "candidate": "PONTUS PONTIOUS"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Experience in digital marketing and product management",
+      "Leadership skills"
+    ],
+    "weaknesses": [
+      "Lack of technical backend/frontend development experience",
+      "No experience in energy sector or distributed systems"
+    ],
+    "summary": "Candidate has strong leadership and digital marketing skills but lacks the technical background required for the full-stack engineering role.",
+    "candidate": "RIAAN GOVEN"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Business Analysis",
+      "Communication & Interpersonal Skills",
+      "Data Analysis"
+    ],
+    "weaknesses": [
+      "Lack of full-stack development experience",
+      "No experience with TypeScript/React or Go",
+      "No experience with event-driven architectures"
+    ],
+    "summary": "The candidate possesses strong business and data analysis skills but lacks the technical background required for the full-stack engineering role.",
+    "candidate": "THE DANIEL"
+  }
+]

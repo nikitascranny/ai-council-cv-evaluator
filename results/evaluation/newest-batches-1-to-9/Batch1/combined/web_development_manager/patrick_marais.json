@@ -1,0 +1,37 @@
+[
+  {
+    "score": 4,
+    "strengths": [
+      "Extensive leadership experience across various roles",
+      "Strong background in risk mitigation, project management, and compliance",
+      "Proven track record in managing teams and delivering projects"
+    ],
+    "weaknesses": [
+      "Lack of direct experience in web/software engineering",
+      "No experience with the specific technologies mentioned (React/TypeScript, Node.js, .NET, AWS)",
+      "No demonstrated experience in agile delivery methodologies relevant to web development"
+    ],
+    "summary": "The candidate has strong leadership and management skills but lacks direct experience and technical expertise in web development and the specific technologies required for the role.",
+    "candidate": "PATRICK MARAIS",
+    "model": "phi4"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Experience in risk management and strategic planning",
+      "Proven track record of leading and managing teams"
+    ],
+    "weaknesses": [
+      "Lacks direct experience in web/software engineering",
+      "No experience leading technical teams through platform modernization"
+    ],
+    "summary": "The candidate has strong leadership and management skills but lacks relevant technical experience for the role of Engineering Manager in web development.",
+    "candidate": "PATRICK MARAIS",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate has a reasonable match for the essential requirements, with 5+ years of professional web/software engineering experience through various roles but lacks direct line management experience. Strong background in security and related fields, with relevant certifications. The CV does not provide clear evidence of leading teams through significant technical change or specific experience in modern web stacks such as React/TypeScript and a backend language.",
+    "candidate": "PATRICK MARAIS",
+    "type": "essential_requirements"
+  }
+]

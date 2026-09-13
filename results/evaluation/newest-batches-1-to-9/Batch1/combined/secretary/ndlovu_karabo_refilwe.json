@@ -1,0 +1,38 @@
+[
+  {
+    "score": 7,
+    "strengths": [
+      "Strong organizational and administrative skills demonstrated through roles in records management and archival processing.",
+      "Excellent communication and interpersonal skills, crucial for client interaction in a secretarial role.",
+      "Proven experience with Microsoft Office suite, including Word and Excel, aligning with job requirements.",
+      "Background in handling confidential information, ensuring discretion in a professional setting."
+    ],
+    "weaknesses": [
+      "Lack of direct experience in a secretarial, receptionist, or office administration role as preferred by the job description.",
+      "No specific experience with practice management software like Iris, CCH, or Xero Practice Manager.",
+      "Absence of direct experience in accountancy, legal, or other professional services office settings."
+    ],
+    "summary": "The candidate possesses strong organizational skills and relevant software knowledge but lacks direct experience in secretarial roles and professional services settings.",
+    "candidate": "NDLOVU KARABO REFILWE",
+    "model": "phi4"
+  },
+  {
+    "score": 6,
+    "strengths": [
+      "Excellent organizational and administrative skills",
+      "Experience with managing records and correspondence"
+    ],
+    "weaknesses": [
+      "Limited direct experience in a chartered accounting environment",
+      "Skills in information science and archives might not be directly transferable"
+    ],
+    "summary": "The candidate has strong administrative skills and relevant experience in record management, but lacks direct experience in the accounting sector.",
+    "candidate": "NDLOVU KARABO REFILWE",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate meets the essential requirements with a strong match. Previous experience as a Records & Information Compliance Officer and an Archival Processing Officer clearly covers the secretarial and administrative experience. The duties in these roles align well with the other requirements, such as handling confidential information, managing records, and excellent organizational skills. The typing speed, word processing, and Excel skills are not explicitly mentioned but are likely due to the nature of the previous work. Discretion is demonstrated through handling confidential records.",
+    "candidate": "NDLOVU KARABO REFILWE",
+    "type": "essential_requirements"
+  }
+]

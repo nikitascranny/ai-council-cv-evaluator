@@ -1,0 +1,37 @@
+[
+  {
+    "score": 2,
+    "strengths": [
+      "Strong analytical and problem-solving skills from software engineering experience",
+      "Technical proficiency with cross-platform app development"
+    ],
+    "weaknesses": [
+      "Lacks relevant groundskeeping or countryside management experience",
+      "No experience with tracking, search & rescue, or similar pursuit-oriented activities",
+      "No physical fitness or outdoor skills relevant to the role",
+      "No demonstrated ability to work discreetly or maintain confidentiality under strict conditions"
+    ],
+    "summary": "Lauren Fischer has strong technical skills but lacks the essential experience and physical capabilities required for the Groundskeeper & 'Hunt' Coordinator position.",
+    "candidate": "Lauren_common",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong background in software engineering",
+      "Experience with mobile app development and improvement"
+    ],
+    "weaknesses": [
+      "No relevant experience in groundskeeping, hunting, or search and rescue",
+      "Inability to address the 'hunting' premise"
+    ],
+    "summary": "The candidate lacks the necessary background and experience in groundskeeping and search and rescue, and their skill set is not aligned with the role's requirements.",
+    "candidate": "Lauren_common",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's experience does not clearly meet the essential requirement of groundskeeping, gamekeeping, or countryside management experience. However, their software development background, particularly in mobile app development, may be a reasonable close match for the 'pursuit oriented' background requirement. The other requirements, such as physical fitness, discretion, and the ability to work alone, are not evidenced in the CV and are unclear from the provided information.",
+    "candidate": "Lauren_common",
+    "type": "essential_requirements"
+  }
+]

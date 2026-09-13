@@ -1,0 +1,37 @@
+[
+  {
+    "score": 7,
+    "strengths": [
+      "Has a strong background in software engineering with experience in web application development using Django, relevant to the coding enrichment aspect of the role.",
+      "Comfortable working across the stack and picking up new frameworks quickly, which is beneficial for IT technician work and adapting to new technologies.",
+      "Certified in Azure Fundamentals, indicating a willingness and ability to gain further qualifications."
+    ],
+    "weaknesses": [
+      "Lacks direct experience in IT support or working in an educational setting, which is essential for the first-line technician responsibilities.",
+      "No specific experience with educational technology or programming languages like Python and Scratch, which are needed for supporting coding activities with students.",
+      "No explicit mention of experience with device management tools like Intune or classroom technology support."
+    ],
+    "summary": "Linus Torvalds has strong software engineering skills and a willingness to learn, but lacks direct experience in IT support and educational technology required for the role.",
+    "candidate": "Linus",
+    "model": "phi4"
+  },
+  {
+    "score": 6,
+    "strengths": [
+      "Strong background in Python and Django",
+      "Experience in web development and API creation"
+    ],
+    "weaknesses": [
+      "Lacks direct IT support experience",
+      "No education-specific experience or certification"
+    ],
+    "summary": "Linus Torvalds has relevant technical skills but lacks direct IT support and educational experience, limiting his fit for the role.",
+    "candidate": "Linus",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate has practical IT support experience from a professional setting, which closely matches the requirement. They have a working knowledge of Windows 11 and Microsoft 365, and their experience with Django and unit testing shows they have basic programming ability. The candidate's enthusiasm for technology is evidenced by their educational background and certifications. However, their experience does not clearly demonstrate a working knowledge of Intune or similar device management. The requirement for working with young people and explaining technology is not directly addressed, and the candidate's willingness to undergo necessary checks is not explicitly stated.",
+    "candidate": "Linus",
+    "type": "essential_requirements"
+  }
+]

@@ -1,0 +1,54 @@
+[
+  {
+    "summary": "The candidate clearly meets the requirement for 5+ years of professional web/software engineering experience and has a reasonable match for a background in modern web stacks, having experience with backend languages and CI/CD. However, the candidate does not have clear evidence of line managing engineers or leading significant technical changes, and the education section does not explicitly state relevant coursework in modern web technologies such as React/TypeScript. The candidate does have relevant certifications for cloud infrastructure and agile delivery.",
+    "candidate": "BrendanPythno"
+  },
+  {
+    "summary": "The candidate's experience is currently limited and does not meet the 5+ years of professional web/software engineering requirement or the line management experience. Their role as an intern at a small local startup only involved minor bug fixing and note-taking, which does not align with leading teams through significant technical change. However, their diploma in information technology shows a relevant educational background.",
+    "candidate": "CaseyWhitmore"
+  },
+  {
+    "summary": "The candidate clearly meets the requirement for 5+ years of professional web/software engineering experience and has a strong background in modern web stacks, including React/TypeScript and a backend language (Node.js). The experience leading teams through significant technical change is a reasonable match, and the candidate’s solid understanding of CI/CD, cloud infrastructure, and agile delivery with distributed teams also closely aligns with the job requirements. However, it is unclear whether the candidate has line management experience or specific experience with AWS.",
+    "candidate": "Chen_Special"
+  },
+  {
+    "summary": "The candidate has a reasonable match for the required 5+ years of professional web/software engineering experience, but it is unclear whether they have managed engineers for at least 2 years. The candidate's experience in modern web stacks and agile delivery is a close match, but specific technologies like React/TypeScript and backend languages are not clearly mentioned. The candidate's experience with CI/CD and cloud infrastructure is unclear, and there is no clear evidence of leading significant technical changes or running distributed teams. Communication skills are implied but not explicitly stated.",
+    "candidate": "HomerSimsSon"
+  },
+  {
+    "summary": "The candidate meets the essential requirement of 5+ years of professional web/software engineering experience with relevant work in CI/CD and automation. They are a reasonable/close match for the experience in modern web stacks and leading technical change, as evidenced by their work on service migrations and automated tests. However, the candidate lacks the specific experience of line managing engineers and leading significant technical changes in a team setting.",
+    "candidate": "JordanMitchell5Star"
+  },
+  {
+    "summary": "The candidate clearly meets the requirement for 5+ years of professional web/software engineering experience with at least 2 years of line management. Their background in modern web stacks (React/TypeScript) and backend languages aligns well with the job description. They also demonstrate a solid understanding of CI/CD, cloud infrastructure, and automated testing. However, the experience leading teams through significant technical change and running agile delivery with distributed or hybrid teams is less clear from the CV.",
+    "candidate": "Li_ExtraSpecial"
+  },
+  {
+    "summary": "The candidate's experience is primarily in data analysis and does not clearly meet the essential requirement of 5+ years of professional web/software engineering experience with at least 2 years line managing engineers. However, the candidate's strong background in modern web stacks and cloud infrastructure, particularly through their data analysis projects, is a reasonable/close match. Excellent communication skills are evidenced through their presentation activities, and experience with agile delivery is implied through their work on data pipelines and dashboards.",
+    "candidate": "MathNaledi"
+  },
+  {
+    "summary": "The candidate meets the requirement for 5+ years of professional web/software engineering experience and has a solid background in backend services. There is a reasonable match for experience in modern web stacks and agile delivery practices, but the exact languages or tools (like React/TypeScript) are not specified. Running teams through significant technical change is unclear, and line management experience is not evidenced. Strong communication skills are evident, and there is relevant experience with cloud infrastructure and automated testing.",
+    "candidate": "MegaMarcus"
+  },
+  {
+    "summary": "The candidate has 4.5 years of relevant experience, which is close to the 5+ years required. They possess a strong background in web development, including experience with React/TypeScript and modern web stacks, as well as an AWS certification, which indicates a solid understanding of cloud infrastructure. However, there is no clear indication of line management experience or leading significant technical changes, making these areas unclear from the provided CV.",
+    "candidate": "PriyaPicture"
+  },
+  {
+    "summary": "The candidate clearly meets the requirement for 5+ years of professional web/software engineering experience and has a reasonable/close match for line managing engineers for at least 2 years. Their experience with modern web stacks such as React and a backend language (Node.js) also closely aligns with the job requirements. However, it is unclear whether they have led teams through significant technical change, and the specific experience with CI/CD, cloud infrastructure, and agile delivery, while likely applicable, is not explicitly stated.",
+    "candidate": "SamanthaOne"
+  },
+  {
+    "summary": "The candidate clearly meets the requirement of 5+ years of professional web/software engineering experience, and has a reasonable/close match for leading teams through significant technical change. The candidate's experience is not specifically in React/TypeScript and a backend language, but may be a reasonable/close match given the broad nature of the experience listed. The candidate's experience running agile delivery with distributed or hybrid teams is clearly met. The communication skills are clearly met, but the specific tools (CI/CD, cloud infrastructure) are not explicitly stated, making them a reasonable/close match. The requirement for at least 2 years line managing engineers is not clearly met based on the provided information.",
+    "candidate": "SystemShock"
+  },
+  {
+    "summary": "The candidate clearly meets the requirement of 5+ years of professional web/software engineering experience and the ability to line manage engineers. Their experience leading a team through significant technical change and their certifications in cloud infrastructure also closely match the requirements. However, the exact experience with React/TypeScript is unclear from the CV, and while they have experience in CI/CD, it is not specified as using Jenkins and Docker.",
+    "candidate": "TaylorGraphics"
+  },
+  {
+    "summary": "The candidate clearly meets the requirement for 5+ years of professional web/software engineering experience, with at least 2 years line managing engineers. They also have a strong background in modern web stacks, have led teams through significant technical changes, and have solid understanding of CI/CD, cloud infrastructure, and automated testing. Their communication skills are implied by their ability to effectively manage and mentor team members, and their experience running agile delivery with distributed teams is evident. However, their experience with specific backend languages like Node.js, C#/.NET or similar is unclear from the CV.",
+    "candidate": "VictoriaSterlingSilver"
+  }
+]

@@ -1,0 +1,36 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Demonstrates strong technical skills and leadership experience.",
+      "Possesses certifications in relevant technologies that indicate a strong foundation in technical problem-solving."
+    ],
+    "weaknesses": [
+      "Lacks direct experience in secretarial or administrative roles.",
+      "No evidence of proficiency in Microsoft Office applications or experience with practice management software.",
+      "No demonstrated experience in managing client relationships or handling confidential financial information."
+    ],
+    "summary": "While Taylor Okafor has extensive technical and leadership experience, their background does not align with the administrative and client-facing requirements of the Secretary/Administrative Assistant role.",
+    "candidate": "TaylorGraphics",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Experienced in system design and leadership",
+      "Strong technical background in backend systems"
+    ],
+    "weaknesses": [
+      "Lacks relevant administrative or secretarial experience",
+      "No familiarity with practice management software or accounting"
+    ],
+    "summary": "The candidate's technical skills and leadership experience are impressive but do not align with the administrative and secretarial requirements of the position.",
+    "candidate": "TaylorGraphics",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's experience primarily focuses on software engineering and architecture, which does not clearly meet the secretarial, receptionist, or office administration experience requirement. However, the candidate’s organizational skills, multitasking abilities, and attention to detail are evident from their various roles. Their technical skills, particularly in Microsoft Office, are strong but do not exactly match the job requirements. The 'discretion' requirement is not directly addressed, but the candidate's handling of sensitive information in their previous roles suggests they have relevant experience.",
+    "candidate": "TaylorGraphics",
+    "type": "essential_requirements"
+  }
+]

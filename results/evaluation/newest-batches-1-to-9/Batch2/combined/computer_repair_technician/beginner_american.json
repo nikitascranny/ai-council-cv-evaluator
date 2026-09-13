@@ -1,0 +1,36 @@
+[
+  {
+    "score": 4,
+    "strengths": [
+      "Candidate has a solid technical background in software engineering and programming.",
+      "Experience with web development and API management, indicating strong problem-solving skills."
+    ],
+    "weaknesses": [
+      "Lack of practical, hands-on computer repair experience.",
+      "No demonstrated experience in hardware repairs or customer service in a retail setting.",
+      "Absence of relevant skills in basic PC repair, such as RAM reseating or diagnostics of hardware issues."
+    ],
+    "summary": "Jordan Lee has strong technical skills in software engineering but lacks the hands-on computer repair experience and customer service skills required for the position.",
+    "candidate": "beginner_american",
+    "model": "phi4"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "programming skills",
+      "software development experience"
+    ],
+    "weaknesses": [
+      "lack of practical PC repair skills",
+      "no experience in customer service or retail"
+    ],
+    "summary": "The candidate's technical background is strong but lacks the practical repair skills and customer service experience required for the role.",
+    "candidate": "beginner_american",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's software engineering and teaching assistant experiences closely match the requirement for practical technical skills and clear communication. However, the CV does not provide evidence of PC/laptop repair skills, and the candidate's availability for Saturdays is unclear. The certifications and activities suggest reliability and a commitment to the field, which could be viewed favorably.",
+    "candidate": "beginner_american",
+    "type": "essential_requirements"
+  }
+]

@@ -1,0 +1,37 @@
+[
+  {
+    "score": 6,
+    "strengths": [
+      "Extensive experience in digital marketing and strategy, with a strong understanding of digital channel management and campaign activities.",
+      "Demonstrated leadership in managing teams and developing customer-centric strategies, which aligns with the leadership aspect of the role.",
+      "Skills in project management, strategy, and data analysis, which are valuable for driving technical roadmaps and team coordination."
+    ],
+    "weaknesses": [
+      "Limited direct experience in web/software engineering and managing engineering teams, with most experience in digital marketing roles.",
+      "No specific experience with the technical stack required (React/TypeScript, Node.js, .NET) or in significant technical changes like replatforming.",
+      "Lack of proven experience in managing technical roadmaps, architecture reviews, and incident response for customer-facing services."
+    ],
+    "summary": "The candidate has strong leadership and digital marketing skills but lacks direct experience in web development engineering and managing technical teams, which are critical for this role.",
+    "candidate": "RIAAN GOVEN",
+    "model": "phi4"
+  },
+  {
+    "score": 5,
+    "strengths": [
+      "Experience in digital product management",
+      "Leadership and strategic direction"
+    ],
+    "weaknesses": [
+      "Lacks direct web development experience",
+      "Limited hands-on coding skills"
+    ],
+    "summary": "Candidate demonstrates strong leadership and strategic skills but lacks the direct web development and hands-on coding experience required for the role.",
+    "candidate": "RIAAN GOVEN",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate clearly meets the requirement for professional web/software engineering experience, although the exact number of years is not specified. Their experience in leading teams and running agile delivery is a reasonable match, as is their understanding of CI/CD and cloud infrastructure. However, there is no clear evidence of line management experience, and their background is more focused on digital marketing and communications rather than software engineering.",
+    "candidate": "RIAAN GOVEN",
+    "type": "essential_requirements"
+  }
+]

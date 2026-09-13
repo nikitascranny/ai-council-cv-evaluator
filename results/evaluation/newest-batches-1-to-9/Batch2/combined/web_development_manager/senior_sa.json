@@ -1,0 +1,39 @@
+[
+  {
+    "score": 8,
+    "strengths": [
+      "Extensive leadership experience with a proven track record in managing teams through significant technical changes, including monolith decomposition and incremental service-oriented architecture shifts.",
+      "Strong technical background in modern web stacks and cloud infrastructure, with experience in technologies such as React/TypeScript and AWS, which aligns well with the job requirements.",
+      "Demonstrated ability in driving operational improvements, engineering governance, and mentoring senior engineers, relevant to the leadership role.",
+      "Experience with CI/CD, service observability, and automated testing, which are essential for the role.",
+      "Solid communication and strategic planning skills, evidenced by the successful implementation of architecture and operational improvements."
+    ],
+    "weaknesses": [
+      "Lacks specific experience in accessibility standards and inclusive design practices, which is desirable for the role.",
+      "No direct experience mentioned with .NET to Node.js migrations or using strangler-fig patterns.",
+      "Limited exposure to the travel, transport, or high-volume transactional booking systems sector, which would be advantageous."
+    ],
+    "summary": "The candidate is well-suited for the Engineering Manager role due to their extensive leadership and technical experience, particularly in modernizing platforms and driving technical change, though they could benefit from gaining specific experience in accessibility and the transport sector.",
+    "candidate": "senior_sa",
+    "model": "phi4"
+  },
+  {
+    "score": 8,
+    "strengths": [
+      "Proven experience in leading technical teams through significant change",
+      "Strong background in modern web stacks and cloud infrastructure"
+    ],
+    "weaknesses": [
+      "Limited experience in the travel or transport sector",
+      "Less emphasis on hands-on coding in recent roles"
+    ],
+    "summary": "Zanele Madondo is a strong candidate with extensive leadership and technical expertise, but may need to demonstrate specific experience relevant to the travel/transport sector and hands-on coding.",
+    "candidate": "senior_sa",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate has a strong educational background in software engineering and computer science, which aligns well with the job requirements. However, the years of professional experience in web/software engineering and line management, as well as specific technical skills in modern web stacks and cloud infrastructure, are not clearly evidenced. The candidate's ability to translate between technical and non-technical teams is implied through the Engineering Excellence Award and speaking experience.",
+    "candidate": "senior_sa",
+    "type": "essential_requirements"
+  }
+]

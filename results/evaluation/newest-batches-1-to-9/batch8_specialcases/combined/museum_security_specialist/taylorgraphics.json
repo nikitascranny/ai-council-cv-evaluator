@@ -1,0 +1,39 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Strong leadership and team management experience.",
+      "Proven track record in designing and scaling complex systems.",
+      "Excellent problem-solving skills and technical proficiency."
+    ],
+    "weaknesses": [
+      "No experience in security roles or environments like museums.",
+      "Lack of familiarity with CCTV, intruder alarm, and access-control systems.",
+      "No evidence of physical security patrol experience or ability to work flexible shifts.",
+      "No specific skills related to security operations or emergency response."
+    ],
+    "summary": "The candidate has strong technical and leadership skills but lacks relevant experience and skills in museum security and physical operations.",
+    "candidate": "TaylorGraphics",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Technical expertise in software engineering",
+      "Proven track record in system architecture and team leadership"
+    ],
+    "weaknesses": [
+      "Lack of relevant security experience",
+      "No direct experience in museum or cultural institution settings",
+      "Insufficient evidence of experience with security systems and emergency response"
+    ],
+    "summary": "While the candidate demonstrates strong technical and leadership skills in software engineering, they lack the specific experience and qualifications required for a Museum Security Specialist role.",
+    "candidate": "TaylorGraphics",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's experience does not clearly meet the essential requirement of at least 3 years in a security role. However, their experience in managing a team and making technical decisions could be considered a close match for strong decision-making skills. The candidate’s physical fitness and flexibility are not evidenced, nor are their skills in writing incident reports or working knowledge of security systems.",
+    "candidate": "TaylorGraphics",
+    "type": "essential_requirements"
+  }
+]

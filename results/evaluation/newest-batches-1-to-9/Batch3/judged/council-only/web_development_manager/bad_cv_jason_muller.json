@@ -1,0 +1,8 @@
+{
+  "candidate": "bad_cv_jason_muller",
+  "final_score": 2,
+  "score_rationale": "The candidate's lack of professional engineering experience, technical skills, and leadership evidence significantly outweighs any minor strengths.",
+  "key_strengths": "Fast learner when motivated, minimalistic work ethic",
+  "key_weaknesses": "Inadequate professional web/software engineering experience (less than 5 years), no evidence of line-managing engineers, insufficient technical skills in modern web stacks (React/TypeScript, Node.js, .NET), no proven experience leading teams through significant technical change",
+  "final_evaluation": "The candidate does not meet the essential requirements for the Engineering Manager role, particularly the need for proven experience in modern web technologies, team leadership, and guiding technical transformations."
+}

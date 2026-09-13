@@ -1,0 +1,38 @@
+[
+  {
+    "score": 4,
+    "strengths": [
+      "Demonstrates leadership experience through founding and leading a consultancy.",
+      "Experienced in team coordination and operational management.",
+      "Has a background in customer engagement and brand development."
+    ],
+    "weaknesses": [
+      "Lacks direct experience in web/software engineering and technical leadership.",
+      "No evidence of experience with modern web stacks like React/TypeScript or Node.js.",
+      "Limited exposure to technical change management such as replatforming or architecture modernization.",
+      "No demonstrated experience in agile delivery or technical team management."
+    ],
+    "summary": "Sarah Lynne has leadership and operational management experience but lacks the technical and engineering background essential for the Engineering Manager role.",
+    "candidate": "professional_cv_sarah_lynne_van_der_merwe",
+    "model": "phi4"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Business development and brand positioning",
+      "Retail operations and team leadership"
+    ],
+    "weaknesses": [
+      "Lack of technical and engineering background",
+      "No experience in software development or agile methodologies"
+    ],
+    "summary": "Candidate lacks the necessary technical skills and experience in software engineering and agile methodologies required for the Engineering Manager position.",
+    "candidate": "professional_cv_sarah_lynne_van_der_merwe",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate does not meet the essential requirement of 5+ years of professional web/software engineering experience. However, their role as a Senior Retail Team Leader demonstrates leadership and team management skills, which are closely related to the job requirement. Their experience in business administration and leadership development provides a reasonable match for the communication and team management aspects of the job description.",
+    "candidate": "professional_cv_sarah_lynne_van_der_merwe",
+    "type": "essential_requirements"
+  }
+]

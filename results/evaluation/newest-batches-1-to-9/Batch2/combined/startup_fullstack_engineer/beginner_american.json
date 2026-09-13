@@ -1,0 +1,39 @@
+[
+  {
+    "score": 6,
+    "strengths": [
+      "Familiarity with relevant technologies such as React and TypeScript which are directly applicable to the role.",
+      "Experience with developing full-stack applications using a tech stack (React, Flask, PostgreSQL) that demonstrates capability in both frontend and backend development.",
+      "Active engagement in agile environments, demonstrated by participation in sprint planning, code reviews, and demos.",
+      "Strong problem-solving and collaboration skills as evidenced by project work and teaching responsibilities."
+    ],
+    "weaknesses": [
+      "Lacks direct experience with Go, Kafka, and TimescaleDB, which are essential for this role.",
+      "Limited exposure to operating services in production environments and handling high-velocity decision-making.",
+      "Missing experience with real-world distributed systems challenges like metrics, tracing, and incident response.",
+      "Insufficient experience with the energy sector or real-time data systems."
+    ],
+    "summary": "Jordan Lee has a solid foundation in relevant technologies and agile methodologies but needs more experience in Go, Kafka, TimescaleDB, and real-world system operations to fully meet the job requirements.",
+    "candidate": "beginner_american",
+    "model": "phi4"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Basic understanding of web development technologies",
+      "Experience in building simple web applications"
+    ],
+    "weaknesses": [
+      "Lacks required experience (4+ years of production software)",
+      "No experience with Go, Kafka, TimescaleDB, or Redis"
+    ],
+    "summary": "The candidate has foundational skills but lacks the depth and specific experience required for the role.",
+    "candidate": "beginner_american",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate has reasonable experience in React and backend development, which aligns with the job requirements. However, there is no direct evidence of shipping production software or working with Go. The candidate shows excellent communication skills and a solid grasp of fundamental distributed systems concepts. While there is no clear indication of production service operation experience, the intern role provides relevant experience in code reviews and sprint planning. The candidate lacks the required 4+ years of production shipping experience and the preferred Go language expertise.",
+    "candidate": "beginner_american",
+    "type": "essential_requirements"
+  }
+]

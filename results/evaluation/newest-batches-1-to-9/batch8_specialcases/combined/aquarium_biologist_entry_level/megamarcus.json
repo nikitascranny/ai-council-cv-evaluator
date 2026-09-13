@@ -1,0 +1,38 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Physically fit from a demanding job and likely accustomed to working on a schedule that includes weekends and holidays",
+      "High level of technical literacy and problem-solving skills from a software engineering background"
+    ],
+    "weaknesses": [
+      "Lack of relevant education in marine biology, zoology, or a related life science",
+      "No practical experience in aquatic animal husbandry or life support systems",
+      "No familiarity with water chemistry or the nitrogen cycle",
+      "No evidence of willingness or experience in physically demanding and repetitive tasks"
+    ],
+    "summary": "While Marcus Vandenberg has strong technical and problem-solving skills, his background in software engineering and lack of relevant education or experience in aquatic biology make him a poor fit for the role.",
+    "candidate": "MegaMarcus",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong technical background in software engineering",
+      "Experience with backend systems and reliability"
+    ],
+    "weaknesses": [
+      "No relevant experience in marine biology or aquatic animal husbandry",
+      "Lacks essential skills and knowledge in water chemistry and filtration systems",
+      "No evidence of hands-on experience with physical maintenance tasks"
+    ],
+    "summary": "Marcus Vandenberg has strong technical skills but lacks the necessary background in marine biology and practical experience with aquatic systems required for the position.",
+    "candidate": "MegaMarcus",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's background in software engineering and relevant coursework in Computer Science, along with certifications in AWS and Docker, do not directly meet the essential requirement for a degree in Marine Biology, Zoology, Aquatic Biology, or a related life science. However, their strong technical skills and attention to detail could be transferable to the role. The physical fitness requirements are unclear as the candidate's experience does not demonstrate this. The candidate's ability to work on a rota basis is clearly met. There is no evidence of relevant experience in water chemistry or the nitrogen cycle.",
+    "candidate": "MegaMarcus",
+    "type": "essential_requirements"
+  }
+]

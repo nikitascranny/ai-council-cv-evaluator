@@ -1,0 +1,34 @@
+[
+  {
+    "score": 7,
+    "strengths": [
+      "The candidate has extensive experience in methodical troubleshooting, which aligns well with diagnosing and fixing everyday computer problems.",
+      "The candidate has demonstrated the ability to work independently and manage priorities, crucial for a role requiring self-direction and problem-solving.",
+      "Their experience with asset upkeep and minor repairs is relevant to performing RAM and SSD upgrades, screen replacements, and other maintenance tasks.",
+      "The candidate has a strong focus on accurate record keeping, which is important for maintaining a notebook for job tracking."
+    ],
+    "weaknesses": [
+      "Lack of formal IT qualifications or experience specifically in PC/laptop repair, though practical skills are demonstrated.",
+      "No direct experience with customer service or explaining technical issues to non-technical customers, which is essential for the role.",
+      "No specific experience with common issues such as Windows updates, virus clean-ups, or data recovery, although there is potential for learning.",
+      "No experience with local knowledge of Tillingford, though this could be mitigated with reliable transport."
+    ],
+    "summary": "The candidate's experience in troubleshooting and independent work aligns well with the role's requirements, though additional customer service and specific IT repair experience would enhance their fit.",
+    "candidate": "Ralph_Son_of_a_Shepard_IT_Transition_CV"
+  },
+  {
+    "score": 5,
+    "strengths": [
+      "Demonstrates strong record-keeping skills, which is essential for managing the notebook and customer payments.",
+      "Experience in maintaining and repairing farm equipment and vehicles indicates practical problem-solving abilities and familiarity with technical tasks.",
+      "Independent work experience aligns with the job's requirement for a reliable and self-motivated employee."
+    ],
+    "weaknesses": [
+      "Lacks direct experience in PC/laptop repair, a key requirement for the role.",
+      "No demonstrated experience in customer service or technical support, particularly with non-technical customers.",
+      "Limited evidence of working with technology beyond basic maintenance of farm machinery."
+    ],
+    "summary": "Ralph has strong organizational and practical skills, but lacks direct experience in computer repair and customer service, which are crucial for this role.",
+    "candidate": "Ralph_Son_of_a_Shepard_Farm_CV"
+  }
+]

@@ -1,0 +1,37 @@
+[
+  {
+    "score": 4,
+    "strengths": [
+      "Strong leadership experience in guiding cross-functional teams.",
+      "Effective in conducting user research and facilitating workshops."
+    ],
+    "weaknesses": [
+      "Lacks direct experience in web/software engineering and technical leadership.",
+      "No experience in managing engineering teams or technical roadmap planning.",
+      "Absence of hands-on coding experience, especially in required technologies (React, TypeScript, Node.js, .NET).",
+      "No proven experience leading technical changes such as platform modernization."
+    ],
+    "summary": "The candidate has strong leadership and research skills but lacks the necessary technical background and experience in web development engineering management.",
+    "candidate": "GEOFF NITSCHKE",
+    "model": "phi4"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Strong background in UX research and customer insights",
+      "Experience in leading cross-functional teams"
+    ],
+    "weaknesses": [
+      "Lack of technical engineering experience",
+      "No history of leading significant technical change"
+    ],
+    "summary": "The candidate excels in user research and team leadership but lacks the technical and engineering management experience required for the role.",
+    "candidate": "GEOFF NITSCHKE",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's experience in UX research and design closely aligns with some of the job requirements, such as excellent communication skills and understanding of customer needs. However, there is no evidence of professional web/software engineering experience, line management, or specific backend or frontend development skills. The candidate's background in research and design could be a reasonable match for the role, but additional technical experience is lacking.",
+    "candidate": "GEOFF NITSCHKE",
+    "type": "essential_requirements"
+  }
+]

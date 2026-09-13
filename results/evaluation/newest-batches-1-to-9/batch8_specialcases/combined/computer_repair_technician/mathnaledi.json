@@ -1,0 +1,36 @@
+[
+  {
+    "score": 4,
+    "strengths": [
+      "Strong analytical and technical skills in data analysis and statistics",
+      "Experience with software tools like Python, R, SQL, Tableau, and Excel"
+    ],
+    "weaknesses": [
+      "Lack of practical PC/laptop repair experience",
+      "No direct experience with customer service or hands-on technical support",
+      "No demonstrated experience in a retail or customer-facing environment"
+    ],
+    "summary": "While Naledi has strong analytical skills and relevant technical expertise, they lack the practical repair and customer service experience necessary for this role.",
+    "candidate": "MathNaledi",
+    "model": "phi4"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Strong analytical and problem-solving skills",
+      "Attention to detail and accuracy"
+    ],
+    "weaknesses": [
+      "Lack of practical computer repair experience",
+      "No direct experience with customer service"
+    ],
+    "summary": "Naledi Mokoena's strong analytical background does not align with the practical, customer-facing requirements of the computer repair position.",
+    "candidate": "MathNaledi",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's skills in statistical analysis and data modeling are not directly relevant to the job requirements, which focus on PC/laptop repair. However, their experience in explaining complex concepts to stakeholders could be seen as a reasonable match for the need to explain things without jargon to older customers. The requirement for basic PC/laptop repair skills is not met, and the candidate's ability to work on Saturdays is unclear. They do meet the requirement of being reliable and honest, as well as being local or able to get to Tillingford reliably.",
+    "candidate": "MathNaledi",
+    "type": "essential_requirements"
+  }
+]

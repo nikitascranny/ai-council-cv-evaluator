@@ -1,0 +1,33 @@
+[
+  {
+    "score": 6,
+    "strengths": [
+      "The candidate has strong problem-solving skills and a history of independent, methodical troubleshooting, which are valuable for IT support roles.",
+      "Experience in asset upkeep and maintenance is relevant to managing and deploying IT devices.",
+      "Demonstrated ability to prioritize under pressure and communicate effectively with stakeholders.",
+      "A practical mindset and adaptability suggest potential for learning and transitioning into IT roles."
+    ],
+    "weaknesses": [
+      "Lack of formal IT qualifications and specific experience in educational IT environments.",
+      "No prior experience with educational software or programming, which is desirable for the role.",
+      "Limited exposure to Windows 11, Microsoft 365, or device management systems like Intune.",
+      "Absence of experience in working directly with young people or in teaching/supporting coding activities."
+    ],
+    "summary": "The candidate possesses relevant skills in problem-solving and asset management, but lacks specific IT qualifications and experience in educational settings, which are important for this role.",
+    "candidate": "Ralph_Son_of_a_Shepard_IT_Transition_CV"
+  },
+  {
+    "score": 4,
+    "strengths": [
+      "The candidate has demonstrated strong independent working skills and disciplined record-keeping.",
+      "They possess skills in managing and maintaining equipment and vehicles, which could translate to IT device maintenance."
+    ],
+    "weaknesses": [
+      "Lacks experience in IT support or any technical field.",
+      "No background in education, programming, or working with young people.",
+      "No evidence of knowledge in Windows 11, Microsoft 365, or programming languages like Python or Scratch."
+    ],
+    "summary": "While the candidate shows strong independent work and equipment management skills, they lack the necessary IT, educational, and programming experience required for the role.",
+    "candidate": "Ralph_Son_of_a_Shepard_Farm_CV"
+  }
+]

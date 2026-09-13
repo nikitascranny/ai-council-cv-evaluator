@@ -1,0 +1,35 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "The candidate has a high level of technical proficiency and problem-solving skills, demonstrated by leading the architecture of large-scale distributed systems.",
+      "The candidate's leadership and recognition in technology companies highlight their ability to manage and excel in complex environments."
+    ],
+    "weaknesses": [
+      "The candidate lacks direct experience in manual, physical, and maritime tasks required for the boat hand role.",
+      "The candidate's background is heavily focused on software engineering, which does not align with the physical and operational demands of fishing vessel work.",
+      "No evidence of familiarity with maritime environments, safety procedures, or fishing techniques."
+    ],
+    "summary": "Despite exceptional technical skills and leadership experience, the candidate lacks relevant experience and physical qualifications for the physically demanding and maritime-specific role of a boat hand.",
+    "candidate": "CaseyWhitmore",
+    "model": "phi4"
+  },
+  {
+    "score": 1,
+    "strengths": [
+      "None directly relevant to the job"
+    ],
+    "weaknesses": [
+      "Lack of any experience or skills relevant to fishing or maritime work",
+      "Severe mismatch between candidate's background and job requirements"
+    ],
+    "summary": "The candidate's extensive software engineering background does not align with the physical and maritime skills required for the boat hand position.",
+    "candidate": "CaseyWhitmore",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's CV does not clearly demonstrate the required physical fitness for heavy, repetitive manual work in all weathers or the ability to work on boats. However, their willingness to work early starts and long days is evident. The diploma in Information Technology may be a reasonable match for the basic numeracy requirement, but there is no evidence of sea experience or reliability and punctuality.",
+    "candidate": "CaseyWhitmore",
+    "type": "essential_requirements"
+  }
+]

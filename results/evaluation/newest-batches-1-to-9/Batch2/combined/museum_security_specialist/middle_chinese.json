@@ -1,0 +1,36 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Strong technical skills in backend development and familiarity with security-focused tools like Kafka and Redis",
+      "Experience with monitoring and improving system performance, relevant to CCTV and alarm systems"
+    ],
+    "weaknesses": [
+      "Lacks direct experience in security roles or working in museums",
+      "No evidence of experience with SIA Door Supervisor or Security Guarding licence",
+      "No experience with physical security tasks like patrolling or handling security equipment"
+    ],
+    "summary": "While the candidate has strong technical and backend development skills, they lack the specific experience and qualifications required for a Museum Security Specialist role.",
+    "candidate": "middle_chinese",
+    "model": "phi4"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Strong technical background in backend and frontend development",
+      "Experience in API design and delivery"
+    ],
+    "weaknesses": [
+      "Lacks experience in security roles or museum/gallery environments",
+      "No experience with CCTV, alarm systems, or access-control platforms"
+    ],
+    "summary": "Candidate has a strong technical background but lacks the specific experience and skills required for a museum security role.",
+    "candidate": "middle_chinese",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate meets the essential requirement of having 3 years of experience in a security role. The SIA Door Supervisor or Security Guarding licence is unclear as it is not explicitly stated. The candidate's knowledge of CCTV, intruder alarm, and access control systems is a reasonable match. The candidate's communication skills and the ability to work flexible shifts are clearly met. Physical fitness for patrolling large multi-floor sites is not evidenced.",
+    "candidate": "middle_chinese",
+    "type": "essential_requirements"
+  }
+]

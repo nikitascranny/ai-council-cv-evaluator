@@ -1,0 +1,38 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Willingness to work and accept necessary training",
+      "General problem-solving skills"
+    ],
+    "weaknesses": [
+      "Lack of relevant IT support experience",
+      "Inadequate programming knowledge",
+      "Limited experience working with young people",
+      "No evidence of understanding safeguarding policies",
+      "No demonstrated experience with required technology"
+    ],
+    "summary": "Kevin Jones lacks the specific IT skills, relevant work experience, and familiarity with educational environments necessary for the IT Technician & Coding Enrichment Lead role.",
+    "candidate": "bad_cv_kevin_jones",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "willingness to work",
+      "ability to work independently"
+    ],
+    "weaknesses": [
+      "lack of relevant IT or education experience",
+      "history of leaving roles involuntarily"
+    ],
+    "summary": "Kevin Jones lacks the essential IT and educational experience required for the IT Technician and Coding Enrichment Lead role, with a history of unstable employment and no clear alignment with the job's demands.",
+    "candidate": "bad_cv_kevin_jones",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's practical IT support experience is unclear and not well-documented, making it hard to assess. Their call centre experience shows communication skills but does not directly align with IT support. The candidate has a high school diploma, which is a reasonable match for some requirements. Their enthusiasm and willingness to undergo checks are positive, but their gaps in employment and inconsistent work history raise concerns about reliability.",
+    "candidate": "bad_cv_kevin_jones",
+    "type": "essential_requirements"
+  }
+]

@@ -1,0 +1,8 @@
+{
+  "candidate": "bad_cv_jason_muller",
+  "final_score": 2,
+  "score_rationale": "The candidate's lack of experience with TypeScript/React, Go backend, and event-driven architectures fundamentally disqualifies them despite some positive learning attributes.",
+  "key_strengths": "Fast learner when motivated; shows some communication adaptability.",
+  "key_weaknesses": "No experience with TypeScript/React, Go, Kafka, or production systems; complete lack of startup/engineering background.",
+  "final_evaluation": "The candidate is fundamentally mismatched for this role due to the complete absence of required technical skills and experience in the relevant domains, despite some positive learning attributes."
+}

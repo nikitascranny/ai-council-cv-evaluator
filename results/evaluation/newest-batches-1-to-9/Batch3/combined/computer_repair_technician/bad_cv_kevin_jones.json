@@ -1,0 +1,38 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Possesses basic customer service skills, including apologizing to customers.",
+      "Has experience in various roles suggesting adaptability."
+    ],
+    "weaknesses": [
+      "Lacks technical skills required for PC/laptop repair.",
+      "Unwilling to work on weekends, conflicting with the job's busiest days.",
+      "History of leaving roles, indicating potential reliability issues.",
+      "Lack of patience with repetitive tasks, which could be problematic for the role."
+    ],
+    "summary": "Kevin lacks the essential technical skills and work schedule flexibility needed for the computer repair role, despite having basic customer service experience.",
+    "candidate": "bad_cv_kevin_jones",
+    "model": "phi4"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "willing to work",
+      "can provide explanations for employment gaps"
+    ],
+    "weaknesses": [
+      "lack of relevant technical skills",
+      "inconsistent employment history",
+      "no demonstrated up-skilling potential"
+    ],
+    "summary": "Kevin Jones lacks the required technical skills and consistent work history, making him a weak fit for the position.",
+    "candidate": "bad_cv_kevin_jones",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's experience in various roles, including hospitality and retail, suggests they can interact with a diverse range of people and have some basic communication skills, which could be relevant to explaining things to older customers. However, the lack of specific experience in technical or repair fields makes it unclear if they meet the basic PC/laptop repair skills requirement. The candidate demonstrates punctuality issues, which could be a concern for the requirement to work Saturdays. They also do not provide any evidence of local residency or reliable transportation to Tillingford.",
+    "candidate": "bad_cv_kevin_jones",
+    "type": "essential_requirements"
+  }
+]

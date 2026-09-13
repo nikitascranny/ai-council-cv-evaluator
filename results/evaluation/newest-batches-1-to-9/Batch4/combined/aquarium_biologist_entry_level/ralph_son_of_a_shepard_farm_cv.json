@@ -1,0 +1,37 @@
+[
+  {
+    "score": 6,
+    "strengths": [
+      "Demonstrates strong practical experience in livestock care and management, which could translate to animal husbandry skills.",
+      "Exhibits strong observational skills and disciplined record-keeping habits, aligning with the job requirements.",
+      "Physically fit and experienced in working independently in demanding rural conditions, which matches the job's physical demands."
+    ],
+    "weaknesses": [
+      "Lacks formal education or degree in Marine Biology, Zoology, Aquatic Biology, or a related life science.",
+      "No direct experience with aquatic systems, life support systems, or water chemistry.",
+      "No familiarity with aquarium-specific tasks such as filter cleaning, water quality testing, or exhibit maintenance."
+    ],
+    "summary": "While the candidate has relevant skills in animal care and management, they lack specific experience and education in aquatic biology and life support systems required for the Aquarium Biologist role.",
+    "candidate": "Ralph_Son_of_a_Shepard_Farm_CV",
+    "model": "phi4"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Strong livestock welfare and handling skills",
+      "Experienced in record keeping and health observation"
+    ],
+    "weaknesses": [
+      "No experience in aquatic animal husbandry",
+      "Lacks educational background in marine biology or related fields"
+    ],
+    "summary": "Ralph has strong animal care and observational skills but lacks the specific experience and education required for aquatic animal husbandry.",
+    "candidate": "Ralph_Son_of_a_Shepard_Farm_CV",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate clearly meets the requirement for a related life science degree through practical farm education and on-the-job training. The physical and observational skills, as well as record-keeping habits, are strongly demonstrated through the sheep herder and farm operations assistant role. However, the ability to carry out physical, dirty, and repetitive tasks like filter cleaning and LSS maintenance is a reasonable match based on the physical demands of farming, though specific experience with these tasks is not evidenced. Basic understanding of water chemistry and the nitrogen cycle in closed aquatic systems is unclear from the CV. The candidate is physically fit and able to work flexible hours, which closely aligns with the job requirements.",
+    "candidate": "Ralph_Son_of_a_Shepard_Farm_CV",
+    "type": "essential_requirements"
+  }
+]

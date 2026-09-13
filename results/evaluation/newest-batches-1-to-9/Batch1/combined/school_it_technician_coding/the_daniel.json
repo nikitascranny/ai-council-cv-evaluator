@@ -1,0 +1,40 @@
+[
+  {
+    "score": 6,
+    "strengths": [
+      "Candidate has strong programming skills, including Python, which is essential for supporting coding activities.",
+      "The candidate has demonstrated ability to work with technology and systems, which is relevant for IT technician responsibilities.",
+      "Experience in business analysis and process improvement could be beneficial in managing IT processes and troubleshooting.",
+      "The candidate has experience with SQL and Microsoft Power Apps, indicating a familiarity with technology that could be applicable to IT services management."
+    ],
+    "weaknesses": [
+      "Lack of direct experience in IT support, especially in educational settings, which is crucial for the role.",
+      "No specific experience with Windows 11, Microsoft 365, or Intune device management as required for the role.",
+      "Absence of experience with classroom technology setup and live support in front of students.",
+      "No demonstrated experience with Google Workspace / Google Classroom administration or school IT risk management.",
+      "Limited experience with hands-on technology like Raspberry Pi, Micro:bit, or LEGO robotics, which could enhance the role in coding enrichment activities."
+    ],
+    "summary": "The candidate has relevant technical skills and programming knowledge, but lacks specific IT support experience and familiarity with educational technology required for the role.",
+    "candidate": "THE DANIEL",
+    "model": "phi4"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Python proficiency",
+      "Problem-solving skills"
+    ],
+    "weaknesses": [
+      "Lack of IT support experience",
+      "No experience in an educational setting"
+    ],
+    "summary": "The candidate lacks direct IT support and educational experience but shows potential in programming and problem-solving skills.",
+    "candidate": "THE DANIEL",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate meets the requirement for practical IT support experience through their background in business information systems and systems analysis. Their work experience in business analysis provides a reasonable match for the programming and IT support skills, though specific programming experience in Python or Scratch is not evidenced. The candidate’s enthusiasm for technology is implied from their degree and certificates, and they meet the requirement for a willingness to undergo a DBS check and barred list check. The requirement for safeguarding knowledge is not clearly met, and there is no evidence of working with young people or explaining technology clearly.",
+    "candidate": "THE DANIEL",
+    "type": "essential_requirements"
+  }
+]

@@ -1,0 +1,37 @@
+[
+  {
+    "score": 4,
+    "strengths": [
+      "Strong organizational and multitasking abilities inferred from complex project management roles",
+      "Excellent problem-solving skills demonstrated through technical leadership and system architecture"
+    ],
+    "weaknesses": [
+      "Lack of direct secretarial, administrative, or customer-facing experience",
+      "No demonstrated proficiency with Microsoft Office suite or practice management software",
+      "No experience in accountancy, legal, or professional services offices"
+    ],
+    "summary": "While Marcus Okafor exhibits strong organizational and technical skills, his background in software engineering lacks the direct secretarial and administrative experience needed for the Secretary/Administrative Assistant role at Ashcombe & Vale.",
+    "candidate": "senior_american",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "accurate typing with strong spelling and grammar",
+      "excellent organization and multitasking ability"
+    ],
+    "weaknesses": [
+      "lacks relevant work experience in secretarial, receptionist or office administration",
+      "no familiarity with practice management software",
+      "no experience in accountancy, legal or professional services office"
+    ],
+    "summary": "Marcus Okafor's technical background and skills do not align with the administrative and clerical requirements of the Secretary / Administrative Assistant position at Ashcombe & Vale.",
+    "candidate": "senior_american",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's experience does not clearly meet the essential requirements of the role. The technical and leadership experience in software engineering, while impressive, do not align with the secretarial or administrative role described. However, the candidate's strong organizational and multitasking skills, as evidenced by their work in a fast-paced, rapidly growing cloud services organization, are a reasonable match. The technical skills listed, particularly in Microsoft Office, are clear mismatches, as is the lack of specific administrative experience.",
+    "candidate": "senior_american",
+    "type": "essential_requirements"
+  }
+]

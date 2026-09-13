@@ -1,0 +1,37 @@
+[
+  {
+    "score": 2,
+    "strengths": [
+      "Demonstrates ability to learn and adapt to new technologies and tools, which is crucial for on-the-job training.",
+      "Possesses a work ethic and punctuality, inferred from previous employment history."
+    ],
+    "weaknesses": [
+      "Lacks any relevant work experience in fishing or maritime activities, which is essential for the role.",
+      "Does not meet the essential requirement of having 'sea legs' or experience working on boats.",
+      "No evidence of physical fitness or experience with manual, physical labor in challenging environments.",
+      "Lacks basic numeracy skills demonstrated in a maritime context, such as catch tallies and grading."
+    ],
+    "summary": "The candidate lacks relevant experience, physical fitness, and maritime skills necessary for the boat hand role.",
+    "candidate": "Margaret",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "reliable punctuality in previous roles",
+      "general problem-solving skills"
+    ],
+    "weaknesses": [
+      "lack of physical fitness and manual labor experience",
+      "no background in maritime or fishing"
+    ],
+    "summary": "Margaret Hamilton lacks the physical and maritime experience necessary for the position, but her reliability and technical problem-solving skills are commendable.",
+    "candidate": "Margaret",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's CV does not clearly demonstrate physical fitness or comfort with heavy, repetitive manual work, nor does it mention any experience with boats, which are essential requirements. The candidate's experience in software development, including cross-platform app development and bug fixing, is a reasonable match for the basic numeracy and reliability requirements. The education and certifications suggest a strong background in software engineering, but they do not provide evidence for the specific physical and maritime requirements of the job.",
+    "candidate": "Margaret",
+    "type": "essential_requirements"
+  }
+]

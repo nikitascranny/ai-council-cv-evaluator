@@ -1,0 +1,35 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Demonstrates ability to work under pressure and solve problems with a background in software engineering.",
+      "Has relevant experience in a technical environment, which may translate into an ability to understand and manage security systems."
+    ],
+    "weaknesses": [
+      "Lacks direct experience in security roles or museum environments.",
+      "Does not possess a security-related certification or license as required.",
+      "No experience with CCTV, intruder alarm, or access-control systems.",
+      "No demonstrated experience in physical security tasks or in roles requiring physical presence."
+    ],
+    "summary": "The candidate has a strong technical background but lacks direct experience and required certifications for a Museum Security Specialist role.",
+    "candidate": "JordanMitchell5Star",
+    "model": "phi4"
+  },
+  {
+    "score": 1,
+    "strengths": [],
+    "weaknesses": [
+      "Lack of relevant security experience",
+      "No SIA licence or similar",
+      "No experience with CCTV, intruder alarm, or access-control systems"
+    ],
+    "summary": "The candidate lacks any experience in security roles or relevant technology systems and has no qualifications that would suggest up-skilling potential for the specific job requirements.",
+    "candidate": "JordanMitchell5Star",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate does not clearly meet the minimum 3 years' experience in a security role. However, the experience in maintaining and building APIs and ETL scripts shows strong technical skills that could be transferable to a security role. The candidate has not provided evidence of holding an SIA Door Supervisor or Security Guarding licence. Knowledge of systems such as Kubernetes and AWS might be relevant to some aspects of the role but do not directly meet the requirement for working with CCTV, intruder alarm, and access control systems. The candidate demonstrates strong communication skills and the ability to work flexible hours, which are reasonable matches.",
+    "candidate": "JordanMitchell5Star",
+    "type": "essential_requirements"
+  }
+]

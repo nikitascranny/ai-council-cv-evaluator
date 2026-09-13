@@ -1,0 +1,38 @@
+[
+  {
+    "score": 4,
+    "strengths": [
+      "Demonstrates adaptability in fast-paced environments which may aid in managing dynamic situations during the 'Hunt'.",
+      "Has experience in team coordination, potentially useful for leading tracking teams."
+    ],
+    "weaknesses": [
+      "Lacks direct experience in groundskeeping, countryside management, or similar fields.",
+      "No proven experience in roles involving physical fitness requirements such as tracking or managing rough terrain.",
+      "Absence of a background in tracking, search & rescue, or pursuit-oriented activities.",
+      "Lacks experience with working with animals, specifically dogs, which is desirable for coordinating bloodhounds.",
+      "Does not have any credentials or experience in outdoor leadership or first aid, which are desirable."
+    ],
+    "summary": "While adaptable and experienced in team coordination, the candidate lacks the specific skills, experience, and qualifications necessary for the estate groundskeeper and 'Hunt' coordinator role.",
+    "candidate": "professional_cv_jason_muller",
+    "model": "phi4"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Adaptability in fast moving environments",
+      "Customer service and complaint resolution"
+    ],
+    "weaknesses": [
+      "No relevant work experience in groundskeeping, hunting, or tracking",
+      "Lack of physical fitness or outdoor experience mentioned"
+    ],
+    "summary": "The candidate lacks direct experience in the required skills and work experience for the position, but demonstrates some adaptability and customer service skills.",
+    "candidate": "professional_cv_jason_muller",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate does not have groundskeeping, gamekeeping, or countryside management experience, which is a clear requirement. Their self-directed learning in customer service and operations is a reasonable match for the ability to work alone and handle unusual requests. However, there is no evidence of physical fitness, tracking, search & rescue, military, or other pursuit-oriented background. The candidate also does not demonstrate a full clean driving license or a willingness to live on-site. The candidate's experience in independent digital asset research might be relevant for discretion, but this is not explicitly stated in the job description.",
+    "candidate": "professional_cv_jason_muller",
+    "type": "essential_requirements"
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "score": 4,
+    "strengths": [
+      "Demonstrates strong project management and strategic planning skills",
+      "Has extensive experience in digital marketing and campaign management",
+      "Possesses a good understanding of data analysis and consumer insights"
+    ],
+    "weaknesses": [
+      "Lacks specific qualifications in marine biology or related life sciences",
+      "No experience in aquatic animal husbandry or water quality testing",
+      "Does not meet the physical requirements of the job (e.g., lifting up to 25 kg, working in warm, humid environments)",
+      "Lacks hands-on experience with life support systems and aquarium maintenance"
+    ],
+    "summary": "The candidate has strong strategic and digital marketing skills but lacks the necessary qualifications and experience in aquatic biology and aquarium maintenance required for the role.",
+    "candidate": "RIAAN GOVEN",
+    "model": "phi4"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Strong background in digital marketing and product management",
+      "Experience in user experience and digital strategy"
+    ],
+    "weaknesses": [
+      "Lack of relevant educational background in marine biology or aquatic animal husbandry",
+      "No practical experience with aquatic life support systems or animal husbandry"
+    ],
+    "summary": "Candidate lacks the necessary scientific education and practical experience required for the aquarium biologist role, but has strong digital and leadership skills.",
+    "candidate": "RIAAN GOVEN",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's work experience in digital marketing and strategy development, while not directly related to marine biology or aquatic systems, shows strong observational and analytical skills, which could be transferable. However, the CV does not evidence a degree in marine biology, zoology, or a related field, nor does it show any relevant experience in filter cleaning, LSS maintenance, or water chemistry. The candidate is physically fit and able to work flexible hours, as evidenced by their past roles.",
+    "candidate": "RIAAN GOVEN",
+    "type": "essential_requirements"
+  }
+]

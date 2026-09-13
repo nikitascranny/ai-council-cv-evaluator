@@ -1,0 +1,36 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Extensive experience in security, investigations, and project management.",
+      "Strong leadership and management skills demonstrated across multiple roles."
+    ],
+    "weaknesses": [
+      "Lack of direct experience in fishing, boat handling, or marine activities.",
+      "No relevant physical fitness or experience with manual labor in marine environments.",
+      "Limited evidence of familiarity with sea conditions or fishing operations."
+    ],
+    "summary": "While Patrick Marais has extensive management and security experience, he lacks direct experience and skills relevant to the physical and operational demands of a boat hand position on a fishing vessel.",
+    "candidate": "PATRICK MARAIS",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Risk mitigation",
+      "Project management"
+    ],
+    "weaknesses": [
+      "Lack of maritime experience",
+      "Inexperience with fishing vessel operations"
+    ],
+    "summary": "The candidate's background in risk management and project management are strengths, but the lack of maritime and fishing vessel experience is a significant weakness, making them a poor fit for the position.",
+    "candidate": "PATRICK MARAIS",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's CV does not clearly demonstrate the requirement for physical fitness or previous experience on boats. However, they have a background in security and investigative work, which could reasonably relate to the need for reliability and punctuality, as well as the ability to work in challenging conditions. The candidate's IT certifications and courses suggest strong numeracy and technical skills, which may be relevant for basic catch tallies and grading. Early starts and long days can be inferred from their varied roles that involved on-site management and oversight.",
+    "candidate": "PATRICK MARAIS",
+    "type": "essential_requirements"
+  }
+]

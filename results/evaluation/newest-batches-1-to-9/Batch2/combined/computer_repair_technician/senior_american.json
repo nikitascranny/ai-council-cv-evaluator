@@ -1,0 +1,36 @@
+[
+  {
+    "score": 4,
+    "strengths": [
+      "Technical proficiency and problem-solving skills",
+      "Strong mentorship experience"
+    ],
+    "weaknesses": [
+      "Lack of practical PC/laptop repair experience",
+      "Not accustomed to customer service in a retail setting",
+      "No demonstrated experience with hardware components like RAM or SSDs"
+    ],
+    "summary": "Marcus Okafor has a strong technical background but lacks direct experience in practical PC repair and customer service required for this role.",
+    "candidate": "senior_american",
+    "model": "phi4"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Extensive technical skills in software engineering and systems design",
+      "Proven leadership and mentoring experience"
+    ],
+    "weaknesses": [
+      "Lacks practical PC/laptop repair skills",
+      "No direct experience in customer service or retail"
+    ],
+    "summary": "Marcus Okafor's technical background and leadership skills are impressive but do not align with the practical, hands-on requirements of the computer repair position at Brenda & Mick's.",
+    "candidate": "senior_american",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's experience in software engineering and technology leadership clearly meets the requirement for basic PC/laptop repair skills through reasonable leeway. The candidate’s experience with mentoring, technical leadership, and incident management closely aligns with the need for being friendly, patient, and honest. However, there is no evidence in the CV that the candidate has hands-on experience with PC/laptop repair, and their location is unclear.",
+    "candidate": "senior_american",
+    "type": "essential_requirements"
+  }
+]

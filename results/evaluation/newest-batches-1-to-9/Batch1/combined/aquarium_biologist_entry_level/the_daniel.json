@@ -1,0 +1,38 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Candidate has strong analytical and critical thinking skills, demonstrated by work in business analysis and systems design.",
+      "Proficient in SQL, which could be relevant for data logging and record-keeping aspects of the role."
+    ],
+    "weaknesses": [
+      "Lack of relevant education or experience in marine biology, aquatics, or related life sciences.",
+      "No hands-on experience with aquarium maintenance or life support systems.",
+      "No demonstrated experience with water quality testing or aquatic animal husbandry.",
+      "Skills primarily in business systems and financial management, not applicable to aquarium biology tasks."
+    ],
+    "summary": "The candidate lacks essential educational background and direct experience in marine biology and aquarium maintenance, which are critical for the role.",
+    "candidate": "THE DANIEL",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong analytical skills",
+      "Experience in business analysis"
+    ],
+    "weaknesses": [
+      "Lack of relevant education in marine biology or zoology",
+      "No experience in aquatic animal husbandry or related field",
+      "No practical experience in life support systems"
+    ],
+    "summary": "The candidate lacks the essential academic and practical background in marine biology and aquatics, making them a poor fit for the entry-level Aquarium Biologist position despite having strong analytical skills in unrelated fields.",
+    "candidate": "THE DANIEL",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate does not meet the essential requirement of a degree in Marine Biology, Zoology, Aquatic Biology or a related life science. Their work experience in business analysis and systems management is a reasonable match for the observational skills and attention to detail required, as well as the need for record keeping. However, there is no evidence of practical experience in physical tasks like filter cleaning or a basic understanding of water chemistry.",
+    "candidate": "THE DANIEL",
+    "type": "essential_requirements"
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "score": 2,
+    "strengths": [
+      "Strong technical problem-solving skills and experience in high-stakes environments",
+      "Excellent leadership and team management experience",
+      "Ability to perform under pressure and deliver results"
+    ],
+    "weaknesses": [
+      "Lack of relevant groundskeeping or countryside management experience",
+      "Poor interpersonal skills and inability to work well with others",
+      "No background in immersive experiences, tracking, or physical fitness requirements",
+      "Incompatibility with the cultural and teamwork expectations of the role"
+    ],
+    "summary": "While the candidate possesses strong technical and leadership abilities, their lack of relevant experience and poor interpersonal skills make them unsuitable for the Groundskeeper & 'Hunt' Coordinator role.",
+    "candidate": "VictoriaSterlingSilver",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong technical background",
+      "Experience in system design and leadership"
+    ],
+    "weaknesses": [
+      "Incompatible work style with team dynamics",
+      "Relevant experience not aligned with job requirements"
+    ],
+    "summary": "Victoria Sterling's technical skills and leadership experience do not outweigh her disruptive and uncollaborative behavior, making her unsuitable for the role.",
+    "candidate": "VictoriaSterlingSilver",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's CV does not clearly meet the essential requirements for groundskeeping, gamekeeping, or countryside management experience. However, the candidate's extensive experience in software engineering and leadership roles, along with technical expertise, suggests strong problem-solving and strategic thinking skills that could be transferable. The candidate's excellent communication and technical review skills, as well as their ability to work independently, may reasonably align with some of the job's requirements, but there is no direct evidence of experience with tracking, search & rescue, or working in rural, remote settings.",
+    "candidate": "VictoriaSterlingSilver",
+    "type": "essential_requirements"
+  }
+]

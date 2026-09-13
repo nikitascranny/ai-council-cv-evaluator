@@ -1,0 +1,26 @@
+[
+  {
+    "summary": "The candidate's experience as Assistant Manager and Crypto Entrepreneur do not clearly meet the essential requirement of groundskeeping, gamekeeping, or countryside management experience. However, the Crypto Entrepreneur role could be seen as having a pursuit-oriented background. The candidate's physical fitness and ability to work alone in remote areas are unclear from the CV, though they show some flexibility and resilience. The role's NDA requirement and ability to work in remote locations are also unclear.",
+    "candidate": "bad_cv_jason_muller"
+  },
+  {
+    "summary": "The candidate's employment history is diverse but does not clearly demonstrate groundskeeping, gamekeeping, or countryside management experience. However, the 'pursuit oriented' background from call center work might be a reasonable match. The candidate's physical fitness is not explicitly stated, and the ability to work in remote areas with no phone signal is uncertain. There is no indication of a driving license or willingness to live on-site. The candidate's adherence to confidentiality is not evidenced, and the hunting premise may be uncomfortable.",
+    "candidate": "bad_cv_kevin_jones"
+  },
+  {
+    "summary": "The candidate's experience in leadership and consultancy does not clearly meet the groundskeeping, gamekeeping, or countryside management requirement. However, their tracking and optimization experience might reasonably align with the role's need for pursuit-oriented skills. The candidate's physical fitness and willingness to live on-site are unclear from the CV. The NDA and working alone at odd hours are not evidenced, but the role's nature might be a reasonable match for their adaptability. Their retail experience shows strong organizational and customer-facing skills, which could be transferable but do not directly meet the groundskeeping requirement.",
+    "candidate": "bad_cv_sarah_lynne_van_der_merwe"
+  },
+  {
+    "summary": "The candidate does not have groundskeeping, gamekeeping, or countryside management experience, which is a clear requirement. Their self-directed learning in customer service and operations is a reasonable match for the ability to work alone and handle unusual requests. However, there is no evidence of physical fitness, tracking, search & rescue, military, or other pursuit-oriented background. The candidate also does not demonstrate a full clean driving license or a willingness to live on-site. The candidate's experience in independent digital asset research might be relevant for discretion, but this is not explicitly stated in the job description.",
+    "candidate": "professional_cv_jason_muller"
+  },
+  {
+    "summary": "The candidate does not clearly meet the essential requirement of groundskeeping, gamekeeping, or countryside management experience. However, their adaptability in various roles and practical judgment could reasonably match the requirement for a solution-focused approach. The candidate's driving licence is clearly met, but their comfort in working alone in remote areas is unclear from the CV. Their excellent physical fitness and ability to handle unusual requests are not evidenced, but they show strong communication and customer service skills that might relate to the tracking and search & rescue background preferred.",
+    "candidate": "professional_cv_kevin_jones"
+  },
+  {
+    "summary": "The candidate's experience as a Senior Retail Team Leader closely matches the requirement for excellent physical fitness and the ability to work alone in remote locations. The professional experience section does not clearly demonstrate groundskeeping, gamekeeping, or countryside management experience, though it shows leadership and operational management skills. The candidate's educational background in business administration and leadership development is relevant but does not directly address the specific job requirements.",
+    "candidate": "professional_cv_sarah_lynne_van_der_merwe"
+  }
+]

@@ -1,0 +1,39 @@
+[
+  {
+    "score": 6,
+    "strengths": [
+      "Has solid backend engineering experience with relevant skills in Python and Go.",
+      "Demonstrates understanding of service reliability and collaboration in a team setting.",
+      "Possesses AWS certification, indicating familiarity with cloud infrastructure."
+    ],
+    "weaknesses": [
+      "Lacks direct experience with React/TypeScript and Node.js or .NET, which are essential for the role.",
+      "Only 4 years of professional experience, with less than 2 years of line management.",
+      "No proven experience leading teams through significant technical changes."
+    ],
+    "summary": "Marcus has relevant technical skills and experience in backend systems, but lacks the specific experience with the required tech stack and leadership in technical change required for the Engineering Manager position.",
+    "candidate": "MegaMarcus",
+    "model": "phi4"
+  },
+  {
+    "score": 5,
+    "strengths": [
+      "Experience in backend systems",
+      "AWS certification",
+      "Technical skills in Python and Go"
+    ],
+    "weaknesses": [
+      "Lack of front-end experience",
+      "Less than 5 years of professional experience",
+      "No experience in leading teams through significant technical change"
+    ],
+    "summary": "Marcus Vandenberg has relevant technical skills but lacks the required experience and leadership track record to fit the Engineering Manager role.",
+    "candidate": "MegaMarcus",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate meets the requirement for 5+ years of professional web/software engineering experience and has a solid background in backend services. There is a reasonable match for experience in modern web stacks and agile delivery practices, but the exact languages or tools (like React/TypeScript) are not specified. Running teams through significant technical change is unclear, and line management experience is not evidenced. Strong communication skills are evident, and there is relevant experience with cloud infrastructure and automated testing.",
+    "candidate": "MegaMarcus",
+    "type": "essential_requirements"
+  }
+]

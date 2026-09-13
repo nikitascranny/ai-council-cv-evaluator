@@ -1,0 +1,39 @@
+[
+  {
+    "score": 6,
+    "strengths": [
+      "Has strong organizational and administrative skills, demonstrated through extensive experience in records management and compliance.",
+      "Possesses excellent communication and interpersonal skills, crucial for working with young people and colleagues.",
+      "Experience with IT systems and database management, which is relevant to IT support tasks.",
+      "Demonstrates the ability to work under pressure and independently, valuable for handling live classroom technology support."
+    ],
+    "weaknesses": [
+      "Lacks specific IT technician experience, particularly in device imaging, network troubleshooting, and managing user accounts.",
+      "Does not have documented experience in educational settings or direct experience with young people in a teaching or mentoring role.",
+      "No demonstrated programming skills in Python or Scratch, which are required for supporting coding activities.",
+      "Limited experience with modern educational technology platforms like Google Classroom or Microsoft 365."
+    ],
+    "summary": "While the candidate has strong organizational skills and experience in records management, they lack specific IT and educational experience, as well as programming skills necessary for the role.",
+    "candidate": "NDLOVU KARABO REFILWE",
+    "model": "phi4"
+  },
+  {
+    "score": 5,
+    "strengths": [
+      "Excellent communication and interpersonal skills",
+      "Strong administrative and organizational skills"
+    ],
+    "weaknesses": [
+      "Lack of direct IT support experience",
+      "Limited programming experience"
+    ],
+    "summary": "Karabo Refilwe Ndlovu demonstrates strong administrative and communication skills but lacks direct IT support and programming experience relevant to the role.",
+    "candidate": "NDLOVU KARABO REFILWE",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's experience in records management, archiving, and information technology closely aligns with the job's requirements. Their practical IT support experience, particularly in Windows and Microsoft 365, is not explicitly mentioned but can be inferred from their educational and work experience. The candidate's enthusiasm for technology and working with young people is not evidenced in the CV, but their detailed work history suggests a strong interest in information and records management, which could translate to this role. The safeguarding and DBS check requirements are not addressed in the CV.",
+    "candidate": "NDLOVU KARABO REFILWE",
+    "type": "essential_requirements"
+  }
+]

@@ -1,0 +1,37 @@
+[
+  {
+    "score": 7,
+    "strengths": [
+      "Strong technical skills relevant to IT support and device management, including experience with Python and JavaScript.",
+      "Experience as a Teaching Assistant, which aligns with the role's requirement for working with young people and delivering programming activities.",
+      "Background in agile team collaboration and learning new tools quickly, which is beneficial for adapting to the school's IT environment."
+    ],
+    "weaknesses": [
+      "Lacks direct experience in school IT support or working within an educational setting.",
+      "No specific experience with device imaging, deployment, or managing user accounts in Active Directory/Entra ID.",
+      "Limited experience with network basics and school-specific platforms like Google Classroom."
+    ],
+    "summary": "Jordan Lee has strong technical skills and experience in teaching programming, but lacks direct experience in school IT environments and specific technical tasks required for the role.",
+    "candidate": "beginner_american",
+    "model": "phi4"
+  },
+  {
+    "score": 5,
+    "strengths": [
+      "Strong technical skills in Python and JavaScript",
+      "Experience with web development and REST APIs"
+    ],
+    "weaknesses": [
+      "Lacks direct experience in an educational setting",
+      "No specific experience with school IT support or classroom technology"
+    ],
+    "summary": "Jordan demonstrates strong technical abilities but lacks direct experience in educational IT support, which is crucial for this role.",
+    "candidate": "beginner_american",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate clearly meets the requirement for practical IT support experience through their role as a Computer Science Teaching Assistant, where they guided students through programming fundamentals. They also have a reasonable/close match for basic programming ability, as evidenced by their experience with Python and object-oriented programming. The requirement for working knowledge of Windows 11, Microsoft 365, and device management is unclear from their CV. The candidate does not meet the requirement for an understanding of safeguarding or willingness to undergo a DBS check, as these are not mentioned in their CV.",
+    "candidate": "beginner_american",
+    "type": "essential_requirements"
+  }
+]

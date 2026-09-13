@@ -1,0 +1,39 @@
+[
+  {
+    "score": 7,
+    "strengths": [
+      "Has over 4 years of experience in shipping production software, fulfilling the essential requirement.",
+      "Experienced with full-stack development, including React for frontend and Django for backend, aligning with the role's technical needs.",
+      "Has experience in participating in sprint planning and code reviews, indicating familiarity with agile methodologies and team collaboration.",
+      "Comfortable working across the stack, demonstrating adaptability to the role's demands of working with both frontend and backend technologies."
+    ],
+    "weaknesses": [
+      "Lacks direct experience with TypeScript, Go, Kafka, and TimescaleDB, which are essential for the role.",
+      "No demonstrated experience with operating services in production, such as metrics, tracing, and incident response.",
+      "Lacks experience in event-driven architectures and distributed systems fundamentals, which are desirable for the role.",
+      "No evidence of experience in the energy sector or with real-world problems similar to those Pulsegrid focuses on."
+    ],
+    "summary": "Linus Torvalds has strong foundational experience in full-stack web development and team collaboration, but lacks specific skills and experience in the technologies and domain critical to the Pulsegrid role.",
+    "candidate": "Linus",
+    "model": "phi4"
+  },
+  {
+    "score": 5,
+    "strengths": [
+      "4+ years of software engineering experience",
+      "Comfortable working across the stack"
+    ],
+    "weaknesses": [
+      "Limited experience with TypeScript/React and Go",
+      "No experience with event-driven architectures or time-series data"
+    ],
+    "summary": "Linus Torvalds has relevant software engineering experience but lacks the specific technical skills and domain knowledge required for the full-stack engineer role at Pulsegrid.",
+    "candidate": "Linus",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate meets the requirement of shipping production software with 4+ years of experience. They have relevant experience with TypeScript/React and Django, which aligns with the backend requirement. The candidate's experience with sprint planning and code reviews suggests they can operate in a fast-paced environment. Their solid grasp of distributed systems fundamentals is unclear, and their communication skills are not evidenced. The candidate clearly lacks experience with Go or the other preferred backend languages, and the education section does not demonstrate clear expertise in energy, climate, or hard real-world problems.",
+    "candidate": "Linus",
+    "type": "essential_requirements"
+  }
+]

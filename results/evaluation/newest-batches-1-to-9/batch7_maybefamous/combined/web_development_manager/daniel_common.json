@@ -1,0 +1,40 @@
+[
+  {
+    "score": 6,
+    "strengths": [
+      "Has experience with React, aligning with the React/TypeScript requirement.",
+      "Participated in sprint planning and code reviews, relevant to team delivery responsibilities.",
+      "Comfortable working across the stack, indicating adaptability to new technologies."
+    ],
+    "weaknesses": [
+      "Lacks direct experience in line-managing engineers.",
+      "Insufficient years of professional experience (4 years total, with only 4 as a software engineer).",
+      "No direct experience with .NET or Node.js, which are critical for the backend requirements.",
+      "Lacks proven experience leading significant technical changes such as replatforming or monolith decomposition.",
+      "Limited exposure to AWS, CI/CD, and cloud infrastructure which are essential for the role."
+    ],
+    "summary": "Daniel Rossouw demonstrates some foundational skills and experience relevant to the role but lacks direct experience in leadership, backend technologies, and significant technical transformations, impacting his suitability.",
+    "candidate": "Daniel_common",
+    "model": "phi4"
+  },
+  {
+    "score": 4,
+    "strengths": [
+      "Experience in web development using Django and React",
+      "Participation in code reviews and bug fixing"
+    ],
+    "weaknesses": [
+      "Less than the minimum 5 years of professional experience",
+      "No line-management experience",
+      "No experience with Node.js or .NET"
+    ],
+    "summary": "Daniel Rossouw shows promise in web development but lacks the necessary experience and technical qualifications for the Engineering Manager role.",
+    "candidate": "Daniel_common",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate meets the 5+ years of web/software engineering experience and has relevant coursework in web systems. The React experience is a reasonable match for the modern web stack requirement, but the backend language experience is unclear. Experience leading teams is not directly evidenced, though working in a team environment is shown. CI/CD, cloud infrastructure, and agile delivery experience are not clearly demonstrated, but the candidate has relevant coursework and certifications. Communication skills are not explicitly mentioned, but the team collaboration experience suggests potential.",
+    "candidate": "Daniel_common",
+    "type": "essential_requirements"
+  }
+]

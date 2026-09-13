@@ -1,0 +1,38 @@
+[
+  {
+    "score": 4,
+    "strengths": [
+      "Strong analytical and problem-solving skills demonstrated in Business Analyst roles",
+      "Experience with technology and systems, particularly relevant to security system management"
+    ],
+    "weaknesses": [
+      "Lack of direct experience in security roles or handling security systems",
+      "No evidence of qualifications or licenses required for the position, such as an SIA Door Supervisor license",
+      "Absence of physical fitness or ability to patrol large sites, as required for the role",
+      "No experience with security-related incident response or working in high-pressure environments"
+    ],
+    "summary": "The candidate has strong analytical and technological skills but lacks direct experience and qualifications in museum security roles.",
+    "candidate": "THE DANIEL",
+    "model": "phi4"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Excellent communication and interpersonal skills",
+      "Strong background in business analysis and system requirements"
+    ],
+    "weaknesses": [
+      "Lacks relevant security experience",
+      "No evidence of SIA Door Supervisor or Security Guarding licence",
+      "No experience with CCTV, intruder alarm and access-control systems"
+    ],
+    "summary": "The candidate possesses strong business and technical skills but lacks the specific security background and certifications required for the role.",
+    "candidate": "THE DANIEL",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate does not meet the minimum 3 years' experience requirement in a security role. However, their work experience in business analysis is a reasonable/close match as it involves working with systems and processes. The candidate's advanced certificate and business acumen could also be seen as relevant to the role. There is no evidence of a valid SIA Door Supervisor or Security Guarding licence or working knowledge of specific security systems.",
+    "candidate": "THE DANIEL",
+    "type": "essential_requirements"
+  }
+]

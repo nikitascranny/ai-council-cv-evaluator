@@ -1,0 +1,26 @@
+[
+  {
+    "summary": "The candidate does not clearly meet the minimum 3 years' experience in a security role. However, their role as Assistant Manager at Uncle Dave’s Car Wash shows experience in managing staff and dealing with difficult customers, which could be considered transferable skills. The candidate's work history does not indicate relevant security or technical system knowledge. Their ability to remain calm and make decisions under pressure could be inferred, but it is not explicitly stated. Physical ability and willingness to work shifts are not evidenced in the CV.",
+    "candidate": "bad_cv_jason_muller"
+  },
+  {
+    "summary": "The candidate's employment history shows a mix of roles, but there is no clear indication of 3 years' experience in a security role, nor of a relevant license. The candidate has a high school diploma, which is a basic requirement, but specific technical knowledge of CCTV, alarms, and access control systems is unclear. Strong communication skills are evident, but there is no specific mention of writing incident reports. The physical and flexibility requirements are not directly addressed.",
+    "candidate": "bad_cv_kevin_jones"
+  },
+  {
+    "summary": "The candidate has no clear experience in a security role, making the minimum 3 years' requirement clearly not met. The experience in retail and business consultancy are reasonable/close matches for some aspects of the role, such as leadership and customer service, but do not directly align with the security-specific requirements. The candidate's achievements do not indicate the necessary skills and certifications.",
+    "candidate": "bad_cv_sarah_lynne_van_der_merwe"
+  },
+  {
+    "summary": "The candidate's experience as an Acting Assistant Manager demonstrates strong written and verbal communication skills and some leadership qualities, which are a reasonable match for the job requirements. The candidate's self-directed learning in customer service aligns with the need for effective communication. However, the candidate's experience does not clearly demonstrate the necessary security experience, relevant licenses, or physical capabilities. The role of Independent Digital Asset Researcher does not appear to provide relevant experience for the position.",
+    "candidate": "professional_cv_jason_muller"
+  },
+  {
+    "summary": "The candidate's relevant experience in customer service and adaptability to different industries provides a reasonable match for the security role, but does not clearly demonstrate the required experience in a security role. The candidate's strong communication skills, especially in handling customer interactions, are a close match for the verbal and written communication skills needed. The physical ability to work extended shifts is unclear, and the candidate does not provide evidence of a security-related license or knowledge of security systems.",
+    "candidate": "professional_cv_kevin_jones"
+  },
+  {
+    "summary": "The candidate has no direct experience in a security role, which is a clear requirement. However, the experience in managing and leading a team, as well as in retail operations, could reasonably transfer to the role. The candidate's coursework in business operations and leadership development may also be relevant. There is no evidence of the SIA Door Supervisor or Security Guarding licence, or specific knowledge of security systems, which are essential requirements.",
+    "candidate": "professional_cv_sarah_lynne_van_der_merwe"
+  }
+]

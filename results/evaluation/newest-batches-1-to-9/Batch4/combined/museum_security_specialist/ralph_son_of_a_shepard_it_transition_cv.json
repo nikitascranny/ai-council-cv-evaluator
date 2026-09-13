@@ -1,0 +1,36 @@
+[
+  {
+    "score": 5,
+    "strengths": [
+      "Demonstrates strong problem-solving skills and ability to perform routine maintenance and checks.",
+      "Has a record of independent working and effective communication with stakeholders, similar to liaising with police and insurers."
+    ],
+    "weaknesses": [
+      "Lacks direct experience in security roles or working in a museum environment.",
+      "No experience with CCTV, intruder alarm, and access-control systems, or with security-specific software like the Gallagher platform.",
+      "Does not have a valid SIA Door Supervisor or Security Guarding license."
+    ],
+    "summary": "While the candidate shows strong general problem-solving and communication skills, they lack direct experience and necessary qualifications for a museum security specialist role.",
+    "candidate": "Ralph_Son_of_a_Shepard_IT_Transition_CV",
+    "model": "phi4"
+  },
+  {
+    "score": 4,
+    "strengths": [
+      "Strong in identifying and escalating incidents",
+      "Experience in asset maintenance and upkeep"
+    ],
+    "weaknesses": [
+      "Lack of experience in security roles",
+      "No formal IT qualifications or direct experience in IT support"
+    ],
+    "summary": "Candidate demonstrates strong operational and asset management skills but lacks direct experience in security or IT, making them a less ideal fit for the specific role.",
+    "candidate": "Ralph_Son_of_a_Shepard_IT_Transition_CV",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate has relevant experience in operational checks and incident management, which aligns with the security role requirements. Their ability to manage priorities and respond to incidents calmly is a reasonable match for the requirement to make sound decisions under pressure. However, the candidate lacks specific experience in a security role within a museum, gallery, heritage site, or other public venue, and does not possess a valid SIA Door Supervisor or Security Guarding licence.",
+    "candidate": "Ralph_Son_of_a_Shepard_IT_Transition_CV",
+    "type": "essential_requirements"
+  }
+]

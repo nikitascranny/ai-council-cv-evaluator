@@ -1,0 +1,37 @@
+[
+  {
+    "score": 4,
+    "strengths": [
+      "Demonstrates strong organizational skills and leadership experience, which can be beneficial for managing tasks and clients.",
+      "Possesses a record of achieving measurable outcomes and improving system efficiency, indicating potential for high performance."
+    ],
+    "weaknesses": [
+      "Lacks direct experience in secretarial or administrative roles, which are essential for the position.",
+      "No evident experience with Microsoft Word, Excel, or Outlook, crucial software for this job.",
+      "Absence of experience in handling confidential financial and personal information, key responsibility of the role."
+    ],
+    "summary": "Chen Haoran has strong leadership and technical skills but lacks the specific secretarial experience and software proficiency required for the administrative role.",
+    "candidate": "senior_chinese",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "technical skills",
+      "leadership"
+    ],
+    "weaknesses": [
+      "lack of administrative experience",
+      "no familiarity with accounting or legal software",
+      "inappropriate role for current skill set"
+    ],
+    "summary": "Candidate is highly skilled in software engineering but lacks the necessary administrative and accounting experience for the role.",
+    "candidate": "senior_chinese",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's experience and skills do not clearly align with the job's essential requirements. There is no evidence of secretarial, receptionist, or office administration experience. However, their strong technical and leadership skills in software engineering could be considered a close match for the ability to handle several tasks. The candidate’s written and technical skills are strong, meeting the accurate typing, Microsoft Office proficiency, and organization requirements. Discretion in handling sensitive information could be inferred from their technical leadership and responsibilities, but this is not explicitly stated.",
+    "candidate": "senior_chinese",
+    "type": "essential_requirements"
+  }
+]

@@ -1,0 +1,76 @@
+{
+  "runs": [
+    {
+      "started": "2026-09-13T15:30:31+00:00",
+      "finished": "2026-09-13T17:05:46+00:00",
+      "exit_code": 0,
+      "python": "3.13.15",
+      "from": "evaluate",
+      "condition": "with-essential",
+      "force": false,
+      "cvs": "data/cvs/batch8_specialcases",
+      "jobs": "data/job-listings",
+      "out": "/content/drive/MyDrive/ai-cv-eval-results/batch8_specialcases",
+      "preflight": "ok",
+      "models": {
+        "council": [
+          "qwen2.5:14b",
+          "phi4"
+        ],
+        "essential_requirements": "qwen2.5:7b",
+        "judge": "deepseek-r1:8b"
+      },
+      "inputs": {
+        "job_listings": [
+          "job_listing_aquarium_biologist_entry_level.pdf",
+          "job_listing_computer_repair_technician.pdf",
+          "job_listing_estate_groundskeeper.pdf",
+          "job_listing_fishing_boat_hand.pdf",
+          "job_listing_museum_security_specialist.pdf",
+          "job_listing_school_it_technician_coding.pdf",
+          "job_listing_secretary.pdf",
+          "job_listing_startup_fullstack_engineer.pdf",
+          "job_listing_web_development_manager.pdf"
+        ],
+        "cvs": [
+          "BrendanPythno.pdf",
+          "CaseyWhitmore.pdf",
+          "Chen_Special.pdf",
+          "HomerSimsSon.pdf",
+          "JordanMitchell5Star.pdf",
+          "Li_ExtraSpecial.pdf",
+          "MathNaledi.pdf",
+          "MegaMarcus.pdf",
+          "PriyaPicture.pdf",
+          "SamanthaOne.pdf",
+          "SystemShock.pdf",
+          "TaylorGraphics.pdf",
+          "VictoriaSterlingSilver.pdf"
+        ]
+      },
+      "stages": {
+        "evaluate": {
+          "status": "ok",
+          "model_files": 18,
+          "evaluations": 234,
+          "unscored": 0,
+          "essential_files": 9,
+          "seconds": 3282.2
+        },
+        "aggregate": {
+          "status": "ok",
+          "combined_files": 117,
+          "seconds": 0.8
+        },
+        "judge": {
+          "status": "ok",
+          "ok": 117,
+          "failed": 0,
+          "already_done": 0,
+          "total": 117,
+          "seconds": 2432.7
+        }
+      }
+    }
+  ]
+}

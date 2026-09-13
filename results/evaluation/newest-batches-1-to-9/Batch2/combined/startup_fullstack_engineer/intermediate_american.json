@@ -1,0 +1,38 @@
+[
+  {
+    "score": 8,
+    "strengths": [
+      "Strong experience in full-stack development with React/TypeScript and backend services using Java and Spring Boot, aligning with the required skills.",
+      "Demonstrated ability to operate services in production environments with observability and incident response improvements.",
+      "Proven track record of designing and delivering complex systems involving event-driven architectures and distributed systems, relevant to the company's focus on real-time data processing.",
+      "Leadership and mentoring experience, beneficial for shaping culture and onboarding new engineers."
+    ],
+    "weaknesses": [
+      "Limited experience with Go, the preferred backend language for the role.",
+      "No direct experience with TimescaleDB, although familiarity with PostgreSQL and Kafka suggests potential for quick upskilling.",
+      "No specific experience in the energy sector, although a demonstrated enthusiasm for tackling hard real-world problems could be leveraged."
+    ],
+    "summary": "Priya Nair is a strong fit for the role, with extensive experience in full-stack development and operational expertise, though she lacks direct experience with Go and the energy sector.",
+    "candidate": "intermediate_american",
+    "model": "phi4"
+  },
+  {
+    "score": 7,
+    "strengths": [
+      "Strong background in backend technologies like Java, Kotlin, and Python",
+      "Experience with distributed systems, observability, and API design"
+    ],
+    "weaknesses": [
+      "Limited experience with Go, which is preferred in the job description",
+      "No direct experience in the energy sector or real-world problem-solving specific to energy orchestration"
+    ],
+    "summary": "Priya Nair is a strong candidate with robust experience in backend development and API design, but lacks specific skills and experience in Go and the energy sector.",
+    "candidate": "intermediate_american",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate has a strong educational background and relevant certification. Their experience in shipping production software and familiarity with distributed systems concepts is a reasonable match. However, the exact years of experience in production shipping software are unclear, and the specific backend language experience is missing. Strong communication skills and interest in real-world problems are evident.",
+    "candidate": "intermediate_american",
+    "type": "essential_requirements"
+  }
+]

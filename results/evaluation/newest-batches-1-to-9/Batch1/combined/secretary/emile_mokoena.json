@@ -1,0 +1,36 @@
+[
+  {
+    "score": 4,
+    "strengths": [
+      "Strong technical skills in cloud technologies and data management, indicating potential for upskilling in administrative tools",
+      "Excellent organization and multitasking skills evidenced by diverse work experience in data engineering and machine learning"
+    ],
+    "weaknesses": [
+      "Lack of direct experience in secretarial, administrative, or office management roles",
+      "Absence of proficiency in Microsoft Office suite, particularly Word and Excel, which are essential for the role",
+      "No demonstrated experience in handling administrative tasks like managing diaries, scheduling meetings, or processing payments"
+    ],
+    "summary": "Emile Mokoena has a strong technical background and excellent organizational skills but lacks direct administrative experience and necessary software proficiency for the role.",
+    "candidate": "EMILE MOKOENA",
+    "model": "phi4"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "demonstrates strong technical skills in cloud engineering and data management",
+      "has a background in improving operational efficiency and accuracy"
+    ],
+    "weaknesses": [
+      "lacks experience in administrative or secretarial roles",
+      "does not meet essential requirements for the role such as MS Office proficiency and experience in accountancy"
+    ],
+    "summary": "The candidate excels in technical and data management roles but lacks the direct experience and essential skills required for the administrative assistant position at Ashcombe & Vale.",
+    "candidate": "EMILE MOKOENA",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate has a reasonable match with the job requirements. Their experience in data science and machine learning roles provides transferable skills, particularly in data handling and accuracy. However, the lack of specific secretarial, receptionist, or office administration experience means this requirement is not clearly met. Their strong technical skills and attention to detail, evidenced by their work in data validation and automation, would be valuable in an administrative role.",
+    "candidate": "EMILE MOKOENA",
+    "type": "essential_requirements"
+  }
+]

@@ -1,0 +1,37 @@
+[
+  {
+    "score": 2,
+    "strengths": [
+      "Demonstrates strong adaptability and independent problem-solving skills.",
+      "Has experience in diverse operational environments which shows resilience and practical judgment."
+    ],
+    "weaknesses": [
+      "Lacks technical experience in full-stack engineering or any backend languages such as Go, TypeScript, or React.",
+      "No experience with production software development, distributed systems, or event-driven architectures.",
+      "No mention of experience with metrics, tracing, incident response, or on-call participation.",
+      "Absence of relevant education beyond secondary school diploma, particularly in engineering or computer science fields."
+    ],
+    "summary": "Kevin Jones lacks the necessary technical skills and relevant experience in software engineering required for the Founding Full-Stack Engineer role at Pulsegrid.",
+    "candidate": "professional_cv_kevin_jones",
+    "model": "phi4"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Practical problem-solving skills",
+      "Adaptability and resilience"
+    ],
+    "weaknesses": [
+      "Lack of technical skills and experience",
+      "No relevant industry experience"
+    ],
+    "summary": "Kevin Jones lacks the technical background and specific industry experience required for the position, but demonstrates adaptability and problem-solving skills.",
+    "candidate": "professional_cv_kevin_jones",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's experience in shipping production software is unclear, and they do not demonstrate strong experience in TypeScript/React or backend languages. However, their adaptability and communication skills could be transferable to the role. Their experience in customer service and communication aligns with the requirement for excellent communication, but their technical experience does not meet the essential requirements.",
+    "candidate": "professional_cv_kevin_jones",
+    "type": "essential_requirements"
+  }
+]

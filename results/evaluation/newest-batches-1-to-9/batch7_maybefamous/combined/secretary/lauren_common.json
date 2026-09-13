@@ -1,0 +1,37 @@
+[
+  {
+    "score": 4,
+    "strengths": [
+      "The candidate has a demonstrated ability to work in a team, which is relevant for the collaborative environment in an office setting.",
+      "The candidate has experience with project completion and improvement, suggesting potential for organizing and managing tasks efficiently."
+    ],
+    "weaknesses": [
+      "Lacks direct experience in secretarial, receptionist, or administrative roles which are essential for the position.",
+      "No experience or demonstrated skills in using office software like Microsoft Word, Excel, and Outlook, which are required for the role.",
+      "No experience with handling confidential information or client interaction, both critical for the role.",
+      "No demonstrated experience in finance, accountancy, or related fields."
+    ],
+    "summary": "Lauren Fischer has strong technical and project management skills but lacks the relevant administrative experience and office software proficiency required for the Secretary / Administrative Assistant role.",
+    "candidate": "Lauren_common",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Excellent in software engineering and development",
+      "Strong problem-solving skills"
+    ],
+    "weaknesses": [
+      "Lacks administrative and secretarial experience",
+      "No knowledge of Microsoft Office applications"
+    ],
+    "summary": "Lauren Fischer is a skilled software engineer but lacks the necessary administrative and secretarial experience for the position.",
+    "candidate": "Lauren_common",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's experience in developing and improving software applications, particularly through onboarding flow redesign and bug fixes, closely aligns with the required organizational and multitasking skills. The relevant coursework and certifications demonstrate a good working knowledge of Microsoft Office tools. However, there is no evidence of secretarial, receptionist, or office administration experience, and the typing speed is not specified.",
+    "candidate": "Lauren_common",
+    "type": "essential_requirements"
+  }
+]

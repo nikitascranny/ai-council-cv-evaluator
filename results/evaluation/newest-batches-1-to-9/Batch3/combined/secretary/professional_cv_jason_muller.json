@@ -1,0 +1,38 @@
+[
+  {
+    "score": 6,
+    "strengths": [
+      "Demonstrates strong organizational and team coordination skills, which are relevant to managing tasks and liaising with various departments.",
+      "Shows adaptability and problem-solving abilities, crucial for managing a dynamic office environment.",
+      "Has experience in customer service and maintaining a positive client experience, relevant for client-facing responsibilities."
+    ],
+    "weaknesses": [
+      "Lacks direct secretarial or administrative experience in a professional services setting.",
+      "No demonstrated proficiency in Microsoft Excel and Outlook, which are explicitly required for the role.",
+      "Missing formal education credentials that are desirable for the role, such as GCSEs in English and Maths.",
+      "Limited evidence of handling confidential financial information, a key requirement for the role."
+    ],
+    "summary": "While the candidate has relevant soft skills and some indirect experience, they lack specific administrative experience and key technical skills required for the Secretary/Administrative Assistant role.",
+    "candidate": "professional_cv_jason_muller",
+    "model": "phi4"
+  },
+  {
+    "score": 4,
+    "strengths": [
+      "Adaptable and hands-on operational skills",
+      "Experience in customer service and client issue resolution"
+    ],
+    "weaknesses": [
+      "Lack of direct administrative or secretarial experience",
+      "No familiarity with accounting software"
+    ],
+    "summary": "Jason Muller demonstrates strong operational and customer service skills but lacks direct administrative experience and relevant software proficiency, making him a less suitable candidate for the role.",
+    "candidate": "professional_cv_jason_muller",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's experience as an Acting Assistant Manager at Uncle Dave’s Car Wash closely matches the requirements for previous administrative experience and demonstrates organizational and customer service skills. Their self-directed learning in customer service and operations indicates a willingness and ability to adapt to administrative roles. However, their current role as an Independent Digital Asset Researcher does not directly align with the job's requirements for secretarial or administrative experience or proficiency in Microsoft Office tools.",
+    "candidate": "professional_cv_jason_muller",
+    "type": "essential_requirements"
+  }
+]

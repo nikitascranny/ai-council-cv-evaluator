@@ -1,0 +1,38 @@
+[
+  {
+    "score": 8,
+    "strengths": [
+      "The candidate has a strong background in strategic partnership management, demonstrated by their role as Global Partnerships Manager at CodeForward.",
+      "They possess relevant hard skills such as project management, account management, and agile methodologies, which are crucial for managing complex projects.",
+      "Their involvement in internet governance and leadership roles in international forums indicates a high potential for upskilling and adaptability in dynamic environments.",
+      "The candidate has a proven track record of developing and maintaining strategic alliances, which aligns well with roles requiring relationship management and strategic planning."
+    ],
+    "weaknesses": [
+      "While the candidate has extensive experience in partnerships and project management, specific technical skills like Java or Python may not be directly applicable to all roles.",
+      "There is limited evidence of direct experience in certain niche areas like digital marketing or advanced IT project management, which might be required depending on the job.",
+      "The candidate's experience is heavily focused on strategic and managerial roles, which may not cover hands-on technical or operational tasks required in some positions."
+    ],
+    "summary": "The candidate is well-suited for roles requiring strategic partnership management and project leadership, with strong potential for upskilling in technical and governance areas.",
+    "candidate": "LERATO MUNCHE",
+    "model": "phi4"
+  },
+  {
+    "score": 8,
+    "strengths": [
+      "Proven experience in global partnerships and project management",
+      "Strong communication and coordination skills"
+    ],
+    "weaknesses": [
+      "Limited technical project management experience",
+      "No direct IT product management experience"
+    ],
+    "summary": "The candidate possesses significant experience in global partnerships and internal communications, demonstrating strong coordination and management skills. However, the candidate lacks specific technical project management experience and direct IT product management background.",
+    "candidate": "LERATO MUNCHE",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate demonstrates strong alignment with the job's essential requirements, particularly in project management and strategic partnership development. Tasks such as managing contracts, hosting initial discussions, and leading strategic partnerships are clearly met. Additionally, the candidate's experience in project management, budgeting, and stakeholder management is well-documented. While there are some tasks that may require additional context or specific experience, overall the candidate’s background closely matches the job's essential requirements.",
+    "candidate": "LERATO MUNCHE",
+    "type": "essential_requirements"
+  }
+]

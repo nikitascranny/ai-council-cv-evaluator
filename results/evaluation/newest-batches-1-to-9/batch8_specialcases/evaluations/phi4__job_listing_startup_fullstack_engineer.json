@@ -1,0 +1,211 @@
+[
+  {
+    "score": 9,
+    "strengths": [
+      "Extensive experience in designing and leading the architecture of large-scale distributed systems, which aligns with the essential skills required for building and scaling event-driven data platforms.",
+      "Fluency in multiple programming languages, including Go, and expertise in TypeScript/React, fulfilling the technical skill requirements.",
+      "Demonstrated leadership and technical expertise in high-pressure environments, which is crucial for the role's requirement of making calls with incomplete information.",
+      "Proven track record of publishing influential research and receiving prestigious nominations, indicating a strong foundation in the fundamentals of distributed systems.",
+      "Experience with operating services in production environments, ensuring readiness for the on-call responsibilities outlined in the role."
+    ],
+    "weaknesses": [
+      "The candidate's resume highlights achievements that may not directly align with the startup culture and rapid iteration pace described in the job description."
+    ],
+    "summary": "The candidate's exceptional technical skills and experience in high-stakes, large-scale systems make them an ideal fit for the role, despite potential cultural adjustments to a fast-paced startup environment.",
+    "candidate": "CaseyWhitmore"
+  },
+  {
+    "score": 9,
+    "strengths": [
+      "Has 8 years of experience with backend systems, including strong expertise in Go, which is a required skill.",
+      "Demonstrates leadership experience by leading cross-functional teams and mentoring engineers into senior roles.",
+      "Strong background in designing and scaling distributed systems, which aligns with the job's need for handling distributed systems fundamentals.",
+      "Experience with event-driven architectures using Kafka, which is desirable for the role.",
+      "Proven track record of reducing infrastructure costs and improving system reliability, indicating capability to manage production services and on-call duties.",
+      "Educational background in Distributed Systems and certifications in cloud infrastructure, enhancing understanding of production environments and technology stack.",
+      "Good communication and leadership skills, important for the role's emphasis on working directly with founders and customers."
+    ],
+    "weaknesses": [
+      "Lacks direct experience with TypeScript/React, which is essential for the role.",
+      "Limited experience with the energy sector, though not essential, could be beneficial given the company's focus on energy orchestration.",
+      "No mention of direct customer interaction or product feature development from design to production, which are key responsibilities of the role."
+    ],
+    "summary": "The candidate has a strong technical background and leadership experience that align well with the job's requirements, though they need to develop skills in TypeScript/React and gain experience in the energy sector.",
+    "candidate": "TaylorGraphics"
+  },
+  {
+    "score": 8,
+    "strengths": [
+      "Solid experience in Go, aligning with the job requirement for backend language proficiency.",
+      "Proven track record of owning features end-to-end, which matches the role's expectations.",
+      "Strong technical foundation in distributed systems, indicated by relevant coursework and certifications.",
+      "Experience with Kubernetes, relevant to the company's tech stack and practices."
+    ],
+    "weaknesses": [
+      "Lack of direct experience with TypeScript/React, which is crucial for the frontend responsibilities of the role.",
+      "No specific mention of experience with Kafka, TimescaleDB, or event-driven architectures, although not strictly required.",
+      "Limited exposure to the energy sector domain knowledge, though the company offers to provide training."
+    ],
+    "summary": "Jordan Mitchell is a strong candidate with relevant backend experience and technical skills, though lacking some frontend and sector-specific knowledge.",
+    "candidate": "JordanMitchell5Star"
+  },
+  {
+    "score": 7,
+    "strengths": [
+      "Has 4+ years of experience shipping production software, fulfilling the essential experience requirement.",
+      "Strong skills in Go and Python, aligning with the backend language skills required for the role.",
+      "Experience with API development and optimization, relevant to the product surface ownership in the role.",
+      "Demonstrated ability to work in a fast-paced environment with high transaction volumes, similar to the intense, chaotic nature of the job."
+    ],
+    "weaknesses": [
+      "Lack of explicit experience with React/TypeScript, which is a key requirement for the frontend aspects of the role.",
+      "No direct experience with Kafka, TimescaleDB, or Redis, which are critical for the event-driven data platform scaling.",
+      "Limited demonstrated experience with observability, alerting, and on-call participation, which are essential for owning services in production.",
+      "No evidence of direct customer interaction or shaping product roadmaps with founders and customers."
+    ],
+    "summary": "The candidate has a strong technical background and relevant experience in production software and backend development, but lacks specific skills in frontend technologies and certain tools critical for the role.",
+    "candidate": "Chen_Special"
+  },
+  {
+    "score": 7,
+    "strengths": [
+      "Has relevant experience with backend systems using Go, which is preferred for the role.",
+      "Has experience in maintaining and building reliable backend services, aligning with the role's responsibilities.",
+      "Demonstrates a strong technical background with a B.Sc. in Computer Science and relevant certifications."
+    ],
+    "weaknesses": [
+      "Lacks experience with frontend technologies like React/TypeScript, which are essential for the role.",
+      "Does not have experience with distributed systems fundamentals such as Kafka, TimescaleDB, or Redis.",
+      "Limited exposure to direct customer interaction and product shaping, which are key responsibilities."
+    ],
+    "summary": "Marcus has relevant backend experience and technical skills, but needs to develop frontend capabilities and familiarity with event-driven architectures.",
+    "candidate": "MegaMarcus"
+  },
+  {
+    "score": 7,
+    "strengths": [
+      "Has 4+ years of experience in shipping production software, meeting the essential experience requirement.",
+      "Strong background in React, aligning with the role's demand for full-stack features in a React/TypeScript frontend.",
+      "Experience in reducing page load times demonstrates familiarity with performance optimization, relevant to shipping high-quality features.",
+      "Certification in AWS Cloud Practitioner indicates potential familiarity with cloud environments, which can be beneficial in a startup setting."
+    ],
+    "weaknesses": [
+      "Lacks explicit experience with Go, which is preferred for the backend services in the role.",
+      "No direct experience with event-driven architectures like Kafka or TimescaleDB, though desirable, not essential.",
+      "Limited exposure to real-time or distributed systems, missing some desirable experience in related technologies.",
+      "No demonstrated experience in operating services in production (metrics, tracing, incident response)."
+    ],
+    "summary": "Priya has strong foundational skills in React and web application development, aligning well with the frontend requirements, but needs more exposure to backend technologies and production operations to fully meet the role's demands.",
+    "candidate": "PriyaPicture"
+  },
+  {
+    "score": 7,
+    "strengths": [
+      "4 years of experience in backend systems which is aligned with the essential experience requirement of shipping production software.",
+      "Proficient in Go, which is preferred for the backend development role.",
+      "Experience with backend languages including Python and Java, indicating a versatile technical background."
+    ],
+    "weaknesses": [
+      "Lacks direct experience with TypeScript/React, which is essential for the frontend development responsibilities.",
+      "No mention of experience with observability, alerting, or handling production incidents, which are crucial for the role.",
+      "Absence of evidence of experience with event-driven architectures or time-series data, which are desirable for the role.",
+      "No specific mention of comfort with ambiguity and velocity, or experience in a startup environment."
+    ],
+    "summary": "Samantha has a strong backend background and experience with Go, but lacks direct frontend experience and familiarity with certain technologies and practices essential for the role.",
+    "candidate": "SamanthaOne"
+  },
+  {
+    "score": 7,
+    "strengths": [
+      "Has 5 years of production software shipping experience, meeting the required years",
+      "Experience with React and backend languages such as Node.js and Python, aligning with the need for TypeScript/React and backend proficiency",
+      "Demonstrates comfort with ambiguity and velocity, crucial for the role's fast-paced and evolving nature"
+    ],
+    "weaknesses": [
+      "Lacks direct experience with Go, which is preferred for the role",
+      "No specified experience with event-driven architectures like Kafka, which is desirable for scaling data platforms",
+      "Does not have explicit experience with observability and on-call participation, which are essential for service ownership"
+    ],
+    "summary": "Jordan Mitchell has relevant technical skills and experience with production software, but lacks direct experience with Go and event-driven systems, which are crucial for this role.",
+    "candidate": "SystemShock"
+  },
+  {
+    "score": 6,
+    "strengths": [
+      "Has 4 years of experience with production software development, aligning with the essential requirement.",
+      "Experience with Go, which is preferred for this role, and familiarity with backend systems.",
+      "Demonstrated ability to improve system performance by reducing API latency, indicating problem-solving skills.",
+      "AWS Certified Cloud Practitioner certification shows upskilling potential in cloud technologies."
+    ],
+    "weaknesses": [
+      "Lacks experience with frontend technologies like React/TypeScript, which are critical for this role.",
+      "No direct experience with the specific technologies mentioned in the job description (Kafka, TimescaleDB, Redis).",
+      "No demonstrated experience with event-driven architectures or distributed systems, which are essential for the role.",
+      "Missing experience with observability, alerting, and on-call participation for production services."
+    ],
+    "summary": "Brendan Naidoo has relevant backend experience and some upskilling potential but lacks critical frontend skills and specific technology expertise required for this role.",
+    "candidate": "BrendanPythno"
+  },
+  {
+    "score": 6,
+    "strengths": [
+      "Extensive experience in architecting large-scale distributed systems, aligning with the job's need for a strong grasp of such fundamentals.",
+      "Proven track record of leading engineering teams, relevant to the role's responsibility to help onboard new engineers and shape product development.",
+      "Strong technical background with experience in backend languages, though Go is not explicitly mentioned but relevant due to other languages like Java and C++."
+    ],
+    "weaknesses": [
+      "Lack of experience with specific technologies required for the role, such as React/TypeScript for the frontend and Go for the backend.",
+      "Unprofessional behavior during the interview, raising concerns about fit with the company's culture and team dynamics.",
+      "No demonstrated experience with event-driven architectures or energy sector domain knowledge, which are desirable for the position."
+    ],
+    "summary": "While the candidate has strong technical skills and leadership experience, their lack of specific technological expertise and problematic interview behavior pose significant challenges to their suitability for the role.",
+    "candidate": "VictoriaSterlingSilver"
+  },
+  {
+    "score": 5,
+    "strengths": [
+      "Strong analytical and data processing skills demonstrated through experience with regression models and hypothesis testing.",
+      "Experience in improving efficiency and optimizing processes, relevant to the performance-oriented culture at Pulsegrid.",
+      "Proven ability to deliver accurate reporting and manage multiple projects, aligning with the fast-paced and demanding work environment.",
+      "Certifications in data analytics and visualization tools, indicating a commitment to learning and potential adaptability to new technologies."
+    ],
+    "weaknesses": [
+      "Lack of direct experience with the specific technical stack required for the role (React/TypeScript, Go, Kafka, TimescaleDB).",
+      "Limited experience with full-stack development and no direct experience with operating services in a production environment.",
+      "No demonstrated experience in distributed systems or familiarity with event-driven architectures.",
+      "Absence of explicit software development or engineering background, which is crucial for a founding full-stack engineering role."
+    ],
+    "summary": "Naledi Mokoena possesses strong analytical and process optimization skills but lacks direct experience with the required technical stack and full-stack development necessary for the founding full-stack engineer role at Pulsegrid.",
+    "candidate": "MathNaledi"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Has experience in a software engineering role with potential relevance to full-stack development.",
+      "Possesses some education in software development."
+    ],
+    "weaknesses": [
+      "Lacks clear evidence of experience with TypeScript, React, or Go as required.",
+      "No demonstrated experience with event-driven architectures or distributed systems.",
+      "Insufficient communication of skills and experiences relevant to the role.",
+      "CV lacks detailed descriptions of responsibilities and achievements."
+    ],
+    "summary": "The candidate has some relevant software engineering experience but lacks clear evidence of the required technical skills and experience with necessary technologies and methodologies.",
+    "candidate": "HomerSimsSon"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Experience with server setup and building backend systems indicates some technical capability.",
+      "Adaptability shown by surviving and thriving in challenging conditions."
+    ],
+    "weaknesses": [
+      "Lack of relevant experience in full-stack engineering or specific technologies required (TypeScript/React, Go, Kafka, TimescaleDB).",
+      "No evidence of experience in operating production services, metrics, tracing, or incident response.",
+      "No experience in event-driven architectures or distributed systems fundamentals.",
+      "Absence of direct customer interaction or experience in shaping product roadmaps."
+    ],
+    "summary": "The candidate has some technical experience and adaptability but lacks the specific skills, experience, and domain knowledge required for the role at Pulsegrid.",
+    "candidate": "Li_ExtraSpecial"
+  }
+]

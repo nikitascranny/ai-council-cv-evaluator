@@ -1,0 +1,37 @@
+[
+  {
+    "score": 6,
+    "strengths": [
+      "Strong programming skills with experience in Python, which is relevant for supporting coding in lessons.",
+      "Experience in software engineering and working with APIs, indicating a good technical foundation.",
+      "Certifications in AWS and Docker show willingness and ability to learn and validate technical skills."
+    ],
+    "weaknesses": [
+      "Lack of direct experience in IT support or education settings, which are essential for the role.",
+      "No specific experience with device management tools like Intune, which is required for the role.",
+      "Limited evidence of working with young people or enthusiasm for educational environments."
+    ],
+    "summary": "The candidate has strong technical skills and certifications but lacks direct experience in IT support and working with young people, which are crucial for this role.",
+    "candidate": "Chen_Special",
+    "model": "phi4"
+  },
+  {
+    "score": 6,
+    "strengths": [
+      "具备Python编程能力",
+      "有软件开发与维护经验"
+    ],
+    "weaknesses": [
+      "缺乏教育领域的经验",
+      "缺乏IT技术支持的具体经验"
+    ],
+    "summary": "该候选人具备基本的编程技能和软件开发背景，但缺乏在学校环境中提供IT支持和直接的相关工作经验。",
+    "candidate": "Chen_Special",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate demonstrates practical IT support experience through a strong home lab background, meets the working knowledge of Windows 11 and Microsoft 365, and shows basic programming skills in Python, which is a reasonable match for the ability to assist young people. The enthusiasm for working with young people is evident, but the candidate's experience with Scratch is not clear. The commitment to safeguarding and willingness to undergo checks are not explicitly mentioned but are implied from the enthusiasm and background.",
+    "candidate": "Chen_Special",
+    "type": "essential_requirements"
+  }
+]

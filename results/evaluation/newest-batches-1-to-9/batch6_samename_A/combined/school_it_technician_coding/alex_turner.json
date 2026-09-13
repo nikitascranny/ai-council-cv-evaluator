@@ -1,0 +1,37 @@
+[
+  {
+    "score": 6,
+    "strengths": [
+      "Strong programming skills in Python, which align with the job's requirement to support students in coding activities.",
+      "Experience in software engineering, which includes problem-solving and technical skills relevant to IT technician responsibilities.",
+      "Proven ability to improve system performance, relevant to maintaining and troubleshooting school IT infrastructure."
+    ],
+    "weaknesses": [
+      "Lack of direct experience in educational settings, which is desirable for the role.",
+      "No experience with specific IT support tools like Intune or device imaging, which are essential for the role.",
+      "Limited experience with classroom technology and teaching, as no prior experience with teaching or running coding clubs is mentioned."
+    ],
+    "summary": "Alex Turner has strong technical and programming skills, especially in Python, which align with the coding aspect of the role, but lacks direct experience in educational IT support and classroom environments.",
+    "candidate": "Alex Turner",
+    "model": "phi4"
+  },
+  {
+    "score": 6,
+    "strengths": [
+      "Strong background in Python and programming",
+      "Experience with Docker and REST APIs"
+    ],
+    "weaknesses": [
+      "Lack of direct IT support or educational experience",
+      "No specific mention of Windows 11, Microsoft 365, or Intune experience"
+    ],
+    "summary": "Alex Turner has a strong technical background, but lacks direct experience in IT support and education, making the fit for this role moderate.",
+    "candidate": "Alex Turner",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate has a strong background in software engineering, which aligns closely with the IT support experience requirement. They have relevant programming skills and certifications in cloud computing, which are close matches for the basic programming and Windows/Microsoft 365 requirements. The candidate’s experience does not directly address the specific IT support roles in schools or businesses, and there is no evidence of working with young people or experience in safeguarding, which are clearly not met.",
+    "candidate": "Alex Turner",
+    "type": "essential_requirements"
+  }
+]

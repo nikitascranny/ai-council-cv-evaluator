@@ -1,0 +1,36 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Possesses technical skills relevant to software development and problem-solving.",
+      "Has experience with databases, which could be beneficial for diagnosing computer issues."
+    ],
+    "weaknesses": [
+      "Lack of practical PC/laptop repair skills and experience.",
+      "No demonstrated experience with customer service or working in a retail environment.",
+      "No mention of ability to work with or explain technical issues to non-technical customers."
+    ],
+    "summary": "While the candidate has strong technical skills in software engineering, they lack the practical repair experience and customer service skills essential for the role.",
+    "candidate": "BrendanPythno",
+    "model": "phi4"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "passion for software engineering",
+      "experience in backend systems"
+    ],
+    "weaknesses": [
+      "lack of practical PC repair skills",
+      "no relevant experience in customer service or retail"
+    ],
+    "summary": "The candidate lacks the essential practical repair skills and retail experience required for the position, but shows promise in technical capabilities.",
+    "candidate": "BrendanPythno",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's experience as a Junior Software Engineer and Software Engineer demonstrates relevant technical skills that could be transferable to basic PC/laptop repair. Their ability to work with code reviews and reduce API latency suggests reliability and attention to detail, which could indicate honesty and reliability in a customer-facing role. However, there is no direct evidence of practical PC/laptop repair skills. The requirement to work Saturdays is not clearly met, as the candidate's experience does not specify availability for that day. The candidate's location is unclear from the CV, making it difficult to assess their ability to reliably get to Tillingford.",
+    "candidate": "BrendanPythno",
+    "type": "essential_requirements"
+  }
+]

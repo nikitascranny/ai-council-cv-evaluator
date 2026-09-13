@@ -1,0 +1,35 @@
+[
+  {
+    "score": 6,
+    "strengths": [
+      "Demonstrates problem-solving skills and technical aptitude through unconventional methods.",
+      "Has experience in a role that requires patience, adaptability, and innovation under pressure."
+    ],
+    "weaknesses": [
+      "Lacks direct experience in PC/laptop repair and customer service in a retail setting.",
+      "No evidence of formal training or certification in PC/laptop repair, which is an essential requirement."
+    ],
+    "summary": "The candidate possesses strong problem-solving and technical skills, but lacks direct experience and formal qualifications in computer repair and customer service.",
+    "candidate": "Li_ExtraSpecial",
+    "model": "phi4"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "technical skills in Python and Java",
+      "problem-solving and survival skills"
+    ],
+    "weaknesses": [
+      "no direct experience in customer service or computer repair",
+      "lack of relevance of survival experience to computer repair job"
+    ],
+    "summary": "The candidate possesses technical skills but lacks direct experience in the role's requirements and the relevance of their experience to the job.",
+    "candidate": "Li_ExtraSpecial",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's CV clearly meets the requirement for basic PC/laptop repair skills and demonstrates the ability to work Saturdays. Friendly and patient communication skills are implied from the experience in a call center role, which closely matches the requirement for explaining things to older customers without jargon. The candidate's punctuality and reliability in a previous job suggest they could be honest and reliable. However, there is no clear evidence provided for local or reliable transportation to Tillingford.",
+    "candidate": "Li_ExtraSpecial",
+    "type": "essential_requirements"
+  }
+]

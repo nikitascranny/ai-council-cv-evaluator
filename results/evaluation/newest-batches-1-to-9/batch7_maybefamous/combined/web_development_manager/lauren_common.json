@@ -1,0 +1,37 @@
+[
+  {
+    "score": 5,
+    "strengths": [
+      "Strong experience in software engineering, particularly in mobile app development with a focus on cross-platform technologies like Flutter.",
+      "Proven ability to improve product quality, demonstrated by enhancing app store ratings through bug fixes and UX improvements.",
+      "Educational background in software engineering with relevant coursework in mobile application development and agile practices."
+    ],
+    "weaknesses": [
+      "Lacks direct experience in web development, particularly with the required technologies such as React/TypeScript and Node.js.",
+      "No experience in line-managing engineers, which is essential for the role.",
+      "Limited exposure to cloud infrastructure and CI/CD practices, particularly with AWS, as required for the job."
+    ],
+    "summary": "Lauren Fischer has relevant software engineering experience and demonstrated improvement skills, but lacks direct experience in web development and leadership, which are critical for the Engineering Manager role.",
+    "candidate": "Lauren_common",
+    "model": "phi4"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "mobile app development experience",
+      "demonstrated ability to improve app quality"
+    ],
+    "weaknesses": [
+      "lacks backend or full-stack experience",
+      "no experience managing teams or leading technical change"
+    ],
+    "summary": "Lauren Fischer has strong mobile app development skills but lacks the backend experience, team management, and leadership in technical change required for the role.",
+    "candidate": "Lauren_common",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate meets the requirement for 5+ years of professional web/software engineering experience, though no line management experience is evident. Their experience with Flutter and cross-platform app development is a reasonable match for modern web stacks. They have experience with CI/CD and automated testing, and their coursework in Agile Practices and relevant certifications suggest they can translate between engineers, product managers, and executives. However, there is no clear evidence of experience leading teams through significant technical change or running agile delivery with distributed teams.",
+    "candidate": "Lauren_common",
+    "type": "essential_requirements"
+  }
+]

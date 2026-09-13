@@ -1,0 +1,38 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Strong interpersonal and team coordination skills.",
+      "Adaptability in fast-paced environments."
+    ],
+    "weaknesses": [
+      "Lack of experience in full-stack engineering.",
+      "No evidence of skills in TypeScript/React, Go, or distributed systems.",
+      "Absence of experience in software development or operations in a production environment.",
+      "No demonstrated experience with event-driven architectures or real-time systems."
+    ],
+    "summary": "The candidate possesses strong interpersonal and coordination skills but lacks the required technical expertise and experience in software engineering and production environments necessary for the role.",
+    "candidate": "professional_cv_jason_muller",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Adaptability in fast-moving environments",
+      "Customer service and complaint resolution"
+    ],
+    "weaknesses": [
+      "Lack of relevant technical skills and experience",
+      "No experience in software development or full-stack engineering",
+      "No experience with the specific technologies mentioned in the job description"
+    ],
+    "summary": "The candidate lacks the necessary technical skills and experience in software development and full-stack engineering, which are core requirements for the position.",
+    "candidate": "professional_cv_jason_muller",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate demonstrates strong communication skills and comfort with ambiguity through their role as an Independent Digital Asset Researcher. However, there is no evidence of relevant software development or distributed systems experience. The role at Uncle Dave’s Car Wash shows leadership and operational skills but does not directly align with the technical requirements of the job.",
+    "candidate": "professional_cv_jason_muller",
+    "type": "essential_requirements"
+  }
+]

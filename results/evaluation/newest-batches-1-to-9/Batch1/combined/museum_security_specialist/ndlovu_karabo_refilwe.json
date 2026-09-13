@@ -1,0 +1,40 @@
+[
+  {
+    "score": 5,
+    "strengths": [
+      "Strong experience in records management and compliance with policies and procedures.",
+      "Experience with various records management systems and processes.",
+      "Good organizational and administrative skills.",
+      "Ability to work under pressure and independently."
+    ],
+    "weaknesses": [
+      "Lack of direct security experience in a museum or similar setting.",
+      "No specific experience with CCTV, intruder alarm, or access-control systems.",
+      "No demonstrated ability to patrol large, multi-floor sites.",
+      "Limited physical fitness evidence related to job demands.",
+      "No direct experience with security training or incident response."
+    ],
+    "summary": "While the candidate has extensive records management experience and possesses strong organizational skills, their lack of direct experience in museum security and specific technical skills required for the role present significant weaknesses.",
+    "candidate": "NDLOVU KARABO REFILWE",
+    "model": "phi4"
+  },
+  {
+    "score": 4,
+    "strengths": [
+      "Excellent organizational and administrative skills",
+      "Attention to detail and ability to work under pressure"
+    ],
+    "weaknesses": [
+      "Lacks direct experience in museum security",
+      "No specific training or experience with CCTV, intruder alarms, or access-control systems"
+    ],
+    "summary": "Candidate demonstrates strong organizational and attention to detail skills but lacks direct experience in museum security and technical security system knowledge.",
+    "candidate": "NDLOVU KARABO REFILWE",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's experience in records management, archives, and compliance clearly meets the requirement for relevant experience. Their role as a Records & Information Compliance Officer at the National Power Utility Commission involves managing records, ensuring compliance, and developing policies, which align closely with the job description. However, the candidate does not have any explicit experience in a security role or with CCTV, intruder alarm, and access control systems. Their ability to remain calm and make decisions under pressure, as well as their physical capability, are reasonable inferences from their work experience. Their written and verbal communication skills, as evidenced by their work in records management and training, are also a close match.",
+    "candidate": "NDLOVU KARABO REFILWE",
+    "type": "essential_requirements"
+  }
+]

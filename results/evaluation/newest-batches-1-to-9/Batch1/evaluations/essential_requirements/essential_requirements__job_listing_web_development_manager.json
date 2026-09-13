@@ -1,0 +1,42 @@
+[
+  {
+    "summary": "The candidate has a reasonable match with the job's essential requirements, particularly in terms of their experience in testing and automation, which relates closely to the software engineering role. They lack clear experience in managing engineers or leading significant technical changes, and their background is more in testing than in software development. Their education does not provide direct evidence of a strong background in modern web stacks, although they have relevant experience in software testing and automation.",
+    "candidate": "ALEX PARK"
+  },
+  {
+    "summary": "The candidate does not clearly meet the requirement for 5+ years of professional web/software engineering experience. However, the Lead Machine Learning Engineer role provides evidence of significant technical change management through AI Innovation challenges, which is a reasonable match for leading teams through significant technical change. The candidate's experience in data science and machine learning is closely related to the required modern web stacks. Other requirements, such as CI/CD, cloud infrastructure, and agile delivery, are not clearly met or unclear from the CV.",
+    "candidate": "EMILE MOKOENA"
+  },
+  {
+    "summary": "The candidate's experience in UX research and design closely aligns with some of the job requirements, such as excellent communication skills and understanding of customer needs. However, there is no evidence of professional web/software engineering experience, line management, or specific backend or frontend development skills. The candidate's background in research and design could be a reasonable match for the role, but additional technical experience is lacking.",
+    "candidate": "GEOFF NITSCHKE"
+  },
+  {
+    "summary": "The candidate does not meet the essential requirement of 5+ years of professional web/software engineering experience. However, their experience in project management, technical documentation, and collaboration with engineers is a reasonable match to the role. Their understanding of digital tools and modeling, as well as their ability to handle projects independently, suggests potential transferable skills in technical leadership, though this is not explicitly stated.",
+    "candidate": "JORDAN VELDMAN"
+  },
+  {
+    "summary": "The candidate demonstrates strong alignment with the job's essential requirements, particularly in project management and strategic partnership development. Tasks such as managing contracts, hosting initial discussions, and leading strategic partnerships are clearly met. Additionally, the candidate's experience in project management, budgeting, and stakeholder management is well-documented. While there are some tasks that may require additional context or specific experience, overall the candidate’s background closely matches the job's essential requirements.",
+    "candidate": "LERATO MUNCHE"
+  },
+  {
+    "summary": "The candidate does not clearly meet the 5+ years of professional web/software engineering experience or the 2 years of line management. However, there is a reasonable match with the strong background in information technology and experience in records and archival management, which can be considered relevant to the role. The candidate's experience in leading teams through significant technical change is unclear from the CV. Excellent communication skills are evidenced by the diverse roles that required interaction with various stakeholders.",
+    "candidate": "NDLOVU KARABO REFILWE"
+  },
+  {
+    "summary": "The candidate has a reasonable match for the essential requirements, with 5+ years of professional web/software engineering experience through various roles but lacks direct line management experience. Strong background in security and related fields, with relevant certifications. The CV does not provide clear evidence of leading teams through significant technical change or specific experience in modern web stacks such as React/TypeScript and a backend language.",
+    "candidate": "PATRICK MARAIS"
+  },
+  {
+    "summary": "The candidate's background in financial analysis and pension modeling indicates a solid understanding of data analysis and reporting, which could be relevant to the CI/CD and automated testing roles. However, the CV does not clearly demonstrate professional web/software engineering experience or leadership in technical change. The candidate's experience in managing and analyzing data could be transferable to the role's communication and reporting requirements.",
+    "candidate": "PONTUS PONTIOUS"
+  },
+  {
+    "summary": "The candidate clearly meets the requirement for professional web/software engineering experience, although the exact number of years is not specified. Their experience in leading teams and running agile delivery is a reasonable match, as is their understanding of CI/CD and cloud infrastructure. However, there is no clear evidence of line management experience, and their background is more focused on digital marketing and communications rather than software engineering.",
+    "candidate": "RIAAN GOVEN"
+  },
+  {
+    "summary": "The candidate meets the requirement for a business background but lacks direct web/software engineering experience. The role in managing Treasury systems and business analysis skills might be a reasonable match, but the exact years of experience are unclear. The CV does not provide clear evidence of leading technical teams, managing significant technical changes, or expertise in modern web stacks and cloud infrastructure.",
+    "candidate": "THE DANIEL"
+  }
+]

@@ -1,0 +1,134 @@
+[
+  {
+    "score": 8,
+    "strengths": [
+      "Proven experience in global partnerships and project management",
+      "Strong communication and coordination skills"
+    ],
+    "weaknesses": [
+      "Limited technical project management experience",
+      "No direct IT product management experience"
+    ],
+    "summary": "The candidate possesses significant experience in global partnerships and internal communications, demonstrating strong coordination and management skills. However, the candidate lacks specific technical project management experience and direct IT product management background.",
+    "candidate": "LERATO MUNCHE"
+  },
+  {
+    "score": 5,
+    "strengths": [
+      "Experience in digital product management",
+      "Leadership and strategic direction"
+    ],
+    "weaknesses": [
+      "Lacks direct web development experience",
+      "Limited hands-on coding skills"
+    ],
+    "summary": "Candidate demonstrates strong leadership and strategic skills but lacks the direct web development and hands-on coding experience required for the role.",
+    "candidate": "RIAAN GOVEN"
+  },
+  {
+    "score": 4,
+    "strengths": [
+      "AWS certifications",
+      "Experience with cloud technologies"
+    ],
+    "weaknesses": [
+      "Lack of experience in web/software engineering",
+      "No evidence of leading teams through technical change"
+    ],
+    "summary": "The candidate has strong cloud technology skills but lacks the required web/software engineering experience and leadership in technical change, making them a poor fit for the Engineering Manager position.",
+    "candidate": "EMILE MOKOENA"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Experience in testing front end and back end applications",
+      "Proficiency in automation testing tools such as Playwright and Jest"
+    ],
+    "weaknesses": [
+      "Lacks direct experience in web/software engineering and team management",
+      "No experience in leading significant technical change"
+    ],
+    "summary": "Alex Park has strong testing skills but lacks the direct web/software engineering and team management experience required for the Engineering Manager role.",
+    "candidate": "ALEX PARK"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Strong background in UX research and customer insights",
+      "Experience in leading cross-functional teams"
+    ],
+    "weaknesses": [
+      "Lack of technical engineering experience",
+      "No history of leading significant technical change"
+    ],
+    "summary": "The candidate excels in user research and team leadership but lacks the technical and engineering management experience required for the role.",
+    "candidate": "GEOFF NITSCHKE"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "strong project management skills",
+      "detailed technical documentation"
+    ],
+    "weaknesses": [
+      "lack of direct experience in web/software engineering",
+      "no evidence of leadership in technical change"
+    ],
+    "summary": "The candidate lacks the direct technical and leadership experience in web/software engineering required for the role.",
+    "candidate": "JORDAN VELDMAN"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Excellent organizational and administrative skills",
+      "Experience in records management and compliance"
+    ],
+    "weaknesses": [
+      "Lack of relevant web/software engineering experience",
+      "No proven experience in leading technical teams through change"
+    ],
+    "summary": "The candidate excels in administrative and records management but lacks the technical and leadership experience required for the engineering management role.",
+    "candidate": "NDLOVU KARABO REFILWE"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Experience in risk management and strategic planning",
+      "Proven track record of leading and managing teams"
+    ],
+    "weaknesses": [
+      "Lacks direct experience in web/software engineering",
+      "No experience leading technical teams through platform modernization"
+    ],
+    "summary": "The candidate has strong leadership and management skills but lacks relevant technical experience for the role of Engineering Manager in web development.",
+    "candidate": "PATRICK MARAIS"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Business Analysis",
+      "Communication & Interpersonal Skills",
+      "Critical Thinking"
+    ],
+    "weaknesses": [
+      "Lack of Web Development Experience",
+      "No Evidence of Leading Teams Through Significant Technical Change",
+      "Limited Technical Skills Relevant to Web Development"
+    ],
+    "summary": "The candidate lacks the necessary technical and web development experience for the role and does not demonstrate the ability to lead significant technical changes, though they show strong business analysis and communication skills.",
+    "candidate": "THE DANIEL"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Detail-oriented",
+      "Strong in data analysis and reporting"
+    ],
+    "weaknesses": [
+      "Lack of relevant web/software engineering experience",
+      "No proven experience in leading teams through technical change"
+    ],
+    "summary": "Pontus Pontious lacks the necessary technical and leadership experience in web/software engineering, making them unsuitable for the Engineering Manager role at Northlight Digital.",
+    "candidate": "PONTUS PONTIOUS"
+  }
+]

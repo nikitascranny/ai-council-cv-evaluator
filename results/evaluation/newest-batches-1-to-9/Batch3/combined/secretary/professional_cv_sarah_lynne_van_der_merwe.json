@@ -1,0 +1,36 @@
+[
+  {
+    "score": 6,
+    "strengths": [
+      "Demonstrates strong customer engagement and communication skills, important for client interaction.",
+      "Experience in operational management and team leadership, which can translate to managing multiple tasks and responsibilities."
+    ],
+    "weaknesses": [
+      "Lacks direct experience in secretarial, receptionist, or office administration roles.",
+      "No specific mention of proficiency in Microsoft Word, Excel, and Outlook, or accurate typing skills.",
+      "No previous experience in an accountancy, legal, or professional-services office."
+    ],
+    "summary": "The candidate has strong customer service and team management skills but lacks direct relevant experience and specific technical skills required for the administrative assistant role.",
+    "candidate": "professional_cv_sarah_lynne_van_der_merwe",
+    "model": "phi4"
+  },
+  {
+    "score": 4,
+    "strengths": [
+      "customer engagement",
+      "team leadership"
+    ],
+    "weaknesses": [
+      "lack of administrative or secretarial experience",
+      "no familiarity with relevant software"
+    ],
+    "summary": "Candidate lacks direct administrative experience but has strong customer engagement and leadership skills which could be leveraged in a training program.",
+    "candidate": "professional_cv_sarah_lynne_van_der_merwe",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's experience as a Senior Retail Team Leader closely matches the job requirements, especially in terms of organizational and multitasking skills. The previous role as Founder & Principal Consultant is a reasonable match for the ability to handle confidential information and client interactions, though it does not directly address secretarial, receptionist, or office administration experience. The educational background provides a foundation but does not specifically evidence the required Microsoft Office skills.",
+    "candidate": "professional_cv_sarah_lynne_van_der_merwe",
+    "type": "essential_requirements"
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "score": 6,
+    "strengths": [
+      "Has experience with Python, which aligns with the basic programming ability required.",
+      "Possesses a strong technical background with backend systems experience."
+    ],
+    "weaknesses": [
+      "Lacks experience in IT support, particularly in a school setting.",
+      "No experience with device management tools like Intune or with classroom technology.",
+      "Does not have demonstrated experience or interest in working with young people or teaching.",
+      "No explicit safeguarding training or experience mentioned."
+    ],
+    "summary": "Samantha has relevant technical skills, particularly in Python, but lacks experience in IT support and education, which are critical for the role.",
+    "candidate": "SamanthaOne",
+    "model": "phi4"
+  },
+  {
+    "score": 4,
+    "strengths": [
+      "Python experience which aligns with coding support for KS3",
+      "background in technology which is relevant for IT support"
+    ],
+    "weaknesses": [
+      "lack of education sector experience",
+      "no direct experience in IT support or classroom technology",
+      "no indication of enthusiasm for working with young people"
+    ],
+    "summary": "Candidate has relevant technical skills but lacks experience and enthusiasm for the education sector.",
+    "candidate": "SamanthaOne",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's IT support experience in a school setting is a clear match. Their working knowledge of Windows 11 and Microsoft 365, as well as their experience with Scratch, aligns closely with the requirements. Their programming skills in Python are not explicitly mentioned but can be considered a reasonable match given the context of working with young people. The candidate's enthusiasm for working with young people is evident. However, their understanding of safeguarding is unclear, and there is no evidence of their willingness to undergo an enhanced DBS check or barred list check.",
+    "candidate": "SamanthaOne",
+    "type": "essential_requirements"
+  }
+]

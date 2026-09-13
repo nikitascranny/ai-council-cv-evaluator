@@ -1,0 +1,79 @@
+[
+  {
+    "score": 5,
+    "strengths": [
+      "Customer engagement and service improvement experience",
+      "Leadership and team management skills"
+    ],
+    "weaknesses": [
+      "Lack of technical skills for computer repairs",
+      "No direct experience in a repair shop"
+    ],
+    "summary": "Sarah Lynne Van der Merwe demonstrates strong customer service and leadership skills but lacks the specific technical experience required for the computer repair role.",
+    "candidate": "professional_cv_sarah_lynne_van_der_merwe"
+  },
+  {
+    "score": 4,
+    "strengths": [
+      "Adaptable and practical problem-solving skills",
+      "Experience in customer service and complaint resolution"
+    ],
+    "weaknesses": [
+      "Lack of direct experience in computer repair or IT support",
+      "No evidence of technical skills relevant to the job"
+    ],
+    "summary": "Jason Muller shows adaptability and customer service skills but lacks direct experience and technical knowledge in computer repair, making him a weak fit for the position.",
+    "candidate": "professional_cv_jason_muller"
+  },
+  {
+    "score": 4,
+    "strengths": [
+      "Adaptability to diverse work environments",
+      "Customer service and communication skills"
+    ],
+    "weaknesses": [
+      "Lack of specific technical skills for PC/laptop repair",
+      "No mention of experience with older technology"
+    ],
+    "summary": "Kevin Jones demonstrates versatility and customer service skills but lacks the specific technical knowledge and experience with older technology required for the computer repair role.",
+    "candidate": "professional_cv_kevin_jones"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Can lift heavy boxes",
+      "Fast learner when motivated"
+    ],
+    "weaknesses": [
+      "Minimal relevant work experience",
+      "Objective does not align with the job requirements"
+    ],
+    "summary": "Jason Muller lacks the necessary practical computer repair skills and relevant experience to fit the job description, with an objective that is misaligned with the role's requirements.",
+    "candidate": "bad_cv_jason_muller"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "willing to work",
+      "can provide explanations for employment gaps"
+    ],
+    "weaknesses": [
+      "lack of relevant technical skills",
+      "inconsistent employment history",
+      "no demonstrated up-skilling potential"
+    ],
+    "summary": "Kevin Jones lacks the required technical skills and consistent work history, making him a weak fit for the position.",
+    "candidate": "bad_cv_kevin_jones"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong in self-promotion and branding initiatives"
+    ],
+    "weaknesses": [
+      "Lacks technical skills, relevant work experience, and practical problem-solving abilities"
+    ],
+    "summary": "Sarah Lynne Van der Merwe is not a suitable candidate for the computer repair position as she lacks the necessary technical skills and practical experience.",
+    "candidate": "bad_cv_sarah_lynne_van_der_merwe"
+  }
+]

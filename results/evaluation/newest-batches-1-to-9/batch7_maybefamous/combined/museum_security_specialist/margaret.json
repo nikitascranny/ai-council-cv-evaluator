@@ -1,0 +1,37 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Demonstrates strong technical skills in software engineering with experience in mobile app development.",
+      "Has a track record of improving product quality and user experience."
+    ],
+    "weaknesses": [
+      "Lacks direct experience in security roles or museum/gallery environments.",
+      "No evidence of experience with CCTV, intruder alarm, or access-control systems.",
+      "No physical or security-related skills demonstrated, such as patrolling or incident response.",
+      "Lacks necessary security licenses, such as a SIA Door Supervisor or Security Guarding license."
+    ],
+    "summary": "Margaret Hamilton has relevant technical experience but lacks the specific security and operational skills required for the Museum Security Specialist role.",
+    "candidate": "Margaret",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong software development background",
+      "Experience with user interface design"
+    ],
+    "weaknesses": [
+      "Lack of experience in security roles",
+      "No relevant certifications or training in security"
+    ],
+    "summary": "Margaret Hamilton's background in software engineering does not align with the required security expertise for the position.",
+    "candidate": "Margaret",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's experience in software engineering and development is relevant but does not meet the specific security role requirements. Their coursework and certifications in mobile application development and Flutter are a reasonable close match for the technical skills required, but they lack the specified experience in security roles and the necessary licensing. The ability to work flexible shifts could be transferable.",
+    "candidate": "Margaret",
+    "type": "essential_requirements"
+  }
+]

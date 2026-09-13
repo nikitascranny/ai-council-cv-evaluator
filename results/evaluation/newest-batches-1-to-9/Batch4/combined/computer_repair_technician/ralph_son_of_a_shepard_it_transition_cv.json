@@ -1,0 +1,41 @@
+[
+  {
+    "score": 7,
+    "strengths": [
+      "The candidate has extensive experience in methodical troubleshooting, which aligns well with diagnosing and fixing everyday computer problems.",
+      "The candidate has demonstrated the ability to work independently and manage priorities, crucial for a role requiring self-direction and problem-solving.",
+      "Their experience with asset upkeep and minor repairs is relevant to performing RAM and SSD upgrades, screen replacements, and other maintenance tasks.",
+      "The candidate has a strong focus on accurate record keeping, which is important for maintaining a notebook for job tracking."
+    ],
+    "weaknesses": [
+      "Lack of formal IT qualifications or experience specifically in PC/laptop repair, though practical skills are demonstrated.",
+      "No direct experience with customer service or explaining technical issues to non-technical customers, which is essential for the role.",
+      "No specific experience with common issues such as Windows updates, virus clean-ups, or data recovery, although there is potential for learning.",
+      "No experience with local knowledge of Tillingford, though this could be mitigated with reliable transport."
+    ],
+    "summary": "The candidate's experience in troubleshooting and independent work aligns well with the role's requirements, though additional customer service and specific IT repair experience would enhance their fit.",
+    "candidate": "Ralph_Son_of_a_Shepard_IT_Transition_CV",
+    "model": "phi4"
+  },
+  {
+    "score": 6,
+    "strengths": [
+      "Experience in first-line troubleshooting",
+      "Ability to maintain accurate logs and documentation",
+      "Demonstrated adaptability and continuous learning"
+    ],
+    "weaknesses": [
+      "Lack of formal IT qualifications",
+      "No direct experience in computer repair or IT support",
+      "Limited experience with customer interaction"
+    ],
+    "summary": "Ralph shows potential with his troubleshooting and documentation skills but lacks direct IT experience and formal qualifications.",
+    "candidate": "Ralph_Son_of_a_Shepard_IT_Transition_CV",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate demonstrates clear experience in basic equipment maintenance and troubleshooting, which can reasonably be considered equivalent to basic PC/laptop repair skills. The candidate's ability to explain things without jargon and to work under pressure aligns well with the requirement for friendly, patient, and reliable communication. However, the candidate's commute and availability for Saturday work are unclear from the CV, and there is no evidence of working in a retail or customer-facing environment.",
+    "candidate": "Ralph_Son_of_a_Shepard_IT_Transition_CV",
+    "type": "essential_requirements"
+  }
+]

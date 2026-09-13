@@ -1,0 +1,38 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Strong technical skills in distributed systems, programming languages, and system design.",
+      "Proven leadership experience in managing teams and delivering complex projects.",
+      "Strong track record of achieving technical objectives and reducing system downtime."
+    ],
+    "weaknesses": [
+      "Lack of experience in educational settings and working with young people.",
+      "No evidence of skills in IT support, device management, or classroom technology support.",
+      "Demonstrated interpersonal issues, including rudeness and difficulty collaborating with others.",
+      "Insufficient up-skilling potential for roles focused on teaching or mentoring young students."
+    ],
+    "summary": "While Victoria Sterling has strong technical and leadership skills, her lack of experience in educational settings, poor interpersonal skills, and absence of relevant IT support experience make her a poor fit for the hybrid IT technician and coding enrichment lead role at St Aldhelm's Community School.",
+    "candidate": "VictoriaSterlingSilver",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong technical background",
+      "Experience in system design and architecture"
+    ],
+    "weaknesses": [
+      "Lacks relevant IT support and education sector experience",
+      "Unsuitable behavior during interview"
+    ],
+    "summary": "Despite strong technical skills, the candidate's lack of relevant experience in IT support and education, along with unsuitable behavior, makes them a poor fit for the role.",
+    "candidate": "VictoriaSterlingSilver",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's experience and skills in software engineering and architecture clearly meet the technical requirements, including working knowledge of relevant technologies and programming. Their enthusiasm for working with technology is evident from their educational background and professional achievements. However, there is no evidence of practical IT support experience or working with young people, which are essential requirements.",
+    "candidate": "VictoriaSterlingSilver",
+    "type": "essential_requirements"
+  }
+]

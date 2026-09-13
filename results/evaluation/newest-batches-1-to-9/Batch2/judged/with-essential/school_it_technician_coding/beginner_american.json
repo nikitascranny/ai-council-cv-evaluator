@@ -1,0 +1,8 @@
+{
+  "candidate": "beginner_american",
+  "final_score": 5,
+  "score_rationale": "The candidate's teaching assistant experience and strong programming skills (Python, object-oriented) provide a good fit for the coding enrichment side of the role, particularly supporting students and debugging. However, the lack of direct experience with school IT support, device management (Intune), network basics, and no mention of safeguarding/DBS checks creates significant gaps that need to be addressed during interviews.",
+  "key_strengths": "Teaching Assistant experience (demonstrating ability to work with young people), strong Python programming skills (relevant for debugging and supporting GCSE students), experience with object-oriented programming concepts (relevant for teaching Python).",
+  "key_weaknesses": "Lack of direct experience in school IT support roles or managing educational IT infrastructure, no specific experience listed with Intune, device imaging/deployment, or Active Directory/Entra ID management, lack of experience or mention with network basics (VLANs, Wi-Fi troubleshooting).",
+  "final_evaluation": "The candidate has a reasonable potential for the coding enrichment responsibilities due to their teaching experience and Python skills, but the lack of direct educational IT infrastructure support experience is a major concern. Their enthusiasm for working with young people is evident, but they need to demonstrate or acquire the specific technical skills for device management, network troubleshooting, and Active Directory during the interview process. The safeguarding awareness and willingness to undergo DBS checks must be confirmed."
+}

@@ -1,0 +1,39 @@
+[
+  {
+    "score": 4,
+    "strengths": [
+      "Strong experience in software engineering and mobile app development.",
+      "Demonstrated ability to improve product quality and user experience.",
+      "Collaborative experience with design teams."
+    ],
+    "weaknesses": [
+      "Lacks experience in web development, specifically with React/TypeScript and backend languages like Node.js or .NET.",
+      "No proven leadership or team management experience.",
+      "Limited exposure to cloud infrastructure and CI/CD practices.",
+      "No experience with agile methodologies in a team context."
+    ],
+    "summary": "While Margaret Hamilton has relevant software engineering experience, her background is primarily in mobile app development, lacking the required web development skills and leadership experience for this Engineering Manager role.",
+    "candidate": "Margaret",
+    "model": "phi4"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "mobile app development experience",
+      "improved app store ratings"
+    ],
+    "weaknesses": [
+      "lack of web development experience",
+      "insufficient managerial experience",
+      "no significant technical change leadership"
+    ],
+    "summary": "Margaret Hamilton lacks the required web development and managerial experience, and has not led significant technical changes, making her a poor fit for the Engineering Manager role.",
+    "candidate": "Margaret",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate clearly meets the requirement for 5+ years of web/software engineering experience and has a solid educational background in software engineering. The experience in developing cross-platform apps and improving app ratings is a reasonable match for a strong background in modern web stacks. However, the candidate does not clearly meet the requirement for line managing engineers or leading significant technical changes. Agile practices coursework and certifications in Flutter and Android development indicate potential for running agile delivery but do not definitively prove experience with distributed or hybrid teams.",
+    "candidate": "Margaret",
+    "type": "essential_requirements"
+  }
+]

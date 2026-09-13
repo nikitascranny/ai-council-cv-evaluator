@@ -1,0 +1,37 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Experience in leading and managing a team in high-stress, challenging environments.",
+      "Technical skills in Python and Java, which are relevant to web development."
+    ],
+    "weaknesses": [
+      "Lack of experience in web development and modern web stacks such as React/TypeScript and Node.js.",
+      "Absence of formal leadership experience in software engineering or professional settings.",
+      "No experience with cloud infrastructure, CI/CD, or architectural reviews relevant to the role."
+    ],
+    "summary": "The candidate has leadership and technical skills but lacks specific experience and knowledge in web development and professional software engineering environments required for the role.",
+    "candidate": "Li_ExtraSpecial",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "领导力",
+      "问题解决能力"
+    ],
+    "weaknesses": [
+      "缺乏专业软件工程经验",
+      "不满足职位所需的技术栈要求",
+      "无相关行业经验"
+    ],
+    "summary": "尽管该候选人展示出了领导力和解决问题的能力，但其背景与职位需求差距较大，特别是在专业软件工程经验和所要求的技术栈方面。",
+    "candidate": "Li_ExtraSpecial",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate clearly meets the requirement for 5+ years of professional web/software engineering experience with at least 2 years of line management. Their background in modern web stacks (React/TypeScript) and backend languages aligns well with the job description. They also demonstrate a solid understanding of CI/CD, cloud infrastructure, and automated testing. However, the experience leading teams through significant technical change and running agile delivery with distributed or hybrid teams is less clear from the CV.",
+    "candidate": "Li_ExtraSpecial",
+    "type": "essential_requirements"
+  }
+]

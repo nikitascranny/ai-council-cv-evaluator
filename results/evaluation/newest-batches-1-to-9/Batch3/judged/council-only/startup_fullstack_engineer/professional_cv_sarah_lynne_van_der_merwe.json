@@ -1,0 +1,8 @@
+{
+  "candidate": "professional_cv_sarah_lynne_van_der_merwe",
+  "final_score": 2,
+  "score_rationale": "The candidate's CV shows no experience or skills matching the job's essential technical requirements, such as TypeScript/React, backend languages (Go), or distributed systems.",
+  "key_strengths": "Business development experience and customer experience knowledge",
+  "key_weaknesses": "Lack of technical experience in full-stack development, backend languages, distributed systems, and energy sector technologies",
+  "final_evaluation": "The candidate does not meet the essential technical requirements for this role, despite having strengths in business development. Their lack of relevant technical experience and domain knowledge makes them unsuitable for a hands-on engineering position."
+}

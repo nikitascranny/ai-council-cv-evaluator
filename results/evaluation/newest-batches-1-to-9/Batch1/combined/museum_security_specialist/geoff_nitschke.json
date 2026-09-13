@@ -1,0 +1,37 @@
+[
+  {
+    "score": 4,
+    "strengths": [
+      "Strong analytical and research skills demonstrated through extensive experience in UX research and design.",
+      "Ability to lead and influence cross-functional teams, which is valuable for supervising security operations."
+    ],
+    "weaknesses": [
+      "Lacks direct experience in security roles or working in a museum or similar setting.",
+      "No evidence of working knowledge of CCTV, intruder alarm, or access-control systems.",
+      "No prior experience in handling physical security tasks or managing high-risk situations.",
+      "No relevant certification such as SIA Door Supervisor or Security Guarding licence."
+    ],
+    "summary": "The candidate has strong research and leadership skills but lacks the specific experience and technical qualifications needed for a Museum Security Specialist role.",
+    "candidate": "GEOFF NITSCHKE",
+    "model": "phi4"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Excellent communication and reporting skills",
+      "Experience in facilitation and training"
+    ],
+    "weaknesses": [
+      "Lack of direct security or museum experience",
+      "No relevant SIA license or security system knowledge"
+    ],
+    "summary": "Candidate has strong communication skills and facilitation experience but lacks the essential security experience and qualifications required for the role.",
+    "candidate": "GEOFF NITSCHKE",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate does not clearly meet the essential requirement of having minimum 3 years' experience in a security role. However, their experience in UX research and design demonstrates strong written and verbal communication skills, as well as the ability to conduct research and write actionable reports, which are closely related to the requirement for writing incident reports. Their physical ability to patrol large sites is unclear from the provided information, and there is no evidence of relevant security certifications or knowledge of CCTV, intruder alarm, and access control systems.",
+    "candidate": "GEOFF NITSCHKE",
+    "type": "essential_requirements"
+  }
+]

@@ -1,0 +1,39 @@
+[
+  {
+    "score": 4,
+    "strengths": [
+      "Excellent physical fitness and ability to work in remote, difficult environments.",
+      "Experience in tracking and map-drawing, which is relevant to coordinating hunts and recovery.",
+      "Strong problem-solving skills demonstrated through innovative solutions in high-stress environments.",
+      "Basic medical knowledge, which is beneficial for maintaining safety."
+    ],
+    "weaknesses": [
+      "Lack of formal experience in groundskeeping, gamekeeping, or countryside management.",
+      "No prior experience with bloodhounds or similar tracking animals.",
+      "No experience in managing or coordinating event-like activities or immersive experiences.",
+      "No experience with firearms or airsoft equipment, which are part of the job responsibilities."
+    ],
+    "summary": "The candidate possesses strong physical fitness, tracking skills, and problem-solving abilities, but lacks specific experience in groundskeeping, animal handling, and event coordination required for the job.",
+    "candidate": "Li_ExtraSpecial",
+    "model": "phi4"
+  },
+  {
+    "score": 6,
+    "strengths": [
+      "出色的野外生存技能",
+      "在高压环境下工作的能力"
+    ],
+    "weaknesses": [
+      "缺乏传统意义上的园林管理经验",
+      "没有提到与猎犬或追踪工作相关的经验"
+    ],
+    "summary": "候选人具备强大的生存技能和适应高压环境的能力，但缺乏直接相关的传统园林管理和追踪经验。",
+    "candidate": "Li_ExtraSpecial",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate demonstrates a reasonable match with the required groundskeeping experience, excellent physical fitness, and a background in pursuit-oriented activities. However, the clarity of the candidate's ability to work alone in remote areas is unclear, and there is no evidence of the absolute discretion required by the job.",
+    "candidate": "Li_ExtraSpecial",
+    "type": "essential_requirements"
+  }
+]

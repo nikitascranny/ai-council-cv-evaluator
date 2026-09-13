@@ -1,0 +1,37 @@
+[
+  {
+    "score": 5,
+    "strengths": [
+      "Demonstrates adaptability and resilience across various industries.",
+      "Has experience in customer service and communication, which are valuable for liaison roles."
+    ],
+    "weaknesses": [
+      "Lacks direct experience in security roles or within museum/galleries.",
+      "No specific experience with CCTV, intruder alarm, or access-control systems.",
+      "No evidence of physical fitness for extended patrols or ability to work under pressure in a security context.",
+      "No relevant certifications such as SIA Door Supervisor or Security Guarding licence."
+    ],
+    "summary": "While Kevin Jones shows adaptability and communication skills, he lacks direct experience and qualifications in museum security.",
+    "candidate": "professional_cv_kevin_jones",
+    "model": "phi4"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Versatile and adaptable with experience in various operational roles",
+      "Strong customer service and communication skills"
+    ],
+    "weaknesses": [
+      "Lack of relevant security experience in museums or heritage sites",
+      "Does not hold necessary SIA license"
+    ],
+    "summary": "Kevin Jones has a diverse background in operations and customer service but lacks the specific security experience and certifications required for the Museum Security Specialist role.",
+    "candidate": "professional_cv_kevin_jones",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's relevant experience in customer service and adaptability to different industries provides a reasonable match for the security role, but does not clearly demonstrate the required experience in a security role. The candidate's strong communication skills, especially in handling customer interactions, are a close match for the verbal and written communication skills needed. The physical ability to work extended shifts is unclear, and the candidate does not provide evidence of a security-related license or knowledge of security systems.",
+    "candidate": "professional_cv_kevin_jones",
+    "type": "essential_requirements"
+  }
+]

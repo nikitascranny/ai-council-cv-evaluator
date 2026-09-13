@@ -1,0 +1,37 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Demonstrates reliability and punctuality through work experience.",
+      "Possesses basic numeracy skills relevant for catch tallies and grading."
+    ],
+    "weaknesses": [
+      "Lacks physical fitness and experience with manual work in all weathers.",
+      "No sea experience or sea legs, which is strongly preferred.",
+      "No history of working on boats or handling fishing equipment.",
+      "Unfamiliar with vessel safety procedures and emergency drills."
+    ],
+    "summary": "The candidate has reliability and basic numeracy skills but lacks the necessary physical fitness, sea experience, and specific skills required for the deckhand role.",
+    "candidate": "PriyaPicture",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "clean UI work",
+      "collaboration with cross-functional teams"
+    ],
+    "weaknesses": [
+      "no relevant experience in fishing or maritime work",
+      "no physical fitness requirements met for the job"
+    ],
+    "summary": "Priya Chetty is a skilled software engineer but lacks the necessary maritime experience and physical fitness required for the boat hand position.",
+    "candidate": "PriyaPicture",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's background in software engineering and technical skills do not directly align with the job requirements. However, their coursework in web development and familiarity with programming languages could be considered a reasonable close match for the basic numeracy and technical skills needed for catch tallies and grading. The candidate lacks evidence of sea experience or physical fitness for heavy, repetitive manual work, which are clearly not met. Their willingness to work early starts and long days is noted but not directly substantiated by the CV.",
+    "candidate": "PriyaPicture",
+    "type": "essential_requirements"
+  }
+]

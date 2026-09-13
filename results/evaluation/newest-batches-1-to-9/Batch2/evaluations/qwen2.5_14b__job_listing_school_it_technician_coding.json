@@ -1,0 +1,122 @@
+[
+  {
+    "score": 7,
+    "strengths": [
+      "strong programming skills",
+      "experience with web development"
+    ],
+    "weaknesses": [
+      "lack of IT support experience",
+      "no direct experience in an educational setting"
+    ],
+    "summary": "Naledi Molefe is a skilled developer but lacks direct IT support and educational experience, which are essential for the role.",
+    "candidate": "beginner_sa"
+  },
+  {
+    "score": 6,
+    "strengths": [
+      "Python and JavaScript experience",
+      "Experience in building web applications and APIs"
+    ],
+    "weaknesses": [
+      "No direct experience in education or IT support",
+      "Limited experience with Microsoft products"
+    ],
+    "summary": "Lin Xiaoyu has relevant technical skills and experience but lacks direct experience in the education sector and IT support, which are critical for the role.",
+    "candidate": "beginner_chinese"
+  },
+  {
+    "score": 6,
+    "strengths": [
+      "Strong programming skills with proficiency in Python, which aligns with the coding aspect of the role",
+      "Experience in API design and service management could be beneficial for maintaining the school's website and VLE"
+    ],
+    "weaknesses": [
+      "Lack of experience in an educational setting or with educational technology",
+      "No direct experience with Windows 11, Microsoft 365, or Intune"
+    ],
+    "summary": "Kagiso Ndlovu possesses strong technical skills but lacks direct experience in educational technology or a school setting.",
+    "candidate": "middle_sa"
+  },
+  {
+    "score": 5,
+    "strengths": [
+      "Strong technical skills in Python and JavaScript",
+      "Experience with web development and REST APIs"
+    ],
+    "weaknesses": [
+      "Lacks direct experience in an educational setting",
+      "No specific experience with school IT support or classroom technology"
+    ],
+    "summary": "Jordan demonstrates strong technical abilities but lacks direct experience in educational IT support, which is crucial for this role.",
+    "candidate": "beginner_american"
+  },
+  {
+    "score": 4,
+    "strengths": [
+      "Strong technical background in backend and frontend development",
+      "Experience in API design and mentoring"
+    ],
+    "weaknesses": [
+      "Lacks direct experience in education or IT support",
+      "No clear evidence of coding enrichment activities or working with young people"
+    ],
+    "summary": "Priya Nair has a strong technical background but lacks direct experience in education or IT support roles, and there is no clear evidence of her involvement in coding enrichment activities or working with young people.",
+    "candidate": "intermediate_american"
+  },
+  {
+    "score": 4,
+    "strengths": [
+      "Strong technical background in IT and software development",
+      "Experience in mentoring and leadership"
+    ],
+    "weaknesses": [
+      "Lacks direct experience in an educational setting",
+      "Does not meet the basic programming requirement for KS3 support"
+    ],
+    "summary": "The candidate has a robust technical background but lacks direct experience in education and the specific programming requirements for the role.",
+    "candidate": "senior_american"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "strong backend and frontend development skills",
+      "experience with various tools and technologies"
+    ],
+    "weaknesses": [
+      "lacks direct IT support experience",
+      "no experience working in an educational setting",
+      "missing key qualifications such as Python for educational use and understanding of classroom AV systems"
+    ],
+    "summary": "The candidate has strong technical skills but lacks the direct experience and educational qualifications required for the IT Technician & Coding Enrichment Lead role.",
+    "candidate": "middle_chinese"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Extensive technical skills in distributed systems and platform engineering",
+      "Proven track record in system architecture and reliability"
+    ],
+    "weaknesses": [
+      "Lacks direct experience in an educational setting",
+      "No evidence of coding experience with Scratch or Python at a beginner level",
+      "No experience with school IT infrastructure or management"
+    ],
+    "summary": "The candidate possesses strong technical skills but lacks direct experience in education and specific coding experience relevant to the role.",
+    "candidate": "senior_chinese"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Extensive technical background in software engineering and cloud platforms",
+      "Experience in system architecture and reliability"
+    ],
+    "weaknesses": [
+      "Lacks direct experience in educational IT support",
+      "No evidence of working with young people or coding education",
+      "No basic IT support or Active Directory experience"
+    ],
+    "summary": "Zanele Madondo's extensive technical background does not align well with the specific educational IT and coding support requirements of the position.",
+    "candidate": "senior_sa"
+  }
+]

@@ -1,0 +1,39 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Demonstrates a proactive approach to career with founding a consultancy.",
+      "Shows willingness to engage in customer-facing roles, such as leading customer happiness initiatives."
+    ],
+    "weaknesses": [
+      "Lacks relevant secretarial or administrative experience.",
+      "Does not demonstrate proficiency in Microsoft Office applications as required.",
+      "No evidence of organizational skills necessary for managing diaries and correspondence.",
+      "Absence of experience in handling confidential financial or personal information.",
+      "Overemphasis on buzzwords without substantive evidence of applicable skills."
+    ],
+    "summary": "The candidate lacks relevant experience and necessary skills for the administrative role, with limited evidence of proficiency in required software and organizational tasks.",
+    "candidate": "bad_cv_sarah_lynne_van_der_merwe",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Motivates others through social media",
+      "Has a vision for branding"
+    ],
+    "weaknesses": [
+      "Lacks relevant work experience",
+      "No concrete achievements in previous roles",
+      "Inaccurate and irrelevant skill set"
+    ],
+    "summary": "Candidate does not meet the essential requirements for the position and has no evidence of relevant experience or skills.",
+    "candidate": "bad_cv_sarah_lynne_van_der_merwe",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's experience as a Senior Executive Team Leader is a reasonable/close match for secretarial or office administration roles, particularly in terms of multitasking and organizational skills. The exact typing speed, Microsoft Office proficiency, and handling of confidential information are unclear from the CV. The attitude and customer service aspects are not clearly demonstrated.",
+    "candidate": "bad_cv_sarah_lynne_van_der_merwe",
+    "type": "essential_requirements"
+  }
+]

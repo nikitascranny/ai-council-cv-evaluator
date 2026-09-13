@@ -1,0 +1,37 @@
+[
+  {
+    "score": 8,
+    "strengths": [
+      "The candidate has demonstrated extensive experience in strategic partnership management and program implementation, aligning well with roles requiring these skills.",
+      "Strong background in project management, including the alignment of project plans and relationship management, which are critical for high-level management positions.",
+      "Extensive skills in both hard (IT Project Management, JavaScript, Python) and soft skills (Account Management, Agile Project Management) that are highly relevant to the job description.",
+      "Proven track record in organizing and managing large-scale events, such as the annual continental innovation conference, showcasing leadership and organizational capabilities."
+    ],
+    "weaknesses": [
+      "Limited direct experience in certain specified job areas, depending on the exact role requirements, though overall experience is broad.",
+      "Specific evidence of up-skilling in recent years is not detailed, though ongoing education is noted."
+    ],
+    "summary": "The candidate is highly suitable for roles requiring strategic partnership management and project leadership, with extensive relevant experience and a strong skill set.",
+    "candidate": "LERATO MUNCHE",
+    "model": "phi4"
+  },
+  {
+    "score": 8,
+    "strengths": [
+      "strong background in project management and strategic partnerships",
+      "various certifications and experiences in IT and digital governance"
+    ],
+    "weaknesses": [
+      "limited direct experience in software development",
+      "no formal education background in IT or software engineering"
+    ],
+    "summary": "The candidate demonstrates significant experience in strategic partnerships and project management, complemented by relevant certifications and a keen interest in digital governance, yet lacks direct experience in software development.",
+    "candidate": "LERATO MUNCHE",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate demonstrates strong alignment with the job's essential requirements, particularly in project management, stakeholder engagement, and strategic partnership development. Alignment is clear in roles such as Project Manager, Global Partnerships Manager, and various volunteer ambassador roles. The candidate's experience in managing budgets, contracts, and cross-functional teams is particularly well-suited to the job. While there are some roles (e.g., Host Site Liaison) that provide relevant experience but are not directly as strongly aligned, the overall profile is a reasonable match.",
+    "candidate": "LERATO MUNCHE",
+    "type": "essential_requirements"
+  }
+]

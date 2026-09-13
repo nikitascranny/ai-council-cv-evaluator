@@ -1,0 +1,55 @@
+[
+  {
+    "score": 5,
+    "strengths": [
+      "4+ years of experience in software development",
+      "proficiency in Python and Django"
+    ],
+    "weaknesses": [
+      "lacks experience with TypeScript/React and Go",
+      "no experience with event-driven architectures or time-series data"
+    ],
+    "summary": "Daniel has relevant experience but lacks the specific skills and experience required for the role at Pulsegrid.",
+    "candidate": "Daniel_common"
+  },
+  {
+    "score": 5,
+    "strengths": [
+      "4+ years of software engineering experience",
+      "Comfortable working across the stack"
+    ],
+    "weaknesses": [
+      "Limited experience with TypeScript/React and Go",
+      "No experience with event-driven architectures or time-series data"
+    ],
+    "summary": "Linus Torvalds has relevant software engineering experience but lacks the specific technical skills and domain knowledge required for the full-stack engineer role at Pulsegrid.",
+    "candidate": "Linus"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "mobile app development experience",
+      "ability to improve user experience"
+    ],
+    "weaknesses": [
+      "lack of full-stack experience",
+      "no direct experience with TypeScript/React or Go",
+      "limited experience with distributed systems"
+    ],
+    "summary": "Lauren has strong mobile app development skills but lacks the full-stack and backend experience required for the role.",
+    "candidate": "Lauren_common"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "4 years of software engineering experience",
+      "experience with mobile app development using Flutter"
+    ],
+    "weaknesses": [
+      "lack of full-stack development experience",
+      "no experience with Go, Kafka, TimescaleDB, or Redis"
+    ],
+    "summary": "Margaret Hamilton has mobile app development experience but lacks the full-stack and backend experience required for the role.",
+    "candidate": "Margaret"
+  }
+]

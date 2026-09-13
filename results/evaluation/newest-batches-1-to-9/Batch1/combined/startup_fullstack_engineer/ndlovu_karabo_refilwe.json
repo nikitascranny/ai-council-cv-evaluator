@@ -1,0 +1,36 @@
+[
+  {
+    "score": 4,
+    "strengths": [
+      "Strong background in records management and compliance.",
+      "Experience with archival processing and data management systems."
+    ],
+    "weaknesses": [
+      "Lack of experience with full-stack software development technologies like React, TypeScript, and Go.",
+      "No demonstrated experience with distributed systems or event-driven architectures.",
+      "Limited exposure to the energy sector and real-time data processing."
+    ],
+    "summary": "While the candidate has a strong background in records management and compliance, they lack the specific technical skills and experience in full-stack development and distributed systems required for the founding full-stack engineer role at Pulsegrid.",
+    "candidate": "NDLOVU KARABO REFILWE",
+    "model": "phi4"
+  },
+  {
+    "score": 4,
+    "strengths": [
+      "Excellent organizational and administrative skills",
+      "Experience in compliance and records management"
+    ],
+    "weaknesses": [
+      "Lack of experience in full-stack engineering or software development",
+      "No experience with technologies mentioned in the job description (React, TypeScript, Go, Kafka, TimescaleDB, Redis)"
+    ],
+    "summary": "The candidate has strong administrative and compliance background but lacks technical skills and experience relevant to the full-stack engineering role.",
+    "candidate": "NDLOVU KARABO REFILWE",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's work experience in records management and archives aligns closely with the production software shipping requirement, as these roles involve handling and organizing information systems. The experience in records and archives management provides a reasonable match for the distributed systems fundamentals and communication skills required. However, the candidate lacks direct experience in shipping production software, particularly with TypeScript/React or a backend language, which are key requirements for the position.",
+    "candidate": "NDLOVU KARABO REFILWE",
+    "type": "essential_requirements"
+  }
+]

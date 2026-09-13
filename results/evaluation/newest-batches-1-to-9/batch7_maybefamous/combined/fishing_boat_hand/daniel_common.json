@@ -1,0 +1,36 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Good physical fitness implied by hobbies such as hiking",
+      "Punctuality and reliability as evidenced by work history",
+      "Comfortable with learning and adapting to new skills"
+    ],
+    "weaknesses": [
+      "No experience with fishing or marine activities",
+      "Lacks sea legs or comfort with working on boats",
+      "No experience with physical, manual labor in marine environments",
+      "No STCW Basic Safety Training or related maritime qualifications"
+    ],
+    "summary": "While the candidate is adaptable and has a strong work ethic, they lack the essential maritime experience and physical work background required for the boat hand position.",
+    "candidate": "Daniel_common",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Comfortable with manual tasks due to coding and testing"
+    ],
+    "weaknesses": [
+      "No experience in fishing, marine safety, or relevant physical work"
+    ],
+    "summary": "Daniel Rossouw lacks the necessary experience and skills for the Boat Hand position at Kestrel Bay Fishing Co., with his background being in software engineering.",
+    "candidate": "Daniel_common",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's software engineering experience and relevant coursework in Information Systems demonstrate basic numeracy and a capacity for technical tasks, which may be transferable to the catch tallies and grading requirement. However, there is no evidence of physical fitness for heavy manual work, sea experience, or willingness to work early starts and long days. The candidate's certifications are not directly relevant to the job requirements.",
+    "candidate": "Daniel_common",
+    "type": "essential_requirements"
+  }
+]

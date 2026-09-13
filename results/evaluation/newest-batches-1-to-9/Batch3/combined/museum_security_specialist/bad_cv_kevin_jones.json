@@ -1,0 +1,40 @@
+[
+  {
+    "score": 2,
+    "strengths": [
+      "Ability to work independently",
+      "Willingness to learn"
+    ],
+    "weaknesses": [
+      "Lack of relevant security experience",
+      "Unreliable work history",
+      "Inflexible with shift requirements",
+      "Limited technical skills related to security systems",
+      "No evidence of physical capability for patrols",
+      "No security-related certifications"
+    ],
+    "summary": "The candidate lacks relevant experience, technical skills, and certifications in security, and has an unreliable work history with inflexible shift preferences.",
+    "candidate": "bad_cv_kevin_jones",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "willingness to work",
+      "ability to work independently"
+    ],
+    "weaknesses": [
+      "lack of relevant work experience",
+      "pattern of job instability",
+      "poor attitude"
+    ],
+    "summary": "The candidate lacks the essential experience and demonstrates a pattern of job instability and a negative attitude, making them unsuitable for the Museum Security Specialist position.",
+    "candidate": "bad_cv_kevin_jones",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's employment history shows a mix of roles, but there is no clear indication of 3 years' experience in a security role, nor of a relevant license. The candidate has a high school diploma, which is a basic requirement, but specific technical knowledge of CCTV, alarms, and access control systems is unclear. Strong communication skills are evident, but there is no specific mention of writing incident reports. The physical and flexibility requirements are not directly addressed.",
+    "candidate": "bad_cv_kevin_jones",
+    "type": "essential_requirements"
+  }
+]

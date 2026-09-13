@@ -1,0 +1,39 @@
+[
+  {
+    "score": 6,
+    "strengths": [
+      "Extensive experience in livestock handling and welfare, which is relevant for managing 'quarry' in the Blackmoor Hunt.",
+      "Strong record-keeping skills, aligning with the need to maintain discreet and accurate records.",
+      "Ability to work independently in remote and demanding rural conditions, similar to the requirements of the job."
+    ],
+    "weaknesses": [
+      "Lack of direct experience in estate management, groundskeeping, or countryside management.",
+      "No specific experience with tracking, search & rescue, or military-related pursuit activities.",
+      "No demonstrated experience with bloodhounds or similar tracking animals.",
+      "Absence of experience in immersive theatre, airsoft event marshalling, or private security work."
+    ],
+    "summary": "Ralph has relevant skills in livestock handling and independent rural work, but lacks specific experience in groundskeeping, tracking, and the unique aspects of the Blackmoor Hunt.",
+    "candidate": "Ralph_Son_of_a_Shepard_Farm_CV",
+    "model": "phi4"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Strong livestock care and welfare skills",
+      "Experience in independent field work and record keeping"
+    ],
+    "weaknesses": [
+      "No experience in groundskeeping or estate management",
+      "Lack of background in tracking, search & rescue or military"
+    ],
+    "summary": "Candidate has strong background in livestock care but lacks necessary experience in estate management and tracking.",
+    "candidate": "Ralph_Son_of_a_Shepard_Farm_CV",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "",
+    "error": "PARSE ERROR",
+    "candidate": "Ralph_Son_of_a_Shepard_Farm_CV",
+    "type": "essential_requirements"
+  }
+]

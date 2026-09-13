@@ -1,0 +1,40 @@
+[
+  {
+    "score": 5,
+    "strengths": [
+      "Has experience with JavaScript and TypeScript, relevant for the frontend requirements.",
+      "Familiarity with backend technologies like Node.js and Express, which are similar to Go.",
+      "Proven ability to work in agile environments, participate in sprint planning, and perform code reviews.",
+      "Demonstrated proficiency in building full-stack applications, which is essential for the role."
+    ],
+    "weaknesses": [
+      "Lacks direct experience with Go, which is a preferred language for the backend services.",
+      "No demonstrated experience with Kafka, TimescaleDB, or Redis, critical for the data platform.",
+      "Limited operational experience with production systems, which is essential for observability and incident response.",
+      "No experience with event-driven architectures, which is desirable for the role."
+    ],
+    "summary": "The candidate has relevant foundational skills and experience in full-stack development, but lacks direct experience with key technologies and operational responsibilities required for the role.",
+    "candidate": "beginner_chinese",
+    "model": "phi4"
+  },
+  {
+    "score": 4,
+    "strengths": [
+      "Basic proficiency in TypeScript, JavaScript, and Python",
+      "Experience in building web applications and APIs"
+    ],
+    "weaknesses": [
+      "Lacks extensive production software experience",
+      "No experience with Go, Kafka, or TimescaleDB",
+      "Limited exposure to distributed systems and event-driven architectures"
+    ],
+    "summary": "Lin Xiaoyu demonstrates foundational technical skills but lacks the depth of experience and specific skills required for a founding full-stack engineer role at Pulsegrid.",
+    "candidate": "beginner_chinese",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate clearly meets the requirement for 4+ years of experience shipping production software and has strong experience in TypeScript/React. Their background in distributed systems fundamentals and ability to communicate complex technical trade-offs effectively are reasonable matches. However, the experience with operating services in production and the specific backend language preferences are unclear from the CV.",
+    "candidate": "beginner_chinese",
+    "type": "essential_requirements"
+  }
+]

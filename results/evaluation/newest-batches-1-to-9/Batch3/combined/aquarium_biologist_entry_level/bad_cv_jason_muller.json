@@ -1,0 +1,38 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Has experience with staff management, which could translate to teamwork and leadership skills",
+      "Demonstrates the ability to learn quickly when motivated"
+    ],
+    "weaknesses": [
+      "Lacks relevant education in Marine Biology, Zoology, Aquatic Biology, or related life sciences",
+      "No evidence of understanding water chemistry or nitrogen cycles",
+      "No experience with aquatic animal husbandry or life support systems",
+      "No relevant work experience in animal care or aquarium settings"
+    ],
+    "summary": "The candidate has some transferable skills but lacks the necessary education, experience, and knowledge in aquatic biology and husbandry required for the role.",
+    "candidate": "bad_cv_jason_muller",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Can lift heavy boxes",
+      "Fast learner when motivated"
+    ],
+    "weaknesses": [
+      "Lack of relevant work experience",
+      "Objective does not align with the job role",
+      "No formal education or training in marine biology or related field"
+    ],
+    "summary": "The candidate does not meet the essential requirements of the position and demonstrates a lack of alignment with the job description's goals and responsibilities.",
+    "candidate": "bad_cv_jason_muller",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's background does not clearly meet the essential requirement for a degree in Marine Biology, Zoology, Aquatic Biology, or a related life science. Their experience as an Assistant Manager could be a reasonable match for the observational skills and attention to detail needed, and they may have developed some relevant skills from managing staff and dealing with difficult customers. However, their current role as a Crypto Entrepreneur does not demonstrate the necessary understanding of water chemistry and the nitrogen cycle in closed aquatic systems, nor does it suggest they are physically fit for the tasks required. Additionally, their right to work in the UK and ability to pass a background check are unclear from the provided information.",
+    "candidate": "bad_cv_jason_muller",
+    "type": "essential_requirements"
+  }
+]

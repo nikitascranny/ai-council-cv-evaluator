@@ -1,0 +1,37 @@
+[
+  {
+    "score": 6,
+    "strengths": [
+      "Has experience in mobile app development which demonstrates a strong technical background and understanding of software engineering principles.",
+      "Possesses certifications in Google Associate Android Developer and Flutter & Dart, showing a willingness to learn and up-skill in relevant technologies.",
+      "Demonstrated ability to improve app performance and user experience, as evidenced by the improved app store rating."
+    ],
+    "weaknesses": [
+      "Lacks direct experience in IT support or device management, which is essential for the technician aspect of the role.",
+      "No experience with educational settings or working directly with young people, which is crucial for the coding enrichment lead aspect of the job.",
+      "Limited experience with Windows 11, Microsoft 365, and Intune, which are required skills for the role."
+    ],
+    "summary": "Margaret Hamilton has a strong technical background in software engineering and mobile app development, but lacks direct experience in IT support and educational settings, which are crucial for this hybrid role.",
+    "candidate": "Margaret",
+    "model": "phi4"
+  },
+  {
+    "score": 4,
+    "strengths": [
+      "Strong background in software development",
+      "Experience with cross-platform app development"
+    ],
+    "weaknesses": [
+      "Lack of IT support experience",
+      "No experience in an educational setting"
+    ],
+    "summary": "Margaret Hamilton has strong software engineering skills but lacks the necessary IT support and educational experience required for the role.",
+    "candidate": "Margaret",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's experience as a Software Engineer and Junior Developer, as well as their relevant coursework and certifications in software engineering, strongly meet the practical IT support and basic programming ability requirements. Their ability to fix bugs and improve user experience in apps can be seen as relevant to IT support. Their education and certifications show working knowledge of Windows 11 and Microsoft 365 through cross-platform app development using Flutter, which is a reasonable match. The CV does not clearly demonstrate enthusiasm for working with young people, nor does it mention any experience in safeguarding or school policies, making these requirements unclear from the CV. The candidate also does not mention undergoing an enhanced DBS check or barred list check, which is another unclear requirement.",
+    "candidate": "Margaret",
+    "type": "essential_requirements"
+  }
+]

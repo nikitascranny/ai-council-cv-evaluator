@@ -1,0 +1,17 @@
+[
+  {
+    "score": 7,
+    "strengths": [
+      "Has 4 years of experience as a full-stack engineer with relevant frontend (React) and backend (Node.js) skills.",
+      "Proven ability to improve performance and work closely with design teams, indicating strong communication and collaboration skills.",
+      "Demonstrates a commitment to continuous learning through certifications in relevant technologies."
+    ],
+    "weaknesses": [
+      "Lacks direct experience with Go, which is the preferred backend language for the role.",
+      "No specific experience with event-driven architectures like Kafka or TimescaleDB, which are crucial for the role.",
+      "Has not demonstrated experience with operating services in production, including metrics, tracing, and incident response."
+    ],
+    "summary": "Alex Turner has a solid foundation as a full-stack engineer with relevant experience and skills, but lacks specific experience with Go and event-driven architectures, which are critical for the role at Pulsegrid.",
+    "candidate": "Alex Turner"
+  }
+]

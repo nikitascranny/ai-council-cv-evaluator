@@ -1,0 +1,38 @@
+[
+  {
+    "score": 2,
+    "strengths": [
+      "Has leadership experience through roles such as Chief Vision Officer and Senior Executive Team Leader",
+      "Possesses an MBA which indicates some level of advanced education"
+    ],
+    "weaknesses": [
+      "Lacks technical experience relevant to web/software engineering",
+      "No evidence of experience in managing technical teams or leading significant technical change",
+      "No specific experience with the required technical stack (React/TypeScript, Node.js, .NET)",
+      "Work history does not demonstrate relevant experience in engineering or software development"
+    ],
+    "summary": "The candidate lacks the essential technical and leadership experience in web/software engineering needed for the role.",
+    "candidate": "bad_cv_sarah_lynne_van_der_merwe",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Passionate about leadership roles",
+      "Has experience in high-level inventory management"
+    ],
+    "weaknesses": [
+      "Lacks relevant technical experience",
+      "No evidence of leading significant technical change",
+      "Inaccuracies and lack of specificity in the CV"
+    ],
+    "summary": "The candidate does not meet the essential requirements for the Engineering Manager role at Northlight Digital, lacking technical skills and experience in leading significant technical changes.",
+    "candidate": "bad_cv_sarah_lynne_van_der_merwe",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's experience in managing teams and leading initiatives aligns closely with the requirement for line managing engineers and leading technical change. However, their background in retail management and consultancy does not directly meet the technical and software engineering requirements. Their communication skills are unclear and not well-documented.",
+    "candidate": "bad_cv_sarah_lynne_van_der_merwe",
+    "type": "essential_requirements"
+  }
+]

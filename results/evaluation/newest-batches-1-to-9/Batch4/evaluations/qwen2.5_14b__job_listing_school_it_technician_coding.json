@@ -1,0 +1,29 @@
+[
+  {
+    "score": 5,
+    "strengths": [
+      "reliable operations professional with experience in troubleshooting and maintenance",
+      "demonstrated ability to work independently and under pressure"
+    ],
+    "weaknesses": [
+      "no formal IT qualifications or relevant experience in an educational setting",
+      "lack of specific programming skills"
+    ],
+    "summary": "Ralph shows potential with his troubleshooting and maintenance skills but lacks the specific IT and educational background required for the role.",
+    "candidate": "Ralph_Son_of_a_Shepard_IT_Transition_CV"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "dependable and experienced in livestock care",
+      "strong in record keeping and maintenance"
+    ],
+    "weaknesses": [
+      "no IT or computing experience",
+      "no direct experience working with young people",
+      "no qualifications or training in IT support or education"
+    ],
+    "summary": "The candidate lacks the essential IT and education background required for the role, despite being experienced in farm management and maintenance tasks.",
+    "candidate": "Ralph_Son_of_a_Shepard_Farm_CV"
+  }
+]

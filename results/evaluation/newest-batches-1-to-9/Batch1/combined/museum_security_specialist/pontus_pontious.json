@@ -1,0 +1,36 @@
+[
+  {
+    "score": 4,
+    "strengths": [
+      "Candidate has strong analytical and report writing skills, which are beneficial for incident reporting and documentation.",
+      "Demonstrates strong verbal and written communication skills, important for liaising with staff, police, and external contractors."
+    ],
+    "weaknesses": [
+      "Lacks direct experience in security roles or environments such as museums, galleries, or heritage sites.",
+      "No evidence of experience with CCTV, alarm systems, or access control systems.",
+      "No physical security experience, which is crucial for patrols and responding to incidents."
+    ],
+    "summary": "The candidate possesses strong analytical and communication skills but lacks the direct security experience and physical capability requirements necessary for the Museum Security Specialist role.",
+    "candidate": "PONTUS PONTIOUS",
+    "model": "phi4"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "strong analytical and reporting skills",
+      "attention to detail and documentation"
+    ],
+    "weaknesses": [
+      "no experience in security or museum operations",
+      "lacks necessary SIA licence and security system knowledge"
+    ],
+    "summary": "Pontus Pontious has a solid background in data analysis and financial reporting but lacks the essential security experience and certifications required for the role.",
+    "candidate": "PONTUS PONTIOUS",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate does not clearly meet the minimum 3 years of experience in a security role. However, their experience as an Administrative Assistant and Case Assessment Officer involves communication and data handling skills that are reasonably close to the required written and verbal communication skills. The candidate's physical capabilities are unclear from the provided CV. Valid SIA licence and working knowledge of technical security systems are not evidenced.",
+    "candidate": "PONTUS PONTIOUS",
+    "type": "essential_requirements"
+  }
+]

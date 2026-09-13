@@ -1,0 +1,37 @@
+[
+  {
+    "score": 6,
+    "strengths": [
+      "Strong foundation in TypeScript/React and backend languages like Node.js, which aligns with some of the role's requirements.",
+      "Proven experience with full-stack development, having built components, APIs, and database-backed features.",
+      "Demonstrated ability to work in cross-functional teams and handle testing, which is crucial for the role's fast-paced environment."
+    ],
+    "weaknesses": [
+      "Lack of experience with Go, which is a preferred language for this role.",
+      "No direct experience with production operations, observability, or incident response.",
+      "Limited exposure to distributed systems fundamentals and event-driven architectures like Kafka."
+    ],
+    "summary": "The candidate has a solid foundation in relevant technologies and experience in full-stack development, but lacks specific experience with Go, production operations, and event-driven systems required for the role.",
+    "candidate": "beginner_sa",
+    "model": "phi4"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Basic programming skills",
+      "Experience with some relevant technologies"
+    ],
+    "weaknesses": [
+      "Lacks experience in key tech stack (Go, React/TypeScript at a professional level)",
+      "Insufficient experience in production software"
+    ],
+    "summary": "Naledi Molefe shows promise with basic programming skills and some relevant experience but falls short in professional-level proficiency with the job's required technologies and experience.",
+    "candidate": "beginner_sa",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate has 4+ years of experience shipping production software, which meets the requirement. They have strong TypeScript/React experience and backend experience in Node, which aligns closely with the preferred Go language. The candidate has experience operating services in production, understanding metrics, tracing, and incident response, which is a reasonable match. However, their experience with distributed systems fundamentals, particularly queues, idempotency, and consistency trade-offs, is unclear. The candidate demonstrates excellent communication skills, as evidenced by their ability to explain technical trade-offs to both technical and non-technical audiences. The candidate's passion for energy, climate, or real-world problems is not directly evidenced but can be inferred from their involvement in relevant projects or interests.",
+    "candidate": "beginner_sa",
+    "type": "essential_requirements"
+  }
+]

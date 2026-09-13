@@ -1,0 +1,37 @@
+[
+  {
+    "score": 4,
+    "strengths": [
+      "Has a strong foundation in technical skills relevant to software engineering, demonstrating the ability to learn and adapt to new tools quickly.",
+      "Exhibits experience in building and maintaining software applications, which indicates problem-solving skills."
+    ],
+    "weaknesses": [
+      "Lacks direct experience with PC/laptop hardware repair, a key requirement for the role.",
+      "No demonstrated experience in customer service or working with non-technical clients, which is essential for this role.",
+      "Has not shown experience with the specific operating systems and hardware components mentioned in the job description, like Windows XP or RAM upgrades."
+    ],
+    "summary": "While technically skilled, the candidate lacks direct experience in hands-on computer repairs and customer service, which are critical for the position at Brenda & Mick's Computer Repairs.",
+    "candidate": "beginner_chinese",
+    "model": "phi4"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Has technical skills in software development which shows a logical and systematic approach to problem-solving.",
+      "Possesses experience in working with web technologies which could be useful in explaining technical issues to non-technical users."
+    ],
+    "weaknesses": [
+      "Lacks direct experience in hands-on computer repair and hardware troubleshooting.",
+      "Does not have any experience relevant to serving customers in a retail environment or handling customer service issues.",
+      "No indication of patience or practical skills required for the job such as diagnosing everyday computer problems and fixing them."
+    ],
+    "summary": "Lin Xiaoyu has a strong technical background but lacks the practical skills and experience needed for hands-on computer repair and customer service, which are essential for the position.",
+    "candidate": "beginner_chinese",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate appears to meet the requirement for basic PC/laptop repair skills through their relevant experience. Their ability to communicate effectively with older customers, as evidenced by references to past work with elderly clients, is a reasonable match for the requirement to be friendly and patient. The candidate's willingness to work Saturdays is clear, making this requirement met. However, the exact location or reliable transportation details are unclear from the CV, which makes it uncertain whether they can meet the last requirement.",
+    "candidate": "beginner_chinese",
+    "type": "essential_requirements"
+  }
+]

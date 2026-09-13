@@ -1,0 +1,82 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Adaptable and customer service oriented",
+      "Practical problem-solving skills"
+    ],
+    "weaknesses": [
+      "Lack of maritime experience",
+      "No direct correlation between previous roles and fishing industry"
+    ],
+    "summary": "Jason Muller lacks the essential maritime experience and direct correlation with the fishing industry to qualify for the position.",
+    "candidate": "professional_cv_jason_muller"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "adaptability to different work environments",
+      "practical problem-solving skills"
+    ],
+    "weaknesses": [
+      "lack of experience in maritime or fishing industry",
+      "no relevant skills or experience listed for the role"
+    ],
+    "summary": "Kevin Jones demonstrates versatility and problem-solving skills but lacks direct experience in maritime or fishing, making him a weak fit for the role.",
+    "candidate": "professional_cv_kevin_jones"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Business development and brand positioning",
+      "Retail operations and team leadership"
+    ],
+    "weaknesses": [
+      "No experience in fishing or boat-handing",
+      "No relevant sea or maritime experience"
+    ],
+    "summary": "The candidate lacks any experience related to fishing, boating, or maritime work, which are essential for the position.",
+    "candidate": "professional_cv_sarah_lynne_van_der_merwe"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Can lift heavy boxes",
+      "Fast learner when motivated"
+    ],
+    "weaknesses": [
+      "Lacks relevant work experience",
+      "No evidence of reliability or punctuality",
+      "Objective does not align with the job"
+    ],
+    "summary": "Jason Muller has minimal relevant experience and his career objectives are misaligned with the physical demands and responsibilities of the boat hand position.",
+    "candidate": "bad_cv_jason_muller"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "willing to work",
+      "claims to have learned from previous roles"
+    ],
+    "weaknesses": [
+      "poor employment history",
+      "lack of relevant skills or experience"
+    ],
+    "summary": "The candidate lacks the essential skills and experience required for the role and has a poor employment history, making them a weak fit for the position.",
+    "candidate": "bad_cv_kevin_jones"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Proactive on social media",
+      "Employee of the Month"
+    ],
+    "weaknesses": [
+      "Lacks relevant experience",
+      "No evidence of physical fitness",
+      "No maritime or fishing background"
+    ],
+    "summary": "Candidate lacks the essential maritime experience and physical capabilities required for the position, despite showing some initiative in previous roles.",
+    "candidate": "bad_cv_sarah_lynne_van_der_merwe"
+  }
+]

@@ -1,0 +1,8 @@
+{
+  "candidate": "bad_cv_kevin_jones",
+  "final_score": 2,
+  "score_rationale": "The candidate's experience in shipping software is insufficiently detailed to meet the essential requirements, particularly concerning the specific tech stack and operational depth needed for this role.",
+  "key_strengths": "Willingness to work and ability to explain employment gaps.",
+  "key_weaknesses": "Lack of specific technical experience in TypeScript/React, Go, Kafka, TimescaleDB or distributed systems operations.",
+  "final_evaluation": "The candidate does not appear to meet the essential requirements for the Founding Full-Stack Engineer role at Pulsegrid, despite some general experience or willingness to work."
+}

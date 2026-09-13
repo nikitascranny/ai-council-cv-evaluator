@@ -1,0 +1,120 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "programming skills",
+      "software development experience"
+    ],
+    "weaknesses": [
+      "lack of practical PC repair skills",
+      "no experience in customer service or retail"
+    ],
+    "summary": "The candidate's technical background is strong but lacks the practical repair skills and customer service experience required for the role.",
+    "candidate": "beginner_american"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Has technical skills in software development which shows a logical and systematic approach to problem-solving.",
+      "Possesses experience in working with web technologies which could be useful in explaining technical issues to non-technical users."
+    ],
+    "weaknesses": [
+      "Lacks direct experience in hands-on computer repair and hardware troubleshooting.",
+      "Does not have any experience relevant to serving customers in a retail environment or handling customer service issues.",
+      "No indication of patience or practical skills required for the job such as diagnosing everyday computer problems and fixing them."
+    ],
+    "summary": "Lin Xiaoyu has a strong technical background but lacks the practical skills and experience needed for hands-on computer repair and customer service, which are essential for the position.",
+    "candidate": "beginner_chinese"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "programming and development skills",
+      "experience in software development and testing"
+    ],
+    "weaknesses": [
+      "lack of practical PC/laptop repair skills",
+      "no relevant work experience in hardware repair or customer service"
+    ],
+    "summary": "Naledi Molefe has strong programming and development skills but lacks the practical hardware repair and customer service experience required for the position.",
+    "candidate": "beginner_sa"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Advanced technical skills in backend and frontend development",
+      "Experience in system design and optimization"
+    ],
+    "weaknesses": [
+      "Lack of practical repair skills for hardware",
+      "No experience in customer service for older clientele"
+    ],
+    "summary": "Priya Nair excels in software development and technical leadership but lacks the practical hardware repair and customer service skills required for the role.",
+    "candidate": "intermediate_american"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "programming skills",
+      "technical expertise"
+    ],
+    "weaknesses": [
+      "lacks practical PC/laptop repair skills",
+      "no experience in customer service"
+    ],
+    "summary": "Candidate has strong technical background but lacks practical repair skills and customer service experience.",
+    "candidate": "middle_chinese"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "strong technical background",
+      "experience with backend services"
+    ],
+    "weaknesses": [
+      "lack of hands-on repair experience",
+      "inexperience with retail客户服务和面对面解决问题"
+    ],
+    "summary": "虽然Kagiso Ndlovu具备强大的技术背景和后端开发经验，但缺乏实际的电脑维修经验和面向客户的零售工作经历，这使得他不太符合Brenda & Mick's Computer Repairs的职位需求。",
+    "candidate": "middle_sa"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Extensive technical skills in software engineering and systems design",
+      "Proven leadership and mentoring experience"
+    ],
+    "weaknesses": [
+      "Lacks practical PC/laptop repair skills",
+      "No direct experience in customer service or retail"
+    ],
+    "summary": "Marcus Okafor's technical background and leadership skills are impressive but do not align with the practical, hands-on requirements of the computer repair position at Brenda & Mick's.",
+    "candidate": "senior_american"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "technical skills",
+      "experience in system design and engineering"
+    ],
+    "weaknesses": [
+      "lacks practical PC repair skills",
+      "inexperience in customer service for repair shops"
+    ],
+    "summary": "While the candidate possesses strong technical skills and relevant engineering experience, they lack the specific practical PC repair skills and customer service experience required for the role.",
+    "candidate": "senior_chinese"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Technical expertise in software engineering",
+      "Experience in cloud platforms and distributed systems"
+    ],
+    "weaknesses": [
+      "Lacks practical PC/laptop repair skills",
+      "No experience with customer service or retail"
+    ],
+    "summary": "Zanele Madondo's extensive background in software engineering and cloud platforms does not align with the practical repair and customer service requirements of the position at Brenda & Mick's Computer Repairs.",
+    "candidate": "senior_sa"
+  }
+]

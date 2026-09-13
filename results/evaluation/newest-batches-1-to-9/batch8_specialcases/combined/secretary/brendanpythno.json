@@ -1,0 +1,38 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Demonstrates strong technical skills and proficiency in programming languages relevant to software development.",
+      "Has experience in working within technology teams, suggesting ability to collaborate and handle responsibilities."
+    ],
+    "weaknesses": [
+      "Lacks direct experience in secretarial, receptionist, or office administration roles.",
+      "No demonstrated knowledge or experience with office software such as Microsoft Word, Excel, and Outlook.",
+      "No evidence of experience managing diaries, scheduling meetings, or handling confidential client information.",
+      "No indication of skills in client interaction, communication, or customer service, which are crucial for a front office role."
+    ],
+    "summary": "Brendan Naidoo's technical background and experience in software engineering do not align with the administrative and client-focused requirements of the Secretary/Administrative Assistant role.",
+    "candidate": "BrendanPythno",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Technical skills in Python, Go, PostgreSQL",
+      "Previous experience in software development"
+    ],
+    "weaknesses": [
+      "No relevant administrative or secretarial experience",
+      "Lack of skills in Microsoft Office suite",
+      "Poor writing and grammar skills in CV"
+    ],
+    "summary": "Brendan lacks the essential skills and experience required for the administrative role and demonstrates poor administrative skills in his CV.",
+    "candidate": "BrendanPythno",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate does not clearly meet the secretarial, receptionist, or office administration experience requirement. However, their junior software engineering roles show relevant experience and technical skills that can be seen as a reasonable match. The CV does not provide evidence of the required Microsoft Office skills, accurate typing speed, or handling of confidential information.",
+    "candidate": "BrendanPythno",
+    "type": "essential_requirements"
+  }
+]

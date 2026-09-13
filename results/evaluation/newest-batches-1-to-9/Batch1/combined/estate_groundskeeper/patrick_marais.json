@@ -1,0 +1,39 @@
+[
+  {
+    "score": 4,
+    "strengths": [
+      "Strong background in investigations and security management.",
+      "Experience with compliance, risk assessments, and operational management.",
+      "Training and certification in cybersecurity and technology-related fields."
+    ],
+    "weaknesses": [
+      "Lack of direct experience in groundskeeping or countryside management.",
+      "No specific experience with surveillance technology in non-security environments.",
+      "No evidence of experience in physical health or wellness programs.",
+      "No demonstrated capability in outdoor or physically demanding environments."
+    ],
+    "summary": "The candidate has a robust background in security and investigations, with some relevant skills in risk management and technology, but lacks direct experience in groundskeeping and the physical demands of countryside management.",
+    "candidate": "PATRICK MARAIS",
+    "model": "phi4"
+  },
+  {
+    "score": 8,
+    "strengths": [
+      "Extensive experience in security management and operations",
+      "Proven track record in developing and implementing security solutions"
+    ],
+    "weaknesses": [
+      "Limited direct experience in cloud computing and artificial intelligence",
+      "Less emphasis on specific cyber security certifications"
+    ],
+    "summary": "The candidate has robust experience in security management and operations, but could benefit from additional training in cloud computing and artificial intelligence.",
+    "candidate": "PATRICK MARAIS",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "",
+    "error": "PARSE ERROR",
+    "candidate": "PATRICK MARAIS",
+    "type": "essential_requirements"
+  }
+]

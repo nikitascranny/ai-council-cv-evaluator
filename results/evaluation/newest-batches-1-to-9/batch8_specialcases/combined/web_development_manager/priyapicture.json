@@ -1,0 +1,38 @@
+[
+  {
+    "score": 6,
+    "strengths": [
+      "Has relevant experience in building customer-facing web features with React.",
+      "Good understanding of UI/UX through collaboration with design teams.",
+      "Experience with AWS aligns with job requirement for cloud infrastructure knowledge."
+    ],
+    "weaknesses": [
+      "Lacks the required 5 years of professional experience, having only 4 years.",
+      "No explicit experience managing or leading teams.",
+      "No direct experience with Node.js, .NET, or leading significant technical change.",
+      "Missing specific mention of CI/CD, automated testing, or observability."
+    ],
+    "summary": "Priya Chetty has relevant technical skills and experience, but lacks the leadership experience and technical depth required for the Engineering Manager role.",
+    "candidate": "PriyaPicture",
+    "model": "phi4"
+  },
+  {
+    "score": 6,
+    "strengths": [
+      "web development skills",
+      "user interface optimization"
+    ],
+    "weaknesses": [
+      "lacks leadership experience",
+      "inexperience with the required backend technologies"
+    ],
+    "summary": "Priya has strong web development skills but lacks the required leadership experience and specific backend technology expertise to fit the role well.",
+    "candidate": "PriyaPicture",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate has 4.5 years of relevant experience, which is close to the 5+ years required. They possess a strong background in web development, including experience with React/TypeScript and modern web stacks, as well as an AWS certification, which indicates a solid understanding of cloud infrastructure. However, there is no clear indication of line management experience or leading significant technical changes, making these areas unclear from the provided CV.",
+    "candidate": "PriyaPicture",
+    "type": "essential_requirements"
+  }
+]

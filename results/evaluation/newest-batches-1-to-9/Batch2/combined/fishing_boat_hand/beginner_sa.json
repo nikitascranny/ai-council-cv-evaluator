@@ -1,0 +1,36 @@
+[
+  {
+    "score": 2,
+    "strengths": [
+      "Demonstrates strong problem-solving and collaborative skills through software development roles.",
+      "Shows discipline and a structured approach to work, which could be beneficial in learning new tasks."
+    ],
+    "weaknesses": [
+      "Lacks relevant experience in physical, maritime work required for the role.",
+      "No demonstrated experience with manual labor, fishing operations, or sea survival skills.",
+      "No history of working in marine environments, lacking essential sea legs and familiarity with boat operations."
+    ],
+    "summary": "The candidate's skills and experience are heavily focused on software development, lacking the physical, maritime, and safety-related experience crucial for a Deckhand role on an inshore fishing vessel.",
+    "candidate": "beginner_sa",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong technical background in software development",
+      "Experience with project management and teamwork"
+    ],
+    "weaknesses": [
+      "Lack of experience in maritime or fishing industry",
+      "No direct relation between candidate's skills and the job requirements"
+    ],
+    "summary": "The candidate has a strong technical background but lacks the necessary maritime experience and skills relevant to the position.",
+    "candidate": "beginner_sa",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate appears to meet the requirement for physical fitness and comfort with heavy, repetitive manual work in all weathers, and has relevant experience from his time as a carpenter. His previous work in carpentry also likely provides a reasonable match for basic numeracy skills. However, there is no clear indication of sea experience, which is a strong preference in the job description. The willingness to work early starts and long days is evident, and he lacks a history of severe seasickness.",
+    "candidate": "beginner_sa",
+    "type": "essential_requirements"
+  }
+]

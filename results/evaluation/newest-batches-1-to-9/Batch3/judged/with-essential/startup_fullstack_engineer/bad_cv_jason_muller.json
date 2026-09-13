@@ -1,0 +1,8 @@
+{
+  "candidate": "bad_cv_jason_muller",
+  "final_score": 2,
+  "score_rationale": "The candidate has no evidence of shipping production software or experience with the core technologies (TypeScript/React, Go) required by the job, despite showing adaptability and some customer-facing skills.",
+  "key_strengths": "Customer service orientation, adaptability under ambiguity",
+  "key_weaknesses": "No production software experience, no technical skills matching the job description, no evidence of distributed systems knowledge",
+  "final_evaluation": "The candidate does not meet the essential requirements for this role. They lack direct experience with the required technologies and have no demonstrated ability to operate services in production, making them unsuitable."
+}

@@ -1,0 +1,37 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Jordan possesses strong technical skills as a Software Engineer, which may aid in understanding technical aspects of life support systems.",
+      "The candidate has demonstrated problem-solving abilities through their role in software engineering."
+    ],
+    "weaknesses": [
+      "Jordan lacks a degree in Marine Biology, Zoology, Aquatic Biology, or a related life science, which is an essential requirement.",
+      "There is no evidence of physical fitness or willingness to perform physically demanding tasks such as filter cleaning and maintaining life support systems.",
+      "Jordan has no relevant work experience in aquatic animal husbandry or related fields.",
+      "The candidate has not demonstrated a basic understanding of water chemistry or the nitrogen cycle in closed aquatic systems.",
+      "No experience or certification related to SCUBA, home aquarium keeping, or volunteer work in an aquarium or similar facility is mentioned."
+    ],
+    "summary": "Jordan Mitchell has strong technical skills but lacks the essential educational background, relevant experience, and physical fitness required for the role of an Aquarium Biologist at Seagate Public Aquarium.",
+    "candidate": "SystemShock",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong background in software engineering"
+    ],
+    "weaknesses": [
+      "No relevant experience in marine biology or aquatic animal husbandry",
+      "No practical experience with life support systems or animal care"
+    ],
+    "summary": "Jordan Mitchell lacks the essential qualifications and practical experience required for the aquarium biologist role, but has a strong background in software engineering.",
+    "candidate": "SystemShock",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's degree in Environmental Science, while not exactly in Marine Biology, Zoology, or Aquatic Biology, is a reasonable close match. The physical fitness and willingness to carry out physical tasks are clearly met. Basic understanding of water chemistry and the nitrogen cycle is unclear from the CV, but closely related experience in environmental science could be transferable. Observational skills and attention to detail are evident from the candidate's past roles, and strong record-keeping habits are demonstrated. Weekend, bank holiday, and early morning work availability is confirmed. Full right to work in the UK and ability to pass a basic background check are clearly met.",
+    "candidate": "SystemShock",
+    "type": "essential_requirements"
+  }
+]

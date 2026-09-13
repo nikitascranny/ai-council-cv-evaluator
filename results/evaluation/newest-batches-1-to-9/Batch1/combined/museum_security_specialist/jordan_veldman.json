@@ -1,0 +1,36 @@
+[
+  {
+    "score": 4,
+    "strengths": [
+      "Strong project management and problem-solving skills demonstrated through roles in architecture and project coordination.",
+      "Familiarity with digital modeling tools and software which may assist with technological aspects of security systems."
+    ],
+    "weaknesses": [
+      "Lack of direct experience in a security role, especially within a museum or similar environment.",
+      "No evidence of experience with CCTV, intruder alarm, or access-control systems as required by the job.",
+      "Absence of qualifications such as a Security Guarding license or First Aid certification."
+    ],
+    "summary": "The candidate exhibits strong analytical and project management skills but lacks direct experience and qualifications necessary for a Museum Security Specialist role.",
+    "candidate": "JORDAN VELDMAN",
+    "model": "phi4"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Strong analytical and problem-solving skills",
+      "Experience in project management and documentation"
+    ],
+    "weaknesses": [
+      "Lack of relevant security experience",
+      "No direct experience with museum/gallery security systems"
+    ],
+    "summary": "The candidate has strong analytical and project management skills but lacks the specific security experience and training required for the role.",
+    "candidate": "JORDAN VELDMAN",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's experience does not clearly meet the minimum 3 years' experience in a security role. However, their roles in project management, documentation, and collaboration demonstrate transferable skills that could be relevant in a security context. Their ability to work with technical documentation and compliance checks could be seen as a reasonable match for working knowledge of security systems and incident reporting.",
+    "candidate": "JORDAN VELDMAN",
+    "type": "essential_requirements"
+  }
+]

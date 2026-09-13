@@ -1,0 +1,39 @@
+[
+  {
+    "score": 6,
+    "strengths": [
+      "Has programming experience with Python, which is beneficial for the role's requirement for basic programming ability.",
+      "Demonstrates experience in digital marketing and strategy development, which may translate into effective communication and management of IT resources.",
+      "Has experience managing digital projects and teams, indicating leadership and organizational skills that are valuable for the IT Technician & Coding Enrichment Lead role.",
+      "Shows a track record of enhancing digital presence and brand awareness, aligning with the role's need for maintaining the school's website content."
+    ],
+    "weaknesses": [
+      "Lacks direct experience in IT support or a similar educational setting, which is essential for the role.",
+      "No evidence of experience with the specific technologies required for the role, such as Windows 11, Microsoft 365, or device management tools like Intune.",
+      "Does not demonstrate specific experience with classroom technology support or teaching, which is crucial for the 30% coding enrichment aspect of the role.",
+      "The candidate's experience is primarily in digital marketing and strategy, not IT infrastructure or technical troubleshooting, which could be a limitation."
+    ],
+    "summary": "While the candidate has relevant digital and programming skills, they lack direct IT support experience and familiarity with the specific technologies and educational setting required for the role.",
+    "candidate": "RIAAN GOVEN",
+    "model": "phi4"
+  },
+  {
+    "score": 4,
+    "strengths": [
+      "Experience in digital product management and web development",
+      "Strong background in Python"
+    ],
+    "weaknesses": [
+      "Lacks direct IT support experience",
+      "No experience in an educational setting"
+    ],
+    "summary": "The candidate has relevant technical skills but lacks direct IT support and educational experience, limiting fit for the role.",
+    "candidate": "RIAAN GOVEN",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate clearly meets the requirement for practical IT support experience, as evidenced by their roles at 42th Rand Bank, Ubuntu Bank, and PayBridge, which involved managing digital marketing, content management, and IT-related tasks. Their experience with Python is a reasonable match for the basic programming ability requirement, as they are confident in using it for web development and content management. However, there is no clear indication of working knowledge of Windows 11, Microsoft 365, or Intune, nor of a genuine enthusiasm for working with young people, which are less clearly met. The candidate also does not provide evidence of an understanding of safeguarding or willingness to undergo background checks.",
+    "candidate": "RIAAN GOVEN",
+    "type": "essential_requirements"
+  }
+]

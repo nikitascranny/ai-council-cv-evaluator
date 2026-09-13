@@ -1,0 +1,39 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Demonstrates independent working and problem-solving skills.",
+      "Experience in asset and equipment maintenance."
+    ],
+    "weaknesses": [
+      "Lacks relevant experience in groundskeeping, gamekeeping, or countryside management.",
+      "No prior experience with tracking, search & rescue, or military backgrounds.",
+      "No experience with working in remote locations without phone signal.",
+      "Does not meet the essential requirement of excellent physical fitness for outdoor activities.",
+      "Lacks familiarity with handling 'airsoft' equipment, radios, GPS trackers, or night-vision gear.",
+      "No evidence of comfort with the 'hunting' premise or unusual requests."
+    ],
+    "summary": "The candidate shows strengths in independent problem-solving and maintenance but lacks the critical experience and skills necessary for the role, particularly in groundskeeping and outdoor physical activities.",
+    "candidate": "Ralph_Son_of_a_Shepard_IT_Transition_CV",
+    "model": "phi4"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "independent working",
+      "prioritization under pressure"
+    ],
+    "weaknesses": [
+      "lack of relevant experience in groundskeeping or hunting coordination",
+      "no formal IT qualifications"
+    ],
+    "summary": "The candidate demonstrates strong independent working skills but lacks the specific experience and skills required for the groundskeeper and hunt coordinator role.",
+    "candidate": "Ralph_Son_of_a_Shepard_IT_Transition_CV",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's experience in a rural operations environment aligns closely with the groundskeeping and countryside management requirements. The ability to manage priorities and work independently in changing conditions suggests relevant experience with physical fitness and the ability to work alone, though the specific outdoor conditions and hunting-related tasks are not directly covered. The candidate's career objective and additional information demonstrate a commitment to developing relevant skills, which may indicate a willingness to learn and adapt, but there is no evidence of tracking, search & rescue, or other pursuit-oriented background. The candidate lacks a clean driving license and does not have the required groundskeeping or gamekeeping experience, making it unclear if they can fulfill the remote, site-based role requirements.",
+    "candidate": "Ralph_Son_of_a_Shepard_IT_Transition_CV",
+    "type": "essential_requirements"
+  }
+]

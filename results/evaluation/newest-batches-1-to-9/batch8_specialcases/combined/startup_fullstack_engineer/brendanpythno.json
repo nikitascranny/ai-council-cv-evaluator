@@ -1,0 +1,40 @@
+[
+  {
+    "score": 6,
+    "strengths": [
+      "Has 4 years of experience with production software development, aligning with the essential requirement.",
+      "Experience with Go, which is preferred for this role, and familiarity with backend systems.",
+      "Demonstrated ability to improve system performance by reducing API latency, indicating problem-solving skills.",
+      "AWS Certified Cloud Practitioner certification shows upskilling potential in cloud technologies."
+    ],
+    "weaknesses": [
+      "Lacks experience with frontend technologies like React/TypeScript, which are critical for this role.",
+      "No direct experience with the specific technologies mentioned in the job description (Kafka, TimescaleDB, Redis).",
+      "No demonstrated experience with event-driven architectures or distributed systems, which are essential for the role.",
+      "Missing experience with observability, alerting, and on-call participation for production services."
+    ],
+    "summary": "Brendan Naidoo has relevant backend experience and some upskilling potential but lacks critical frontend skills and specific technology expertise required for this role.",
+    "candidate": "BrendanPythno",
+    "model": "phi4"
+  },
+  {
+    "score": 5,
+    "strengths": [
+      "Python and Go experience",
+      "API design and optimization"
+    ],
+    "weaknesses": [
+      "Poor grammar and spelling in CV",
+      "No TypeScript/React experience",
+      "Limited frontend experience"
+    ],
+    "summary": "The candidate has relevant backend experience but lacks the required frontend skills and has significant room for improvement in CV clarity and technical communication.",
+    "candidate": "BrendanPythno",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate meets the requirement of 4+ years shipping production software but does not explicitly detail the use of TypeScript/React. They have relevant experience with backend languages and distributed systems, though not in Go specifically. The candidate's experience in API design, ETL scripts, and CI/CD pipelines shows comfort with ambiguity and velocity, and their communication skills are supported by their AWS Certified Cloud Practitioner and Scrum Fundamentals certifications. However, their experience with metrics, tracing, incident response, and distributed system fundamentals is not explicitly detailed, making these requirements a reasonable/close match.",
+    "candidate": "BrendanPythno",
+    "type": "essential_requirements"
+  }
+]

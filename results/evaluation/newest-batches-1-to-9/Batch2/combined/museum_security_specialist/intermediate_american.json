@@ -1,0 +1,38 @@
+[
+  {
+    "score": 4,
+    "strengths": [
+      "Strong problem-solving and technical skills demonstrated through complex software engineering projects",
+      "Experience in managing and optimizing large-scale systems, which may translate to handling complex security systems"
+    ],
+    "weaknesses": [
+      "Lack of direct experience in security roles, particularly in a museum or similar environment",
+      "No evidence of familiarity with CCTV, intruder alarm, or access-control systems",
+      "No physical security or emergency response experience",
+      "No certifications or licenses related to security or SIA Door Supervisor/Security Guarding"
+    ],
+    "summary": "The candidate demonstrates strong technical and problem-solving skills but lacks direct experience and qualifications in museum security or related physical security roles.",
+    "candidate": "intermediate_american",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong technical skills",
+      "Experience with backend systems and API design"
+    ],
+    "weaknesses": [
+      "Lack of relevant security experience",
+      "No experience in a museum or heritage site",
+      "No direct experience with CCTV, alarm, or access-control systems"
+    ],
+    "summary": "Priya Nair has impressive technical skills and experience but lacks the specific security and museum-related experience required for the position.",
+    "candidate": "intermediate_american",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's experience in a security role is unclear as it is not mentioned in the CV, but they have relevant technical knowledge in the form of an AWS Certified Developer. The physical and flexibility requirements are not met as there is no indication of working in a security role or related environment. The communication skills and ability to make decisions under pressure are not evidenced, though they are essential. The required SIA Door Supervisor or Security Guarding licence is not listed, and there is no mention of working knowledge of CCTV, intruder alarm, and access control systems.",
+    "candidate": "intermediate_american",
+    "type": "essential_requirements"
+  }
+]

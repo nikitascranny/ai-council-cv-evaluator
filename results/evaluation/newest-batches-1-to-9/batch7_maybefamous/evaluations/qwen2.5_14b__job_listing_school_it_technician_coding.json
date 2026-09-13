@@ -1,0 +1,54 @@
+[
+  {
+    "score": 6,
+    "strengths": [
+      "Strong background in Python and Django",
+      "Experience with web development and application building"
+    ],
+    "weaknesses": [
+      "Lacks direct experience in educational settings",
+      "No specific mention of experience with Microsoft 365 or Intune"
+    ],
+    "summary": "Daniel Rossouw has a solid technical background but lacks direct experience in education and specific IT skills required for the role.",
+    "candidate": "Daniel_common"
+  },
+  {
+    "score": 6,
+    "strengths": [
+      "Strong background in Python and Django",
+      "Experience in web development and API creation"
+    ],
+    "weaknesses": [
+      "Lacks direct IT support experience",
+      "No education-specific experience or certification"
+    ],
+    "summary": "Linus Torvalds has relevant technical skills but lacks direct IT support and educational experience, limiting his fit for the role.",
+    "candidate": "Linus"
+  },
+  {
+    "score": 4,
+    "strengths": [
+      "Strong background in software development and mobile app technologies",
+      "Basic programming skills in Python and/or Scratch are transferable"
+    ],
+    "weaknesses": [
+      "No experience in educational or IT support settings",
+      "Limited experience in IT maintenance and administration"
+    ],
+    "summary": "Lauren has relevant technical skills but lacks experience in educational IT support and maintenance, which are crucial for this role.",
+    "candidate": "Lauren_common"
+  },
+  {
+    "score": 4,
+    "strengths": [
+      "Strong background in software development",
+      "Experience with cross-platform app development"
+    ],
+    "weaknesses": [
+      "Lack of IT support experience",
+      "No experience in an educational setting"
+    ],
+    "summary": "Margaret Hamilton has strong software engineering skills but lacks the necessary IT support and educational experience required for the role.",
+    "candidate": "Margaret"
+  }
+]

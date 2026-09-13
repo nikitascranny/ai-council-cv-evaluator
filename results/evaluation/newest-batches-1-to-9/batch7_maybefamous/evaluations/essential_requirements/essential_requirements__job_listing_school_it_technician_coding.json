@@ -1,0 +1,18 @@
+[
+  {
+    "summary": "The candidate meets the requirement for practical IT support experience through their role as a Junior Developer. They have a reasonable match for working knowledge of Microsoft technologies through their certification and coursework, and demonstrate basic programming ability through their work with Django and React. The enthusiasm for working with young people is not directly evidenced, but the software development experience may imply a similar level of communication skills. The requirement for safeguarding and DBS checks is unclear from the CV.",
+    "candidate": "Daniel_common"
+  },
+  {
+    "summary": "The candidate's experience as a Software Engineer and Junior Developer demonstrates practical IT support and programming skills, closely matching the requirements. Their relevant coursework and certifications provide a strong foundation in software development, including mobile application development, which is a reasonable match for the role. However, there is no evidence of specific experience with Windows 11, Microsoft 365, or Intune, and while they show enthusiasm for technology, there is no clear indication of a genuine enthusiasm for working with young people or explaining technology clearly. The candidate is willing to undergo the necessary checks, which is a clear match.",
+    "candidate": "Lauren_common"
+  },
+  {
+    "summary": "The candidate has practical IT support experience from a professional setting, which closely matches the requirement. They have a working knowledge of Windows 11 and Microsoft 365, and their experience with Django and unit testing shows they have basic programming ability. The candidate's enthusiasm for technology is evidenced by their educational background and certifications. However, their experience does not clearly demonstrate a working knowledge of Intune or similar device management. The requirement for working with young people and explaining technology is not directly addressed, and the candidate's willingness to undergo necessary checks is not explicitly stated.",
+    "candidate": "Linus"
+  },
+  {
+    "summary": "The candidate's experience as a Software Engineer and Junior Developer, as well as their relevant coursework and certifications in software engineering, strongly meet the practical IT support and basic programming ability requirements. Their ability to fix bugs and improve user experience in apps can be seen as relevant to IT support. Their education and certifications show working knowledge of Windows 11 and Microsoft 365 through cross-platform app development using Flutter, which is a reasonable match. The CV does not clearly demonstrate enthusiasm for working with young people, nor does it mention any experience in safeguarding or school policies, making these requirements unclear from the CV. The candidate also does not mention undergoing an enhanced DBS check or barred list check, which is another unclear requirement.",
+    "candidate": "Margaret"
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "score": 5,
+    "strengths": [
+      "Demonstrates strong organizational and procedural compliance skills relevant to aquarium maintenance.",
+      "Has experience in maintaining logs and records, crucial for aquarium animal management databases.",
+      "Shows adaptability and willingness to transition into a new field, indicating potential for up-skilling."
+    ],
+    "weaknesses": [
+      "Lacks a degree in Marine Biology, Zoology, or a related life science, which is essential for the role.",
+      "Has no direct experience with aquatic systems or life support systems, critical for the position.",
+      "No evidence of physical fitness or experience in manual, repetitive tasks like filter cleaning."
+    ],
+    "summary": "The candidate shows strong organizational skills and adaptability, but lacks the specific educational background and experience in aquatic biology required for the role.",
+    "candidate": "Ralph_Son_of_a_Shepard_IT_Transition_CV",
+    "model": "phi4"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "accurate record keeping",
+      "independent working"
+    ],
+    "weaknesses": [
+      "lack of relevant marine biology experience",
+      "no formal IT qualifications",
+      "no background in aquatic life support systems"
+    ],
+    "summary": "The candidate lacks direct experience in aquatic life support systems and marine biology, despite having skills in maintenance and record keeping.",
+    "candidate": "Ralph_Son_of_a_Shepard_IT_Transition_CV",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's CV demonstrates a strong fit for the role, with clear evidence of relevant experience in maintenance and operational checks, as well as strong observational and record-keeping skills. The physical fitness and ability to work flexible hours are also evident. However, the candidate lacks formal qualifications in a life science or related field, and the experience is primarily in a different field, making it a reasonable but not direct match for the specific academic background requirement. The physical tasks and willingness to perform them are well-supported by the candidate's experience. The full right to work in the UK and ability to pass a basic background check are also clearly met.",
+    "candidate": "Ralph_Son_of_a_Shepard_IT_Transition_CV",
+    "type": "essential_requirements"
+  }
+]

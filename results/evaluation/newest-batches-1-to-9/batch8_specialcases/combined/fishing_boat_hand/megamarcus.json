@@ -1,0 +1,37 @@
+[
+  {
+    "score": 2,
+    "strengths": [
+      "Marcus Vandenberg is punctual, as evidenced by his work history.",
+      "He has a strong work ethic demonstrated through his extensive experience and reliability in previous roles."
+    ],
+    "weaknesses": [
+      "Lack of relevant experience in fishing or working on boats.",
+      "No evidence of physical fitness or comfort with manual, physically demanding work.",
+      "No experience with sea-related activities or maritime safety training.",
+      "No history of working early starts or long days typical for fishing industry schedules."
+    ],
+    "summary": "Marcus Vandenberg has a strong professional work history but lacks the relevant skills, experience, and physical fitness required for a physically demanding, maritime job like a boat hand on a fishing vessel.",
+    "candidate": "MegaMarcus",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Proficient in software development and backend systems",
+      "Good academic background in computer science"
+    ],
+    "weaknesses": [
+      "No relevant experience in fishing or maritime work",
+      "Lack of physical fitness and maritime skills required for the role"
+    ],
+    "summary": "The candidate's background in software engineering does not align with the physical and maritime requirements of the boat hand position at Kestrel Bay Fishing Co.",
+    "candidate": "MegaMarcus",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's experience as a software engineer does not directly align with the job requirements, but the transferable skills in reliability, documentation, and teamwork are a reasonable match. The candidate lacks experience in manual labor and sea work, and there is no evidence of physical fitness or numeracy for catch tallies.",
+    "candidate": "MegaMarcus",
+    "type": "essential_requirements"
+  }
+]

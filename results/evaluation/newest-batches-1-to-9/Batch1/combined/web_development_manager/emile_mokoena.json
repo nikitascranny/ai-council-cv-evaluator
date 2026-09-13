@@ -1,0 +1,37 @@
+[
+  {
+    "score": 6,
+    "strengths": [
+      "Strong background in AWS, Kubernetes, and cloud technologies, aligning with technical skills required.",
+      "Experience in data engineering and machine learning, indicating potential for handling complex technical challenges.",
+      "Certifications relevant to cloud engineering and AWS, demonstrating commitment to upskilling."
+    ],
+    "weaknesses": [
+      "Lacks direct experience in managing web development teams or line-managing engineers.",
+      "Limited exposure to React/TypeScript, Node.js, and .NET, which are essential for the role.",
+      "No specific experience in accessibility standards or large-scale incident management."
+    ],
+    "summary": "The candidate has a strong technical background in cloud technologies and data engineering but lacks direct experience in web development and team management, which are critical for the Engineering Manager role.",
+    "candidate": "EMILE MOKOENA",
+    "model": "phi4"
+  },
+  {
+    "score": 4,
+    "strengths": [
+      "AWS certifications",
+      "Experience with cloud technologies"
+    ],
+    "weaknesses": [
+      "Lack of experience in web/software engineering",
+      "No evidence of leading teams through technical change"
+    ],
+    "summary": "The candidate has strong cloud technology skills but lacks the required web/software engineering experience and leadership in technical change, making them a poor fit for the Engineering Manager position.",
+    "candidate": "EMILE MOKOENA",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate does not clearly meet the requirement for 5+ years of professional web/software engineering experience. However, the Lead Machine Learning Engineer role provides evidence of significant technical change management through AI Innovation challenges, which is a reasonable match for leading teams through significant technical change. The candidate's experience in data science and machine learning is closely related to the required modern web stacks. Other requirements, such as CI/CD, cloud infrastructure, and agile delivery, are not clearly met or unclear from the CV.",
+    "candidate": "EMILE MOKOENA",
+    "type": "essential_requirements"
+  }
+]

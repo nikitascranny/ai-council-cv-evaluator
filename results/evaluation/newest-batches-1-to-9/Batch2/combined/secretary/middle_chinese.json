@@ -1,0 +1,37 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Good organizational skills inferred from managing complex engineering projects.",
+      "Strong technical proficiency with various programming languages and tools."
+    ],
+    "weaknesses": [
+      "Lack of direct experience in secretarial, receptionist, or administrative roles.",
+      "No demonstrated experience with Microsoft Word, Excel, Outlook, or practice management software.",
+      "No evidence of customer service or client-facing experience.",
+      "Absence of relevant qualifications such as GCSEs in English and Maths."
+    ],
+    "summary": "The candidate has strong technical and organizational skills but lacks relevant administrative and secretarial experience and specific software proficiencies required for the role.",
+    "candidate": "middle_chinese",
+    "model": "phi4"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Strong technical background in software engineering",
+      "Experience in project leadership and mentoring"
+    ],
+    "weaknesses": [
+      "Lack of administrative or secretarial experience",
+      "No direct experience with Microsoft Office Suite"
+    ],
+    "summary": "Zhang Wei's technical expertise and leadership skills are impressive but do not align with the administrative and secretarial requirements of the position at Ashcombe & Vale.",
+    "candidate": "middle_chinese",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate demonstrates clear experience in office administration and a strong phone manner. Their proficiency with Microsoft Office tools and typing speed are strong matches. However, the exact years of secretarial experience and handling of confidential information are unclear, and their organizational skills are not explicitly mentioned.",
+    "candidate": "middle_chinese",
+    "type": "essential_requirements"
+  }
+]

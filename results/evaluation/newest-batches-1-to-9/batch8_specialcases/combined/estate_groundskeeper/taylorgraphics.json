@@ -1,0 +1,39 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Has strong leadership and team management experience.",
+      "Demonstrates skills in system architecture and distributed systems."
+    ],
+    "weaknesses": [
+      "Lacks relevant experience in groundskeeping, countryside management, or related fields.",
+      "No experience with physical fitness or outdoor activities required for the role.",
+      "No experience with tracking, search & rescue, or military/pursuit-oriented roles.",
+      "Unfamiliar with handling animals such as bloodhounds.",
+      "Does not have the necessary discretion and confidentiality experience."
+    ],
+    "summary": "While the candidate possesses strong leadership and technical skills, they lack the relevant experience and qualifications in groundskeeping, physical fitness, and discretion necessary for the Groundskeeper & 'Hunt' Coordinator role.",
+    "candidate": "TaylorGraphics",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong background in software engineering and system architecture",
+      "Experience in team leadership and mentoring"
+    ],
+    "weaknesses": [
+      "No relevant experience in groundskeeping, search and rescue, or tracking",
+      "Lack of physical fitness experience as required for the job",
+      "No background in outdoor or adventurous activities"
+    ],
+    "summary": "Taylor Okafor's background in software engineering and leadership is impressive but completely irrelevant to the role of Groundskeeper & Hunt Coordinator at Blackmoor Hall Estate, which requires specific outdoor and search and rescue skills.",
+    "candidate": "TaylorGraphics",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's CV does not clearly meet the essential requirement of groundskeeping, gamekeeping, or 'countryside management' experience. However, the candidate's background in software engineering and architecture shows strong technical skills that could be transferable to roles involving system management and oversight. The physical fitness and ability to work in remote areas may be inferred from the demanding nature of the previous roles, but this is not explicitly stated. The candidate's excellent discretion through extensive handling of sensitive data and systems, along with the ability to work independently, are clearly met. The preference for a driving license is not demonstrated, but the willingness to live on-site where the Laird can 'reach' is clearly shown.",
+    "candidate": "TaylorGraphics",
+    "type": "essential_requirements"
+  }
+]

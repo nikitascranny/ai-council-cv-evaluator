@@ -1,0 +1,37 @@
+[
+  {
+    "score": 4,
+    "strengths": [
+      "Demonstrates adaptability and team coordination, which can be beneficial in a dynamic security environment.",
+      "Has supervisory experience, relevant for overseeing security operations and staff."
+    ],
+    "weaknesses": [
+      "Lacks specific security experience, especially in museum settings or handling security systems.",
+      "Missing essential qualifications such as a valid SIA Door Supervisor or Security Guarding licence.",
+      "No experience with CCTV, intruder alarm, and access-control systems.",
+      "No evidence of physical ability to patrol a large multi-floor site, which is required."
+    ],
+    "summary": "While the candidate has some relevant supervisory and adaptability skills, significant gaps in security-specific experience and qualifications make him a less suitable fit for the role.",
+    "candidate": "professional_cv_jason_muller",
+    "model": "phi4"
+  },
+  {
+    "score": 4,
+    "strengths": [
+      "Adaptable and has strong customer service skills",
+      "Experience in team coordination and workflow management"
+    ],
+    "weaknesses": [
+      "Lack of relevant security experience",
+      "No evidence of SIA licence or familiarity with security systems"
+    ],
+    "summary": "Candidate shows adaptability and team management skills, but lacks the specific security experience and qualifications needed for the role.",
+    "candidate": "professional_cv_jason_muller",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's experience as an Acting Assistant Manager demonstrates strong written and verbal communication skills and some leadership qualities, which are a reasonable match for the job requirements. The candidate's self-directed learning in customer service aligns with the need for effective communication. However, the candidate's experience does not clearly demonstrate the necessary security experience, relevant licenses, or physical capabilities. The role of Independent Digital Asset Researcher does not appear to provide relevant experience for the position.",
+    "candidate": "professional_cv_jason_muller",
+    "type": "essential_requirements"
+  }
+]

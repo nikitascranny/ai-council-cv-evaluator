@@ -1,0 +1,39 @@
+[
+  {
+    "score": 2,
+    "strengths": [
+      "Demonstrates a willingness to work and flexibility in location",
+      "Has experience working independently"
+    ],
+    "weaknesses": [
+      "Lack of relevant work experience in groundskeeping or countryside management",
+      "No experience with tracking, bloodhounds, or outdoor pursuits",
+      "Physical fitness and ability to work in remote, challenging conditions are questionable",
+      "Uncertain ability to handle the role's ethical and privacy requirements",
+      "No evidence of skills related to managing immersive experiences or working with specialized equipment"
+    ],
+    "summary": "Kevin Jones lacks the specific experience, skills, and physical fitness required for the Groundskeeper & 'Hunt' Coordinator role at Blackmoor Hall Estate.",
+    "candidate": "bad_cv_kevin_jones",
+    "model": "phi4"
+  },
+  {
+    "score": 1,
+    "strengths": [
+      "willing to work",
+      "can work independently"
+    ],
+    "weaknesses": [
+      "lack of relevant experience",
+      "poor employment history",
+      "unusual salary expectations"
+    ],
+    "summary": "The candidate does not meet the required skills or experience for the role and has a history of unstable employment.",
+    "candidate": "bad_cv_kevin_jones",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's employment history is diverse but does not clearly demonstrate groundskeeping, gamekeeping, or countryside management experience. However, the 'pursuit oriented' background from call center work might be a reasonable match. The candidate's physical fitness is not explicitly stated, and the ability to work in remote areas with no phone signal is uncertain. There is no indication of a driving license or willingness to live on-site. The candidate's adherence to confidentiality is not evidenced, and the hunting premise may be uncomfortable.",
+    "candidate": "bad_cv_kevin_jones",
+    "type": "essential_requirements"
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "score": 2,
+    "strengths": [
+      "Samantha has a strong foundation in technical skills with experience in backend systems using Python, Java, and Go.",
+      "Her problem-solving abilities as a software engineer can be advantageous for logistical planning and operational management."
+    ],
+    "weaknesses": [
+      "Lacks relevant experience in groundskeeping, countryside management, or any role related to physical outdoor activities.",
+      "No experience or skills related to managing live-action events, handling animals, or working in immersive environments.",
+      "No indication of physical fitness or comfort in working outdoors, at odd hours, or in remote locations.",
+      "No evidence of skills or experience in discretion or handling sensitive situations, which is crucial for this role."
+    ],
+    "summary": "Samantha lacks the necessary experience and skills in groundskeeping, outdoor management, and discretion required for the Groundskeeper & Hunt Coordinator role.",
+    "candidate": "SamanthaOne",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Software engineering background",
+      "Experience with Python, Java, and Go"
+    ],
+    "weaknesses": [
+      "No relevant experience in groundskeeping, search and rescue, or military background",
+      "No physical fitness or outdoor work experience mentioned",
+      "Inability to address the unique requirements of the job"
+    ],
+    "summary": "Candidate lacks the necessary background in groundskeeping, search and rescue, and physical fitness, which are critical for this role.",
+    "candidate": "SamanthaOne",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's groundskeeping experience is a reasonable match for the 'countryside management' requirement, and their tracking and search & rescue background strongly aligns with the 'pursuit oriented' background preference. However, the required physical fitness and ability to work in remote areas without phone signal are not explicitly stated in the CV, and there is no clear indication of experience with 'hunting' or 'unusual requests.' The absence of a clean driving licence and willingness to live on-site are also not evident from the provided information.",
+    "candidate": "SamanthaOne",
+    "type": "essential_requirements"
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "summary": "The candidate does not clearly meet the essential requirement for practical IT support experience, nor does the CV provide evidence of working knowledge of Windows 11, Microsoft 365, or Intune. However, their experience in managing staff and dealing with difficult customers could reasonably relate to their ability to work with young people and handle challenging situations. The candidate's programming skills are not evidenced, and there is no clear indication of their enthusiasm for working with young people or their understanding of safeguarding policies.",
+    "candidate": "bad_cv_jason_muller"
+  },
+  {
+    "summary": "The candidate's practical IT support experience is unclear and not well-documented, making it hard to assess. Their call centre experience shows communication skills but does not directly align with IT support. The candidate has a high school diploma, which is a reasonable match for some requirements. Their enthusiasm and willingness to undergo checks are positive, but their gaps in employment and inconsistent work history raise concerns about reliability.",
+    "candidate": "bad_cv_kevin_jones"
+  },
+  {
+    "summary": "The candidate's experience is not clearly aligned with the IT support role, but they demonstrate relevant skills in leadership and management. Their ability to explain concepts clearly, as evidenced by their motivational quotes and leadership initiatives, could reasonably transfer to teaching technology. However, there is no clear evidence of IT support experience or proficiency in Windows 11, Microsoft 365, or programming. The candidate's understanding of safeguarding and willingness to undergo checks is unclear, though they have a strong work ethic and achievements that could indicate a genuine enthusiasm for working with people.",
+    "candidate": "bad_cv_sarah_lynne_van_der_merwe"
+  },
+  {
+    "summary": "The candidate's practical IT support experience is unclear and not evidenced. Working knowledge of Windows 11 and Microsoft 365 is suggested through their digital asset research, but specific IT support experience is lacking. Their enthusiasm for technology is inferred from the self-directed learning, but the direct experience with young people is not shown. The candidate demonstrates a commitment to professional development, which aligns with the willingness to undergo background checks.",
+    "candidate": "professional_cv_jason_muller"
+  },
+  {
+    "summary": "The candidate's experience in customer service and adaptability to different roles suggests practical IT support experience, though it is not directly related. They have a basic understanding of communication and problem-solving skills that could be transferable to helping young people with technology. Their education level is not specified, making it unclear if they meet the requirements for a secondary school diploma. They do not have specific IT or programming skills mentioned, and there is no indication of working knowledge of Windows 11, Microsoft 365, or device management tools like Intune. Their enthusiasm and willingness to undergo DBS checks are clear, but there is no direct evidence of working with young people or explaining technology clearly.",
+    "candidate": "professional_cv_kevin_jones"
+  },
+  {
+    "summary": "The candidate's experience in business operations, management, and leadership development provides a reasonable match for the practical IT support role, but does not directly evidence IT support or technical skills. Their experience in client management and consulting could be relevant to explaining technology clearly to young people, although direct IT support experience is unclear. The candidate's education and professional experience suggest an enthusiasm for working with people and a commitment to professional standards, which are aligned with the job requirements. There is no evidence of IT technical skills or programming ability.",
+    "candidate": "professional_cv_sarah_lynne_van_der_merwe"
+  }
+]

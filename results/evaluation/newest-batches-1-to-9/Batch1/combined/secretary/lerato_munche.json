@@ -1,0 +1,39 @@
+[
+  {
+    "score": 8,
+    "strengths": [
+      "Extensive experience in partnership management and strategic alliances, particularly in the tech and educational sectors.",
+      "Strong background in event organization and stakeholder engagement, demonstrated through roles at Cape Tech Collective and CodeLikeHer.",
+      "Diverse skill set including account management, project management, and IT skills such as Java and Python.",
+      "Relevant academic background in Public Relations, Journalism, and Business Administration, aligning with communication and management needs.",
+      "Active participation in internet governance and youth empowerment initiatives, showcasing leadership and global engagement."
+    ],
+    "weaknesses": [
+      "Lack of specific details on technical project execution and outcomes in previous roles.",
+      "Limited evidence of direct experience with the specific tools or methodologies required by the job (e.g., specific software or agile frameworks).",
+      "While education and certifications are extensive, the timeline suggests a broad focus rather than deep specialization in one area."
+    ],
+    "summary": "The candidate demonstrates strong alignment with the job requirements through extensive relevant experience, a diverse skill set, and a commitment to professional development, though more detailed evidence of technical proficiency in specific tools or methodologies would strengthen the application.",
+    "candidate": "LERATO MUNCHE",
+    "model": "phi4"
+  },
+  {
+    "score": 8,
+    "strengths": [
+      "relevant work experience in project management and global partnerships",
+      "demonstrated ability to manage relationships and drive engagement"
+    ],
+    "weaknesses": [
+      "lack of specific technical skills mentioned in the job description",
+      "no direct experience in the technology industry"
+    ],
+    "summary": "The candidate has substantial experience in project management and partnership development, but lacks some of the specific technical skills and industry experience required for the position.",
+    "candidate": "LERATO MUNCHE",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate has experience closely related to the role, such as leadership, strategic planning, and project management, which are reasonably aligned with the essential requirements. However, there is no clear evidence of direct administrative or support roles in technology companies or organizations, which are not met by the provided experience.",
+    "candidate": "LERATO MUNCHE",
+    "type": "essential_requirements"
+  }
+]

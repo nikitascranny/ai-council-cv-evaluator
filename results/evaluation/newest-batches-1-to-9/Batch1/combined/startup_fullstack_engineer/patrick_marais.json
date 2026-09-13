@@ -1,0 +1,36 @@
+[
+  {
+    "score": 4,
+    "strengths": [
+      "Demonstrates strong analytical and project management skills.",
+      "Has experience in cyber security and risk management."
+    ],
+    "weaknesses": [
+      "Lacks direct experience with full-stack development, particularly in TypeScript/React and Go.",
+      "No prior experience in the energy sector or with event-driven architectures like Kafka or TimescaleDB.",
+      "Limited exposure to fast-paced, high-velocity environments typical of early-stage startups."
+    ],
+    "summary": "Patrick Marais has strong analytical, project management, and cyber security skills but lacks the specific technical and sector experience required for the role at Pulsegrid.",
+    "candidate": "PATRICK MARAIS",
+    "model": "phi4"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "experience in risk management and compliance",
+      "leadership and team management"
+    ],
+    "weaknesses": [
+      "lack of technical programming and software development skills",
+      "no experience in the energy or tech sectors"
+    ],
+    "summary": "The candidate demonstrates strong leadership and risk management skills but lacks the technical background and relevant industry experience required for the position.",
+    "candidate": "PATRICK MARAIS",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate has a reasonable match with the job's essential requirements, demonstrating experience in security and compliance assessments, project management, and operational management. However, there is no clear evidence of shipping production software or experience in TypeScript/React, and the background in security and compliance does not fully align with the distributed systems and velocity-related aspects of the role.",
+    "candidate": "PATRICK MARAIS",
+    "type": "essential_requirements"
+  }
+]

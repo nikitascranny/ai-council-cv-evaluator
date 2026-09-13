@@ -1,0 +1,39 @@
+[
+  {
+    "score": 7,
+    "strengths": [
+      "Has 4 years of experience in building backend services, fulfilling the essential requirement for production software experience.",
+      "Strong experience in Go, which is a preferred language for the role.",
+      "Experience with microservices architecture, which aligns with scaling and deploying full-stack features.",
+      "Proven ability to improve performance and reduce bug reports, demonstrating a focus on quality and efficiency."
+    ],
+    "weaknesses": [
+      "Limited frontend experience, particularly with React/TypeScript, which is required for this role.",
+      "No specific experience with event-driven architectures like Kafka or with time-series databases like TimescaleDB.",
+      "Lacks explicit experience with observability and on-call responsibilities.",
+      "No demonstrated experience with operating systems for real-time energy orchestration or domain knowledge in the energy sector."
+    ],
+    "summary": "Alex Turner has a strong foundation in backend engineering with relevant experience in Go, making them a strong candidate, though they lack frontend experience and domain-specific knowledge.",
+    "candidate": "Alex Turner",
+    "model": "phi4"
+  },
+  {
+    "score": 6,
+    "strengths": [
+      "Experience in backend development with Go",
+      "Proficiency in API development"
+    ],
+    "weaknesses": [
+      "Lacks experience in frontend technologies (React/TypeScript)",
+      "No experience in distributed systems and event-driven architectures"
+    ],
+    "summary": "Alex Turner is a backend-focused engineer with strong API development skills but lacks the required frontend experience and knowledge in distributed systems.",
+    "candidate": "Alex Turner",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate clearly meets the 4+ years of production software shipping experience and has relevant coursework in Computer Science. Their experience with microservices, API design, and unit testing provides a reasonable/close match to the backend language and distributed systems fundamentals requirements. However, their lack of explicit experience with TypeScript/React, Go, or specific production operations like metrics and tracing, makes these requirements less clearly met. Their communication skills and passion for real-world problems are not directly evidenced but are implied by their work experience and coursework.",
+    "candidate": "Alex Turner",
+    "type": "essential_requirements"
+  }
+]

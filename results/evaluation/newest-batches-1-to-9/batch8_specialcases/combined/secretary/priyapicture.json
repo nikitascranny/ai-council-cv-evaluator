@@ -1,0 +1,37 @@
+[
+  {
+    "score": 4,
+    "strengths": [
+      "Good communication and collaboration skills from working with design teams.",
+      "Strong organizational skills inferred from software engineering tasks."
+    ],
+    "weaknesses": [
+      "Lacks direct experience in secretarial, receptionist, or administrative roles.",
+      "No experience with Microsoft Office Suite or practice management software.",
+      "No evidence of typing skills or familiarity with handling confidential financial information."
+    ],
+    "summary": "Priya Chetty has strong technical and collaborative skills but lacks direct experience and required skills for a secretarial or administrative role in an accounting firm.",
+    "candidate": "PriyaPicture",
+    "model": "phi4"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Excellent technical skills",
+      "Proven ability to work in a professional setting"
+    ],
+    "weaknesses": [
+      "Lack of administrative or secretarial experience",
+      "Insufficient knowledge of Microsoft Office tools",
+      "No direct experience in an accountancy firm"
+    ],
+    "summary": "Priya Chetty has strong technical skills but lacks the necessary administrative and industry-specific experience for the role.",
+    "candidate": "PriyaPicture",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's experience as a Software Engineer does not clearly meet the secretarial, receptionist, or office administration experience requirement, but it shows relevant technical skills. The technical skills and certifications are a reasonable match for the Microsoft Office software knowledge and typing speed requirements. The candidate's coursework and technical experience suggest they can handle multiple tasks, but the explicit mention of organization and discretion is unclear. The ability to handle confidential information is not evidenced.",
+    "candidate": "PriyaPicture",
+    "type": "essential_requirements"
+  }
+]

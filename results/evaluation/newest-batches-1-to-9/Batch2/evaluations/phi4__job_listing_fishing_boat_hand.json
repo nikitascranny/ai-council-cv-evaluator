@@ -1,0 +1,133 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Strong aptitude for learning and adapting quickly to new tools, as demonstrated by experience with various programming languages and frameworks.",
+      "Proven ability to work in collaborative environments, which may translate well into working closely with the skipper on a fishing vessel."
+    ],
+    "weaknesses": [
+      "Lack of relevant experience in manual or physical work, which is a core requirement for the boat hand position.",
+      "No prior experience with fishing, boat handling, or maritime activities, which are essential for this role.",
+      "No physical fitness evidence, which is crucial for handling heavy equipment and performing repetitive tasks in all weather conditions."
+    ],
+    "summary": "Jordan Lee has strong learning and teamwork skills but lacks the necessary physical, manual, and maritime experience required for the boat hand position.",
+    "candidate": "beginner_american"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Demonstrates strong work ethic and punctuality, which is essential for the role.",
+      "Has experience working in team settings, which could translate into cooperating well with the skipper."
+    ],
+    "weaknesses": [
+      "Lacks relevant experience in fishing or maritime activities.",
+      "No physical fitness or manual labor experience related to the required tasks.",
+      "No prior exposure to working with boats or handling heavy, repetitive manual work in all weathers.",
+      "No evidence of sea legs or experience in handling moderate seas."
+    ],
+    "summary": "The candidate's strong work ethic and team collaboration skills are positives, but lack of relevant maritime experience and physical labor skills are significant weaknesses for the deckhand position.",
+    "candidate": "beginner_chinese"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Demonstrates strong leadership and mentoring skills which could be valuable in a team-based environment.",
+      "Experienced in managing complex systems and improving efficiency, which could translate to optimizing boat operations."
+    ],
+    "weaknesses": [
+      "Lacks direct experience in fishing, boat handling, or manual labor roles.",
+      "No physical fitness or sea experience, both of which are essential for this role.",
+      "Background in software engineering does not align with the manual and physical nature of the job."
+    ],
+    "summary": "The candidate shows leadership and problem-solving skills but lacks the necessary experience and physical qualifications for a boat hand role on a fishing vessel.",
+    "candidate": "intermediate_american"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Experienced in working in physically demanding environments (engineering and construction contexts may imply physical adaptability)",
+      "Demonstrates reliability and punctuality through sustained employment history"
+    ],
+    "weaknesses": [
+      "Lacks direct experience in fishing or maritime activities, crucial for this role",
+      "No evidence of physical fitness or comfort with repetitive manual work",
+      "No sea legs or experience on boats, which is essential for the job",
+      "Does not possess any of the desirable skills like STCW certification or small-boat handling experience"
+    ],
+    "summary": "Kagiso Ndlovu lacks the essential maritime experience and physical fitness required for a Boat Hand role, though demonstrates reliability and punctuality.",
+    "candidate": "middle_sa"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Has experience with teamwork and mentorship, which may help in adapting to a new work environment",
+      "Strong work ethic as evidenced by consistent professional progression"
+    ],
+    "weaknesses": [
+      "Lacks relevant maritime or fishing industry experience",
+      "No history of physical, manual labor or sea work",
+      "No experience with vessel maintenance or safety procedures",
+      "Unfamiliar with fishing techniques such as potting, netting, and shellfish handling"
+    ],
+    "summary": "Marcus Okafor has strong technical and leadership skills but lacks the specific maritime experience and physical capabilities required for the Deckhand position.",
+    "candidate": "senior_american"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Strong analytical and problem-solving skills demonstrated in software engineering roles.",
+      "Technical leadership experience indicating ability to learn and adapt to new challenges."
+    ],
+    "weaknesses": [
+      "Lack of experience in manual and physically demanding work environments.",
+      "No prior experience in maritime or fishing industries.",
+      "No history of working with heavy equipment or performing tasks like handling pots or nets."
+    ],
+    "summary": "The candidate possesses strong technical skills and leadership experience, but lacks the physical, maritime, and industry-specific experience required for the Deckhand position.",
+    "candidate": "senior_chinese"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "The candidate has a strong work ethic and leadership experience, as demonstrated by their career progression and support for the growth of senior engineers.",
+      "Zanele has shown an ability to handle large-scale, complex systems, which indicates a capacity for adapting to new environments and tasks."
+    ],
+    "weaknesses": [
+      "Lack of direct experience in fishing, boat handling, or manual labor, which are critical for this role.",
+      "No evidence of physical fitness or comfort with heavy, repetitive manual work in all weather conditions.",
+      "Absence of experience with maritime activities or familiarity with the sea, which is essential for the role.",
+      "No history of working in environments with early starts and long days, typical for this fishing job."
+    ],
+    "summary": "Zanele Madondo possesses strong leadership and technical skills but lacks the necessary maritime experience and physical fitness required for a boat hand/ deckhand position.",
+    "candidate": "senior_sa"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Demonstrates strong problem-solving and collaborative skills through software development roles.",
+      "Shows discipline and a structured approach to work, which could be beneficial in learning new tasks."
+    ],
+    "weaknesses": [
+      "Lacks relevant experience in physical, maritime work required for the role.",
+      "No demonstrated experience with manual labor, fishing operations, or sea survival skills.",
+      "No history of working in marine environments, lacking essential sea legs and familiarity with boat operations."
+    ],
+    "summary": "The candidate's skills and experience are heavily focused on software development, lacking the physical, maritime, and safety-related experience crucial for a Deckhand role on an inshore fishing vessel.",
+    "candidate": "beginner_sa"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Shows ability to work in a team and mentor others, indicating potential for learning new roles",
+      "Demonstrates punctuality and reliability in previous roles, aligning with the job's need for these traits"
+    ],
+    "weaknesses": [
+      "Lacks relevant experience in physical and manual work, crucial for the deckhand role",
+      "No prior experience with maritime work or familiarity with fishing operations",
+      "Does not possess the necessary physical fitness or comfort with outdoor, weather-exposed work environments",
+      "Lacks sea legs or experience with maritime safety procedures"
+    ],
+    "summary": "The candidate lacks relevant skills and experience for the physically demanding and maritime-focused role of a boat hand.",
+    "candidate": "middle_chinese"
+  }
+]

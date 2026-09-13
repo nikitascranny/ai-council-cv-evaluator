@@ -1,0 +1,38 @@
+[
+  {
+    "score": 2,
+    "strengths": [
+      "Excellent problem-solving skills demonstrated through experience in optimizing web applications",
+      "Strong technical background with relevant certifications such as AWS Cloud Practitioner and Meta Front End Developer Certificate"
+    ],
+    "weaknesses": [
+      "Lacks relevant experience in groundskeeping, gamekeeping, or countryside management",
+      "No experience in tracking, search & rescue, military, or other pursuit-oriented backgrounds",
+      "No experience with bloodhounds, tracking dogs, or outdoor safety protocols",
+      "Unfamiliarity with immersive theatre, airsoft event marshalling, or private security work"
+    ],
+    "summary": "Priya Chetty has strong technical and problem-solving skills but lacks the specific experience and background required for the Groundskeeper & 'Hunt' Coordinator role at Blackmoor Hall Estate.",
+    "candidate": "PriyaPicture",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "excellent in software engineering",
+      "has some relevant hobbies like hiking"
+    ],
+    "weaknesses": [
+      "no relevant experience in groundskeeping or hunting",
+      "lacks the physical fitness and outdoor survival skills required",
+      "no background in tracking or search and rescue"
+    ],
+    "summary": "Priya Chetty is well-qualified as a software engineer but lacks the necessary background and skills for the role of Groundskeeper & Hunt Coordinator at Blackmoor Hall.",
+    "candidate": "PriyaPicture",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's experience as a Software Engineer does not clearly meet the requirement for groundskeeping, gamekeeping, or countryside management experience. However, their technical and problem-solving skills from the software development role might be transferable to the tracking and search & rescue aspects of the job. The candidate's excellent physical fitness, willingness to work alone in remote areas, and ability to maintain confidentiality through certifications could reasonably align with the job's requirements. A driving license is unclear from the provided information.",
+    "candidate": "PriyaPicture",
+    "type": "essential_requirements"
+  }
+]

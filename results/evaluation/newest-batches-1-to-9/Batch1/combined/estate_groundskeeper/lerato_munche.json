@@ -1,0 +1,38 @@
+[
+  {
+    "score": 8,
+    "strengths": [
+      "Extensive experience in strategic partnership management and relationship building, evidenced by roles at CodeForward and National Legislative Assembly.",
+      "Strong project management skills demonstrated through leadership roles and responsibilities in organizing conferences and managing projects.",
+      "Diverse skill set including IT project management, agile methodologies, and programming languages which align with modern digital job requirements.",
+      "Commitment to professional development through continuous learning, as seen in educational qualifications and certifications in project management and software development."
+    ],
+    "weaknesses": [
+      "Some roles such as Marketing Coordinator have a relatively short duration which might suggest a lack of long-term impact or deeper involvement in those positions.",
+      "Limited direct experience in certain technical areas like Java application development despite holding a certification, which may require further practical application.",
+      "Some roles do not explicitly connect to the specific industry or sector focus of the job description, which might require additional context or adaptation."
+    ],
+    "summary": "The candidate demonstrates a strong fit with the job description through extensive experience in partnership management, project leadership, and a robust skill set, with minor gaps in long-term impact in some roles and practical application of technical skills.",
+    "candidate": "LERATO MUNCHE",
+    "model": "phi4"
+  },
+  {
+    "score": 8,
+    "strengths": [
+      "Extensive experience in partnership management and strategic alliances",
+      "Strong background in project management and IT"
+    ],
+    "weaknesses": [
+      "Limited direct experience in software development",
+      "Less emphasis on hard technical skills"
+    ],
+    "summary": "The candidate has a strong track record in partnership management and project coordination, aligning well with the role's requirements, though there is room for improvement in technical skills and direct software development experience.",
+    "candidate": "LERATO MUNCHE",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate meets the job's essential requirements well, particularly in areas such as project management, partnership development, and stakeholder management. There is a clear match for tasks involving contract management, budgeting, and strategic partnerships. The experience in organizing events and managing teams also aligns closely with the role. However, there is no clear indication of direct technical or programming experience, which might be crucial for certain technical roles.",
+    "candidate": "LERATO MUNCHE",
+    "type": "essential_requirements"
+  }
+]

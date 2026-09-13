@@ -1,0 +1,36 @@
+[
+  {
+    "score": 4,
+    "strengths": [
+      "The candidate has strong organizational and communication skills.",
+      "Experience in training and documenting procedures could be beneficial."
+    ],
+    "weaknesses": [
+      "Lack of direct experience in secretarial, receptionist, or administrative roles.",
+      "No demonstrated proficiency in Microsoft Office applications relevant to the role.",
+      "No direct experience with practice management software or handling financial information."
+    ],
+    "summary": "The candidate possesses strong organizational and communication skills but lacks direct experience and specific technical skills required for the administrative assistant role.",
+    "candidate": "ALEX PARK",
+    "model": "phi4"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Strong analytical skills",
+      "Proficient in testing tools and methodologies"
+    ],
+    "weaknesses": [
+      "Lack of relevant administrative experience",
+      "Insufficient office software proficiency"
+    ],
+    "summary": "The candidate demonstrates strong analytical and technical skills but lacks the specific administrative and secretarial experience required for the role.",
+    "candidate": "ALEX PARK",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate clearly meets the requirement for good working knowledge of Microsoft Word, Excel, and Outlook, as well as accurate typing. Their previous experience in coordination and testing roles provides a reasonable match for the secretarial, receptionist, or office administration experience and the ability to juggle multiple tasks. However, it is unclear if they have a confident telephone manner and a warm, professional way with clients face to face. The requirement for discretion is also not directly evidenced in the provided CV.",
+    "candidate": "ALEX PARK",
+    "type": "essential_requirements"
+  }
+]

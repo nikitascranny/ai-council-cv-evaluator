@@ -1,0 +1,39 @@
+[
+  {
+    "score": 6,
+    "strengths": [
+      "Demonstrates physical fitness and ability to handle manual, repetitive work in demanding conditions.",
+      "Experience with independent work and responsibility in rural environments, suggesting adaptability and reliability.",
+      "Good record keeping and familiarity with safety procedures, which could be beneficial for tasks like catch tallying and landing declarations.",
+      "Experienced in teamwork and communication, important for working effectively with the skipper and crew."
+    ],
+    "weaknesses": [
+      "Lack of direct experience on boats, which is strongly preferred for this position.",
+      "No evidence of familiarity with maritime work or specific fishing techniques such as potting or netting.",
+      "No formal training in maritime safety or boat handling, though willingness to learn could mitigate this.",
+      "Absence of experience with the specific equipment and techniques used in commercial fishing."
+    ],
+    "summary": "Ralph has the physical capability and work ethic required for the role, but lacks direct maritime experience and familiarity with fishing operations, which are crucial for the position.",
+    "candidate": "Ralph_Son_of_a_Shepard_Farm_CV",
+    "model": "phi4"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "dependable and safety conscious",
+      "independent field work and clear communication"
+    ],
+    "weaknesses": [
+      "no experience on boats or with fishing",
+      "lacks relevant safety certifications"
+    ],
+    "summary": "Candidate Ralph Son of a Shepard demonstrates strong reliability and safety consciousness in a rural setting but lacks any relevant experience or qualifications for the maritime and fishing industry role.",
+    "candidate": "Ralph_Son_of_a_Shepard_Farm_CV",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate clearly meets the requirement for physical fitness and comfort with manual work, as well as the need for punctuality and reliability. Their experience with early starts and long days, while not explicitly stated, can be reasonably inferred from their farm work. The requirement for basic numeracy and previous time on boats is a reasonable/close match, given their detailed record-keeping and on-the-job training. However, there is no clear evidence that they have had previous experience on boats, which is strongly preferred.",
+    "candidate": "Ralph_Son_of_a_Shepard_Farm_CV",
+    "type": "essential_requirements"
+  }
+]

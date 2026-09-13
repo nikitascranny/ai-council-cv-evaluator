@@ -1,0 +1,37 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Demonstrates strong organizational skills through project management and teamwork.",
+      "Experienced in collaborative work environments and peer reviews."
+    ],
+    "weaknesses": [
+      "Lacks specific secretarial or administrative experience required for the role.",
+      "No demonstrated proficiency in Microsoft Office applications, particularly Word, Excel, and Outlook.",
+      "Absence of experience in managing diaries, scheduling, or handling correspondence and filing."
+    ],
+    "summary": "While Naledi has strong organizational and collaborative skills, they lack the specific administrative experience and Microsoft Office proficiency required for this secretarial role.",
+    "candidate": "beginner_sa",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong programming and development skills",
+      "Experience with project management and team collaboration"
+    ],
+    "weaknesses": [
+      "Lacks administrative or secretarial experience",
+      "No direct experience with Microsoft Office Suite",
+      "No experience with practice management software"
+    ],
+    "summary": "Candidate has strong technical skills but lacks the specific administrative and secretarial experience required for the role.",
+    "candidate": "beginner_sa",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's CV clearly meets the requirement for good working knowledge of Microsoft Word, Excel, and Outlook, accurate typing, and excellent organization. The ability to handle confidential information with discretion is implied. Previous office administration experience is a reasonable match, though the exact duration is not specified. A warm, professional manner with clients is not explicitly mentioned, but the candidate’s strong communication skills in handling tasks and typing suggest they could meet this requirement. The telephone manner is not directly addressed, making it unclear if this requirement is met.",
+    "candidate": "beginner_sa",
+    "type": "essential_requirements"
+  }
+]

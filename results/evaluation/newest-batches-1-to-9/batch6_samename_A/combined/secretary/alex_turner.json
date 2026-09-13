@@ -1,0 +1,37 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Good organization and communication skills evident from experience in software engineering."
+    ],
+    "weaknesses": [
+      "Lack of relevant secretarial, receptionist, or office administration experience.",
+      "No familiarity with Microsoft Office suite or accountancy software.",
+      "No demonstrated experience with client-facing roles or handling confidential financial information.",
+      "No typing or document formatting skills mentioned.",
+      "Educational background and certifications do not align with administrative or secretarial roles."
+    ],
+    "summary": "While Alex Turner has strong technical and organizational skills, their experience and skill set do not align with the administrative and client-facing nature of the Secretary/ Administrative Assistant role.",
+    "candidate": "Alex Turner",
+    "model": "phi4"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Strong technical skills in programming and API development",
+      "Experience in cloud computing and service architecture"
+    ],
+    "weaknesses": [
+      "Lack of relevant administrative or secretarial experience",
+      "No demonstrated skills in Microsoft Office suite"
+    ],
+    "summary": "The candidate has strong technical skills but lacks the administrative and secretarial experience required for the role.",
+    "candidate": "Alex Turner",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's experience in software engineering does not clearly meet the secretarial, receptionist, or office administration experience requirement, but their strong organizational and task management skills, as well as their good working knowledge of Microsoft Office, are reasonable matches. Their accurate typing speed is unclear from the provided information. The candidate's professional attitude and discretion are inferred from their work ethic and attention to detail.",
+    "candidate": "Alex Turner",
+    "type": "essential_requirements"
+  }
+]

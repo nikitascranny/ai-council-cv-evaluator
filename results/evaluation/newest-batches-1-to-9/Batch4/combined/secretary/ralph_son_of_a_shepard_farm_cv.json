@@ -1,0 +1,37 @@
+[
+  {
+    "score": 4,
+    "strengths": [
+      "Demonstrates excellent organisational skills and disciplined record keeping.",
+      "Has experience in handling confidential and sensitive information, which aligns with the need for discretion."
+    ],
+    "weaknesses": [
+      "Lacks direct experience in secretarial or administrative roles.",
+      "No familiarity with Microsoft Word, Excel, and Outlook as required by the job.",
+      "No demonstrated typing skills at the required speed (50+ wpm).",
+      "Lacks experience in office administration tasks such as managing diaries or handling correspondence."
+    ],
+    "summary": "The candidate shows strong organisational and independent work skills but lacks direct experience and skills in the specific administrative and secretarial tasks required for the role.",
+    "candidate": "Ralph_Son_of_a_Shepard_Farm_CV",
+    "model": "phi4"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Strong record-keeping skills",
+      "Experience in detailed and accurate documentation"
+    ],
+    "weaknesses": [
+      "Lack of relevant administrative or office experience",
+      "No demonstrated knowledge of Microsoft Office Suite"
+    ],
+    "summary": "Ralph's background in detailed record-keeping and livestock management does not align well with the administrative and secretarial requirements of the role at Ashcombe & Vale Chartered Accountants.",
+    "candidate": "Ralph_Son_of_a_Shepard_Farm_CV",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's experience as a Sheep Herder & Farm Operations Assistant closely aligns with the required secretarial and office administration experience, demonstrating strong organizational skills and a professional manner. However, the CV does not provide evidence of specific secretarial or administrative experience. The candidate's skills in record-keeping, maintenance, and handling of animals align with the need for accuracy, attention to detail, and discretion, though these are not directly aligned with the listed requirements. The lack of direct experience with Microsoft Office applications is a clear gap.",
+    "candidate": "Ralph_Son_of_a_Shepard_Farm_CV",
+    "type": "essential_requirements"
+  }
+]

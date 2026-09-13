@@ -1,0 +1,37 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Demonstrates strong organizational and analytical skills.",
+      "Experience in leading and training junior analysts indicates ability to learn and adapt."
+    ],
+    "weaknesses": [
+      "Lacks relevant education in life sciences, such as Marine Biology or Aquatic Biology.",
+      "No experience in aquatic animal husbandry or life support systems.",
+      "No evidence of physical fitness or ability to perform manual tasks such as filter cleaning.",
+      "No background in water quality testing or knowledge of the nitrogen cycle."
+    ],
+    "summary": "While Alex Park has strong organizational and analytical skills, their experience and education do not align with the specific requirements of the Aquarium Biologist role.",
+    "candidate": "ALEX PARK",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong analytical and problem-solving skills",
+      "Experience in detailed documentation and reporting"
+    ],
+    "weaknesses": [
+      "No relevant educational background or experience in marine biology or animal husbandry",
+      "Lack of physical skills required for the job, such as lifting and filter cleaning"
+    ],
+    "summary": "The candidate lacks the necessary background and practical skills related to marine biology and animal husbandry, making them unsuitable for the role.",
+    "candidate": "ALEX PARK",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate has no clear match for a degree in Marine Biology, Zoology, Aquatic Biology, or a related life science. Their willingness to carry out physical tasks, observational skills, and attention to detail are reasonable matches. However, their fitness to lift and work in warm environments is unclear. Basic water chemistry understanding is not evident. The candidate's ability to work on weekends and in early mornings is clear. They meet the right to work in the UK and basic background check requirements.",
+    "candidate": "ALEX PARK",
+    "type": "essential_requirements"
+  }
+]

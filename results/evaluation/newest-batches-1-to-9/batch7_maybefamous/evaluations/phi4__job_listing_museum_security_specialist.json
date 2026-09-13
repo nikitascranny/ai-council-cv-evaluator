@@ -1,0 +1,62 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Strong technical skills in software development and familiarity with web systems.",
+      "Experience in teamwork and collaboration during sprint planning and code reviews."
+    ],
+    "weaknesses": [
+      "No experience in a security role or within a museum, gallery, or heritage site.",
+      "Lacks required SIA Door Supervisor or Security Guarding licence.",
+      "No experience with CCTV, intruder alarm, or access-control systems.",
+      "Physical requirements of the role, such as patrolling a large site, are not evidenced."
+    ],
+    "summary": "While Daniel Rossouw has relevant technical skills and teamwork experience, his background does not align with the security-focused responsibilities and physical demands of the Museum Security Specialist role.",
+    "candidate": "Daniel_common"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Strong problem-solving skills and experience in improving software performance.",
+      "Good collaboration experience with design teams."
+    ],
+    "weaknesses": [
+      "Lack of relevant security or museum-specific experience.",
+      "No experience with CCTV, intruder alarm, or access-control systems.",
+      "No evidence of handling physical security tasks or incident response.",
+      "No relevant qualifications or certifications in security."
+    ],
+    "summary": "Lauren Fischer has strong technical and problem-solving skills but lacks relevant security experience and qualifications for the Museum Security Specialist role.",
+    "candidate": "Lauren_common"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Demonstrates strong technical skills with certifications in Django and Azure.",
+      "Has experience in software development, indicating a capacity for learning new systems."
+    ],
+    "weaknesses": [
+      "Lacks direct experience in security roles or operations.",
+      "Missing essential skills such as familiarity with CCTV, intruder alarms, and access-control systems.",
+      "No evidence of physical ability to patrol large sites or work under high-pressure situations.",
+      "Lacks relevant work experience in museum or heritage site environments."
+    ],
+    "summary": "Linus Torvalds has technical expertise but lacks the specific experience and skills necessary for a Museum Security Specialist role.",
+    "candidate": "Linus"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Demonstrates strong technical skills in software engineering with experience in mobile app development.",
+      "Has a track record of improving product quality and user experience."
+    ],
+    "weaknesses": [
+      "Lacks direct experience in security roles or museum/gallery environments.",
+      "No evidence of experience with CCTV, intruder alarm, or access-control systems.",
+      "No physical or security-related skills demonstrated, such as patrolling or incident response.",
+      "Lacks necessary security licenses, such as a SIA Door Supervisor or Security Guarding license."
+    ],
+    "summary": "Margaret Hamilton has relevant technical experience but lacks the specific security and operational skills required for the Museum Security Specialist role.",
+    "candidate": "Margaret"
+  }
+]

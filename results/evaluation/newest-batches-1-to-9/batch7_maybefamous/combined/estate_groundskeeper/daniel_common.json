@@ -1,0 +1,38 @@
+[
+  {
+    "score": 2,
+    "strengths": [
+      "Strong technical skills in software development with experience in web application development.",
+      "Has a track record of learning and applying new frameworks quickly."
+    ],
+    "weaknesses": [
+      "Lacks relevant experience in groundskeeping, countryside management, or related fields.",
+      "No evidence of physical fitness or experience in tracking, search & rescue, or military backgrounds.",
+      "Unfamiliar with working with animals, specifically bloodhounds, or event management.",
+      "No background in handling outdoor, remote work situations, especially under discretion and confidentiality."
+    ],
+    "summary": "Daniel Rossouw possesses strong technical skills but lacks the essential experience, physical fitness, and specific background required for the Groundskeeper & 'Hunt' Coordinator role at Blackmoor Hall Estate.",
+    "candidate": "Daniel_common",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Comfortable with technology and programming",
+      "Self-taught and capable of upskilling"
+    ],
+    "weaknesses": [
+      "No relevant experience in groundskeeping or outdoor management",
+      "Lacks the physical and practical skills required for the role",
+      "No experience or comfort with the unique and unconventional aspects of the job"
+    ],
+    "summary": "Daniel Rossouw lacks the necessary practical and professional experience for the role and does not possess the required comfort level with unconventional elements of the job.",
+    "candidate": "Daniel_common",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate does not meet the essential requirement of groundskeeping, gamekeeping, or 'countryside management' experience. However, their experience as a software engineer and junior developer demonstrates relevant technical skills and team collaboration, which could be seen as a reasonable match for the 'pursuit oriented' background requirement. The candidate's physical fitness, ability to work alone, and willingness to live on site are not evidenced in the CV, and it is unclear whether they hold a full clean driving license. Their commitment to code quality and reliability through unit testing and bug fixing aligns with the need for discretion and reliability in the role.",
+    "candidate": "Daniel_common",
+    "type": "essential_requirements"
+  }
+]

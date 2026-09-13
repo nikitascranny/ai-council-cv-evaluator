@@ -1,0 +1,39 @@
+[
+  {
+    "score": 2,
+    "strengths": [
+      "Demonstrates initiative and leadership skills through founding her own consultancy",
+      "Possesses good communication skills as evidenced by motivational engagements"
+    ],
+    "weaknesses": [
+      "Lacks relevant maritime or physical work experience necessary for a boat hand",
+      "No evidence of physical fitness or comfort with manual work in outdoor conditions",
+      "No experience with maritime safety procedures or vessel operation",
+      "Does not meet essential requirements such as sea legs, punctuality, and numeracy for catch tallies",
+      "No specific up-skilling potential relevant to the fishing industry or vessel handling"
+    ],
+    "summary": "The candidate has demonstrated initiative and leadership but lacks relevant maritime experience, physical fitness, and the specific skills necessary for the role of a boat hand.",
+    "candidate": "bad_cv_sarah_lynne_van_der_merwe",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Proactive on social media",
+      "Employee of the Month"
+    ],
+    "weaknesses": [
+      "Lacks relevant experience",
+      "No evidence of physical fitness",
+      "No maritime or fishing background"
+    ],
+    "summary": "Candidate lacks the essential maritime experience and physical capabilities required for the position, despite showing some initiative in previous roles.",
+    "candidate": "bad_cv_sarah_lynne_van_der_merwe",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's CV does not clearly meet the essential requirement for sea legs or previous experience on boats. Their experience in retail and consulting is a reasonable match for reliability and punctuality, and basic numeracy skills may be inferred. However, there is no evidence of physically fit manual work or early starts/long days.",
+    "candidate": "bad_cv_sarah_lynne_van_der_merwe",
+    "type": "essential_requirements"
+  }
+]

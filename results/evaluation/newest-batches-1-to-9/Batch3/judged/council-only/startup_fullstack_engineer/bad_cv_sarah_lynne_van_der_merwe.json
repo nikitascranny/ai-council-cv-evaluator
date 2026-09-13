@@ -1,0 +1,8 @@
+{
+  "candidate": "bad_cv_sarah_lynne_van_der_merwe",
+  "final_score": 0,
+  "score_rationale": "The candidate's CV shows no relevant technical skills or experience in full-stack engineering, production systems, or the required programming languages, while the job listing demands expertise in these areas.",
+  "key_strengths": "None identified that align with the technical requirements of the role.",
+  "key_weaknesses": "Lack of experience in full-stack development, backend languages (Go), production systems, and distributed technologies like Kafka.",
+  "final_evaluation": "The candidate does not meet the essential technical requirements for the Founding Full-Stack Engineer role at Pulsegrid."
+}

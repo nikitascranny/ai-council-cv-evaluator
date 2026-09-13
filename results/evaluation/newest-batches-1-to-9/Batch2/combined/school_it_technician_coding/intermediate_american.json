@@ -1,0 +1,37 @@
+[
+  {
+    "score": 7,
+    "strengths": [
+      "Strong technical skills in backend development, including Python, which aligns with the job's requirement for basic programming ability.",
+      "Experience in building dependable backend services and handling large-scale systems, demonstrating capability in managing and maintaining IT systems.",
+      "Leadership and mentoring experience, which can be valuable in supporting coding activities and managing the after-school Code Club."
+    ],
+    "weaknesses": [
+      "Limited direct experience in educational settings, which is desirable for understanding the specific needs of a school environment.",
+      "No specific experience with device imaging, deployment, or Windows management, which are key responsibilities of the role.",
+      "Lack of experience with Intune or similar device management tools, as well as limited exposure to school-specific IT technologies like Google Workspace."
+    ],
+    "summary": "Priya Nair demonstrates strong technical skills and leadership potential, but lacks direct experience in educational IT environments and specific school IT technologies.",
+    "candidate": "intermediate_american",
+    "model": "phi4"
+  },
+  {
+    "score": 4,
+    "strengths": [
+      "Strong technical background in backend and frontend development",
+      "Experience in API design and mentoring"
+    ],
+    "weaknesses": [
+      "Lacks direct experience in education or IT support",
+      "No clear evidence of coding enrichment activities or working with young people"
+    ],
+    "summary": "Priya Nair has a strong technical background but lacks direct experience in education or IT support roles, and there is no clear evidence of her involvement in coding enrichment activities or working with young people.",
+    "candidate": "intermediate_american",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate clearly meets the requirement for practical IT support experience through their education and career path. Their working knowledge of Windows 11 and Microsoft 365 is also evident. Basic programming ability, specifically in Python, is shown to be relevant, although there is no explicit mention of Scratch. The enthusiasm for working with young people and explaining technology clearly is implied by their educational background and AWS certification. However, there is no clear indication of working knowledge of Intune or similar device management, and the candidate's willingness to undergo a DBS check and barred list check is not explicitly stated.",
+    "candidate": "intermediate_american",
+    "type": "essential_requirements"
+  }
+]

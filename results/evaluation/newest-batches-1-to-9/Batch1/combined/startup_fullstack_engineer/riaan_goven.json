@@ -1,0 +1,37 @@
+[
+  {
+    "score": 6,
+    "strengths": [
+      "The candidate has extensive experience in digital marketing and digital product management, which aligns with some responsibilities of the role.",
+      "Strong analytical and strategy development skills, which are crucial for designing and building full-stack features.",
+      "Exposure to various technologies such as CMS, JavaScript, HTML/CSS, and Python, although not directly aligned with the job's tech stack, shows a willingness to work with diverse tools."
+    ],
+    "weaknesses": [
+      "Lacks direct experience with the specific technologies required for the role, such as React/TypeScript, Go, Kafka, and TimescaleDB.",
+      "No evidence of operating services in production environments, which is essential for the role.",
+      "No demonstrated experience with event-driven architectures or real-time data platforms."
+    ],
+    "summary": "While the candidate demonstrates strong digital marketing and strategic skills, their technical expertise does not directly align with the job's requirements, and they lack experience with the specific technologies and operational responsibilities critical for the role.",
+    "candidate": "RIAAN GOVEN",
+    "model": "phi4"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Experience in digital marketing and product management",
+      "Leadership skills"
+    ],
+    "weaknesses": [
+      "Lack of technical backend/frontend development experience",
+      "No experience in energy sector or distributed systems"
+    ],
+    "summary": "Candidate has strong leadership and digital marketing skills but lacks the technical background required for the full-stack engineering role.",
+    "candidate": "RIAAN GOVEN",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate has 4+ years of experience shipping production software, which is a clear match. They have experience in TypeScript/React but do not have backend language experience in Go, Rust, Node, or Java, which is a reasonable/close match. The candidate's experience with distributed systems fundamentals is unclear from the CV. The candidate's communication skills are evident from their cross-functional responsibilities, making it a reasonable/close match. There is no clear evidence of having operated services in production or comfort with ambiguity and velocity, which are clearly not met.",
+    "candidate": "RIAAN GOVEN",
+    "type": "essential_requirements"
+  }
+]

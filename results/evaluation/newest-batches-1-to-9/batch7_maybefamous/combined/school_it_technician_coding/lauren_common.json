@@ -1,0 +1,37 @@
+[
+  {
+    "score": 6,
+    "strengths": [
+      "Strong experience in software engineering and mobile app development, particularly with Flutter, aligning with the basic programming skills required.",
+      "Demonstrated problem-solving skills through improving app store ratings and reducing crash rates, indicating potential for technical support and debugging tasks.",
+      "Proven track record of collaboration with design teams, suggesting ability to work with the Head of Computing and support coding activities."
+    ],
+    "weaknesses": [
+      "Lack of direct experience in IT support or education settings, which are crucial for the first-line support and engagement with young people.",
+      "No explicit experience with Windows 11, Microsoft 365, or device management tools like Intune, which are essential for the role.",
+      "Limited exposure to safeguarding practices and school policies, important for working with young people."
+    ],
+    "summary": "Lauren Fischer has strong technical skills and problem-solving abilities relevant to the programming aspects of the role, but lacks direct experience in IT support and education settings, which are critical for the hybrid nature of the position.",
+    "candidate": "Lauren_common",
+    "model": "phi4"
+  },
+  {
+    "score": 4,
+    "strengths": [
+      "Strong background in software development and mobile app technologies",
+      "Basic programming skills in Python and/or Scratch are transferable"
+    ],
+    "weaknesses": [
+      "No experience in educational or IT support settings",
+      "Limited experience in IT maintenance and administration"
+    ],
+    "summary": "Lauren has relevant technical skills but lacks experience in educational IT support and maintenance, which are crucial for this role.",
+    "candidate": "Lauren_common",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's experience as a Software Engineer and Junior Developer demonstrates practical IT support and programming skills, closely matching the requirements. Their relevant coursework and certifications provide a strong foundation in software development, including mobile application development, which is a reasonable match for the role. However, there is no evidence of specific experience with Windows 11, Microsoft 365, or Intune, and while they show enthusiasm for technology, there is no clear indication of a genuine enthusiasm for working with young people or explaining technology clearly. The candidate is willing to undergo the necessary checks, which is a clear match.",
+    "candidate": "Lauren_common",
+    "type": "essential_requirements"
+  }
+]

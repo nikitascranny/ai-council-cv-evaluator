@@ -1,0 +1,39 @@
+[
+  {
+    "score": 2,
+    "strengths": [
+      "Demonstrates strong technical skills in app development with relevant tools such as Flutter.",
+      "Has experience in collaborative environments and improving user experience."
+    ],
+    "weaknesses": [
+      "Lacks relevant experience in groundskeeping, gamekeeping, or countryside management.",
+      "No experience with tracking, military, or search and rescue activities.",
+      "No evidence of physical fitness or ability to work in remote, outdoor environments.",
+      "No experience or comfort with live-action role-playing, immersive experiences, or working with animals."
+    ],
+    "summary": "Margaret Hamilton's software engineering background does not align with the essential skills and experiences required for the Groundskeeper & 'Hunt' Coordinator role at Blackmoor Hall Estate.",
+    "candidate": "Margaret",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "technical skills in software engineering",
+      "collaborative work experience"
+    ],
+    "weaknesses": [
+      "no relevant experience in groundskeeping or hunting scenarios",
+      "lack of physical fitness or outdoor skills required for the role",
+      "inability to relate job history to the unique requirements of the position"
+    ],
+    "summary": "Margaret Hamilton's background in software engineering does not align with the physical and outdoor skills required for the position of Estate Groundskeeper & Hunt Coordinator at Blackmoor Hall.",
+    "candidate": "Margaret",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "",
+    "error": "PARSE ERROR",
+    "candidate": "Margaret",
+    "type": "essential_requirements"
+  }
+]

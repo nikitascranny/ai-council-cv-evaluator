@@ -1,0 +1,37 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Possesses a degree in a related life science, satisfying one essential requirement.",
+      "Demonstrates strong attention to detail and systematic thinking, potentially beneficial for life support system maintenance."
+    ],
+    "weaknesses": [
+      "Lack of direct experience in aquatic biology or animal husbandry.",
+      "No prior experience with aquarium maintenance or aquatic life support systems.",
+      "No evidence of willingness or experience in physical, dirty, and repetitive tasks typical of the role.",
+      "No experience with water chemistry or the nitrogen cycle in closed aquatic systems."
+    ],
+    "summary": "Chen Haoran's technical skills and educational background in software engineering and a degree in a related life science are strengths, but lack of relevant experience and skills in aquarium maintenance and aquatic life support systems significantly limits their fit for the Aquarium Biologist role.",
+    "candidate": "senior_chinese",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Technical expertise in systems engineering",
+      "Proven ability to lead and mentor technical teams"
+    ],
+    "weaknesses": [
+      "No background in marine biology or aquatic animal husbandry",
+      "Lack of experience with life support systems in aquariums"
+    ],
+    "summary": "The candidate's extensive experience in software engineering and technical leadership is impressive, but they lack the specific scientific and practical background required for an entry-level aquarium biologist position.",
+    "candidate": "senior_chinese",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's degree in Computer Science is a reasonable/close match to the required degree in a related life science. They do not clearly meet the physical labor and water chemistry requirements of the job. Their strong technical skills and leadership experience in architecture, reliability, and incident handling are clearly met.",
+    "candidate": "senior_chinese",
+    "type": "essential_requirements"
+  }
+]

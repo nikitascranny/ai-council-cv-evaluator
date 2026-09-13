@@ -1,0 +1,37 @@
+[
+  {
+    "score": 4,
+    "strengths": [
+      "Demonstrates strong team coordination and problem-solving skills.",
+      "Has experience in maintaining a positive customer experience and addressing issues, which may translate to support and troubleshooting roles."
+    ],
+    "weaknesses": [
+      "Lacks direct IT support experience, which is essential for the role.",
+      "Does not have experience with educational settings or programming in Python or Scratch.",
+      "No evidence of familiarity with Windows 11, Microsoft 365, or device management software like Intune."
+    ],
+    "summary": "While Jason Muller exhibits good team coordination and problem-solving skills, he lacks the required IT support experience and familiarity with educational programming and management software necessary for the role.",
+    "candidate": "professional_cv_jason_muller",
+    "model": "phi4"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Adaptability in fast moving environments",
+      "Customer service and complaint resolution"
+    ],
+    "weaknesses": [
+      "Lack of IT technical skills",
+      "No experience in an educational setting",
+      "No programming experience"
+    ],
+    "summary": "Jason Muller lacks the specific IT and educational experience required for the role, although he demonstrates adaptability and customer service skills.",
+    "candidate": "professional_cv_jason_muller",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's practical IT support experience is unclear and not evidenced. Working knowledge of Windows 11 and Microsoft 365 is suggested through their digital asset research, but specific IT support experience is lacking. Their enthusiasm for technology is inferred from the self-directed learning, but the direct experience with young people is not shown. The candidate demonstrates a commitment to professional development, which aligns with the willingness to undergo background checks.",
+    "candidate": "professional_cv_jason_muller",
+    "type": "essential_requirements"
+  }
+]

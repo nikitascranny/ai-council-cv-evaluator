@@ -1,0 +1,8 @@
+{
+  "candidate": "Margaret",
+  "final_score": 2,
+  "score_rationale": "Margaret has some front-end development experience but lacks the essential backend, Go, and distributed systems knowledge required for the role.",
+  "key_strengths": "Mobile app development experience and solid educational background.",
+  "key_weaknesses": "No experience with TypeScript/React (required), Go (preferred), backend development, observability, incident response, or distributed systems technologies like Kafka, TimescaleDB, and Redis.",
+  "final_evaluation": "Margaret has some relevant front-end experience but does not meet the core backend and technical requirements for this role. She lacks hands-on experience with the essential technologies and production responsibilities described."
+}

@@ -1,0 +1,39 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Excellent technical skills in software engineering.",
+      "Good problem-solving abilities demonstrated through experience in backend systems."
+    ],
+    "weaknesses": [
+      "Lacks relevant experience in groundskeeping or countryside management.",
+      "No background in tracking, search & rescue, or pursuit-oriented activities.",
+      "Absence of physical fitness or experience in outdoor environments.",
+      "No familiarity with handling or working with animals like bloodhounds.",
+      "No evidence of experience in maintaining privacy or working under strict confidentiality."
+    ],
+    "summary": "Marcus Vandenberg has strong technical skills but lacks the relevant experience, physical fitness, and discretion required for the Groundskeeper & Hunt Coordinator role.",
+    "candidate": "MegaMarcus",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong background in software engineering and technical skills",
+      "Hiking and landscape photography suggest a connection to the outdoors"
+    ],
+    "weaknesses": [
+      "Lack of relevant experience in groundskeeping or estate management",
+      "No background in tracking, search and rescue, or experience working with dogs",
+      "No experience in private security or immersive theatre"
+    ],
+    "summary": "Marcus Vandenberg lacks the essential experience and skills required for the groundskeeper and 'Hunt' coordinator role at Blackmoor Hall Estate.",
+    "candidate": "MegaMarcus",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's experience and skills do not clearly meet the job's essential requirements. Proven groundskeeping, gamekeeping, or countryside management experience is clearly not met. While the candidate has relevant software development experience and certifications, these do not directly align with the hunting or groundskeeping background. However, the candidate's strong technical skills and ability to work independently could be considered a reasonable match for some aspects of the role.",
+    "candidate": "MegaMarcus",
+    "type": "essential_requirements"
+  }
+]

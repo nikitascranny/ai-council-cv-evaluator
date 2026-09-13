@@ -1,0 +1,37 @@
+[
+  {
+    "score": 5,
+    "strengths": [
+      "Strong analytical and organizational skills, with experience in data analysis and reporting.",
+      "Good communication skills, evidenced by roles involving stakeholder interaction and client communication.",
+      "Proven problem-solving abilities and critical thinking skills."
+    ],
+    "weaknesses": [
+      "Lack of hands-on computer repair experience, which is essential for the role.",
+      "No experience with hardware upgrades or customer service in a repair shop environment.",
+      "Limited demonstrated experience working with older customers or explaining technical concepts without jargon."
+    ],
+    "summary": "While the candidate has strong analytical and communication skills, they lack the specific hands-on repair experience and familiarity with customer service in a tech repair context required for this role.",
+    "candidate": "PONTUS PONTIOUS",
+    "model": "phi4"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Detail-oriented",
+      "Strong in data analysis and financial reporting"
+    ],
+    "weaknesses": [
+      "Lacks practical computer repair experience",
+      "No experience with customer-facing roles"
+    ],
+    "summary": "Pontus Pontious has strong analytical skills but lacks the practical computer repair and customer service experience required for the role.",
+    "candidate": "PONTUS PONTIOUS",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's experience in administrative and support roles closely aligns with the ability to handle queries and maintain records, potentially meeting the requirement for basic PC/laptop repair skills through related experience. The candidate's commitment to honesty and reliability is evident in their professional history. However, there is no clear evidence of specific ICT or technical support skills, and the experience does not indicate the ability to work Saturdays.",
+    "candidate": "PONTUS PONTIOUS",
+    "type": "essential_requirements"
+  }
+]

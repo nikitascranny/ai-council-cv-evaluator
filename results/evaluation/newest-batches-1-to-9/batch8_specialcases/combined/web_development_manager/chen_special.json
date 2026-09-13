@@ -1,0 +1,39 @@
+[
+  {
+    "score": 6,
+    "strengths": [
+      "Experience with high-volume transactional systems aligns with company's needs.",
+      "Hands-on experience with CI/CD pipelines and AWS, relevant to technical requirements.",
+      "Collaborative work with senior engineers and code reviews suggests leadership potential."
+    ],
+    "weaknesses": [
+      "No direct experience in line-managing engineers, which is crucial for the role.",
+      "Limited exposure to React/TypeScript or Node.js/.NET, important for the specific tech stack.",
+      "Lacks specific experience with accessibility standards and service-oriented architecture migration."
+    ],
+    "summary": "The candidate has strong technical skills and experience with high-volume systems, but lacks direct leadership experience and familiarity with the specific technologies required for the role.",
+    "candidate": "Chen_Special",
+    "model": "phi4"
+  },
+  {
+    "score": 5,
+    "strengths": [
+      "AWS认证开发者",
+      "团队合作能力",
+      "持续集成/持续部署(CI/CD)经验"
+    ],
+    "weaknesses": [
+      "缺乏Web开发经验",
+      "缺少技术领导经验",
+      "对React/TypeScript和.NET或Node.js不熟悉"
+    ],
+    "summary": "陈伟明在软件工程和CI/CD方面有坚实的基础，但缺乏Web开发和团队领导经验，特别是缺少现代Web堆栈和相关技术领域的专长。",
+    "candidate": "Chen_Special",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate clearly meets the requirement for 5+ years of professional web/software engineering experience and has a strong background in modern web stacks, including React/TypeScript and a backend language (Node.js). The experience leading teams through significant technical change is a reasonable match, and the candidate’s solid understanding of CI/CD, cloud infrastructure, and agile delivery with distributed teams also closely aligns with the job requirements. However, it is unclear whether the candidate has line management experience or specific experience with AWS.",
+    "candidate": "Chen_Special",
+    "type": "essential_requirements"
+  }
+]

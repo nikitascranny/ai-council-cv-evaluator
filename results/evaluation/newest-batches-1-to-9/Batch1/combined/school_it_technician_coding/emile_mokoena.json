@@ -1,0 +1,37 @@
+[
+  {
+    "score": 5,
+    "strengths": [
+      "Strong background in cloud technologies and data engineering, indicating technical proficiency.",
+      "Demonstrated ability to work with programming languages like Python, relevant for coding tasks.",
+      "Experience in data analysis and machine learning, showing potential for supporting coding activities."
+    ],
+    "weaknesses": [
+      "Lack of specific experience with Windows 11, Microsoft 365, and Intune, which are essential for the role.",
+      "No direct experience in an educational setting, which is desirable for working with young people.",
+      "Limited experience with hardware management and classroom technology support."
+    ],
+    "summary": "While Emile Mokoena has a strong technical background, their experience is more aligned with cloud and data engineering rather than the specific IT and educational support required for this role.",
+    "candidate": "EMILE MOKOENA",
+    "model": "phi4"
+  },
+  {
+    "score": 4,
+    "strengths": [
+      "Strong technical background in cloud technologies and programming",
+      "Proven experience in data management and automation"
+    ],
+    "weaknesses": [
+      "Lacks direct IT support experience in an educational setting",
+      "No evidence of working with young people or educational IT"
+    ],
+    "summary": "Emile Mokoenas technical expertise is impressive but does not align with the specific requirements of the IT technician and coding enrichment role at St Aldhelm's Community School.",
+    "candidate": "EMILE MOKOENA",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate demonstrates clear practical IT support experience through their role as a Data Science Intern at Beacon Foundation and Machine Learning Engineer at Nimbus AI Collective. They possess a working knowledge of Python, which can be considered for the basic programming ability requirement, and they have experience with various Microsoft tools, which aligns with the Windows 11 and Microsoft 365 requirements. The candidate's background in data science and machine learning suggests a genuine enthusiasm for technology, though this is not explicitly stated. Safeguarding and DBS requirements are not addressed in the CV.",
+    "candidate": "EMILE MOKOENA",
+    "type": "essential_requirements"
+  }
+]

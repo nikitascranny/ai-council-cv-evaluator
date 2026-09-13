@@ -1,0 +1,37 @@
+[
+  {
+    "score": 4,
+    "strengths": [
+      "Candidate has strong analytical and problem-solving skills from software engineering experience.",
+      "Possesses a solid educational background in Computer Science."
+    ],
+    "weaknesses": [
+      "Lacks practical PC/laptop repair skills required for the role.",
+      "No experience with customer service or hardware repair.",
+      "No evidence of hands-on experience with RAM, SSDs, or other hardware components.",
+      "No local presence or indication of ability to reliably commute to Tillingford."
+    ],
+    "summary": "While Marcus Vandenberg has technical skills and a strong background in software engineering, he lacks the practical repair and customer service experience necessary for the role at Brenda & Mick's Computer Repairs.",
+    "candidate": "MegaMarcus",
+    "model": "phi4"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "background in software engineering",
+      "programming skills in Python and Go"
+    ],
+    "weaknesses": [
+      "lack of practical PC/laptop repair skills",
+      "no experience in customer service or retail environment"
+    ],
+    "summary": "Marcus Vandenberg lacks the practical repair skills and customer service experience necessary for the computer repair role at Brenda & Mick's, though his technical background could be an asset for more complex issues.",
+    "candidate": "MegaMarcus",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's experience and qualifications do not clearly meet the job's essential requirements for PC/laptop repair skills. The requirement for friendly and patient behavior with older customers, especially in explaining technical matters without jargon, is a reasonable/close match given the candidate's experience in documentation and onboarding. The requirement for honesty and reliability is clearly met by the certifications and the nature of the role. The candidate's ability to work on weekends is unclear from the CV. The candidate's local status or ability to reliably get to Tillingford is also unclear.",
+    "candidate": "MegaMarcus",
+    "type": "essential_requirements"
+  }
+]

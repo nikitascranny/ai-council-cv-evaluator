@@ -1,0 +1,91 @@
+[
+  {
+    "score": 7,
+    "strengths": [
+      "Demonstrates strong adaptability and customer service skills across various industries.",
+      "Experience in practical problem solving and independent work, which aligns with handling everyday computer issues.",
+      "Strong communication and adaptability in customer-facing roles, beneficial for dealing with clients.",
+      "Experience in diverse operational environments suggests capability to learn and adapt to computer repair tasks."
+    ],
+    "weaknesses": [
+      "Lacks direct experience or skills in computer repair or IT environments.",
+      "No demonstrated ability to perform specific technical tasks like reseating RAM or diagnosing hardware issues.",
+      "Limited evidence of familiarity with technology-specific tasks such as Windows updates or data recovery.",
+      "Lack of local knowledge or ability to commute reliably to Tillingford."
+    ],
+    "summary": "Kevin Jones has strong customer service and adaptability skills but lacks direct experience in computer repair, though his ability to learn new tasks quickly is promising.",
+    "candidate": "professional_cv_kevin_jones"
+  },
+  {
+    "score": 5,
+    "strengths": [
+      "Strong customer service and complaint resolution skills, which align with handling patient customer interactions.",
+      "Experience in team coordination and workflow management, helpful for maintaining shop operations.",
+      "Adaptability in fast-moving environments, suitable for the dynamic and informal nature of the job.",
+      "Good interpersonal communication skills, essential for explaining technical issues to customers."
+    ],
+    "weaknesses": [
+      "Lack of direct experience in PC/laptop repair, which is a key requirement for the job.",
+      "No specific mention of technical skills or practical experience with computer hardware or software issues.",
+      "No evidence of local availability or ability to reliably commute to Tillingford.",
+      "No experience with cash handling or financial transactions, which are part of the role."
+    ],
+    "summary": "The candidate has strong customer service skills and adaptability but lacks direct experience in computer repair and local availability.",
+    "candidate": "professional_cv_jason_muller"
+  },
+  {
+    "score": 4,
+    "strengths": [
+      "Candidate demonstrates a willingness to learn and adapt quickly, which is beneficial for up-skilling.",
+      "Some relevant customer service experience as Assistant Manager, which involves dealing with customers and managing staff."
+    ],
+    "weaknesses": [
+      "Lacks specific PC/laptop repair skills, which are essential for the job.",
+      "Previous work experiences do not directly relate to computer repair or technical support.",
+      "No mention of experience with basic troubleshooting or understanding of IT concepts."
+    ],
+    "summary": "While the candidate shows potential for learning and has some customer service experience, they lack the essential technical skills required for a computer repair role.",
+    "candidate": "bad_cv_jason_muller"
+  },
+  {
+    "score": 4,
+    "strengths": [
+      "Strong leadership and team coordination skills, which could be beneficial in managing a small team or handling multiple tasks in a busy shop.",
+      "Experience in customer engagement and improving customer experience, aligning with the role's need for friendly and patient customer interactions."
+    ],
+    "weaknesses": [
+      "Lack of direct experience in computer repair, which is a core requirement of the job.",
+      "No evidence of technical skills related to PC/laptop repair, essential for the role."
+    ],
+    "summary": "While the candidate has strong leadership and customer service skills, their lack of direct computer repair experience and technical skills makes them a less ideal fit for the role.",
+    "candidate": "professional_cv_sarah_lynne_van_der_merwe"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Possesses basic customer service skills, including apologizing to customers.",
+      "Has experience in various roles suggesting adaptability."
+    ],
+    "weaknesses": [
+      "Lacks technical skills required for PC/laptop repair.",
+      "Unwilling to work on weekends, conflicting with the job's busiest days.",
+      "History of leaving roles, indicating potential reliability issues.",
+      "Lack of patience with repetitive tasks, which could be problematic for the role."
+    ],
+    "summary": "Kevin lacks the essential technical skills and work schedule flexibility needed for the computer repair role, despite having basic customer service experience.",
+    "candidate": "bad_cv_kevin_jones"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Candidate has strong communication and leadership skills, which could be beneficial in customer interactions and team dynamics."
+    ],
+    "weaknesses": [
+      "Lacks practical PC/laptop repair skills which are essential for the role.",
+      "No relevant work experience in technical or IT repair fields.",
+      "Overemphasis on business administration and leadership in previous roles, not aligned with technical job requirements."
+    ],
+    "summary": "The candidate's experience and skills are more aligned with business leadership rather than the practical, hands-on technical work required for the computer repair position.",
+    "candidate": "bad_cv_sarah_lynne_van_der_merwe"
+  }
+]

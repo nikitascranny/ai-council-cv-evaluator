@@ -1,0 +1,37 @@
+[
+  {
+    "score": 7,
+    "strengths": [
+      "The candidate has experience in an administrative role, demonstrating organizational skills and accuracy in data handling.",
+      "Their background in financial services and data analysis indicates a familiarity with the kind of detailed, confidential work involved in the role.",
+      "Strong communication skills, both verbal and written, are evident from their past roles, which are crucial for managing client interactions and correspondence."
+    ],
+    "weaknesses": [
+      "Lack of direct experience in a secretarial or receptionist capacity, which is preferred for this role.",
+      "No explicit mention of proficiency in Microsoft Office tools like Word and Excel, which are essential for this position.",
+      "The candidate does not list specific experience with practice management software, which would be beneficial."
+    ],
+    "summary": "The candidate possesses strong organizational and communication skills from their administrative experience in financial services, though they lack direct experience in secretarial roles and specific office software proficiencies.",
+    "candidate": "PONTUS PONTIOUS",
+    "model": "phi4"
+  },
+  {
+    "score": 6,
+    "strengths": [
+      "strong organisational skills",
+      "excellent communication abilities"
+    ],
+    "weaknesses": [
+      "lacks direct experience in an accountancy office",
+      "no experience with practice management software"
+    ],
+    "summary": "Pontus Pontious demonstrates strong organisational and communication skills, but lacks direct experience in an accountancy office and proficiency with relevant software.",
+    "candidate": "PONTUS PONTIOUS",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate has a reasonable match for previous office administration experience, with roles as an Administrative Assistant and Pensions Analyst. Typing speed and accuracy are not directly evidenced but the roles require strong organizational skills, which align with their work as an Administrative Assistant and Pensions Analyst. The candidate’s experience does not include direct secretarial or receptionist roles, which is a slight gap. The candidate’s experience with Microsoft Excel, although not explicitly stated, strongly suggests proficiency, which aligns with the job requirement. Confident telephone manner and handling of confidential information are not explicitly mentioned but can be inferred from their role as an Administrative Assistant. No direct evidence of working knowledge of Microsoft Word and Outlook is provided.",
+    "candidate": "PONTUS PONTIOUS",
+    "type": "essential_requirements"
+  }
+]

@@ -1,0 +1,35 @@
+[
+  {
+    "score": 4,
+    "strengths": [
+      "Strong technical skills in backend and data systems, which could potentially be adapted to basic computer repair tasks.",
+      "Experience with mentoring and technical planning, suggesting potential to quickly learn and adapt to new roles."
+    ],
+    "weaknesses": [
+      "Lack of direct experience in PC/laptop repair or customer service in a retail environment.",
+      "Technical skills are focused on software engineering, not practical hardware repair or troubleshooting."
+    ],
+    "summary": "The candidate has strong technical and problem-solving skills but lacks direct experience in practical PC repair and customer service, which are essential for the role.",
+    "candidate": "middle_chinese",
+    "model": "phi4"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "programming skills",
+      "technical expertise"
+    ],
+    "weaknesses": [
+      "lacks practical PC/laptop repair skills",
+      "no experience in customer service"
+    ],
+    "summary": "Candidate has strong technical background but lacks practical repair skills and customer service experience.",
+    "candidate": "middle_chinese",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's PC/laptop repair skills are not explicitly detailed, but they could be a reasonable match based on their technical background. Their experience with explaining technical concepts in a simple manner aligns well with the requirement to be friendly and patient with older customers. The candidate’s reliability is supported by their consistent attendance at volunteer roles, and their willingness to work on Saturdays is clearly demonstrated. However, there is no specific mention of their proximity to Tillingford, which is a potential point of uncertainty.",
+    "candidate": "middle_chinese",
+    "type": "essential_requirements"
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "score": 8,
+    "strengths": [
+      "The candidate has over 12 years of experience in designing and operating high-availability platforms, meeting the essential requirement of 4+ years shipping production software.",
+      "Strong experience with TypeScript and Go, both of which are crucial for the role, along with hands-on systems engineering and technical strategy.",
+      "Demonstrated leadership in mentoring and technical direction, aligning with the responsibility to help onboard new engineers and contribute to the company culture.",
+      "Proven ability to manage and improve systems at scale, evidenced by improving p99 latency, increasing availability, and reducing infrastructure costs.",
+      "Experience with distributed systems and relevant technologies like Kafka and Kubernetes, which are applicable to the job's requirements on event-driven architectures and scaling."
+    ],
+    "weaknesses": [
+      "Lacks specific experience in the energy sector or familiarity with domain-specific technologies like TimescaleDB and Redis, although these can be learned.",
+      "No direct experience with React or front-end development, though the candidate has a general background in software engineering with TypeScript."
+    ],
+    "summary": "The candidate is a strong fit for the role due to extensive experience in high-availability systems, distributed technologies, and technical leadership, despite some gaps in specific front-end technologies and energy sector knowledge.",
+    "candidate": "senior_chinese",
+    "model": "phi4"
+  },
+  {
+    "score": 8,
+    "strengths": [
+      "12+ years of experience in high availability platforms",
+      "Experience with event-driven architectures"
+    ],
+    "weaknesses": [
+      "Lack of direct experience in the energy sector",
+      "No experience with TypeScript/React"
+    ],
+    "summary": "Chen Haoran is a strong candidate with extensive experience in high availability platforms and event-driven architectures, but lacks direct experience in the energy sector and TypeScript/React.",
+    "candidate": "senior_chinese",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate clearly meets the requirement for 4+ years shipping production software, with experience in TypeScript/React and Go. The experience in distributed systems and operational practices in production is a reasonable/close match. The requirement for excellent communication and excitement about energy, climate, or hard real-world problems is not clearly met or unclear from the CV.",
+    "candidate": "senior_chinese",
+    "type": "essential_requirements"
+  }
+]

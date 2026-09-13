@@ -1,0 +1,37 @@
+[
+  {
+    "score": 4,
+    "strengths": [
+      "The candidate has demonstrated strong independent working skills and disciplined record-keeping.",
+      "They possess skills in managing and maintaining equipment and vehicles, which could translate to IT device maintenance."
+    ],
+    "weaknesses": [
+      "Lacks experience in IT support or any technical field.",
+      "No background in education, programming, or working with young people.",
+      "No evidence of knowledge in Windows 11, Microsoft 365, or programming languages like Python or Scratch."
+    ],
+    "summary": "While the candidate shows strong independent work and equipment management skills, they lack the necessary IT, educational, and programming experience required for the role.",
+    "candidate": "Ralph_Son_of_a_Shepard_Farm_CV",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "dependable and experienced in livestock care",
+      "strong in record keeping and maintenance"
+    ],
+    "weaknesses": [
+      "no IT or computing experience",
+      "no direct experience working with young people",
+      "no qualifications or training in IT support or education"
+    ],
+    "summary": "The candidate lacks the essential IT and education background required for the role, despite being experienced in farm management and maintenance tasks.",
+    "candidate": "Ralph_Son_of_a_Shepard_Farm_CV",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's experience in practical operations and maintenance roles, along with their continuous training in farm safety and animal welfare, closely align with the practical IT support and basic programming experience requirements. However, there is no clear evidence of working knowledge of Windows 11, Microsoft 365, or Intune, nor is there any demonstrated enthusiasm for working with young people or programming ability relevant to the job. The willingness to undergo necessary checks is present.",
+    "candidate": "Ralph_Son_of_a_Shepard_Farm_CV",
+    "type": "essential_requirements"
+  }
+]

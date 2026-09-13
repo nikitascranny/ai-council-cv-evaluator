@@ -1,0 +1,38 @@
+[
+  {
+    "score": 2,
+    "strengths": [
+      "Demonstrates reliability and punctuality through consistent work history.",
+      "Possesses basic numeracy skills through software engineering experience."
+    ],
+    "weaknesses": [
+      "Lacks relevant work experience in the fishing industry or related physical work.",
+      "No evidence of physical fitness or comfort with heavy, repetitive manual work.",
+      "No sea experience, which is strongly preferred for the role.",
+      "No history of working in early morning or long-day shifts.",
+      "No certification in basic safety training or small-boat handling."
+    ],
+    "summary": "Lauren Fischer has relevant numeracy skills and a reliable work history but lacks the necessary physical fitness, sea experience, and relevant skills for the boat hand position.",
+    "candidate": "Lauren_common",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong background in software engineering",
+      "Experience with cross-platform app development"
+    ],
+    "weaknesses": [
+      "No experience relevant to fishing industry",
+      "Lack of physical fitness and maritime skills"
+    ],
+    "summary": "The candidate lacks any relevant experience or skills for the fishing role and possesses no maritime background, making them a poor fit for the position.",
+    "candidate": "Lauren_common",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's CV does not clearly demonstrate experience in heavy, repetitive manual work or time on boats, which are essential requirements. Their software development experience, while relevant, is not directly related to the physical and maritime aspects of the job. However, their willingness to work early starts and long days aligns well with the job's requirements, and their basic numeracy skills are evident from their coursework and certifications.",
+    "candidate": "Lauren_common",
+    "type": "essential_requirements"
+  }
+]

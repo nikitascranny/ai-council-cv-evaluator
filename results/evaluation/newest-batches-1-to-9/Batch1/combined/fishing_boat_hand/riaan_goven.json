@@ -1,0 +1,37 @@
+[
+  {
+    "score": 4,
+    "strengths": [
+      "Strong leadership and project management skills demonstrated through roles as Head of Digital Product and team leadership.",
+      "Experience with digital strategy development and implementation, showcasing ability to devise and execute plans."
+    ],
+    "weaknesses": [
+      "Lack of direct experience in fishing or maritime work, which is crucial for the role.",
+      "No evidence of physical fitness or comfort with manual, outdoor labor as required.",
+      "Absence of sea legs or familiarity with working on boats, which is strongly preferred.",
+      "Limited relevant skills related to the specific duties of handling fishing equipment or performing tasks on a vessel."
+    ],
+    "summary": "While Riaan Goven has strong leadership and strategy skills, his lack of maritime experience and physical work suitability make him a less suitable candidate for this physically demanding and specialized fishing vessel role.",
+    "candidate": "RIAAN GOVEN",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong background in digital marketing and leadership",
+      "Experience in strategic planning and execution"
+    ],
+    "weaknesses": [
+      "Lack of direct experience in fishing or marine environments",
+      "No physical fitness or manual labor skills relevant to the role"
+    ],
+    "summary": "The candidate has extensive digital marketing experience and leadership skills but lacks the necessary physical and maritime experience for the role of a boat hand.",
+    "candidate": "RIAAN GOVEN",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate does not clearly meet the essential requirements for the role. The experience in digital marketing and user experience is a reasonable/close match, but does not align with the need for physical fitness, manual work, or working on boats. The candidate's ability to work early starts and long days could be inferred from their experience, but there is no evidence of sea legs or previous time on boats.",
+    "candidate": "RIAAN GOVEN",
+    "type": "essential_requirements"
+  }
+]

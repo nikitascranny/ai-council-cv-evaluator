@@ -1,0 +1,17 @@
+[
+  {
+    "score": 7,
+    "strengths": [
+      "Experience with migrating a monolith to microservices, relevant to platform modernisation.",
+      "Strong technical skills in backend development with Go and Python.",
+      "Certifications in Google Cloud and Terraform, indicating up-to-date technical knowledge."
+    ],
+    "weaknesses": [
+      "Lacks experience with React/TypeScript frontend, which is essential for the role.",
+      "Limited experience in line-managing engineers, with only 2 years of professional experience.",
+      "No direct experience with Node.js or .NET, which are specified in the job requirements."
+    ],
+    "summary": "Alex Turner has relevant technical experience and skills in backend development and microservices, but lacks specific experience with required technologies and line-management.",
+    "candidate": "Alex Turner"
+  }
+]

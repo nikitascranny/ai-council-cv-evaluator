@@ -1,0 +1,18 @@
+[
+  {
+    "summary": "The candidate meets the 5+ years of web/software engineering experience and has relevant coursework in web systems. The React experience is a reasonable match for the modern web stack requirement, but the backend language experience is unclear. Experience leading teams is not directly evidenced, though working in a team environment is shown. CI/CD, cloud infrastructure, and agile delivery experience are not clearly demonstrated, but the candidate has relevant coursework and certifications. Communication skills are not explicitly mentioned, but the team collaboration experience suggests potential.",
+    "candidate": "Daniel_common"
+  },
+  {
+    "summary": "The candidate meets the requirement for 5+ years of professional web/software engineering experience, though no line management experience is evident. Their experience with Flutter and cross-platform app development is a reasonable match for modern web stacks. They have experience with CI/CD and automated testing, and their coursework in Agile Practices and relevant certifications suggest they can translate between engineers, product managers, and executives. However, there is no clear evidence of experience leading teams through significant technical change or running agile delivery with distributed teams.",
+    "candidate": "Lauren_common"
+  },
+  {
+    "summary": "The candidate meets the requirement of 5+ years of professional web/software engineering experience, albeit with a gap in his CV where the exact role of line managing engineers is not evidenced. His experience in using React and Django aligns closely with the modern web stack requirements. He has demonstrated experience leading a team and participating in sprint planning and code reviews, which can be considered a reasonable match for leading teams through significant technical change. The CI/CD and cloud infrastructure requirements are not explicitly met, as his experience is limited to Django and Azure Fundamentals. Excellent communication skills are not clearly evidenced, but his experience leading a team and participating in scrum provides some indication of his ability to communicate effectively.",
+    "candidate": "Linus"
+  },
+  {
+    "summary": "The candidate clearly meets the requirement for 5+ years of web/software engineering experience and has a solid educational background in software engineering. The experience in developing cross-platform apps and improving app ratings is a reasonable match for a strong background in modern web stacks. However, the candidate does not clearly meet the requirement for line managing engineers or leading significant technical changes. Agile practices coursework and certifications in Flutter and Android development indicate potential for running agile delivery but do not definitively prove experience with distributed or hybrid teams.",
+    "candidate": "Margaret"
+  }
+]

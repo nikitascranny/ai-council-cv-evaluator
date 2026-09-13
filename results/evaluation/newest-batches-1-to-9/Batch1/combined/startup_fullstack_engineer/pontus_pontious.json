@@ -1,0 +1,37 @@
+[
+  {
+    "score": 4,
+    "strengths": [
+      "Strong analytical and problem-solving skills evident from financial and data analysis experience.",
+      "Demonstrated capability in report writing and data visualization, which can be beneficial for developing product surfaces.",
+      "Good organizational and communication skills, crucial for interacting with stakeholders and team members."
+    ],
+    "weaknesses": [
+      "Lack of direct experience in full-stack development, specifically in React/TypeScript and Go, as required by the job.",
+      "No demonstrated experience in operating services in production environments, which is essential for the role.",
+      "Absence of experience with event-driven architectures and distributed systems, which are key technical requirements."
+    ],
+    "summary": "The candidate has strong analytical and communication skills but lacks the specific technical experience and expertise in full-stack development and production operations required for the role.",
+    "candidate": "PONTUS PONTIOUS",
+    "model": "phi4"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "strong in financial analysis and data handling",
+      "excellent in report writing and data visualization"
+    ],
+    "weaknesses": [
+      "lacks experience in full-stack engineering and software development",
+      "no experience with relevant technologies like React/TypeScript, Go, Kafka, TimescaleDB"
+    ],
+    "summary": "Pontus Pontious has a strong background in financial analysis and reporting but lacks the technical skills and experience in full-stack engineering and relevant technologies as required for the position.",
+    "candidate": "PONTUS PONTIOUS",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's experience primarily focuses on administrative and financial roles, which do not clearly meet the requirement for shipping production software with strong experience in TypeScript/React and backend languages. However, the candidate's experience in producing reports and analysing data could be a reasonable match for the need to communicate technical trade-offs effectively. There is no evidence of experience with distributed systems or incident response, which are clearly not met.",
+    "candidate": "PONTUS PONTIOUS",
+    "type": "essential_requirements"
+  }
+]

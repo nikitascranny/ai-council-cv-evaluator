@@ -1,0 +1,37 @@
+[
+  {
+    "score": 5,
+    "strengths": [
+      "Proven experience with cloud technologies and machine learning, relevant to technical adaptability.",
+      "Strong background in data processing and analysis, which aligns with the analytical skills needed.",
+      "Experience with version control systems like Git, essential for collaboration in software development."
+    ],
+    "weaknesses": [
+      "Lack of experience in TypeScript/React and Go, which are essential for the full-stack development required.",
+      "No direct experience with event-driven architectures such as Kafka or TimescaleDB, which are critical for this role.",
+      "Insufficient experience in production operations, observability, and incident response."
+    ],
+    "summary": "The candidate shows potential with a solid foundation in cloud technologies and machine learning but lacks critical full-stack development experience and exposure to the specific technologies required for this role.",
+    "candidate": "EMILE MOKOENA",
+    "model": "phi4"
+  },
+  {
+    "score": 4,
+    "strengths": [
+      "AWS certifications",
+      "experience with data engineering and preprocessing"
+    ],
+    "weaknesses": [
+      "Lacks full-stack experience with React/TypeScript and Go",
+      "No direct experience with energy sector or distributed systems"
+    ],
+    "summary": "The candidate shows promise in cloud technologies and data engineering but lacks the specific full-stack and energy sector expertise required for the position.",
+    "candidate": "EMILE MOKOENA",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate has relevant experience in data processing and analysis but lacks direct experience in shipping production software. Their background in distributed systems fundamentals and communication is a reasonable match. Certifications in cloud and Kubernetes are a strong fit, but specific backend language experience is unclear from the CV.",
+    "candidate": "EMILE MOKOENA",
+    "type": "essential_requirements"
+  }
+]

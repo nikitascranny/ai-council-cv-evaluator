@@ -1,0 +1,37 @@
+[
+  {
+    "score": 8,
+    "strengths": [
+      "Strong alignment of hard skills with job requirements, including project management, IT, and programming languages like JavaScript and Python.",
+      "Extensive experience in strategic partnerships and relationship management, demonstrated in multiple roles.",
+      "Solid foundation in communications and leadership, supported by relevant educational background.",
+      "Demonstrated up-skilling potential through ongoing education and diverse professional experiences."
+    ],
+    "weaknesses": [
+      "Lack of specific job role details for some positions may lead to questions about depth of experience.",
+      "Skills like Agile and Scrum, while listed, may not be sufficiently evidenced by specific projects or achievements."
+    ],
+    "summary": "The candidate exhibits strong alignment with job requirements through diverse relevant experience and skills, with a clear track record in strategic partnerships and project management, demonstrating strong up-skilling potential.",
+    "candidate": "LERATO MUNCHE",
+    "model": "phi4"
+  },
+  {
+    "score": 8,
+    "strengths": [
+      "Strong background in project management and partnership development",
+      "Extensive experience in internal communications and marketing"
+    ],
+    "weaknesses": [
+      "Limited direct experience in software development",
+      "Could benefit from additional technical certifications"
+    ],
+    "summary": "The candidate demonstrates a solid skill set in project management, partnership development, and communications, aligning well with the job description, but may need to enhance technical skills.",
+    "candidate": "LERATO MUNCHE",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's experience is primarily in communication, marketing, and technology, which aligns closely with the job's requirements. Their roles in partnerships, innovation, and technology suggest they could meet the essential requirements for the job. However, the role specifically requiring field experience or on-site presence (like field-based hosting and coordination) is not clearly supported by the CV.",
+    "candidate": "LERATO MUNCHE",
+    "type": "essential_requirements"
+  }
+]

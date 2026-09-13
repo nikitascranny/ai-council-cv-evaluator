@@ -1,0 +1,37 @@
+[
+  {
+    "score": 4,
+    "strengths": [
+      "Excellent problem-solving and project management skills.",
+      "Strong analytical abilities and experience with digital tools.",
+      "Possesses a foundational understanding of technical documentation and client coordination."
+    ],
+    "weaknesses": [
+      "Lacks direct experience in PC/laptop repair.",
+      "No demonstrated ability in hardware-related tasks such as RAM and SSD upgrades.",
+      "No experience in customer service or diagnosing and fixing everyday computer issues."
+    ],
+    "summary": "The candidate has strong analytical and project management skills but lacks specific experience in PC repair and customer service, which are critical for this role.",
+    "candidate": "JORDAN VELDMAN",
+    "model": "phi4"
+  },
+  {
+    "score": 4,
+    "strengths": [
+      "Analytical skills",
+      "Problem-solving ability"
+    ],
+    "weaknesses": [
+      "Lack of direct experience in IT repair",
+      "No evidence of practical PC/laptop repair skills"
+    ],
+    "summary": "The candidate possesses strong analytical and problem-solving skills but lacks direct experience in IT repair or practical PC/laptop repair skills, which are essential for the role.",
+    "candidate": "JORDAN VELDMAN",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate demonstrates clear alignment with the essential requirements, particularly in terms of technical project management and documentation. The experience in problem-solving and collaboration is a reasonable match for the need to explain things without jargon. The requirement for Saturday work is not evidenced in the CV, and the geographical constraints are unclear.",
+    "candidate": "JORDAN VELDMAN",
+    "type": "essential_requirements"
+  }
+]

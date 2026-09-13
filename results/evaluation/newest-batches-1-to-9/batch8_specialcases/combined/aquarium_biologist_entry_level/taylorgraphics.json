@@ -1,0 +1,37 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Strong leadership and team management experience.",
+      "Good problem-solving skills demonstrated through successful project outcomes.",
+      "High level of technical proficiency in software engineering and systems design."
+    ],
+    "weaknesses": [
+      "Lack of relevant educational background in marine biology or related life sciences.",
+      "No practical experience in aquatic animal husbandry or life support systems.",
+      "No demonstrated experience or skills in water chemistry, the nitrogen cycle, or hands-on maintenance tasks."
+    ],
+    "summary": "The candidate has strong leadership and technical skills but lacks the necessary educational background and hands-on experience in aquatic animal husbandry required for the entry-level Aquarium Biologist position.",
+    "candidate": "TaylorGraphics",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong technical background",
+      "Experience in system design and architecture"
+    ],
+    "weaknesses": [
+      "No experience in marine biology or aquatic animal husbandry",
+      "Lacks essential requirements for the role"
+    ],
+    "summary": "Taylor Okafor's technical skills and leadership experience do not align with the hands-on, aquatic life support role at Seagate Public Aquarium.",
+    "candidate": "TaylorGraphics",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's education in Computer Science does not meet the requirement for a degree in Marine Biology, Zoology, Aquatic Biology or a related life science. However, their strong technical background and experience in software engineering could be seen as a reasonable match for the technical skills required. The CV does not clearly indicate any experience in physical tasks, water chemistry, or the nitrogen cycle, which are essential requirements. Overall, the candidate's experience and qualifications align more closely with a technical role rather than the described aquarium maintenance position.",
+    "candidate": "TaylorGraphics",
+    "type": "essential_requirements"
+  }
+]

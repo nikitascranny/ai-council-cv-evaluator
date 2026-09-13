@@ -1,0 +1,35 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Fast learner when motivated",
+      "Strong opinions which could translate to decisive communication"
+    ],
+    "weaknesses": [
+      "Lacks formal education and relevant work experience in software engineering",
+      "No demonstrated experience with TypeScript, React, Go, or event-driven architectures",
+      "No evidence of operating or managing production software services",
+      "No previous startup or engineering experience"
+    ],
+    "summary": "The candidate lacks the technical skills, relevant work experience, and industry knowledge required for the role, despite being a quick learner.",
+    "candidate": "bad_cv_jason_muller",
+    "model": "phi4"
+  },
+  {
+    "score": 1,
+    "strengths": [
+      "Minimal responsibility preferred"
+    ],
+    "weaknesses": [
+      "Lacks relevant work experience, skills, and alignment with job requirements"
+    ],
+    "summary": "Candidate is completely unsuitable for the position due to a total mismatch between the job requirements and the candidate's background and aspirations.",
+    "candidate": "bad_cv_jason_muller",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate has no clear experience shipping production software, which is a core requirement. Their role at Uncle Dave’s Car Wash demonstrates some customer service and management skills, which could be transferable, but not directly related to the technical requirements. The Crypto Entrepreneur role shows the candidate's ability to handle ambiguity and learn quickly, which aligns with the need for comfort with velocity. The candidate lacks formal education, making it unclear how they developed a solid grasp of distributed systems fundamentals.",
+    "candidate": "bad_cv_jason_muller",
+    "type": "essential_requirements"
+  }
+]

@@ -1,0 +1,39 @@
+[
+  {
+    "score": 8,
+    "strengths": [
+      "Strong alignment with required skills including account management, project management, and IT-related skills such as JavaScript and Python.",
+      "Extensive relevant work experience in partnership management and global initiatives, particularly in strategic partnerships and stakeholder engagement.",
+      "Demonstrated capability in international roles with responsibilities in strategic alliances and internet governance, indicating adaptability and leadership.",
+      "Solid educational background with a focus on public relations, management, and journalism, supporting communication and leadership skills.",
+      "Proven track record of recognition and achievements in innovation and technology, enhancing credibility in the tech industry."
+    ],
+    "weaknesses": [
+      "Lack of specific technical depth in some IT-related fields beyond basic coding skills, which may be necessary depending on the technical demands of the position.",
+      "Some work experience gaps that may require further explanation, though these may be mitigated by the candidate's continuous learning and up-skilling efforts.",
+      "Limited explicit mention of leadership experience in large teams or high-stakes projects, which might be crucial depending on the role's scope."
+    ],
+    "summary": "The candidate is highly qualified with strong skills, relevant experience, and a proven track record in strategic partnerships and global initiatives, making them a strong fit for roles requiring these competencies.",
+    "candidate": "LERATO MUNCHE",
+    "model": "phi4"
+  },
+  {
+    "score": 8,
+    "strengths": [
+      "Proven experience in global partnerships and strategic alliances",
+      "Strong background in project management and internal communications"
+    ],
+    "weaknesses": [
+      "Limited direct experience in technology project management",
+      "No clear evidence of experience in hands-on IT development"
+    ],
+    "summary": "The candidate has substantial experience in strategic partnerships and project management, but lacks specific IT development experience mentioned in the job description.",
+    "candidate": "LERATO MUNCHE",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate meets the requirement for internet governance experience through various roles and conferences. The marketing and communications experience, while not directly related, is a reasonable match. However, there is no clear evidence of direct experience in project management or implementation of technology initiatives, which are not explicitly required but would be beneficial for the role.",
+    "candidate": "LERATO MUNCHE",
+    "type": "essential_requirements"
+  }
+]

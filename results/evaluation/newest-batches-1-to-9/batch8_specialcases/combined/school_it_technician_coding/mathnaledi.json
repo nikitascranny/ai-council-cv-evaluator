@@ -1,0 +1,40 @@
+[
+  {
+    "score": 7,
+    "strengths": [
+      "Strong analytical and technical skills with experience in data analysis and statistical modeling.",
+      "Good proficiency in programming languages like Python and SQL, which are beneficial for coding activities.",
+      "Demonstrated ability to improve efficiency and reduce manual workload, aligning with technician responsibilities.",
+      "Experience with data visualization tools like Tableau, useful for managing school's website content and VLE."
+    ],
+    "weaknesses": [
+      "Lack of direct IT support experience in an educational or similar setting.",
+      "No specific experience with device imaging, network management, or classroom technology setup.",
+      "No experience with Scratch or educational programming tools like Micro:bit, which are desirable for coding activities.",
+      "No prior experience in educational support roles or working directly with young people."
+    ],
+    "summary": "The candidate has strong technical and analytical skills with relevant experience in programming and data analysis, but lacks direct IT support experience and familiarity with educational tools and environments.",
+    "candidate": "MathNaledi",
+    "model": "phi4"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Strong analytical and programming skills",
+      "Experience with Python"
+    ],
+    "weaknesses": [
+      "Lack of IT support experience",
+      "No experience in an education setting",
+      "No relevant coding club experience"
+    ],
+    "summary": "The candidate possesses strong technical skills but lacks the specific IT support and educational experience required for the role.",
+    "candidate": "MathNaledi",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's experience in data analysis and programming, particularly with R and Python, closely aligns with the basic programming requirement. Their education and certifications in data analytics and statistics also provide a strong foundation. However, there is no direct evidence of IT support or working knowledge of Microsoft 365 or Intune. Their enthusiasm for technology is evident, but there is no mention of working with young people or understanding safeguarding policies.",
+    "candidate": "MathNaledi",
+    "type": "essential_requirements"
+  }
+]

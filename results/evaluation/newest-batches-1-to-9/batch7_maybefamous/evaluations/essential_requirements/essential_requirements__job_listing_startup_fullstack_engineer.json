@@ -1,0 +1,18 @@
+[
+  {
+    "summary": "The candidate has 4+ years of experience shipping production software and has used TypeScript/React, which meets the frontend requirement. The experience with Django for building REST APIs is a reasonable match for the backend language requirement, though Go is preferred. Metrics and tracing are not explicitly mentioned, but the experience with code reviews and sprint planning indicates involvement in operations and incident response. The candidate's communication skills are evident from the diverse teams they've worked with. The energy and climate focus is not directly addressed, but the projects could be interpreted as related to real-world problems.",
+    "candidate": "Daniel_common"
+  },
+  {
+    "summary": "The candidate meets the requirement for 4+ years of production software shipping experience and has relevant coursework and additional training in Flutter and Dart, which are closely related to TypeScript/React. The candidate's experience in fixing bugs and improving app ratings demonstrates a solid grasp of distributed systems fundamentals and production operations. However, the CV does not explicitly mention experience with Go, Rust, Node, or Java, nor does it clearly indicate comfort with operating services in production or the ability to explain technical trade-offs to non-technical stakeholders.",
+    "candidate": "Lauren_common"
+  },
+  {
+    "summary": "The candidate meets the requirement of shipping production software with 4+ years of experience. They have relevant experience with TypeScript/React and Django, which aligns with the backend requirement. The candidate's experience with sprint planning and code reviews suggests they can operate in a fast-paced environment. Their solid grasp of distributed systems fundamentals is unclear, and their communication skills are not evidenced. The candidate clearly lacks experience with Go or the other preferred backend languages, and the education section does not demonstrate clear expertise in energy, climate, or hard real-world problems.",
+    "candidate": "Linus"
+  },
+  {
+    "summary": "The candidate has 4+ years of experience shipping production software, which is clearly met. Their experience with Flutter and Dart is a reasonable match for the TypeScript/React requirement, and they have relevant coursework in Agile Practices. However, there is no evidence of experience with Go or other backend languages, nor with operating services in production or distributed systems fundamentals.",
+    "candidate": "Margaret"
+  }
+]

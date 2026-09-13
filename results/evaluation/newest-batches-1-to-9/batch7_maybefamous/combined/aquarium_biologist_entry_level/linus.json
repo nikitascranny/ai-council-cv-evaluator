@@ -1,0 +1,36 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Demonstrates problem-solving skills and attention to detail through software engineering experience.",
+      "Shows potential for up-skilling with a strong foundation in learning new frameworks and technologies."
+    ],
+    "weaknesses": [
+      "Lacks direct experience in marine biology, aquatics, or life sciences.",
+      "No prior experience with aquatic animal husbandry or life support systems.",
+      "Does not meet the essential requirement of a relevant degree in Marine Biology, Zoology, Aquatic Biology, or related field."
+    ],
+    "summary": "While the candidate has strong technical skills and a capacity for learning, they lack the specific qualifications and experience required for an entry-level Aquarium Biologist position.",
+    "candidate": "Linus",
+    "model": "phi4"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Keen interest in aquatic life through hobby of keeping tropical fish",
+      "Technical skills in system maintenance which could be transferable"
+    ],
+    "weaknesses": [
+      "Lack of relevant degree in Marine Biology, Zoology, or Aquatic Biology",
+      "No direct experience in aquatic animal husbandry or life support systems"
+    ],
+    "summary": "Linus Torvalds has technical skills that may be transferable but lacks the necessary educational background and direct experience in aquatic animal husbandry.",
+    "candidate": "Linus",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate does not meet the essential requirement of a degree in Marine Biology, Zoology, Aquatic Biology or a related life science. However, the candidate’s experience as a Junior Developer and software engineer shows strong technical skills, including code reviews and bug fixing, which could be transferable to tasks involving careful record keeping and attention to detail. The candidate’s physical fitness and ability to work flexible hours are clearly met.",
+    "candidate": "Linus",
+    "type": "essential_requirements"
+  }
+]

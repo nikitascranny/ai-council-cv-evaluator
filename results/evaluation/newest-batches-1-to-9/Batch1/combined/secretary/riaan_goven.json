@@ -1,0 +1,37 @@
+[
+  {
+    "score": 5,
+    "strengths": [
+      "Strong analytical and strategic thinking skills demonstrated through experience in digital marketing and digital product management.",
+      "Experience in managing complex digital projects and leading teams.",
+      "Good command of digital tools and platforms relevant to modern marketing strategies."
+    ],
+    "weaknesses": [
+      "Lack of direct secretarial or administrative experience required for the role.",
+      "No specific experience or mention of proficiency in Microsoft Office Suite, particularly Outlook, which is essential for the job.",
+      "The candidate's experience is primarily in a digital and marketing context, rather than an accountancy or office administration setting."
+    ],
+    "summary": "While the candidate possesses strong strategic and analytical skills with leadership experience in digital marketing, they lack the specific secretarial, administrative, and Microsoft Office proficiency required for this role.",
+    "candidate": "RIAAN GOVEN",
+    "model": "phi4"
+  },
+  {
+    "score": 4,
+    "strengths": [
+      "excellent communication and project management skills",
+      "strong experience in digital marketing and customer experience"
+    ],
+    "weaknesses": [
+      "lacks direct experience in administrative or secretarial roles",
+      "no experience in accountancy or legal practice management"
+    ],
+    "summary": "While the candidate demonstrates strong communication and project management skills, they lack the necessary administrative and industry-specific experience for the role.",
+    "candidate": "RIAAN GOVEN",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's experience in digital marketing and communications, as well as their leadership roles, provides a reasonable match for the essential requirements of the job, especially in terms of organization and handling multiple tasks. However, the candidate's experience does not directly align with the specific role of secretarial, receptionist, or office administration, and their typing speed and knowledge of Microsoft Office tools are not explicitly mentioned.",
+    "candidate": "RIAAN GOVEN",
+    "type": "essential_requirements"
+  }
+]

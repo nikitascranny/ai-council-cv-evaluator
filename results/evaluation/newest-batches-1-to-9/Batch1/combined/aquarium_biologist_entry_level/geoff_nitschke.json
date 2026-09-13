@@ -1,0 +1,38 @@
+[
+  {
+    "score": 4,
+    "strengths": [
+      "Demonstrated strong analytical and research skills through experience in UX research and design.",
+      "Proven ability to work in a team and influence cross-functional groups.",
+      "Experience with qualitative and quantitative methods which could be beneficial for water quality testing and record-keeping."
+    ],
+    "weaknesses": [
+      "Lack of formal education in Marine Biology, Zoology, or Aquatic Biology which is essential for the role.",
+      "No direct experience in aquarium work or aquatic animal husbandry.",
+      "Physical and practical skills related to aquarium maintenance, such as filter cleaning and life support system management, are not demonstrated.",
+      "No evidence of basic understanding of water chemistry or nitrogen cycle in closed aquatic systems."
+    ],
+    "summary": "While Geoff has strong research and analytical skills, the lack of relevant education and experience in aquatic sciences significantly limits the suitability for the Aquarium Biologist position.",
+    "candidate": "GEOFF NITSCHKE",
+    "model": "phi4"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Strong background in user research and engagement",
+      "Leadership in cross-functional teams"
+    ],
+    "weaknesses": [
+      "Lack of relevant aquatic biology experience",
+      "No background in physical maintenance and life support systems"
+    ],
+    "summary": "The candidate excels in user research and leadership but lacks direct experience in aquatic biology and maintenance tasks, making them a poor fit for the Aquarium Biologist role.",
+    "candidate": "GEOFF NITSCHKE",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's education does not meet the essential requirement for a degree in Marine Biology, Zoology, Aquatic Biology, or a related life science. However, the candidate's experience in research and design could be considered a close match for the strong observational skills and attention to detail required, as well as the ability to produce clear, actionable reports. The physical fitness requirements are unclear from the CV, and there is no evidence of relevant practical experience in maintaining aquatic systems or working in similar environments.",
+    "candidate": "GEOFF NITSCHKE",
+    "type": "essential_requirements"
+  }
+]

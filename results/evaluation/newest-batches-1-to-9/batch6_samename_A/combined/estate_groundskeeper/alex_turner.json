@@ -1,0 +1,38 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Excellent technical problem-solving skills demonstrated through software engineering roles.",
+      "Strong foundation in backend development, particularly in API and service building."
+    ],
+    "weaknesses": [
+      "Lacks relevant experience in groundskeeping, gamekeeping, or countryside management.",
+      "No background in tracking, search & rescue, military, or similar pursuit-oriented activities.",
+      "Physical fitness and comfort with outdoor, rugged environments are not addressed.",
+      "No experience working with hounds or similar tracking dogs.",
+      "Discretion and ability to work alone in remote settings are not evidenced."
+    ],
+    "summary": "While Alex Turner has strong technical skills, the lack of relevant experience and physical fitness for the outdoor and pursuit-oriented nature of the role is a significant mismatch.",
+    "candidate": "Alex Turner",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "technical skills in software engineering",
+      "demonstrated ability to improve system efficiency"
+    ],
+    "weaknesses": [
+      "lack of relevant experience in groundskeeping or outdoor management",
+      "incompatible with the unique job requirements"
+    ],
+    "summary": "Alex Turner's technical skills and experience in software engineering do not align with the unique and specific requirements of the Estate Groundskeeper position at Blackmoor Hall.",
+    "candidate": "Alex Turner",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's experience in software engineering does not clearly meet the groundskeeping, gamekeeping, or countryside management experience requirement. Their excellent physical fitness, ability to work alone, and willingness to live on site where the Laird can reach them are reasonable close matches. Their background in tracking, search & rescue, and other pursuit-oriented activities, along with their excellent attention to detail in writing tests and improving API response times, could be considered a close match for the tracking and discretion requirements. However, there is no evidence of unconditional discretion or a comprehensive NDA, which are essential requirements.",
+    "candidate": "Alex Turner",
+    "type": "essential_requirements"
+  }
+]

@@ -1,0 +1,39 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Emile has strong technical skills in cloud technologies and machine learning, which could be valuable for managing the estate's advanced equipment.",
+      "Experience with data analysis and problem-solving in complex environments.",
+      "Good potential for up-skilling with relevant training in countryside management or related fields."
+    ],
+    "weaknesses": [
+      "Lack of direct experience in groundskeeping, gamekeeping, or countryside management.",
+      "No demonstrated experience with physical fitness requirements or working in remote, outdoor settings.",
+      "No experience with tracking, search & rescue, or working with animals such as bloodhounds.",
+      "No evidence of experience in immersive theatre, airsoft event marshalling, or private security work."
+    ],
+    "summary": "Emile has strong technical skills and problem-solving abilities but lacks the direct experience and physical fitness necessary for the role.",
+    "candidate": "EMILE MOKOENA",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Technical skills in cloud engineering and data management",
+      "Experience with data analysis and automation"
+    ],
+    "weaknesses": [
+      "No relevant work experience in groundskeeping or hunting coordination",
+      "Lack of physical fitness and tracking experience",
+      "No background in immersive theatre or outdoor activities"
+    ],
+    "summary": "The candidate's technical background is impressive but completely irrelevant to the job's requirements, highlighting a significant mismatch.",
+    "candidate": "EMILE MOKOENA",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's CV does not clearly meet the essential requirement for groundskeeping, gamekeeping, or 'countryside management' experience. The voluntary and part-time roles as a Machine Learning Engineer show a strong background in data science and machine learning but do not provide groundskeeping experience. The CV indicates excellent technical skills and some experience in handling data and projects, which could be transferable to the role, and the candidate has a clean driving license. The candidate's preference for remote work and strong data handling skills could align with the requirement to work in remote parts of the estate. The candidate is also very discreet given the completion of AWS certifications and credentials related to cloud services and native Kubernetes.",
+    "candidate": "EMILE MOKOENA",
+    "type": "essential_requirements"
+  }
+]

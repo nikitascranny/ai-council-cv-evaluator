@@ -1,0 +1,39 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Strong technical leadership and problem-solving skills demonstrated in high-availability systems and modernization projects.",
+      "Experience with mentoring and leading teams, which could be beneficial for leading tracking teams."
+    ],
+    "weaknesses": [
+      "Lack of relevant experience in groundskeeping, gamekeeping, or countryside management.",
+      "No background in tracking, search & rescue, or any pursuit-oriented fields.",
+      "Inexperience with working with animals, particularly hounds, and no familiarity with outdoor survival skills.",
+      "No demonstrated experience in immersive theatre, security work, or similar environments."
+    ],
+    "summary": "The candidate has strong technical and leadership skills but lacks the relevant experience and skills required for the groundskeeper and hunt coordinator role at Blackmoor Hall Estate.",
+    "candidate": "senior_american",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong technical background",
+      "Proven track record in system engineering"
+    ],
+    "weaknesses": [
+      "No relevant experience in groundskeeping or outdoor pursuits",
+      "Lacks skills related to tracking and search and rescue",
+      "Incompatible with the specific requirements and nature of the job"
+    ],
+    "summary": "Marcus Okafor's extensive technical expertise and leadership in software engineering do not align with the physical and outdoor skills required for the Groundskeeper & Hunt Coordinator position at Blackmoor Hall Estate.",
+    "candidate": "senior_american",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "",
+    "error": "PARSE ERROR",
+    "candidate": "senior_american",
+    "type": "essential_requirements"
+  }
+]

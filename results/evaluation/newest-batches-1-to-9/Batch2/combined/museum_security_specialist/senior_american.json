@@ -1,0 +1,36 @@
+[
+  {
+    "score": 4,
+    "strengths": [
+      "Strong problem-solving and leadership skills demonstrated through technical roles",
+      "Experience in high-pressure environments managing critical systems and operations"
+    ],
+    "weaknesses": [
+      "No direct experience in museum security or similar physical security roles",
+      "Lacks experience with CCTV, intruder alarm, and access-control systems",
+      "No familiarity with physical patrol duties or security incident response in a non-technical context"
+    ],
+    "summary": "While Marcus Okafor has strong technical and leadership skills, his experience is not directly relevant to the museum security specialist role, requiring significant up-skilling in security-specific areas.",
+    "candidate": "senior_american",
+    "model": "phi4"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Strong background in technical leadership and system design",
+      "Experience in reliability and incident response"
+    ],
+    "weaknesses": [
+      "Lacks direct experience in security or museum operations",
+      "No relevant certifications or training in security"
+    ],
+    "summary": "The candidate has impressive technical expertise but does not align with the specific security and museum operations requirements of the role.",
+    "candidate": "senior_american",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's experience in software engineering does not clearly meet the job's essential requirement for at least 3 years in a security role. However, the candidate's technical and leadership skills, particularly in reliability and incident management, could be considered a reasonable match for the ability to remain calm and make sound decisions under pressure. The candidate's technical skills in systems and platforms might also be relevant to the role, but there is no clear indication of physical fitness or valid security licensing.",
+    "candidate": "senior_american",
+    "type": "essential_requirements"
+  }
+]

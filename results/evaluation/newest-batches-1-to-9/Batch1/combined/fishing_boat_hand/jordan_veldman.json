@@ -1,0 +1,36 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Strong analytical and project management skills",
+      "Experience with digital modeling and technical documentation"
+    ],
+    "weaknesses": [
+      "Lack of relevant maritime or fishing industry experience",
+      "No evidence of physical fitness or comfort with manual labor",
+      "No previous time spent on boats, either commercial or leisure"
+    ],
+    "summary": "The candidate has strong analytical and technical skills but lacks relevant experience and physical qualifications for a physically demanding, maritime role.",
+    "candidate": "JORDAN VELDMAN",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Analytical and problem-solving skills",
+      "Attention to detail and project management"
+    ],
+    "weaknesses": [
+      "No relevant experience in fishing or maritime activities",
+      "Lack of physical fitness and seafaring skills"
+    ],
+    "summary": "The candidate lacks any relevant experience in maritime activities or fishing, which are crucial for the role, but demonstrates strong analytical and project management skills.",
+    "candidate": "JORDAN VELDMAN",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate has a strong background in architectural design and technical documentation, which closely aligns with the requirement for detailed project management. However, the candidate's experience is primarily in land-based architectural projects and does not clearly demonstrate experience with physical manual work or time on boats. They also do not explicitly mention having sea legs or any relevant maritime experience, which are essential for the role.",
+    "candidate": "JORDAN VELDMAN",
+    "type": "essential_requirements"
+  }
+]

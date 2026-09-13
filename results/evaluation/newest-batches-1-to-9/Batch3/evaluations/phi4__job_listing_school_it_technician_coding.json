@@ -1,0 +1,92 @@
+[
+  {
+    "score": 4,
+    "strengths": [
+      "Demonstrates strong team coordination and problem-solving skills.",
+      "Has experience in maintaining a positive customer experience and addressing issues, which may translate to support and troubleshooting roles."
+    ],
+    "weaknesses": [
+      "Lacks direct IT support experience, which is essential for the role.",
+      "Does not have experience with educational settings or programming in Python or Scratch.",
+      "No evidence of familiarity with Windows 11, Microsoft 365, or device management software like Intune."
+    ],
+    "summary": "While Jason Muller exhibits good team coordination and problem-solving skills, he lacks the required IT support experience and familiarity with educational programming and management software necessary for the role.",
+    "candidate": "professional_cv_jason_muller"
+  },
+  {
+    "score": 4,
+    "strengths": [
+      "Demonstrates strong adaptability and practical problem-solving skills.",
+      "Shows a broad range of experience across various operational environments."
+    ],
+    "weaknesses": [
+      "Lacks specific IT support experience or knowledge of Windows 11, Microsoft 365, or device management tools.",
+      "No experience or skills in programming, such as Python or Scratch, or working with young people in an educational setting.",
+      "Lacks familiarity with educational technologies like Google Classroom or Raspberry Pi/Micro:bit."
+    ],
+    "summary": "Kevin Jones has strong adaptability and problem-solving skills but lacks the specific IT, programming, and educational experience required for the role.",
+    "candidate": "professional_cv_kevin_jones"
+  },
+  {
+    "score": 4,
+    "strengths": [
+      "Strong leadership and team coordination skills which can be beneficial for managing tasks and collaborating with the Head of Computing.",
+      "Experience in operational management and stakeholder communication which are transferable to managing IT processes and engaging with students and staff."
+    ],
+    "weaknesses": [
+      "Lack of direct experience in IT support, device management, or programming which are essential for the role.",
+      "No specific experience in education settings or working with young people.",
+      "Absence of a working knowledge of Windows 11, Microsoft 365, or device management tools like Intune."
+    ],
+    "summary": "The candidate has strong leadership and communication skills but lacks direct IT experience and specific programming skills required for the role.",
+    "candidate": "professional_cv_sarah_lynne_van_der_merwe"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Fast learner when motivated, which could be beneficial for adapting to new IT environments",
+      "Experience managing staff and dealing with customers, indicating potential for first-line IT support"
+    ],
+    "weaknesses": [
+      "Lack of practical IT support experience",
+      "No demonstrated knowledge of Windows 11, Microsoft 365, or device management tools like Intune",
+      "Absence of basic programming skills in Python or Scratch",
+      "Limited relevant work experience in IT or education settings",
+      "No commitment to working with young people or enthusiasm for technology education"
+    ],
+    "summary": "The candidate lacks essential IT skills, relevant experience, and the enthusiasm for working with young people required for the role.",
+    "candidate": "bad_cv_jason_muller"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Willingness to work and accept necessary training",
+      "General problem-solving skills"
+    ],
+    "weaknesses": [
+      "Lack of relevant IT support experience",
+      "Inadequate programming knowledge",
+      "Limited experience working with young people",
+      "No evidence of understanding safeguarding policies",
+      "No demonstrated experience with required technology"
+    ],
+    "summary": "Kevin Jones lacks the specific IT skills, relevant work experience, and familiarity with educational environments necessary for the IT Technician & Coding Enrichment Lead role.",
+    "candidate": "bad_cv_kevin_jones"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "The candidate has leadership experience and a degree in Business Administration.",
+      "Demonstrates some degree of initiative in starting a consultancy business."
+    ],
+    "weaknesses": [
+      "Lacks practical IT support experience and technical skills required for the role.",
+      "No relevant experience in education or IT services.",
+      "Lacks enthusiasm and ability to work with young people, which is crucial for the role.",
+      "Absence of technical skills such as Windows 11, Microsoft 365, or device management.",
+      "No evidence of programming ability or experience with educational technology."
+    ],
+    "summary": "The candidate lacks the technical skills, relevant experience, and enthusiasm for working with young people necessary for the IT Technician & Coding Enrichment Lead role.",
+    "candidate": "bad_cv_sarah_lynne_van_der_merwe"
+  }
+]

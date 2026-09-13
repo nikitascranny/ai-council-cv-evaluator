@@ -1,0 +1,8 @@
+{
+  "candidate": "EMILE MOKOENA",
+  "final_score": 3,
+  "score_rationale": "The candidate has relevant cloud and data engineering experience but lacks the essential full-stack development skills and production operations exposure required for this role.",
+  "key_strengths": "Cloud technologies expertise, data engineering skills, and version control experience.",
+  "key_weaknesses": "Insufficient experience with TypeScript/React, Go, and event-driven systems like Kafka/TimescaleDB.",
+  "final_evaluation": "While the candidate demonstrates strengths in cloud and data domains, they fail to meet the core technical requirements for a founding engineer role focused on full-stack development and production systems, making them unsuitable despite some transferable skills."
+}

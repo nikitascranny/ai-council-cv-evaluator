@@ -1,0 +1,39 @@
+[
+  {
+    "score": 2,
+    "strengths": [
+      "Proven ability to analyze requirements and develop plans",
+      "Experience in automating tests and managing technical processes"
+    ],
+    "weaknesses": [
+      "Lacks direct experience in groundskeeping, gamekeeping, or countryside management",
+      "No experience with tracking, search & rescue, or military activities",
+      "No evidence of physical fitness or comfort with outdoor work",
+      "Lacks experience with hounds or tracking dogs",
+      "No experience with immersive theatre, airsoft event marshalling, or private security work"
+    ],
+    "summary": "The candidate's skills in analysis and automation are valuable, but they lack the relevant experience and physical fitness required for the Groundskeeper & Hunt Coordinator role.",
+    "candidate": "ALEX PARK",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong analytical skills",
+      "Experience in training junior staff"
+    ],
+    "weaknesses": [
+      "No relevant experience in groundskeeping or outdoor activities",
+      "Lacks experience in tracking, search and rescue, or similar pursuit-oriented roles",
+      "No background in live-action experiences or event coordination"
+    ],
+    "summary": "Candidate lacks the essential outdoor and event management experience required for the role.",
+    "candidate": "ALEX PARK",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's background in software testing and project coordination demonstrates relevant transferable skills and experience, but does not clearly meet the essential requirements for groundskeeping, gamekeeping, or countryside management experience, physical fitness for rough terrain, or a tracking or pursuit-oriented background. The candidate's ability to work independently and maintain discretion align with the role's demands, but the specific experience and physical fitness requirements are not evident from the provided CV.",
+    "candidate": "ALEX PARK",
+    "type": "essential_requirements"
+  }
+]

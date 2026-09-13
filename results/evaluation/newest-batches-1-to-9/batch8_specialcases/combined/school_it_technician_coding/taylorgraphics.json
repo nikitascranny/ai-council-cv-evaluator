@@ -1,0 +1,39 @@
+[
+  {
+    "score": 7,
+    "strengths": [
+      "Strong technical skills in programming languages like Python, which aligns with the coding aspects of the role.",
+      "Proven experience in leading and mentoring teams, which demonstrates capability in working with young people.",
+      "Technical leadership experience, indicating ability to handle responsibilities such as device management and network troubleshooting.",
+      "Solid educational background and relevant certifications (e.g., AWS Certified Solutions Architect Professional) suggesting ability to learn new systems like Intune or device management technologies."
+    ],
+    "weaknesses": [
+      "Lack of direct experience in educational or school IT settings, which could impact understanding of unique school IT challenges.",
+      "No specific experience with educational technologies like Google Classroom or VLE systems.",
+      "No mention of direct experience with devices like iPads, Chromebooks, or Raspberry Pi, which are part of the school's IT estate.",
+      "No explicit safeguarding training, although willingness to comply with policies is mentioned."
+    ],
+    "summary": "Taylor Okafor possesses strong technical skills and leadership experience that are beneficial for the IT technician aspects of the role, but lacks direct experience in educational environments and specific school-related technologies.",
+    "candidate": "TaylorGraphics",
+    "model": "phi4"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Strong programming background with Python",
+      "Experience with system architecture and reliability"
+    ],
+    "weaknesses": [
+      "Lack of IT support experience in an educational setting",
+      "No experience with educational technology or coding clubs"
+    ],
+    "summary": "While Taylor has extensive technical skills and experience in software engineering, the role requires specific experience in educational IT support and coding enrichment, which Taylor lacks.",
+    "candidate": "TaylorGraphics",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate meets the essential requirement for practical IT support experience through their extensive background in software engineering. Their working knowledge of Windows 11, Microsoft 365, and their technical expertise in programming languages like Python align closely with the job description. However, their education and certifications are more focused on cloud services and distributed systems, with limited evidence of working with Windows device management tools like Intune. The candidate’s enthusiasm for technology is evident from their career trajectory, and they are willing to undergo the necessary background checks. Their experience mentoring engineers could translate to working with young people, but this is not directly stated.",
+    "candidate": "TaylorGraphics",
+    "type": "essential_requirements"
+  }
+]

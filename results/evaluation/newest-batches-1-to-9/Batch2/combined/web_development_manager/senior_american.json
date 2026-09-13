@@ -1,0 +1,38 @@
+[
+  {
+    "score": 8,
+    "strengths": [
+      "Extensive experience in leading teams through significant technical changes, such as monolith decomposition, which aligns with the role's requirements.",
+      "Strong background in modern web stacks, including TypeScript, and experience with AWS and Kubernetes, relevant to the job's technical requirements.",
+      "Proven leadership and mentorship capabilities, having mentored senior engineers and facilitated their growth into technical leadership roles.",
+      "Solid understanding of CI/CD, cloud infrastructure, and incident management, meeting the essential criteria for the role."
+    ],
+    "weaknesses": [
+      "Lack of explicit experience in travel, transport, or high-volume transactional booking systems, which is desirable for this role.",
+      "No direct experience with Node.js or .NET, which are specifically mentioned in the job's technical stack requirements.",
+      "Limited direct experience with accessibility standards and inclusive design practices, which are desirable for this position."
+    ],
+    "summary": "Marcus Okafor is a highly qualified candidate with extensive experience in technical leadership and modernization, though he lacks specific experience with the travel sector and some technologies listed in the job description.",
+    "candidate": "senior_american",
+    "model": "phi4"
+  },
+  {
+    "score": 9,
+    "strengths": [
+      "Experienced in leading significant technical changes, particularly in platform modernization and decomposing monoliths",
+      "Strong background in modern web stacks and cloud infrastructure"
+    ],
+    "weaknesses": [
+      "No direct experience in the travel, transport or high-volume transactional booking systems",
+      "Less emphasis on front-end technologies like React/TypeScript"
+    ],
+    "summary": "Marcus Okafor is highly qualified with extensive experience in leading technical changes and cloud infrastructure, but lacks specific industry experience in the transport sector.",
+    "candidate": "senior_american",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate clearly meets the requirement for 5+ years of professional web/software engineering experience with at least 2 years of line management experience. The candidate's background in modern web stacks, particularly TypeScript and Go, and experience leading significant technical changes is a reasonable/close match to the job requirements. However, there is no clear evidence of experience with AWS cloud infrastructure, which is a requirement.",
+    "candidate": "senior_american",
+    "type": "essential_requirements"
+  }
+]

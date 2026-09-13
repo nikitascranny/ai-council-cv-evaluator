@@ -1,0 +1,29 @@
+[
+  {
+    "score": 2,
+    "strengths": [
+      "Strong in incident identification and escalation",
+      "Experience in independent working and prioritization under pressure"
+    ],
+    "weaknesses": [
+      "Lacks essential technical background and formal IT qualifications",
+      "No experience with relevant technologies such as TypeScript, React, Go, Kafka, TimescaleDB"
+    ],
+    "summary": "Candidate lacks the technical background and relevant work experience needed for the position, but shows potential for up-skilling in IT support roles.",
+    "candidate": "Ralph_Son_of_a_Shepard_IT_Transition_CV"
+  },
+  {
+    "score": 1,
+    "strengths": [
+      "Dependable and skilled in livestock care",
+      "Experience in record keeping and management"
+    ],
+    "weaknesses": [
+      "No experience in software engineering",
+      "Lack of relevant technical skills",
+      "No experience in energy or climate sector"
+    ],
+    "summary": "The candidate's skills and experience are entirely unrelated to the software engineering role required by Pulsegrid.",
+    "candidate": "Ralph_Son_of_a_Shepard_Farm_CV"
+  }
+]

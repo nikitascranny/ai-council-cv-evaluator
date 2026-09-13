@@ -1,0 +1,8 @@
+{
+  "candidate": "bad_cv_sarah_lynne_van_der_merwe",
+  "final_score": 3,
+  "score_rationale": "The candidate demonstrates business leadership and brand management experience but lacks direct technical skills and evidence of operating services in production as required by the role.",
+  "key_strengths": "Leadership experience, brand strategy skills, ability to drive initiatives",
+  "key_weaknesses": "Lack of full-stack engineering experience, no evidence of backend languages (Go, Rust, Node, Java) or TypeScript/React expertise, no experience with distributed systems (Kafka, TimescaleDB) or production operations",
+  "final_evaluation": "The candidate shows potential for strategic input but does not meet the essential technical requirements for the founding engineer role at Pulsegrid."
+}

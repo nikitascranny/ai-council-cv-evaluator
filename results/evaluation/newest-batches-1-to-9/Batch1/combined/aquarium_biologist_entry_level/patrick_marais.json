@@ -1,0 +1,38 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Demonstrates strong IT and cybersecurity skills, which may contribute to understanding aquarium life support systems' digital aspects.",
+      "Possesses excellent project management, strategic management, and organizational skills."
+    ],
+    "weaknesses": [
+      "Lacks relevant educational background in Marine Biology, Zoology, or related life sciences.",
+      "No hands-on experience or familiarity with aquatic animal husbandry or life support systems in aquarium settings.",
+      "Limited direct experience with physical tasks such as filter maintenance, water quality testing, and animal care which are crucial for this role.",
+      "The candidate's professional experience is heavily focused on security, surveillance, and investigation, lacking relevance to the aquarium setting."
+    ],
+    "summary": "The candidate has strong strategic and project management skills, but lacks direct experience and relevant educational background in marine biology or aquarium husbandry, making them a less suitable fit for this entry-level aquarium position.",
+    "candidate": "PATRICK MARAIS",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "strong background in risk management and compliance",
+      "extensive experience in security and investigations"
+    ],
+    "weaknesses": [
+      "lack of relevant educational background in marine biology or zoology",
+      "no practical experience with aquatic animal husbandry or life support systems",
+      "inability to perform physical tasks like filter cleaning"
+    ],
+    "summary": "Candidate's extensive security background and management skills are strong, but the complete mismatch in required educational and practical experience for the aquarium biologist role makes them unsuitable.",
+    "candidate": "PATRICK MARAIS",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate does not meet the essential requirement of a degree in Marine Biology, Zoology, Aquatic Biology, or a related life science. However, their extensive experience in security, investigations, and management roles, particularly in the context of physical security and operational management, closely aligns with the requirement for carrying out physical, dirty, and repetitive tasks. Their strong background in managing teams and projects could be relevant for record-keeping and observational tasks.",
+    "candidate": "PATRICK MARAIS",
+    "type": "essential_requirements"
+  }
+]

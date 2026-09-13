@@ -1,0 +1,37 @@
+[
+  {
+    "score": 4,
+    "strengths": [
+      "Demonstrates strong technical skills and problem-solving abilities.",
+      "Has relevant experience in software development which can translate to troubleshooting and fixing computer issues."
+    ],
+    "weaknesses": [
+      "Lacks practical PC/laptop repair skills and experience.",
+      "No experience with customer service, especially with older customers.",
+      "No mention of local availability or ability to reliably commute to Tillingford.",
+      "No demonstrated experience in hardware repairs such as RAM, SSD, or screen replacements."
+    ],
+    "summary": "Priya has strong technical skills but lacks direct experience in PC repair and customer service, which are essential for this role.",
+    "candidate": "PriyaPicture",
+    "model": "phi4"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Clean UI work and collaboration with design teams",
+      "Reduced page load time"
+    ],
+    "weaknesses": [
+      "Lacks practical PC/laptop repair skills",
+      "No experience with customer service in a repair shop"
+    ],
+    "summary": "Priya's background in software engineering and UI optimization does not align well with the practical repair and customer service skills required for the position.",
+    "candidate": "PriyaPicture",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate has relevant technical experience and education, which could be transferable to basic PC/laptop repair skills. The candidate also has strong communication skills, which align with the requirement to be friendly and patient with older customers. However, there is no evidence of practical PC/laptop repair experience, and the location details are unclear.",
+    "candidate": "PriyaPicture",
+    "type": "essential_requirements"
+  }
+]

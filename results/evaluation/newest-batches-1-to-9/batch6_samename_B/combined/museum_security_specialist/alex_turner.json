@@ -1,0 +1,37 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Strong technical skills in JavaScript, TypeScript, React, Node.js, and MongoDB.",
+      "Experience in performance tuning and developing customer-facing components."
+    ],
+    "weaknesses": [
+      "Lack of direct experience in security or museum-related roles.",
+      "No prior experience with CCTV, intruder alarm, or access-control systems.",
+      "Absence of certifications or training relevant to security operations."
+    ],
+    "summary": "The candidate has strong technical skills but lacks the specific experience and qualifications required for a Museum Security Specialist role.",
+    "candidate": "Alex Turner",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong technical background in software engineering",
+      "Experience with front-end and back-end technologies"
+    ],
+    "weaknesses": [
+      "No experience in security roles",
+      "Lack of relevant certifications or training in security systems",
+      "Inadequate background for high-pressure decision making in security contexts"
+    ],
+    "summary": "The candidate's technical skills and software engineering experience do not align with the security role's requirements, lacking necessary security experience and training.",
+    "candidate": "Alex Turner",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's experience in software engineering does not clearly meet the requirement for security experience. However, their junior developer experience could be considered a reasonable match for problem-solving and technical skills. The candidate lacks the necessary security certifications and does not provide evidence of physical ability or shift flexibility. The coursework and certifications in relevant areas indicate some transferable skills.",
+    "candidate": "Alex Turner",
+    "type": "essential_requirements"
+  }
+]

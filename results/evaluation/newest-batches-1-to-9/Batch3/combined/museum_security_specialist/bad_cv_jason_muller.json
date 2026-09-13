@@ -1,0 +1,39 @@
+[
+  {
+    "score": 2,
+    "strengths": [
+      "Demonstrates ability to manage staff and handle difficult situations as an assistant manager",
+      "Shows experience with digital investments, indicating adaptability and learning potential"
+    ],
+    "weaknesses": [
+      "Lacks formal experience in security roles or museum environments",
+      "Does not possess required qualifications such as an SIA Door Supervisor or Security Guarding license",
+      "No evidence of knowledge in CCTV, intruder alarm, or access-control systems",
+      "Insufficient physical evidence of ability to patrol large sites or remain calm under pressure",
+      "Work history lacks relevance to security or museum operations",
+      "Educational background is informal and lacks specific relevant qualifications"
+    ],
+    "summary": "The candidate has some general management experience and adaptability but lacks specific skills, relevant work experience, and qualifications necessary for the Museum Security Specialist role.",
+    "candidate": "bad_cv_jason_muller",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Can lift heavy boxes",
+      "Fast learner when motivated"
+    ],
+    "weaknesses": [
+      "No relevant work experience",
+      "Lacks essential security skills and certifications"
+    ],
+    "summary": "Candidate does not meet the basic requirements for the position and lacks relevant experience.",
+    "candidate": "bad_cv_jason_muller",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate does not clearly meet the minimum 3 years' experience in a security role. However, their role as Assistant Manager at Uncle Dave’s Car Wash shows experience in managing staff and dealing with difficult customers, which could be considered transferable skills. The candidate's work history does not indicate relevant security or technical system knowledge. Their ability to remain calm and make decisions under pressure could be inferred, but it is not explicitly stated. Physical ability and willingness to work shifts are not evidenced in the CV.",
+    "candidate": "bad_cv_jason_muller",
+    "type": "essential_requirements"
+  }
+]

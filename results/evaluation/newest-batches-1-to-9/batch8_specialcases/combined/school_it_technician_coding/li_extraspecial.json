@@ -1,0 +1,38 @@
+[
+  {
+    "score": 5,
+    "strengths": [
+      "Candidate has practical IT and programming experience, including Python and Java.",
+      "Shows initiative in problem-solving and innovation, evident in setting up a local network and creating a zombified alert system.",
+      "Demonstrates ability to teach and guide others, as shown by teaching programming basics to children."
+    ],
+    "weaknesses": [
+      "Lacks formal experience in an educational setting, which is desirable for this role.",
+      "No explicit experience with device imaging, deployment, or managing user accounts.",
+      "Absence of experience with specific tools and platforms like Microsoft 365, Intune, or Google Classroom."
+    ],
+    "summary": "The candidate has relevant IT skills and problem-solving abilities but lacks specific educational experience and familiarity with the required tools for the role.",
+    "candidate": "Li_ExtraSpecial",
+    "model": "phi4"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "具备Python编程能力",
+      "有基本的IT支持经验"
+    ],
+    "weaknesses": [
+      "工作经验与教育背景不符合教育领域的职位要求",
+      "缺乏教育环境下的工作经验",
+      "没有提及与未成年人互动的经验或兴趣"
+    ],
+    "summary": "尽管候选人拥有编程和IT支持技能，但其工作经验与教育领域的职位要求差距较大，且缺乏与未成年人互动的经验或兴趣。",
+    "candidate": "Li_ExtraSpecial",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate clearly meets the requirement for practical IT support experience and has a good understanding of Windows 11 and Microsoft 365. Their programming experience with Python and Scratch is a reasonable match for the requirement, and they demonstrate enthusiasm for working with young people. However, the understanding of safeguarding and willingness to undergo checks are not explicitly mentioned in the CV.",
+    "candidate": "Li_ExtraSpecial",
+    "type": "essential_requirements"
+  }
+]

@@ -1,0 +1,36 @@
+[
+  {
+    "score": 5,
+    "strengths": [
+      "Demonstrates strong organizational and problem-solving skills, evident from experience in monitoring, asset upkeep, and risk control.",
+      "Shows ability to prioritize tasks under pressure, which is crucial for handling multiple responsibilities in an administrative role."
+    ],
+    "weaknesses": [
+      "Lacks direct experience in secretarial, receptionist, or office administration roles, which are essential for this position.",
+      "Does not have a proven track record with required software like Microsoft Word, Excel, and Outlook, nor any office administration experience.",
+      "Absence of formal qualifications or experience in handling confidential financial information, which is a key requirement."
+    ],
+    "summary": "While the candidate has valuable transferable skills such as organization and prioritization, the lack of direct experience in office administration and relevant software skills are significant gaps for this role.",
+    "candidate": "Ralph_Son_of_a_Shepard_IT_Transition_CV",
+    "model": "phi4"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "reliable operations professional",
+      "demonstrated ability to manage priorities independently"
+    ],
+    "weaknesses": [
+      "no formal IT qualifications",
+      "lack of administrative or secretarial experience"
+    ],
+    "summary": "Ralph has strong work ethic and independent working skills but lacks the required secretarial experience and IT qualifications for the role.",
+    "candidate": "Ralph_Son_of_a_Shepard_IT_Transition_CV",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate demonstrates strong organization and task management skills, which are closely related to the ability to handle multiple tasks. Their experience in maintaining logs and coordinating with external parties shows good communication and attention to detail. The telephone manner and client interaction skills are less clear, but the ability to handle urgent incidents and communicate effectively with colleagues could be transferable. The candidate does not have direct secretarial or administrative experience or formal IT qualifications, and there is no evidence of typing speed, Microsoft Office proficiency, or handling of confidential information.",
+    "candidate": "Ralph_Son_of_a_Shepard_IT_Transition_CV",
+    "type": "essential_requirements"
+  }
+]

@@ -1,0 +1,30 @@
+[
+  {
+    "score": 6,
+    "strengths": [
+      "Experience in first-line troubleshooting",
+      "Ability to maintain accurate logs and documentation",
+      "Demonstrated adaptability and continuous learning"
+    ],
+    "weaknesses": [
+      "Lack of formal IT qualifications",
+      "No direct experience in computer repair or IT support",
+      "Limited experience with customer interaction"
+    ],
+    "summary": "Ralph shows potential with his troubleshooting and documentation skills but lacks direct IT experience and formal qualifications.",
+    "candidate": "Ralph_Son_of_a_Shepard_IT_Transition_CV"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "dependable and responsible",
+      "practical skills in basic maintenance and equipment handling"
+    ],
+    "weaknesses": [
+      "lacks direct experience in computer repair",
+      "no relevant professional experience in IT or customer service"
+    ],
+    "summary": "Ralph demonstrates reliability and practical skills but lacks the direct experience in IT and customer service necessary for the role.",
+    "candidate": "Ralph_Son_of_a_Shepard_Farm_CV"
+  }
+]

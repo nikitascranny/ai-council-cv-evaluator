@@ -1,0 +1,37 @@
+[
+  {
+    "score": 5,
+    "strengths": [
+      "Candidate has extensive experience in software engineering, indicating strong analytical and problem-solving skills.",
+      "Demonstrates a high level of technical proficiency, fluency in multiple programming languages, and experience with major cloud platforms.",
+      "Possesses significant leadership experience and has been recognized for excellence in their field."
+    ],
+    "weaknesses": [
+      "Lacks direct experience in administrative, secretarial, or office administration roles, which are essential for this position.",
+      "The candidate's skills do not align with the required Microsoft Office proficiency, specifically in Word, Excel, and Outlook.",
+      "No demonstrated experience in managing correspondence, diaries, or office administration tasks."
+    ],
+    "summary": "The candidate's software engineering background does not align with the administrative and secretarial requirements of the role, despite their exceptional technical and leadership skills.",
+    "candidate": "CaseyWhitmore",
+    "model": "phi4"
+  },
+  {
+    "score": 1,
+    "strengths": [
+      "None directly relevant to the position"
+    ],
+    "weaknesses": [
+      "Lack of administrative or secretarial experience",
+      "No demonstrated proficiency in Microsoft Office Suite",
+      "No indication of ability to handle confidential information"
+    ],
+    "summary": "The candidate's extensive experience in software engineering is not aligned with the requirements of the administrative assistant role, resulting in a low fit score.",
+    "candidate": "CaseyWhitmore",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate has no clear secretarial, receptionist, or office administration experience, which is a key requirement. The experience at the small local startup is not relevant. However, the ability to take notes and attend meetings shows a willingness to learn and adapt, which could be seen as a positive attitude. The diploma in Information Technology suggests some knowledge of Microsoft Office, though it is not explicitly stated. Typing speed, spelling, and grammar are not evidenced, as well as organizational skills. The candidate does not demonstrate handling of confidential information.",
+    "candidate": "CaseyWhitmore",
+    "type": "essential_requirements"
+  }
+]

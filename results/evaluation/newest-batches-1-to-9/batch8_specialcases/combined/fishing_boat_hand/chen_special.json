@@ -1,0 +1,39 @@
+[
+  {
+    "score": 2,
+    "strengths": [
+      "Physically fit as implied by hobbies like hiking and sports",
+      "Demonstrates strong problem-solving and optimization skills"
+    ],
+    "weaknesses": [
+      "Lacks relevant maritime experience and sea legs",
+      "No history of physical, repetitive manual work in all weathers",
+      "No experience with handling fishing gear or vessel operations",
+      "No evidence of reliability and punctuality in a maritime context",
+      "No indication of ability to work early starts or long days",
+      "No relevant certifications such as STCW Basic Safety Training"
+    ],
+    "summary": "The candidate lacks the necessary maritime experience and physical skills required for the role of Boat Hand / Deckhand on an inshore fishing vessel.",
+    "candidate": "Chen_Special",
+    "model": "phi4"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Strong technical background in software engineering",
+      "Experience with Python and PostgreSQL"
+    ],
+    "weaknesses": [
+      "No relevant maritime experience",
+      "Limited physical labor skills"
+    ],
+    "summary": "The candidate lacks relevant maritime experience and physical labor skills required for the role, but has strong technical skills that may be transferable in some aspects of the job.",
+    "candidate": "Chen_Special",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate demonstrates clear fit for the requirement of being physically fit and comfortable with heavy, repetitive manual work in all weathers. They also meet the need for sea legs as they have extensive experience in various boating activities. However, there is no evidence of reliability or punctuality, which are unclear from the CV. Basic numeracy for catch tallies and grading is not explicitly shown, and the willingness to work early starts and long days is also not evidenced.",
+    "candidate": "Chen_Special",
+    "type": "essential_requirements"
+  }
+]

@@ -1,0 +1,151 @@
+[
+  {
+    "score": 8,
+    "strengths": [
+      "Strong alignment of hard skills with job requirements, including project management, IT, and programming languages like JavaScript and Python.",
+      "Extensive experience in strategic partnerships and relationship management, demonstrated in multiple roles.",
+      "Solid foundation in communications and leadership, supported by relevant educational background.",
+      "Demonstrated up-skilling potential through ongoing education and diverse professional experiences."
+    ],
+    "weaknesses": [
+      "Lack of specific job role details for some positions may lead to questions about depth of experience.",
+      "Skills like Agile and Scrum, while listed, may not be sufficiently evidenced by specific projects or achievements."
+    ],
+    "summary": "The candidate exhibits strong alignment with job requirements through diverse relevant experience and skills, with a clear track record in strategic partnerships and project management, demonstrating strong up-skilling potential.",
+    "candidate": "LERATO MUNCHE"
+  },
+  {
+    "score": 4,
+    "strengths": [
+      "Strong leadership and project management skills demonstrated through roles as Head of Digital Product and team leadership.",
+      "Experience with digital strategy development and implementation, showcasing ability to devise and execute plans."
+    ],
+    "weaknesses": [
+      "Lack of direct experience in fishing or maritime work, which is crucial for the role.",
+      "No evidence of physical fitness or comfort with manual, outdoor labor as required.",
+      "Absence of sea legs or familiarity with working on boats, which is strongly preferred.",
+      "Limited relevant skills related to the specific duties of handling fishing equipment or performing tasks on a vessel."
+    ],
+    "summary": "While Riaan Goven has strong leadership and strategy skills, his lack of maritime experience and physical work suitability make him a less suitable candidate for this physically demanding and specialized fishing vessel role.",
+    "candidate": "RIAAN GOVEN"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "The candidate has strong analytical skills and experience in leading research projects and facilitating workshops.",
+      "They have a proven track record of improving user experience and product alignment with customer needs."
+    ],
+    "weaknesses": [
+      "Lacks relevant experience in manual work, fishing, or maritime environments.",
+      "No evidence of physical fitness or experience with heavy, repetitive manual tasks.",
+      "No history of working on boats or familiarity with maritime safety procedures.",
+      "Does not meet the essential requirement of having 'sea legs' or previous time on boats."
+    ],
+    "summary": "The candidate excels in research and user experience roles but lacks the necessary physical, maritime, and safety experience required for the deckhand position.",
+    "candidate": "GEOFF NITSCHKE"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Strong analytical and project management skills",
+      "Experience with digital modeling and technical documentation"
+    ],
+    "weaknesses": [
+      "Lack of relevant maritime or fishing industry experience",
+      "No evidence of physical fitness or comfort with manual labor",
+      "No previous time spent on boats, either commercial or leisure"
+    ],
+    "summary": "The candidate has strong analytical and technical skills but lacks relevant experience and physical qualifications for a physically demanding, maritime role.",
+    "candidate": "JORDAN VELDMAN"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Excellent communication and interpersonal skills",
+      "Ability to work under pressure and independently",
+      "Strong organizational and administrative skills"
+    ],
+    "weaknesses": [
+      "Lack of sea experience or boat handling skills",
+      "No relevant experience in fishing or maritime work",
+      "No physical fitness evidence for demanding manual work"
+    ],
+    "summary": "The candidate demonstrates strong organizational and interpersonal skills but lacks the necessary sea experience and physical fitness for the physically demanding role of a boat hand on an inshore fishing vessel.",
+    "candidate": "NDLOVU KARABO REFILWE"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Extensive experience in security, investigations, and project management.",
+      "Strong leadership and management skills demonstrated across multiple roles."
+    ],
+    "weaknesses": [
+      "Lack of direct experience in fishing, boat handling, or marine activities.",
+      "No relevant physical fitness or experience with manual labor in marine environments.",
+      "Limited evidence of familiarity with sea conditions or fishing operations."
+    ],
+    "summary": "While Patrick Marais has extensive management and security experience, he lacks direct experience and skills relevant to the physical and operational demands of a boat hand position on a fishing vessel.",
+    "candidate": "PATRICK MARAIS"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "The candidate has demonstrated strong organizational skills and attention to detail, which are beneficial in maintaining catch tallies and completing landing declarations.",
+      "Their experience with data analysis and report writing could be an asset in managing records and documentation required on board."
+    ],
+    "weaknesses": [
+      "Lacks relevant maritime or physical work experience, which is crucial for the physically demanding and hands-on role of a boat hand.",
+      "No prior experience or training in fishing, handling equipment, or vessel operations, all of which are essential for the position.",
+      "Does not have sea legs or experience working on boats, a key requirement for adapting to the maritime environment.",
+      "The candidate's background is predominantly in financial analysis and administration, far removed from the operational and manual tasks of the job."
+    ],
+    "summary": "The candidate's analytical and organizational skills are strong, but lack of relevant maritime experience and physical work history significantly hinder their suitability for the role.",
+    "candidate": "PONTUS PONTIOUS"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Candidate has basic numeracy skills useful for catch tallies and grading.",
+      "Possesses strong communication and interpersonal skills which may aid in working as a team on the vessel."
+    ],
+    "weaknesses": [
+      "Lack of direct experience in fishing, boating, or maritime activities.",
+      "No evidence of physical fitness for heavy, repetitive manual work in all weather conditions.",
+      "Absence of sea legs or experience working on boats, which is preferred.",
+      "Does not meet the punctuality requirement as the candidate's work history does not involve tide-based scheduling."
+    ],
+    "summary": "The candidate lacks relevant maritime experience and physical skills essential for the physically demanding role of a boat hand.",
+    "candidate": "THE DANIEL"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "The candidate has shown ability to work in structured environments and follow detailed procedures.",
+      "Demonstrated strong communication skills and ability to collaborate with teams."
+    ],
+    "weaknesses": [
+      "No relevant experience in fishing or maritime environments.",
+      "Lacks physical fitness and experience in handling heavy, repetitive manual tasks in all weather conditions.",
+      "No history of working on boats or familiarity with sea conditions and safety procedures.",
+      "No evidence of skills in handling fishing equipment or knowledge of fishing practices.",
+      "Lacks the necessary qualifications or certifications related to maritime safety or boat handling."
+    ],
+    "summary": "The candidate lacks relevant maritime experience and physical suitability for the physically demanding role of a Boat Hand / Deckhand on an inshore fishing vessel.",
+    "candidate": "ALEX PARK"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Candidate has experience with data management and analysis, which could be useful for keeping catch tallies and completing landing declarations."
+    ],
+    "weaknesses": [
+      "Lack of physical fitness or experience in manual, physically demanding work such as handling fishing gear and operating a boat.",
+      "No prior experience in maritime or fishing-related roles, which is a key requirement.",
+      "Absence of sea legs or experience working on boats, which is preferred.",
+      "Candidate's work experience is heavily focused on technology and data science, not aligning with the physical and manual nature of the deckhand role.",
+      "No evidence of punctuality or reliability in roles requiring strict adherence to time schedules like those needed on a fishing vessel."
+    ],
+    "summary": "The candidate's skills and experience are not aligned with the physical and maritime demands of the deckhand position, making them a poor fit for the role.",
+    "candidate": "EMILE MOKOENA"
+  }
+]

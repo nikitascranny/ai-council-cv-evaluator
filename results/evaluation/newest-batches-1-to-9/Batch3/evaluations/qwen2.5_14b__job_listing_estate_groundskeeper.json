@@ -1,0 +1,83 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Adaptability in fast moving environments",
+      "Customer service and complaint resolution"
+    ],
+    "weaknesses": [
+      "No relevant work experience in groundskeeping, hunting, or tracking",
+      "Lack of physical fitness or outdoor experience mentioned"
+    ],
+    "summary": "The candidate lacks direct experience in the required skills and work experience for the position, but demonstrates some adaptability and customer service skills.",
+    "candidate": "professional_cv_jason_muller"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "commercial mindset",
+      "customer engagement skills"
+    ],
+    "weaknesses": [
+      "lack of physical fitness and outdoor experience",
+      "no tracking or pursuit background"
+    ],
+    "summary": "Candidate lacks essential outdoor and physical skills required for the role, with no relevant experience in tracking or managing rough terrain.",
+    "candidate": "professional_cv_sarah_lynne_van_der_merwe"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Minimalist approach to work",
+      "Fast learner when motivated"
+    ],
+    "weaknesses": [
+      "Lack of relevant work experience",
+      "No skills matching the job requirements",
+      "Inappropriate objective for the role"
+    ],
+    "summary": "Candidate does not meet the essential requirements of the job and lacks relevant experience or skills that align with the position.",
+    "candidate": "bad_cv_jason_muller"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "versatile and adaptable",
+      "practical problem-solving skills"
+    ],
+    "weaknesses": [
+      "no relevant work experience",
+      "lack of specific skills related to the role",
+      "inability to address the job's unique requirements"
+    ],
+    "summary": "Kevin Jones lacks the necessary background and specific skills required for the unique and demanding role of Groundskeeper & Hunt Coordinator at Blackmoor Hall Estate.",
+    "candidate": "professional_cv_kevin_jones"
+  },
+  {
+    "score": 1,
+    "strengths": [
+      "willing to work",
+      "can work independently"
+    ],
+    "weaknesses": [
+      "lack of relevant experience",
+      "poor employment history",
+      "unusual salary expectations"
+    ],
+    "summary": "The candidate does not meet the required skills or experience for the role and has a history of unstable employment.",
+    "candidate": "bad_cv_kevin_jones"
+  },
+  {
+    "score": 1,
+    "strengths": [
+      "None directly applicable to the job description"
+    ],
+    "weaknesses": [
+      "Lacks any relevant skills or experience",
+      "Does not align with the physical and technical requirements of the role",
+      "No demonstrated ability to maintain confidentiality or work in remote, demanding conditions"
+    ],
+    "summary": "Candidate's background is entirely unrelated to the job, with no applicable skills or experience in groundskeeping, tracking, or immersive experiences.",
+    "candidate": "bad_cv_sarah_lynne_van_der_merwe"
+  }
+]

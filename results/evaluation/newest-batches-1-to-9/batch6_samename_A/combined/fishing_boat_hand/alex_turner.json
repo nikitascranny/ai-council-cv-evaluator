@@ -1,0 +1,38 @@
+[
+  {
+    "score": 2,
+    "strengths": [
+      "Exhibits a strong work ethic and dedication through long-term roles in demanding environments.",
+      "Possesses strong technical and problem-solving skills, as demonstrated by backend engineering experience."
+    ],
+    "weaknesses": [
+      "Lacks relevant work experience in fishing or maritime environments.",
+      "No evidence of physical fitness or experience with manual labor.",
+      "Missing required skills such as familiarity with fishing gear and techniques.",
+      "No previous experience with boats or at-sea work."
+    ],
+    "summary": "The candidate's skills and work ethic are commendable, but they lack the necessary maritime experience and physical capabilities required for the boat hand role.",
+    "candidate": "Alex Turner",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Good problem-solving skills",
+      "Experience with technology and system improvements"
+    ],
+    "weaknesses": [
+      "No relevant maritime or fishing experience",
+      "No evidence of physical fitness or sea legs",
+      "No direct connection between hobbies and job requirements"
+    ],
+    "summary": "The candidate's background in software engineering does not align with the physical and maritime requirements of the boat hand position.",
+    "candidate": "Alex Turner",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's CV does not clearly meet the essential requirements for the job. They have no experience with physical, manual work, and there is no indication of sea experience. The skills in software engineering and basic numeracy may be transferable, but there is no direct evidence of the required physical fitness or sea legs. The candidate is willing to work early starts and long days, and there is no history of severe seasickness mentioned.",
+    "candidate": "Alex Turner",
+    "type": "essential_requirements"
+  }
+]

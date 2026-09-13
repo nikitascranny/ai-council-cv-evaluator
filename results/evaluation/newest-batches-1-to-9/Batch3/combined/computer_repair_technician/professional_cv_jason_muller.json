@@ -1,0 +1,39 @@
+[
+  {
+    "score": 5,
+    "strengths": [
+      "Strong customer service and complaint resolution skills, which align with handling patient customer interactions.",
+      "Experience in team coordination and workflow management, helpful for maintaining shop operations.",
+      "Adaptability in fast-moving environments, suitable for the dynamic and informal nature of the job.",
+      "Good interpersonal communication skills, essential for explaining technical issues to customers."
+    ],
+    "weaknesses": [
+      "Lack of direct experience in PC/laptop repair, which is a key requirement for the job.",
+      "No specific mention of technical skills or practical experience with computer hardware or software issues.",
+      "No evidence of local availability or ability to reliably commute to Tillingford.",
+      "No experience with cash handling or financial transactions, which are part of the role."
+    ],
+    "summary": "The candidate has strong customer service skills and adaptability but lacks direct experience in computer repair and local availability.",
+    "candidate": "professional_cv_jason_muller",
+    "model": "phi4"
+  },
+  {
+    "score": 4,
+    "strengths": [
+      "Adaptable and practical problem-solving skills",
+      "Experience in customer service and complaint resolution"
+    ],
+    "weaknesses": [
+      "Lack of direct experience in computer repair or IT support",
+      "No evidence of technical skills relevant to the job"
+    ],
+    "summary": "Jason Muller shows adaptability and customer service skills but lacks direct experience and technical knowledge in computer repair, making him a weak fit for the position.",
+    "candidate": "professional_cv_jason_muller",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate demonstrates clear communication and leadership skills from their role as Acting Assistant Manager, which align with the requirement to be friendly and patient with older customers. The self-directed learning in customer service is a reasonable match for the need to be friendly and patient. The role also suggests the candidate can handle financial responsibilities, which aligns with being honest and reliable. However, there is no evidence of practical PC/laptop repair skills or the ability to work Saturdays.",
+    "candidate": "professional_cv_jason_muller",
+    "type": "essential_requirements"
+  }
+]

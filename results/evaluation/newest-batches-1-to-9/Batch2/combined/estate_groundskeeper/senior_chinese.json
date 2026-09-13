@@ -1,0 +1,36 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Strong technical leadership and problem-solving skills",
+      "Proven ability to mentor and lead teams"
+    ],
+    "weaknesses": [
+      "Lack of relevant experience in groundskeeping or countryside management",
+      "No experience with tracking, hounds, or immersive experience coordination",
+      "Unfamiliarity with the specific physical and operational demands of the role"
+    ],
+    "summary": "The candidate excels in technical leadership and software engineering but lacks the relevant experience and skills required for the Groundskeeper & Hunt Coordinator role.",
+    "candidate": "senior_chinese",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "technical leadership",
+      "experience in platform engineering"
+    ],
+    "weaknesses": [
+      "lack of relevant groundskeeping or hunting experience",
+      "inability to address the unique requirements of the role"
+    ],
+    "summary": "The candidate has strong technical and leadership skills but lacks the necessary background in groundskeeping, hunting, and the unique requirements of the Blackmoor Hall Estate position.",
+    "candidate": "senior_chinese",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's technical background and experience in software engineering clearly meet the requirement for absolute discretion and technical leadership. However, the experience in groundskeeping, gamekeeping, or countryside management, as well as the physical fitness and ability to work in remote areas, are clearly not met. The candidate's background in tracking, search & rescue, military, or other pursuit-oriented roles is a reasonable/close match for the 'pursuit oriented' background requirement.",
+    "candidate": "senior_chinese",
+    "type": "essential_requirements"
+  }
+]

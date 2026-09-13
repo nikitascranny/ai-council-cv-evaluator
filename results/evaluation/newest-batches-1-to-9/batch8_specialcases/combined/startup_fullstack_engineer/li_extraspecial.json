@@ -1,0 +1,37 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Experience with server setup and building backend systems indicates some technical capability.",
+      "Adaptability shown by surviving and thriving in challenging conditions."
+    ],
+    "weaknesses": [
+      "Lack of relevant experience in full-stack engineering or specific technologies required (TypeScript/React, Go, Kafka, TimescaleDB).",
+      "No evidence of experience in operating production services, metrics, tracing, or incident response.",
+      "No experience in event-driven architectures or distributed systems fundamentals.",
+      "Absence of direct customer interaction or experience in shaping product roadmaps."
+    ],
+    "summary": "The candidate has some technical experience and adaptability but lacks the specific skills, experience, and domain knowledge required for the role at Pulsegrid.",
+    "candidate": "Li_ExtraSpecial",
+    "model": "phi4"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "problem-solving skills",
+      "inventive thinking"
+    ],
+    "weaknesses": [
+      "lack of relevant professional experience",
+      "no evidence of full-stack engineering capabilities"
+    ],
+    "summary": "Candidate demonstrates strong survival and problem-solving skills but lacks relevant professional experience and technical skills for the role.",
+    "candidate": "Li_ExtraSpecial",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate has 4+ years of experience in shipping production software and is proficient in TypeScript/React, meeting the primary requirement. Experience with one backend language (Node.js) is present but Go is preferred, indicating a reasonable match. The candidate demonstrates relevant experience in operating services in production, covering metrics, tracing, and incident response, which aligns well with the job's requirements. The candidate's ability to communicate technical decisions to both technical and non-technical stakeholders suggests a solid grasp of distributed systems fundamentals. However, the level of experience with distributed systems and the specific communication skills needed for the role are not clearly defined in the CV.",
+    "candidate": "Li_ExtraSpecial",
+    "type": "essential_requirements"
+  }
+]

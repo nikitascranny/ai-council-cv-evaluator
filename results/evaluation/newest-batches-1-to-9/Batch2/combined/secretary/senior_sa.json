@@ -1,0 +1,37 @@
+[
+  {
+    "score": 4,
+    "strengths": [
+      "The candidate has demonstrated strong organizational and multitasking skills from their engineering roles, which are essential for managing a busy front office.",
+      "Their experience with technology and software tools indicates a potential for adapting to office administration software and technology requirements."
+    ],
+    "weaknesses": [
+      "Lack of direct experience in secretarial, receptionist, or office administration roles.",
+      "No evidence of experience with Microsoft Office suite, particularly Word and Excel, or direct client-facing roles.",
+      "No specific skills or experience mentioned in handling financial transactions, managing diaries, or dealing with confidential information."
+    ],
+    "summary": "While the candidate has strong organizational and technical skills, they lack direct experience and specific skills required for a secretarial role in an accounting firm.",
+    "candidate": "senior_sa",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "proven leadership and technical capability in software engineering",
+      "extensive experience in cloud and distributed systems"
+    ],
+    "weaknesses": [
+      "lack of administrative or secretarial experience",
+      "no direct experience in accountancy or legal settings",
+      "inexperience with typical office software like MS Office"
+    ],
+    "summary": "The candidate's technical background is impressive but does not align with the secretarial and administrative requirements of the role.",
+    "candidate": "senior_sa",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's educational background in software engineering and computer science indicates strong technical skills but does not clearly demonstrate secretarial, receptionist, or office administration experience. However, their ability to juggle complex projects and handle patents suggests strong organizational skills, which could reasonably count towards the ability to manage multiple tasks. The candidate's confidence and technical expertise might translate to a warm, professional manner, though specific examples are not provided. Good working knowledge of Microsoft Office is evidenced, but accurate typing speed is not directly stated. Discretion is not explicitly mentioned, but given the involvement with patents, there is a reasonable inference of handling confidential information.",
+    "candidate": "senior_sa",
+    "type": "essential_requirements"
+  }
+]

@@ -1,0 +1,37 @@
+[
+  {
+    "score": 5,
+    "strengths": [
+      "Demonstrates strong organizational skills and experience in handling complex tasks, which is beneficial for managing a front office.",
+      "Has a solid background in technical and project management roles, indicating potential for upskilling into administrative and secretarial tasks."
+    ],
+    "weaknesses": [
+      "Lacks direct experience in secretarial, receptionist, or office administration roles, which are essential for the position.",
+      "Has no demonstrated experience with Microsoft Office Suite, particularly Word, Excel, and Outlook, as required for the role.",
+      "No prior experience in accountancy, legal, or professional-services environments."
+    ],
+    "summary": "While Priya has strong organizational and technical skills, her lack of direct administrative experience and familiarity with required software presents significant gaps for this role.",
+    "candidate": "intermediate_american",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong background in software engineering",
+      "Experience with API design and delivery"
+    ],
+    "weaknesses": [
+      "Lack of relevant administrative or secretarial experience",
+      "Insufficient skills in Microsoft Office suite",
+      "No demonstrated experience in finance or accounting"
+    ],
+    "summary": "Priya Nair is well-qualified in software engineering but lacks the necessary administrative and financial background required for the Secretary / Administrative Assistant role.",
+    "candidate": "intermediate_american",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's educational background in computer engineering and AWS Certified Developer certification show a strong technical aptitude, which is a reasonable match for the administrative role's requirements. However, there is no evidence of secretarial, receptionist, or office administration experience, nor is there information regarding typing speed, spelling, grammar, or handling of confidential information. The candidate’s attitude and ability to juggle tasks may be inferred but are not explicitly stated.",
+    "candidate": "intermediate_american",
+    "type": "essential_requirements"
+  }
+]

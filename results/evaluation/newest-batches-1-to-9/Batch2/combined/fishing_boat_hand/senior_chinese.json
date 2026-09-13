@@ -1,0 +1,36 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Strong analytical and problem-solving skills demonstrated in software engineering roles.",
+      "Technical leadership experience indicating ability to learn and adapt to new challenges."
+    ],
+    "weaknesses": [
+      "Lack of experience in manual and physically demanding work environments.",
+      "No prior experience in maritime or fishing industries.",
+      "No history of working with heavy equipment or performing tasks like handling pots or nets."
+    ],
+    "summary": "The candidate possesses strong technical skills and leadership experience, but lacks the physical, maritime, and industry-specific experience required for the Deckhand position.",
+    "candidate": "senior_chinese",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "technical expertise in distributed systems",
+      "experience in platform engineering"
+    ],
+    "weaknesses": [
+      "lack of physical fitness and maritime experience",
+      "no experience in fishing or marine industry"
+    ],
+    "summary": "Candidate lacks the essential maritime and physical labor experience required for the boat hand position.",
+    "candidate": "senior_chinese",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate does not meet the essential requirements of the job, as their experience is primarily in software engineering rather than in physical manual work or maritime activities. However, their strong technical skills and leadership experience are relevant and transferable to roles that may involve complex problem-solving and team management. The requirement for physical fitness and comfort with heavy, repetitive manual work, previous time on boats, and willingness to work early shifts are not evidenced in the provided CV.",
+    "candidate": "senior_chinese",
+    "type": "essential_requirements"
+  }
+]

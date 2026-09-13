@@ -1,0 +1,36 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Possesses strong research and analytical skills, which could be beneficial in diagnosing and troubleshooting computer issues.",
+      "Has a track record of facilitating workshops and mentoring, indicating potential to assist with customer service and education."
+    ],
+    "weaknesses": [
+      "Lacks practical experience in PC/laptop repair, which is essential for the role.",
+      "No prior experience in retail or customer-facing environments, which is crucial for serving customers at the counter.",
+      "Limited understanding of technical computer repair tasks such as RAM reseating, screen replacements, or virus clean-ups."
+    ],
+    "summary": "The candidate has strong research and communication skills but lacks the practical PC repair experience and customer service background required for the role.",
+    "candidate": "GEOFF NITSCHKE",
+    "model": "phi4"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Strong communication skills",
+      "Experience in customer interaction"
+    ],
+    "weaknesses": [
+      "Lack of technical repair skills",
+      "No relevant experience in computer repairs"
+    ],
+    "summary": "Geoff Nitschke's strong interpersonal and communication skills make him suitable for customer interaction, but his lack of technical repair experience and skills make him unsuitable for the role of a computer repair person.",
+    "candidate": "GEOFF NITSCHKE",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's experience in UX research and design clearly aligns with the need for clear communication and customer understanding, which are closely related to the requirement of being friendly and patient with older customers. However, there is no evidence of practical PC/laptop repair skills, and the ability to work Saturdays is unclear from the provided CV.",
+    "candidate": "GEOFF NITSCHKE",
+    "type": "essential_requirements"
+  }
+]

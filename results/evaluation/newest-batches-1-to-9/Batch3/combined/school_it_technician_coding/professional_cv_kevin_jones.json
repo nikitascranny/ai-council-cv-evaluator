@@ -1,0 +1,36 @@
+[
+  {
+    "score": 4,
+    "strengths": [
+      "Demonstrates strong adaptability and practical problem-solving skills.",
+      "Shows a broad range of experience across various operational environments."
+    ],
+    "weaknesses": [
+      "Lacks specific IT support experience or knowledge of Windows 11, Microsoft 365, or device management tools.",
+      "No experience or skills in programming, such as Python or Scratch, or working with young people in an educational setting.",
+      "Lacks familiarity with educational technologies like Google Classroom or Raspberry Pi/Micro:bit."
+    ],
+    "summary": "Kevin Jones has strong adaptability and problem-solving skills but lacks the specific IT, programming, and educational experience required for the role.",
+    "candidate": "professional_cv_kevin_jones",
+    "model": "phi4"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "practical problem-solving",
+      "adaptability"
+    ],
+    "weaknesses": [
+      "lack of IT technical skills",
+      "no experience in education or coding"
+    ],
+    "summary": "Kevin Jones demonstrates strong adaptability and problem-solving skills but lacks the specific IT and education background required for the IT Technician & Coding Enrichment Lead role.",
+    "candidate": "professional_cv_kevin_jones",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's experience in customer service and adaptability to different roles suggests practical IT support experience, though it is not directly related. They have a basic understanding of communication and problem-solving skills that could be transferable to helping young people with technology. Their education level is not specified, making it unclear if they meet the requirements for a secondary school diploma. They do not have specific IT or programming skills mentioned, and there is no indication of working knowledge of Windows 11, Microsoft 365, or device management tools like Intune. Their enthusiasm and willingness to undergo DBS checks are clear, but there is no direct evidence of working with young people or explaining technology clearly.",
+    "candidate": "professional_cv_kevin_jones",
+    "type": "essential_requirements"
+  }
+]

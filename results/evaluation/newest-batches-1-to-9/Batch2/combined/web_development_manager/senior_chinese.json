@@ -1,0 +1,39 @@
+[
+  {
+    "score": 8,
+    "strengths": [
+      "Has significant experience in leading technical teams and executing major modernization projects, aligning with the leadership and technical change requirements of the role.",
+      "Strong background in distributed systems, platform engineering, and technical leadership with hands-on experience in relevant technologies such as Node.js, Go, and cloud infrastructure.",
+      "Demonstrated ability to improve system performance and reliability, crucial for managing on-call responsibilities and incident response.",
+      "Proven track record in mentoring and developing senior engineering staff, aligning with the need for managing team career development and hiring."
+    ],
+    "weaknesses": [
+      "Lacks specific experience with React/TypeScript frontend development and .NET, which are mentioned as essential technologies for the role.",
+      "No explicit mention of experience with AWS, although there is experience with Alibaba Cloud and Kubernetes, which may require some upskilling.",
+      "Limited direct experience in the travel or transport sector, although this is desirable rather than essential.",
+      "No documented experience with accessibility standards (WCAG 2.2 AA) or incident management at scale."
+    ],
+    "summary": "The candidate has strong leadership and technical skills relevant to the role, with proven experience in significant technical changes, but may need upskilling in specific technologies and accessibility standards.",
+    "candidate": "senior_chinese",
+    "model": "phi4"
+  },
+  {
+    "score": 8,
+    "strengths": [
+      "Extensive experience in distributed systems and platform engineering",
+      "Proven track record in technical leadership and team management"
+    ],
+    "weaknesses": [
+      "Limited experience in React/TypeScript frontend development",
+      "Less exposure to .NET or Node.js backend technologies"
+    ],
+    "summary": "Chen Haoran is a strong candidate with extensive technical leadership and platform engineering experience, but may need to upskill in React/TypeScript and specific backend technologies relevant to the role.",
+    "candidate": "senior_chinese",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate clearly meets the requirement for 5+ years of professional web/software engineering experience and has a strong background in modern web stacks, including React/TypeScript and Node.js. The experience leading significant technical changes, such as decomposing monolithic services and modernizing legacy systems, aligns well with the requirement for leading teams through significant technical change. The candidate's communication skills, as evidenced by their ability to mentor engineers and run agile delivery, are a reasonable match. The lack of explicit AWS experience is a minor gap, but the candidate's expertise in cloud infrastructure and automation is closely related.",
+    "candidate": "senior_chinese",
+    "type": "essential_requirements"
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "score": 2,
+    "strengths": [
+      "Victoria has strong technical skills and a proven track record in leading engineering teams.",
+      "Possesses excellent problem-solving abilities and attention to detail."
+    ],
+    "weaknesses": [
+      "Lacks relevant secretarial or administrative experience required for the role.",
+      "Demonstrated poor interpersonal skills and inability to work collaboratively.",
+      "No familiarity with practice management software or accountancy-related tasks.",
+      "Inappropriate communication style and behavior during the interview process."
+    ],
+    "summary": "Victoria's technical expertise and leadership skills are strong, but her lack of relevant experience and poor interpersonal skills make her a poor fit for the secretary/administrative assistant role.",
+    "candidate": "VictoriaSterlingSilver",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong technical background",
+      "Accurate typing speed implied"
+    ],
+    "weaknesses": [
+      "Lack of relevant administrative experience",
+      "Inappropriate behavior during interview",
+      "No match for role's interpersonal requirements"
+    ],
+    "summary": "The candidate lacks the necessary administrative experience and demonstrated poor interpersonal skills during the interview, making her unsuitable for the role despite her technical strengths.",
+    "candidate": "VictoriaSterlingSilver",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's experience does not clearly meet the essential requirements for the secretarial, receptionist, or office administration role. However, their strong organizational and technical skills, demonstrated through leading a team and delivering major releases, are a reasonable close match. Their good working knowledge of Microsoft Office and typing speed are unclear from the CV. Discretion in handling confidential information is not evidenced but is a relevant transferable skill given their senior engineering roles.",
+    "candidate": "VictoriaSterlingSilver",
+    "type": "essential_requirements"
+  }
+]

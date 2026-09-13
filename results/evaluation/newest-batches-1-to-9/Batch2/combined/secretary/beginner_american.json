@@ -1,0 +1,36 @@
+[
+  {
+    "score": 4,
+    "strengths": [
+      "Confident communication skills from teaching and collaborating in software teams",
+      "Strong technical foundation and problem-solving abilities"
+    ],
+    "weaknesses": [
+      "Lacks direct experience in secretarial or administrative roles",
+      "No experience with Microsoft Office Suite, particularly Word and Excel",
+      "No demonstrated knowledge of practice management software or accounting"
+    ],
+    "summary": "Jordan Lee has relevant communication and technical problem-solving skills but lacks direct experience in administrative roles and essential software knowledge for the position.",
+    "candidate": "beginner_american",
+    "model": "phi4"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Strong technical skills",
+      "Experience with agile methodologies"
+    ],
+    "weaknesses": [
+      "Lack of administrative or secretarial experience",
+      "No familiarity with relevant office software"
+    ],
+    "summary": "The candidate has strong technical skills but lacks the specific administrative and secretarial experience required for the role.",
+    "candidate": "beginner_american",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate does not have any experience in secretarial, receptionist, or office administration. However, their role as a Computer Science Teaching Assistant demonstrates good organizational skills and the ability to handle multiple tasks, which are reasonably close matches. The candidate also has a working knowledge of Microsoft Office tools, though their focus is more on software engineering and cloud computing. Their typing speed and attention to detail are not directly evidenced, but their strong programming background and dedication to additional certifications indicate a capable and detail-oriented individual.",
+    "candidate": "beginner_american",
+    "type": "essential_requirements"
+  }
+]

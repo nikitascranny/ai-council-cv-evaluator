@@ -1,0 +1,38 @@
+[
+  {
+    "score": 2,
+    "strengths": [
+      "Demonstrates a proactive approach in founding a consultancy",
+      "Has experience in leading transformational branding initiatives"
+    ],
+    "weaknesses": [
+      "Lacks technical experience in full-stack engineering or relevant programming languages",
+      "No evidence of operating services in production or handling technical responsibilities",
+      "Career history primarily focused on business leadership, not engineering or technical roles",
+      "No relevant experience in the energy sector or technical domains like Kafka, TimescaleDB, or distributed systems"
+    ],
+    "summary": "The candidate lacks the necessary technical skills, experience, and domain knowledge required for the full-stack engineering role at Pulsegrid.",
+    "candidate": "bad_cv_sarah_lynne_van_der_merwe",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Passionate about leadership roles",
+      "Attempts to drive brand initiatives"
+    ],
+    "weaknesses": [
+      "Lacks relevant technical skills and experience",
+      "No concrete achievements or verifiable work history",
+      "Misalignment with the role's requirements"
+    ],
+    "summary": "The candidate does not align with the technical and experience requirements of the Founding Full-Stack Engineer role at Pulsegrid.",
+    "candidate": "bad_cv_sarah_lynne_van_der_merwe",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate does not clearly meet the requirement for shipping production software with strong experience in TypeScript/React and a backend language. However, the role experience shows some transferable skills in leading initiatives and managing operations, which might be relevant for operating services in production. The candidate's communication skills are demonstrated through various achievements and roles, but there is no clear evidence of a solid grasp of distributed systems fundamentals. The candidate's role in consulting and advising businesses shows a general excitement for real-world problems, but this is not as specific as required.",
+    "candidate": "bad_cv_sarah_lynne_van_der_merwe",
+    "type": "essential_requirements"
+  }
+]

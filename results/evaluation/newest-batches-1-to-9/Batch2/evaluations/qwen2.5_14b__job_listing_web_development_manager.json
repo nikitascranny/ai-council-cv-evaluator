@@ -1,0 +1,122 @@
+[
+  {
+    "score": 9,
+    "strengths": [
+      "Experienced in leading significant technical changes, particularly in platform modernization and decomposing monoliths",
+      "Strong background in modern web stacks and cloud infrastructure"
+    ],
+    "weaknesses": [
+      "No direct experience in the travel, transport or high-volume transactional booking systems",
+      "Less emphasis on front-end technologies like React/TypeScript"
+    ],
+    "summary": "Marcus Okafor is highly qualified with extensive experience in leading technical changes and cloud infrastructure, but lacks specific industry experience in the transport sector.",
+    "candidate": "senior_american"
+  },
+  {
+    "score": 8,
+    "strengths": [
+      "Extensive experience in distributed systems and platform engineering",
+      "Proven track record in technical leadership and team management"
+    ],
+    "weaknesses": [
+      "Limited experience in React/TypeScript frontend development",
+      "Less exposure to .NET or Node.js backend technologies"
+    ],
+    "summary": "Chen Haoran is a strong candidate with extensive technical leadership and platform engineering experience, but may need to upskill in React/TypeScript and specific backend technologies relevant to the role.",
+    "candidate": "senior_chinese"
+  },
+  {
+    "score": 8,
+    "strengths": [
+      "Proven experience in leading technical teams through significant change",
+      "Strong background in modern web stacks and cloud infrastructure"
+    ],
+    "weaknesses": [
+      "Limited experience in the travel or transport sector",
+      "Less emphasis on hands-on coding in recent roles"
+    ],
+    "summary": "Zanele Madondo is a strong candidate with extensive leadership and technical expertise, but may need to demonstrate specific experience relevant to the travel/transport sector and hands-on coding.",
+    "candidate": "senior_sa"
+  },
+  {
+    "score": 7,
+    "strengths": [
+      "Strong background in backend technologies such as Java, Kotlin, Spring Boot",
+      "Experience in modern web stacks including React and TypeScript"
+    ],
+    "weaknesses": [
+      "Primary experience is in financial technology rather than transport or travel sectors",
+      "Lacks direct experience with .NET or Node.js"
+    ],
+    "summary": "Priya Nair demonstrates strong technical skills and leadership potential but may require additional context-specific knowledge for the transport sector and direct experience with the technologies mentioned in the job description.",
+    "candidate": "intermediate_american"
+  },
+  {
+    "score": 7,
+    "strengths": [
+      "Strong background in backend and frontend development, including Java, Kotlin, Python, Vue.js, TypeScript",
+      "Experience in cloud infrastructure, CI/CD, and DevOps practices"
+    ],
+    "weaknesses": [
+      "Lacks experience with AWS, which is preferred by Northlight Digital",
+      "Limited experience in travel or transport systems, which is desirable"
+    ],
+    "summary": "张伟具有技术开发背景和DevOps实践经验，但缺少Northlight Digital所需的具体技术和行业经验。",
+    "candidate": "middle_chinese"
+  },
+  {
+    "score": 7,
+    "strengths": [
+      "Strong background in modern web stacks and backend development",
+      "Experience leading and mentoring early-career engineers"
+    ],
+    "weaknesses": [
+      "Lacks direct experience with React/TypeScript and Node.js",
+      "No specific experience with travel, transport, or booking systems"
+    ],
+    "summary": "Kagiso Ndlovu demonstrates strong technical skills and leadership abilities but may need to bridge gaps in specific technologies and industry experience to fully align with the Engineering Manager role at Northlight Digital.",
+    "candidate": "middle_sa"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Basic understanding of web technologies such as React, Node.js, and TypeScript",
+      "Experience with Agile methodologies and collaboration"
+    ],
+    "weaknesses": [
+      "Lacks experience in team management and leading significant technical changes",
+      "Insufficient experience in the required backend languages (.NET or Node.js)",
+      "Inadequate experience in cloud infrastructure and CI/CD processes"
+    ],
+    "summary": "Jordan Lee possesses foundational technical skills but lacks the necessary experience and leadership qualifications for the Engineering Manager position.",
+    "candidate": "beginner_american"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Basic web development skills with experience in Vue.js and Node.js",
+      "Experience in unit testing and code coverage improvement"
+    ],
+    "weaknesses": [
+      "Lacks essential experience in line management and leading significant technical change",
+      "Missing strong background in React/TypeScript and .NET"
+    ],
+    "summary": "The candidate demonstrates basic technical skills but falls short in meeting the essential leadership and technical depth requirements.",
+    "candidate": "beginner_chinese"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Basic programming skills in JavaScript, TypeScript, React, and Node.js",
+      "Understanding of agile development practices",
+      "Experience with GitHub Actions and Docker"
+    ],
+    "weaknesses": [
+      "Lacks the required 5+ years of professional experience",
+      "No experience in leading teams through significant technical change",
+      "Insufficient experience with AWS and cloud infrastructure"
+    ],
+    "summary": "The candidate has basic technical skills but lacks the necessary professional experience and leadership track record to fit the role requirements.",
+    "candidate": "beginner_sa"
+  }
+]

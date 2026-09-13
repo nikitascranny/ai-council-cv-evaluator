@@ -1,0 +1,37 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "The candidate has a background in software engineering, which demonstrates problem-solving skills and technical expertise.",
+      "Their experience in managing a team and developing systems in a high-pressure environment shows leadership and adaptability."
+    ],
+    "weaknesses": [
+      "Lack of relevant education or experience in marine biology, zoology, or aquatic biology.",
+      "No demonstrated understanding or experience with water chemistry, nitrogen cycles, or life support systems in aquatic environments.",
+      "Physical fitness and ability to perform tasks like lifting and working in humid environments are not evidenced.",
+      "No prior aquarium experience or familiarity with aquarium husbandry tasks."
+    ],
+    "summary": "The candidate has strong technical and leadership skills but lacks relevant education, experience, and physical qualifications for the Aquarium Biologist role.",
+    "candidate": "Li_ExtraSpecial",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Problem-solving skills",
+      "Self-taught learning ability"
+    ],
+    "weaknesses": [
+      "Lack of relevant aquatic animal husbandry experience",
+      "No formal education in marine biology or related fields"
+    ],
+    "summary": "The candidate lacks the essential qualifications and experience required for the Aquarium Biologist position, despite showing resilience and adaptability in different contexts.",
+    "candidate": "Li_ExtraSpecial",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's degree in Marine Biology clearly meets the educational requirement. The ability to lift 25 kg, work on ladders, and manage warm, humid environments is a reasonable match for the physical fitness requirement. The candidate's past experience in maintaining aquariums suggests a basic understanding of water chemistry and the nitrogen cycle, aligning with that requirement. However, the CV does not provide clear evidence of observational skills, attention to detail, or record keeping, which are unclear from the provided information.",
+    "candidate": "Li_ExtraSpecial",
+    "type": "essential_requirements"
+  }
+]

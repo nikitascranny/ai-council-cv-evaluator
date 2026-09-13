@@ -1,0 +1,38 @@
+[
+  {
+    "score": 4,
+    "strengths": [
+      "Strong technical background with advanced problem-solving skills.",
+      "Experience in leadership and team management.",
+      "Good track record of system reliability improvements and infrastructure cost reductions."
+    ],
+    "weaknesses": [
+      "Lack of hands-on PC/laptop repair experience.",
+      "No experience with basic hardware tasks like reseating RAM or cleaning laptops.",
+      "No demonstrated experience in customer service or explaining technical issues to non-technical customers.",
+      "No relevant work experience in a retail or customer-facing environment."
+    ],
+    "summary": "The candidate has strong technical skills and leadership experience but lacks the specific hands-on repair and customer service skills required for the role.",
+    "candidate": "TaylorGraphics",
+    "model": "phi4"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Strong technical background in software engineering",
+      "Experience in system architecture and design"
+    ],
+    "weaknesses": [
+      "Lacks practical experience in computer repair",
+      "No direct experience in customer service or retail"
+    ],
+    "summary": "Taylor Okafor has an impressive technical background but lacks the practical computer repair skills and customer service experience required for the position at Brenda & Mick's Computer Repairs.",
+    "candidate": "TaylorGraphics",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate clearly meets the requirement for basic PC/laptop repair skills through practical experience in a tech role. They also meet the requirement for reliability and honesty, as evidenced by their leadership and long-term employment. Friendly and patient communication skills are not explicitly demonstrated, but their mentorship and collaboration experience suggest strong interpersonal skills. The requirement for working Saturdays is not met, as there is no evidence of this in the CV. The candidate's ability to get to Tillingford reliably is unclear.",
+    "candidate": "TaylorGraphics",
+    "type": "essential_requirements"
+  }
+]

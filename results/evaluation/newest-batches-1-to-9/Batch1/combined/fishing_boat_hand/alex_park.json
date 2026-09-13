@@ -1,0 +1,38 @@
+[
+  {
+    "score": 2,
+    "strengths": [
+      "The candidate has shown ability to work in structured environments and follow detailed procedures.",
+      "Demonstrated strong communication skills and ability to collaborate with teams."
+    ],
+    "weaknesses": [
+      "No relevant experience in fishing or maritime environments.",
+      "Lacks physical fitness and experience in handling heavy, repetitive manual tasks in all weather conditions.",
+      "No history of working on boats or familiarity with sea conditions and safety procedures.",
+      "No evidence of skills in handling fishing equipment or knowledge of fishing practices.",
+      "Lacks the necessary qualifications or certifications related to maritime safety or boat handling."
+    ],
+    "summary": "The candidate lacks relevant maritime experience and physical suitability for the physically demanding role of a Boat Hand / Deckhand on an inshore fishing vessel.",
+    "candidate": "ALEX PARK",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "High level of technical and analytical skills",
+      "Experience in leading and training teams"
+    ],
+    "weaknesses": [
+      "Lack of relevant work experience in fishing or maritime industries",
+      "No evidence of physical fitness required for the role"
+    ],
+    "summary": "Candidate lacks relevant experience and skills for the fishing role, with no indication of ability to meet physical demands.",
+    "candidate": "ALEX PARK",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's previous experience in test analysis, documentation, and defect management aligns well with the need for basic numeracy and the ability to follow detailed procedures. The role of an intermediate test analyst involves teamwork and attention to detail, which can be seen as a close match to the requirement for reliability and punctuality. However, there is no evidence of previous work on boats, no indication of physical fitness for heavy, repetitive work in all weathers, and no documented experience with early starts or long days, making these requirements unclear from the CV.",
+    "candidate": "ALEX PARK",
+    "type": "essential_requirements"
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "score": 2,
+    "strengths": [
+      "Demonstrates strong technical skills in software engineering and systems design.",
+      "Experience with leadership and mentoring roles."
+    ],
+    "weaknesses": [
+      "Lacks relevant groundskeeping, gamekeeping, or countryside management experience.",
+      "No demonstrated experience in physical fitness-related roles or experience with tracking, search & rescue, or military backgrounds.",
+      "Absence of experience working with hounds or tracking dogs.",
+      "Limited evidence of comfort with the hunting premise or experience in immersive theatre, airsoft event marshalling, or private security work.",
+      "No prior service in roles requiring unconditional discretion and no questions asked."
+    ],
+    "summary": "The candidate's software engineering and leadership skills do not align with the physical, discreet, and countryside management-oriented requirements of the Groundskeeper & 'Hunt' Coordinator role.",
+    "candidate": "middle_chinese",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Proven technical skills in software engineering",
+      "Experience in system design and optimization"
+    ],
+    "weaknesses": [
+      "Lack of relevant experience in groundskeeping or event coordination",
+      "No indication of experience or comfort with physical pursuit activities"
+    ],
+    "summary": "Candidate's background in software engineering does not align with the physical and outdoors-focused requirements of the Groundskeeper position at Blackmoor Hall.",
+    "candidate": "middle_chinese",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate has provided evidence of groundskeeping experience, which is a reasonable match for the required experience in groundskeeping, gamekeeping, or 'countryside management.' The candidate's physical fitness and willingness to live on-site are clear matches. However, the candidate's background does not evidence tracking, search & rescue, military, or other 'pursuit oriented' experience, which are strongly preferred. Discretion and the ability to work alone are not explicitly mentioned but can be inferred from the candidate's past experience. The candidate's driving license is not provided, and it is unclear if they have a full clean driving license.",
+    "candidate": "middle_chinese",
+    "type": "essential_requirements"
+  }
+]

@@ -1,0 +1,36 @@
+[
+  {
+    "score": 4,
+    "strengths": [
+      "Experienced with software development and technical problem-solving, demonstrating attention to detail and ability to reduce errors."
+    ],
+    "weaknesses": [
+      "Lack of direct secretarial, receptionist, or office administration experience.",
+      "No demonstrated skills in Microsoft Office applications or experience with practice management software.",
+      "No experience handling confidential financial or personal information.",
+      "No relevant customer service or client interaction experience."
+    ],
+    "summary": "The candidate has strong technical skills but lacks the direct experience and relevant skills for a secretary or administrative assistant role.",
+    "candidate": "JordanMitchell5Star",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong technical background in software engineering",
+      "Experience with automation and CI/CD pipelines"
+    ],
+    "weaknesses": [
+      "Lack of experience in administrative or secretarial roles",
+      "No direct experience with Microsoft Office Suite"
+    ],
+    "summary": "The candidate's technical skills and software engineering background are impressive, but they lack the administrative and secretarial experience required for the role.",
+    "candidate": "JordanMitchell5Star",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate does not clearly meet the previous secretarial, receptionist, or office administration experience requirement. Their relevant coursework and certifications show strong technical skills but do not indicate any secretarial or administrative experience. Their confident telephone manner and warm, professional way with clients face to face are reasonably inferred from their collaborative and customer-facing roles. The candidate's good working knowledge of Microsoft applications, accurate typing, and organizational skills are clearly demonstrated through their coursework and roles. Discretion is not directly evidenced but could be reasonably inferred given the technical nature of their work.",
+    "candidate": "JordanMitchell5Star",
+    "type": "essential_requirements"
+  }
+]

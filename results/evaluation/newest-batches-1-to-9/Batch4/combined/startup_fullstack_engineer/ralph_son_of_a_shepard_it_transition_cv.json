@@ -1,0 +1,36 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Demonstrates strong independent working skills and adaptability",
+      "Possesses solid problem-solving abilities and a methodical approach"
+    ],
+    "weaknesses": [
+      "Lacks experience in full-stack development, particularly in TypeScript/React and Go",
+      "No background in operating services in production environments",
+      "Missing experience with event-driven architectures and distributed systems"
+    ],
+    "summary": "The candidate shows strong independent work ethic and adaptability but lacks essential technical experience and skills required for the role.",
+    "candidate": "Ralph_Son_of_a_Shepard_IT_Transition_CV",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong in incident identification and escalation",
+      "Experience in independent working and prioritization under pressure"
+    ],
+    "weaknesses": [
+      "Lacks essential technical background and formal IT qualifications",
+      "No experience with relevant technologies such as TypeScript, React, Go, Kafka, TimescaleDB"
+    ],
+    "summary": "Candidate lacks the technical background and relevant work experience needed for the position, but shows potential for up-skilling in IT support roles.",
+    "candidate": "Ralph_Son_of_a_Shepard_IT_Transition_CV",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's experience in operating services, managing priorities, and coordinating with colleagues demonstrates a reasonable match for the production software shipping and operational experience. Their ability to explain procedures and work under pressure aligns with the communication and ambiguity handling requirements. However, there is no clear evidence of experience with TypeScript/React, backend languages, or distributed systems fundamentals, which are essential requirements.",
+    "candidate": "Ralph_Son_of_a_Shepard_IT_Transition_CV",
+    "type": "essential_requirements"
+  }
+]

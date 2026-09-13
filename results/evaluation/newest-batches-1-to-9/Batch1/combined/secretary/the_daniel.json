@@ -1,0 +1,37 @@
+[
+  {
+    "score": 6,
+    "strengths": [
+      "Demonstrates strong organizational and analytical skills through a business analyst role.",
+      "Possesses advanced technical skills, including proficiency in Excel, which aligns with the essential requirement of using Microsoft Office tools.",
+      "Has a solid educational background in business and information systems."
+    ],
+    "weaknesses": [
+      "Lacks direct experience in secretarial, receptionist, or administrative roles, which are crucial for this position.",
+      "No demonstrated experience with specific practice management software like Iris, CCH, or Xero Practice Manager.",
+      "No experience in handling administrative tasks such as managing diaries, correspondence, and client interaction."
+    ],
+    "summary": "The candidate has strong analytical and organizational skills with relevant technical expertise, but lacks direct experience in administrative and secretarial roles required for this position.",
+    "candidate": "THE DANIEL",
+    "model": "phi4"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "advanced Excel skills",
+      "strong communication and interpersonal skills"
+    ],
+    "weaknesses": [
+      "lacks relevant administrative or secretarial experience",
+      "inexperience with Microsoft Word and practice management software"
+    ],
+    "summary": "The candidate has strong technical skills but lacks the specific administrative experience and software proficiency required for the role.",
+    "candidate": "THE DANIEL",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's work experience as a Business Analyst demonstrates strong organizational and multitasking skills, making a reasonable close match to the job's requirements. The CV does not explicitly mention secretarial, receptionist, or office administration experience, though the Business Analyst role requires some administrative tasks. The candidate’s typing speed, spelling, and grammar are not evidenced, but their advanced education in business information systems and system analysis suggests a good working knowledge of Microsoft Office tools, which may be transferable. The role does not mention handling confidential information, but the business analyst responsibilities imply discretion.",
+    "candidate": "THE DANIEL",
+    "type": "essential_requirements"
+  }
+]

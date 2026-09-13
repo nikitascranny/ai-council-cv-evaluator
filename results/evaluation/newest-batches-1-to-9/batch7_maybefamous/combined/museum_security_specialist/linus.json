@@ -1,0 +1,37 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Demonstrates strong technical skills with certifications in Django and Azure.",
+      "Has experience in software development, indicating a capacity for learning new systems."
+    ],
+    "weaknesses": [
+      "Lacks direct experience in security roles or operations.",
+      "Missing essential skills such as familiarity with CCTV, intruder alarms, and access-control systems.",
+      "No evidence of physical ability to patrol large sites or work under high-pressure situations.",
+      "Lacks relevant work experience in museum or heritage site environments."
+    ],
+    "summary": "Linus Torvalds has technical expertise but lacks the specific experience and skills necessary for a Museum Security Specialist role.",
+    "candidate": "Linus",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Technical skills in software engineering",
+      "Experience with Python and Django frameworks"
+    ],
+    "weaknesses": [
+      "No relevant experience in security or museum operations",
+      "Lack of physical security skills and certifications"
+    ],
+    "summary": "Linus Torvalds has strong technical skills but lacks any relevant experience or qualifications for the Museum Security Specialist role.",
+    "candidate": "Linus",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's experience as a Software Engineer and Junior Developer does not clearly meet the minimum 3 years' experience in a security role. However, their education and certifications in IT-related fields provide a reasonable match for the working knowledge of systems and communication skills required. The certifications, particularly the Django course, suggest some understanding of backend systems, which could be transferable. Physical and shift work ability is unclear from the CV. The SIA or regional equivalent licence is not evidenced.",
+    "candidate": "Linus",
+    "type": "essential_requirements"
+  }
+]

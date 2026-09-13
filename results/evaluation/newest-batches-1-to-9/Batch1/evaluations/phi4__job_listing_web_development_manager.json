@@ -1,0 +1,153 @@
+[
+  {
+    "score": 8,
+    "strengths": [
+      "The candidate has a strong background in strategic partnership management, demonstrated by their role as Global Partnerships Manager at CodeForward.",
+      "They possess relevant hard skills such as project management, account management, and agile methodologies, which are crucial for managing complex projects.",
+      "Their involvement in internet governance and leadership roles in international forums indicates a high potential for upskilling and adaptability in dynamic environments.",
+      "The candidate has a proven track record of developing and maintaining strategic alliances, which aligns well with roles requiring relationship management and strategic planning."
+    ],
+    "weaknesses": [
+      "While the candidate has extensive experience in partnerships and project management, specific technical skills like Java or Python may not be directly applicable to all roles.",
+      "There is limited evidence of direct experience in certain niche areas like digital marketing or advanced IT project management, which might be required depending on the job.",
+      "The candidate's experience is heavily focused on strategic and managerial roles, which may not cover hands-on technical or operational tasks required in some positions."
+    ],
+    "summary": "The candidate is well-suited for roles requiring strategic partnership management and project leadership, with strong potential for upskilling in technical and governance areas.",
+    "candidate": "LERATO MUNCHE"
+  },
+  {
+    "score": 6,
+    "strengths": [
+      "Strong background in AWS, Kubernetes, and cloud technologies, aligning with technical skills required.",
+      "Experience in data engineering and machine learning, indicating potential for handling complex technical challenges.",
+      "Certifications relevant to cloud engineering and AWS, demonstrating commitment to upskilling."
+    ],
+    "weaknesses": [
+      "Lacks direct experience in managing web development teams or line-managing engineers.",
+      "Limited exposure to React/TypeScript, Node.js, and .NET, which are essential for the role.",
+      "No specific experience in accessibility standards or large-scale incident management."
+    ],
+    "summary": "The candidate has a strong technical background in cloud technologies and data engineering but lacks direct experience in web development and team management, which are critical for the Engineering Manager role.",
+    "candidate": "EMILE MOKOENA"
+  },
+  {
+    "score": 6,
+    "strengths": [
+      "Extensive experience in digital marketing and strategy, with a strong understanding of digital channel management and campaign activities.",
+      "Demonstrated leadership in managing teams and developing customer-centric strategies, which aligns with the leadership aspect of the role.",
+      "Skills in project management, strategy, and data analysis, which are valuable for driving technical roadmaps and team coordination."
+    ],
+    "weaknesses": [
+      "Limited direct experience in web/software engineering and managing engineering teams, with most experience in digital marketing roles.",
+      "No specific experience with the technical stack required (React/TypeScript, Node.js, .NET) or in significant technical changes like replatforming.",
+      "Lack of proven experience in managing technical roadmaps, architecture reviews, and incident response for customer-facing services."
+    ],
+    "summary": "The candidate has strong leadership and digital marketing skills but lacks direct experience in web development engineering and managing technical teams, which are critical for this role.",
+    "candidate": "RIAAN GOVEN"
+  },
+  {
+    "score": 4,
+    "strengths": [
+      "The candidate has a strong background in software testing, including experience with automation tools like Playwright and JEST, which may be beneficial for maintaining code quality and testing.",
+      "Demonstrated experience in leading and mentoring junior test analysts, which shows potential for people management and leadership."
+    ],
+    "weaknesses": [
+      "Lacks direct experience in web development or engineering management, specifically in React/TypeScript and Node.js or .NET services.",
+      "No proven experience with architecture reviews, CI/CD, or cloud infrastructure, which are essential for this role.",
+      "Limited exposure to leading technical teams through significant changes, such as platform modernisation or monolith decomposition."
+    ],
+    "summary": "While Alex Park has leadership experience in a testing context and technical proficiency with automation tools, the role requires substantial web development expertise and engineering management experience that the candidate currently lacks.",
+    "candidate": "ALEX PARK"
+  },
+  {
+    "score": 4,
+    "strengths": [
+      "Strong leadership experience in guiding cross-functional teams.",
+      "Effective in conducting user research and facilitating workshops."
+    ],
+    "weaknesses": [
+      "Lacks direct experience in web/software engineering and technical leadership.",
+      "No experience in managing engineering teams or technical roadmap planning.",
+      "Absence of hands-on coding experience, especially in required technologies (React, TypeScript, Node.js, .NET).",
+      "No proven experience leading technical changes such as platform modernization."
+    ],
+    "summary": "The candidate has strong leadership and research skills but lacks the necessary technical background and experience in web development engineering management.",
+    "candidate": "GEOFF NITSCHKE"
+  },
+  {
+    "score": 4,
+    "strengths": [
+      "Demonstrates strong project management and coordination skills.",
+      "Shows ability to work with digital tools and technical documentation."
+    ],
+    "weaknesses": [
+      "Lacks direct experience in web/software engineering and relevant technical stacks (React/TypeScript, Node.js, .NET).",
+      "No experience in line-managing a software engineering team or managing technical delivery.",
+      "Limited exposure to cloud infrastructure, CI/CD, and incident management.",
+      "No demonstrated experience in leading teams through technical modernization or architecture transitions."
+    ],
+    "summary": "The candidate has strong project management and technical documentation skills but lacks direct experience in web development and engineering management required for the role.",
+    "candidate": "JORDAN VELDMAN"
+  },
+  {
+    "score": 4,
+    "strengths": [
+      "Demonstrates strong organizational and administrative skills.",
+      "Experience in managing records and information systems.",
+      "Exposure to project management and implementation in records management."
+    ],
+    "weaknesses": [
+      "Lacks direct experience in web/software engineering.",
+      "No leadership experience in engineering or technical teams.",
+      "No experience with the specific technologies mentioned (React, TypeScript, Node.js, .NET, AWS).",
+      "No experience in agile delivery methodologies relevant to software development."
+    ],
+    "summary": "While the candidate has strong organizational skills and some project management experience, they lack the technical, engineering, and leadership experience required for the Engineering Manager role in web development.",
+    "candidate": "NDLOVU KARABO REFILWE"
+  },
+  {
+    "score": 4,
+    "strengths": [
+      "Extensive leadership experience across various roles",
+      "Strong background in risk mitigation, project management, and compliance",
+      "Proven track record in managing teams and delivering projects"
+    ],
+    "weaknesses": [
+      "Lack of direct experience in web/software engineering",
+      "No experience with the specific technologies mentioned (React/TypeScript, Node.js, .NET, AWS)",
+      "No demonstrated experience in agile delivery methodologies relevant to web development"
+    ],
+    "summary": "The candidate has strong leadership and management skills but lacks direct experience and technical expertise in web development and the specific technologies required for the role.",
+    "candidate": "PATRICK MARAIS"
+  },
+  {
+    "score": 4,
+    "strengths": [
+      "Strong analytical and report writing skills demonstrated through various roles.",
+      "Effective stakeholder communication and organizational skills shown across positions."
+    ],
+    "weaknesses": [
+      "Lacks direct web/software engineering experience.",
+      "No prior experience in line-managing engineers or technical leadership roles.",
+      "No background in modern web stacks like React/TypeScript or cloud infrastructure such as AWS."
+    ],
+    "summary": "While the candidate demonstrates strong analytical and communication skills, they lack the necessary technical and leadership experience required for the engineering manager role.",
+    "candidate": "PONTUS PONTIOUS"
+  },
+  {
+    "score": 4,
+    "strengths": [
+      "The candidate has demonstrated strong analytical and problem-solving skills in roles as a Business Analyst.",
+      "The candidate possesses relevant project management skills and experience in compliance and efficiency improvement.",
+      "Strong communication and interpersonal skills are evident, which are crucial for cross-functional teamwork."
+    ],
+    "weaknesses": [
+      "Lack of direct experience in web/software engineering and managing engineering teams.",
+      "No evidence of experience with modern web stacks like React/TypeScript or backend technologies such as Node.js or .NET.",
+      "No experience with leading architectural changes or migration to service-oriented architectures.",
+      "Absence of demonstrated experience with CI/CD, cloud infrastructure, or managing on-call responsibilities."
+    ],
+    "summary": "The candidate shows strong analytical and communication skills but lacks direct experience in web development and engineering leadership, which are critical for this role.",
+    "candidate": "THE DANIEL"
+  }
+]

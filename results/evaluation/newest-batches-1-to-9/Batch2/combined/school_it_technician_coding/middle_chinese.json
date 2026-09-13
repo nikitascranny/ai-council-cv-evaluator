@@ -1,0 +1,38 @@
+[
+  {
+    "score": 6,
+    "strengths": [
+      "Strong technical skills in programming languages like Python, which is essential for coding enrichment activities.",
+      "Experience with system design and backend services relevant to managing IT infrastructure.",
+      "Mentoring experience which aligns with the role's requirement of working with young people and supporting educational activities."
+    ],
+    "weaknesses": [
+      "Limited direct experience in educational settings or with school IT systems, such as device imaging or classroom AV support.",
+      "Lacks specific experience with Windows 11, Microsoft 365, and Intune which are important for the IT technician aspect of the role.",
+      "No direct experience with Google Workspace or Classroom, and lack of Raspberry Pi or LEGO robotics experience which are desirable for the coding enrichment side."
+    ],
+    "summary": "The candidate possesses strong technical and mentoring skills but lacks direct experience in educational IT support and specific school-related technologies.",
+    "candidate": "middle_chinese",
+    "model": "phi4"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "strong backend and frontend development skills",
+      "experience with various tools and technologies"
+    ],
+    "weaknesses": [
+      "lacks direct IT support experience",
+      "no experience working in an educational setting",
+      "missing key qualifications such as Python for educational use and understanding of classroom AV systems"
+    ],
+    "summary": "The candidate has strong technical skills but lacks the direct experience and educational qualifications required for the IT Technician & Coding Enrichment Lead role.",
+    "candidate": "middle_chinese",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate clearly meets the requirement for practical IT support experience and has a working knowledge of Windows 11 and Microsoft 365. Their basic programming ability, specifically in Python, is a reasonable match for the requirement to help 11-14 year olds debug their own code. The candidate's enthusiasm for working with young people and explaining technology clearly is evident, but it is not explicitly stated that they have an understanding of safeguarding or a willingness to undergo a DBS check, which are clearly not met or unclear from the CV.",
+    "candidate": "middle_chinese",
+    "type": "essential_requirements"
+  }
+]

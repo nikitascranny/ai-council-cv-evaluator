@@ -1,0 +1,39 @@
+[
+  {
+    "score": 7,
+    "strengths": [
+      "Has relevant experience with backend systems using Go, which is preferred for the role.",
+      "Has experience in maintaining and building reliable backend services, aligning with the role's responsibilities.",
+      "Demonstrates a strong technical background with a B.Sc. in Computer Science and relevant certifications."
+    ],
+    "weaknesses": [
+      "Lacks experience with frontend technologies like React/TypeScript, which are essential for the role.",
+      "Does not have experience with distributed systems fundamentals such as Kafka, TimescaleDB, or Redis.",
+      "Limited exposure to direct customer interaction and product shaping, which are key responsibilities."
+    ],
+    "summary": "Marcus has relevant backend experience and technical skills, but needs to develop frontend capabilities and familiarity with event-driven architectures.",
+    "candidate": "MegaMarcus",
+    "model": "phi4"
+  },
+  {
+    "score": 6,
+    "strengths": [
+      "Experience with backend systems in Go",
+      "AWS certification",
+      "Experience in service reliability"
+    ],
+    "weaknesses": [
+      "Lack of experience with TypeScript/React",
+      "No experience in the energy sector",
+      "No evidence of open-source contributions or side projects"
+    ],
+    "summary": "Marcus Vandenberg has relevant backend experience but lacks front-end skills and industry-specific knowledge.",
+    "candidate": "MegaMarcus",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate has 4+ years of production software shipping experience, which meets the requirement. Their experience in maintaining internal tooling and dashboards indicates some backend experience, though more specific experience in TypeScript/React is lacking. They have a solid grasp of distributed systems fundamentals and have experience in service reliability, which aligns well with the job description. The candidate's communication skills are demonstrated through their ability to write documentation and onboarding guides, and they have relevant coursework and certifications. Their excitement about energy and climate problems is not explicitly stated but can be inferred from their background in software engineering.",
+    "candidate": "MegaMarcus",
+    "type": "essential_requirements"
+  }
+]

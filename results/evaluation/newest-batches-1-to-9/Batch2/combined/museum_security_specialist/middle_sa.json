@@ -1,0 +1,37 @@
+[
+  {
+    "score": 4,
+    "strengths": [
+      "The candidate has strong problem-solving skills and experience in high-pressure environments, demonstrated by their engineering roles.",
+      "They have a history of leading projects and improving system efficiencies, indicating good leadership and technical capabilities."
+    ],
+    "weaknesses": [
+      "Lacks direct experience in security roles, particularly in museum or cultural property contexts.",
+      "No evidence of experience with CCTV, intruder alarm, or access-control systems as required.",
+      "No prior experience in security patrols, incident response, or working in a museum or similar environment.",
+      "Does not possess a valid SIA Door Supervisor or Security Guarding license."
+    ],
+    "summary": "While the candidate shows strong leadership and technical problem-solving skills, they lack direct experience and qualifications in security, particularly in a museum setting, making them a less suitable candidate for this role.",
+    "candidate": "middle_sa",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong technical background in software engineering",
+      "Experience with cloud and delivery platforms"
+    ],
+    "weaknesses": [
+      "No relevant experience in security or museum operations",
+      "Lacks essential certifications and practical skills for the role"
+    ],
+    "summary": "Candidate has a strong technical background but lacks any relevant experience or qualifications in museum security, making them unsuitable for the position.",
+    "candidate": "middle_sa",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's background in engineering and technical expertise align well with the role's requirements for a security position, but there is no evidence of relevant experience in a security role or possession of the necessary licensing. The candidate's communication skills and ability to handle pressure are unclear from the provided information. Flexibility with working hours is implied.",
+    "candidate": "middle_sa",
+    "type": "essential_requirements"
+  }
+]

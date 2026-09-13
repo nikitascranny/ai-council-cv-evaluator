@@ -1,0 +1,38 @@
+[
+  {
+    "score": 2,
+    "strengths": [
+      "Demonstrates ability to work independently",
+      "Possesses basic technical skills such as typing and using Excel"
+    ],
+    "weaknesses": [
+      "Lacks relevant technical experience and skills required for the role",
+      "Limited employment history with no evidence of technical or engineering work",
+      "No experience with required technologies like React, TypeScript, Go, Kafka, or TimescaleDB",
+      "History of leaving jobs voluntarily or being asked to leave suggests potential reliability issues",
+      "Education does not meet the level typically expected for a full-stack engineering position"
+    ],
+    "summary": "The candidate lacks the necessary technical skills, relevant work experience, and educational background required for a Founding Full-Stack Engineer role, despite showing potential for independent work.",
+    "candidate": "bad_cv_kevin_jones",
+    "model": "phi4"
+  },
+  {
+    "score": 1,
+    "strengths": [
+      "willing to work",
+      "can provide explanations for employment gaps"
+    ],
+    "weaknesses": [
+      "lacks relevant technical skills and experience",
+      "poor fit for the company culture"
+    ],
+    "summary": "The candidate is a poor fit for the position due to a lack of relevant technical skills, experience, and cultural alignment with the company.",
+    "candidate": "bad_cv_kevin_jones",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate has relevant experience in shipping production software, which aligns with the 4+ years requirement. The experience in various roles, including the call centre, demonstrates comfort with ambiguity and velocity. However, the lack of specific technical experience in TypeScript/React or backend languages, as well as the absence of detailed experience with operations in production, makes it unclear whether the candidate meets these requirements. The education level is not a clear match for the job's requirements, and the employment history is concerning due to the gaps and the nature of the roles.",
+    "candidate": "bad_cv_kevin_jones",
+    "type": "essential_requirements"
+  }
+]

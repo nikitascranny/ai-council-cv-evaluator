@@ -1,0 +1,32 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Demonstrates strong problem-solving and independent working abilities",
+      "Shows commitment to continuous learning and adaptability"
+    ],
+    "weaknesses": [
+      "Lacks formal IT qualifications and experience in web/software engineering",
+      "No direct experience in line-managing engineers or leading technical projects",
+      "No background in the required technical stack (React/TypeScript, Node.js, .NET) or cloud infrastructure",
+      "Limited relevance of field operations experience to web development and engineering management"
+    ],
+    "summary": "The candidate shows potential for learning and adapting but lacks the necessary technical skills and leadership experience required for the Engineering Manager role.",
+    "candidate": "Ralph_Son_of_a_Shepard_IT_Transition_CV"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Demonstrates strong independent work ethic and responsibility in a demanding environment.",
+      "Possesses good record-keeping and planning skills through farm operations."
+    ],
+    "weaknesses": [
+      "Lacks professional web/software engineering experience.",
+      "No experience with line-managing engineers or leading technical projects.",
+      "No familiarity with modern web stacks, cloud infrastructure, or agile methodologies.",
+      "No relevant experience in software development or team leadership in a tech context."
+    ],
+    "summary": "The candidate shows strong independent work ethic and organizational skills but lacks the necessary technical, leadership, and engineering experience required for the Engineering Manager role.",
+    "candidate": "Ralph_Son_of_a_Shepard_Farm_CV"
+  }
+]

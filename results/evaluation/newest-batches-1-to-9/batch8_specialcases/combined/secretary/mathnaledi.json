@@ -1,0 +1,39 @@
+[
+  {
+    "score": 5,
+    "strengths": [
+      "Strong analytical and data management skills",
+      "Excellent proficiency in Excel",
+      "Experience with data presentation and optimization",
+      "High capacity for managing multiple tasks"
+    ],
+    "weaknesses": [
+      "Lack of direct secretarial or administrative experience",
+      "No direct experience with Microsoft Outlook or practice management software",
+      "Limited evidence of client-facing skills",
+      "No familiarity with handling confidential client information"
+    ],
+    "summary": "The candidate possesses strong analytical skills and proficiency in Excel, which align with the administrative tasks, but lacks direct experience in secretarial roles and client management.",
+    "candidate": "MathNaledi",
+    "model": "phi4"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "strong analytical skills",
+      "accurate and detailed work"
+    ],
+    "weaknesses": [
+      "lack of relevant administrative or secretarial experience",
+      "inadequate proficiency in Microsoft Office applications"
+    ],
+    "summary": "Naledi Mokoena's background in data analysis demonstrates strong attention to detail and accuracy, but lacks the necessary administrative experience and Microsoft Office proficiency required for the role.",
+    "candidate": "MathNaledi",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's experience does not clearly meet the secretarial, receptionist, or office administration requirement. Their skills in data analysis and Microsoft tools, such as Excel and Tableau, are a reasonable/close match for the Microsoft Office suite requirement and the ability to handle data, though not exactly secretarial. Their strong communication and organizational skills, as evidenced by their data presentation and task optimization, closely align with the ability to handle clients and juggle tasks. Discretion is not clearly addressed in the CV.",
+    "candidate": "MathNaledi",
+    "type": "essential_requirements"
+  }
+]

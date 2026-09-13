@@ -1,0 +1,37 @@
+[
+  {
+    "score": 4,
+    "strengths": [
+      "Excellent organizational and administrative skills demonstrated through extensive records management experience",
+      "Strong attention to detail and record-keeping as evidenced by roles in archives and records management",
+      "Good communication and interpersonal skills, which are valuable for engaging with visitors during tours and talks"
+    ],
+    "weaknesses": [
+      "Lack of formal education in marine biology or related life sciences",
+      "No direct experience in aquatic animal husbandry or aquarium work",
+      "Physical requirements such as lifting up to 25 kg and working in humid environments not explicitly addressed"
+    ],
+    "summary": "While the candidate possesses strong organizational and interpersonal skills, the lack of relevant educational background and direct experience in aquatic environments is a significant drawback for this role.",
+    "candidate": "NDLOVU KARABO REFILWE",
+    "model": "phi4"
+  },
+  {
+    "score": 4,
+    "strengths": [
+      "excellent communication and interpersonal skills",
+      "strong organizational and administrative skills"
+    ],
+    "weaknesses": [
+      "lack of relevant education in marine biology, zoology, or aquatic biology",
+      "no direct experience in aquatic animal husbandry or life support systems"
+    ],
+    "summary": "The candidate possesses strong administrative and communication skills, but lacks the specific educational background and work experience required for the position.",
+    "candidate": "NDLOVU KARABO REFILWE",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's educational background is primarily in information science and management, which does not directly align with the essential requirements of a marine biology, zoology, or aquatic biology degree. However, the candidate has extensive experience in records management, which closely matches the job's emphasis on compliance, documentation, and handling of records. The physical fitness and willingness to work in demanding conditions are not evidenced in the CV, but the willingness to carry out physical tasks is implied through the relevant work experience. The candidate’s ability to work on weekends and during early mornings is unclear but may be inferred from the varied and demanding work history.",
+    "candidate": "NDLOVU KARABO REFILWE",
+    "type": "essential_requirements"
+  }
+]

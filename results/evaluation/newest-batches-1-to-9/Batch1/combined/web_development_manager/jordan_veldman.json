@@ -1,0 +1,37 @@
+[
+  {
+    "score": 4,
+    "strengths": [
+      "Demonstrates strong project management and coordination skills.",
+      "Shows ability to work with digital tools and technical documentation."
+    ],
+    "weaknesses": [
+      "Lacks direct experience in web/software engineering and relevant technical stacks (React/TypeScript, Node.js, .NET).",
+      "No experience in line-managing a software engineering team or managing technical delivery.",
+      "Limited exposure to cloud infrastructure, CI/CD, and incident management.",
+      "No demonstrated experience in leading teams through technical modernization or architecture transitions."
+    ],
+    "summary": "The candidate has strong project management and technical documentation skills but lacks direct experience in web development and engineering management required for the role.",
+    "candidate": "JORDAN VELDMAN",
+    "model": "phi4"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "strong project management skills",
+      "detailed technical documentation"
+    ],
+    "weaknesses": [
+      "lack of direct experience in web/software engineering",
+      "no evidence of leadership in technical change"
+    ],
+    "summary": "The candidate lacks the direct technical and leadership experience in web/software engineering required for the role.",
+    "candidate": "JORDAN VELDMAN",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate does not meet the essential requirement of 5+ years of professional web/software engineering experience. However, their experience in project management, technical documentation, and collaboration with engineers is a reasonable match to the role. Their understanding of digital tools and modeling, as well as their ability to handle projects independently, suggests potential transferable skills in technical leadership, though this is not explicitly stated.",
+    "candidate": "JORDAN VELDMAN",
+    "type": "essential_requirements"
+  }
+]

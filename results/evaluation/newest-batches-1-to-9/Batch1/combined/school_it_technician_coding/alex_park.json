@@ -1,0 +1,37 @@
+[
+  {
+    "score": 5,
+    "strengths": [
+      "Proficient in using automation testing tools which can be beneficial for coding activities.",
+      "Experience in conducting test analysis and generating test plans, suggesting ability to plan and execute technical tasks.",
+      "Training experience with junior test analysts, indicating capability to work with young people and support learning."
+    ],
+    "weaknesses": [
+      "Lack of direct experience in IT support roles and managing devices, which are essential for the role.",
+      "No experience with educational settings, which is desirable for this position.",
+      "No specific experience with programming languages like Python or Scratch, or with devices like Raspberry Pi and Micro:bit."
+    ],
+    "summary": "The candidate has relevant technical skills and experience with automation and training, but lacks direct experience in IT support and educational settings, which are crucial for this role.",
+    "candidate": "ALEX PARK",
+    "model": "phi4"
+  },
+  {
+    "score": 4,
+    "strengths": [
+      "Experience in test analysis and documentation",
+      "Proficient in automation testing tools"
+    ],
+    "weaknesses": [
+      "Lack of direct IT support experience",
+      "No evident coding experience or working with young people"
+    ],
+    "summary": "Alex Park lacks the direct IT support experience and coding knowledge required for the IT Technician role, but has strong analytical and automation skills.",
+    "candidate": "ALEX PARK",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's experience as an Intermediate Test Analyst at Meridian Investment Services demonstrates practical IT support experience and a working knowledge of software testing tools and methodologies, which can be reasonably considered as IT support experience. The candidate's training and documentation skills can be seen as basic programming ability. There is no clear evidence of working with young people or a specific enthusiasm for doing so. The candidate has a willingness to undergo an enhanced DBS check, and there is no information regarding safeguarding training.",
+    "candidate": "ALEX PARK",
+    "type": "essential_requirements"
+  }
+]

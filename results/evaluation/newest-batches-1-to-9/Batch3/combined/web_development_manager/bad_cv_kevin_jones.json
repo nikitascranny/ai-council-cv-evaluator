@@ -1,0 +1,38 @@
+[
+  {
+    "score": 1,
+    "strengths": [
+      "Has experience in customer-facing roles which might aid in communication with non-technical stakeholders",
+      "Displays willingness to work and adapt to job requirements"
+    ],
+    "weaknesses": [
+      "Lacks the necessary professional web/software engineering experience",
+      "No evidence of line-managing engineers or leading teams through technical change",
+      "Limited formal education and relevant technical skills",
+      "Inconsistent work history and issues with authority and punctuality"
+    ],
+    "summary": "The candidate lacks the required technical skills, experience, and leadership background necessary for the Engineering Manager role.",
+    "candidate": "bad_cv_kevin_jones",
+    "model": "phi4"
+  },
+  {
+    "score": 1,
+    "strengths": [
+      "willing to work",
+      "can provide explanations for employment gaps"
+    ],
+    "weaknesses": [
+      "lacks relevant professional web/software engineering experience",
+      "no evidence of leading teams through technical change",
+      "multiple instances of being asked to leave previous roles"
+    ],
+    "summary": "The candidate does not meet the basic requirements for the engineering manager position and has a history of unstable employment.",
+    "candidate": "bad_cv_kevin_jones",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate has relevant experience in various industries but lacks clear evidence of professional web/software engineering experience, especially in managing teams. They have some exposure to CI/CD and cloud infrastructure but not in the context of the job description. Their communication skills are not demonstrated, and there is no clear indication of experience in agile delivery or leading technical change.",
+    "candidate": "bad_cv_kevin_jones",
+    "type": "essential_requirements"
+  }
+]

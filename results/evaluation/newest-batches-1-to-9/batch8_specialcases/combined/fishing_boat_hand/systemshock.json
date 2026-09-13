@@ -1,0 +1,38 @@
+[
+  {
+    "score": 2,
+    "strengths": [
+      "Demonstrates punctuality and reliability through stable software engineering role",
+      "Possesses numeracy skills useful for catch tallies and grading"
+    ],
+    "weaknesses": [
+      "Lacks experience in physical, maritime work environments",
+      "No demonstrated experience with boats or fishing-related activities",
+      "No evidence of physical fitness for heavy, repetitive manual work",
+      "No background in maritime safety training or sea survival"
+    ],
+    "summary": "The candidate has relevant numeracy skills and a track record of reliability but lacks the necessary maritime experience and physical fitness for the demanding role of a boat hand.",
+    "candidate": "SystemShock",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Basic numeracy",
+      "Possibly reliable and punctual"
+    ],
+    "weaknesses": [
+      "No experience in fishing or boating",
+      "No physical manual work experience",
+      "No safety training or experience"
+    ],
+    "summary": "The candidate lacks the essential experience and skills required for the position.",
+    "candidate": "SystemShock",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate demonstrates a reasonable match with the job's essential requirements, particularly with 'sea legs' and 'willing to work early starts and long days.' Their CV does not provide clear evidence for physically fit and comfortable with heavy, repetitive manual work in all weathers, basic numeracy for catch tallies and grading, and no history of severe seasickness. However, previous experience could potentially be relevant but is not explicitly stated.",
+    "candidate": "SystemShock",
+    "type": "essential_requirements"
+  }
+]

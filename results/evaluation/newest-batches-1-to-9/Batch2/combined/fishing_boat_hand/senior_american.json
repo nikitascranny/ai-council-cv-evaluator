@@ -1,0 +1,37 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Has experience with teamwork and mentorship, which may help in adapting to a new work environment",
+      "Strong work ethic as evidenced by consistent professional progression"
+    ],
+    "weaknesses": [
+      "Lacks relevant maritime or fishing industry experience",
+      "No history of physical, manual labor or sea work",
+      "No experience with vessel maintenance or safety procedures",
+      "Unfamiliar with fishing techniques such as potting, netting, and shellfish handling"
+    ],
+    "summary": "Marcus Okafor has strong technical and leadership skills but lacks the specific maritime experience and physical capabilities required for the Deckhand position.",
+    "candidate": "senior_american",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Technical leadership in software engineering",
+      "Proven track record in system design and reliability"
+    ],
+    "weaknesses": [
+      "Lack of relevant maritime or fishing experience",
+      "No evidence of physical fitness or manual labor skills"
+    ],
+    "summary": "Marcus Okafor is highly skilled in software engineering but lacks any experience relevant to the fishing industry or physical labor required for the role.",
+    "candidate": "senior_american",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's background in software engineering does not meet the essential requirements of the job, as the role is for a physically manual position on boats. However, the candidate's relevant experience in technical leadership, reliability engineering, and incident management could be considered a close match for the 'reliable and punctual' requirement, as these skills demonstrate the candidate's ability to manage and deliver under pressure. The 'physically fit and comfortable with heavy, repetitive manual work in all weathers' and 'sea legs' requirements are clearly not met by the CV.",
+    "candidate": "senior_american",
+    "type": "essential_requirements"
+  }
+]

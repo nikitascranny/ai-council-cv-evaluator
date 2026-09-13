@@ -1,0 +1,38 @@
+[
+  {
+    "score": 2,
+    "strengths": [
+      "Good problem-solving skills and technical proficiency demonstrated by experience with full-stack development.",
+      "Strong collaborative skills and ability to work in agile teams."
+    ],
+    "weaknesses": [
+      "Lack of relevant experience in groundskeeping, gamekeeping, or countryside management.",
+      "No experience with physical fitness or outdoor activities like tracking or handling animals.",
+      "No background in immersive theatre, airsoft, or security work.",
+      "Absence of military or search and rescue experience."
+    ],
+    "summary": "Jordan Lee has strong technical and collaborative skills but lacks the essential experience and physical fitness required for the Groundskeeper & 'Hunt' Coordinator role at Blackmoor Hall Estate.",
+    "candidate": "beginner_american",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Technical skills in software development",
+      "Experience in building web applications"
+    ],
+    "weaknesses": [
+      "Lack of relevant experience in groundskeeping or hunting coordination",
+      "No background in physical fitness or outdoor activities",
+      "Incompatible career background"
+    ],
+    "summary": "The candidate lacks the necessary experience and skills in groundskeeping, hunting coordination, and physical fitness, making them unsuitable for the role despite their technical background in software engineering.",
+    "candidate": "beginner_american",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's CV does not clearly meet the essential requirement for groundskeeping, gamekeeping, or countryside management experience. However, the candidate's background in software engineering and teaching may reasonably relate to the 'pursuit oriented' background preference. The candidate's physical fitness, ability to work alone, and willingness to live on-site are clearly met. The candidate's computer science education and certifications provide a strong background for the technical aspects of the role, but do not directly address the groundskeeping experience required.",
+    "candidate": "beginner_american",
+    "type": "essential_requirements"
+  }
+]

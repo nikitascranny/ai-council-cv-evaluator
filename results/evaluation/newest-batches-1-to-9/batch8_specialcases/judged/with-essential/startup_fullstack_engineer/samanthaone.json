@@ -1,0 +1,8 @@
+{
+  "candidate": "SamanthaOne",
+  "final_score": 7,
+  "score_rationale": "Samantha has strong backend experience and meets the essential frontend requirements, but lacks experience in event-driven architectures and time-series data, which are desirable. Her communication and distributed systems skills are unclear but could be developed.",
+  "key_strengths": "Strong backend systems experience with Go, Python, and Java, and evidence of shipping production software and operating services in production.",
+  "key_weaknesses": "Lack of direct experience with TypeScript/React for frontend development, and no mention of event-driven architectures or time-series data.",
+  "final_evaluation": "Samantha is a strong candidate for the role due to her backend expertise and ability to handle production systems, but her frontend skills and familiarity with desirable technologies are areas that need further assessment. Her communication abilities are unclear from the CV but could be a focus in the interview process."
+}

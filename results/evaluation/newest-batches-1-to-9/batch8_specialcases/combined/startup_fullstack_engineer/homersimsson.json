@@ -1,0 +1,35 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Has experience in a software engineering role with potential relevance to full-stack development.",
+      "Possesses some education in software development."
+    ],
+    "weaknesses": [
+      "Lacks clear evidence of experience with TypeScript, React, or Go as required.",
+      "No demonstrated experience with event-driven architectures or distributed systems.",
+      "Insufficient communication of skills and experiences relevant to the role.",
+      "CV lacks detailed descriptions of responsibilities and achievements."
+    ],
+    "summary": "The candidate has some relevant software engineering experience but lacks clear evidence of the required technical skills and experience with necessary technologies and methodologies.",
+    "candidate": "HomerSimsSon",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Demonstrates enthusiasm for software engineering roles"
+    ],
+    "weaknesses": [
+      "Lacks clear evidence of relevant work experience, technical skills, and domain knowledge"
+    ],
+    "summary": "The candidate appears enthusiastic but fails to provide any concrete evidence of the required skills or relevant experience for the role.",
+    "candidate": "HomerSimsSon",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate has 4+ years of experience in shipping production software, which meets the requirement, and their experience in working with 'sul sul sul narnia vroosh' and 'dinky vroosh narnia' suggests relevant technical skills, possibly including TypeScript/React. However, the backend language experience is unclear, and the specific mention of Go is not evidenced. The candidate's experience in operating services in production, explaining trade-offs, and demonstrating a willingness to iterate is reasonable but not clearly articulated. There is no clear evidence of distributed systems fundamentals, communication with customers and founders, or enthusiasm for energy, climate, or real-world problems.",
+    "candidate": "HomerSimsSon",
+    "type": "essential_requirements"
+  }
+]

@@ -1,0 +1,39 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Familiarity with Microsoft Word",
+      "Experience in a management role at a car wash"
+    ],
+    "weaknesses": [
+      "Lacks relevant office administration experience",
+      "No evidence of experience with Excel or Outlook",
+      "Absence of formal education or qualifications",
+      "No mention of strong organizational skills or discretion",
+      "Weak professional objective and work history"
+    ],
+    "summary": "The candidate demonstrates minimal relevant skills and experience for the role, with some basic familiarity with Microsoft Word and a non-office management role.",
+    "candidate": "bad_cv_jason_muller",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Claims to know Microsoft Word",
+      "Faster learner when motivated"
+    ],
+    "weaknesses": [
+      "No relevant work experience",
+      "Objective doesn't align with the job",
+      "Lack of professionalism in CV presentation"
+    ],
+    "summary": "Candidate does not meet the job requirements and lacks professional presentation.",
+    "candidate": "bad_cv_jason_muller",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's previous experience as Assistant Manager demonstrates some level of organizational and customer service skills, which are closely related to the required office administration experience. However, there is no evidence of typing speed, Microsoft software proficiency, or handling of confidential information. The warm and professional interaction with customers is implied but not explicitly stated. Discretion is not clearly evidenced.",
+    "candidate": "bad_cv_jason_muller",
+    "type": "essential_requirements"
+  }
+]

@@ -1,0 +1,34 @@
+[
+  {
+    "score": 2,
+    "strengths": [
+      "Candidate has relevant work experience in software engineering, demonstrating an ability to manage tasks and work in a professional environment."
+    ],
+    "weaknesses": [
+      "Lack of direct experience in secretarial, receptionist, or administrative roles, which are essential for this position.",
+      "No evidence of proficiency in Microsoft Office applications (Word, Excel, Outlook) which are crucial for the role.",
+      "Absence of communication skills and experience with client-facing responsibilities, which are key for managing reception areas and client interactions.",
+      "No mention of organizational skills or experience managing diaries and scheduling, which are critical for the role."
+    ],
+    "summary": "The candidate lacks the necessary secretarial experience and key skills such as proficiency in Microsoft Office and client communication, which are crucial for the role of Secretary / Administrative Assistant at Ashcombe & Vale.",
+    "candidate": "HomerSimsSon",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "unknown, but potentially some proficiency with software tools"
+    ],
+    "weaknesses": [
+      "incomprehensible experience and education sections, lack of relevant administrative or secretarial experience, no evidence of essential skills such as accurate typing or use of Microsoft Office"
+    ],
+    "summary": "The candidate's CV is largely incomprehensible and does not provide any evidence of the essential skills or experience required for the role.",
+    "candidate": "HomerSimsSon",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's experience with office administration and handling tasks (though not explicitly stated) is a reasonable close match to the secretarial and office administration experience requirement. The candidate's ability to handle multiple tasks is evident from their various job responsibilities. However, the exact typing speed, proficiency in Microsoft Word, Excel, and Outlook, and handling confidential information are unclear from the CV.",
+    "candidate": "HomerSimsSon",
+    "type": "essential_requirements"
+  }
+]

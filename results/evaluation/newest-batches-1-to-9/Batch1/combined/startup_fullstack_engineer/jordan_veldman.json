@@ -1,0 +1,36 @@
+[
+  {
+    "score": 4,
+    "strengths": [
+      "Demonstrated project management and coordination skills, useful for managing complex systems",
+      "Experience with digital modeling and technical documentation aligns with the need for analytical and problem-solving skills"
+    ],
+    "weaknesses": [
+      "Lack of direct experience with the required technical stack (TypeScript/React, Go, Kafka, TimescaleDB)",
+      "Limited exposure to software development and operational roles in production environments",
+      "Absence of experience in distributed systems and event-driven architectures"
+    ],
+    "summary": "The candidate shows strong project management and analytical skills, but lacks direct technical experience and familiarity with the required technologies and methodologies essential for the role.",
+    "candidate": "JORDAN VELDMAN",
+    "model": "phi4"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Analytical problem-solving skills",
+      "Attention to detail in technical documentation"
+    ],
+    "weaknesses": [
+      "Lack of full-stack development experience",
+      "No experience with key technologies like TypeScript, React, Go, Kafka, TimescaleDB"
+    ],
+    "summary": "Candidate demonstrates strong analytical skills and project management experience but lacks technical skills and experience relevant to the full-stack engineering role.",
+    "candidate": "JORDAN VELDMAN",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate has relevant experience in technical documentation and project management, which is a reasonable match for the production software experience requirement. They have shown strong problem-solving and analytical skills, which are closely related to the distributed systems fundamentals and comfort with ambiguity. However, there is no evidence of experience in TypeScript/React or backend languages, which are clearly not met.",
+    "candidate": "JORDAN VELDMAN",
+    "type": "essential_requirements"
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "score": 7,
+    "strengths": [
+      "Demonstrates strong technical skills in software architecture, cloud platforms, and programming languages such as Python, which aligns with the essential requirement for a working knowledge of IT systems.",
+      "Has experience in mentoring and supporting senior engineers, suggesting an ability to work with young people and offer guidance.",
+      "Shows a strong background in operational improvement and engineering practices, which can be valuable for maintaining IT infrastructure in a school environment."
+    ],
+    "weaknesses": [
+      "Lacks direct experience in education settings or working with young people, which is a key aspect of the role.",
+      "The role requires more hands-on IT support and device management experience, which is not explicitly mentioned in the candidate's experience.",
+      "No direct experience mentioned with specific technologies required for the role such as Intune or specific classroom AV technologies."
+    ],
+    "summary": "The candidate possesses strong technical and leadership skills with potential for up-skilling, but lacks direct experience in educational environments and specific IT support tasks required for the role.",
+    "candidate": "senior_sa",
+    "model": "phi4"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Extensive technical background in software engineering and cloud platforms",
+      "Experience in system architecture and reliability"
+    ],
+    "weaknesses": [
+      "Lacks direct experience in educational IT support",
+      "No evidence of working with young people or coding education",
+      "No basic IT support or Active Directory experience"
+    ],
+    "summary": "Zanele Madondo's extensive technical background does not align well with the specific educational IT and coding support requirements of the position.",
+    "candidate": "senior_sa",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate has a strong educational background in computer science and software engineering, which suggests relevant IT support experience. Their skills in programming, particularly in Python, align well with the requirement to help young people debug code. The candidate's genuine enthusiasm for technology and communication can be inferred from their engineering award and speaking experience, making a reasonable match for the role. However, specific IT support experience and a working knowledge of Windows 11, Microsoft 365, and Intune are not evidenced in the CV. Additionally, there is no clear indication of their willingness to undergo a DBS check or their understanding of safeguarding policies.",
+    "candidate": "senior_sa",
+    "type": "essential_requirements"
+  }
+]

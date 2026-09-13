@@ -1,0 +1,37 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Demonstrates strong analytical and problem-solving skills through software development experience",
+      "Shows a disciplined approach to testing and quality assurance"
+    ],
+    "weaknesses": [
+      "Lacks the required educational background in Marine Biology, Zoology, or related life sciences",
+      "No experience or skills related to aquatic animal husbandry or life support systems",
+      "No evidence of physical fitness or willingness to perform physical tasks like lifting and cleaning"
+    ],
+    "summary": "While the candidate shows strong analytical skills and discipline in software development, they lack the educational background, relevant experience, and physical aptitude required for the Aquarium Biologist position.",
+    "candidate": "beginner_sa",
+    "model": "phi4"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Strong programming background",
+      "Experience with web development and databases"
+    ],
+    "weaknesses": [
+      "Lack of relevant experience in marine biology or aquarium husbandry",
+      "No demonstrated physical capability for the role's demands",
+      "No experience with water chemistry or life support systems"
+    ],
+    "summary": "Candidate lacks relevant experience and skills specific to aquatic animal husbandry and life support systems.",
+    "candidate": "beginner_sa",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's degree in Aquatic Biology clearly meets one of the essential requirements. Their willingness to perform physical tasks, such as filter cleaning and LSS maintenance, is reasonable and closely matches the job requirement. Basic understanding of water chemistry and the nitrogen cycle is unclear from the CV. Strong observational skills and attention to detail, along with the ability to work in challenging environments, are clearly met. Physically fit and able to work weekends are also clearly demonstrated. However, there is no evidence of a full right to work in the UK or a basic background check, which are essential requirements.",
+    "candidate": "beginner_sa",
+    "type": "essential_requirements"
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "summary": "The candidate does not clearly meet the requirement for professional web/software engineering experience or line management. The crypto entrepreneurship experience might be a reasonable close match for agile delivery, but there is no evidence of technical experience. The communication skills, while not clearly evidenced, could be inferred from the varied experience. There is no clear evidence of technical stacks, cloud infrastructure, or significant technical change leadership.",
+    "candidate": "bad_cv_jason_muller"
+  },
+  {
+    "summary": "The candidate has relevant experience in various industries but lacks clear evidence of professional web/software engineering experience, especially in managing teams. They have some exposure to CI/CD and cloud infrastructure but not in the context of the job description. Their communication skills are not demonstrated, and there is no clear indication of experience in agile delivery or leading technical change.",
+    "candidate": "bad_cv_kevin_jones"
+  },
+  {
+    "summary": "The candidate's experience in managing teams and leading initiatives aligns closely with the requirement for line managing engineers and leading technical change. However, their background in retail management and consultancy does not directly meet the technical and software engineering requirements. Their communication skills are unclear and not well-documented.",
+    "candidate": "bad_cv_sarah_lynne_van_der_merwe"
+  },
+  {
+    "summary": "The candidate's experience in managing a team and maintaining service continuity is a reasonable match for the requirement to line manage engineers. Their self-directed learning in customer service and operations aligns closely with the communication skills and agile delivery experience needed. However, there is no evidence of professional web/software engineering experience, knowledge of modern web stacks, or experience with CI/CD and cloud infrastructure.",
+    "candidate": "professional_cv_jason_muller"
+  },
+  {
+    "summary": "The candidate's experience does not clearly meet the essential requirement of 5+ years of professional web/software engineering experience. However, their adaptable nature and experience in managing teams could be seen as a reasonable close match for leading teams through significant technical change. Communication skills are evidenced in their customer service and management roles, making this requirement a close match. The CV lacks specific technical skills in modern web stacks and cloud infrastructure, which are clearly not met.",
+    "candidate": "professional_cv_kevin_jones"
+  },
+  {
+    "summary": "The candidate does not meet the essential requirement of 5+ years of professional web/software engineering experience. However, their role as a Senior Retail Team Leader demonstrates leadership and team management skills, which are closely related to the job requirement. Their experience in business administration and leadership development provides a reasonable match for the communication and team management aspects of the job description.",
+    "candidate": "professional_cv_sarah_lynne_van_der_merwe"
+  }
+]

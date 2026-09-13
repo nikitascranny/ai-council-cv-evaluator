@@ -1,0 +1,37 @@
+[
+  {
+    "score": 2,
+    "strengths": [
+      "Candidate has experience in software engineering which demonstrates technical proficiency and problem-solving skills."
+    ],
+    "weaknesses": [
+      "Lack of relevant experience in groundskeeping, gamekeeping, or countryside management.",
+      "No experience with tracking, search & rescue, or military pursuits which are strongly preferred for the role.",
+      "CV content is largely incomprehensible, making it difficult to ascertain specific qualifications or skills.",
+      "No demonstrated ability to work in remote, unsupervised environments or to manage live-action events.",
+      "No evidence of physical fitness or comfort with outdoor activities and working with animals."
+    ],
+    "summary": "The candidate's experience in software engineering does not align with the key responsibilities and essential requirements of the Groundskeeper & 'Hunt' Coordinator role, lacking relevant outdoor and event management experience.",
+    "candidate": "HomerSimsSon",
+    "model": "phi4"
+  },
+  {
+    "score": 1,
+    "strengths": [
+      "None evident"
+    ],
+    "weaknesses": [
+      "Lack of relevant experience",
+      "Incomprehensible CV",
+      "No alignment with job requirements"
+    ],
+    "summary": "The candidate does not meet any of the job's criteria due to an incomprehensible CV and complete mismatch with the required skills and experience.",
+    "candidate": "HomerSimsSon",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's experience in groundskeeping or related fields is unclear and does not meet the essential requirement. The physical fitness and comfort working alone in remote areas are reasonable matches based on the work history. The candidate's ability to work discreetly and handle unusual requests is not evidenced, and there is no explicit mention of relevant certifications or a clean driving license.",
+    "candidate": "HomerSimsSon",
+    "type": "essential_requirements"
+  }
+]

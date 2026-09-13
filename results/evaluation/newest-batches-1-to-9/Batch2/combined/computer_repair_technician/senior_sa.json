@@ -1,0 +1,36 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Demonstrates strong problem-solving skills through experience with distributed systems and software architecture.",
+      "Shows capability in technology management and mentoring, which may be useful in a team-oriented environment."
+    ],
+    "weaknesses": [
+      "Lacks practical PC/laptop repair skills and experience with everyday computer issues.",
+      "Experience is primarily in software engineering, not hardware or customer service roles.",
+      "Unfamiliar with the specifics of diagnosing and fixing common hardware issues like RAM, SSD, or screen replacements."
+    ],
+    "summary": "The candidate's software engineering expertise does not align well with the hands-on, practical repair skills required for this computer shop role.",
+    "candidate": "senior_sa",
+    "model": "phi4"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Technical expertise in software engineering",
+      "Experience in cloud platforms and distributed systems"
+    ],
+    "weaknesses": [
+      "Lacks practical PC/laptop repair skills",
+      "No experience with customer service or retail"
+    ],
+    "summary": "Zanele Madondo's extensive background in software engineering and cloud platforms does not align with the practical repair and customer service requirements of the position at Brenda & Mick's Computer Repairs.",
+    "candidate": "senior_sa",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's educational background in software engineering and computer science clearly meets the technical requirements. Their ability to explain complex topics in a non-jargony way is a reasonable match for being friendly and patient with older customers. However, there is no evidence of practical PC/laptop repair skills, honesty, reliability, or the ability to work Saturdays.",
+    "candidate": "senior_sa",
+    "type": "essential_requirements"
+  }
+]

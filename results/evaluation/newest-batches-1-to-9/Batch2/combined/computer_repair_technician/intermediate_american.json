@@ -1,0 +1,36 @@
+[
+  {
+    "score": 4,
+    "strengths": [
+      "Demonstrates technical problem-solving skills and ability to diagnose and resolve issues with complex systems.",
+      "Has a proven track record of working with backend technologies, which includes some relevant skills like Python and Java."
+    ],
+    "weaknesses": [
+      "Lacks specific experience with basic PC/laptop repair and maintenance tasks required for the role.",
+      "No demonstrated experience in customer service or dealing directly with clients, especially in a retail setting.",
+      "No relevant experience in hands-on hardware repair or familiarity with consumer-level technology issues."
+    ],
+    "summary": "Priya Nair has strong technical skills but lacks specific experience in hardware repair and customer service, which are crucial for this role.",
+    "candidate": "intermediate_american",
+    "model": "phi4"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Advanced technical skills in backend and frontend development",
+      "Experience in system design and optimization"
+    ],
+    "weaknesses": [
+      "Lack of practical repair skills for hardware",
+      "No experience in customer service for older clientele"
+    ],
+    "summary": "Priya Nair excels in software development and technical leadership but lacks the practical hardware repair and customer service skills required for the role.",
+    "candidate": "intermediate_american",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate clearly meets the requirement for basic PC/laptop repair skills, as they have a degree in Computer Engineering. Their ability to work Saturdays is unclear from the CV. The requirement for being friendly and patient with older customers and explaining things without jargon or sighing is a reasonable/close match due to their background in Computer Engineering. The requirement for being honest and reliable is also a reasonable/close match. The requirement for being local or able to get to Tillingford reliably is clearly not met, as there is no information about their location or commuting ability.",
+    "candidate": "intermediate_american",
+    "type": "essential_requirements"
+  }
+]

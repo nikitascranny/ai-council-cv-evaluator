@@ -1,0 +1,28 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Strong livestock care and welfare skills",
+      "Experience in independent field work and record keeping"
+    ],
+    "weaknesses": [
+      "No experience in groundskeeping or estate management",
+      "Lack of background in tracking, search & rescue or military"
+    ],
+    "summary": "Candidate has strong background in livestock care but lacks necessary experience in estate management and tracking.",
+    "candidate": "Ralph_Son_of_a_Shepard_Farm_CV"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "independent working",
+      "prioritization under pressure"
+    ],
+    "weaknesses": [
+      "lack of relevant experience in groundskeeping or hunting coordination",
+      "no formal IT qualifications"
+    ],
+    "summary": "The candidate demonstrates strong independent working skills but lacks the specific experience and skills required for the groundskeeper and hunt coordinator role.",
+    "candidate": "Ralph_Son_of_a_Shepard_IT_Transition_CV"
+  }
+]

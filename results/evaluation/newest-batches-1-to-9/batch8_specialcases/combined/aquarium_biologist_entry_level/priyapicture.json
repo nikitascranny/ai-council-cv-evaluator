@@ -1,0 +1,37 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "The candidate has a degree in a life science-related field, which meets one of the essential requirements.",
+      "The candidate has a genuine willingness to carry out physical tasks as evidenced by hobbies like hiking and cycling, which might indicate physical fitness."
+    ],
+    "weaknesses": [
+      "The candidate lacks relevant experience in aquatic animal husbandry or any related field.",
+      "There is no evidence of understanding water chemistry or the nitrogen cycle, which is essential for the role.",
+      "The candidate has no experience with life support systems or aquarium maintenance tasks.",
+      "The candidate's work experience is primarily in software engineering, which is not directly relevant to the role."
+    ],
+    "summary": "Priya Chetty lacks relevant experience and skills in aquatic biology and aquarium maintenance, which are crucial for the Aquarium Biologist role, despite having a related degree.",
+    "candidate": "PriyaPicture",
+    "model": "phi4"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "good technical skills in software engineering",
+      "diverse hobbies and interests"
+    ],
+    "weaknesses": [
+      "no relevant experience in marine biology or aquatic animal husbandry",
+      "lack of education in marine sciences"
+    ],
+    "summary": "Priya Chetty is a skilled software engineer but lacks the necessary background in marine biology and practical experience with aquatic life support systems.",
+    "candidate": "PriyaPicture",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate does not meet the essential requirement of a degree in Marine Biology, Zoology, Aquatic Biology, or a related life science. However, their background in software engineering and web development could be seen as a reasonable close match for the technical aspects of the job. The physical fitness and willingness to perform repetitive tasks are unclear from the CV. The candidate’s ability to work weekends and shift work is not evidenced but is reasonable to infer. No full right to work in the UK is mentioned, making this requirement unclear.",
+    "candidate": "PriyaPicture",
+    "type": "essential_requirements"
+  }
+]

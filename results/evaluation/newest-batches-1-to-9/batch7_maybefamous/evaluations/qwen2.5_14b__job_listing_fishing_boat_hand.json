@@ -1,0 +1,52 @@
+[
+  {
+    "score": 2,
+    "strengths": [
+      "Comfortable with manual tasks due to coding and testing"
+    ],
+    "weaknesses": [
+      "No experience in fishing, marine safety, or relevant physical work"
+    ],
+    "summary": "Daniel Rossouw lacks the necessary experience and skills for the Boat Hand position at Kestrel Bay Fishing Co., with his background being in software engineering.",
+    "candidate": "Daniel_common"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong background in software engineering",
+      "Experience with cross-platform app development"
+    ],
+    "weaknesses": [
+      "No experience relevant to fishing industry",
+      "Lack of physical fitness and maritime skills"
+    ],
+    "summary": "The candidate lacks any relevant experience or skills for the fishing role and possesses no maritime background, making them a poor fit for the position.",
+    "candidate": "Lauren_common"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Comfortable with early starts and long days",
+      "Basic numeracy skills"
+    ],
+    "weaknesses": [
+      "No experience with fishing or boats",
+      "Lacks essential physical fitness and sea legs"
+    ],
+    "summary": "Linus Torvalds does not have any experience relevant to the fishing industry and lacks the essential physical and maritime skills required for the role.",
+    "candidate": "Linus"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "reliable punctuality in previous roles",
+      "general problem-solving skills"
+    ],
+    "weaknesses": [
+      "lack of physical fitness and manual labor experience",
+      "no background in maritime or fishing"
+    ],
+    "summary": "Margaret Hamilton lacks the physical and maritime experience necessary for the position, but her reliability and technical problem-solving skills are commendable.",
+    "candidate": "Margaret"
+  }
+]

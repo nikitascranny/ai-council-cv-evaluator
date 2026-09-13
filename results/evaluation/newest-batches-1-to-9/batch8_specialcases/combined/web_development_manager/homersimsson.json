@@ -1,0 +1,40 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "The candidate has some experience in a software engineering role at Sul Softwaro Enginoo, Blorf Narnia Zoop Co (2022-2026).",
+      "Possesses basic technical skills relevant to software engineering."
+    ],
+    "weaknesses": [
+      "Lacks clear evidence of managing a team or leading significant technical changes.",
+      "CV contains garbled text making it difficult to assess specific relevant experiences and skills.",
+      "No mention of experience with web development technologies like React, TypeScript, Node.js, or .NET, which are essential for this role.",
+      "No evidence of experience with CI/CD, cloud infrastructure (AWS), or automated testing and observability.",
+      "Lack of clarity on agile delivery experience with distributed or hybrid teams.",
+      "Absence of any mention of accessibility standards or inclusive design practices."
+    ],
+    "summary": "The candidate's CV lacks clarity and fails to demonstrate the necessary skills and experience required for the Engineering Manager position.",
+    "candidate": "HomerSimsSon",
+    "model": "phi4"
+  },
+  {
+    "score": 1,
+    "strengths": [
+      "None clearly identified"
+    ],
+    "weaknesses": [
+      "Lack of coherent experience description",
+      "Absence of relevant technical skills",
+      "No indication of leadership experience",
+      "Incomprehensible summary and details"
+    ],
+    "summary": "The candidate's CV lacks coherent content and does not address any of the job requirements.",
+    "candidate": "HomerSimsSon",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate has a reasonable match for the required 5+ years of professional web/software engineering experience, but it is unclear whether they have managed engineers for at least 2 years. The candidate's experience in modern web stacks and agile delivery is a close match, but specific technologies like React/TypeScript and backend languages are not clearly mentioned. The candidate's experience with CI/CD and cloud infrastructure is unclear, and there is no clear evidence of leading significant technical changes or running distributed teams. Communication skills are implied but not explicitly stated.",
+    "candidate": "HomerSimsSon",
+    "type": "essential_requirements"
+  }
+]

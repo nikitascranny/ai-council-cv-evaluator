@@ -1,0 +1,37 @@
+[
+  {
+    "score": 6,
+    "strengths": [
+      "Candidate has a strong foundation in programming, particularly Python, which is relevant for supporting coding activities.",
+      "Experience in project management and problem-solving can be beneficial for IT support and technical troubleshooting.",
+      "Demonstrates a willingness to transition and upskill into IT, showing adaptability and enthusiasm for learning."
+    ],
+    "weaknesses": [
+      "Lack of direct experience in IT support roles, particularly in an educational setting.",
+      "No specific experience with device imaging, network management, or classroom AV support.",
+      "Absence of documented experience with Scratch, Micro:bit, or educational technology platforms like Google Classroom."
+    ],
+    "summary": "The candidate has relevant programming skills and a problem-solving mindset but lacks direct experience in IT support and educational technology.",
+    "candidate": "JORDAN VELDMAN",
+    "model": "phi4"
+  },
+  {
+    "score": 5,
+    "strengths": [
+      "Python programming skill",
+      "Analytical problem-solving"
+    ],
+    "weaknesses": [
+      "Lack of IT support experience",
+      "No experience working with young people"
+    ],
+    "summary": "The candidate possesses relevant technical skills but lacks direct IT support and youth-related experience, which are crucial for the role.",
+    "candidate": "JORDAN VELDMAN",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's experience in project management, technical documentation, and digital tools aligns closely with the IT support and practical experience requirements. Their programming experience is not explicitly mentioned, but their architectural background might relate to basic programming skills. The candidate's enthusiasm for working with young people and explaining technology clearly is not evident from the CV. There is no clear indication of experience or willingness to undergo a DBS check.",
+    "candidate": "JORDAN VELDMAN",
+    "type": "essential_requirements"
+  }
+]

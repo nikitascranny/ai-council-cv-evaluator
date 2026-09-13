@@ -1,0 +1,39 @@
+[
+  {
+    "score": 2,
+    "strengths": [
+      "Strong record keeping and attention to detail, as shown by accurate flock management and record maintenance.",
+      "Experienced in managing operations independently and under challenging conditions."
+    ],
+    "weaknesses": [
+      "Lacks relevant technical skills in full-stack development, such as TypeScript, React, or Go.",
+      "No experience in software development or engineering roles.",
+      "No experience with distributed systems, observability, alerting, or event-driven architectures.",
+      "No demonstrated ability to work in a high-velocity, uncertain environment typical of a startup.",
+      "No experience with the energy sector or related technologies."
+    ],
+    "summary": "The candidate's skills in record keeping and independent operation are noted, but they lack the necessary technical experience and industry knowledge for the engineering role.",
+    "candidate": "Ralph_Son_of_a_Shepard_Farm_CV",
+    "model": "phi4"
+  },
+  {
+    "score": 1,
+    "strengths": [
+      "Dependable and skilled in livestock care",
+      "Experience in record keeping and management"
+    ],
+    "weaknesses": [
+      "No experience in software engineering",
+      "Lack of relevant technical skills",
+      "No experience in energy or climate sector"
+    ],
+    "summary": "The candidate's skills and experience are entirely unrelated to the software engineering role required by Pulsegrid.",
+    "candidate": "Ralph_Son_of_a_Shepard_Farm_CV",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's experience in farm operations, including daily care, health observation, and routine activities, demonstrates strong attention to detail and responsibility, but does not clearly meet the requirement for shipping production software. However, their ability to work under pressure and handle multiple tasks could be seen as a reasonable match for the comfort with ambiguity and velocity. The candidate's Scottish nationality and available references may be relevant for the role, but specific skills in TypeScript/React, backend languages, and distributed systems are clearly not met.",
+    "candidate": "Ralph_Son_of_a_Shepard_Farm_CV",
+    "type": "essential_requirements"
+  }
+]

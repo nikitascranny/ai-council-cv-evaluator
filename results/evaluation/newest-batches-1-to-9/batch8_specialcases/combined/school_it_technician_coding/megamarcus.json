@@ -1,0 +1,36 @@
+[
+  {
+    "score": 6,
+    "strengths": [
+      "Has practical IT support experience and a strong background in programming with Python, which aligns with the role's technical requirements.",
+      "Enthusiasm for technology is evident from involvement in hobbies like photography and drone videography, suggesting a potential interest in teaching technology to young people."
+    ],
+    "weaknesses": [
+      "Lacks direct experience in education settings and working with young people, which is crucial for the role.",
+      "No experience with Windows 11, Microsoft 365, Intune, or classroom technology management, which are important for the IT Technician responsibilities.",
+      "No specific experience with device imaging, classroom AV support, or managing user accounts in Active Directory/Entra ID."
+    ],
+    "summary": "Marcus Vandenberg possesses relevant technical skills and programming expertise but lacks direct experience in education and specific IT skills required for the role.",
+    "candidate": "MegaMarcus",
+    "model": "phi4"
+  },
+  {
+    "score": 4,
+    "strengths": [
+      "Strong programming skills in Python",
+      "Experience with backend systems"
+    ],
+    "weaknesses": [
+      "Lack of relevant IT support experience",
+      "No experience in an educational setting"
+    ],
+    "summary": "Marcus Vandenberg has strong programming skills but lacks relevant IT support and educational experience, making him a less suitable candidate for the role.",
+    "candidate": "MegaMarcus",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's experience as a Software Engineer and Junior Software Engineer demonstrates practical IT support and programming skills, meeting the basic programming and software development requirements. Their B.Sc. in Computer Science and relevant coursework provide a strong foundation in IT and programming, which can be considered a reasonable match for the IT support experience. The candidate's lack of direct IT support experience in a school, business, or home lab/volunteer setting is a clear mismatch. Their understanding of safeguarding and commitment to policies is not evident, though the willingness to undergo DBS checks is noted.",
+    "candidate": "MegaMarcus",
+    "type": "essential_requirements"
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Experienced in data analysis, report writing, and communication, which are useful for maintaining records and communicating with stakeholders.",
+      "Demonstrates strong organisational skills and attention to detail, beneficial for managing various tasks on a large estate."
+    ],
+    "weaknesses": [
+      "Lacks direct experience in groundskeeping, gamekeeping, or countryside management, which is essential for the role.",
+      "No background in tracking, search & rescue, military, or pursuit-oriented work, which is strongly preferred.",
+      "No physical fitness or experience working in remote, rough terrains, necessary for the estate work and coordinating hunts.",
+      "No experience with animals, particularly bloodhounds, which is desirable for the role.",
+      "Unfamiliar with operational equipment such as radios, GPS trackers, or airsoft-style gear, critical for the role."
+    ],
+    "summary": "The candidate has strong analytical and organisational skills, but lacks the essential experience in countryside management and the physical fitness required for the estate and hunt coordination roles.",
+    "candidate": "PONTUS PONTIOUS",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "data analysis",
+      "report writing"
+    ],
+    "weaknesses": [
+      "lack of physical fitness and outdoors experience",
+      "inability to match the unique job requirements"
+    ],
+    "summary": "Pontus Pontious lacks the essential physical and outdoors experience required for the position, and his financial and data analysis background does not align with the unique role of a Groundskeeper and Hunt Coordinator.",
+    "candidate": "PONTUS PONTIOUS",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate does not clearly meet the groundskeeping, gamekeeping, or countryside management experience requirement. However, their finance and economics background, along with their experience in analytics and data management, presents a reasonable close match to the tracking, search & rescue, military, or other pursuit-oriented background preference. Other requirements, such as physical fitness, discretion, working alone, and a driving license, are unclear from the provided CV.",
+    "candidate": "PONTUS PONTIOUS",
+    "type": "essential_requirements"
+  }
+]

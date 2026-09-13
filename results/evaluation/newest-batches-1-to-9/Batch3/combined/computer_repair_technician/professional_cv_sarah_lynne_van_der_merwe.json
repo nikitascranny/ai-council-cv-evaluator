@@ -1,0 +1,35 @@
+[
+  {
+    "score": 4,
+    "strengths": [
+      "Strong leadership and team coordination skills, which could be beneficial in managing a small team or handling multiple tasks in a busy shop.",
+      "Experience in customer engagement and improving customer experience, aligning with the role's need for friendly and patient customer interactions."
+    ],
+    "weaknesses": [
+      "Lack of direct experience in computer repair, which is a core requirement of the job.",
+      "No evidence of technical skills related to PC/laptop repair, essential for the role."
+    ],
+    "summary": "While the candidate has strong leadership and customer service skills, their lack of direct computer repair experience and technical skills makes them a less ideal fit for the role.",
+    "candidate": "professional_cv_sarah_lynne_van_der_merwe",
+    "model": "phi4"
+  },
+  {
+    "score": 5,
+    "strengths": [
+      "Customer engagement and service improvement experience",
+      "Leadership and team management skills"
+    ],
+    "weaknesses": [
+      "Lack of technical skills for computer repairs",
+      "No direct experience in a repair shop"
+    ],
+    "summary": "Sarah Lynne Van der Merwe demonstrates strong customer service and leadership skills but lacks the specific technical experience required for the computer repair role.",
+    "candidate": "professional_cv_sarah_lynne_van_der_merwe",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's CV does not clearly demonstrate basic PC/laptop repair skills, but their leadership and management experience in retail operations closely aligns with the need for friendly and patient interaction with customers. The candidate's ability to manage a team and improve customer experience may be transferable to working with older customers. The requirement for honesty and reliability is strongly implied by the candidate's role as a founder and principal consultant, and they are able to work Saturdays. The requirement for local or reliable transportation is unclear from the CV, but the candidate's current role suggests they are likely to be local.",
+    "candidate": "professional_cv_sarah_lynne_van_der_merwe",
+    "type": "essential_requirements"
+  }
+]

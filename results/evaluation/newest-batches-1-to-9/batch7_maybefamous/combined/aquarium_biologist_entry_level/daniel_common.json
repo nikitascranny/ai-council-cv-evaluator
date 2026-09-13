@@ -1,0 +1,36 @@
+[
+  {
+    "score": 4,
+    "strengths": [
+      "Demonstrates strong technical skills in software development, which indicates an ability to learn new systems and processes.",
+      "Has a relevant educational background with coursework in Web Systems and Database Design."
+    ],
+    "weaknesses": [
+      "Lacks direct experience in aquatic biology, marine systems, or animal husbandry.",
+      "No experience or certification in water chemistry or marine life support systems.",
+      "No prior experience working in an aquarium or similar life sciences environment."
+    ],
+    "summary": "Daniel Rossouw has strong technical skills and educational background but lacks direct experience and specific qualifications needed for an Aquarium Biologist role.",
+    "candidate": "Daniel_common",
+    "model": "phi4"
+  },
+  {
+    "score": 4,
+    "strengths": [
+      "interest in tropical fish keeping",
+      "technical skills in Python, JavaScript, and web development"
+    ],
+    "weaknesses": [
+      "no direct experience in marine biology or aquatic animal husbandry",
+      "lacks hands-on experience with life support systems"
+    ],
+    "summary": "Daniel Rossouw shows interest in aquatic life through his hobby but lacks direct professional experience in marine biology or aquatic animal husbandry, limiting his immediate fit for the role.",
+    "candidate": "Daniel_common",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's CV does not clearly meet the requirement for a degree in Marine Biology, Zoology, Aquatic Biology or a related life science. However, their experience as a Junior Developer and their coursework in Web Systems, Database Design, and IT Project Management demonstrate a strong background in information systems and software development, which could be a reasonable close match. Other requirements such as willingness to perform physical tasks, observational skills, and physical fitness are not evidenced, but given the nature of the role, these may be reasonable inferences. The candidate's right to work in the UK and ability to pass a basic background check are clearly met.",
+    "candidate": "Daniel_common",
+    "type": "essential_requirements"
+  }
+]

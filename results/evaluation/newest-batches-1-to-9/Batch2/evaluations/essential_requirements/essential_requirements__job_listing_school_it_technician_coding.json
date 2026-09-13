@@ -1,0 +1,38 @@
+[
+  {
+    "summary": "The candidate clearly meets the requirement for practical IT support experience through their role as a Computer Science Teaching Assistant, where they guided students through programming fundamentals. They also have a reasonable/close match for basic programming ability, as evidenced by their experience with Python and object-oriented programming. The requirement for working knowledge of Windows 11, Microsoft 365, and device management is unclear from their CV. The candidate does not meet the requirement for an understanding of safeguarding or willingness to undergo a DBS check, as these are not mentioned in their CV.",
+    "candidate": "beginner_american"
+  },
+  {
+    "summary": "The candidate's CV clearly meets the requirement for practical IT support experience and working knowledge of Windows 11 and Microsoft 365. Their programming experience with Python and Scratch is a reasonable match for the basic programming ability requirement. The candidate's enthusiasm for working with young people and explaining technology is evident, though specific examples are not provided. The safeguarding and DBS check requirements are not met, and the CV does not provide clear evidence of device management knowledge.",
+    "candidate": "beginner_chinese"
+  },
+  {
+    "summary": "The candidate clearly meets the requirement for practical IT support experience and has a working knowledge of Windows 11 and Microsoft 365. Their ability in Python and Scratch is a reasonable match for the basic programming requirement. The candidate’s enthusiasm for working with young people and their commitment to school policies are clearly met. However, there is no clear evidence of experience with device management tools like Intune, and the candidate's willingness to undergo background checks is not explicitly stated.",
+    "candidate": "beginner_sa"
+  },
+  {
+    "summary": "The candidate clearly meets the requirement for practical IT support experience through their education and career path. Their working knowledge of Windows 11 and Microsoft 365 is also evident. Basic programming ability, specifically in Python, is shown to be relevant, although there is no explicit mention of Scratch. The enthusiasm for working with young people and explaining technology clearly is implied by their educational background and AWS certification. However, there is no clear indication of working knowledge of Intune or similar device management, and the candidate's willingness to undergo a DBS check and barred list check is not explicitly stated.",
+    "candidate": "intermediate_american"
+  },
+  {
+    "summary": "The candidate clearly meets the requirement for practical IT support experience and has a working knowledge of Windows 11 and Microsoft 365. Their basic programming ability, specifically in Python, is a reasonable match for the requirement to help 11-14 year olds debug their own code. The candidate's enthusiasm for working with young people and explaining technology clearly is evident, but it is not explicitly stated that they have an understanding of safeguarding or a willingness to undergo a DBS check, which are clearly not met or unclear from the CV.",
+    "candidate": "middle_chinese"
+  },
+  {
+    "summary": "The candidate meets the essential requirement for practical IT support experience through their education and contributions. Their working knowledge of Windows 11 and Microsoft 365 is confirmed. Basic programming ability with Python is evidenced, and their enthusiasm for working with young people is implied through their contributions to engineering guilds. However, there is no clear indication of experience with Intune or similar device management, and the CV does not mention an understanding of safeguarding or willingness to undergo a DBS check.",
+    "candidate": "middle_sa"
+  },
+  {
+    "summary": "The candidate's experience as a Principal Software Engineer, Staff Software Engineer, and Senior Software Engineer clearly meets the practical IT support experience requirement. Their working knowledge of Windows 11, Microsoft 365, and a variety of programming languages, including Python, suggests they have a reasonable match for the basic programming ability requirement. Their experience in mentoring and technical leadership is closely related to the enthusiasm for working with young people. The candidate's educational background and technology experience strongly suggest they have an understanding of safeguarding and are committed to following policies. The requirement for an enhanced DBS check and barred list check is unclear from the CV and would need to be verified separately.",
+    "candidate": "senior_american"
+  },
+  {
+    "summary": "The candidate's practical IT support experience is not clearly demonstrated, but their technical leadership and programming skills, particularly in Python, align closely with the requirements. Their enthusiasm and commitment to following policies are implicit from their extensive professional experience, but this is not explicitly stated. The candidate's background in safeguarding or willingness to train in it is unclear from the CV.",
+    "candidate": "senior_chinese"
+  },
+  {
+    "summary": "The candidate has a strong educational background in computer science and software engineering, which suggests relevant IT support experience. Their skills in programming, particularly in Python, align well with the requirement to help young people debug code. The candidate's genuine enthusiasm for technology and communication can be inferred from their engineering award and speaking experience, making a reasonable match for the role. However, specific IT support experience and a working knowledge of Windows 11, Microsoft 365, and Intune are not evidenced in the CV. Additionally, there is no clear indication of their willingness to undergo a DBS check or their understanding of safeguarding policies.",
+    "candidate": "senior_sa"
+  }
+]

@@ -1,0 +1,37 @@
+[
+  {
+    "score": 4,
+    "strengths": [
+      "Demonstrates strong project management and strategy development skills.",
+      "Has experience with digital marketing and data analysis.",
+      "Possesses a solid educational background relevant to digital and user experience design."
+    ],
+    "weaknesses": [
+      "Lacks direct experience in museum security or related environments.",
+      "Does not have the essential security-specific qualifications like a SIA licence.",
+      "Experience does not include physical security roles or working with CCTV and access-control systems."
+    ],
+    "summary": "The candidate has strong digital strategy and project management skills but lacks direct experience and qualifications in museum security roles.",
+    "candidate": "RIAAN GOVEN",
+    "model": "phi4"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Strong background in digital marketing and leadership",
+      "Experience in user experience and product management"
+    ],
+    "weaknesses": [
+      "Lack of relevant security experience",
+      "No evidence of security qualifications or certifications"
+    ],
+    "summary": "Candidate lacks relevant security experience and qualifications, but shows potential in leadership and digital strategy.",
+    "candidate": "RIAAN GOVEN",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate does not meet the essential requirement of minimum 3 years' experience in a security role. However, their experience in digital marketing and communication (4 years) provides a reasonable match. Other requirements such as valid SIA licence, working knowledge of CCTV systems, and communication skills are not evidenced in the CV.",
+    "candidate": "RIAAN GOVEN",
+    "type": "essential_requirements"
+  }
+]

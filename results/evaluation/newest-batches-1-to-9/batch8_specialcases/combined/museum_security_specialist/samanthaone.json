@@ -1,0 +1,38 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Possesses strong technical skills in programming languages such as Python and Java.",
+      "Has experience in a complex field requiring problem-solving and analytical skills."
+    ],
+    "weaknesses": [
+      "Lacks relevant experience in security roles, particularly in museums or similar settings.",
+      "Does not have a valid SIA Door Supervisor or Security Guarding license.",
+      "No experience with CCTV, intruder alarm, or access-control systems.",
+      "Absence of demonstrated physical ability to patrol large areas or handle security duties.",
+      "Lacks experience in managing security incidents or liaising with law enforcement."
+    ],
+    "summary": "Samantha Reed has strong technical and analytical skills from her software engineering background but lacks the relevant security experience and specific skills required for the Museum Security Specialist role.",
+    "candidate": "SamanthaOne",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "None directly related to the job description"
+    ],
+    "weaknesses": [
+      "No experience in security roles",
+      "No relevant certifications or knowledge of security systems",
+      "No experience working in a museum or heritage site"
+    ],
+    "summary": "The candidate lacks any experience or skills that match the job requirements for a Museum Security Specialist.",
+    "candidate": "SamanthaOne",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate has clearly met the minimum 3 years' experience in a security role and the physical ability to patrol a large multi-floor site. Their working knowledge of CCTV and intruder alarm systems is a reasonable/close match. However, it is unclear whether they possess the required SIA Door Supervisor or Security Guarding licence, and there is no evidence of strong written and verbal communication skills or incident report writing experience.",
+    "candidate": "SamanthaOne",
+    "type": "essential_requirements"
+  }
+]

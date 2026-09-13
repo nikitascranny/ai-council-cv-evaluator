@@ -1,0 +1,36 @@
+[
+  {
+    "score": 4,
+    "strengths": [
+      "Has technical background with experience in software development and system maintenance",
+      "Possesses knowledge of programming languages like Python and Go"
+    ],
+    "weaknesses": [
+      "Lacks direct experience in hardware repair or customer service",
+      "No evidence of practical PC/laptop repair skills",
+      "No experience with customer-facing roles or managing customer expectations"
+    ],
+    "summary": "While the candidate has a strong technical background, their skills and experience are not aligned with the practical, hands-on, and customer service-focused nature of the job.",
+    "candidate": "Chen_Special",
+    "model": "phi4"
+  },
+  {
+    "score": 4,
+    "strengths": [
+      "technical skills in software development",
+      "experience in API development and maintenance"
+    ],
+    "weaknesses": [
+      "lack of practical PC/laptop repair skills",
+      "no experience in customer service or retail environment"
+    ],
+    "summary": "The candidate has strong technical skills but lacks the practical repair and customer service experience required for the position.",
+    "candidate": "Chen_Special",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate appears to meet the essential requirement of being able to work Saturdays. Their ability to explain things without jargon or sighing aligns well with the requirement for being friendly and patient with older customers. However, there is no clear evidence of practical PC/laptop repair skills or reliability as evidenced by their punctuality or attendance. Their local or close vicinity to the workplace is also not explicitly stated.",
+    "candidate": "Chen_Special",
+    "type": "essential_requirements"
+  }
+]

@@ -1,0 +1,36 @@
+[
+  {
+    "score": 4,
+    "strengths": [
+      "The candidate has a strong background in software testing, including experience with automation tools like Playwright and JEST, which may be beneficial for maintaining code quality and testing.",
+      "Demonstrated experience in leading and mentoring junior test analysts, which shows potential for people management and leadership."
+    ],
+    "weaknesses": [
+      "Lacks direct experience in web development or engineering management, specifically in React/TypeScript and Node.js or .NET services.",
+      "No proven experience with architecture reviews, CI/CD, or cloud infrastructure, which are essential for this role.",
+      "Limited exposure to leading technical teams through significant changes, such as platform modernisation or monolith decomposition."
+    ],
+    "summary": "While Alex Park has leadership experience in a testing context and technical proficiency with automation tools, the role requires substantial web development expertise and engineering management experience that the candidate currently lacks.",
+    "candidate": "ALEX PARK",
+    "model": "phi4"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Experience in testing front end and back end applications",
+      "Proficiency in automation testing tools such as Playwright and Jest"
+    ],
+    "weaknesses": [
+      "Lacks direct experience in web/software engineering and team management",
+      "No experience in leading significant technical change"
+    ],
+    "summary": "Alex Park has strong testing skills but lacks the direct web/software engineering and team management experience required for the Engineering Manager role.",
+    "candidate": "ALEX PARK",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate has a reasonable match with the job's essential requirements, particularly in terms of their experience in testing and automation, which relates closely to the software engineering role. They lack clear experience in managing engineers or leading significant technical changes, and their background is more in testing than in software development. Their education does not provide direct evidence of a strong background in modern web stacks, although they have relevant experience in software testing and automation.",
+    "candidate": "ALEX PARK",
+    "type": "essential_requirements"
+  }
+]

@@ -1,0 +1,37 @@
+[
+  {
+    "score": 2,
+    "strengths": [
+      "Willingness to work and flexibility regarding location"
+    ],
+    "weaknesses": [
+      "Lack of relevant maritime or physical work experience",
+      "Poor punctuality history and issues with authority",
+      "No evidence of physical fitness or comfort with manual work",
+      "Preference for avoiding early mornings and weekends",
+      "Inconsistent employment history with gaps"
+    ],
+    "summary": "Kevin Jones lacks the necessary maritime experience, physical fitness, and punctuality required for the deckhand role at Kestrel Bay Fishing Co.",
+    "candidate": "bad_cv_kevin_jones",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "willing to work",
+      "claims to have learned from previous roles"
+    ],
+    "weaknesses": [
+      "poor employment history",
+      "lack of relevant skills or experience"
+    ],
+    "summary": "The candidate lacks the essential skills and experience required for the role and has a poor employment history, making them a weak fit for the position.",
+    "candidate": "bad_cv_kevin_jones",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's punctuality and willingness to work long hours align reasonably with the job requirements. However, there is no evidence of relevant physical or sea experience, and basic numeracy skills are not explicitly demonstrated. The hospitality and retail experience might be transferable to some degree.",
+    "candidate": "bad_cv_kevin_jones",
+    "type": "essential_requirements"
+  }
+]

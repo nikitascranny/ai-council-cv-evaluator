@@ -1,0 +1,35 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Strong technical skills in software development and familiarity with web systems.",
+      "Experience in teamwork and collaboration during sprint planning and code reviews."
+    ],
+    "weaknesses": [
+      "No experience in a security role or within a museum, gallery, or heritage site.",
+      "Lacks required SIA Door Supervisor or Security Guarding licence.",
+      "No experience with CCTV, intruder alarm, or access-control systems.",
+      "Physical requirements of the role, such as patrolling a large site, are not evidenced."
+    ],
+    "summary": "While Daniel Rossouw has relevant technical skills and teamwork experience, his background does not align with the security-focused responsibilities and physical demands of the Museum Security Specialist role.",
+    "candidate": "Daniel_common",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Experience with software development and system maintenance"
+    ],
+    "weaknesses": [
+      "Lack of experience in security roles, no SIA license, no experience with CCTV or access-control systems"
+    ],
+    "summary": "The candidate lacks the essential security experience and qualifications required for the position.",
+    "candidate": "Daniel_common",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's experience as a Software Engineer and Junior Developer does not clearly meet the requirement for at least 3 years' experience in a security role. However, the candidate's ability to work in a team and perform bug fixing and code reviews may be transferable to a security role. The candidate's physical fitness is not evidenced, and there is no mention of any security-related certifications or training. The required working knowledge of CCTV, intruder alarm, and access control systems is not evident, nor is the SIA Door Supervisor or Security Guarding licence. The candidate's communication skills are not directly related to the job requirements, and there is no clear indication of incident report writing experience.",
+    "candidate": "Daniel_common",
+    "type": "essential_requirements"
+  }
+]

@@ -1,0 +1,34 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Experience in IT support and software development at Sul Softwaro Enginoo and Nooboo Enginoo."
+    ],
+    "weaknesses": [
+      "Lack of clear evidence of required skills such as Windows 11, Microsoft 365, or device management.",
+      "No experience in an educational setting or working directly with young people.",
+      "CV lacks clarity and detail, making it difficult to assess specific qualifications or skills relevant to the role.",
+      "Absence of specific experience with programming languages like Python or Scratch, which are desirable for the role."
+    ],
+    "summary": "The candidate has relevant IT experience but lacks specific skills and educational setting experience required for the role, and the CV lacks clarity.",
+    "candidate": "HomerSimsSon",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Possesses some technical skills and experience"
+    ],
+    "weaknesses": [
+      "Incomprehensible CV content, no direct experience in education, lacks essential programming proficiency"
+    ],
+    "summary": "The candidate's CV is largely unintelligible, making it difficult to ascertain their suitability for the role. They may have some technical skills, but the lack of clarity and relevance to the job requirements significantly weakens their application.",
+    "candidate": "HomerSimsSon",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's experience and skills are not clearly defined in the provided CV, making it difficult to assess. However, the candidate demonstrates a willingness to work with young people and appears enthusiastic, which aligns with the requirement for a genuine enthusiasm for working with young people. The programming experience mentioned, while not explicitly stated, could be related to the basic programming ability required. The job's IT support experience and working knowledge of Windows 11, Microsoft 365, and device management are unclear, and the candidate has not shown any evidence of undergoing a DBS check. The requirement for understanding or willingness to train in safeguarding is also not addressed.",
+    "candidate": "HomerSimsSon",
+    "type": "essential_requirements"
+  }
+]

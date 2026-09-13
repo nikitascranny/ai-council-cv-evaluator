@@ -1,0 +1,37 @@
+[
+  {
+    "score": 2,
+    "strengths": [
+      "Demonstrates strong technical skills in software engineering.",
+      "Experience with backend systems and API development."
+    ],
+    "weaknesses": [
+      "Lacks relevant experience in groundskeeping, gamekeeping, or countryside management.",
+      "No demonstrated experience with physical fitness or working in remote, outdoor environments.",
+      "Absence of skills related to tracking, search & rescue, or experience with hounds.",
+      "No experience in roles requiring absolute discretion or in immersive theatre/event coordination."
+    ],
+    "summary": "The candidate's software engineering background does not align with the practical, outdoors, and discretion-focused requirements of the Groundskeeper & 'Hunt' Coordinator role.",
+    "candidate": "BrendanPythno",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong background in software engineering",
+      "Experience with Python and Go"
+    ],
+    "weaknesses": [
+      "No relevant experience in groundskeeping or hunting coordination",
+      "Lacks necessary physical fitness and outdoor skills"
+    ],
+    "summary": "The candidate has strong technical skills but lacks the necessary experience and physical capabilities for the role.",
+    "candidate": "BrendanPythno",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's CV does not meet the essential requirements for the job. The candidate lacks the necessary groundskeeping, gamekeeping, or countryside management experience, and there is no evidence of hunting, tracking, search & rescue, military, or other pursuit-oriented background. However, the candidate's software engineering experience demonstrates strong technical skills, and the AWS Certified Cloud Practitioner and Scrumm Fundamentals certifications show relevant training in cloud computing and project management.",
+    "candidate": "BrendanPythno",
+    "type": "essential_requirements"
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "score": 7,
+    "strengths": [
+      "4 years of experience in backend systems which is aligned with the essential experience requirement of shipping production software.",
+      "Proficient in Go, which is preferred for the backend development role.",
+      "Experience with backend languages including Python and Java, indicating a versatile technical background."
+    ],
+    "weaknesses": [
+      "Lacks direct experience with TypeScript/React, which is essential for the frontend development responsibilities.",
+      "No mention of experience with observability, alerting, or handling production incidents, which are crucial for the role.",
+      "Absence of evidence of experience with event-driven architectures or time-series data, which are desirable for the role.",
+      "No specific mention of comfort with ambiguity and velocity, or experience in a startup environment."
+    ],
+    "summary": "Samantha has a strong backend background and experience with Go, but lacks direct frontend experience and familiarity with certain technologies and practices essential for the role.",
+    "candidate": "SamanthaOne",
+    "model": "phi4"
+  },
+  {
+    "score": 6,
+    "strengths": [
+      "4 years of backend systems experience in Python, Java, and Go",
+      "Potential for up-skilling in TypeScript and React given existing software engineering background"
+    ],
+    "weaknesses": [
+      "Lacks experience with TypeScript and React, essential for frontend development",
+      "No experience in the energy sector or with event-driven architectures"
+    ],
+    "summary": "Samantha has strong backend experience but lacks the specific frontend skills and domain knowledge required for this role.",
+    "candidate": "SamanthaOne",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate demonstrates strong experience in shipping production software with TypeScript/React and familiarity with backend languages like Go, Rust, Node, or Java, meeting the core requirement. They have relevant experience in operating services in production and show a willingness to iterate quickly. The candidate’s communication skills are unclear from the CV, and there is no specific mention of distributed systems knowledge. However, their background in shipping software and operating services suggests they could meet these requirements with some additional information.",
+    "candidate": "SamanthaOne",
+    "type": "essential_requirements"
+  }
+]

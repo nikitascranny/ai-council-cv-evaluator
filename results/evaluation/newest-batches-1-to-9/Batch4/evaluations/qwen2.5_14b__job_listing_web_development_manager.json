@@ -1,0 +1,30 @@
+[
+  {
+    "score": 2,
+    "strengths": [
+      "dependable and reliable in daily operations",
+      "excellent livestock welfare and handling"
+    ],
+    "weaknesses": [
+      "no relevant web/software engineering experience",
+      "no experience leading technical teams",
+      "lack of knowledge in modern web stacks and cloud infrastructure"
+    ],
+    "summary": "The candidate lacks the essential technical and managerial experience required for the engineering manager role, but demonstrates reliability and strong practical skills in a different field.",
+    "candidate": "Ralph_Son_of_a_Shepard_Farm_CV"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "reliable operations professional",
+      "excellent in field operations and asset support"
+    ],
+    "weaknesses": [
+      "no formal IT qualifications",
+      "lacks relevant web/software engineering experience",
+      "no experience in team management or technical leadership"
+    ],
+    "summary": "The candidate shows strong operational skills but lacks the necessary IT experience and qualifications for the Engineering Manager role.",
+    "candidate": "Ralph_Son_of_a_Shepard_IT_Transition_CV"
+  }
+]

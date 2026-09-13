@@ -1,0 +1,168 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Passionate about fishing as a hobby",
+      "Technical background with strong programming skills"
+    ],
+    "weaknesses": [
+      "Lacks direct experience in maritime or fishing industry",
+      "No relevant certifications for maritime work"
+    ],
+    "summary": "Candidate's enthusiasm for fishing and technical expertise are positive attributes, but the lack of direct industry experience and relevant certifications significantly hinders their fit for the role.",
+    "candidate": "BrendanPythno"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Strong technical background in software engineering",
+      "Experience with Python and PostgreSQL"
+    ],
+    "weaknesses": [
+      "No relevant maritime experience",
+      "Limited physical labor skills"
+    ],
+    "summary": "The candidate lacks relevant maritime experience and physical labor skills required for the role, but has strong technical skills that may be transferable in some aspects of the job.",
+    "candidate": "Chen_Special"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Physical fitness and survival skills",
+      "Problem-solving and improvisation"
+    ],
+    "weaknesses": [
+      "No direct fishing experience",
+      "Limited relevant maritime skills"
+    ],
+    "summary": "Candidate demonstrates strong survival and problem-solving skills but lacks direct experience relevant to fishing or maritime work.",
+    "candidate": "Li_ExtraSpecial"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "physical fitness indicated by weekend fishing trips",
+      "reliable and punctual work history"
+    ],
+    "weaknesses": [
+      "no relevant work experience in fishing or maritime operations",
+      "lacks essential sea legs and boat handling experience"
+    ],
+    "summary": "Taylor Okafor has some indirect evidence of physical fitness and reliability but lacks any direct experience or qualifications relevant to the boat hand position on an inshore fishing vessel.",
+    "candidate": "TaylorGraphics"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "None directly related to the job were identified"
+    ],
+    "weaknesses": [
+      "Lack of experience in fishing or maritime work",
+      "No skills or certifications relevant to the role"
+    ],
+    "summary": "The candidate does not meet the essential requirements for the position and has no apparent upskilling potential relevant to the job.",
+    "candidate": "HomerSimsSon"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Highly skilled in data analysis and reporting",
+      "Demonstrated proficiency in various data analysis tools and programming languages"
+    ],
+    "weaknesses": [
+      "Lack of experience in maritime or fishing industry",
+      "No physical fitness or maritime safety training"
+    ],
+    "summary": "Candidate is well-qualified in data analysis but lacks the physical and maritime experience required for the role.",
+    "candidate": "MathNaledi"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Proficient in software development and backend systems",
+      "Good academic background in computer science"
+    ],
+    "weaknesses": [
+      "No relevant experience in fishing or maritime work",
+      "Lack of physical fitness and maritime skills required for the role"
+    ],
+    "summary": "The candidate's background in software engineering does not align with the physical and maritime requirements of the boat hand position at Kestrel Bay Fishing Co.",
+    "candidate": "MegaMarcus"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "clean UI work",
+      "collaboration with cross-functional teams"
+    ],
+    "weaknesses": [
+      "no relevant experience in fishing or maritime work",
+      "no physical fitness requirements met for the job"
+    ],
+    "summary": "Priya Chetty is a skilled software engineer but lacks the necessary maritime experience and physical fitness required for the boat hand position.",
+    "candidate": "PriyaPicture"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "None directly applicable to the job description"
+    ],
+    "weaknesses": [
+      "Lacks maritime experience, physically demanding job, no match for essential requirements"
+    ],
+    "summary": "The candidate has no relevant experience or skills that align with the physical and maritime requirements of the position.",
+    "candidate": "SamanthaOne"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Basic numeracy",
+      "Possibly reliable and punctual"
+    ],
+    "weaknesses": [
+      "No experience in fishing or boating",
+      "No physical manual work experience",
+      "No safety training or experience"
+    ],
+    "summary": "The candidate lacks the essential experience and skills required for the position.",
+    "candidate": "SystemShock"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "strong technical background",
+      "leadership experience"
+    ],
+    "weaknesses": [
+      "no relevant maritime experience",
+      "behavioral concerns from interview",
+      "lack of physical labor skills"
+    ],
+    "summary": "The candidate's technical and leadership experience is impressive, but she lacks any relevant maritime experience and her behavior during the interview raises significant concerns about her fit for the role and team.",
+    "candidate": "VictoriaSterlingSilver"
+  },
+  {
+    "score": 1,
+    "strengths": [
+      "None directly relevant to the job"
+    ],
+    "weaknesses": [
+      "Lack of any experience or skills relevant to fishing or maritime work",
+      "Severe mismatch between candidate's background and job requirements"
+    ],
+    "summary": "The candidate's extensive software engineering background does not align with the physical and maritime skills required for the boat hand position.",
+    "candidate": "CaseyWhitmore"
+  },
+  {
+    "score": 1,
+    "strengths": [
+      "None directly related to the job"
+    ],
+    "weaknesses": [
+      "Lack of maritime or fishing experience",
+      "No physical labor or manual work background"
+    ],
+    "summary": "The candidate has no relevant experience or skills that align with the job requirements for a boat hand on a fishing vessel.",
+    "candidate": "JordanMitchell5Star"
+  }
+]

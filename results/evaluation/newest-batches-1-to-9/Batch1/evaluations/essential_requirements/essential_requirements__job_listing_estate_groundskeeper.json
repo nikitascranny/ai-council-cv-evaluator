@@ -1,0 +1,44 @@
+[
+  {
+    "summary": "The candidate's background in software testing and project coordination demonstrates relevant transferable skills and experience, but does not clearly meet the essential requirements for groundskeeping, gamekeeping, or countryside management experience, physical fitness for rough terrain, or a tracking or pursuit-oriented background. The candidate's ability to work independently and maintain discretion align with the role's demands, but the specific experience and physical fitness requirements are not evident from the provided CV.",
+    "candidate": "ALEX PARK"
+  },
+  {
+    "summary": "The candidate's CV does not clearly meet the essential requirement for groundskeeping, gamekeeping, or 'countryside management' experience. The voluntary and part-time roles as a Machine Learning Engineer show a strong background in data science and machine learning but do not provide groundskeeping experience. The CV indicates excellent technical skills and some experience in handling data and projects, which could be transferable to the role, and the candidate has a clean driving license. The candidate's preference for remote work and strong data handling skills could align with the requirement to work in remote parts of the estate. The candidate is also very discreet given the completion of AWS certifications and credentials related to cloud services and native Kubernetes.",
+    "candidate": "EMILE MOKOENA"
+  },
+  {
+    "summary": "The candidate's experience does not clearly meet the essential requirement of groundskeeping, gamekeeping, or countryside management experience. However, their background in UX research and design is a reasonable match for the 'pursuit oriented' background preference. The candidate’s excellent physical fitness and ability to work in remote areas are not explicitly shown, but could be inferred given their hybrid and remote work experience. The requirement for an unconditional discretion is not addressed in the CV.",
+    "candidate": "GEOFF NITSCHKE"
+  },
+  {
+    "summary": "The candidate does not meet the essential requirement of groundskeeping, gamekeeping, or countryside management experience. Their experience is clearly aligned with architectural and technical project management, which is a reasonable/close match to the analytical and problem-solving skills required. The candidate's physical fitness and ability to work alone in remote areas are unclear from the CV, but the discretion requirement is met as the candidate has a background in sensitive research topics.",
+    "candidate": "JORDAN VELDMAN"
+  },
+  {
+    "summary": "The candidate meets the job's essential requirements well, particularly in areas such as project management, partnership development, and stakeholder management. There is a clear match for tasks involving contract management, budgeting, and strategic partnerships. The experience in organizing events and managing teams also aligns closely with the role. However, there is no clear indication of direct technical or programming experience, which might be crucial for certain technical roles.",
+    "candidate": "LERATO MUNCHE"
+  },
+  {
+    "summary": "",
+    "error": "PARSE ERROR",
+    "candidate": "NDLOVU KARABO REFILWE"
+  },
+  {
+    "summary": "",
+    "error": "PARSE ERROR",
+    "candidate": "PATRICK MARAIS"
+  },
+  {
+    "summary": "The candidate does not clearly meet the groundskeeping, gamekeeping, or countryside management experience requirement. However, their finance and economics background, along with their experience in analytics and data management, presents a reasonable close match to the tracking, search & rescue, military, or other pursuit-oriented background preference. Other requirements, such as physical fitness, discretion, working alone, and a driving license, are unclear from the provided CV.",
+    "candidate": "PONTUS PONTIOUS"
+  },
+  {
+    "summary": "The candidate's experience in digital marketing and strategy development is a reasonable match for the role, but does not clearly meet the essential requirements for groundskeeping, gamekeeping, or countryside management experience. The physical fitness requirement is not evidenced in the CV, and there is no indication of tracking, search & rescue, military, or other pursuit-oriented background. The candidate's ability to work alone and in remote areas is not explicitly stated, and while they have a full clean driving licence, they do not mention living on site or being reachable by the Laird.",
+    "candidate": "RIAAN GOVEN"
+  },
+  {
+    "summary": "The candidate's CV does not clearly meet the essential requirement of groundskeeping, gamekeeping, or countryside management experience. However, their business analysis experience, particularly in process improvement and system requirements, could be considered a reasonable/close match for the tracking and pursuit-oriented background requirement. The CV does not provide evidence of physical fitness or working in remote, isolated areas, nor does it mention any related certifications or experience. The candidate does, however, demonstrate strong analytical and system-related skills, which could be transferable to the role.",
+    "candidate": "THE DANIEL"
+  }
+]

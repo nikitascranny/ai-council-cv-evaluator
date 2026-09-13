@@ -1,0 +1,54 @@
+[
+  {
+    "score": 4,
+    "strengths": [
+      "interest in tropical fish keeping",
+      "technical skills in Python, JavaScript, and web development"
+    ],
+    "weaknesses": [
+      "no direct experience in marine biology or aquatic animal husbandry",
+      "lacks hands-on experience with life support systems"
+    ],
+    "summary": "Daniel Rossouw shows interest in aquatic life through his hobby but lacks direct professional experience in marine biology or aquatic animal husbandry, limiting his immediate fit for the role.",
+    "candidate": "Daniel_common"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Keen interest in aquatic life through hobby of keeping tropical fish",
+      "Technical skills in system maintenance which could be transferable"
+    ],
+    "weaknesses": [
+      "Lack of relevant degree in Marine Biology, Zoology, or Aquatic Biology",
+      "No direct experience in aquatic animal husbandry or life support systems"
+    ],
+    "summary": "Linus Torvalds has technical skills that may be transferable but lacks the necessary educational background and direct experience in aquatic animal husbandry.",
+    "candidate": "Linus"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Strong problem-solving skills",
+      "Proficient in software development tools and techniques"
+    ],
+    "weaknesses": [
+      "Lack of relevant biological science education or experience",
+      "No direct experience with aquatic life support systems or animal husbandry"
+    ],
+    "summary": "Margaret Hamilton's background in software engineering does not align with the essential requirements of the Aquarium Biologist position, which necessitates a strong foundation in marine biology or a related field.",
+    "candidate": "Margaret"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong background in software engineering",
+      "Experience in mobile app development"
+    ],
+    "weaknesses": [
+      "No experience in marine biology or aquatic animal husbandry",
+      "Lack of direct relevance to the job role"
+    ],
+    "summary": "The candidate has a strong background in software engineering but lacks the necessary experience and qualifications in marine biology and aquatic animal husbandry to fit the role.",
+    "candidate": "Lauren_common"
+  }
+]

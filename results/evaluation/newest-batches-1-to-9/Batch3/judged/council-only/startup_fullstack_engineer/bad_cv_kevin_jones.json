@@ -1,0 +1,8 @@
+{
+  "candidate": "bad_cv_kevin_jones",
+  "final_score": 2,
+  "score_rationale": "The candidate's CV lacks the essential technical skills and relevant experience required for the Founding Full-Stack Engineer role at Pulsegrid, despite showing potential for independent work. Their absence of exposure to key technologies like React, TypeScript, Go, Kafka, and TimescaleDB, combined with limited employment history, makes them a poor fit for the company's fast-paced, high-impact environment.",
+  "key_strengths": "Ability to work independently and willingness to explain employment gaps.",
+  "key_weaknesses": "Lack of relevant technical experience and skills required by the job listing.",
+  "final_evaluation": "The candidate does not meet the core requirements for this role. Their experience and skill set are insufficient for the technical demands of the position, and their employment history raises reliability concerns that are incompatible with Pulsegrid's intense and fast-moving startup culture."
+}

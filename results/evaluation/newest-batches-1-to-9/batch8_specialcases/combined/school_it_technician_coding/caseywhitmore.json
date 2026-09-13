@@ -1,0 +1,39 @@
+[
+  {
+    "score": 8,
+    "strengths": [
+      "Extensive experience in software engineering and system architecture far exceeds the practical IT support required.",
+      "Expertise in programming languages and distributed systems aligns with coding enrichment aspects of the role.",
+      "Strong educational background with a PhD in Computer Science and numerous peer-reviewed publications demonstrates exceptional knowledge.",
+      "Experience with leading technology companies provides a solid understanding of complex IT environments.",
+      "Fluent in multiple programming languages, with specific experience in Python which is desirable for the role."
+    ],
+    "weaknesses": [
+      "Limited direct experience in educational settings may affect ease of integration into school environment.",
+      "No specific mention of experience with IT support tasks such as device imaging or classroom AV technology.",
+      "Lack of direct experience with Intune or similar device management tools."
+    ],
+    "summary": "The candidate's advanced technical skills and extensive experience in software engineering make them highly qualified for the IT Technician & Coding Enrichment Lead role, despite limited direct experience in educational settings.",
+    "candidate": "CaseyWhitmore",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "PhD in Computer Science",
+      "Published over 40 peer-reviewed papers"
+    ],
+    "weaknesses": [
+      "Limited relevant experience in IT support or education",
+      "No specific experience with school IT or teaching youth"
+    ],
+    "summary": "Despite impressive academic and technical achievements, the candidate lacks direct experience in school IT support and working with young people, critical for this role.",
+    "candidate": "CaseyWhitmore",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate has practical IT support experience through an internship and relevant coursework. They meet the basic programming ability requirement as they have experience with fixing bugs in an internal tool, which may include debugging code. The education in Information Technology is a reasonable match for the role. However, the candidate has not provided evidence of working knowledge of Windows 11, Microsoft 365, or Intune. There is no clear evidence of enthusiasm for working with young people or understanding of safeguarding policies, though these can be verified through interviews or further questions.",
+    "candidate": "CaseyWhitmore",
+    "type": "essential_requirements"
+  }
+]

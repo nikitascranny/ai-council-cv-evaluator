@@ -1,0 +1,36 @@
+[
+  {
+    "score": 4,
+    "strengths": [
+      "Strong technical skills in software development, including proficiency in Python and Django.",
+      "Experience in a team setting with sprint planning and code reviews."
+    ],
+    "weaknesses": [
+      "Lack of direct experience in secretarial, receptionist, or office administration roles.",
+      "No demonstrated experience with Microsoft Office Suite (Word, Excel, Outlook).",
+      "Absence of relevant experience in a professional services office."
+    ],
+    "summary": "While Linus has strong technical skills and team experience, his background does not align well with the administrative and client-facing requirements of the Secretary/Assistant role.",
+    "candidate": "Linus",
+    "model": "phi4"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Strong technical skills in software engineering",
+      "Experience with Python and Django framework"
+    ],
+    "weaknesses": [
+      "Lack of administrative or secretarial experience",
+      "No direct experience with Microsoft Office suite"
+    ],
+    "summary": "Linus Torvalds has strong technical skills but lacks the administrative and secretarial experience required for the position.",
+    "candidate": "Linus",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's experience as a Junior Developer and Software Engineer demonstrates strong technical skills and teamwork, but does not clearly meet the secretarial, receptionist, or office administration experience requirement. The candidate's interpersonal skills are not explicitly evidenced, though technical experience may indicate good organizational skills. The candidate's proficiency in Microsoft Office tools and accurate typing is not directly shown, but their IT background suggests relevant skills. Discretion handling confidential information is not directly addressed but may be inferred from their professional experience.",
+    "candidate": "Linus",
+    "type": "essential_requirements"
+  }
+]

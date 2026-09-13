@@ -1,0 +1,36 @@
+[
+  {
+    "score": 4,
+    "strengths": [
+      "Candidate demonstrates a willingness to learn and adapt quickly, which is beneficial for up-skilling.",
+      "Some relevant customer service experience as Assistant Manager, which involves dealing with customers and managing staff."
+    ],
+    "weaknesses": [
+      "Lacks specific PC/laptop repair skills, which are essential for the job.",
+      "Previous work experiences do not directly relate to computer repair or technical support.",
+      "No mention of experience with basic troubleshooting or understanding of IT concepts."
+    ],
+    "summary": "While the candidate shows potential for learning and has some customer service experience, they lack the essential technical skills required for a computer repair role.",
+    "candidate": "bad_cv_jason_muller",
+    "model": "phi4"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Can lift heavy boxes",
+      "Fast learner when motivated"
+    ],
+    "weaknesses": [
+      "Minimal relevant work experience",
+      "Objective does not align with the job requirements"
+    ],
+    "summary": "Jason Muller lacks the necessary practical computer repair skills and relevant experience to fit the job description, with an objective that is misaligned with the role's requirements.",
+    "candidate": "bad_cv_jason_muller",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's experience as an Assistant Manager at Uncle Dave’s Car Wash demonstrates their ability to handle difficult situations and interact with customers, which aligns with the requirement of being friendly and patient with older customers. However, there is no clear evidence of practical PC/laptop repair skills. The candidate’s commitment to showing up for work, despite occasionally oversleeping, suggests reliability, which matches the requirement. The ability to work Saturdays is not explicitly stated but can be inferred from the Assistant Manager role. There is no information provided regarding the candidate’s local status or transportation to the workplace.",
+    "candidate": "bad_cv_jason_muller",
+    "type": "essential_requirements"
+  }
+]

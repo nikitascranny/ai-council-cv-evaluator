@@ -1,0 +1,37 @@
+[
+  {
+    "score": 5,
+    "strengths": [
+      "Familiarity with software development and problem-solving skills, which can be transferable to basic PC/laptop repair tasks.",
+      "Strong background in technology and potential for learning hardware-related tasks.",
+      "Ability to communicate complex information, which can be helpful in explaining technical issues to customers without jargon."
+    ],
+    "weaknesses": [
+      "Lack of direct experience in PC/laptop hardware repair and customer service in a retail environment.",
+      "No evidence of hands-on technical skills related to diagnosing and fixing everyday hardware problems.",
+      "Limited experience in working directly with customers or dealing with hardware issues outside of software development."
+    ],
+    "summary": "Margaret has a strong technical background but lacks specific experience and skills in hardware repair and customer service required for the position.",
+    "candidate": "Margaret",
+    "model": "phi4"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Experience in software development and troubleshooting",
+      "Basic skills in mobile app repair"
+    ],
+    "weaknesses": [
+      "Lack of hardware repair experience",
+      "No direct match to essential job requirements"
+    ],
+    "summary": "Margaret Hamilton's background in software engineering and app development does not align well with the required hardware repair skills and customer service orientation of the Computer Repair Person position.",
+    "candidate": "Margaret",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's CV clearly meets the requirement for basic, practical PC/laptop repair skills, as evidenced by their certifications and transferable experience in software engineering. They are a reasonable/close match for being friendly and patient, although this is not directly stated. The requirement for honesty and reliability is unclear from the CV, as is the candidate's ability to work Saturdays. The candidate's location is also unclear.",
+    "candidate": "Margaret",
+    "type": "essential_requirements"
+  }
+]

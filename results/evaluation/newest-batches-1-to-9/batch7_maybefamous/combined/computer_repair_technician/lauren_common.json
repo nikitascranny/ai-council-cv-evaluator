@@ -1,0 +1,37 @@
+[
+  {
+    "score": 4,
+    "strengths": [
+      "Strong technical foundation in software engineering and mobile app development.",
+      "Experience with cross-platform app development using Flutter, which indicates adaptability to different technologies."
+    ],
+    "weaknesses": [
+      "Lack of hands-on experience with basic PC/laptop repairs.",
+      "No demonstrated experience with customer service or explaining technical issues to non-technical users.",
+      "Limited experience in a non-office, retail environment.",
+      "No specific mention of patience or communication skills with older customers."
+    ],
+    "summary": "Lauren has a strong technical background but lacks direct experience in PC repair and customer service, which are critical for this role.",
+    "candidate": "Lauren_common",
+    "model": "phi4"
+  },
+  {
+    "score": 4,
+    "strengths": [
+      "Proficient in software development with a focus on mobile applications",
+      "Has experience in problem-solving and customer interaction through UX improvements"
+    ],
+    "weaknesses": [
+      "Lacks direct experience in computer hardware repair",
+      "No evidence of practical skills in diagnosing and fixing everyday computer issues"
+    ],
+    "summary": "Lauren has a strong background in software development but lacks direct experience in hardware repair and customer service aspects required for the position.",
+    "candidate": "Lauren_common",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's experience in software engineering and development, particularly with onboarding flows and bug fixes, closely matches the required practical PC/laptop repair skills and problem-solving ability. Their ability to explain technical concepts in a user-friendly manner, as evidenced by their coursework and professional experience, aligns well with the requirement to be friendly and patient with customers. The requirement to work Saturdays is not clearly met, but their experience with collaborative projects and problem-solving indicates reliability. Their education and certifications, while not directly related to PC repair, suggest they are capable and trustworthy.",
+    "candidate": "Lauren_common",
+    "type": "essential_requirements"
+  }
+]

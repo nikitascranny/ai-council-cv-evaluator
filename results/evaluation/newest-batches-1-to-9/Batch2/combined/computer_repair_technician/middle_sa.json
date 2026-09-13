@@ -1,0 +1,36 @@
+[
+  {
+    "score": 4,
+    "strengths": [
+      "Strong technical background in software engineering and development.",
+      "Experience with backend services and web applications could be leveraged for complex computer repairs."
+    ],
+    "weaknesses": [
+      "Lack of practical PC/laptop repair skills as specified in the job requirements.",
+      "No direct experience with hardware repairs or customer service in a retail setting.",
+      "No indication of local availability or ability to commute to Tillingford."
+    ],
+    "summary": "The candidate has a strong technical foundation but lacks the specific hands-on repair skills and customer service experience required for the role.",
+    "candidate": "middle_sa",
+    "model": "phi4"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "strong technical background",
+      "experience with backend services"
+    ],
+    "weaknesses": [
+      "lack of hands-on repair experience",
+      "inexperience with retail客户服务和面对面解决问题"
+    ],
+    "summary": "虽然Kagiso Ndlovu具备强大的技术背景和后端开发经验，但缺乏实际的电脑维修经验和面向客户的零售工作经历，这使得他不太符合Brenda & Mick's Computer Repairs的职位需求。",
+    "candidate": "middle_sa",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's BEng Computer Engineering degree and AWS Certified Developer – Associate certification suggest they have the practical PC/laptop repair skills needed for the role. Their ability to explain technical concepts in a non-jargon manner aligns well with the requirement to be friendly and patient with older customers. However, there is no evidence of local residency or reliable transport to the workplace, which is a clear requirement.",
+    "candidate": "middle_sa",
+    "type": "essential_requirements"
+  }
+]

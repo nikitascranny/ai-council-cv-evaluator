@@ -1,0 +1,37 @@
+[
+  {
+    "score": 7,
+    "strengths": [
+      "Possesses extensive experience in software engineering with expertise in high-level architecture and distributed systems.",
+      "Strong analytical and problem-solving skills demonstrated through past roles and achievements.",
+      "Extensive knowledge of multiple programming languages and platforms.",
+      "Exemplary reliability and leadership as evidenced by multiple 'Employee of the Year' recognitions."
+    ],
+    "weaknesses": [
+      "Lack of specific experience in basic hardware repair and troubleshooting.",
+      "No direct experience with customer service or retail environment.",
+      "Overqualified for the part-time, entry-level nature of the role.",
+      "Potential mismatch in work hours and environment, given the candidate's advanced qualifications and likely preferences."
+    ],
+    "summary": "The candidate's technical expertise and reliability are strong assets, but their lack of specific hardware repair skills and experience in customer service presents a challenge for this part-time, entry-level retail position.",
+    "candidate": "CaseyWhitmore",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Exceptional technical skills and extensive experience in software engineering"
+    ],
+    "weaknesses": [
+      "Lacks practical PC/laptop repair skills, no direct experience in customer service or small business operations"
+    ],
+    "summary": "Despite Casey's impressive background in software engineering, the candidate lacks the specific technical skills and experience required for a hands-on computer repair role.",
+    "candidate": "CaseyWhitmore",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's experience in fixing minor bugs in an internal tool is a reasonable match for the basic, practical PC/laptop repair skills requirement. The diploma in Information Technology provides relevant education, though no specific repair experience is listed. The candidate does not clearly demonstrate the ability to work Saturdays or interact with older customers in a friendly, patient manner, but there is no clear indication of reliability or honesty either.",
+    "candidate": "CaseyWhitmore",
+    "type": "essential_requirements"
+  }
+]

@@ -1,0 +1,40 @@
+[
+  {
+    "score": 8,
+    "strengths": [
+      "Solid experience in Go, aligning with the job requirement for backend language proficiency.",
+      "Proven track record of owning features end-to-end, which matches the role's expectations.",
+      "Strong technical foundation in distributed systems, indicated by relevant coursework and certifications.",
+      "Experience with Kubernetes, relevant to the company's tech stack and practices."
+    ],
+    "weaknesses": [
+      "Lack of direct experience with TypeScript/React, which is crucial for the frontend responsibilities of the role.",
+      "No specific mention of experience with Kafka, TimescaleDB, or event-driven architectures, although not strictly required.",
+      "Limited exposure to the energy sector domain knowledge, though the company offers to provide training."
+    ],
+    "summary": "Jordan Mitchell is a strong candidate with relevant backend experience and technical skills, though lacking some frontend and sector-specific knowledge.",
+    "candidate": "JordanMitchell5Star",
+    "model": "phi4"
+  },
+  {
+    "score": 7,
+    "strengths": [
+      "4+ years of backend development experience in Go and Python",
+      "Experience with building REST APIs",
+      "AWS and Kubernetes certifications"
+    ],
+    "weaknesses": [
+      "No experience with TypeScript/React frontend development",
+      "Limited experience with event-driven architectures",
+      "No direct energy sector experience"
+    ],
+    "summary": "Jordan Mitchell has relevant backend development experience and technical certifications, but lacks frontend skills and direct energy sector experience.",
+    "candidate": "JordanMitchell5Star",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate meets the 4+ years shipping production software requirement through experience at Nexbank Technologies. The experience with Kubernetes and CI/CD pipelines, as well as the relevant coursework and certifications, provide a reasonable match for distributed systems fundamentals and technical communication. However, there is no clear evidence of direct experience with TypeScript/React or any backend language, nor with metrics, tracing, or incident response in production.",
+    "candidate": "JordanMitchell5Star",
+    "type": "essential_requirements"
+  }
+]

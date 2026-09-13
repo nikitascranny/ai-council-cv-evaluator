@@ -1,0 +1,37 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Strong problem-solving skills and experience in improving software performance.",
+      "Good collaboration experience with design teams."
+    ],
+    "weaknesses": [
+      "Lack of relevant security or museum-specific experience.",
+      "No experience with CCTV, intruder alarm, or access-control systems.",
+      "No evidence of handling physical security tasks or incident response.",
+      "No relevant qualifications or certifications in security."
+    ],
+    "summary": "Lauren Fischer has strong technical and problem-solving skills but lacks relevant security experience and qualifications for the Museum Security Specialist role.",
+    "candidate": "Lauren_common",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong technical background in software engineering",
+      "Experience with cross-platform development"
+    ],
+    "weaknesses": [
+      "No experience in security or museum operations",
+      "Lack of relevant certifications or training for the role"
+    ],
+    "summary": "Lauren Fischer's technical expertise in software engineering is commendable but lacks any alignment with the security and museum operations role requirements.",
+    "candidate": "Lauren_common",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's CV does not clearly meet the essential requirement of 3 years' experience in a security role. However, their relevant coursework and certifications show a strong background in software development, which may be a reasonable match for the technical aspects of the role. The candidate's ability to work in teams and improve apps through bug fixes and UX polish demonstrates some transferable skills related to communication and decision-making under pressure. There is no evidence of physical ability to patrol sites or experience with security systems, making these requirements unclear from the CV.",
+    "candidate": "Lauren_common",
+    "type": "essential_requirements"
+  }
+]

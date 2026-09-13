@@ -1,0 +1,38 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Has good technical skills and experience in software development.",
+      "Possesses a strong educational background in computer science."
+    ],
+    "weaknesses": [
+      "Lacks direct experience in secretarial, receptionist, or office administration roles.",
+      "No demonstrated skills in Microsoft Office applications (Word, Excel, Outlook).",
+      "No experience with practice management software or accountancy tasks.",
+      "Does not meet the typing speed requirement.",
+      "Lacks a demonstrated professional telephone manner and client-facing experience."
+    ],
+    "summary": "While Marcus has a strong technical background, he lacks relevant secretarial experience and essential skills for the administrative role at Ashcombe & Vale.",
+    "candidate": "MegaMarcus",
+    "model": "phi4"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Strong technical background",
+      "Experience in backend systems"
+    ],
+    "weaknesses": [
+      "Lacks relevant administrative experience",
+      "No evidence of skills required for the administrative role"
+    ],
+    "summary": "Marcus Vandenberg has a strong technical background but lacks the necessary administrative experience and skills for the position.",
+    "candidate": "MegaMarcus",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's experience does not clearly meet the requirement for secretarial, receptionist, or office administration experience. Their previous roles in software engineering and maintenance of internal tools are relevant but not a direct match. However, their strong technical skills and ability to handle documentation and onboarding could be considered a reasonable close match for the organizational and detail-oriented aspects of the role. The candidate's typing speed and proficiency in Microsoft Office are not explicitly stated, but their work on documentation could imply these skills. Discretion is the least clear requirement, as there is no specific mention of handling confidential information.",
+    "candidate": "MegaMarcus",
+    "type": "essential_requirements"
+  }
+]

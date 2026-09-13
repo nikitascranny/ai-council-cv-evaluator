@@ -1,0 +1,36 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Demonstrates strong problem-solving skills and technical leadership experience.",
+      "Has a record of managing complex technical projects and improving system performance."
+    ],
+    "weaknesses": [
+      "Lacks practical PC/laptop repair skills as required by the job description.",
+      "No evidence of customer service experience or familiarity with non-technical troubleshooting.",
+      "Experience is not aligned with the hands-on, practical nature of the role, focused on computer repairs rather than software engineering."
+    ],
+    "summary": "While Chen Haoran has impressive technical leadership skills and experience in complex systems, his background does not align with the practical, hands-on repair skills and customer service required for the role.",
+    "candidate": "senior_chinese",
+    "model": "phi4"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "technical skills",
+      "experience in system design and engineering"
+    ],
+    "weaknesses": [
+      "lacks practical PC repair skills",
+      "inexperience in customer service for repair shops"
+    ],
+    "summary": "While the candidate possesses strong technical skills and relevant engineering experience, they lack the specific practical PC repair skills and customer service experience required for the role.",
+    "candidate": "senior_chinese",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "候选人的技能与经验主要集中在软件工程和技术领导方面，与岗位的基本PC维修技能要求不符，这是一个明显的不匹配。然而，候选人的沟通能力和技术领导经验可能表明他能够友好和耐心地与客户交流，这与友好的客户服务要求较为接近。至于诚实和可靠性的要求，虽然CV中没有直接证据，但考虑到候选人在技术领域的成就和责任感，可以认为他具备这些品质。最后，候选人的职业经历显示他能够灵活工作，这与能工作周六的要求相符合。",
+    "candidate": "senior_chinese",
+    "type": "essential_requirements"
+  }
+]

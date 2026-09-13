@@ -1,0 +1,36 @@
+[
+  {
+    "score": 2,
+    "strengths": [
+      "Demonstrates strong problem-solving abilities through software engineering roles",
+      "Has a solid educational background in software engineering and computer science"
+    ],
+    "weaknesses": [
+      "Lacks relevant work experience in maritime or fishing industries",
+      "No evidence of physical fitness or experience with manual labor",
+      "No experience with boats, fishing equipment, or maritime safety procedures",
+      "Does not meet essential requirements such as sea legs and punctuality"
+    ],
+    "summary": "Zabu Flurboni's skills in software engineering and problem-solving are not directly applicable to the physical and maritime-focused role of Boat Hand / Deckhand at Kestrel Bay Fishing Co.",
+    "candidate": "HomerSimsSon",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "None directly related to the job were identified"
+    ],
+    "weaknesses": [
+      "Lack of experience in fishing or maritime work",
+      "No skills or certifications relevant to the role"
+    ],
+    "summary": "The candidate does not meet the essential requirements for the position and has no apparent upskilling potential relevant to the job.",
+    "candidate": "HomerSimsSon",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's experience and skills are not clearly related to the requirements of the job. There is no evidence of physical fitness, comfort with heavy manual work, or previous experience on boats. The certifications and training listed are not specific to the job requirements. However, the willingness to work early starts and long days, as well as basic numeracy, are implied and could be considered reasonable matches.",
+    "candidate": "HomerSimsSon",
+    "type": "essential_requirements"
+  }
+]

@@ -1,0 +1,37 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Strong technical skills in software engineering",
+      "Experience with API development and infrastructure management"
+    ],
+    "weaknesses": [
+      "Lack of direct experience in security roles or environments",
+      "No evidence of physical ability to patrol large sites or manage security equipment",
+      "Missing necessary security certifications such as SIA Door Supervisor or Security Guarding licence"
+    ],
+    "summary": "The candidate has a strong technical background but lacks the specific experience and qualifications required for a Museum Security Specialist role.",
+    "candidate": "Alex Turner",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "technical skills in software engineering",
+      "background in system architecture and API development"
+    ],
+    "weaknesses": [
+      "no relevant security experience",
+      "no experience with security systems or risk management",
+      "location mismatch with job posting"
+    ],
+    "summary": "The candidate has strong technical skills but lacks the necessary security experience and direct relevance to the role.",
+    "candidate": "Alex Turner",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate does not meet the essential requirement of having 3 years' experience in a security role. However, their experience in a software engineering role is relevant and transferable, as it involves problem-solving and technical skills that could be useful in a security context. The CV does not provide evidence of a valid SIA Door Supervisor or Security Guarding licence or working knowledge of security systems. The candidate's ability to work flexible shifts is unclear from the provided information.",
+    "candidate": "Alex Turner",
+    "type": "essential_requirements"
+  }
+]

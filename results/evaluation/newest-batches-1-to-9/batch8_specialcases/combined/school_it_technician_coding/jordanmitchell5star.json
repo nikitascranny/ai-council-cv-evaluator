@@ -1,0 +1,39 @@
+[
+  {
+    "score": 7,
+    "strengths": [
+      "Strong background in Python, relevant for programming lessons",
+      "Experience with backend services and automation, useful for IT support",
+      "Basic knowledge of Kubernetes, which aligns with network basics and device management",
+      "Hands-on with Raspberry Pi projects, relevant for robotics and coding activities"
+    ],
+    "weaknesses": [
+      "Lack of direct experience in educational settings",
+      "Limited experience with Windows 11 and Microsoft 365",
+      "No direct experience with device imaging or classroom AV support",
+      "No specific safeguarding training mentioned"
+    ],
+    "summary": "Jordan Mitchell demonstrates strong technical skills and up-skilling potential, but lacks direct educational experience and some specific technical proficiencies required for the role.",
+    "candidate": "JordanMitchell5Star",
+    "model": "phi4"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Strong programming skills in Python",
+      "Experience with automation and testing"
+    ],
+    "weaknesses": [
+      "Lacks relevant experience in IT support or education",
+      "No specific experience with school IT systems"
+    ],
+    "summary": "Jordan Mitchell's strong programming background is a plus, but the candidate lacks direct experience in IT support or education, and the role-specific skills are underrepresented in the CV.",
+    "candidate": "JordanMitchell5Star",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's experience as a Software Engineer and Junior Software Engineer demonstrates a practical background in IT support, closely related to the job's requirements. Their education and certifications in computer science and specific technologies, such as AWS and Kubernetes, provide a working knowledge of relevant tools. However, there is no direct evidence of experience with Windows 11, Microsoft 365, or Intune, nor is there evidence of working with young people or a specific commitment to safeguarding policies.",
+    "candidate": "JordanMitchell5Star",
+    "type": "essential_requirements"
+  }
+]

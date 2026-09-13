@@ -1,0 +1,39 @@
+[
+  {
+    "score": 4,
+    "strengths": [
+      "The candidate has a solid educational background in business information systems and business analysis.",
+      "They possess strong analytical and communication skills, relevant for understanding and solving complex problems."
+    ],
+    "weaknesses": [
+      "Lack of experience in full-stack software development, specifically with TypeScript/React and Go.",
+      "No demonstrated experience with event-driven architectures or distributed systems, which are essential for the role.",
+      "Insufficient experience in operational software in a production environment.",
+      "No evidence of working directly with customers or contributing to high-velocity, iterative software development environments."
+    ],
+    "summary": "While the candidate has strong analytical and business analysis skills, they lack the technical and full-stack development experience necessary for the role at Pulsegrid.",
+    "candidate": "THE DANIEL",
+    "model": "phi4"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Business Analysis",
+      "Communication & Interpersonal Skills",
+      "Data Analysis"
+    ],
+    "weaknesses": [
+      "Lack of full-stack development experience",
+      "No experience with TypeScript/React or Go",
+      "No experience with event-driven architectures"
+    ],
+    "summary": "The candidate possesses strong business and data analysis skills but lacks the technical background required for the full-stack engineering role.",
+    "candidate": "THE DANIEL",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate has 2+ years of relevant work experience, which is a reasonable close match to the 4+ years required. Their coursework and certificates indicate a solid foundation in business information systems, but specific experience in TypeScript/React or backend languages is unclear. Their experience managing business processes and systems is relevant, and their ability to explain technical trade-offs is implied. However, there is no clear evidence of experience with distributed systems, production operations, or shipping production software.",
+    "candidate": "THE DANIEL",
+    "type": "essential_requirements"
+  }
+]

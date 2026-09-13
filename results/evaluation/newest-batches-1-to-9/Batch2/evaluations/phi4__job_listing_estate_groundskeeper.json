@@ -1,0 +1,140 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Strong technical skills in backend development and API design",
+      "Leadership experience in mentoring and technical reviews"
+    ],
+    "weaknesses": [
+      "Lack of relevant experience in groundskeeping, countryside management, or outdoor activities",
+      "No experience with tracking, search & rescue, or working with animals",
+      "Unfamiliarity with immersive theatre, airsoft event marshalling, or private security work"
+    ],
+    "summary": "The candidate has strong technical and leadership skills but lacks relevant experience and skills for the estate groundskeeper and 'Hunt' Coordinator role.",
+    "candidate": "intermediate_american"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Strong technical leadership and problem-solving skills demonstrated in high-availability systems and modernization projects.",
+      "Experience with mentoring and leading teams, which could be beneficial for leading tracking teams."
+    ],
+    "weaknesses": [
+      "Lack of relevant experience in groundskeeping, gamekeeping, or countryside management.",
+      "No background in tracking, search & rescue, or any pursuit-oriented fields.",
+      "Inexperience with working with animals, particularly hounds, and no familiarity with outdoor survival skills.",
+      "No demonstrated experience in immersive theatre, security work, or similar environments."
+    ],
+    "summary": "The candidate has strong technical and leadership skills but lacks the relevant experience and skills required for the groundskeeper and hunt coordinator role at Blackmoor Hall Estate.",
+    "candidate": "senior_american"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Strong technical leadership and problem-solving skills",
+      "Proven ability to mentor and lead teams"
+    ],
+    "weaknesses": [
+      "Lack of relevant experience in groundskeeping or countryside management",
+      "No experience with tracking, hounds, or immersive experience coordination",
+      "Unfamiliarity with the specific physical and operational demands of the role"
+    ],
+    "summary": "The candidate excels in technical leadership and software engineering but lacks the relevant experience and skills required for the Groundskeeper & Hunt Coordinator role.",
+    "candidate": "senior_chinese"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Excellent physical fitness and ability to work alone in remote areas could be inferred from managing large-scale, distributed systems in challenging environments.",
+      "Strong leadership and mentoring experience, which could aid in team coordination and management of tracking teams."
+    ],
+    "weaknesses": [
+      "Lacks direct experience in groundskeeping, gamekeeping, or countryside management, which are essential for the role.",
+      "No experience in tracking, search & rescue, or similar pursuit-oriented activities.",
+      "No background in working with hounds or tracking dogs, which is desirable for coordinating the hunt.",
+      "No evidence of familiarity with immersive theatre, airsoft event marshalling, or private security work.",
+      "May struggle with adapting to the physical and outdoor nature of the job, given a background in software engineering."
+    ],
+    "summary": "The candidate's technical leadership and problem-solving skills are strong, but lack relevant outdoor, pursuit-oriented, and countryside management experience critical for the role.",
+    "candidate": "senior_sa"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Good problem-solving skills and technical proficiency demonstrated by experience with full-stack development.",
+      "Strong collaborative skills and ability to work in agile teams."
+    ],
+    "weaknesses": [
+      "Lack of relevant experience in groundskeeping, gamekeeping, or countryside management.",
+      "No experience with physical fitness or outdoor activities like tracking or handling animals.",
+      "No background in immersive theatre, airsoft, or security work.",
+      "Absence of military or search and rescue experience."
+    ],
+    "summary": "Jordan Lee has strong technical and collaborative skills but lacks the essential experience and physical fitness required for the Groundskeeper & 'Hunt' Coordinator role at Blackmoor Hall Estate.",
+    "candidate": "beginner_american"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong technical skills in software engineering.",
+      "Experience with agile methodologies and collaboration."
+    ],
+    "weaknesses": [
+      "Lacks relevant experience in groundskeeping or countryside management.",
+      "No background in tracking, search & rescue, or military pursuits.",
+      "Inexperience with working alone in remote, signal-free areas.",
+      "No familiarity with bloodhounds or tracking dogs.",
+      "No experience in managing or coordinating immersive events or activities."
+    ],
+    "summary": "While the candidate possesses strong software engineering skills and collaborative experience, they lack the essential and relevant skills required for the Groundskeeper & 'Hunt' Coordinator role at Blackmoor Hall Estate.",
+    "candidate": "beginner_chinese"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Excellent programming and technical skills",
+      "Strong educational background in computer science"
+    ],
+    "weaknesses": [
+      "Lacks relevant experience in groundskeeping or estate management",
+      "No experience in physical or outdoor activities",
+      "No background in tracking, military, or related fields",
+      "Unfamiliar with handling animals or airsoft-style equipment",
+      "No demonstrated experience with discretion in sensitive environments"
+    ],
+    "summary": "The candidate has a strong technical background but lacks the essential practical experience and skills needed for a Groundskeeper & 'Hunt' Coordinator role.",
+    "candidate": "beginner_sa"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Demonstrates strong technical skills in software engineering and systems design.",
+      "Experience with leadership and mentoring roles."
+    ],
+    "weaknesses": [
+      "Lacks relevant groundskeeping, gamekeeping, or countryside management experience.",
+      "No demonstrated experience in physical fitness-related roles or experience with tracking, search & rescue, or military backgrounds.",
+      "Absence of experience working with hounds or tracking dogs.",
+      "Limited evidence of comfort with the hunting premise or experience in immersive theatre, airsoft event marshalling, or private security work.",
+      "No prior service in roles requiring unconditional discretion and no questions asked."
+    ],
+    "summary": "The candidate's software engineering and leadership skills do not align with the physical, discreet, and countryside management-oriented requirements of the Groundskeeper & 'Hunt' Coordinator role.",
+    "candidate": "middle_chinese"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Demonstrates strong technical skills in software engineering.",
+      "Experienced in leadership roles and mentoring junior engineers."
+    ],
+    "weaknesses": [
+      "Lacks any experience in groundskeeping, gamekeeping, or countryside management.",
+      "No evidence of physical fitness or experience with tracking, search & rescue, or military pursuits.",
+      "No background in working with animals, particularly bloodhounds.",
+      "No experience in roles requiring high discretion or working alone in remote areas.",
+      "No experience in immersive theatre, airsoft event marshalling, or private security work."
+    ],
+    "summary": "The candidate's technical and leadership skills are strong, but they lack the specific experience and attributes necessary for the groundskeeper and hunt coordinator role at Blackmoor Hall Estate.",
+    "candidate": "middle_sa"
+  }
+]

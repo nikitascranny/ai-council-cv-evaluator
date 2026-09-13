@@ -1,0 +1,29 @@
+[
+  {
+    "score": 4,
+    "strengths": [
+      "Strong in identifying and escalating incidents",
+      "Experience in asset maintenance and upkeep"
+    ],
+    "weaknesses": [
+      "Lack of experience in security roles",
+      "No formal IT qualifications or direct experience in IT support"
+    ],
+    "summary": "Candidate demonstrates strong operational and asset management skills but lacks direct experience in security or IT, making them a less ideal fit for the specific role.",
+    "candidate": "Ralph_Son_of_a_Shepard_IT_Transition_CV"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "dependable and safety-conscious",
+      "excellent record keeping and attention to detail"
+    ],
+    "weaknesses": [
+      "lack of relevant security experience",
+      "no SIA license or security qualifications",
+      "no familiarity with CCTV, alarm, or access-control systems"
+    ],
+    "summary": "Ralph Son of A Shepard does not meet the essential requirements for the Museum Security Specialist position and lacks the necessary security-related experience and qualifications.",
+    "candidate": "Ralph_Son_of_a_Shepard_Farm_CV"
+  }
+]

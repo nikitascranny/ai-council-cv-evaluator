@@ -1,0 +1,39 @@
+[
+  {
+    "score": 2,
+    "strengths": [
+      "Shows ambition and initiative in starting her own consultancy.",
+      "Has a degree, although not in a relevant field."
+    ],
+    "weaknesses": [
+      "Lacks relevant work experience in aquatic biology or husbandry.",
+      "Does not meet essential educational requirements (degree in Marine Biology, Zoology, Aquatic Biology, or related field).",
+      "No demonstrated experience with water quality testing, filtration system maintenance, or animal care.",
+      "Lacks physical fitness evidence required for the role.",
+      "Does not have SCUBA certification or relevant aquarium experience."
+    ],
+    "summary": "The candidate lacks relevant educational background, practical experience, and physical capabilities needed for the Aquarium Biologist position.",
+    "candidate": "bad_cv_sarah_lynne_van_der_merwe",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "High level of ambition",
+      "Experience in customer engagement"
+    ],
+    "weaknesses": [
+      "Lack of relevant academic or practical experience",
+      "No specific skills related to marine biology or aquatic life support systems",
+      "No evidence of physical fitness or willingness to perform dirty tasks"
+    ],
+    "summary": "The candidate lacks the necessary academic background and practical skills related to marine biology or aquarium husbandry and does not demonstrate a willingness to perform the manual labor required for the role.",
+    "candidate": "bad_cv_sarah_lynne_van_der_merwe",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's education does not meet the requirement for a degree in Marine Biology, Zoology, Aquatic Biology, or a related life science, nor does it provide any related practical experience. The willingness to carry out physical tasks is implied but not explicitly stated. Basic understanding of water chemistry and the nitrogen cycle is unclear from the CV. The candidate has strong observational skills and attention to detail as shown through record-keeping habits and being Employee of the Month. Physical fitness and ability to work on weekends are not explicitly addressed, but the job requires these. Overall, the candidate's experience does not clearly meet the job's essential requirements.",
+    "candidate": "bad_cv_sarah_lynne_van_der_merwe",
+    "type": "essential_requirements"
+  }
+]

@@ -1,0 +1,36 @@
+[
+  {
+    "score": 4,
+    "strengths": [
+      "Strong technical foundation in software engineering",
+      "Experience with building and maintaining complex systems"
+    ],
+    "weaknesses": [
+      "Lack of practical PC/laptop repair skills",
+      "No experience in customer service or hands-on hardware repair",
+      "No evidence of working with older operating systems like Windows XP"
+    ],
+    "summary": "Jordan Mitchell has strong technical skills but lacks the practical repair experience and customer service skills required for the role at Brenda & Mick's Computer Repairs.",
+    "candidate": "JordanMitchell5Star",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong technical background in software engineering",
+      "Experience with distributed systems and automation"
+    ],
+    "weaknesses": [
+      "Lacks practical PC/laptop repair skills",
+      "No experience in customer service or retail environment"
+    ],
+    "summary": "Jordan Mitchell is highly skilled in software engineering but lacks the practical IT repair and customer service experience required for the role.",
+    "candidate": "JordanMitchell5Star",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate clearly meets the requirement for basic, practical PC/laptop repair skills through their relevant coursework and certifications. They also meet the requirement for being honest and reliable. Their ability to work on Saturdays is unclear from the CV. The candidate's experience is a reasonable/close match for being friendly and patient with older customers due to their collaborative and testing experience, though it is not directly related. Their location and transportation reliability are unclear.",
+    "candidate": "JordanMitchell5Star",
+    "type": "essential_requirements"
+  }
+]

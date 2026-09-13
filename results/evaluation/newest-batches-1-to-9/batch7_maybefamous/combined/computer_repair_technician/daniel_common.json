@@ -1,0 +1,36 @@
+[
+  {
+    "score": 5,
+    "strengths": [
+      "Has relevant experience with software development and a technical background that includes experience with web technologies like Django and React, which might help in understanding the basics of hardware issues.",
+      "Possesses problem-solving skills and experience in fixing bugs, which is somewhat aligned with diagnosing and fixing everyday computer issues."
+    ],
+    "weaknesses": [
+      "Lacks specific experience in PC/laptop repair or hands-on hardware skills, which are essential for this role.",
+      "No demonstrated experience in customer service or interacting with non-technical customers, an important aspect of the role.",
+      "Experience is more aligned with software engineering than the practical, hands-on repair work required by the job."
+    ],
+    "summary": "Daniel has a strong technical background but lacks specific experience in hands-on hardware repair and customer service, which are crucial for this position.",
+    "candidate": "Daniel_common",
+    "model": "phi4"
+  },
+  {
+    "score": 5,
+    "strengths": [
+      "technical skills in software engineering",
+      "hobbies related to tech repair"
+    ],
+    "weaknesses": [
+      "no direct experience in PC/laptop repair",
+      "lack of experience in customer service"
+    ],
+    "summary": "Daniel Rossouw has relevant technical skills but lacks direct experience in PC repair and customer service, which are crucial for the role.",
+    "candidate": "Daniel_common",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's experience as a Software Engineer and Junior Developer, particularly in fixing bugs and participating in code reviews, closely matches the practical PC/laptop repair skills requirement. Their ability to explain things without jargon aligns with being friendly and patient with older customers. However, there is no evidence of working Saturdays or local/transportability to Tillingford, and the job does not specify IT certifications, though the Django certification is relevant.",
+    "candidate": "Daniel_common",
+    "type": "essential_requirements"
+  }
+]

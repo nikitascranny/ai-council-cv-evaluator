@@ -1,0 +1,35 @@
+[
+  {
+    "score": 2,
+    "strengths": [
+      "Demonstrates punctuality and reliability as a software engineer, which aligns with job requirement for reliability and punctuality.",
+      "Possesses problem-solving skills and adaptability due to experience in backend systems."
+    ],
+    "weaknesses": [
+      "Lacks relevant experience in fishing or maritime activities, which is essential for the role.",
+      "No evidence of physical fitness or comfort with heavy, repetitive manual work in all weathers.",
+      "No previous time on boats or sea experience, which is strongly preferred for the position.",
+      "No history of fishing or handling boats, which is critical for performing tasks like handling crab and lobster pots, shooting nets, etc."
+    ],
+    "summary": "While Samantha Reed has strong problem-solving skills and is reliable, she lacks relevant maritime experience and the physical requirements necessary for the deckhand position.",
+    "candidate": "SamanthaOne",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "None directly applicable to the job description"
+    ],
+    "weaknesses": [
+      "Lacks maritime experience, physically demanding job, no match for essential requirements"
+    ],
+    "summary": "The candidate has no relevant experience or skills that align with the physical and maritime requirements of the position.",
+    "candidate": "SamanthaOne",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's sea legs are clearly met with previous experience on boats for leisure and sea angling. The ability to work early starts and long days when weather allows is a reasonable/close match as the candidate has worked odd hours and long shifts in the past. The candidate's physical fitness and comfort with heavy, repetitive manual work is unclear from the CV. Basic numeracy and reliability are not explicitly stated in the CV, so these are unclear. The candidate's punctuality is also unclear. There is no mention of a history of severe seasickness, so this is unclear as well.",
+    "candidate": "SamanthaOne",
+    "type": "essential_requirements"
+  }
+]

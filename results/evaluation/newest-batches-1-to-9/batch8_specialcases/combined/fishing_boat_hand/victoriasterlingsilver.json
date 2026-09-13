@@ -1,0 +1,38 @@
+[
+  {
+    "score": 1,
+    "strengths": [
+      "Demonstrates strong leadership and problem-solving skills."
+    ],
+    "weaknesses": [
+      "Lacks relevant work experience in fishing or maritime activities.",
+      "Does not possess the physical fitness or willingness for manual labor.",
+      "Has a history of poor interpersonal skills, as evidenced by interview conduct.",
+      "Does not meet the essential requirement of having sea legs or boat experience.",
+      "Lacks numeracy skills related to fish grading and catch tallies."
+    ],
+    "summary": "The candidate's technical skills and leadership experience are not relevant to the physically demanding, maritime-focused role, and their conduct suggests potential cultural incompatibility.",
+    "candidate": "VictoriaSterlingSilver",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "strong technical background",
+      "leadership experience"
+    ],
+    "weaknesses": [
+      "no relevant maritime experience",
+      "behavioral concerns from interview",
+      "lack of physical labor skills"
+    ],
+    "summary": "The candidate's technical and leadership experience is impressive, but she lacks any relevant maritime experience and her behavior during the interview raises significant concerns about her fit for the role and team.",
+    "candidate": "VictoriaSterlingSilver",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's experience and skills in software engineering, leadership, and technical reviews closely match the essential requirements of the role. However, the candidate's experience is primarily in software development, with no evidence of physical work or sea experience. The requirement for physical fitness and comfort with heavy, repetitive manual work in all weathers and previous time on boats is not met. The candidate's willingness to work early starts and long days is implied by their history of delivering on tight schedules. Basic numeracy for catch tallies and grading is not relevant to the candidate's background.",
+    "candidate": "VictoriaSterlingSilver",
+    "type": "essential_requirements"
+  }
+]

@@ -1,0 +1,8 @@
+{
+  "candidate": "NDLOVU KARABO REFILWE",
+  "final_score": 1,
+  "score_rationale": "The candidate's strengths in records management and compliance show some alignment with data handling, but the essential requirements for shipping production software with specific technologies (React, TypeScript, Go) and distributed systems experience are not met. The lack of domain knowledge and evidence of handling real-time systems is a significant gap.",
+  "key_strengths": "Experience in records management and compliance, which suggests strong organizational skills and attention to detail, potentially transferable to data handling aspects.",
+  "key_weaknesses": "No experience with full-stack development using React, TypeScript, or backend languages like Go. No demonstrated experience in distributed systems or event-driven architectures. Lack of energy sector domain knowledge.",
+  "final_evaluation": "The candidate does not appear to meet the essential requirements for the founding Full-Stack Engineer role at Pulsegrid. Their background is in records management and compliance, which lacks the core technical skills and experience needed for shipping complex real-time software systems, particularly with the required tech stacks and distributed systems knowledge."
+}

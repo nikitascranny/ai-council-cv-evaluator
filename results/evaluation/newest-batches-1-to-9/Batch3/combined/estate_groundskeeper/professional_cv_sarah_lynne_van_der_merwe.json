@@ -1,0 +1,39 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Demonstrates strong leadership and team coordination skills.",
+      "Experience in customer engagement and service delivery."
+    ],
+    "weaknesses": [
+      "Lacks direct experience in groundskeeping or countryside management.",
+      "No proven experience in tracking, search & rescue, or military activities.",
+      "No familiarity with working with animals, particularly hounds.",
+      "No evidence of working in remote or physically demanding environments.",
+      "No experience with firearms or airsoft equipment.",
+      "Lacks specific experience in immersive theatre or private security work."
+    ],
+    "summary": "Sarah Lynne has strong leadership and customer engagement skills but lacks the specific experience and background in groundskeeping, tracking, and physical demands required for this role.",
+    "candidate": "professional_cv_sarah_lynne_van_der_merwe",
+    "model": "phi4"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "commercial mindset",
+      "customer engagement skills"
+    ],
+    "weaknesses": [
+      "lack of physical fitness and outdoor experience",
+      "no tracking or pursuit background"
+    ],
+    "summary": "Candidate lacks essential outdoor and physical skills required for the role, with no relevant experience in tracking or managing rough terrain.",
+    "candidate": "professional_cv_sarah_lynne_van_der_merwe",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's experience as a Senior Retail Team Leader closely matches the requirement for excellent physical fitness and the ability to work alone in remote locations. The professional experience section does not clearly demonstrate groundskeeping, gamekeeping, or countryside management experience, though it shows leadership and operational management skills. The candidate's educational background in business administration and leadership development is relevant but does not directly address the specific job requirements.",
+    "candidate": "professional_cv_sarah_lynne_van_der_merwe",
+    "type": "essential_requirements"
+  }
+]

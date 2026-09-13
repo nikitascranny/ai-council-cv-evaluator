@@ -1,0 +1,39 @@
+[
+  {
+    "score": 7,
+    "strengths": [
+      "Strong programming skills in Python and familiarity with Scratch, which aligns with supporting KS3 programming activities.",
+      "Experience as a Peer Programming Facilitator demonstrates ability to work with young people and teach technical skills.",
+      "Relevant IT and software development experience with tools such as Git, GitHub, Docker, and experience with web technologies.",
+      "Proven collaborative skills and ability to work in team settings, important for the role's dual focus on technical and educational tasks."
+    ],
+    "weaknesses": [
+      "Lacks specific experience with Windows 11, Microsoft 365, or Intune, which are essential for the IT Technician part of the role.",
+      "No demonstrated experience with Google Workspace or Classroom administration, which is desirable for maintaining VLE and school website content.",
+      "Limited direct experience with device imaging, deployment, and network management, which are key responsibilities of the role.",
+      "Does not mention experience or skills in safeguarding, which is a critical requirement for the position."
+    ],
+    "summary": "Naledi Molefe has strong programming skills and experience in education, but needs to develop specific IT skills and safeguarding knowledge to fully meet the job requirements.",
+    "candidate": "beginner_sa",
+    "model": "phi4"
+  },
+  {
+    "score": 7,
+    "strengths": [
+      "strong programming skills",
+      "experience with web development"
+    ],
+    "weaknesses": [
+      "lack of IT support experience",
+      "no direct experience in an educational setting"
+    ],
+    "summary": "Naledi Molefe is a skilled developer but lacks direct IT support and educational experience, which are essential for the role.",
+    "candidate": "beginner_sa",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate clearly meets the requirement for practical IT support experience and has a working knowledge of Windows 11 and Microsoft 365. Their ability in Python and Scratch is a reasonable match for the basic programming requirement. The candidate’s enthusiasm for working with young people and their commitment to school policies are clearly met. However, there is no clear evidence of experience with device management tools like Intune, and the candidate's willingness to undergo background checks is not explicitly stated.",
+    "candidate": "beginner_sa",
+    "type": "essential_requirements"
+  }
+]

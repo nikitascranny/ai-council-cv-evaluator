@@ -1,0 +1,39 @@
+[
+  {
+    "score": 2,
+    "strengths": [
+      "The candidate has leadership experience and a degree in Business Administration.",
+      "Demonstrates some degree of initiative in starting a consultancy business."
+    ],
+    "weaknesses": [
+      "Lacks practical IT support experience and technical skills required for the role.",
+      "No relevant experience in education or IT services.",
+      "Lacks enthusiasm and ability to work with young people, which is crucial for the role.",
+      "Absence of technical skills such as Windows 11, Microsoft 365, or device management.",
+      "No evidence of programming ability or experience with educational technology."
+    ],
+    "summary": "The candidate lacks the technical skills, relevant experience, and enthusiasm for working with young people necessary for the IT Technician & Coding Enrichment Lead role.",
+    "candidate": "bad_cv_sarah_lynne_van_der_merwe",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Motivational quotes on social media",
+      "Won a raffle"
+    ],
+    "weaknesses": [
+      "Irrelevant work experience",
+      "Lack of technical skills",
+      "No clear evidence of enthusiasm for working with young people"
+    ],
+    "summary": "The candidate lacks the technical skills and relevant experience required for the IT Technician role, with no clear indication of interest in working with young people or in education settings.",
+    "candidate": "bad_cv_sarah_lynne_van_der_merwe",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's experience is not clearly aligned with the IT support role, but they demonstrate relevant skills in leadership and management. Their ability to explain concepts clearly, as evidenced by their motivational quotes and leadership initiatives, could reasonably transfer to teaching technology. However, there is no clear evidence of IT support experience or proficiency in Windows 11, Microsoft 365, or programming. The candidate's understanding of safeguarding and willingness to undergo checks is unclear, though they have a strong work ethic and achievements that could indicate a genuine enthusiasm for working with people.",
+    "candidate": "bad_cv_sarah_lynne_van_der_merwe",
+    "type": "essential_requirements"
+  }
+]

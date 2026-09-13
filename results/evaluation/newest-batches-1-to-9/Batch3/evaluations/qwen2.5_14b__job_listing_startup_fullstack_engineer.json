@@ -1,0 +1,81 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Practical problem-solving skills",
+      "Adaptability and resilience"
+    ],
+    "weaknesses": [
+      "Lack of technical skills and experience",
+      "No relevant industry experience"
+    ],
+    "summary": "Kevin Jones lacks the technical background and specific industry experience required for the position, but demonstrates adaptability and problem-solving skills.",
+    "candidate": "professional_cv_kevin_jones"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Passionate about leadership roles",
+      "Attempts to drive brand initiatives"
+    ],
+    "weaknesses": [
+      "Lacks relevant technical skills and experience",
+      "No concrete achievements or verifiable work history",
+      "Misalignment with the role's requirements"
+    ],
+    "summary": "The candidate does not align with the technical and experience requirements of the Founding Full-Stack Engineer role at Pulsegrid.",
+    "candidate": "bad_cv_sarah_lynne_van_der_merwe"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Adaptability in fast-moving environments",
+      "Customer service and complaint resolution"
+    ],
+    "weaknesses": [
+      "Lack of relevant technical skills and experience",
+      "No experience in software development or full-stack engineering",
+      "No experience with the specific technologies mentioned in the job description"
+    ],
+    "summary": "The candidate lacks the necessary technical skills and experience in software development and full-stack engineering, which are core requirements for the position.",
+    "candidate": "professional_cv_jason_muller"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Business development and brand positioning",
+      "Customer experience improvement"
+    ],
+    "weaknesses": [
+      "Lack of technical background",
+      "No experience in software development",
+      "No experience with the technologies mentioned in the job description"
+    ],
+    "summary": "The candidate does not meet the technical requirements of the role and lacks relevant experience in software engineering or energy sector technologies.",
+    "candidate": "professional_cv_sarah_lynne_van_der_merwe"
+  },
+  {
+    "score": 1,
+    "strengths": [
+      "Minimal responsibility preferred"
+    ],
+    "weaknesses": [
+      "Lacks relevant work experience, skills, and alignment with job requirements"
+    ],
+    "summary": "Candidate is completely unsuitable for the position due to a total mismatch between the job requirements and the candidate's background and aspirations.",
+    "candidate": "bad_cv_jason_muller"
+  },
+  {
+    "score": 1,
+    "strengths": [
+      "willing to work",
+      "can provide explanations for employment gaps"
+    ],
+    "weaknesses": [
+      "lacks relevant technical skills and experience",
+      "poor fit for the company culture"
+    ],
+    "summary": "The candidate is a poor fit for the position due to a lack of relevant technical skills, experience, and cultural alignment with the company.",
+    "candidate": "bad_cv_kevin_jones"
+  }
+]

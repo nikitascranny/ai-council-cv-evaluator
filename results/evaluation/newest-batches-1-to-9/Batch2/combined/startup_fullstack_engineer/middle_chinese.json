@@ -1,0 +1,40 @@
+[
+  {
+    "score": 7,
+    "strengths": [
+      "Strong backend skills in Java, Spring Boot, and familiarity with Go's alternative, FastAPI",
+      "Experience with frontend technologies including TypeScript and React alternatives",
+      "Proven track record in building scalable, real-time systems using Kafka and Redis",
+      "Leadership experience in mentoring and technical planning",
+      "Experience with CI/CD and cloud infrastructure aligns with engineering team needs"
+    ],
+    "weaknesses": [
+      "Limited direct experience with TypeScript and React, which are crucial for the frontend responsibilities",
+      "No explicit experience with TimescaleDB or specific energy sector domain knowledge",
+      "Less experience in a startup environment, as most work is with established companies",
+      "Limited exposure to distributed systems fundamentals in production environments"
+    ],
+    "summary": "The candidate has strong backend and system design skills, with some frontend experience, but would need upskilling in TypeScript/React and domain-specific knowledge for energy sector challenges.",
+    "candidate": "middle_chinese",
+    "model": "phi4"
+  },
+  {
+    "score": 7,
+    "strengths": [
+      "excellent backend experience with Java, Kotlin, Spring Boot",
+      "proven success in reducing duplicate order incidents"
+    ],
+    "weaknesses": [
+      "lacks experience with Go and TypeScript (front-end)",
+      "no explicit mention of working in a startup or early-stage company environment"
+    ],
+    "summary": "Zhang Wei is a strong backend engineer with significant experience in Java, Kotlin, and Spring Boot, but lacks direct experience with the required Go and TypeScript technologies and has no experience in early-stage startups.",
+    "candidate": "middle_chinese",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate clearly meets the requirement for experience in shipping production software with strong TypeScript/React skills. Experience with backend languages is a reasonable match, as the candidate has worked with both Node.js and Java. However, there is no clear indication of experience operating services in production, comfort with ambiguity, or a solid grasp of distributed systems fundamentals. The candidate's communication skills are not evidenced in the provided CV, and there is no specific mention of interest in energy, climate, or real-world problems.",
+    "candidate": "middle_chinese",
+    "type": "essential_requirements"
+  }
+]

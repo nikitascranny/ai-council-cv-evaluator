@@ -1,0 +1,26 @@
+[
+  {
+    "summary": "The candidate has no clear experience shipping production software, which is a core requirement. Their role at Uncle Dave’s Car Wash demonstrates some customer service and management skills, which could be transferable, but not directly related to the technical requirements. The Crypto Entrepreneur role shows the candidate's ability to handle ambiguity and learn quickly, which aligns with the need for comfort with velocity. The candidate lacks formal education, making it unclear how they developed a solid grasp of distributed systems fundamentals.",
+    "candidate": "bad_cv_jason_muller"
+  },
+  {
+    "summary": "The candidate has relevant experience in shipping production software, which aligns with the 4+ years requirement. The experience in various roles, including the call centre, demonstrates comfort with ambiguity and velocity. However, the lack of specific technical experience in TypeScript/React or backend languages, as well as the absence of detailed experience with operations in production, makes it unclear whether the candidate meets these requirements. The education level is not a clear match for the job's requirements, and the employment history is concerning due to the gaps and the nature of the roles.",
+    "candidate": "bad_cv_kevin_jones"
+  },
+  {
+    "summary": "The candidate does not clearly meet the requirement for shipping production software with strong experience in TypeScript/React and a backend language. However, the role experience shows some transferable skills in leading initiatives and managing operations, which might be relevant for operating services in production. The candidate's communication skills are demonstrated through various achievements and roles, but there is no clear evidence of a solid grasp of distributed systems fundamentals. The candidate's role in consulting and advising businesses shows a general excitement for real-world problems, but this is not as specific as required.",
+    "candidate": "bad_cv_sarah_lynne_van_der_merwe"
+  },
+  {
+    "summary": "The candidate demonstrates strong communication skills and comfort with ambiguity through their role as an Independent Digital Asset Researcher. However, there is no evidence of relevant software development or distributed systems experience. The role at Uncle Dave’s Car Wash shows leadership and operational skills but does not directly align with the technical requirements of the job.",
+    "candidate": "professional_cv_jason_muller"
+  },
+  {
+    "summary": "The candidate's experience in shipping production software is unclear, and they do not demonstrate strong experience in TypeScript/React or backend languages. However, their adaptability and communication skills could be transferable to the role. Their experience in customer service and communication aligns with the requirement for excellent communication, but their technical experience does not meet the essential requirements.",
+    "candidate": "professional_cv_kevin_jones"
+  },
+  {
+    "summary": "The candidate does not clearly meet the requirement for shipping production software, but their role as a Senior Retail Team Leader and experience in managing end-to-end processes, including operations and team coordination, provides a reasonable close match. The candidate's background in business administration and leadership development offers relevant transferable skills, but does not directly address the technical and distributed systems knowledge required. Their energy and passion for practical business improvement initiatives could be seen as a match for the interest in real-world problems.",
+    "candidate": "professional_cv_sarah_lynne_van_der_merwe"
+  }
+]

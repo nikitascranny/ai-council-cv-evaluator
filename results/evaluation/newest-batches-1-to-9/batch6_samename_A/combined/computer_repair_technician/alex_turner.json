@@ -1,0 +1,36 @@
+[
+  {
+    "score": 4,
+    "strengths": [
+      "Strong technical background in programming languages such as Go and Python.",
+      "Experience in working with backend systems and APIs, demonstrating problem-solving skills."
+    ],
+    "weaknesses": [
+      "Lacks specific experience in hardware repair and hands-on computer maintenance.",
+      "No direct experience with customer service in a retail setting.",
+      "No demonstrated skills in diagnosing and fixing common hardware issues such as RAM reseating or virus clean-ups."
+    ],
+    "summary": "Alex Turner has a strong technical foundation and problem-solving skills, but lacks the specific hardware repair and customer service experience required for the computer repair role at Brenda & Mick's.",
+    "candidate": "Alex Turner",
+    "model": "phi4"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "programming skills",
+      "relevant education"
+    ],
+    "weaknesses": [
+      "lack of practical repair experience",
+      "no experience with retail customer service"
+    ],
+    "summary": "Alex Turner has strong technical skills and educational background, but lacks the practical computer repair and customer service experience required for the role.",
+    "candidate": "Alex Turner",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's skills in software engineering and technical expertise demonstrate a reasonable match to the basic PC/laptop repair skills requirement, as these skills can be transferable. Their ability to explain things without jargon and their friendly demeanor are not clearly evidenced but are a reasonable assumption given their background. The requirement to work Saturdays is unclear from the CV, as no specific mention of weekend work is provided. The candidate's location is also unclear, as no information is given regarding their ability to get to Tillingford reliably.",
+    "candidate": "Alex Turner",
+    "type": "essential_requirements"
+  }
+]

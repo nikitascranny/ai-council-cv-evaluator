@@ -1,0 +1,38 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Demonstrates adaptability and strong communication skills, which are valuable in management roles.",
+      "Experienced in customer service and client communication, relevant for interfacing with product and design teams."
+    ],
+    "weaknesses": [
+      "Lacks professional experience in web/software engineering, which is essential for this role.",
+      "No evidence of technical leadership or experience with the specified technologies (React/TypeScript, Node.js, .NET, AWS).",
+      "No prior experience in leading engineering teams or managing technical projects.",
+      "Education and experience do not align with the required 5+ years of engineering and technical management background."
+    ],
+    "summary": "The candidate has strong communication and adaptability skills but lacks the necessary technical and leadership experience in web/software engineering required for this role.",
+    "candidate": "professional_cv_kevin_jones",
+    "model": "phi4"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "practical problem-solving",
+      "adaptability"
+    ],
+    "weaknesses": [
+      "lack of technical background",
+      "no relevant web/software engineering experience",
+      "inadequate leadership experience in technical roles"
+    ],
+    "summary": "The candidate lacks the essential technical and leadership experience in web/software engineering, but demonstrates adaptability and problem-solving skills in various operational roles.",
+    "candidate": "professional_cv_kevin_jones",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's experience does not clearly meet the essential requirement of 5+ years of professional web/software engineering experience. However, their adaptable nature and experience in managing teams could be seen as a reasonable close match for leading teams through significant technical change. Communication skills are evidenced in their customer service and management roles, making this requirement a close match. The CV lacks specific technical skills in modern web stacks and cloud infrastructure, which are clearly not met.",
+    "candidate": "professional_cv_kevin_jones",
+    "type": "essential_requirements"
+  }
+]

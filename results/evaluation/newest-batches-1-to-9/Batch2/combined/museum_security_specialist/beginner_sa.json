@@ -1,0 +1,35 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Demonstrates strong programming and development skills.",
+      "Experience with cross-functional team collaboration and problem-solving."
+    ],
+    "weaknesses": [
+      "Lacks experience in security roles, especially within museum or heritage settings.",
+      "No evidence of experience with CCTV, alarm systems, or access-control systems.",
+      "No physical or on-site security experience.",
+      "Does not possess a valid SIA Door Supervisor or Security Guarding license."
+    ],
+    "summary": "While the candidate has strong technical and collaborative skills, they lack the specific experience and qualifications required for a Museum Security Specialist role.",
+    "candidate": "beginner_sa",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Proficient in software development and technical tools"
+    ],
+    "weaknesses": [
+      "Lacks experience in security roles, no SIA license, no experience with security systems"
+    ],
+    "summary": "Candidate's background in software development and technical skills are not aligned with the museum security role requirements.",
+    "candidate": "beginner_sa",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's experience in a security role for at least 3 years (3+ years) and ability to patrol a large multi-floor site for extended periods meet the requirements. A valid SIA Door Supervisor or Security Guarding licence is clearly not listed, though no regional equivalent is mentioned. Working knowledge of CCTV and intruder alarm systems is indicated, though not explicitly stated. Strong written and verbal communication skills, with experience in writing incident reports, are evident. The ability to remain calm and make sound decisions under pressure is reasonably inferred from the security experience. Flexible working hours, including early, late, weekends, and occasional overnight shifts, are also clearly demonstrated.",
+    "candidate": "beginner_sa",
+    "type": "essential_requirements"
+  }
+]

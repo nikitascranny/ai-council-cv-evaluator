@@ -1,0 +1,37 @@
+[
+  {
+    "score": 4,
+    "strengths": [
+      "Strong leadership and team coordination skills demonstrated in previous retail roles.",
+      "Experience in operational management and stakeholder communication."
+    ],
+    "weaknesses": [
+      "Lacks direct experience in fishing or maritime environments.",
+      "No evidence of physical fitness or comfort with manual labor.",
+      "No prior experience with boat handling or sea survival training.",
+      "Absence of relevant numeracy skills for catch tallying and grading."
+    ],
+    "summary": "The candidate shows strong leadership and operational management skills, but lacks direct maritime experience, physical fitness evidence, and relevant technical skills for the role.",
+    "candidate": "professional_cv_sarah_lynne_van_der_merwe",
+    "model": "phi4"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Business development and brand positioning",
+      "Retail operations and team leadership"
+    ],
+    "weaknesses": [
+      "No experience in fishing or boat-handing",
+      "No relevant sea or maritime experience"
+    ],
+    "summary": "The candidate lacks any experience related to fishing, boating, or maritime work, which are essential for the position.",
+    "candidate": "professional_cv_sarah_lynne_van_der_merwe",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate does not clearly meet the requirement for physical fitness and comfort with heavy, repetitive manual work, nor for basic numeracy for catch tallies and grading. However, their relevant retail experience in managing daily operations and team coordination shows reliability and punctuality, which aligns with the need for reliability and punctuality. Their leadership experience and business administration studies provide a reasonable match for the need for sea legs and early starts, as these roles and studies demonstrate strong organizational and adaptability skills.",
+    "candidate": "professional_cv_sarah_lynne_van_der_merwe",
+    "type": "essential_requirements"
+  }
+]

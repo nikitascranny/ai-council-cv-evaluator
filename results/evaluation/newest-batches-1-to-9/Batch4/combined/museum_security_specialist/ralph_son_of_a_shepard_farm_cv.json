@@ -1,0 +1,38 @@
+[
+  {
+    "score": 5,
+    "strengths": [
+      "Demonstrates strong independent work ethic and ability to handle responsibilities in demanding conditions, relevant for the museum role.",
+      "Possesses skills in record keeping and safety procedures, which are transferable to security and incident report writing.",
+      "Experience in monitoring animal condition and behavior is analogous to the vigilance required for security monitoring."
+    ],
+    "weaknesses": [
+      "Lacks direct experience in security roles or working in a museum/gallery environment.",
+      "Does not have a valid SIA Door Supervisor or Security Guarding licence, which is an essential requirement.",
+      "Missing knowledge of CCTV, intruder alarm, and access-control systems, which are critical for the role."
+    ],
+    "summary": "The candidate has relevant soft skills and a strong independent work ethic but lacks direct security experience and specific qualifications required for the Museum Security Specialist role.",
+    "candidate": "Ralph_Son_of_a_Shepard_Farm_CV",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "dependable and safety-conscious",
+      "excellent record keeping and attention to detail"
+    ],
+    "weaknesses": [
+      "lack of relevant security experience",
+      "no SIA license or security qualifications",
+      "no familiarity with CCTV, alarm, or access-control systems"
+    ],
+    "summary": "Ralph Son of A Shepard does not meet the essential requirements for the Museum Security Specialist position and lacks the necessary security-related experience and qualifications.",
+    "candidate": "Ralph_Son_of_a_Shepard_Farm_CV",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's experience in farm operations, particularly in monitoring animal welfare and handling equipment, closely matches the requirement for strong communication skills and the ability to make sound decisions under pressure. However, the role does not demonstrate the specific experience in a security setting or the relevant licensing, and the physical endurance for patrolling large multi-floor sites is not explicitly shown. ",
+    "candidate": "Ralph_Son_of_a_Shepard_Farm_CV",
+    "type": "essential_requirements"
+  }
+]

@@ -1,0 +1,36 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Demonstrates strong work ethic and punctuality through software engineering roles.",
+      "Possesses problem-solving skills and attention to detail from experience with testing and debugging."
+    ],
+    "weaknesses": [
+      "Lacks relevant experience in fishing or marine environments.",
+      "No experience with manual, physical labor or working in outdoor, weather-dependent conditions.",
+      "Missing necessary sea legs and familiarity with boat operations.",
+      "No history of working with maritime safety procedures or PPE."
+    ],
+    "summary": "Jordan Mitchell has strong analytical and problem-solving skills but lacks relevant experience and physical suitability for the demanding role of a boat hand on a fishing vessel.",
+    "candidate": "JordanMitchell5Star",
+    "model": "phi4"
+  },
+  {
+    "score": 1,
+    "strengths": [
+      "None directly related to the job"
+    ],
+    "weaknesses": [
+      "Lack of maritime or fishing experience",
+      "No physical labor or manual work background"
+    ],
+    "summary": "The candidate has no relevant experience or skills that align with the job requirements for a boat hand on a fishing vessel.",
+    "candidate": "JordanMitchell5Star",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate does not clearly meet the essential requirements for the position. Their experience in software engineering and technical skills are a reasonable match, but there is no evidence of physical fitness, comfort with manual work, sea legs, basic numeracy for catch tallies, willingness to work early starts and long days, or a history of seasickness. The job would likely require a candidate with a different set of skills and experiences.",
+    "candidate": "JordanMitchell5Star",
+    "type": "essential_requirements"
+  }
+]

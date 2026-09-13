@@ -1,0 +1,38 @@
+[
+  {
+    "score": 2,
+    "strengths": [
+      "Fast learner when motivated"
+    ],
+    "weaknesses": [
+      "Lacks professional web/software engineering experience",
+      "No evidence of line-managing engineers",
+      "No relevant technical skills in modern web stacks (React/TypeScript, Node.js, .NET)",
+      "No proven experience in leading teams through significant technical change",
+      "Limited relevant work experience and education in software engineering"
+    ],
+    "summary": "The candidate lacks the required technical skills, relevant experience, and leadership background necessary for the Engineering Manager role at Northlight Digital.",
+    "candidate": "bad_cv_jason_muller",
+    "model": "phi4"
+  },
+  {
+    "score": 1,
+    "strengths": [
+      "Minimalistic work ethic",
+      "Fast learner when motivated"
+    ],
+    "weaknesses": [
+      "Lack of relevant professional experience",
+      "Insufficient technical skills",
+      "Inadequate leadership qualities"
+    ],
+    "summary": "The candidate lacks the necessary technical skills, relevant work experience, and leadership qualities required for the Engineering Manager position.",
+    "candidate": "bad_cv_jason_muller",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate does not clearly meet the requirement for professional web/software engineering experience or line management. The crypto entrepreneurship experience might be a reasonable close match for agile delivery, but there is no evidence of technical experience. The communication skills, while not clearly evidenced, could be inferred from the varied experience. There is no clear evidence of technical stacks, cloud infrastructure, or significant technical change leadership.",
+    "candidate": "bad_cv_jason_muller",
+    "type": "essential_requirements"
+  }
+]

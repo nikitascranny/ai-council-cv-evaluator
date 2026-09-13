@@ -1,0 +1,37 @@
+[
+  {
+    "score": 5,
+    "strengths": [
+      "Demonstrates strong organizational skills and experience with data analysis, which are transferable to IT asset management and reporting.",
+      "Has experience in administrative coordination, which could be beneficial for managing technology asset registers and coordinating IT tasks.",
+      "Possesses communication skills useful for working with young people and explaining technology."
+    ],
+    "weaknesses": [
+      "Lacks direct IT support experience, specifically in a school or similar environment, which is a key requirement for the role.",
+      "No demonstrated knowledge or experience with Windows 11, Microsoft 365, or Intune, essential for device management.",
+      "No experience with programming or coding, particularly in Python or Scratch, which is necessary for supporting coding enrichment activities."
+    ],
+    "summary": "The candidate has relevant administrative and analytical skills but lacks direct IT support experience and specific technical knowledge required for the role.",
+    "candidate": "PONTUS PONTIOUS",
+    "model": "phi4"
+  },
+  {
+    "score": 4,
+    "strengths": [
+      "Strong analytical and organizational skills",
+      "Experience in data analysis and reporting"
+    ],
+    "weaknesses": [
+      "Lacks direct experience in educational IT support",
+      "No programming skills mentioned"
+    ],
+    "summary": "Pontus Pontious has strong analytical skills but lacks direct experience in educational IT support and programming, which are crucial for this role.",
+    "candidate": "PONTUS PONTIOUS",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's experience as an ICT Administrator and Administrative Assistant provides relevant IT support experience and demonstrates organizational skills. Their experience with data analysis and report preparation aligns with the need for basic programming ability, as they can likely assist in simple data visualizations. Their role as a Case Assessment Officer and Administrative Assistant involves interaction with clients, which may be considered a reasonable match for working with young people. The candidate's educational background does not directly meet the requirements for a programming language like Python or Scratch. The CV lacks explicit evidence of working knowledge of Windows 11, Microsoft 365, or Intune. There is no indication of the candidate's enthusiasm for working with young people or their understanding of safeguarding policies. The candidate is willing to undergo a DBS check, as per the job description.",
+    "candidate": "PONTUS PONTIOUS",
+    "type": "essential_requirements"
+  }
+]

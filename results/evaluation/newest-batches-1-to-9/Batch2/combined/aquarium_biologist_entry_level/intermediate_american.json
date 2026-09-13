@@ -1,0 +1,36 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Strong analytical and problem-solving skills demonstrated through experience in backend services and systems.",
+      "Good understanding of data management with experience in PostgreSQL, which can relate to water quality data management."
+    ],
+    "weaknesses": [
+      "Lack of relevant education or experience in marine biology, zoology, or related life sciences.",
+      "No experience in physical, hands-on work related to aquatic animal husbandry or life support systems.",
+      "No demonstrated knowledge of water chemistry or nitrogen cycle, which are essential for the role."
+    ],
+    "summary": "The candidate has strong technical and analytical skills, but lacks the relevant educational background and hands-on experience required for the Aquarium Biologist position.",
+    "candidate": "intermediate_american",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong technical background",
+      "Proven track record in software development and system integration"
+    ],
+    "weaknesses": [
+      "Lacks relevant marine biology or aquatic animal husbandry experience",
+      "No evidence of practical experience with aquatic life support systems"
+    ],
+    "summary": "The candidate has a strong background in software engineering but lacks any relevant experience in marine biology or aquatic life support systems, making them a poor fit for the position.",
+    "candidate": "intermediate_american",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate does not meet the essential requirement of a degree in Marine Biology, Zoology, Aquatic Biology or a related life science. However, their strong work ethic and physical fitness, as evidenced by their ability to lift up to 25 kg and work in various environments, are reasonable close matches. The requirement for basic understanding of water chemistry and the nitrogen cycle is unclear from the CV. The candidate’s ability to work weekends and during early mornings on a rota basis is clearly met.",
+    "candidate": "intermediate_american",
+    "type": "essential_requirements"
+  }
+]

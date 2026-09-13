@@ -1,0 +1,39 @@
+[
+  {
+    "score": 8,
+    "strengths": [
+      "Extensive experience in redesigning monolithic systems into microservices, aligning with the job's focus on replatforming.",
+      "Strong leadership skills demonstrated by managing teams of up to 7 engineers across time zones, relevant for line-managing the Web Development team.",
+      "Proven track record in improving system reliability and infrastructure efficiency, crucial for managing customer-facing services.",
+      "Familiarity with AWS, aligning with the company's technical stack and infrastructure needs.",
+      "Certified AWS Solutions Architect Professional, indicating deep knowledge in cloud infrastructure."
+    ],
+    "weaknesses": [
+      "No direct experience with React/TypeScript or Node.js, which are specified as desired technologies for the role.",
+      "Lack of explicit experience in leading teams through accessibility (WCAG) or performance optimization.",
+      "Limited exposure to .NET technologies, which are part of the job's tech stack."
+    ],
+    "summary": "Taylor Okafor is a strong candidate with significant experience in leading technical transformations and managing engineering teams, though lacking specific experience with the web technologies and .NET mentioned in the job description.",
+    "candidate": "TaylorGraphics",
+    "model": "phi4"
+  },
+  {
+    "score": 7,
+    "strengths": [
+      "Strong background in backend systems and architecture",
+      "Proven experience in team management and technical leadership"
+    ],
+    "weaknesses": [
+      "Lack of experience with React/TypeScript frontend frameworks",
+      "No direct experience in travel or transport sector"
+    ],
+    "summary": "Taylor Okafor is a strong candidate with extensive technical and managerial experience but lacks direct experience with the frontend technologies and specific industry mentioned in the job description.",
+    "candidate": "TaylorGraphics",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate clearly meets the requirement of 5+ years of professional web/software engineering experience and the ability to line manage engineers. Their experience leading a team through significant technical change and their certifications in cloud infrastructure also closely match the requirements. However, the exact experience with React/TypeScript is unclear from the CV, and while they have experience in CI/CD, it is not specified as using Jenkins and Docker.",
+    "candidate": "TaylorGraphics",
+    "type": "essential_requirements"
+  }
+]

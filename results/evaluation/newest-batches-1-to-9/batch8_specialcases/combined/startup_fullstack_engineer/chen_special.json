@@ -1,0 +1,39 @@
+[
+  {
+    "score": 7,
+    "strengths": [
+      "Has 4+ years of experience shipping production software, fulfilling the essential experience requirement.",
+      "Strong skills in Go and Python, aligning with the backend language skills required for the role.",
+      "Experience with API development and optimization, relevant to the product surface ownership in the role.",
+      "Demonstrated ability to work in a fast-paced environment with high transaction volumes, similar to the intense, chaotic nature of the job."
+    ],
+    "weaknesses": [
+      "Lack of explicit experience with React/TypeScript, which is a key requirement for the frontend aspects of the role.",
+      "No direct experience with Kafka, TimescaleDB, or Redis, which are critical for the event-driven data platform scaling.",
+      "Limited demonstrated experience with observability, alerting, and on-call participation, which are essential for owning services in production.",
+      "No evidence of direct customer interaction or shaping product roadmaps with founders and customers."
+    ],
+    "summary": "The candidate has a strong technical background and relevant experience in production software and backend development, but lacks specific skills in frontend technologies and certain tools critical for the role.",
+    "candidate": "Chen_Special",
+    "model": "phi4"
+  },
+  {
+    "score": 5,
+    "strengths": [
+      "有Python和Go的编程经验，适合后端开发",
+      "有PostgreSQL经验，符合数据库要求"
+    ],
+    "weaknesses": [
+      "缺少前端开发经验，特别是React/TypeScript",
+      "缺少能源领域或分布式系统的核心知识"
+    ],
+    "summary": "陈伟明在后端开发方面有不错的经验，但前端和能源领域知识不足，可能需要额外培训。",
+    "candidate": "Chen_Special",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate clearly meets the requirement for shipping production software with strong experience in TypeScript/React and has some backend language experience, though it is not specified which language. The experience with operating services in production, explaining technical trade-offs, and a general comfort with ambiguity and velocity are reasonable matches. The candidate's background does not provide clear evidence of extensive experience with distributed systems fundamentals, and there is no explicit mention of the candidate's excitement about energy, climate, or hard real-world problems.",
+    "candidate": "Chen_Special",
+    "type": "essential_requirements"
+  }
+]

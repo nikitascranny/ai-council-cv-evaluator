@@ -1,0 +1,37 @@
+[
+  {
+    "score": 4,
+    "strengths": [
+      "Good general organizational and technical skills demonstrated through complex software projects.",
+      "Experience in team settings and project leadership, as evidenced by leading the development of a major service."
+    ],
+    "weaknesses": [
+      "Lacks direct experience in administrative or secretarial roles.",
+      "No evidence of proficiency in Microsoft Office applications required for the role.",
+      "No direct experience in handling client interactions or managing diaries."
+    ],
+    "summary": "The candidate has strong technical skills and leadership experience, but lacks direct administrative experience and specific skills required for the role.",
+    "candidate": "middle_sa",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong technical background in software engineering",
+      "Experience in API development and system integration"
+    ],
+    "weaknesses": [
+      "Lack of relevant administrative or secretarial experience",
+      "No evidence of skills in Microsoft Office Suite",
+      "No experience in accounting or professional services"
+    ],
+    "summary": "The candidate's technical background is impressive but completely mismatched with the administrative and secretarial role requirements.",
+    "candidate": "middle_sa",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's BEng Computer Engineering degree and AWS Certified Developer – Associate certification demonstrate strong technical skills and knowledge, which are a reasonable match for the required working knowledge of Microsoft Office applications. However, there is no clear evidence of secretarial, receptionist, or office administration experience, nor is there evidence of typing speed, phone manner, client interaction, or handling confidential information.",
+    "candidate": "middle_sa",
+    "type": "essential_requirements"
+  }
+]

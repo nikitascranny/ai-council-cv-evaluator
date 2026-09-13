@@ -1,0 +1,38 @@
+[
+  {
+    "score": 7,
+    "strengths": [
+      "Strong experience in backend development with Java, Kotlin, and Spring Boot, which is relevant for the Node.js and .NET requirements.",
+      "Proven leadership skills demonstrated by mentoring junior engineers and leading technical design reviews.",
+      "Experience with CI/CD and cloud infrastructure, particularly with Alibaba Cloud, which aligns with the role's requirement for AWS knowledge.",
+      "Hands-on experience in improving developer velocity and implementing observability through OpenTelemetry."
+    ],
+    "weaknesses": [
+      "Lacks specific experience with React/TypeScript frontend technologies required for the role.",
+      "No direct experience with AWS, though there is a background in cloud infrastructure with Alibaba Cloud.",
+      "Limited experience with accessibility standards and inclusive design practices, which are desirable for the role."
+    ],
+    "summary": "The candidate has strong backend development and leadership experience, aligning well with the role's requirements, though they need upskilling in React/TypeScript and AWS.",
+    "candidate": "middle_chinese",
+    "model": "phi4"
+  },
+  {
+    "score": 7,
+    "strengths": [
+      "Strong background in backend and frontend development, including Java, Kotlin, Python, Vue.js, TypeScript",
+      "Experience in cloud infrastructure, CI/CD, and DevOps practices"
+    ],
+    "weaknesses": [
+      "Lacks experience with AWS, which is preferred by Northlight Digital",
+      "Limited experience in travel or transport systems, which is desirable"
+    ],
+    "summary": "张伟具有技术开发背景和DevOps实践经验，但缺少Northlight Digital所需的具体技术和行业经验。",
+    "candidate": "middle_chinese",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate clearly meets the requirement for 5+ years of professional web/software engineering experience and has a reasonable match with 2+ years of line management experience. The candidate's background includes relevant web stacks like React/TypeScript and a backend language, which is a reasonable match for the ideal modern web stack. However, it is unclear if the candidate has led significant technical change projects, and there is no clear evidence of experience with CI/CD, cloud infrastructure, or agile delivery with distributed teams.",
+    "candidate": "middle_chinese",
+    "type": "essential_requirements"
+  }
+]

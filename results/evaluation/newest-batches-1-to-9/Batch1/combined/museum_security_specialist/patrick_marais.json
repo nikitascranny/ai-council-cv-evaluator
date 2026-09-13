@@ -1,0 +1,37 @@
+[
+  {
+    "score": 5,
+    "strengths": [
+      "Candidate has extensive experience in security-related roles, including surveillance, risk mitigation, and incident management.",
+      "Strong leadership skills demonstrated through various managerial positions in security and operations.",
+      "Comprehensive certifications in cybersecurity and security fundamentals, indicating a solid understanding of relevant technical skills."
+    ],
+    "weaknesses": [
+      "Lacks direct experience in museum or cultural property security, which is highly desirable for this role.",
+      "No evidence of working with specific security systems (Gallagher platform) or access-control systems mentioned in the job description.",
+      "No experience with museum-specific tasks like object movements, exhibition installations, or working with curatorial staff."
+    ],
+    "summary": "The candidate has relevant security experience and leadership skills but lacks specific museum security experience and familiarity with the required systems.",
+    "candidate": "PATRICK MARAIS",
+    "model": "phi4"
+  },
+  {
+    "score": 6,
+    "strengths": [
+      "extensive experience in security and risk management",
+      "demonstrated leadership and project management skills"
+    ],
+    "weaknesses": [
+      "lack of direct museum security experience",
+      "overwhelming focus on cyber security rather than physical security"
+    ],
+    "summary": "The candidate has significant experience in security management but lacks direct experience in museum security and focuses heavily on cyber security rather than the physical security required for this role.",
+    "candidate": "PATRICK MARAIS",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate meets the minimum 3 years' experience in a security role through various roles such as Security Associate, Special Investigator, and Forensic and Security Manager. The role of Regional Surveillance Manager is a reasonable match as it involves managing surveillance systems. The candidate does not have a valid SIA Door Supervisor or Security Guarding licence, though the Security+ certification may be a reasonable substitute. Strong written and verbal communication skills are demonstrated through the various management roles and achievements. The physical ability to patrol is implied by the security and investigative roles, but specific mention of ability to patrol a large multi-floor site is unclear. Flexible working hours are implied from the wide range of roles in different environments.",
+    "candidate": "PATRICK MARAIS",
+    "type": "essential_requirements"
+  }
+]

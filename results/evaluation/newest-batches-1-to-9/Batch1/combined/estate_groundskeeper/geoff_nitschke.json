@@ -1,0 +1,38 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Demonstrates strong communication and research skills through leading and facilitating workshops.",
+      "Has experience in analyzing and understanding user needs and behaviors, which could be somewhat transferable to understanding the needs of the 'consenting' guests."
+    ],
+    "weaknesses": [
+      "Lacks any experience in groundskeeping, gamekeeping, or countryside management, which is essential for the role.",
+      "Does not possess the required physical fitness or experience in outdoor activities such as tracking or search and rescue.",
+      "Has no experience with hounds, bloodhounds, or tracking dogs, which is a desirable skill for the position.",
+      "No background in immersive theatre, 'airsoft' event marshalling, or private security work.",
+      "Lacks experience in handling firearms or pest control, despite it being a desirable skill."
+    ],
+    "summary": "The candidate has strong skills in research and user experience, but lacks the necessary outdoor, physical, and specific skill sets required for the Groundskeeper & 'Hunt' Coordinator role at Blackmoor Hall Estate.",
+    "candidate": "GEOFF NITSCHKE",
+    "model": "phi4"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "proven ability to work in remote or isolated environments",
+      "excellent communication and leadership skills"
+    ],
+    "weaknesses": [
+      "lack of relevant experience in groundskeeping, hunting, or outdoor survival",
+      "no background in tracking, search & rescue, or military"
+    ],
+    "summary": "Candidate lacks direct experience in the required fields and has no background in tracking or search & rescue, making them unsuitable for the role despite strong communication and leadership skills.",
+    "candidate": "GEOFF NITSCHKE",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's experience does not clearly meet the essential requirement of groundskeeping, gamekeeping, or countryside management experience. However, their background in UX research and design is a reasonable match for the 'pursuit oriented' background preference. The candidate’s excellent physical fitness and ability to work in remote areas are not explicitly shown, but could be inferred given their hybrid and remote work experience. The requirement for an unconditional discretion is not addressed in the CV.",
+    "candidate": "GEOFF NITSCHKE",
+    "type": "essential_requirements"
+  }
+]

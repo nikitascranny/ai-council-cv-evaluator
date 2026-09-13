@@ -1,0 +1,36 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Good organizational skills from managing software development projects",
+      "Strong problem-solving abilities demonstrated through bug fixes and app improvements"
+    ],
+    "weaknesses": [
+      "Lack of relevant education or experience in marine biology or related life sciences",
+      "No demonstrated understanding of aquatic systems or husbandry tasks",
+      "No experience with physical tasks such as equipment maintenance or working in humid environments"
+    ],
+    "summary": "Lauren Fischer has strong organizational and problem-solving skills, but lacks the relevant education, experience, and physical readiness required for an Aquarium Biologist role.",
+    "candidate": "Lauren_common",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong background in software engineering",
+      "Experience in mobile app development"
+    ],
+    "weaknesses": [
+      "No experience in marine biology or aquatic animal husbandry",
+      "Lack of direct relevance to the job role"
+    ],
+    "summary": "The candidate has a strong background in software engineering but lacks the necessary experience and qualifications in marine biology and aquatic animal husbandry to fit the role.",
+    "candidate": "Lauren_common",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's background in software engineering is not directly relevant to the job requirements, which focus on marine biology and related life sciences. Their technical skills and experience do not clearly meet the essential requirements. However, their coursework in mobile application development and the completion of relevant Udemy courses demonstrate a reasonable close match to the technical aspects of the role. The physical fitness and willingness to work flexible hours are not evidenced, nor is their ability to work with water chemistry, and there is no indication of relevant practical experience in the required fields.",
+    "candidate": "Lauren_common",
+    "type": "essential_requirements"
+  }
+]

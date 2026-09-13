@@ -1,0 +1,37 @@
+[
+  {
+    "score": 4,
+    "strengths": [
+      "Comfortable working across the stack and picking up new frameworks quickly shows adaptability",
+      "Strong technical skills in Python, Django, and JavaScript"
+    ],
+    "weaknesses": [
+      "Lack of direct experience in secretarial, receptionist, or office administration roles",
+      "No demonstrated experience with Microsoft Word, Excel, and Outlook",
+      "No experience with accounting or administrative tasks such as managing diaries and handling correspondence",
+      "No mention of confidentiality handling experience, which is crucial for handling financial and personal information"
+    ],
+    "summary": "The candidate demonstrates strong adaptability and technical skills but lacks direct experience and skills specific to the administrative and secretarial demands of the role.",
+    "candidate": "Daniel_common",
+    "model": "phi4"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Strong technical background",
+      "Experience with project management"
+    ],
+    "weaknesses": [
+      "Lack of administrative or secretarial experience",
+      "No familiarity with Microsoft Office suite"
+    ],
+    "summary": "Daniel Rossouw has a robust technical background but lacks the administrative skills and experience required for the Secretary / Administrative Assistant role at Ashcombe & Vale.",
+    "candidate": "Daniel_common",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's experience as a Junior Developer and Software Engineer demonstrates relevant technical skills but does not directly show secretarial, receptionist, or office administration experience. The CV indicates a good working knowledge of Microsoft software and typing skills, and the coursework and certifications provide evidence of organization and task management. However, the ability to handle confidential information and a professional telephone manner are unclear from the provided information.",
+    "candidate": "Daniel_common",
+    "type": "essential_requirements"
+  }
+]

@@ -1,0 +1,36 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Strong communication skills demonstrated through collaboration in teams and teaching roles.",
+      "Ability to quickly learn and adapt to new tools and environments."
+    ],
+    "weaknesses": [
+      "Lack of direct experience in security or museum settings.",
+      "No relevant technical skills related to CCTV, alarm systems, or access-control systems.",
+      "No physical security experience or ability to conduct patrols."
+    ],
+    "summary": "The candidate lacks relevant experience and technical skills specific to museum security, but shows strong communication and learning abilities.",
+    "candidate": "beginner_american",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Good understanding of software engineering concepts",
+      "Experience with web application development"
+    ],
+    "weaknesses": [
+      "Lack of relevant security or museum experience",
+      "No evidence of security-related certifications or training"
+    ],
+    "summary": "The candidate has strong technical skills but lacks the specific security experience and qualifications required for the museum security role.",
+    "candidate": "beginner_american",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate does not meet the essential requirement of having 3 years' experience in a security role. However, the role of a teaching assistant and software engineering intern demonstrate strong communication and technical skills that could be transferable. The candidate's physical fitness is not clear from the CV, and there is no evidence of relevant certifications or working knowledge of security systems.",
+    "candidate": "beginner_american",
+    "type": "essential_requirements"
+  }
+]

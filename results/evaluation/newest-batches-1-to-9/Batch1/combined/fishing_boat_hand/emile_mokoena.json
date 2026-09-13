@@ -1,0 +1,37 @@
+[
+  {
+    "score": 2,
+    "strengths": [
+      "Candidate has experience with data management and analysis, which could be useful for keeping catch tallies and completing landing declarations."
+    ],
+    "weaknesses": [
+      "Lack of physical fitness or experience in manual, physically demanding work such as handling fishing gear and operating a boat.",
+      "No prior experience in maritime or fishing-related roles, which is a key requirement.",
+      "Absence of sea legs or experience working on boats, which is preferred.",
+      "Candidate's work experience is heavily focused on technology and data science, not aligning with the physical and manual nature of the deckhand role.",
+      "No evidence of punctuality or reliability in roles requiring strict adherence to time schedules like those needed on a fishing vessel."
+    ],
+    "summary": "The candidate's skills and experience are not aligned with the physical and maritime demands of the deckhand position, making them a poor fit for the role.",
+    "candidate": "EMILE MOKOENA",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Technical skills in cloud engineering",
+      "Experience in data processing and analysis"
+    ],
+    "weaknesses": [
+      "No experience in maritime or fishing industry",
+      "Lack of physical fitness and marine safety training"
+    ],
+    "summary": "The candidate's technical background does not align with the physical and maritime requirements of the fishing role.",
+    "candidate": "EMILE MOKOENA",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's CV does not clearly meet the requirement for physical fitness and heavy, repetitive manual work, nor the need for sea legs or previous experience on boats. However, their work experience demonstrates reliability, punctuality, and the ability to work long hours, which are closely related to the job's requirements. Basic numeracy skills are evident through their experience with data analysis and report creation. They are willing to work early shifts and long days, as shown by their previous roles involving late nights and weekends. The candidate's certifications in cloud computing and data science also indicate a strong foundation in relevant skills.",
+    "candidate": "EMILE MOKOENA",
+    "type": "essential_requirements"
+  }
+]

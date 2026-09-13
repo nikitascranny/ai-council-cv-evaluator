@@ -1,0 +1,37 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Candidate has basic numeracy skills useful for catch tallies and grading.",
+      "Possesses strong communication and interpersonal skills which may aid in working as a team on the vessel."
+    ],
+    "weaknesses": [
+      "Lack of direct experience in fishing, boating, or maritime activities.",
+      "No evidence of physical fitness for heavy, repetitive manual work in all weather conditions.",
+      "Absence of sea legs or experience working on boats, which is preferred.",
+      "Does not meet the punctuality requirement as the candidate's work history does not involve tide-based scheduling."
+    ],
+    "summary": "The candidate lacks relevant maritime experience and physical skills essential for the physically demanding role of a boat hand.",
+    "candidate": "THE DANIEL",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Advanced communication and interpersonal skills",
+      "Strong background in business analysis and system requirements"
+    ],
+    "weaknesses": [
+      "Lack of relevant maritime experience",
+      "No experience in fishing or inshore vessel operations"
+    ],
+    "summary": "The candidate excels in business analysis and communication but lacks any relevant experience in maritime or fishing environments, which are crucial for the role.",
+    "candidate": "THE DANIEL",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate has no clear experience in manual work, seamanship, or working in challenging weather conditions, making these requirements unclearly met. However, their work experience in business analysis and technical systems could be considered a reasonable/close match for the need to understand business processes and compliance. The candidate's advanced numeracy and ability to work in a business context also provide a close match to the basic numeracy and reliability requirements. There is no evidence of severe seasickness, meeting the final requirement.",
+    "candidate": "THE DANIEL",
+    "type": "essential_requirements"
+  }
+]

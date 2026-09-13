@@ -1,0 +1,37 @@
+[
+  {
+    "score": 7,
+    "strengths": [
+      "Has 4 years of experience as a full-stack engineer with relevant frontend (React) and backend (Node.js) skills.",
+      "Proven ability to improve performance and work closely with design teams, indicating strong communication and collaboration skills.",
+      "Demonstrates a commitment to continuous learning through certifications in relevant technologies."
+    ],
+    "weaknesses": [
+      "Lacks direct experience with Go, which is the preferred backend language for the role.",
+      "No specific experience with event-driven architectures like Kafka or TimescaleDB, which are crucial for the role.",
+      "Has not demonstrated experience with operating services in production, including metrics, tracing, and incident response."
+    ],
+    "summary": "Alex Turner has a solid foundation as a full-stack engineer with relevant experience and skills, but lacks specific experience with Go and event-driven architectures, which are critical for the role at Pulsegrid.",
+    "candidate": "Alex Turner",
+    "model": "phi4"
+  },
+  {
+    "score": 6,
+    "strengths": [
+      "Experience in React front-end development",
+      "Experience with multi-tenant SaaS platforms"
+    ],
+    "weaknesses": [
+      "Lacks experience with Go backend language",
+      "No experience with event-driven architectures or time-series data"
+    ],
+    "summary": "Alex has relevant full-stack development experience but falls short on specific technical requirements and domain knowledge.",
+    "candidate": "Alex Turner",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate has 4+ years of experience shipping production software, which is a clear match. They have relevant frontend experience but lack explicit backend experience, though their frontend experience could be transferable. Their work experience suggests comfort with ambiguity and velocity, and their coursework and certifications indicate a solid grasp of distributed systems fundamentals and communication skills. However, there is no clear evidence of having operated services in production, which is a reasonable but not clear match. The candidate's educational background and certifications show enthusiasm for technology, but it is unclear from the CV if they have a specific interest in energy, climate, or real-world problems.",
+    "candidate": "Alex Turner",
+    "type": "essential_requirements"
+  }
+]

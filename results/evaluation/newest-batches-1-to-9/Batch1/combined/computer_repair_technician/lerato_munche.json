@@ -1,0 +1,37 @@
+[
+  {
+    "score": 8,
+    "strengths": [
+      "Diverse and relevant work experience in partnership management, strategic alliances, and internal communications.",
+      "Strong foundation in project management and relationship management skills.",
+      "Extensive experience in international forums and internet governance, aligning with global coordination roles.",
+      "Proven track record in building strategic partnerships and enhancing brand visibility."
+    ],
+    "weaknesses": [
+      "Limited direct evidence of technical skills like Java, Python, or IT project management in practical work scenarios.",
+      "Some skills listed (e.g., Agile, JavaScript) are mentioned without specific application examples in professional roles."
+    ],
+    "summary": "The candidate demonstrates strong experience in partnership and strategic management, with a solid foundation in project and relationship management, though more specific examples of technical skills in practice would enhance their profile.",
+    "candidate": "LERATO MUNCHE",
+    "model": "phi4"
+  },
+  {
+    "score": 8,
+    "strengths": [
+      "Extensive experience in partnership management and project planning",
+      "Demonstrated leadership in technology and innovation initiatives"
+    ],
+    "weaknesses": [
+      "Limited direct experience in software development and technical roles",
+      "Some gaps in recent education and career timeline"
+    ],
+    "summary": "The candidate has strong experience in managing partnerships and leadership roles but may need to develop technical skills further to fully meet the job requirements.",
+    "candidate": "LERATO MUNCHE",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate demonstrates a strong leadership and strategic management background, which closely aligns with the ability to provide strategic leadership and manage partnerships. However, the candidate's experience in technology and software development does not clearly meet the requirement for strong IT or programming skills. The candidate’s involvement in internet governance and advocacy initiatives reasonably aligns with the ability to engage in thought leadership and strategic partnerships.",
+    "candidate": "LERATO MUNCHE",
+    "type": "essential_requirements"
+  }
+]

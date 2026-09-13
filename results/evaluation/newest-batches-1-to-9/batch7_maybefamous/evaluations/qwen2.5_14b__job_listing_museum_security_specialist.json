@@ -1,0 +1,52 @@
+[
+  {
+    "score": 2,
+    "strengths": [
+      "Experience with software development and system maintenance"
+    ],
+    "weaknesses": [
+      "Lack of experience in security roles, no SIA license, no experience with CCTV or access-control systems"
+    ],
+    "summary": "The candidate lacks the essential security experience and qualifications required for the position.",
+    "candidate": "Daniel_common"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong technical background in software engineering",
+      "Experience with cross-platform development"
+    ],
+    "weaknesses": [
+      "No experience in security or museum operations",
+      "Lack of relevant certifications or training for the role"
+    ],
+    "summary": "Lauren Fischer's technical expertise in software engineering is commendable but lacks any alignment with the security and museum operations role requirements.",
+    "candidate": "Lauren_common"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Technical skills in software engineering",
+      "Experience with Python and Django frameworks"
+    ],
+    "weaknesses": [
+      "No relevant experience in security or museum operations",
+      "Lack of physical security skills and certifications"
+    ],
+    "summary": "Linus Torvalds has strong technical skills but lacks any relevant experience or qualifications for the Museum Security Specialist role.",
+    "candidate": "Linus"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong software development background",
+      "Experience with user interface design"
+    ],
+    "weaknesses": [
+      "Lack of experience in security roles",
+      "No relevant certifications or training in security"
+    ],
+    "summary": "Margaret Hamilton's background in software engineering does not align with the required security expertise for the position.",
+    "candidate": "Margaret"
+  }
+]

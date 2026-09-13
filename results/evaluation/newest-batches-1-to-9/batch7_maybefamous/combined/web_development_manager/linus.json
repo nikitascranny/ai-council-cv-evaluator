@@ -1,0 +1,37 @@
+[
+  {
+    "score": 6,
+    "strengths": [
+      "Has experience with modern web stacks including React and Django, aligning with the technical requirements.",
+      "Participated in sprint planning and code reviews, relevant for team delivery responsibilities.",
+      "Completed relevant coursework and certifications, demonstrating foundational knowledge and initiative."
+    ],
+    "weaknesses": [
+      "Lacks the required 5+ years of professional experience and at least 2 years of line-management experience.",
+      "Insufficient proven experience leading teams through significant technical changes.",
+      "Limited exposure to AWS and .NET, which are preferred technologies for the role."
+    ],
+    "summary": "The candidate shows potential with relevant technical skills and experience in web development but falls short in leadership experience and familiarity with some key technologies required for the role.",
+    "candidate": "Linus",
+    "model": "phi4"
+  },
+  {
+    "score": 4,
+    "strengths": [
+      "4 years of web application development experience",
+      "familiarity with Django and React"
+    ],
+    "weaknesses": [
+      "less than 2 years of line management experience",
+      "no evidence of leading significant technical change"
+    ],
+    "summary": "Linus Torvalds has relevant technical skills but lacks the required leadership experience and significant project management.",
+    "candidate": "Linus",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate meets the requirement of 5+ years of professional web/software engineering experience, albeit with a gap in his CV where the exact role of line managing engineers is not evidenced. His experience in using React and Django aligns closely with the modern web stack requirements. He has demonstrated experience leading a team and participating in sprint planning and code reviews, which can be considered a reasonable match for leading teams through significant technical change. The CI/CD and cloud infrastructure requirements are not explicitly met, as his experience is limited to Django and Azure Fundamentals. Excellent communication skills are not clearly evidenced, but his experience leading a team and participating in scrum provides some indication of his ability to communicate effectively.",
+    "candidate": "Linus",
+    "type": "essential_requirements"
+  }
+]

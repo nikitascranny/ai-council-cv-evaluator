@@ -1,0 +1,36 @@
+[
+  {
+    "score": 4,
+    "strengths": [
+      "Strong attention to detail and analytical skills, as demonstrated through project management and technical documentation.",
+      "Ability to work in a physically demanding environment, inferred from site visits and work on construction sites."
+    ],
+    "weaknesses": [
+      "Lacks relevant educational background in marine biology or related life sciences as required for the role.",
+      "No experience with aquatic systems, water chemistry, or animal husbandry, which are essential for the role.",
+      "No evidence of skills related to aquarium maintenance, such as cleaning and maintaining life support systems."
+    ],
+    "summary": "The candidate exhibits strong analytical and project management skills but lacks the specific educational background and experience in aquatic biology and husbandry required for the Aquarium Biologist position.",
+    "candidate": "JORDAN VELDMAN",
+    "model": "phi4"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Analytical and problem-solving skills",
+      "Experience in project management"
+    ],
+    "weaknesses": [
+      "Lacks direct experience in marine biology or aquatic animal husbandry",
+      "No practical experience with life support systems or water quality testing"
+    ],
+    "summary": "The candidate's background in architecture and project management does not align well with the specific requirements for an aquarium biologist role, particularly the need for marine biology expertise and practical experience in aquatic life support systems.",
+    "candidate": "JORDAN VELDMAN",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's degree in Architecture does not meet the requirement for a degree in Marine Biology, Zoology, Aquatic Biology or a related life science. However, their experience in project management, technical documentation, and sustainability solutions may be transferable to the role. The candidate's physical fitness, willingness to perform dirty tasks, and attention to detail are not clearly evidenced but could be inferred from their experience. Weekend and holiday work is not reflected in the CV.",
+    "candidate": "JORDAN VELDMAN",
+    "type": "essential_requirements"
+  }
+]

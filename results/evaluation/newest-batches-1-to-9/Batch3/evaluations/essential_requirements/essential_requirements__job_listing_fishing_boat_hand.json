@@ -1,0 +1,26 @@
+[
+  {
+    "summary": "The candidate's CV does not clearly demonstrate physical fitness for heavy manual work or sea experience, which are essential requirements. Their past experience in managing staff and dealing with difficult customers could reasonably relate to the ability to be reliable and punctual, as well as to handle challenging situations. Basic numeracy might be inferred from their entrepreneurial experience, but is not explicitly stated. Early start and long days are not directly addressed, though their experience with managing a business could imply adaptability to irregular schedules.",
+    "candidate": "bad_cv_jason_muller"
+  },
+  {
+    "summary": "The candidate's punctuality and willingness to work long hours align reasonably with the job requirements. However, there is no evidence of relevant physical or sea experience, and basic numeracy skills are not explicitly demonstrated. The hospitality and retail experience might be transferable to some degree.",
+    "candidate": "bad_cv_kevin_jones"
+  },
+  {
+    "summary": "The candidate's CV does not clearly meet the essential requirement for sea legs or previous experience on boats. Their experience in retail and consulting is a reasonable match for reliability and punctuality, and basic numeracy skills may be inferred. However, there is no evidence of physically fit manual work or early starts/long days.",
+    "candidate": "bad_cv_sarah_lynne_van_der_merwe"
+  },
+  {
+    "summary": "The candidate has clear transferable skills in reliability, punctuality, and organizational coordination, which could be adapted to the role requirements. However, there is no evidence of physical fitness for heavy, repetitive manual work, sea experience, or basic numeracy for catch tallies. The self-directed learning in customer service might be a reasonable match for the need for reliability and punctuality.",
+    "candidate": "professional_cv_jason_muller"
+  },
+  {
+    "summary": "The candidate's experience in adapting to diverse work environments and handling customer interactions suggests they could be reliable and solution-focused, potentially meeting the reliability and punctuality requirement. Their ability to handle administrative tasks and customer service could translate to basic numeracy for catch tallies. However, there is no evidence of sea experience or physical fitness for heavy, repetitive manual work in all weathers, which are clearly not met.",
+    "candidate": "professional_cv_kevin_jones"
+  },
+  {
+    "summary": "The candidate does not clearly meet the requirement for physical fitness and comfort with heavy, repetitive manual work, nor for basic numeracy for catch tallies and grading. However, their relevant retail experience in managing daily operations and team coordination shows reliability and punctuality, which aligns with the need for reliability and punctuality. Their leadership experience and business administration studies provide a reasonable match for the need for sea legs and early starts, as these roles and studies demonstrate strong organizational and adaptability skills.",
+    "candidate": "professional_cv_sarah_lynne_van_der_merwe"
+  }
+]

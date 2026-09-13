@@ -1,0 +1,83 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Adaptable and proactive in customer service and operational roles",
+      "Practical problem-solving and team coordination skills"
+    ],
+    "weaknesses": [
+      "No relevant education in marine biology, zoology, or aquatic science",
+      "Lack of hands-on experience in aquatic animal husbandry or life support systems"
+    ],
+    "summary": "Jason Muller lacks the necessary academic background and practical experience in aquatic biology or zoology, which are essential for the position, despite showing adaptability and problem-solving skills.",
+    "candidate": "professional_cv_jason_muller"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "versatile and adaptable",
+      "practical problem-solving skills"
+    ],
+    "weaknesses": [
+      "lacks relevant academic qualifications",
+      "no experience in aquatic animal husbandry or life support systems"
+    ],
+    "summary": "Kevin Jones demonstrates versatility and problem-solving skills but lacks the specific academic background and experience in aquatic animal husbandry required for the position.",
+    "candidate": "professional_cv_kevin_jones"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Business development and brand positioning",
+      "Retail operations and team leadership"
+    ],
+    "weaknesses": [
+      "Lack of relevant marine biology education or practical experience",
+      "No experience with aquatic animal husbandry or life support systems"
+    ],
+    "summary": "The candidate has strong business and retail management skills but lacks the necessary educational background and practical experience in marine biology or aquarium operations to meet the job requirements.",
+    "candidate": "professional_cv_sarah_lynne_van_der_merwe"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Can lift heavy boxes",
+      "Fast learner when motivated"
+    ],
+    "weaknesses": [
+      "Lack of relevant work experience",
+      "Objective does not align with the job role",
+      "No formal education or training in marine biology or related field"
+    ],
+    "summary": "The candidate does not meet the essential requirements of the position and demonstrates a lack of alignment with the job description's goals and responsibilities.",
+    "candidate": "bad_cv_jason_muller"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "willingness to work",
+      "ability to learn"
+    ],
+    "weaknesses": [
+      "lack of relevant experience",
+      "poor employment history",
+      "inconsistent work ethic"
+    ],
+    "summary": "Kevin Jones lacks the relevant experience and consistency required for the role of Aquarium Biologist.",
+    "candidate": "bad_cv_kevin_jones"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "High level of ambition",
+      "Experience in customer engagement"
+    ],
+    "weaknesses": [
+      "Lack of relevant academic or practical experience",
+      "No specific skills related to marine biology or aquatic life support systems",
+      "No evidence of physical fitness or willingness to perform dirty tasks"
+    ],
+    "summary": "The candidate lacks the necessary academic background and practical skills related to marine biology or aquarium husbandry and does not demonstrate a willingness to perform the manual labor required for the role.",
+    "candidate": "bad_cv_sarah_lynne_van_der_merwe"
+  }
+]

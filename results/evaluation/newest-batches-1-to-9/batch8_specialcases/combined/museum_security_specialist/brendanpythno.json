@@ -1,0 +1,36 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Demonstrates ability to work under pressure and deliver results on time.",
+      "Has a strong technical background with problem-solving skills."
+    ],
+    "weaknesses": [
+      "Lacks relevant experience in security or museum roles.",
+      "Does not have the necessary physical capabilities or knowledge of security systems.",
+      "Missing qualifications like a valid SIA Door Supervisor or Security Guarding license."
+    ],
+    "summary": "Brendan Naidoo has strong technical skills and problem-solving abilities but lacks the relevant experience and qualifications for a Museum Security Specialist role.",
+    "candidate": "BrendanPythno",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Technical skills in software engineering",
+      "Previous experience in software development roles"
+    ],
+    "weaknesses": [
+      "Lack of relevant experience in museum security",
+      "No alignment between candidate skills and job requirements"
+    ],
+    "summary": "The candidate's background in software engineering does not align with the required skills for a Museum Security Specialist role.",
+    "candidate": "BrendanPythno",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's experience in software engineering does not meet the job's essential requirement of 3 years' experience in a security role. However, the skills related to written and verbal communication, as well as some technical knowledge, may be transferable. The physical ability and flexibility to work varying shifts is unclear from the CV.",
+    "candidate": "BrendanPythno",
+    "type": "essential_requirements"
+  }
+]

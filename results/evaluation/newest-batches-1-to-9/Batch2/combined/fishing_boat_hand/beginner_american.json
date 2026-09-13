@@ -1,0 +1,36 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Strong aptitude for learning and adapting quickly to new tools, as demonstrated by experience with various programming languages and frameworks.",
+      "Proven ability to work in collaborative environments, which may translate well into working closely with the skipper on a fishing vessel."
+    ],
+    "weaknesses": [
+      "Lack of relevant experience in manual or physical work, which is a core requirement for the boat hand position.",
+      "No prior experience with fishing, boat handling, or maritime activities, which are essential for this role.",
+      "No physical fitness evidence, which is crucial for handling heavy equipment and performing repetitive tasks in all weather conditions."
+    ],
+    "summary": "Jordan Lee has strong learning and teamwork skills but lacks the necessary physical, manual, and maritime experience required for the boat hand position.",
+    "candidate": "beginner_american",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong technical background in software engineering",
+      "Experience in agile development methodologies"
+    ],
+    "weaknesses": [
+      "Lack of relevant experience in fishing or maritime work",
+      "No physical skills or experience that align with the job's manual labor requirements"
+    ],
+    "summary": "Jordan Lee's strong technical skills and experience in software engineering do not align with the physical and maritime requirements of the boat hand position at Kestrel Bay Fishing Co.",
+    "candidate": "beginner_american",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate does not clearly meet the essential requirements for the role, as there is no evidence of physical fitness for heavy, repetitive manual work, sea experience, or basic numeracy for catch tallies and grading. However, the candidate's ability to work on projects, manage deadlines, and collaborate in a team setting could be seen as a reasonable match for the willingness to work early starts and long days. No history of severe seasickness is also not evidenced.",
+    "candidate": "beginner_american",
+    "type": "essential_requirements"
+  }
+]

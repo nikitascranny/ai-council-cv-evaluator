@@ -1,0 +1,39 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Has relevant experience in working in a professional setting, which indicates potential for organizational skills.",
+      "Possesses strong problem-solving skills and attention to detail, relevant for managing tasks like correspondence and scheduling."
+    ],
+    "weaknesses": [
+      "Lacks direct experience in secretarial, administrative, or receptionist roles as specified in the job requirements.",
+      "Does not demonstrate proficiency in Microsoft Office tools, particularly Word, Excel, and Outlook, which are essential for the role.",
+      "No evidence of familiarity with practice management software, which is desirable for the position.",
+      "No typing or formatting experience indicated, which is crucial for producing accurate documents.",
+      "Background in software engineering does not align closely with the accountancy-focused administrative role."
+    ],
+    "summary": "Samantha Reed lacks the direct experience and specific skills required for a secretary/administrative role in a chartered accountancy firm, though her professional background suggests potential for organizational skills.",
+    "candidate": "SamanthaOne",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Software engineering experience",
+      "Technical skills"
+    ],
+    "weaknesses": [
+      "No administrative or secretarial experience",
+      "No familiarity with accounting or legal office environments",
+      "Lack of relevant soft skills like discretion and client interaction"
+    ],
+    "summary": "Samantha Reed's technical background does not align with the administrative role requirements at Ashcombe & Vale Chartered Accountants.",
+    "candidate": "SamanthaOne",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate clearly meets the requirement for excellent organization and multitasking. Their previous experience is not explicitly stated, but their strong typing speed, proficiency in Microsoft Office, and clear communication skills suggest they could meet the secretarial or administrative experience requirement. The CV does not provide evidence for handling confidential information, but their professional demeanor and communication skills are a reasonable match. Overall, the candidate's skills and experience align closely with the role, with some areas where additional information would be beneficial.",
+    "candidate": "SamanthaOne",
+    "type": "essential_requirements"
+  }
+]

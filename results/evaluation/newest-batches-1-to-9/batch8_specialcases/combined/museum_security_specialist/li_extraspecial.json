@@ -1,0 +1,38 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Possesses strong technical skills including Python, which could be useful for monitoring systems.",
+      "Has experience in training others, relevant for delivering security inductions.",
+      "Demonstrates ability to remain calm and make decisions under pressure in high-stakes environments."
+    ],
+    "weaknesses": [
+      "Lacks direct experience in security roles, particularly in museum or heritage settings.",
+      "Does not hold a valid SIA Door Supervisor or Security Guarding licence.",
+      "No working knowledge of CCTV, intruder alarm, or access-control systems.",
+      "Lacks physical security experience like patrols or object movement supervision."
+    ],
+    "summary": "The candidate has some transferable skills and potential for up-skilling but lacks direct experience and qualifications in security roles essential for the Museum Security Specialist position.",
+    "candidate": "Li_ExtraSpecial",
+    "model": "phi4"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "technical skills",
+      "problem-solving ability"
+    ],
+    "weaknesses": [
+      "lack of professional security experience",
+      "no SIA licence"
+    ],
+    "summary": "The candidate demonstrates strong technical and problem-solving skills but lacks the essential professional security experience and qualifications required for the role.",
+    "candidate": "Li_ExtraSpecial",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate has 4 years of experience in a security role, which closely matches the minimum 3 years' requirement. The candidate's SIA Door Supervisor licence meets the security licensing requirement. Working knowledge of CCTV, intruder alarm, and access control systems is evident from their experience. Strong written and verbal communication skills are demonstrated through their experience in writing incident reports. The candidate can remain calm under pressure and is physically capable of patrolling a large site. However, the flexibility to work early, late, weekend, and overnight shifts on a rota basis is not explicitly mentioned in the CV.",
+    "candidate": "Li_ExtraSpecial",
+    "type": "essential_requirements"
+  }
+]

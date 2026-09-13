@@ -1,0 +1,172 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Passion for hands-on work and learning new skills",
+      "Some physical fitness and willingness to work irregular hours"
+    ],
+    "weaknesses": [
+      "Lack of relevant education and experience in marine biology or zoology",
+      "No practical experience with aquatic life support systems or animal husbandry"
+    ],
+    "summary": "Brendan has potential due to his willingness to learn new skills and engage in practical tasks, but lacks the essential educational background and direct experience required for the role.",
+    "candidate": "BrendanPythno"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "strong technical background",
+      "previous experience in system maintenance and optimization"
+    ],
+    "weaknesses": [
+      "no relevant marine biology or aquatic animal husbandry experience",
+      "lacks hands-on practical skills for aquatic life support systems"
+    ],
+    "summary": "The candidate has a solid technical background but lacks direct relevance to aquatic biology and practical hands-on experience required for the position.",
+    "candidate": "Chen_Special"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "strong analytical and data handling skills",
+      "ability to optimize processes and reporting pipelines"
+    ],
+    "weaknesses": [
+      "lack of relevant biology or aquatic science education",
+      "no hands-on experience in aquarium maintenance or life support systems"
+    ],
+    "summary": "The candidate has impressive data analysis skills but lacks the necessary background in marine biology or related fields and hands-on experience in aquarium husbandry, making them a poor fit for the position.",
+    "candidate": "MathNaledi"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "good technical skills in software engineering",
+      "diverse hobbies and interests"
+    ],
+    "weaknesses": [
+      "no relevant experience in marine biology or aquatic animal husbandry",
+      "lack of education in marine sciences"
+    ],
+    "summary": "Priya Chetty is a skilled software engineer but lacks the necessary background in marine biology and practical experience with aquatic life support systems.",
+    "candidate": "PriyaPicture"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Possibly has some technical skills related to software engineering",
+      "May have a genuine interest in aquatic life as a hobby"
+    ],
+    "weaknesses": [
+      "CV does not align with the job requirements of an aquarium biologist",
+      "No relevant work experience in marine biology, zoology, or similar fields",
+      "Lack of evidence showing willingness to undertake physical, hands-on tasks"
+    ],
+    "summary": "The candidate's CV is unrelated to the job description and lacks any relevant experience or skills for the position of an aquarium biologist.",
+    "candidate": "HomerSimsSon"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Technical skills in backend development",
+      "Experience with automation and testing"
+    ],
+    "weaknesses": [
+      "Lack of relevant education in marine biology or zoology",
+      "No experience with aquatic animal husbandry or life support systems"
+    ],
+    "summary": "The candidate has strong technical skills but lacks the necessary background in marine biology and hands-on experience with aquatic life support systems required for the position.",
+    "candidate": "JordanMitchell5Star"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Problem-solving skills",
+      "Self-taught learning ability"
+    ],
+    "weaknesses": [
+      "Lack of relevant aquatic animal husbandry experience",
+      "No formal education in marine biology or related fields"
+    ],
+    "summary": "The candidate lacks the essential qualifications and experience required for the Aquarium Biologist position, despite showing resilience and adaptability in different contexts.",
+    "candidate": "Li_ExtraSpecial"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong technical background in software engineering",
+      "Experience with backend systems and reliability"
+    ],
+    "weaknesses": [
+      "No relevant experience in marine biology or aquatic animal husbandry",
+      "Lacks essential skills and knowledge in water chemistry and filtration systems",
+      "No evidence of hands-on experience with physical maintenance tasks"
+    ],
+    "summary": "Marcus Vandenberg has strong technical skills but lacks the necessary background in marine biology and practical experience with aquatic systems required for the position.",
+    "candidate": "MegaMarcus"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "4 years of software engineering experience",
+      "proficient in multiple programming languages"
+    ],
+    "weaknesses": [
+      "no relevant experience in marine biology, aquatic animal husbandry, or aquarium life support systems",
+      "lacks essential educational background"
+    ],
+    "summary": "Samantha has strong technical skills but lacks the necessary experience and education in marine biology and aquarium management.",
+    "candidate": "SamanthaOne"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong background in software engineering"
+    ],
+    "weaknesses": [
+      "No relevant experience in marine biology or aquatic animal husbandry",
+      "No practical experience with life support systems or animal care"
+    ],
+    "summary": "Jordan Mitchell lacks the essential qualifications and practical experience required for the aquarium biologist role, but has a strong background in software engineering.",
+    "candidate": "SystemShock"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong technical background",
+      "Experience in system design and architecture"
+    ],
+    "weaknesses": [
+      "No experience in marine biology or aquatic animal husbandry",
+      "Lacks essential requirements for the role"
+    ],
+    "summary": "Taylor Okafor's technical skills and leadership experience do not align with the hands-on, aquatic life support role at Seagate Public Aquarium.",
+    "candidate": "TaylorGraphics"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong technical background",
+      "Leadership experience"
+    ],
+    "weaknesses": [
+      "No relevant aquatic biology or husbandry experience",
+      "Inappropriate behavior during interviews",
+      "Lack of interest in the role's physical and maintenance aspects"
+    ],
+    "summary": "The candidate lacks the essential skills and experience for the role and demonstrated behavior issues during the interview, making them unsuitable.",
+    "candidate": "VictoriaSterlingSilver"
+  },
+  {
+    "score": 1,
+    "strengths": [
+      "None directly relevant to the role"
+    ],
+    "weaknesses": [
+      "Lack of experience in marine biology, aquarist skills, and life support systems",
+      "Irrelevant technical background"
+    ],
+    "summary": "Casey Whitmore's extensive experience in software engineering and computer science is entirely unrelated to the entry-level Aquarium Biologist position, making them a poor fit for the role.",
+    "candidate": "CaseyWhitmore"
+  }
+]

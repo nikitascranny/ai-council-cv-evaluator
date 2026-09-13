@@ -1,0 +1,38 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Excellent leadership and teamwork skills demonstrated through managing and mentoring engineering teams.",
+      "Strong problem-solving skills evident from experience in designing and scaling complex backend systems.",
+      "Good adaptability shown by working across different programming languages and technologies."
+    ],
+    "weaknesses": [
+      "Lacks relevant experience in fishing, boat handling, or any maritime work.",
+      "No evidence of physical fitness or comfort with manual labor, which is essential for the role.",
+      "No prior experience with safety training or procedures relevant to maritime operations.",
+      "Missing basic numeracy skills specifically for catch tallies and grading, as required by the job."
+    ],
+    "summary": "Taylor Okafor possesses strong leadership and technical problem-solving skills but lacks the relevant maritime experience, physical fitness, and specific numeracy skills needed for the boat hand position.",
+    "candidate": "TaylorGraphics",
+    "model": "phi4"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "physical fitness indicated by weekend fishing trips",
+      "reliable and punctual work history"
+    ],
+    "weaknesses": [
+      "no relevant work experience in fishing or maritime operations",
+      "lacks essential sea legs and boat handling experience"
+    ],
+    "summary": "Taylor Okafor has some indirect evidence of physical fitness and reliability but lacks any direct experience or qualifications relevant to the boat hand position on an inshore fishing vessel.",
+    "candidate": "TaylorGraphics",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's CV does not clearly demonstrate physical fitness for heavy, repetitive manual work or experience working on boats. However, their strong background in software engineering, particularly in areas like architecture, automation, and systems optimization, closely aligns with the need for basic numeracy and the ability to manage and lead teams. The candidate's willingness to work early and long hours is implied by their past roles. Overall, while the CV does not explicitly cover all requirements, it presents a strong case for the candidate's suitability through related transferable skills.",
+    "candidate": "TaylorGraphics",
+    "type": "essential_requirements"
+  }
+]

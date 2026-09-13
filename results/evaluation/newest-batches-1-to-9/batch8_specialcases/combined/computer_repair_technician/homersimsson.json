@@ -1,0 +1,37 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Candidate has experience in a software engineering role, suggesting familiarity with computers and technical environments.",
+      "Has worked with 'software engineering' and 'software development', which may include handling technical issues."
+    ],
+    "weaknesses": [
+      "Lack of specific experience in computer repair or technical support.",
+      "CV is not clear about practical skills in hardware repair or customer service.",
+      "No mention of experience in handling common computer repair tasks like RAM upgrades, virus clean-ups, or customer interaction.",
+      "Limited information on customer service skills, particularly with older customers."
+    ],
+    "summary": "The candidate has some technical background but lacks specific experience and clear evidence of skills in computer repair and customer service, which are crucial for this role.",
+    "candidate": "HomerSimsSon",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Possesses some technical terms that may indicate familiarity with computer systems",
+      "Hobbies and interests suggest engagement with technology"
+    ],
+    "weaknesses": [
+      "Unable to decipher the relevance of the candidate's experiences and skills to the job",
+      "Lack of clear, understandable work history and skills description"
+    ],
+    "summary": "Candidate's CV is largely incomprehensible, making it difficult to evaluate their fit for the role.",
+    "candidate": "HomerSimsSon",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's experience in troubleshooting and working with software suggests they have some practical PC repair skills, meeting the first requirement. Their ability to explain things clearly without jargon aligns well with the need for friendliness and patience, although there is no explicit mention of this. The candidate’s honesty and reliability are not clearly stated, but given their consistent employment history, it can be reasonably inferred. Saturday availability is not explicitly stated, making it unclear whether the candidate can work on this day. The location requirement is also unclear, as no information about the candidate's location or commuting ability is provided.",
+    "candidate": "HomerSimsSon",
+    "type": "essential_requirements"
+  }
+]

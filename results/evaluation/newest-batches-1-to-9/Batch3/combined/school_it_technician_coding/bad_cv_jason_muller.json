@@ -1,0 +1,39 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Fast learner when motivated, which could be beneficial for adapting to new IT environments",
+      "Experience managing staff and dealing with customers, indicating potential for first-line IT support"
+    ],
+    "weaknesses": [
+      "Lack of practical IT support experience",
+      "No demonstrated knowledge of Windows 11, Microsoft 365, or device management tools like Intune",
+      "Absence of basic programming skills in Python or Scratch",
+      "Limited relevant work experience in IT or education settings",
+      "No commitment to working with young people or enthusiasm for technology education"
+    ],
+    "summary": "The candidate lacks essential IT skills, relevant experience, and the enthusiasm for working with young people required for the role.",
+    "candidate": "bad_cv_jason_muller",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Minimal work experience in management and customer service",
+      "General awareness of digital trends"
+    ],
+    "weaknesses": [
+      "Lack of direct IT or education experience",
+      "No indication of programming skills or enthusiasm for working with young people",
+      "No clear evidence of up-skilling potential or commitment to professional development"
+    ],
+    "summary": "The candidate lacks the essential IT and educational background, along with demonstrated programming skills and enthusiasm for working with young people, which are critical for the IT Technician & Coding Enrichment Lead role at St Aldhelm's Community School.",
+    "candidate": "bad_cv_jason_muller",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate does not clearly meet the essential requirement for practical IT support experience, nor does the CV provide evidence of working knowledge of Windows 11, Microsoft 365, or Intune. However, their experience in managing staff and dealing with difficult customers could reasonably relate to their ability to work with young people and handle challenging situations. The candidate's programming skills are not evidenced, and there is no clear indication of their enthusiasm for working with young people or their understanding of safeguarding policies.",
+    "candidate": "bad_cv_jason_muller",
+    "type": "essential_requirements"
+  }
+]

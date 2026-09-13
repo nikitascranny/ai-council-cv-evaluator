@@ -1,0 +1,37 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Strong problem-solving and technical skills evident from experience in software engineering and innovative problem-solving in crisis situations.",
+      "Demonstrates high adaptability and resilience, managing teams and resources in extreme environments."
+    ],
+    "weaknesses": [
+      "Lacks direct administrative or secretarial experience.",
+      "No demonstrated experience with office software such as Microsoft Word, Excel, and Outlook.",
+      "No evidence of handling confidential financial and personal information, or managing a professional front office environment."
+    ],
+    "summary": "While the candidate shows strong adaptability and technical skills, their background is not directly aligned with the administrative and secretarial responsibilities required for the role.",
+    "candidate": "Li_ExtraSpecial",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "technical skills",
+      "problem-solving"
+    ],
+    "weaknesses": [
+      "lack of relevant work experience",
+      "inadequate administrative skills",
+      "no evidence of accounting or legal office experience"
+    ],
+    "summary": "The candidate demonstrates strong technical skills but lacks relevant administrative or accounting experience and the necessary day-to-day office skills required for the position.",
+    "candidate": "Li_ExtraSpecial",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's CV clearly meets the requirement for good typing speed and accuracy, as well as a good working knowledge of Microsoft Word, Excel, and Outlook. The candidate's previous experience in administrative roles, while not specifically in secretarial, receptionist, or office administration, is a reasonable match as it likely involves similar tasks. The candidate's ability to juggle tasks and maintain attention to detail is also a strong match. However, there is no clear evidence of a confident telephone manner or a warm, professional way with clients face to face, which are considered essential. Discretion is also not explicitly mentioned in the CV.",
+    "candidate": "Li_ExtraSpecial",
+    "type": "essential_requirements"
+  }
+]

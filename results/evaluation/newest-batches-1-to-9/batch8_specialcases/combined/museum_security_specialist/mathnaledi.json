@@ -1,0 +1,36 @@
+[
+  {
+    "score": 4,
+    "strengths": [
+      "Strong analytical and statistical skills demonstrated through experience in data analysis and model building.",
+      "Excellent quantitative skills with proficiency in Python, R, SQL, and Tableau, which are valuable for monitoring and reporting."
+    ],
+    "weaknesses": [
+      "Lack of direct experience in security roles, particularly within museums or similar environments.",
+      "No demonstrated experience with CCTV, alarm, or access-control systems which are essential for the role.",
+      "No relevant certifications or experience in security operations or first aid, which are desirable for the position."
+    ],
+    "summary": "While the candidate has strong analytical skills and proficiency in relevant technologies, they lack direct experience and qualifications in museum security roles.",
+    "candidate": "MathNaledi",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong data analysis and technical skills",
+      "Experience in optimizing reporting pipelines"
+    ],
+    "weaknesses": [
+      "No relevant security experience",
+      "Lack of physical security qualifications"
+    ],
+    "summary": "The candidate has strong data analysis skills but lacks any relevant security experience or qualifications, making them unsuitable for the role.",
+    "candidate": "MathNaledi",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate does not meet the minimum 3 years' experience in a security role requirement. However, the experience in data analysis and analytics shows strong written and verbal communication skills, which can be considered a reasonable/close match for the ability to write incident reports. The physical ability and flexibility to work various shifts are unclear from the CV. Certifications in analytics and data handling could be seen as transferable skills for working with CCTV, intruder alarm, and access control systems, but this is not directly evidenced.",
+    "candidate": "MathNaledi",
+    "type": "essential_requirements"
+  }
+]

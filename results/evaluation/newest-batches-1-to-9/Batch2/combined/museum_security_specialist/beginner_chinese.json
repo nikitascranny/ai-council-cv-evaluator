@@ -1,0 +1,37 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Strong technical skills in software engineering, suggesting a potential for learning security systems.",
+      "Experience with project management and teamwork in agile environments."
+    ],
+    "weaknesses": [
+      "Lack of direct experience in security roles, particularly in museums or similar environments.",
+      "No evidence of experience with CCTV, alarm systems, or access control systems.",
+      "No physical security or incident response experience.",
+      "Absence of qualifications or certifications related to security (e.g., SIA license)."
+    ],
+    "summary": "The candidate has a strong technical background but lacks direct experience and qualifications in security, making them a low fit for the Museum Security Specialist role.",
+    "candidate": "beginner_chinese",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "technical skills in software engineering",
+      "experience in building web applications and APIs"
+    ],
+    "weaknesses": [
+      "lack of relevant security experience",
+      "no match for the specific role requirements"
+    ],
+    "summary": "The candidate possesses strong technical skills but lacks the required experience in security and museum operations.",
+    "candidate": "beginner_chinese",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate has 3 years of experience in a security role, which meets the essential requirement. Their written incident reports demonstrate strong written communication skills, and their experience in patrolling large sites indicates they can handle physically demanding tasks. The exact security licensing or specific technical knowledge of CCTV systems is unclear from the CV, but experience in a relevant role may be transferable. The ability to work flexible shifts is not explicitly stated, but their security experience suggests they are likely adaptable to a varied schedule.",
+    "candidate": "beginner_chinese",
+    "type": "essential_requirements"
+  }
+]

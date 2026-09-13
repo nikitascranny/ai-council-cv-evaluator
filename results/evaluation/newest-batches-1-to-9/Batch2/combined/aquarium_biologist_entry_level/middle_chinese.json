@@ -1,0 +1,36 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Demonstrates strong analytical and problem-solving skills",
+      "Has experience with data management and system integration"
+    ],
+    "weaknesses": [
+      "Lacks relevant educational background in biology or related life sciences",
+      "No hands-on experience with aquatic systems or water quality management",
+      "No experience with physical and manual tasks such as filter cleaning"
+    ],
+    "summary": "While Zhang Wei has strong technical skills and problem-solving abilities, they lack the necessary educational background, hands-on experience, and physical aptitude required for the Aquarium Biologist position.",
+    "candidate": "middle_chinese",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong technical background",
+      "Proven track record in software engineering"
+    ],
+    "weaknesses": [
+      "Lack of relevant academic background or practical experience in marine biology or aquatic life support systems",
+      "No experience in animal husbandry or aquarium management"
+    ],
+    "summary": "Zhang Wei's technical skills and software engineering experience do not align with the essential requirements for an entry-level Aquarium Biologist position at Seagate Public Aquarium.",
+    "candidate": "middle_chinese",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate has a degree in Aquatic Biology, which is a clear match for the requirement. The candidate's physical fitness and willingness to carry out physical tasks are reasonable matches. The water chemistry and observational skills are less clear from the CV, but may be transferable. The candidate's right to work in the UK and ability to pass a background check are clearly met. However, there is no evidence of the candidate's experience with filter cleaning, LSS maintenance, or specific record-keeping habits.",
+    "candidate": "middle_chinese",
+    "type": "essential_requirements"
+  }
+]

@@ -1,0 +1,94 @@
+[
+  {
+    "score": 4,
+    "strengths": [
+      "Demonstrates leadership experience through founding and leading a consultancy.",
+      "Experienced in team coordination and operational management.",
+      "Has a background in customer engagement and brand development."
+    ],
+    "weaknesses": [
+      "Lacks direct experience in web/software engineering and technical leadership.",
+      "No evidence of experience with modern web stacks like React/TypeScript or Node.js.",
+      "Limited exposure to technical change management such as replatforming or architecture modernization.",
+      "No demonstrated experience in agile delivery or technical team management."
+    ],
+    "summary": "Sarah Lynne has leadership and operational management experience but lacks the technical and engineering background essential for the Engineering Manager role.",
+    "candidate": "professional_cv_sarah_lynne_van_der_merwe"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Demonstrates team coordination and leadership through acting management role at Uncle Dave’s Car Wash",
+      "Shows adaptability in fast-paced environments"
+    ],
+    "weaknesses": [
+      "Lacks professional web/software engineering experience",
+      "No evidence of line-managing engineers in a technical context",
+      "No experience with modern web stacks or technical architecture",
+      "No background in CI/CD, cloud infrastructure, or technical roadmap planning",
+      "Lacks experience in agile delivery or leading technical changes"
+    ],
+    "summary": "The candidate demonstrates leadership and adaptability but lacks the essential technical skills and engineering management experience required for the Engineering Manager role.",
+    "candidate": "professional_cv_jason_muller"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Demonstrates adaptability and strong communication skills, which are valuable in management roles.",
+      "Experienced in customer service and client communication, relevant for interfacing with product and design teams."
+    ],
+    "weaknesses": [
+      "Lacks professional experience in web/software engineering, which is essential for this role.",
+      "No evidence of technical leadership or experience with the specified technologies (React/TypeScript, Node.js, .NET, AWS).",
+      "No prior experience in leading engineering teams or managing technical projects.",
+      "Education and experience do not align with the required 5+ years of engineering and technical management background."
+    ],
+    "summary": "The candidate has strong communication and adaptability skills but lacks the necessary technical and leadership experience in web/software engineering required for this role.",
+    "candidate": "professional_cv_kevin_jones"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Fast learner when motivated"
+    ],
+    "weaknesses": [
+      "Lacks professional web/software engineering experience",
+      "No evidence of line-managing engineers",
+      "No relevant technical skills in modern web stacks (React/TypeScript, Node.js, .NET)",
+      "No proven experience in leading teams through significant technical change",
+      "Limited relevant work experience and education in software engineering"
+    ],
+    "summary": "The candidate lacks the required technical skills, relevant experience, and leadership background necessary for the Engineering Manager role at Northlight Digital.",
+    "candidate": "bad_cv_jason_muller"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Has leadership experience through roles such as Chief Vision Officer and Senior Executive Team Leader",
+      "Possesses an MBA which indicates some level of advanced education"
+    ],
+    "weaknesses": [
+      "Lacks technical experience relevant to web/software engineering",
+      "No evidence of experience in managing technical teams or leading significant technical change",
+      "No specific experience with the required technical stack (React/TypeScript, Node.js, .NET)",
+      "Work history does not demonstrate relevant experience in engineering or software development"
+    ],
+    "summary": "The candidate lacks the essential technical and leadership experience in web/software engineering needed for the role.",
+    "candidate": "bad_cv_sarah_lynne_van_der_merwe"
+  },
+  {
+    "score": 1,
+    "strengths": [
+      "Has experience in customer-facing roles which might aid in communication with non-technical stakeholders",
+      "Displays willingness to work and adapt to job requirements"
+    ],
+    "weaknesses": [
+      "Lacks the necessary professional web/software engineering experience",
+      "No evidence of line-managing engineers or leading teams through technical change",
+      "Limited formal education and relevant technical skills",
+      "Inconsistent work history and issues with authority and punctuality"
+    ],
+    "summary": "The candidate lacks the required technical skills, experience, and leadership background necessary for the Engineering Manager role.",
+    "candidate": "bad_cv_kevin_jones"
+  }
+]

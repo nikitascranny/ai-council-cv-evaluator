@@ -1,0 +1,170 @@
+[
+  {
+    "score": 5,
+    "strengths": [
+      "software engineering background",
+      "likely possesses basic computer repair skills"
+    ],
+    "weaknesses": [
+      "no direct experience in retail or customer service",
+      "no experience with small business operations"
+    ],
+    "summary": "Jordan Mitchell has a software engineering background which might translate to basic computer repair skills, but lacks direct retail experience and customer service skills, which are essential for the role.",
+    "candidate": "SystemShock"
+  },
+  {
+    "score": 4,
+    "strengths": [
+      "technical skills in software development",
+      "experience in API development and maintenance"
+    ],
+    "weaknesses": [
+      "lack of practical PC/laptop repair skills",
+      "no experience in customer service or retail environment"
+    ],
+    "summary": "The candidate has strong technical skills but lacks the practical repair and customer service experience required for the position.",
+    "candidate": "Chen_Special"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "passion for software engineering",
+      "experience in backend systems"
+    ],
+    "weaknesses": [
+      "lack of practical PC repair skills",
+      "no relevant experience in customer service or retail"
+    ],
+    "summary": "The candidate lacks the essential practical repair skills and retail experience required for the position, but shows promise in technical capabilities.",
+    "candidate": "BrendanPythno"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "technical skills in Python and Java",
+      "problem-solving and survival skills"
+    ],
+    "weaknesses": [
+      "no direct experience in customer service or computer repair",
+      "lack of relevance of survival experience to computer repair job"
+    ],
+    "summary": "The candidate possesses technical skills but lacks direct experience in the role's requirements and the relevance of their experience to the job.",
+    "candidate": "Li_ExtraSpecial"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Strong analytical and problem-solving skills",
+      "Attention to detail and accuracy"
+    ],
+    "weaknesses": [
+      "Lack of practical computer repair experience",
+      "No direct experience with customer service"
+    ],
+    "summary": "Naledi Mokoena's strong analytical background does not align with the practical, customer-facing requirements of the computer repair position.",
+    "candidate": "MathNaledi"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "background in software engineering",
+      "programming skills in Python and Go"
+    ],
+    "weaknesses": [
+      "lack of practical PC/laptop repair skills",
+      "no experience in customer service or retail environment"
+    ],
+    "summary": "Marcus Vandenberg lacks the practical repair skills and customer service experience necessary for the computer repair role at Brenda & Mick's, though his technical background could be an asset for more complex issues.",
+    "candidate": "MegaMarcus"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Clean UI work and collaboration with design teams",
+      "Reduced page load time"
+    ],
+    "weaknesses": [
+      "Lacks practical PC/laptop repair skills",
+      "No experience with customer service in a repair shop"
+    ],
+    "summary": "Priya's background in software engineering and UI optimization does not align well with the practical repair and customer service skills required for the position.",
+    "candidate": "PriyaPicture"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "4 years of experience in backend systems",
+      "proficient in multiple programming languages"
+    ],
+    "weaknesses": [
+      "no practical PC/laptop repair skills",
+      "no relevant work experience in customer service or computer repair"
+    ],
+    "summary": "Samantha has strong technical skills but lacks the practical repair and customer service experience required for the role.",
+    "candidate": "SamanthaOne"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Strong technical background in software engineering",
+      "Experience in system architecture and design"
+    ],
+    "weaknesses": [
+      "Lacks practical experience in computer repair",
+      "No direct experience in customer service or retail"
+    ],
+    "summary": "Taylor Okafor has an impressive technical background but lacks the practical computer repair skills and customer service experience required for the position at Brenda & Mick's Computer Repairs.",
+    "candidate": "TaylorGraphics"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Exceptional technical skills and extensive experience in software engineering"
+    ],
+    "weaknesses": [
+      "Lacks practical PC/laptop repair skills, no direct experience in customer service or small business operations"
+    ],
+    "summary": "Despite Casey's impressive background in software engineering, the candidate lacks the specific technical skills and experience required for a hands-on computer repair role.",
+    "candidate": "CaseyWhitmore"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Possesses some technical terms that may indicate familiarity with computer systems",
+      "Hobbies and interests suggest engagement with technology"
+    ],
+    "weaknesses": [
+      "Unable to decipher the relevance of the candidate's experiences and skills to the job",
+      "Lack of clear, understandable work history and skills description"
+    ],
+    "summary": "Candidate's CV is largely incomprehensible, making it difficult to evaluate their fit for the role.",
+    "candidate": "HomerSimsSon"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong technical background in software engineering",
+      "Experience with distributed systems and automation"
+    ],
+    "weaknesses": [
+      "Lacks practical PC/laptop repair skills",
+      "No experience in customer service or retail environment"
+    ],
+    "summary": "Jordan Mitchell is highly skilled in software engineering but lacks the practical IT repair and customer service experience required for the role.",
+    "candidate": "JordanMitchell5Star"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Highly skilled in software engineering and system design",
+      "Proven track record of technical leadership and project delivery"
+    ],
+    "weaknesses": [
+      "Lacks practical PC/laptop repair skills",
+      "Incompatible work style and attitude with the casual, small business environment",
+      "No evidence of patience or customer service experience"
+    ],
+    "summary": "Victoria Sterling has impressive technical skills but her lack of relevant practical repair experience and her confrontational attitude make her a poor fit for the role.",
+    "candidate": "VictoriaSterlingSilver"
+  }
+]

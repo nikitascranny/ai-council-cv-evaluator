@@ -1,0 +1,37 @@
+[
+  {
+    "score": 4,
+    "strengths": [
+      "Strong leadership and team coordination skills which can be beneficial for managing tasks and collaborating with the Head of Computing.",
+      "Experience in operational management and stakeholder communication which are transferable to managing IT processes and engaging with students and staff."
+    ],
+    "weaknesses": [
+      "Lack of direct experience in IT support, device management, or programming which are essential for the role.",
+      "No specific experience in education settings or working with young people.",
+      "Absence of a working knowledge of Windows 11, Microsoft 365, or device management tools like Intune."
+    ],
+    "summary": "The candidate has strong leadership and communication skills but lacks direct IT experience and specific programming skills required for the role.",
+    "candidate": "professional_cv_sarah_lynne_van_der_merwe",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Business development",
+      "Team leadership"
+    ],
+    "weaknesses": [
+      "Lack of IT experience",
+      "No coding background",
+      "No education or safeguarding experience"
+    ],
+    "summary": "The candidate's background in business and retail does not align with the technical and educational requirements of the IT Technician & Coding Enrichment Lead role.",
+    "candidate": "professional_cv_sarah_lynne_van_der_merwe",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's experience in business operations, management, and leadership development provides a reasonable match for the practical IT support role, but does not directly evidence IT support or technical skills. Their experience in client management and consulting could be relevant to explaining technology clearly to young people, although direct IT support experience is unclear. The candidate's education and professional experience suggest an enthusiasm for working with people and a commitment to professional standards, which are aligned with the job requirements. There is no evidence of IT technical skills or programming ability.",
+    "candidate": "professional_cv_sarah_lynne_van_der_merwe",
+    "type": "essential_requirements"
+  }
+]

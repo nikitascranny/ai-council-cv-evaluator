@@ -1,0 +1,37 @@
+[
+  {
+    "score": 4,
+    "strengths": [
+      "Candidate has technical skills in software development and experience with web technologies.",
+      "Alex possesses problem-solving abilities demonstrated through performance tuning and integration tasks."
+    ],
+    "weaknesses": [
+      "Lack of practical PC/laptop repair skills and experience with hardware.",
+      "No direct experience in customer service or hands-on repair work.",
+      "Does not meet the essential requirement of being local or reliably able to get to Tillingford.",
+      "No evidence of patient communication skills with older customers."
+    ],
+    "summary": "While Alex has strong technical skills and a problem-solving mindset, the role requires hands-on repair experience and customer service skills, which are not evident in the CV.",
+    "candidate": "Alex Turner",
+    "model": "phi4"
+  },
+  {
+    "score": 4,
+    "strengths": [
+      "JavaScript/TypeScript proficiency",
+      "front-end development experience"
+    ],
+    "weaknesses": [
+      "lack of practical PC/laptop repair skills",
+      "no direct experience in customer service for repairs"
+    ],
+    "summary": "Alex has strong technical skills but lacks the practical repair and customer service experience required for the role.",
+    "candidate": "Alex Turner",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's experience in software engineering and web development aligns well with the ability to explain technical concepts clearly to non-technical users, indicating a potential match for the friendly and patient requirement. The certifications in front-end development and MongoDB suggest practical skills but do not directly address the PC/laptop repair requirement. The candidate's availability on Saturdays and local residence or reliable commuting are clearly met.",
+    "candidate": "Alex Turner",
+    "type": "essential_requirements"
+  }
+]

@@ -1,0 +1,56 @@
+[
+  {
+    "score": 4,
+    "strengths": [
+      "Experience in web development using Django and React",
+      "Participation in code reviews and bug fixing"
+    ],
+    "weaknesses": [
+      "Less than the minimum 5 years of professional experience",
+      "No line-management experience",
+      "No experience with Node.js or .NET"
+    ],
+    "summary": "Daniel Rossouw shows promise in web development but lacks the necessary experience and technical qualifications for the Engineering Manager role.",
+    "candidate": "Daniel_common"
+  },
+  {
+    "score": 4,
+    "strengths": [
+      "4 years of web application development experience",
+      "familiarity with Django and React"
+    ],
+    "weaknesses": [
+      "less than 2 years of line management experience",
+      "no evidence of leading significant technical change"
+    ],
+    "summary": "Linus Torvalds has relevant technical skills but lacks the required leadership experience and significant project management.",
+    "candidate": "Linus"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "mobile app development experience",
+      "demonstrated ability to improve app quality"
+    ],
+    "weaknesses": [
+      "lacks backend or full-stack experience",
+      "no experience managing teams or leading technical change"
+    ],
+    "summary": "Lauren Fischer has strong mobile app development skills but lacks the backend experience, team management, and leadership in technical change required for the role.",
+    "candidate": "Lauren_common"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "mobile app development experience",
+      "improved app store ratings"
+    ],
+    "weaknesses": [
+      "lack of web development experience",
+      "insufficient managerial experience",
+      "no significant technical change leadership"
+    ],
+    "summary": "Margaret Hamilton lacks the required web development and managerial experience, and has not led significant technical changes, making her a poor fit for the Engineering Manager role.",
+    "candidate": "Margaret"
+  }
+]

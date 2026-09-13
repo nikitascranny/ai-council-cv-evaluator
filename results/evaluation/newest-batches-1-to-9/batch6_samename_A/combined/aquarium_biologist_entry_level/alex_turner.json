@@ -1,0 +1,37 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Has a degree in a scientific field, albeit not the specific areas mentioned in the requirements",
+      "Possesses a strong analytical mindset, as demonstrated by experience in software engineering"
+    ],
+    "weaknesses": [
+      "Lacks relevant education in Marine Biology, Zoology, Aquatic Biology, or related life sciences",
+      "No experience or skills related to aquatic animal husbandry or water chemistry",
+      "No background in working with aquarium life support systems or in a zoo/aquarium environment",
+      "Physically oriented tasks such as filter cleaning and working in humid environments are not aligned with candidate's current skills"
+    ],
+    "summary": "The candidate has a strong analytical background but lacks relevant scientific education and practical experience in aquatic biology and husbandry.",
+    "candidate": "Alex Turner",
+    "model": "phi4"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Technical background in maintaining and improving system efficiency",
+      "Experience with APIs and services"
+    ],
+    "weaknesses": [
+      "No relevant experience in marine biology or aquatic animal husbandry",
+      "No experience with physical, hands-on tasks related to the job"
+    ],
+    "summary": "The candidate lacks the necessary background in marine biology and hands-on experience with aquatic life support systems, which are critical for the role.",
+    "candidate": "Alex Turner",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's CV does not clearly meet the essential requirement for a degree in Marine Biology, Zoology, Aquatic Biology or a related life science. However, the candidate's experience in software engineering and relevant coursework in Computer Science and Cloud Computing could be seen as a reasonable match for the required skills and knowledge. The physical fitness and ability to work flexible hours are not evident, and there is no indication of relevant practical experience in aquaculture or water chemistry.",
+    "candidate": "Alex Turner",
+    "type": "essential_requirements"
+  }
+]

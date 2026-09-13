@@ -1,0 +1,38 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Candidate has some physical strength and ability to handle manual tasks, as mentioned in his CV.",
+      "Shows potential for upskilling with willingness to learn, as evidenced by his quick learning in various roles."
+    ],
+    "weaknesses": [
+      "Lacks relevant maritime experience, which is a critical requirement for the role.",
+      "No evidence of reliability or punctuality, both of which are essential for this position.",
+      "Objective and work experience do not align with the job's demands, indicating a lack of commitment to the role.",
+      "No formal education or training in required areas such as vessel safety procedures or fishing techniques."
+    ],
+    "summary": "The candidate lacks essential maritime experience, reliability, and relevant skills for a physically demanding and precise role like Boat Hand/Deckhand.",
+    "candidate": "bad_cv_jason_muller",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Can lift heavy boxes",
+      "Fast learner when motivated"
+    ],
+    "weaknesses": [
+      "Lacks relevant work experience",
+      "No evidence of reliability or punctuality",
+      "Objective does not align with the job"
+    ],
+    "summary": "Jason Muller has minimal relevant experience and his career objectives are misaligned with the physical demands and responsibilities of the boat hand position.",
+    "candidate": "bad_cv_jason_muller",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's CV does not clearly demonstrate physical fitness for heavy manual work or sea experience, which are essential requirements. Their past experience in managing staff and dealing with difficult customers could reasonably relate to the ability to be reliable and punctual, as well as to handle challenging situations. Basic numeracy might be inferred from their entrepreneurial experience, but is not explicitly stated. Early start and long days are not directly addressed, though their experience with managing a business could imply adaptability to irregular schedules.",
+    "candidate": "bad_cv_jason_muller",
+    "type": "essential_requirements"
+  }
+]

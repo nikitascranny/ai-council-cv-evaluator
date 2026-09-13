@@ -1,0 +1,38 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Has experience in records management and administration, which indicates strong organizational skills.",
+      "Possesses excellent communication and interpersonal skills, essential for coordinating teams and ensuring discreet operations."
+    ],
+    "weaknesses": [
+      "Lacks relevant experience in groundskeeping, countryside management, or outdoor activities, which are essential for the role.",
+      "Does not have experience with tracking, search & rescue, or military/pursuit-oriented backgrounds, which are strongly preferred.",
+      "No evidence of physical fitness or ability to work in remote and challenging outdoor environments.",
+      "Absence of any experience or skills related to the unique demands of the role, such as managing physical activities and outdoor coordination."
+    ],
+    "summary": "The candidate demonstrates strong organizational and communication skills but lacks the necessary outdoor, physical, and specific role-related experiences required for the job.",
+    "candidate": "NDLOVU KARABO REFILWE",
+    "model": "phi4"
+  },
+  {
+    "score": 8,
+    "strengths": [
+      "Strong background in records management and archives",
+      "Excellent communication and organizational skills"
+    ],
+    "weaknesses": [
+      "Limited direct healthcare experience",
+      "No specific mention of security policy development"
+    ],
+    "summary": "The candidate possesses extensive experience in records management and archiving, but lacks direct experience in the healthcare sector and specific expertise in security policy development.",
+    "candidate": "NDLOVU KARABO REFILWE",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "",
+    "error": "PARSE ERROR",
+    "candidate": "NDLOVU KARABO REFILWE",
+    "type": "essential_requirements"
+  }
+]

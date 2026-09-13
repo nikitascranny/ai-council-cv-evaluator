@@ -1,0 +1,37 @@
+[
+  {
+    "score": 4,
+    "strengths": [
+      "Has relevant experience with full-stack development, including frontend technologies like React (similar to Flutter)",
+      "Strong background in problem-solving with demonstrated improvements in app store ratings and crash rates"
+    ],
+    "weaknesses": [
+      "Lacks experience with required backend technologies like Go, Kafka, or TimescaleDB",
+      "No demonstrated experience with operating production services or event-driven architectures",
+      "No evidence of experience in real-time systems or energy sector domain knowledge"
+    ],
+    "summary": "Lauren Fischer has foundational software engineering skills and problem-solving experience but lacks the specific technical skills and production experience required for the role at Pulsegrid.",
+    "candidate": "Lauren_common",
+    "model": "phi4"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "mobile app development experience",
+      "ability to improve user experience"
+    ],
+    "weaknesses": [
+      "lack of full-stack experience",
+      "no direct experience with TypeScript/React or Go",
+      "limited experience with distributed systems"
+    ],
+    "summary": "Lauren has strong mobile app development skills but lacks the full-stack and backend experience required for the role.",
+    "candidate": "Lauren_common",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate meets the requirement for 4+ years of production software shipping experience and has relevant coursework and additional training in Flutter and Dart, which are closely related to TypeScript/React. The candidate's experience in fixing bugs and improving app ratings demonstrates a solid grasp of distributed systems fundamentals and production operations. However, the CV does not explicitly mention experience with Go, Rust, Node, or Java, nor does it clearly indicate comfort with operating services in production or the ability to explain technical trade-offs to non-technical stakeholders.",
+    "candidate": "Lauren_common",
+    "type": "essential_requirements"
+  }
+]

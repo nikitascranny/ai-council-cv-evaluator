@@ -1,0 +1,37 @@
+[
+  {
+    "score": 8,
+    "strengths": [
+      "Diverse experience in roles focusing on strategic partnerships, project management, and internal communications, aligning well with the required skills.",
+      "Strong foundation in account management, IT project management, and agile methodologies, which are relevant to the job.",
+      "Proven track record in building strategic alliances, managing relationships, and leading initiatives, demonstrating leadership and organizational skills.",
+      "Extensive up-skilling potential through ongoing education in management practice and public relations."
+    ],
+    "weaknesses": [
+      "Limited direct evidence of skills in UX/UI and no code development despite listing them as skills.",
+      "Geographical focus primarily in South Africa, which may affect global applicability if the job requires extensive international experience."
+    ],
+    "summary": "The candidate has a strong background in strategic partnerships, project management, and internal communications, with ongoing education enhancing their potential, though some skills need further demonstration.",
+    "candidate": "LERATO MUNCHE",
+    "model": "phi4"
+  },
+  {
+    "score": 8,
+    "strengths": [
+      "Rich experience in partnership management and global engagement",
+      "Demonstrated skills in project management and IT"
+    ],
+    "weaknesses": [
+      "Limited direct software development experience",
+      "No recent education updates for the current year"
+    ],
+    "summary": "The candidate is well-suited with strong partnership management skills and relevant IT project experience, though lacking in recent educational updates and direct software development roles.",
+    "candidate": "LERATO MUNCHE",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate clearly meets the requirement for project management experience, having held positions as a Project Manager and Global Partnerships Manager. Their experience in managing contracts, budgets, and stakeholder relationships is a reasonable match for the essential requirements. However, the specific role and responsibilities of the job are not clearly stated, making it difficult to fully assess which requirements are not met or unclear.",
+    "candidate": "LERATO MUNCHE",
+    "type": "essential_requirements"
+  }
+]

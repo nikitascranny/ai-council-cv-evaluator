@@ -1,0 +1,38 @@
+[
+  {
+    "score": 4,
+    "strengths": [
+      "Demonstrates strong organizational and administrative skills.",
+      "Experience in managing records and information systems.",
+      "Exposure to project management and implementation in records management."
+    ],
+    "weaknesses": [
+      "Lacks direct experience in web/software engineering.",
+      "No leadership experience in engineering or technical teams.",
+      "No experience with the specific technologies mentioned (React, TypeScript, Node.js, .NET, AWS).",
+      "No experience in agile delivery methodologies relevant to software development."
+    ],
+    "summary": "While the candidate has strong organizational skills and some project management experience, they lack the technical, engineering, and leadership experience required for the Engineering Manager role in web development.",
+    "candidate": "NDLOVU KARABO REFILWE",
+    "model": "phi4"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Excellent organizational and administrative skills",
+      "Experience in records management and compliance"
+    ],
+    "weaknesses": [
+      "Lack of relevant web/software engineering experience",
+      "No proven experience in leading technical teams through change"
+    ],
+    "summary": "The candidate excels in administrative and records management but lacks the technical and leadership experience required for the engineering management role.",
+    "candidate": "NDLOVU KARABO REFILWE",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate does not clearly meet the 5+ years of professional web/software engineering experience or the 2 years of line management. However, there is a reasonable match with the strong background in information technology and experience in records and archival management, which can be considered relevant to the role. The candidate's experience in leading teams through significant technical change is unclear from the CV. Excellent communication skills are evidenced by the diverse roles that required interaction with various stakeholders.",
+    "candidate": "NDLOVU KARABO REFILWE",
+    "type": "essential_requirements"
+  }
+]

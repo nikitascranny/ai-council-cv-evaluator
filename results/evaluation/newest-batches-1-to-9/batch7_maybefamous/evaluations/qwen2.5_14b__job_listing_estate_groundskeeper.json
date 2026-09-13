@@ -1,0 +1,56 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Comfortable with physical activities like hiking",
+      "Has relevant skills in tracking and rescue through hobbies"
+    ],
+    "weaknesses": [
+      "Lacks any experience or skills related to estate management or hunting",
+      "No background in security, military, or pursuit-oriented roles"
+    ],
+    "summary": "Linus Torvalds has minimal relevant experience and skills for the role of Groundskeeper & Hunt Coordinator at Blackmoor Hall Estate, but his physical fitness and outdoor interests might be seen as minor strengths.",
+    "candidate": "Linus"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Comfortable with technology and programming",
+      "Self-taught and capable of upskilling"
+    ],
+    "weaknesses": [
+      "No relevant experience in groundskeeping or outdoor management",
+      "Lacks the physical and practical skills required for the role",
+      "No experience or comfort with the unique and unconventional aspects of the job"
+    ],
+    "summary": "Daniel Rossouw lacks the necessary practical and professional experience for the role and does not possess the required comfort level with unconventional elements of the job.",
+    "candidate": "Daniel_common"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong background in software engineering",
+      "Experience with mobile app development and improvement"
+    ],
+    "weaknesses": [
+      "No relevant experience in groundskeeping, hunting, or search and rescue",
+      "Inability to address the 'hunting' premise"
+    ],
+    "summary": "The candidate lacks the necessary background and experience in groundskeeping and search and rescue, and their skill set is not aligned with the role's requirements.",
+    "candidate": "Lauren_common"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "technical skills in software engineering",
+      "collaborative work experience"
+    ],
+    "weaknesses": [
+      "no relevant experience in groundskeeping or hunting scenarios",
+      "lack of physical fitness or outdoor skills required for the role",
+      "inability to relate job history to the unique requirements of the position"
+    ],
+    "summary": "Margaret Hamilton's background in software engineering does not align with the physical and outdoor skills required for the position of Estate Groundskeeper & Hunt Coordinator at Blackmoor Hall.",
+    "candidate": "Margaret"
+  }
+]

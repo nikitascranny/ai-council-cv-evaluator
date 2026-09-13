@@ -1,0 +1,40 @@
+[
+  {
+    "score": 4,
+    "strengths": [
+      "The candidate has demonstrated strong analytical and problem-solving skills in roles as a Business Analyst.",
+      "The candidate possesses relevant project management skills and experience in compliance and efficiency improvement.",
+      "Strong communication and interpersonal skills are evident, which are crucial for cross-functional teamwork."
+    ],
+    "weaknesses": [
+      "Lack of direct experience in web/software engineering and managing engineering teams.",
+      "No evidence of experience with modern web stacks like React/TypeScript or backend technologies such as Node.js or .NET.",
+      "No experience with leading architectural changes or migration to service-oriented architectures.",
+      "Absence of demonstrated experience with CI/CD, cloud infrastructure, or managing on-call responsibilities."
+    ],
+    "summary": "The candidate shows strong analytical and communication skills but lacks direct experience in web development and engineering leadership, which are critical for this role.",
+    "candidate": "THE DANIEL",
+    "model": "phi4"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Business Analysis",
+      "Communication & Interpersonal Skills",
+      "Critical Thinking"
+    ],
+    "weaknesses": [
+      "Lack of Web Development Experience",
+      "No Evidence of Leading Teams Through Significant Technical Change",
+      "Limited Technical Skills Relevant to Web Development"
+    ],
+    "summary": "The candidate lacks the necessary technical and web development experience for the role and does not demonstrate the ability to lead significant technical changes, though they show strong business analysis and communication skills.",
+    "candidate": "THE DANIEL",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate meets the requirement for a business background but lacks direct web/software engineering experience. The role in managing Treasury systems and business analysis skills might be a reasonable match, but the exact years of experience are unclear. The CV does not provide clear evidence of leading technical teams, managing significant technical changes, or expertise in modern web stacks and cloud infrastructure.",
+    "candidate": "THE DANIEL",
+    "type": "essential_requirements"
+  }
+]

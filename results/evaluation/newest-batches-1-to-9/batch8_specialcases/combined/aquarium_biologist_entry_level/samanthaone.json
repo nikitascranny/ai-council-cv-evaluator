@@ -1,0 +1,36 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Possesses a degree in a related life science, which meets the essential educational requirement.",
+      "Demonstrates willingness to engage in physically demanding tasks, as indicated by her career change."
+    ],
+    "weaknesses": [
+      "Lacks relevant work experience in aquatic animal husbandry or related fields.",
+      "No evidence of knowledge in water chemistry, the nitrogen cycle, or familiarity with life support systems.",
+      "No experience with aquarium maintenance tasks such as filter cleaning or water quality testing."
+    ],
+    "summary": "The candidate has a relevant degree and willingness for hands-on work but lacks direct experience and specific knowledge required for the role.",
+    "candidate": "SamanthaOne",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "4 years of software engineering experience",
+      "proficient in multiple programming languages"
+    ],
+    "weaknesses": [
+      "no relevant experience in marine biology, aquatic animal husbandry, or aquarium life support systems",
+      "lacks essential educational background"
+    ],
+    "summary": "Samantha has strong technical skills but lacks the necessary experience and education in marine biology and aquarium management.",
+    "candidate": "SamanthaOne",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's degree in Biology and relevant practical experience in aquatic environments clearly meet the educational requirement. The ability to perform physical tasks, work in warm environments, and work weekends aligns with the job's needs. Observational skills and attention to detail, as well as record-keeping habits, are reasonably demonstrated. Basic water chemistry knowledge is unclear from the CV, and there is no explicit mention of the nitrogen cycle understanding.",
+    "candidate": "SamanthaOne",
+    "type": "essential_requirements"
+  }
+]

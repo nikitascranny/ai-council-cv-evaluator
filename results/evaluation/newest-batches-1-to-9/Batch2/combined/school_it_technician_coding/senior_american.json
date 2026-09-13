@@ -1,0 +1,39 @@
+[
+  {
+    "score": 6,
+    "strengths": [
+      "Strong technical background with experience in distributed systems, platform engineering, and technical leadership.",
+      "Experience with various programming languages and platforms, including Python, which aligns with the coding aspect of the role.",
+      "Demonstrated ability in mentoring and technical strategy, which could be valuable in the educational setting.",
+      "Proven track record of improving systems reliability and efficiency, relevant to maintaining school IT infrastructure."
+    ],
+    "weaknesses": [
+      "Lack of direct experience in educational or IT support settings.",
+      "No explicit experience with device management tools like Intune or classroom technology support.",
+      "Limited familiarity with specific educational technologies like Google Classroom or Scratch.",
+      "No demonstrated experience in safeguarding or working directly with young people."
+    ],
+    "summary": "Marcus Okafor has a strong technical foundation and leadership experience, but lacks direct experience in educational IT support and working with young people.",
+    "candidate": "senior_american",
+    "model": "phi4"
+  },
+  {
+    "score": 4,
+    "strengths": [
+      "Strong technical background in IT and software development",
+      "Experience in mentoring and leadership"
+    ],
+    "weaknesses": [
+      "Lacks direct experience in an educational setting",
+      "Does not meet the basic programming requirement for KS3 support"
+    ],
+    "summary": "The candidate has a robust technical background but lacks direct experience in education and the specific programming requirements for the role.",
+    "candidate": "senior_american",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's experience as a Principal Software Engineer, Staff Software Engineer, and Senior Software Engineer clearly meets the practical IT support experience requirement. Their working knowledge of Windows 11, Microsoft 365, and a variety of programming languages, including Python, suggests they have a reasonable match for the basic programming ability requirement. Their experience in mentoring and technical leadership is closely related to the enthusiasm for working with young people. The candidate's educational background and technology experience strongly suggest they have an understanding of safeguarding and are committed to following policies. The requirement for an enhanced DBS check and barred list check is unclear from the CV and would need to be verified separately.",
+    "candidate": "senior_american",
+    "type": "essential_requirements"
+  }
+]

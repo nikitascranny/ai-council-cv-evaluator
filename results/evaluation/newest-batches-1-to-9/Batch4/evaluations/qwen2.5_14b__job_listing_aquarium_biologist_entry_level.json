@@ -1,0 +1,29 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Strong livestock welfare and handling skills",
+      "Experienced in record keeping and health observation"
+    ],
+    "weaknesses": [
+      "No experience in aquatic animal husbandry",
+      "Lacks educational background in marine biology or related fields"
+    ],
+    "summary": "Ralph has strong animal care and observational skills but lacks the specific experience and education required for aquatic animal husbandry.",
+    "candidate": "Ralph_Son_of_a_Shepard_Farm_CV"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "accurate record keeping",
+      "independent working"
+    ],
+    "weaknesses": [
+      "lack of relevant marine biology experience",
+      "no formal IT qualifications",
+      "no background in aquatic life support systems"
+    ],
+    "summary": "The candidate lacks direct experience in aquatic life support systems and marine biology, despite having skills in maintenance and record keeping.",
+    "candidate": "Ralph_Son_of_a_Shepard_IT_Transition_CV"
+  }
+]

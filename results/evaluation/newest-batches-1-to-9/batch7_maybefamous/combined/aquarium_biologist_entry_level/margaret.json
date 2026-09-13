@@ -1,0 +1,37 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Margaret Hamilton has a strong educational background in software engineering, indicating a good foundation in analytical and problem-solving skills.",
+      "Her experience in mobile app development demonstrates her ability to learn and apply new technologies, which could be advantageous for the up-skilling potential."
+    ],
+    "weaknesses": [
+      "Margaret lacks the required educational background in Marine Biology, Zoology, or a related life science.",
+      "She has no relevant experience in aquatic animal husbandry, life support systems, or aquarium maintenance.",
+      "Her skills and experience are primarily in software engineering, with no evidence of physical fitness or willingness to perform the manual tasks required for the role.",
+      "There is no indication of familiarity with water chemistry or the nitrogen cycle, which are essential for the position."
+    ],
+    "summary": "Margaret Hamilton's software engineering background shows strong analytical skills, but she lacks the necessary education, relevant experience, and physical suitability for the Aquarium Biologist role.",
+    "candidate": "Margaret",
+    "model": "phi4"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Strong problem-solving skills",
+      "Proficient in software development tools and techniques"
+    ],
+    "weaknesses": [
+      "Lack of relevant biological science education or experience",
+      "No direct experience with aquatic life support systems or animal husbandry"
+    ],
+    "summary": "Margaret Hamilton's background in software engineering does not align with the essential requirements of the Aquarium Biologist position, which necessitates a strong foundation in marine biology or a related field.",
+    "candidate": "Margaret",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's background in software engineering and relevant coursework demonstrate a reasonable match for the required understanding of water chemistry and the nitrogen cycle in closed aquatic systems, as well as strong observational and attention to detail skills, though not explicitly stated. However, the CV does not clearly demonstrate a degree in marine biology, zoology, or related life sciences, nor does it provide evidence of physical labor or working in relevant environments.",
+    "candidate": "Margaret",
+    "type": "essential_requirements"
+  }
+]

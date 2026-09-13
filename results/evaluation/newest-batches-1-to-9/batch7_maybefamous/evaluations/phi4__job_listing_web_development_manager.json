@@ -1,0 +1,65 @@
+[
+  {
+    "score": 6,
+    "strengths": [
+      "Has experience with React, aligning with the React/TypeScript requirement.",
+      "Participated in sprint planning and code reviews, relevant to team delivery responsibilities.",
+      "Comfortable working across the stack, indicating adaptability to new technologies."
+    ],
+    "weaknesses": [
+      "Lacks direct experience in line-managing engineers.",
+      "Insufficient years of professional experience (4 years total, with only 4 as a software engineer).",
+      "No direct experience with .NET or Node.js, which are critical for the backend requirements.",
+      "Lacks proven experience leading significant technical changes such as replatforming or monolith decomposition.",
+      "Limited exposure to AWS, CI/CD, and cloud infrastructure which are essential for the role."
+    ],
+    "summary": "Daniel Rossouw demonstrates some foundational skills and experience relevant to the role but lacks direct experience in leadership, backend technologies, and significant technical transformations, impacting his suitability.",
+    "candidate": "Daniel_common"
+  },
+  {
+    "score": 6,
+    "strengths": [
+      "Has experience with modern web stacks including React and Django, aligning with the technical requirements.",
+      "Participated in sprint planning and code reviews, relevant for team delivery responsibilities.",
+      "Completed relevant coursework and certifications, demonstrating foundational knowledge and initiative."
+    ],
+    "weaknesses": [
+      "Lacks the required 5+ years of professional experience and at least 2 years of line-management experience.",
+      "Insufficient proven experience leading teams through significant technical changes.",
+      "Limited exposure to AWS and .NET, which are preferred technologies for the role."
+    ],
+    "summary": "The candidate shows potential with relevant technical skills and experience in web development but falls short in leadership experience and familiarity with some key technologies required for the role.",
+    "candidate": "Linus"
+  },
+  {
+    "score": 5,
+    "strengths": [
+      "Strong experience in software engineering, particularly in mobile app development with a focus on cross-platform technologies like Flutter.",
+      "Proven ability to improve product quality, demonstrated by enhancing app store ratings through bug fixes and UX improvements.",
+      "Educational background in software engineering with relevant coursework in mobile application development and agile practices."
+    ],
+    "weaknesses": [
+      "Lacks direct experience in web development, particularly with the required technologies such as React/TypeScript and Node.js.",
+      "No experience in line-managing engineers, which is essential for the role.",
+      "Limited exposure to cloud infrastructure and CI/CD practices, particularly with AWS, as required for the job."
+    ],
+    "summary": "Lauren Fischer has relevant software engineering experience and demonstrated improvement skills, but lacks direct experience in web development and leadership, which are critical for the Engineering Manager role.",
+    "candidate": "Lauren_common"
+  },
+  {
+    "score": 4,
+    "strengths": [
+      "Strong experience in software engineering and mobile app development.",
+      "Demonstrated ability to improve product quality and user experience.",
+      "Collaborative experience with design teams."
+    ],
+    "weaknesses": [
+      "Lacks experience in web development, specifically with React/TypeScript and backend languages like Node.js or .NET.",
+      "No proven leadership or team management experience.",
+      "Limited exposure to cloud infrastructure and CI/CD practices.",
+      "No experience with agile methodologies in a team context."
+    ],
+    "summary": "While Margaret Hamilton has relevant software engineering experience, her background is primarily in mobile app development, lacking the required web development skills and leadership experience for this Engineering Manager role.",
+    "candidate": "Margaret"
+  }
+]

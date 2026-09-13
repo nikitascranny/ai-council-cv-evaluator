@@ -1,0 +1,38 @@
+[
+  {
+    "score": 4,
+    "strengths": [
+      "Strong communication and collaboration skills demonstrated through experience in various roles.",
+      "Experience in training and mentoring junior colleagues, relevant to security inductions and refresher briefings."
+    ],
+    "weaknesses": [
+      "Lacks direct experience in security roles, particularly in museum or similar environments.",
+      "No experience with CCTV, intruder alarm, or access-control systems.",
+      "No physical or on-site patrol experience required for the role.",
+      "Lack of experience in incident response and security operations."
+    ],
+    "summary": "Alex Park has strong communication and mentoring skills but lacks the specific security experience and technical knowledge required for the Museum Security Specialist role.",
+    "candidate": "ALEX PARK",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Excellent in software testing and quality assurance",
+      "Proven ability to document and track defects"
+    ],
+    "weaknesses": [
+      "No experience in security or museum operations",
+      "Lacks essential SIA Door Supervisor or Security Guarding license",
+      "No background in physical security systems"
+    ],
+    "summary": "The candidate's expertise in software testing and quality assurance does not align with the required skills for a Museum Security Specialist role.",
+    "candidate": "ALEX PARK",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate does not clearly meet the essential requirement of 3 years' experience in a security role. However, the experience in managing and documenting processes, as well as dealing with clients, could be considered a reasonable match for strong written and verbal communication skills. The physical ability and flexibility to work shifts are unclear from the CV. The candidate's qualifications include a Bachelor of Administration in Management and Public Administration, which is a close match to the working knowledge of security systems requirement, given the broad scope of management and public administration.",
+    "candidate": "ALEX PARK",
+    "type": "essential_requirements"
+  }
+]

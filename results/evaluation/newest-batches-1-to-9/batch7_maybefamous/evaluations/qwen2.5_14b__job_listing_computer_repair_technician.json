@@ -1,0 +1,54 @@
+[
+  {
+    "score": 6,
+    "strengths": [
+      "reparative skills through hobby interests",
+      "technical proficiency in software and hardware"
+    ],
+    "weaknesses": [
+      "lacks direct experience in customer service",
+      "lacks formal training in computer repair"
+    ],
+    "summary": "Linus Torvalds has relevant technical skills and interests that align with the job's requirements, but lacks direct experience in customer service and computer repair.",
+    "candidate": "Linus"
+  },
+  {
+    "score": 5,
+    "strengths": [
+      "technical skills in software engineering",
+      "hobbies related to tech repair"
+    ],
+    "weaknesses": [
+      "no direct experience in PC/laptop repair",
+      "lack of experience in customer service"
+    ],
+    "summary": "Daniel Rossouw has relevant technical skills but lacks direct experience in PC repair and customer service, which are crucial for the role.",
+    "candidate": "Daniel_common"
+  },
+  {
+    "score": 4,
+    "strengths": [
+      "Proficient in software development with a focus on mobile applications",
+      "Has experience in problem-solving and customer interaction through UX improvements"
+    ],
+    "weaknesses": [
+      "Lacks direct experience in computer hardware repair",
+      "No evidence of practical skills in diagnosing and fixing everyday computer issues"
+    ],
+    "summary": "Lauren has a strong background in software development but lacks direct experience in hardware repair and customer service aspects required for the position.",
+    "candidate": "Lauren_common"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Experience in software development and troubleshooting",
+      "Basic skills in mobile app repair"
+    ],
+    "weaknesses": [
+      "Lack of hardware repair experience",
+      "No direct match to essential job requirements"
+    ],
+    "summary": "Margaret Hamilton's background in software engineering and app development does not align well with the required hardware repair skills and customer service orientation of the Computer Repair Person position.",
+    "candidate": "Margaret"
+  }
+]

@@ -1,0 +1,15 @@
+[
+  {
+    "score": 6,
+    "strengths": [
+      "Experience in backend development with Go",
+      "Proficiency in API development"
+    ],
+    "weaknesses": [
+      "Lacks experience in frontend technologies (React/TypeScript)",
+      "No experience in distributed systems and event-driven architectures"
+    ],
+    "summary": "Alex Turner is a backend-focused engineer with strong API development skills but lacks the required frontend experience and knowledge in distributed systems.",
+    "candidate": "Alex Turner"
+  }
+]

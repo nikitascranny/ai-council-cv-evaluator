@@ -1,0 +1,92 @@
+[
+  {
+    "score": 4,
+    "strengths": [
+      "Demonstrates adaptability and teamwork, which are crucial for working in a dynamic environment like fishing.",
+      "Shows practical problem-solving skills, which could be useful in handling various tasks on the fishing vessel."
+    ],
+    "weaknesses": [
+      "Lacks specific experience with maritime work or fishing vessels, which is essential for the role.",
+      "No evidence of experience with physical, repetitive manual work in wet conditions, which is a key requirement.",
+      "Does not have a history of working at sea or on boats, which is strongly preferred for the role.",
+      "Lacks any formal safety training or maritime certifications, which are desirable for the position."
+    ],
+    "summary": "While Jason Muller shows adaptability and problem-solving skills, his lack of maritime experience and physical work history in similar conditions significantly weakens his fit for the boat hand position.",
+    "candidate": "professional_cv_jason_muller"
+  },
+  {
+    "score": 4,
+    "strengths": [
+      "Demonstrates adaptability and resilience across various operational environments.",
+      "Has experience in practical problem-solving and handling varied tasks."
+    ],
+    "weaknesses": [
+      "Lacks specific maritime experience and sea legs, which are crucial for the role.",
+      "Does not have experience with physical, repetitive manual work in marine settings.",
+      "Has not shown punctuality related to time-sensitive operations, critical for tide-dependent fishing schedules."
+    ],
+    "summary": "While Kevin shows adaptability and problem-solving skills, he lacks the maritime experience and physical readiness required for the physically demanding boat hand position.",
+    "candidate": "professional_cv_kevin_jones"
+  },
+  {
+    "score": 4,
+    "strengths": [
+      "Strong leadership and team coordination skills demonstrated in previous retail roles.",
+      "Experience in operational management and stakeholder communication."
+    ],
+    "weaknesses": [
+      "Lacks direct experience in fishing or maritime environments.",
+      "No evidence of physical fitness or comfort with manual labor.",
+      "No prior experience with boat handling or sea survival training.",
+      "Absence of relevant numeracy skills for catch tallying and grading."
+    ],
+    "summary": "The candidate shows strong leadership and operational management skills, but lacks direct maritime experience, physical fitness evidence, and relevant technical skills for the role.",
+    "candidate": "professional_cv_sarah_lynne_van_der_merwe"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Candidate has some physical strength and ability to handle manual tasks, as mentioned in his CV.",
+      "Shows potential for upskilling with willingness to learn, as evidenced by his quick learning in various roles."
+    ],
+    "weaknesses": [
+      "Lacks relevant maritime experience, which is a critical requirement for the role.",
+      "No evidence of reliability or punctuality, both of which are essential for this position.",
+      "Objective and work experience do not align with the job's demands, indicating a lack of commitment to the role.",
+      "No formal education or training in required areas such as vessel safety procedures or fishing techniques."
+    ],
+    "summary": "The candidate lacks essential maritime experience, reliability, and relevant skills for a physically demanding and precise role like Boat Hand/Deckhand.",
+    "candidate": "bad_cv_jason_muller"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Willingness to work and flexibility regarding location"
+    ],
+    "weaknesses": [
+      "Lack of relevant maritime or physical work experience",
+      "Poor punctuality history and issues with authority",
+      "No evidence of physical fitness or comfort with manual work",
+      "Preference for avoiding early mornings and weekends",
+      "Inconsistent employment history with gaps"
+    ],
+    "summary": "Kevin Jones lacks the necessary maritime experience, physical fitness, and punctuality required for the deckhand role at Kestrel Bay Fishing Co.",
+    "candidate": "bad_cv_kevin_jones"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Demonstrates initiative and leadership skills through founding her own consultancy",
+      "Possesses good communication skills as evidenced by motivational engagements"
+    ],
+    "weaknesses": [
+      "Lacks relevant maritime or physical work experience necessary for a boat hand",
+      "No evidence of physical fitness or comfort with manual work in outdoor conditions",
+      "No experience with maritime safety procedures or vessel operation",
+      "Does not meet essential requirements such as sea legs, punctuality, and numeracy for catch tallies",
+      "No specific up-skilling potential relevant to the fishing industry or vessel handling"
+    ],
+    "summary": "The candidate has demonstrated initiative and leadership but lacks relevant maritime experience, physical fitness, and the specific skills necessary for the role of a boat hand.",
+    "candidate": "bad_cv_sarah_lynne_van_der_merwe"
+  }
+]

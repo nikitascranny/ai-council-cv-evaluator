@@ -1,0 +1,39 @@
+[
+  {
+    "score": 2,
+    "strengths": [
+      "Excellent programming and technical skills",
+      "Strong educational background in computer science"
+    ],
+    "weaknesses": [
+      "Lacks relevant experience in groundskeeping or estate management",
+      "No experience in physical or outdoor activities",
+      "No background in tracking, military, or related fields",
+      "Unfamiliar with handling animals or airsoft-style equipment",
+      "No demonstrated experience with discretion in sensitive environments"
+    ],
+    "summary": "The candidate has a strong technical background but lacks the essential practical experience and skills needed for a Groundskeeper & 'Hunt' Coordinator role.",
+    "candidate": "beginner_sa",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong programming and development skills",
+      "Experience in software development and project management"
+    ],
+    "weaknesses": [
+      "No experience related to groundskeeping or outdoor activities",
+      "Lacks the physical and situational requirements of the role",
+      "No background in tracking, search and rescue, or military"
+    ],
+    "summary": "The candidate possesses strong software development skills but lacks any relevant experience in groundskeeping, physical fitness requirements, or the unique aspects of the position.",
+    "candidate": "beginner_sa",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's groundskeeping experience meets the essential requirement. Their tracking and search & rescue background is a reasonable/close match. The physical fitness, willingness to work alone and at odd hours, and living on-site requirements are unclear from the CV. The candidate does not provide evidence of a clean driving licence or experience with the hunting premise.",
+    "candidate": "beginner_sa",
+    "type": "essential_requirements"
+  }
+]

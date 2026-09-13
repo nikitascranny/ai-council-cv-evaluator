@@ -1,0 +1,148 @@
+[
+  {
+    "score": 8,
+    "strengths": [
+      "Extensive relevant experience in strategic partnership management and project alignment with organizational goals.",
+      "Strong skill set in agile project management, IT project management, and leadership in global and regional initiatives.",
+      "Demonstrated ability in relationship management with stakeholders and partners across multiple sectors.",
+      "Proven track record of leading events and initiatives aimed at empowering underrepresented groups in technology."
+    ],
+    "weaknesses": [
+      "Limited direct experience in certain technical areas like Java development which might not be critical for the role but could be beneficial.",
+      "Educational qualifications, while strong, are not specialized in any one area which might limit depth of expertise in niche technical domains."
+    ],
+    "summary": "The candidate possesses a strong alignment with the job's requirements through extensive experience in partnership management, strategic project alignment, and leadership, though some technical skills may require further development.",
+    "candidate": "LERATO MUNCHE"
+  },
+  {
+    "score": 6,
+    "strengths": [
+      "The candidate has extensive experience in digital marketing and digital product management, which aligns with some responsibilities of the role.",
+      "Strong analytical and strategy development skills, which are crucial for designing and building full-stack features.",
+      "Exposure to various technologies such as CMS, JavaScript, HTML/CSS, and Python, although not directly aligned with the job's tech stack, shows a willingness to work with diverse tools."
+    ],
+    "weaknesses": [
+      "Lacks direct experience with the specific technologies required for the role, such as React/TypeScript, Go, Kafka, and TimescaleDB.",
+      "No evidence of operating services in production environments, which is essential for the role.",
+      "No demonstrated experience with event-driven architectures or real-time data platforms."
+    ],
+    "summary": "While the candidate demonstrates strong digital marketing and strategic skills, their technical expertise does not directly align with the job's requirements, and they lack experience with the specific technologies and operational responsibilities critical for the role.",
+    "candidate": "RIAAN GOVEN"
+  },
+  {
+    "score": 5,
+    "strengths": [
+      "Proven experience with cloud technologies and machine learning, relevant to technical adaptability.",
+      "Strong background in data processing and analysis, which aligns with the analytical skills needed.",
+      "Experience with version control systems like Git, essential for collaboration in software development."
+    ],
+    "weaknesses": [
+      "Lack of experience in TypeScript/React and Go, which are essential for the full-stack development required.",
+      "No direct experience with event-driven architectures such as Kafka or TimescaleDB, which are critical for this role.",
+      "Insufficient experience in production operations, observability, and incident response."
+    ],
+    "summary": "The candidate shows potential with a solid foundation in cloud technologies and machine learning but lacks critical full-stack development experience and exposure to the specific technologies required for this role.",
+    "candidate": "EMILE MOKOENA"
+  },
+  {
+    "score": 4,
+    "strengths": [
+      "Experience in automating tests and maintaining tests in CI/CD pipelines, which demonstrates some familiarity with software development processes.",
+      "Strong communication skills and experience in collaborating across teams, which are beneficial for working closely with the engineering team and stakeholders."
+    ],
+    "weaknesses": [
+      "Lack of experience with full-stack development, particularly in React/TypeScript and Go, which are essential for this role.",
+      "No direct experience with operating services in production environments, which is a key responsibility of the role.",
+      "Limited exposure to distributed systems fundamentals, event-driven architectures, or real-time data platforms like Kafka and TimescaleDB."
+    ],
+    "summary": "While Alex Park has strong testing and automation skills, their experience does not align closely with the full-stack development and production operations expertise required for the Pulsegrid role.",
+    "candidate": "ALEX PARK"
+  },
+  {
+    "score": 4,
+    "strengths": [
+      "Demonstrated project management and coordination skills, useful for managing complex systems",
+      "Experience with digital modeling and technical documentation aligns with the need for analytical and problem-solving skills"
+    ],
+    "weaknesses": [
+      "Lack of direct experience with the required technical stack (TypeScript/React, Go, Kafka, TimescaleDB)",
+      "Limited exposure to software development and operational roles in production environments",
+      "Absence of experience in distributed systems and event-driven architectures"
+    ],
+    "summary": "The candidate shows strong project management and analytical skills, but lacks direct technical experience and familiarity with the required technologies and methodologies essential for the role.",
+    "candidate": "JORDAN VELDMAN"
+  },
+  {
+    "score": 4,
+    "strengths": [
+      "Strong background in records management and compliance.",
+      "Experience with archival processing and data management systems."
+    ],
+    "weaknesses": [
+      "Lack of experience with full-stack software development technologies like React, TypeScript, and Go.",
+      "No demonstrated experience with distributed systems or event-driven architectures.",
+      "Limited exposure to the energy sector and real-time data processing."
+    ],
+    "summary": "While the candidate has a strong background in records management and compliance, they lack the specific technical skills and experience in full-stack development and distributed systems required for the founding full-stack engineer role at Pulsegrid.",
+    "candidate": "NDLOVU KARABO REFILWE"
+  },
+  {
+    "score": 4,
+    "strengths": [
+      "Demonstrates strong analytical and project management skills.",
+      "Has experience in cyber security and risk management."
+    ],
+    "weaknesses": [
+      "Lacks direct experience with full-stack development, particularly in TypeScript/React and Go.",
+      "No prior experience in the energy sector or with event-driven architectures like Kafka or TimescaleDB.",
+      "Limited exposure to fast-paced, high-velocity environments typical of early-stage startups."
+    ],
+    "summary": "Patrick Marais has strong analytical, project management, and cyber security skills but lacks the specific technical and sector experience required for the role at Pulsegrid.",
+    "candidate": "PATRICK MARAIS"
+  },
+  {
+    "score": 4,
+    "strengths": [
+      "Strong analytical and problem-solving skills evident from financial and data analysis experience.",
+      "Demonstrated capability in report writing and data visualization, which can be beneficial for developing product surfaces.",
+      "Good organizational and communication skills, crucial for interacting with stakeholders and team members."
+    ],
+    "weaknesses": [
+      "Lack of direct experience in full-stack development, specifically in React/TypeScript and Go, as required by the job.",
+      "No demonstrated experience in operating services in production environments, which is essential for the role.",
+      "Absence of experience with event-driven architectures and distributed systems, which are key technical requirements."
+    ],
+    "summary": "The candidate has strong analytical and communication skills but lacks the specific technical experience and expertise in full-stack development and production operations required for the role.",
+    "candidate": "PONTUS PONTIOUS"
+  },
+  {
+    "score": 4,
+    "strengths": [
+      "The candidate has a solid educational background in business information systems and business analysis.",
+      "They possess strong analytical and communication skills, relevant for understanding and solving complex problems."
+    ],
+    "weaknesses": [
+      "Lack of experience in full-stack software development, specifically with TypeScript/React and Go.",
+      "No demonstrated experience with event-driven architectures or distributed systems, which are essential for the role.",
+      "Insufficient experience in operational software in a production environment.",
+      "No evidence of working directly with customers or contributing to high-velocity, iterative software development environments."
+    ],
+    "summary": "While the candidate has strong analytical and business analysis skills, they lack the technical and full-stack development experience necessary for the role at Pulsegrid.",
+    "candidate": "THE DANIEL"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Strong background in user research and experience with cross-functional collaboration.",
+      "Proven track record in conducting research that informs product and service design."
+    ],
+    "weaknesses": [
+      "Lacks relevant technical skills and experience in full-stack development, particularly in TypeScript/React and Go.",
+      "No experience with production-grade system operations like observability, alerting, or incident response.",
+      "Does not have experience in event-driven architectures or distributed systems, which are key for this role.",
+      "No demonstrated experience in energy sector domain knowledge, which is desirable for the role."
+    ],
+    "summary": "The candidate has strong experience in UX research and user-centered design, but lacks the technical skills and experience in full-stack development, production operations, and domain knowledge required for the role.",
+    "candidate": "GEOFF NITSCHKE"
+  }
+]

@@ -1,0 +1,37 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Has experience with project management and teamwork through sprint planning and code reviews.",
+      "Possesses problem-solving skills as shown by bug fixing and improving reliability of internal tools."
+    ],
+    "weaknesses": [
+      "Lacks physical fitness and experience with manual labor, crucial for the role.",
+      "No prior experience with boats or fishing activities, which are central to the job.",
+      "Does not meet the essential requirement of sea legs or time on boats.",
+      "Lacks numeracy skills specific to fish grading and catch tallying."
+    ],
+    "summary": "The candidate has strong software engineering and teamwork skills, but lacks the physical, technical, and maritime experience necessary for the Deckhand position.",
+    "candidate": "Linus",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Comfortable with early starts and long days",
+      "Basic numeracy skills"
+    ],
+    "weaknesses": [
+      "No experience with fishing or boats",
+      "Lacks essential physical fitness and sea legs"
+    ],
+    "summary": "Linus Torvalds does not have any experience relevant to the fishing industry and lacks the essential physical and maritime skills required for the role.",
+    "candidate": "Linus",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's CV does not clearly meet the essential requirements for the position. Physical fitness for heavy, repetitive manual work and sea legs are not evidenced. However, the willingness to work early starts and long days, as well as reliability and punctuality, are demonstrated through their professional experience. Basic numeracy is implied given their background in software engineering and coding. The lack of relevant experience on boats means the 'sea legs' requirement is not met, and there is no indication of a history of seasickness issues.",
+    "candidate": "Linus",
+    "type": "essential_requirements"
+  }
+]

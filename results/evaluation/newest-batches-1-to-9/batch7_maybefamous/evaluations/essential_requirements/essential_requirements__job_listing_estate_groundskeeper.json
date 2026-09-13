@@ -1,0 +1,19 @@
+[
+  {
+    "summary": "The candidate does not meet the essential requirement of groundskeeping, gamekeeping, or 'countryside management' experience. However, their experience as a software engineer and junior developer demonstrates relevant technical skills and team collaboration, which could be seen as a reasonable match for the 'pursuit oriented' background requirement. The candidate's physical fitness, ability to work alone, and willingness to live on site are not evidenced in the CV, and it is unclear whether they hold a full clean driving license. Their commitment to code quality and reliability through unit testing and bug fixing aligns with the need for discretion and reliability in the role.",
+    "candidate": "Daniel_common"
+  },
+  {
+    "summary": "The candidate's experience does not clearly meet the essential requirement of groundskeeping, gamekeeping, or countryside management experience. However, their software development background, particularly in mobile app development, may be a reasonable close match for the 'pursuit oriented' background requirement. The other requirements, such as physical fitness, discretion, and the ability to work alone, are not evidenced in the CV and are unclear from the provided information.",
+    "candidate": "Lauren_common"
+  },
+  {
+    "summary": "The candidate's experience as a Software Engineer and Junior Developer does not meet the essential requirement of groundskeeping, gamekeeping, or countryside management experience. However, the candidate's experience in working with technology and code reviews could be seen as a reasonable/close match to the 'pursuit oriented' background requirement. The candidate's education and certifications do not clearly address the physical fitness or discretion requirements. Overall, the candidate does not meet the essential requirements of the job description.",
+    "candidate": "Linus"
+  },
+  {
+    "summary": "",
+    "error": "PARSE ERROR",
+    "candidate": "Margaret"
+  }
+]

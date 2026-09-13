@@ -1,0 +1,39 @@
+[
+  {
+    "score": 7,
+    "strengths": [
+      "Has 4 years of experience building web applications, which aligns with the essential requirement.",
+      "Experience with React for frontend development, fulfilling part of the required skills in TypeScript/React.",
+      "Comfortable working across the stack and picking up new frameworks quickly, indicating adaptability and learning capability.",
+      "Participation in sprint planning and code reviews, showing experience with team collaboration."
+    ],
+    "weaknesses": [
+      "Lacks direct experience with Go, which is the preferred backend language for this role.",
+      "No specific experience mentioned with TypeScript, Kafka, TimescaleDB, or observability and incident response in production.",
+      "No evidence of having operated services in production environments (metrics, tracing, incident response).",
+      "No prior experience in a startup environment or with energy sector domain knowledge."
+    ],
+    "summary": "Daniel Rossouw has relevant web development experience and shows adaptability, but lacks specific skills and experience in Go, TypeScript, and startup environments necessary for this role.",
+    "candidate": "Daniel_common",
+    "model": "phi4"
+  },
+  {
+    "score": 5,
+    "strengths": [
+      "4+ years of experience in software development",
+      "proficiency in Python and Django"
+    ],
+    "weaknesses": [
+      "lacks experience with TypeScript/React and Go",
+      "no experience with event-driven architectures or time-series data"
+    ],
+    "summary": "Daniel has relevant experience but lacks the specific skills and experience required for the role at Pulsegrid.",
+    "candidate": "Daniel_common",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate has 4+ years of experience shipping production software and has used TypeScript/React, which meets the frontend requirement. The experience with Django for building REST APIs is a reasonable match for the backend language requirement, though Go is preferred. Metrics and tracing are not explicitly mentioned, but the experience with code reviews and sprint planning indicates involvement in operations and incident response. The candidate's communication skills are evident from the diverse teams they've worked with. The energy and climate focus is not directly addressed, but the projects could be interpreted as related to real-world problems.",
+    "candidate": "Daniel_common",
+    "type": "essential_requirements"
+  }
+]

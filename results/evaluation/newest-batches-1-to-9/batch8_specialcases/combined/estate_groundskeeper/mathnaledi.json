@@ -1,0 +1,38 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Strong analytical and problem-solving skills demonstrated through experience in data analysis and model building.",
+      "Proficiency in data manipulation and reporting, evidenced by optimization of reporting pipelines and handling large datasets."
+    ],
+    "weaknesses": [
+      "Lack of experience in groundskeeping, countryside management, or related outdoor fields.",
+      "No background in tracking, search & rescue, or working with animals such as bloodhounds.",
+      "No evidence of physical fitness or ability to work in remote, outdoor environments.",
+      "Absence of experience in managing live-action experiences or immersive theatre settings."
+    ],
+    "summary": "The candidate's analytical skills are well-developed but do not align with the physical, outdoor, and experience management requirements of the Groundskeeper & 'Hunt' Coordinator role.",
+    "candidate": "MathNaledi",
+    "model": "phi4"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Strong data analysis and modeling skills",
+      "Proven ability to optimize reporting and reduce manual work"
+    ],
+    "weaknesses": [
+      "Lack of relevant experience in groundskeeping or hunt coordination",
+      "No background in tracking, search and rescue, or military"
+    ],
+    "summary": "Candidate excels in data analysis but lacks the necessary background in groundskeeping and pursuit-oriented activities for the role.",
+    "candidate": "MathNaledi",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "",
+    "error": "PARSE ERROR",
+    "candidate": "MathNaledi",
+    "type": "essential_requirements"
+  }
+]

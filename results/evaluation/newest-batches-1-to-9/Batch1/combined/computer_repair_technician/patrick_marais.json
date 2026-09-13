@@ -1,0 +1,37 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Extensive experience in cybersecurity and IT-related fields",
+      "Strong leadership and project management skills",
+      "Experience in public service and community engagement"
+    ],
+    "weaknesses": [
+      "Lack of practical PC/laptop repair skills specific to the job",
+      "No direct experience in retail or customer service settings",
+      "No familiarity with basic hardware components like RAM or SSD"
+    ],
+    "summary": "Patrick A. Marais possesses strong IT and cybersecurity skills but lacks practical hardware repair experience and customer service background, making him a less suitable candidate for this role.",
+    "candidate": "PATRICK MARAIS",
+    "model": "phi4"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Advanced IT and security background",
+      "Extensive management experience"
+    ],
+    "weaknesses": [
+      "Lacks direct experience in basic computer repairs",
+      "Overqualified for a part-time repair role"
+    ],
+    "summary": "Patrick A. Marais is highly skilled in IT and security but lacks the practical hands-on experience with basic computer repairs needed for the position.",
+    "candidate": "PATRICK MARAIS",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's CV clearly meets the requirements for being honest and reliable, as evidenced by their diverse professional experiences and achievements. Their role as a Security Associate and Special Investigator provides a reasonable match for basic PC/laptop repair skills, as these roles often involve handling technology in a professional setting. However, there is no clear evidence of the candidate's ability to repair PCs/laptops specifically. The candidate's experience working Saturdays in a previous role and their current self-employment also suggest a reasonable match for the requirement to work Saturdays. The candidate's ability to explain complex concepts and work with a variety of stakeholders is closely related to being friendly and patient with older customers. While the candidate’s experience may not directly relate to local transportation, their history of working remotely and managing regional teams provides a reasonable indication of their ability to work reliably from various locations.",
+    "candidate": "PATRICK MARAIS",
+    "type": "essential_requirements"
+  }
+]

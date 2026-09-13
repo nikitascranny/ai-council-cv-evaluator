@@ -1,0 +1,37 @@
+[
+  {
+    "score": 7,
+    "strengths": [
+      "Strong background in modern web stacks such as React, TypeScript, and backend technologies (Java, Kotlin, Python, FastAPI) aligning with the role's technical requirements.",
+      "Proven leadership and delivery experience, including leading projects and mentoring junior engineers.",
+      "Experience with CI/CD, cloud infrastructure (AWS), and observability tools which are essential for the role."
+    ],
+    "weaknesses": [
+      "Lacks specific experience with .NET services, which is desirable for the role's technical roadmap.",
+      "No direct experience with Node.js, a key technology for the backend services in the job description.",
+      "No documented experience in large-scale replatforming or monolith decomposition, which is essential for the role."
+    ],
+    "summary": "Kagiso Ndlovu demonstrates strong technical and leadership skills relevant to the role but lacks specific experience with Node.js and .NET services, as well as direct experience with replatforming.",
+    "candidate": "middle_sa",
+    "model": "phi4"
+  },
+  {
+    "score": 7,
+    "strengths": [
+      "Strong background in modern web stacks and backend development",
+      "Experience leading and mentoring early-career engineers"
+    ],
+    "weaknesses": [
+      "Lacks direct experience with React/TypeScript and Node.js",
+      "No specific experience with travel, transport, or booking systems"
+    ],
+    "summary": "Kagiso Ndlovu demonstrates strong technical skills and leadership abilities but may need to bridge gaps in specific technologies and industry experience to fully align with the Engineering Manager role at Northlight Digital.",
+    "candidate": "middle_sa",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate has a relevant educational background and demonstrated experience in presenting technical topics, which aligns closely with their communication skills requirement. However, their professional experience is not detailed in the CV, making it unclear if they meet the 5+ years of professional web/software engineering experience and line management requirements. Their AWS certification and contributions to engineering guilds may be relevant to the cloud infrastructure and agile delivery requirements.",
+    "candidate": "middle_sa",
+    "type": "essential_requirements"
+  }
+]

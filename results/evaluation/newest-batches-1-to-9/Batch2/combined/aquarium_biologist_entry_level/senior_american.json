@@ -1,0 +1,36 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Strong analytical and problem-solving skills evident from a technical background.",
+      "Good mentorship experience, which could translate into learning and supporting tasks under supervision."
+    ],
+    "weaknesses": [
+      "No formal education or practical experience in marine biology, aquatics, or related life sciences.",
+      "Lack of experience in animal husbandry, aquarium maintenance, or any hands-on tasks related to aquatic life support.",
+      "No evidence of physical fitness or ability to perform manual, repetitive tasks as required for the role."
+    ],
+    "summary": "While Marcus has strong analytical and leadership skills, his background does not align with the practical and scientific requirements of an Aquarium Biologist role.",
+    "candidate": "senior_american",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "technical leadership",
+      "experience in system architecture and engineering"
+    ],
+    "weaknesses": [
+      "lack of relevant aquatic biology or zoology education",
+      "no hands-on experience with life support systems or animal husbandry"
+    ],
+    "summary": "Marcus Okafor's extensive experience in software engineering and technical leadership does not align with the required skills and experience for an entry-level aquarium biologist position.",
+    "candidate": "senior_american",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's education is clearly not met as it does not include a degree in a relevant life science field. However, the candidate has a strong background in software engineering, which closely relates to the role's technical requirements. The candidate's physical fitness and willingness to perform physical tasks are unclear from the CV, but their technical experience and attention to detail through practices like reliability scorecards and incident reviews may reasonably indicate they could meet these requirements.",
+    "candidate": "senior_american",
+    "type": "essential_requirements"
+  }
+]

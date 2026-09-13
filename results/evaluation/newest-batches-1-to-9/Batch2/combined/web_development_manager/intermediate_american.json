@@ -1,0 +1,39 @@
+[
+  {
+    "score": 8,
+    "strengths": [
+      "Extensive experience in both backend and frontend technologies relevant to the job, including React, TypeScript, and Java/Kotlin, which aligns with the essential requirement of a strong background in modern web stacks.",
+      "Proven leadership and mentorship experience, having mentored engineers and led technical design reviews, which aligns with the key responsibility of line-managing engineers.",
+      "Experience in leading technical projects, such as the developer portal initiative, demonstrating the ability to drive technical change and manage cross-functional teams.",
+      "Solid understanding of cloud infrastructure and observability, evidenced by AWS and OpenTelemetry usage, which meets the requirement of understanding CI/CD and cloud infrastructure.",
+      "Experience with CI/CD, Kubernetes, and AWS, which are critical for the role's technical responsibilities."
+    ],
+    "weaknesses": [
+      "Lack of direct experience with Node.js and .NET, which are specified in the essential requirements for the role.",
+      "No specific experience in accessibility standards and high-volume transactional booking systems, which are desirable for the position.",
+      "Limited experience in incident management at scale, which is desirable for managing the on-call rota and incident response."
+    ],
+    "summary": "Priya Nair has a strong technical background and leadership experience relevant to the Engineering Manager role, with some gaps in specific technologies and areas of desirable experience.",
+    "candidate": "intermediate_american",
+    "model": "phi4"
+  },
+  {
+    "score": 7,
+    "strengths": [
+      "Strong background in backend technologies such as Java, Kotlin, Spring Boot",
+      "Experience in modern web stacks including React and TypeScript"
+    ],
+    "weaknesses": [
+      "Primary experience is in financial technology rather than transport or travel sectors",
+      "Lacks direct experience with .NET or Node.js"
+    ],
+    "summary": "Priya Nair demonstrates strong technical skills and leadership potential but may require additional context-specific knowledge for the transport sector and direct experience with the technologies mentioned in the job description.",
+    "candidate": "intermediate_american",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate meets the requirement for a strong background in modern web stacks, as evidenced by their AWS Certified Developer certification. They also demonstrate a reasonable match for the essential requirements in terms of relevant education and technical skills, though specific experience in line management and leading technical change is unclear. There is no clear evidence of managing a team through significant technical change or leading distributed teams, which are considered not clearly met.",
+    "candidate": "intermediate_american",
+    "type": "essential_requirements"
+  }
+]

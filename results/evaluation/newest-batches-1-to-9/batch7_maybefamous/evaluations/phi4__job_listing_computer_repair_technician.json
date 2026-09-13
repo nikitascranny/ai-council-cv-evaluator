@@ -1,0 +1,61 @@
+[
+  {
+    "score": 5,
+    "strengths": [
+      "Has relevant experience with software development and a technical background that includes experience with web technologies like Django and React, which might help in understanding the basics of hardware issues.",
+      "Possesses problem-solving skills and experience in fixing bugs, which is somewhat aligned with diagnosing and fixing everyday computer issues."
+    ],
+    "weaknesses": [
+      "Lacks specific experience in PC/laptop repair or hands-on hardware skills, which are essential for this role.",
+      "No demonstrated experience in customer service or interacting with non-technical customers, an important aspect of the role.",
+      "Experience is more aligned with software engineering than the practical, hands-on repair work required by the job."
+    ],
+    "summary": "Daniel has a strong technical background but lacks specific experience in hands-on hardware repair and customer service, which are crucial for this position.",
+    "candidate": "Daniel_common"
+  },
+  {
+    "score": 5,
+    "strengths": [
+      "Has relevant technical skills such as Python and Django, which could be applicable to some computer repair tasks.",
+      "Demonstrates ability to quickly pick up new frameworks, indicating adaptability to new technical challenges.",
+      "Possesses customer service experience through team collaboration and code reviews, which could translate to interacting with customers."
+    ],
+    "weaknesses": [
+      "Lacks direct experience in hands-on hardware repair or basic PC maintenance, which is essential for the role.",
+      "Experience is primarily in software engineering and web application development, which is not directly relevant to hardware repair.",
+      "No evidence of practical skills in areas such as RAM reseating, virus clean-ups, or explaining non-technical issues to customers."
+    ],
+    "summary": "Linus Torvalds has strong technical skills and adaptability but lacks direct experience and practical skills in hardware repair, which are crucial for this role.",
+    "candidate": "Linus"
+  },
+  {
+    "score": 5,
+    "strengths": [
+      "Familiarity with software development and problem-solving skills, which can be transferable to basic PC/laptop repair tasks.",
+      "Strong background in technology and potential for learning hardware-related tasks.",
+      "Ability to communicate complex information, which can be helpful in explaining technical issues to customers without jargon."
+    ],
+    "weaknesses": [
+      "Lack of direct experience in PC/laptop hardware repair and customer service in a retail environment.",
+      "No evidence of hands-on technical skills related to diagnosing and fixing everyday hardware problems.",
+      "Limited experience in working directly with customers or dealing with hardware issues outside of software development."
+    ],
+    "summary": "Margaret has a strong technical background but lacks specific experience and skills in hardware repair and customer service required for the position.",
+    "candidate": "Margaret"
+  },
+  {
+    "score": 4,
+    "strengths": [
+      "Strong technical foundation in software engineering and mobile app development.",
+      "Experience with cross-platform app development using Flutter, which indicates adaptability to different technologies."
+    ],
+    "weaknesses": [
+      "Lack of hands-on experience with basic PC/laptop repairs.",
+      "No demonstrated experience with customer service or explaining technical issues to non-technical users.",
+      "Limited experience in a non-office, retail environment.",
+      "No specific mention of patience or communication skills with older customers."
+    ],
+    "summary": "Lauren has a strong technical background but lacks direct experience in PC repair and customer service, which are critical for this role.",
+    "candidate": "Lauren_common"
+  }
+]

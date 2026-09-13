@@ -1,0 +1,37 @@
+[
+  {
+    "score": 7,
+    "strengths": [
+      "Has 5 years of production software shipping experience, meeting the required years",
+      "Experience with React and backend languages such as Node.js and Python, aligning with the need for TypeScript/React and backend proficiency",
+      "Demonstrates comfort with ambiguity and velocity, crucial for the role's fast-paced and evolving nature"
+    ],
+    "weaknesses": [
+      "Lacks direct experience with Go, which is preferred for the role",
+      "No specified experience with event-driven architectures like Kafka, which is desirable for scaling data platforms",
+      "Does not have explicit experience with observability and on-call participation, which are essential for service ownership"
+    ],
+    "summary": "Jordan Mitchell has relevant technical skills and experience with production software, but lacks direct experience with Go and event-driven systems, which are crucial for this role.",
+    "candidate": "SystemShock",
+    "model": "phi4"
+  },
+  {
+    "score": 7,
+    "strengths": [
+      "4+ years of shipping production software",
+      "Solid grasp of distributed systems"
+    ],
+    "weaknesses": [
+      "No explicit mention of TypeScript/React experience",
+      "No energy sector domain knowledge"
+    ],
+    "summary": "Jordan Mitchell is a seasoned software engineer with relevant skills and experience, but lacks specific frontend experience and energy sector expertise.",
+    "candidate": "SystemShock",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate clearly meets the requirement of 4+ years of experience shipping production software, and has relevant experience in TypeScript/React. The backend language experience is less clear but could be a reasonable match, given the variety of options mentioned. The candidate's experience in operating services in production and the ability to communicate technical trade-offs is a reasonable match, though not explicitly stated. The requirement for a solid grasp of distributed systems fundamentals and genuine excitement about energy, climate, or hard real-world problems is unclear from the CV.",
+    "candidate": "SystemShock",
+    "type": "essential_requirements"
+  }
+]

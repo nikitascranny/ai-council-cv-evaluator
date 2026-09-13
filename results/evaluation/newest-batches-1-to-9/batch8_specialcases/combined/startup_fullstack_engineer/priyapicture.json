@@ -1,0 +1,39 @@
+[
+  {
+    "score": 7,
+    "strengths": [
+      "Has 4+ years of experience in shipping production software, meeting the essential experience requirement.",
+      "Strong background in React, aligning with the role's demand for full-stack features in a React/TypeScript frontend.",
+      "Experience in reducing page load times demonstrates familiarity with performance optimization, relevant to shipping high-quality features.",
+      "Certification in AWS Cloud Practitioner indicates potential familiarity with cloud environments, which can be beneficial in a startup setting."
+    ],
+    "weaknesses": [
+      "Lacks explicit experience with Go, which is preferred for the backend services in the role.",
+      "No direct experience with event-driven architectures like Kafka or TimescaleDB, though desirable, not essential.",
+      "Limited exposure to real-time or distributed systems, missing some desirable experience in related technologies.",
+      "No demonstrated experience in operating services in production (metrics, tracing, incident response)."
+    ],
+    "summary": "Priya has strong foundational skills in React and web application development, aligning well with the frontend requirements, but needs more exposure to backend technologies and production operations to fully meet the role's demands.",
+    "candidate": "PriyaPicture",
+    "model": "phi4"
+  },
+  {
+    "score": 6,
+    "strengths": [
+      "4 years of software development experience",
+      "Experience with React and TypeScript"
+    ],
+    "weaknesses": [
+      "Lacks experience with Go and backend development",
+      "No experience in the energy sector"
+    ],
+    "summary": "Priya Chetty has relevant frontend experience but lacks the backend and energy sector expertise required for the role.",
+    "candidate": "PriyaPicture",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate has 4+ years of experience shipping production software, which meets the requirement. Their experience with web development and UI component library, as well as their front-end skills, are a reasonable match for the TypeScript/React requirement. However, their experience is primarily in front-end development, and they lack explicit backend language experience, though they may have transferable skills. The candidate's experience with metrics, tracing, and incident response is unclear, and they have not demonstrated a solid grasp of distributed systems fundamentals. Their communication skills are not evidenced, and while their coursework and certifications are relevant, they do not explicitly address the passion for energy, climate, or real-world problems.",
+    "candidate": "PriyaPicture",
+    "type": "essential_requirements"
+  }
+]

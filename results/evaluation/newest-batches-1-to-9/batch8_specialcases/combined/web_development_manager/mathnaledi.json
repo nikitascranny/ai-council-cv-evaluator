@@ -1,0 +1,37 @@
+[
+  {
+    "score": 4,
+    "strengths": [
+      "Strong analytical and statistical skills, demonstrated through experience in model building and hypothesis testing.",
+      "Experience in improving efficiency and reducing manual workload, relevant to optimizing processes in a tech environment.",
+      "Good foundational knowledge in programming languages like Python and SQL, which are useful in a web development context."
+    ],
+    "weaknesses": [
+      "Lack of direct experience in web development or managing a software engineering team.",
+      "No specific experience with the technologies listed in the job description (React/TypeScript, Node.js, .NET, AWS).",
+      "Limited experience with leadership or line management roles, as required by the job."
+    ],
+    "summary": "While Naledi has strong analytical skills and a good foundation in programming, their experience does not directly align with the web development or team management requirements of the Engineering Manager role.",
+    "candidate": "MathNaledi",
+    "model": "phi4"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Strong in data analytics and statistical skills",
+      "Experience in building and optimizing data models"
+    ],
+    "weaknesses": [
+      "Lack of relevant software engineering experience",
+      "No direct experience in web development or team leadership"
+    ],
+    "summary": "Candidate lacks relevant technical and leadership experience in web development, but demonstrates strong analytical skills.",
+    "candidate": "MathNaledi",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's experience is primarily in data analysis and does not clearly meet the essential requirement of 5+ years of professional web/software engineering experience with at least 2 years line managing engineers. However, the candidate's strong background in modern web stacks and cloud infrastructure, particularly through their data analysis projects, is a reasonable/close match. Excellent communication skills are evidenced through their presentation activities, and experience with agile delivery is implied through their work on data pipelines and dashboards.",
+    "candidate": "MathNaledi",
+    "type": "essential_requirements"
+  }
+]

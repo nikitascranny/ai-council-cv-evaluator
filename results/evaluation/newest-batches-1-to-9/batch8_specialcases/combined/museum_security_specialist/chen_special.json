@@ -1,0 +1,38 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Strong technical skills in software development and familiarity with technology platforms.",
+      "Possesses analytical thinking and problem-solving abilities."
+    ],
+    "weaknesses": [
+      "Lacks relevant experience in security roles or museums.",
+      "No experience with CCTV, alarm systems, or access control systems.",
+      "No physical patrolling or incident response experience.",
+      "No mention of communication skills or decision-making under pressure."
+    ],
+    "summary": "The candidate has strong technical skills and experience in software engineering but lacks relevant security experience and specific skills required for the Museum Security Specialist role.",
+    "candidate": "Chen_Special",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "technical skills in Python and Go",
+      "relevant education in computer science"
+    ],
+    "weaknesses": [
+      "lack of experience in security roles",
+      "no relevant certifications for security positions",
+      "no direct experience with CCTV, intruder alarm systems or access-control platforms"
+    ],
+    "summary": "Candidate lacks the essential security experience and certifications required for the Museum Security Specialist role.",
+    "candidate": "Chen_Special",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate has 4 years of experience in a security role, which closely matches the minimum 3 years' experience required. The candidate's SIA Door Supervisor licence is a clear match. The CV indicates working knowledge of CCTV and alarm systems, which is a reasonable match for the requirement. The candidate's experience in writing incident reports aligns with the need for strong communication skills and the ability to remain calm under pressure. However, the physical capability to patrol a large multi-floor site for extended periods is unclear from the CV and requires further clarification. The flexible working schedule is not addressed in the provided CV.",
+    "candidate": "Chen_Special",
+    "type": "essential_requirements"
+  }
+]

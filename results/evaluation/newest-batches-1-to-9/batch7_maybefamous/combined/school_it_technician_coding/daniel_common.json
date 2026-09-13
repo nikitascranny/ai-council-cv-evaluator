@@ -1,0 +1,37 @@
+[
+  {
+    "score": 7,
+    "strengths": [
+      "Strong background in software engineering with experience in Django and REST APIs, aligning with IT support and programming aspects of the role.",
+      "Comfortable working across the stack and quick to learn new frameworks, indicating adaptability and potential for managing the school's varied IT environment.",
+      "Microsoft Certified: Azure Fundamentals, demonstrating a commitment to upskilling and relevant technical knowledge."
+    ],
+    "weaknesses": [
+      "Lack of direct experience in educational settings, which may affect familiarity with school IT infrastructure and environment.",
+      "Limited experience with device management systems like Intune and classroom technology, important for the technician part of the role.",
+      "No specific experience with teaching or coding clubs for young people, which is crucial for the coding enrichment aspect of the position."
+    ],
+    "summary": "Daniel Rossouw possesses strong technical skills and adaptability, but would need experience in educational environments and youth-focused programming activities to fully fit the role.",
+    "candidate": "Daniel_common",
+    "model": "phi4"
+  },
+  {
+    "score": 6,
+    "strengths": [
+      "Strong background in Python and Django",
+      "Experience with web development and application building"
+    ],
+    "weaknesses": [
+      "Lacks direct experience in educational settings",
+      "No specific mention of experience with Microsoft 365 or Intune"
+    ],
+    "summary": "Daniel Rossouw has a solid technical background but lacks direct experience in education and specific IT skills required for the role.",
+    "candidate": "Daniel_common",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate meets the requirement for practical IT support experience through their role as a Junior Developer. They have a reasonable match for working knowledge of Microsoft technologies through their certification and coursework, and demonstrate basic programming ability through their work with Django and React. The enthusiasm for working with young people is not directly evidenced, but the software development experience may imply a similar level of communication skills. The requirement for safeguarding and DBS checks is unclear from the CV.",
+    "candidate": "Daniel_common",
+    "type": "essential_requirements"
+  }
+]

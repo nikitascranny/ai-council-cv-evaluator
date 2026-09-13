@@ -1,0 +1,36 @@
+[
+  {
+    "score": 4,
+    "strengths": [
+      "Experience in managing retail operations, including opening and closing procedures and team coordination.",
+      "Strong communication skills demonstrated through roles involving stakeholder communication and customer engagement."
+    ],
+    "weaknesses": [
+      "Lack of direct experience in a security role or working within a museum or heritage site environment.",
+      "No evidence of familiarity with CCTV, intruder alarm, and access-control systems, which are essential for the role.",
+      "No physical evidence or experience in patrolling large areas or managing security operations, which is necessary for the job."
+    ],
+    "summary": "While the candidate has strong operational and communication skills, they lack direct experience in security and relevant technical skills necessary for the Museum Security Specialist role.",
+    "candidate": "professional_cv_sarah_lynne_van_der_merwe",
+    "model": "phi4"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Business development and brand positioning",
+      "Retail operations and team leadership"
+    ],
+    "weaknesses": [
+      "Lack of experience in security roles",
+      "No relevant certifications or experience with security systems"
+    ],
+    "summary": "The candidate lacks the necessary security experience and certifications for the role, but demonstrates strong business and leadership skills.",
+    "candidate": "professional_cv_sarah_lynne_van_der_merwe",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate has no direct experience in a security role, which is a clear requirement. However, the experience in managing and leading a team, as well as in retail operations, could reasonably transfer to the role. The candidate's coursework in business operations and leadership development may also be relevant. There is no evidence of the SIA Door Supervisor or Security Guarding licence, or specific knowledge of security systems, which are essential requirements.",
+    "candidate": "professional_cv_sarah_lynne_van_der_merwe",
+    "type": "essential_requirements"
+  }
+]

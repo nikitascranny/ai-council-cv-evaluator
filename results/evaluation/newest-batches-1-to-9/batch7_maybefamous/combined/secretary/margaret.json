@@ -1,0 +1,37 @@
+[
+  {
+    "score": 4,
+    "strengths": [
+      "Strong technical skills in software engineering and mobile app development.",
+      "Good experience with problem-solving and improving user experience through bug fixes and redesigns."
+    ],
+    "weaknesses": [
+      "Lack of secretarial, receptionist, or office administration experience.",
+      "No demonstrated experience with office software like Microsoft Word, Excel, or Outlook.",
+      "No experience in an accountancy, legal, or professional-services office environment.",
+      "No evidence of experience in managing tasks such as scheduling, handling correspondence, or maintaining filing systems."
+    ],
+    "summary": "Margaret Hamilton has strong technical skills and problem-solving abilities but lacks the specific administrative and secretarial experience required for the Secretary / Administrative Assistant role.",
+    "candidate": "Margaret",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Excellent technical skills in software development",
+      "Proactive in improving product quality"
+    ],
+    "weaknesses": [
+      "Lacks administrative and secretarial experience",
+      "No direct correlation between candidate's skills and job requirements"
+    ],
+    "summary": "Margaret Hamilton's background in software engineering does not align with the administrative role at Ashcombe & Vale, lacking any relevant experience or skills mentioned in the job description.",
+    "candidate": "Margaret",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's experience as a Junior Developer and Software Engineer demonstrates technical skills relevant to the job, but does not clearly indicate secretarial, receptionist, or office administration experience. The candidate's strong typing speed and accuracy are evident, as well as their ability to manage tasks, which aligns with the job's organizational and multitasking requirements. The candidate's certifications in Flutter and Dart also indicate strong technical skills, though there is no clear evidence of handling confidential financial and personal information.",
+    "candidate": "Margaret",
+    "type": "essential_requirements"
+  }
+]

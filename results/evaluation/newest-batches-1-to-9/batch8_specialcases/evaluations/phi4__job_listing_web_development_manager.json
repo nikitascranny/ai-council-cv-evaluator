@@ -1,0 +1,206 @@
+[
+  {
+    "score": 9,
+    "strengths": [
+      "Extensive experience in leading architecture for planet-scale distributed systems, aligning with the requirement for driving technical roadmaps and leading architecture reviews.",
+      "Deep expertise in modern web stacks, particularly in cloud infrastructure (AWS, GCP, Azure), which aligns with the role's technical demands.",
+      "Proven track record of managing significant technical change and leading teams, fulfilling the leadership and project management aspects of the job.",
+      "Exceptional communication skills and a history of mentoring, meeting the essential requirement for translating between engineers, product managers, and executives.",
+      "Holds a PhD in Computer Science and has published extensively, indicating a high level of technical knowledge and ability to contribute to complex problem-solving."
+    ],
+    "weaknesses": [
+      "The CV summary downplays the candidate's experience, which may affect the initial perception of their qualifications.",
+      "The candidate's work experience is primarily in a different industry, which might require some adaptation to the specific domain of travel and transportation."
+    ],
+    "summary": "The candidate's extensive experience in leadership, technical expertise, and communication skills make them an exceptional fit for the Engineering Manager role, despite the underplayed summary and industry difference.",
+    "candidate": "CaseyWhitmore"
+  },
+  {
+    "score": 8,
+    "strengths": [
+      "Extensive experience in redesigning monolithic systems into microservices, aligning with the job's focus on replatforming.",
+      "Strong leadership skills demonstrated by managing teams of up to 7 engineers across time zones, relevant for line-managing the Web Development team.",
+      "Proven track record in improving system reliability and infrastructure efficiency, crucial for managing customer-facing services.",
+      "Familiarity with AWS, aligning with the company's technical stack and infrastructure needs.",
+      "Certified AWS Solutions Architect Professional, indicating deep knowledge in cloud infrastructure."
+    ],
+    "weaknesses": [
+      "No direct experience with React/TypeScript or Node.js, which are specified as desired technologies for the role.",
+      "Lack of explicit experience in leading teams through accessibility (WCAG) or performance optimization.",
+      "Limited exposure to .NET technologies, which are part of the job's tech stack."
+    ],
+    "summary": "Taylor Okafor is a strong candidate with significant experience in leading technical transformations and managing engineering teams, though lacking specific experience with the web technologies and .NET mentioned in the job description.",
+    "candidate": "TaylorGraphics"
+  },
+  {
+    "score": 7,
+    "strengths": [
+      "Jordan Mitchell has over 5 years of professional web/software engineering experience.",
+      "Experience in leading teams through significant technical changes, which aligns with the key responsibility of leading a major platform modernization.",
+      "Strong background in modern web stacks, including React/TypeScript and backend technologies.",
+      "Proven understanding of CI/CD, cloud infrastructure, and observability, which are essential for the role.",
+      "Good communication skills necessary for translating between engineers, product managers, and executives."
+    ],
+    "weaknesses": [
+      "The CV does not explicitly mention experience with .NET, which is part of the technical stack for the role.",
+      "Lacks specific mention of experience with AWS, which is preferred for the position.",
+      "No direct evidence of experience with accessibility standards and inclusive design practices.",
+      "Insufficient details on experience with distributed or hybrid teams in an agile delivery context.",
+      "No explicit mention of experience in incident management at scale."
+    ],
+    "summary": "Jordan Mitchell has relevant experience and skills for the Engineering Manager role, particularly in team leadership and modern web technologies, but lacks specific experience with .NET, AWS, and accessibility standards.",
+    "candidate": "SystemShock"
+  },
+  {
+    "score": 6,
+    "strengths": [
+      "Experience with high-volume transactional systems aligns with company's needs.",
+      "Hands-on experience with CI/CD pipelines and AWS, relevant to technical requirements.",
+      "Collaborative work with senior engineers and code reviews suggests leadership potential."
+    ],
+    "weaknesses": [
+      "No direct experience in line-managing engineers, which is crucial for the role.",
+      "Limited exposure to React/TypeScript or Node.js/.NET, important for the specific tech stack.",
+      "Lacks specific experience with accessibility standards and service-oriented architecture migration."
+    ],
+    "summary": "The candidate has strong technical skills and experience with high-volume systems, but lacks direct leadership experience and familiarity with the specific technologies required for the role.",
+    "candidate": "Chen_Special"
+  },
+  {
+    "score": 6,
+    "strengths": [
+      "Experience with backend services and collaboration with product and design teams.",
+      "Familiarity with CI/CD practices and reducing regression bugs.",
+      "Certifications in AWS and Kubernetes which align with cloud infrastructure skills needed."
+    ],
+    "weaknesses": [
+      "Lacks experience in line-managing engineers and team leadership.",
+      "No direct experience with React/TypeScript or Node.js/NET stacks.",
+      "Limited exposure to the travel or transport sector and high-volume transactional systems.",
+      "Insufficient evidence of driving technical change or managing architecture reviews."
+    ],
+    "summary": "The candidate has relevant backend experience and some cloud skills, but lacks direct experience in key areas like leadership, specific tech stacks, and the relevant industry sector.",
+    "candidate": "JordanMitchell5Star"
+  },
+  {
+    "score": 6,
+    "strengths": [
+      "Has solid backend engineering experience with relevant skills in Python and Go.",
+      "Demonstrates understanding of service reliability and collaboration in a team setting.",
+      "Possesses AWS certification, indicating familiarity with cloud infrastructure."
+    ],
+    "weaknesses": [
+      "Lacks direct experience with React/TypeScript and Node.js or .NET, which are essential for the role.",
+      "Only 4 years of professional experience, with less than 2 years of line management.",
+      "No proven experience leading teams through significant technical changes."
+    ],
+    "summary": "Marcus has relevant technical skills and experience in backend systems, but lacks the specific experience with the required tech stack and leadership in technical change required for the Engineering Manager position.",
+    "candidate": "MegaMarcus"
+  },
+  {
+    "score": 6,
+    "strengths": [
+      "Has relevant experience in building customer-facing web features with React.",
+      "Good understanding of UI/UX through collaboration with design teams.",
+      "Experience with AWS aligns with job requirement for cloud infrastructure knowledge."
+    ],
+    "weaknesses": [
+      "Lacks the required 5 years of professional experience, having only 4 years.",
+      "No explicit experience managing or leading teams.",
+      "No direct experience with Node.js, .NET, or leading significant technical change.",
+      "Missing specific mention of CI/CD, automated testing, or observability."
+    ],
+    "summary": "Priya Chetty has relevant technical skills and experience, but lacks the leadership experience and technical depth required for the Engineering Manager role.",
+    "candidate": "PriyaPicture"
+  },
+  {
+    "score": 6,
+    "strengths": [
+      "Extensive experience with large-scale distributed systems and leading engineering teams.",
+      "Strong technical skills with relevant certifications in AWS and Kubernetes.",
+      "Proven track record of delivering high-uptime systems and reducing production incidents."
+    ],
+    "weaknesses": [
+      "Lack of demonstrated experience with React/TypeScript, Node.js, or .NET.",
+      "No specific evidence of leading technical change like replatforming or monolith decomposition.",
+      "Inappropriate behavior during interviews suggesting poor team collaboration skills."
+    ],
+    "summary": "The candidate has strong technical skills and experience in leadership, but lacks specific experience with the required technologies and demonstrated poor interpersonal skills.",
+    "candidate": "VictoriaSterlingSilver"
+  },
+  {
+    "score": 5,
+    "strengths": [
+      "Experience with backend systems and modern technologies like Python and Go",
+      "Familiarity with CI/CD pipelines and AWS",
+      "Solid educational background with relevant coursework in databases, networking, and software testing"
+    ],
+    "weaknesses": [
+      "Lacks experience in web development, specifically in React/TypeScript and Node.js/.NET",
+      "Insufficient experience with team management and leading technical changes",
+      "No evidence of experience with service-oriented architectures or cloud infrastructure management beyond basic AWS certification"
+    ],
+    "summary": "Brendan has relevant technical skills and some cloud knowledge but lacks experience in web development technologies and leadership required for the role.",
+    "candidate": "BrendanPythno"
+  },
+  {
+    "score": 5,
+    "strengths": [
+      "Has relevant experience in backend systems which aligns with part of the technical stack required.",
+      "Possesses 4 years of software engineering experience, providing a foundation for further development."
+    ],
+    "weaknesses": [
+      "Lacks specific experience with the required technologies such as React/TypeScript and Node.js.",
+      "Does not have documented leadership experience, especially in line-managing engineers.",
+      "Has no proven experience leading teams through significant technical changes like platform modernization."
+    ],
+    "summary": "Samantha has some relevant technical experience but lacks specific skills and leadership experience required for the Engineering Manager role.",
+    "candidate": "SamanthaOne"
+  },
+  {
+    "score": 4,
+    "strengths": [
+      "Strong analytical and statistical skills, demonstrated through experience in model building and hypothesis testing.",
+      "Experience in improving efficiency and reducing manual workload, relevant to optimizing processes in a tech environment.",
+      "Good foundational knowledge in programming languages like Python and SQL, which are useful in a web development context."
+    ],
+    "weaknesses": [
+      "Lack of direct experience in web development or managing a software engineering team.",
+      "No specific experience with the technologies listed in the job description (React/TypeScript, Node.js, .NET, AWS).",
+      "Limited experience with leadership or line management roles, as required by the job."
+    ],
+    "summary": "While Naledi has strong analytical skills and a good foundation in programming, their experience does not directly align with the web development or team management requirements of the Engineering Manager role.",
+    "candidate": "MathNaledi"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "The candidate has some experience in a software engineering role at Sul Softwaro Enginoo, Blorf Narnia Zoop Co (2022-2026).",
+      "Possesses basic technical skills relevant to software engineering."
+    ],
+    "weaknesses": [
+      "Lacks clear evidence of managing a team or leading significant technical changes.",
+      "CV contains garbled text making it difficult to assess specific relevant experiences and skills.",
+      "No mention of experience with web development technologies like React, TypeScript, Node.js, or .NET, which are essential for this role.",
+      "No evidence of experience with CI/CD, cloud infrastructure (AWS), or automated testing and observability.",
+      "Lack of clarity on agile delivery experience with distributed or hybrid teams.",
+      "Absence of any mention of accessibility standards or inclusive design practices."
+    ],
+    "summary": "The candidate's CV lacks clarity and fails to demonstrate the necessary skills and experience required for the Engineering Manager position.",
+    "candidate": "HomerSimsSon"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Experience in leading and managing a team in high-stress, challenging environments.",
+      "Technical skills in Python and Java, which are relevant to web development."
+    ],
+    "weaknesses": [
+      "Lack of experience in web development and modern web stacks such as React/TypeScript and Node.js.",
+      "Absence of formal leadership experience in software engineering or professional settings.",
+      "No experience with cloud infrastructure, CI/CD, or architectural reviews relevant to the role."
+    ],
+    "summary": "The candidate has leadership and technical skills but lacks specific experience and knowledge in web development and professional software engineering environments required for the role.",
+    "candidate": "Li_ExtraSpecial"
+  }
+]

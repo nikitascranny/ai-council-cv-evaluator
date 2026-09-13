@@ -1,0 +1,35 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Extensive experience in software engineering and leading large-scale distributed systems.",
+      "Possesses a PhD in Computer Science and fluency in multiple programming languages."
+    ],
+    "weaknesses": [
+      "Lack of formal education or experience in marine biology, zoology, or aquatic biology.",
+      "Limited practical experience with aquarium life support systems or aquatic environments.",
+      "No demonstrated willingness to engage in physical, repetitive tasks typical of the role."
+    ],
+    "summary": "While the candidate has exceptional technical and leadership experience, they lack relevant education and practical experience in aquatic sciences required for the Aquarium Biologist position.",
+    "candidate": "CaseyWhitmore",
+    "model": "phi4"
+  },
+  {
+    "score": 1,
+    "strengths": [
+      "None directly relevant to the role"
+    ],
+    "weaknesses": [
+      "Lack of experience in marine biology, aquarist skills, and life support systems",
+      "Irrelevant technical background"
+    ],
+    "summary": "Casey Whitmore's extensive experience in software engineering and computer science is entirely unrelated to the entry-level Aquarium Biologist position, making them a poor fit for the role.",
+    "candidate": "CaseyWhitmore",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's educational background does not meet the requirement for a degree in Marine Biology, Zoology, Aquatic Biology, or a related life science. There is no evidence of related practical experience. The candidate’s ability to work weekends, bank holidays, and handle physical tasks is unclear from the CV. However, the candidate's note-taking and attention to detail in a team setting could be considered a reasonable match for the role’s requirement of strong observational skills and record-keeping habits.",
+    "candidate": "CaseyWhitmore",
+    "type": "essential_requirements"
+  }
+]

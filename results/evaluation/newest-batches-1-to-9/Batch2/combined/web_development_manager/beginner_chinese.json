@@ -1,0 +1,38 @@
+[
+  {
+    "score": 4,
+    "strengths": [
+      "Strong technical foundation in modern web stacks including React/TypeScript and Node.js",
+      "Experience with agile methodologies such as sprint planning and code reviews",
+      "Hands-on experience with backend development, REST APIs, and unit testing"
+    ],
+    "weaknesses": [
+      "Lacks professional experience managing a team of engineers",
+      "Limited experience with .NET and AWS cloud infrastructure",
+      "No proven track record leading significant technical changes like platform modernization",
+      "Insufficient experience with CI/CD and observability practices"
+    ],
+    "summary": "The candidate has a solid technical background and relevant experience with web development technologies, but lacks the leadership experience and specific technical skills required for this engineering manager role.",
+    "candidate": "beginner_chinese",
+    "model": "phi4"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Basic web development skills with experience in Vue.js and Node.js",
+      "Experience in unit testing and code coverage improvement"
+    ],
+    "weaknesses": [
+      "Lacks essential experience in line management and leading significant technical change",
+      "Missing strong background in React/TypeScript and .NET"
+    ],
+    "summary": "The candidate demonstrates basic technical skills but falls short in meeting the essential leadership and technical depth requirements.",
+    "candidate": "beginner_chinese",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate has 7 years of professional web/software engineering experience, which exceeds the 5+ years required, and has 3 years of line management experience, which is close to the 2 years required. The candidate demonstrates a strong background in modern web stacks, including React/TypeScript, and has experience with backend languages like Node.js. They have led teams through significant technical changes and possess a solid understanding of CI/CD, cloud infrastructure, and automated testing, though AWS experience is not explicitly mentioned. Communication skills and experience with agile delivery, including distributed teams, are also clearly evident.",
+    "candidate": "beginner_chinese",
+    "type": "essential_requirements"
+  }
+]

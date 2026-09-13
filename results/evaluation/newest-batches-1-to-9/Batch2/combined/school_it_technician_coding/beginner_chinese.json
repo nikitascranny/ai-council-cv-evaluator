@@ -1,0 +1,37 @@
+[
+  {
+    "score": 6,
+    "strengths": [
+      "Has a basic programming ability in Python, which is desirable for supporting coding activities with students.",
+      "Experience as a Computer Science Teaching Assistant demonstrates an ability to work with young people and explain technical concepts."
+    ],
+    "weaknesses": [
+      "Lacks direct IT support experience, particularly in a school environment.",
+      "No experience with Windows 11, Microsoft 365, or Intune, which are essential for device management and support.",
+      "Limited experience in supporting classroom technology and managing school IT infrastructure.",
+      "No specific experience with coding education, though there is general software engineering experience."
+    ],
+    "summary": "The candidate has relevant programming skills and experience working with young people, but lacks direct IT support experience and specific skills required for the role.",
+    "candidate": "beginner_chinese",
+    "model": "phi4"
+  },
+  {
+    "score": 6,
+    "strengths": [
+      "Python and JavaScript experience",
+      "Experience in building web applications and APIs"
+    ],
+    "weaknesses": [
+      "No direct experience in education or IT support",
+      "Limited experience with Microsoft products"
+    ],
+    "summary": "Lin Xiaoyu has relevant technical skills and experience but lacks direct experience in the education sector and IT support, which are critical for the role.",
+    "candidate": "beginner_chinese",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's CV clearly meets the requirement for practical IT support experience and working knowledge of Windows 11 and Microsoft 365. Their programming experience with Python and Scratch is a reasonable match for the basic programming ability requirement. The candidate's enthusiasm for working with young people and explaining technology is evident, though specific examples are not provided. The safeguarding and DBS check requirements are not met, and the CV does not provide clear evidence of device management knowledge.",
+    "candidate": "beginner_chinese",
+    "type": "essential_requirements"
+  }
+]

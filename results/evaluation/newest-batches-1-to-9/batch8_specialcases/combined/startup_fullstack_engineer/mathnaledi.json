@@ -1,0 +1,39 @@
+[
+  {
+    "score": 5,
+    "strengths": [
+      "Strong analytical and data processing skills demonstrated through experience with regression models and hypothesis testing.",
+      "Experience in improving efficiency and optimizing processes, relevant to the performance-oriented culture at Pulsegrid.",
+      "Proven ability to deliver accurate reporting and manage multiple projects, aligning with the fast-paced and demanding work environment.",
+      "Certifications in data analytics and visualization tools, indicating a commitment to learning and potential adaptability to new technologies."
+    ],
+    "weaknesses": [
+      "Lack of direct experience with the specific technical stack required for the role (React/TypeScript, Go, Kafka, TimescaleDB).",
+      "Limited experience with full-stack development and no direct experience with operating services in a production environment.",
+      "No demonstrated experience in distributed systems or familiarity with event-driven architectures.",
+      "Absence of explicit software development or engineering background, which is crucial for a founding full-stack engineering role."
+    ],
+    "summary": "Naledi Mokoena possesses strong analytical and process optimization skills but lacks direct experience with the required technical stack and full-stack development necessary for the founding full-stack engineer role at Pulsegrid.",
+    "candidate": "MathNaledi",
+    "model": "phi4"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "strong analytical and statistical skills",
+      "proficient in Python, R, SQL"
+    ],
+    "weaknesses": [
+      "lacks full-stack engineering experience",
+      "no experience with Go, React/TypeScript or distributed systems"
+    ],
+    "summary": "The candidate possesses strong data analysis skills but lacks the necessary full-stack engineering experience and relevant technical skills outlined in the job description.",
+    "candidate": "MathNaledi",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's experience in data analysis, particularly in running A/B tests and optimizing reporting pipelines, closely aligns with the production software shipping requirement. Their excellent communication skills, demonstrated through presentations to stakeholders, and their understanding of optimization and error metrics show a solid grasp of distributed systems fundamentals. However, there is no clear evidence of experience with TypeScript/React, Go, or operating services in production, which are essential requirements.",
+    "candidate": "MathNaledi",
+    "type": "essential_requirements"
+  }
+]

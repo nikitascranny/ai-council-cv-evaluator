@@ -1,0 +1,39 @@
+[
+  {
+    "score": 5,
+    "strengths": [
+      "Demonstrates strong organizational skills and project management experience.",
+      "Possesses excellent technical and analytical problem-solving abilities.",
+      "Has a proven track record of handling confidential information, which aligns with the job's confidentiality requirement.",
+      "Experience in client coordination and communication, relevant for managing client interactions."
+    ],
+    "weaknesses": [
+      "Lacks direct experience in secretarial, receptionist, or administrative roles.",
+      "No demonstrated experience with Microsoft Office suite at the required proficiency level.",
+      "No familiarity with practice management software or financial record-keeping.",
+      "No experience in managing diaries, scheduling meetings, or handling financial transactions."
+    ],
+    "summary": "The candidate shows strong organizational and analytical skills with relevant client interaction experience, but lacks direct administrative experience and specific technical skills required for the role.",
+    "candidate": "JORDAN VELDMAN",
+    "model": "phi4"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Strong digital and technical software skills",
+      "Proven ability to handle complex projects and documentation"
+    ],
+    "weaknesses": [
+      "Lacks direct experience in secretarial or administrative roles",
+      "No experience with practice management software or similar"
+    ],
+    "summary": "The candidate has a strong background in architecture and technical software but lacks the specific administrative and secretarial experience required for the position.",
+    "candidate": "JORDAN VELDMAN",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's experience in project management, documentation, and client coordination closely matches the secretarial and office administration experience requirement. They also demonstrate strong organizational skills and an ability to handle multiple tasks. The CV does not clearly evidence experience in a secretarial or receptionist role, though the candidate's attention to detail and ability to handle confidential information are relevant. Their typing speed and proficiency in Microsoft Office is not directly stated.",
+    "candidate": "JORDAN VELDMAN",
+    "type": "essential_requirements"
+  }
+]

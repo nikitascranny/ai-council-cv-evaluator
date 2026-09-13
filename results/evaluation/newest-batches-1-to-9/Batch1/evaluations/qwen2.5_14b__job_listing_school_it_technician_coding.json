@@ -1,0 +1,132 @@
+[
+  {
+    "score": 8,
+    "strengths": [
+      "Rich experience in partnership management and global engagement",
+      "Demonstrated skills in project management and IT"
+    ],
+    "weaknesses": [
+      "Limited direct software development experience",
+      "No recent education updates for the current year"
+    ],
+    "summary": "The candidate is well-suited with strong partnership management skills and relevant IT project experience, though lacking in recent educational updates and direct software development roles.",
+    "candidate": "LERATO MUNCHE"
+  },
+  {
+    "score": 5,
+    "strengths": [
+      "Python programming skill",
+      "Analytical problem-solving"
+    ],
+    "weaknesses": [
+      "Lack of IT support experience",
+      "No experience working with young people"
+    ],
+    "summary": "The candidate possesses relevant technical skills but lacks direct IT support and youth-related experience, which are crucial for the role.",
+    "candidate": "JORDAN VELDMAN"
+  },
+  {
+    "score": 5,
+    "strengths": [
+      "Excellent communication and interpersonal skills",
+      "Strong administrative and organizational skills"
+    ],
+    "weaknesses": [
+      "Lack of direct IT support experience",
+      "Limited programming experience"
+    ],
+    "summary": "Karabo Refilwe Ndlovu demonstrates strong administrative and communication skills but lacks direct IT support and programming experience relevant to the role.",
+    "candidate": "NDLOVU KARABO REFILWE"
+  },
+  {
+    "score": 4,
+    "strengths": [
+      "Experience in test analysis and documentation",
+      "Proficient in automation testing tools"
+    ],
+    "weaknesses": [
+      "Lack of direct IT support experience",
+      "No evident coding experience or working with young people"
+    ],
+    "summary": "Alex Park lacks the direct IT support experience and coding knowledge required for the IT Technician role, but has strong analytical and automation skills.",
+    "candidate": "ALEX PARK"
+  },
+  {
+    "score": 4,
+    "strengths": [
+      "Strong technical background in cloud technologies and programming",
+      "Proven experience in data management and automation"
+    ],
+    "weaknesses": [
+      "Lacks direct IT support experience in an educational setting",
+      "No evidence of working with young people or educational IT"
+    ],
+    "summary": "Emile Mokoenas technical expertise is impressive but does not align with the specific requirements of the IT technician and coding enrichment role at St Aldhelm's Community School.",
+    "candidate": "EMILE MOKOENA"
+  },
+  {
+    "score": 4,
+    "strengths": [
+      "Strong analytical and organizational skills",
+      "Experience in data analysis and reporting"
+    ],
+    "weaknesses": [
+      "Lacks direct experience in educational IT support",
+      "No programming skills mentioned"
+    ],
+    "summary": "Pontus Pontious has strong analytical skills but lacks direct experience in educational IT support and programming, which are crucial for this role.",
+    "candidate": "PONTUS PONTIOUS"
+  },
+  {
+    "score": 4,
+    "strengths": [
+      "Experience in digital product management and web development",
+      "Strong background in Python"
+    ],
+    "weaknesses": [
+      "Lacks direct IT support experience",
+      "No experience in an educational setting"
+    ],
+    "summary": "The candidate has relevant technical skills but lacks direct IT support and educational experience, limiting fit for the role.",
+    "candidate": "RIAAN GOVEN"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "strong user research and engagement skills",
+      "experience in mentoring and leading workshops"
+    ],
+    "weaknesses": [
+      "lacks IT support experience",
+      "no direct experience in education or coding"
+    ],
+    "summary": "The candidate excels in user research and engagement but lacks the direct IT and educational experience required for the role.",
+    "candidate": "GEOFF NITSCHKE"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "cybersecurity expertise",
+      "project management"
+    ],
+    "weaknesses": [
+      "lack of IT support experience in an educational setting",
+      "no direct experience with educational technology or coding"
+    ],
+    "summary": "The candidate has strong cybersecurity and project management skills but lacks direct experience relevant to the educational IT and coding support role.",
+    "candidate": "PATRICK MARAIS"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Python proficiency",
+      "Problem-solving skills"
+    ],
+    "weaknesses": [
+      "Lack of IT support experience",
+      "No experience in an educational setting"
+    ],
+    "summary": "The candidate lacks direct IT support and educational experience but shows potential in programming and problem-solving skills.",
+    "candidate": "THE DANIEL"
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "score": 9,
+    "strengths": [
+      "Extensive experience with full-stack engineering, particularly Go and TypeScript, aligning with the job's technical requirements.",
+      "Proven track record of operating and improving production services, meeting essential criteria like incident response and observability.",
+      "Demonstrated ability to lead and mentor senior engineers, fitting the role's cultural and leadership aspects.",
+      "Hands-on experience with event-driven architectures and distributed systems, which are key components of the job.",
+      "Successful history of driving technical strategy and architecture improvements, crucial for shaping product development."
+    ],
+    "weaknesses": [
+      "Lack of specific experience in the energy sector, though domain knowledge is considered desirable, not essential.",
+      "No explicit mention of experience with technologies like Kafka and TimescaleDB, though familiarity with similar systems is evident."
+    ],
+    "summary": "The candidate is highly suitable for the role, with strong technical expertise, leadership experience, and a proven ability to operate and improve production systems, though lacking specific energy sector experience.",
+    "candidate": "senior_sa",
+    "model": "phi4"
+  },
+  {
+    "score": 8,
+    "strengths": [
+      "Strong background in distributed systems and scalable architectures",
+      "Experience with key technologies mentioned in the job description like Go, Kafka, and Kubernetes"
+    ],
+    "weaknesses": [
+      "Primary experience in payment and logistics sectors, not in the energy sector",
+      "No specific mention of TypeScript/React experience which is a primary requirement"
+    ],
+    "summary": "Zanele Madondo is a highly skilled engineer with extensive experience in distributed systems and cloud technologies, making them a strong fit for the position; however, their lack of direct experience in the energy sector and specific TypeScript/React knowledge slightly diminishes their suitability.",
+    "candidate": "senior_sa",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate has a solid background in software engineering and computer science, which aligns well with the job's technical requirements. The experience in shipping production software and presenting on distributed systems fundamentals indicates a reasonable match for the technical and distributed systems requirements. However, specific experience with TypeScript/React and backend languages like Go, Rust, Node, or Java is not evident from the CV, and there is no clear indication of operational experience in production services, such as metrics, tracing, or incident response. The candidate's communication skills and excitement for real-world problems are demonstrated through their presentation and award, but these are not explicitly stated as meeting the job's communication and problem domain requirements.",
+    "candidate": "senior_sa",
+    "type": "essential_requirements"
+  }
+]

@@ -1,0 +1,8 @@
+{
+  "candidate": "intermediate_american",
+  "final_score": 7,
+  "score_rationale": "Priya has strong full-stack experience and operational skills relevant to the role, but lacks direct Go expertise and energy sector domain knowledge, which are important for this fast-paced startup environment.",
+  "key_strengths": "Extensive experience in React/TypeScript, backend development with Java/Spring Boot, distributed systems, and observability.",
+  "key_weaknesses": "No direct experience with Go, and while she has enthusiasm for hard problems, no prior exposure to the energy sector or its specific domain (demand response, BMS/SCADA).",
+  "final_evaluation": "Priya is a solid candidate with a strong technical foundation and relevant experience, but her lack of Go experience and energy domain knowledge are notable gaps that may require further assessment in the interview process."
+}

@@ -1,0 +1,37 @@
+[
+  {
+    "score": 2,
+    "strengths": [
+      "Shows ability to work in a team and mentor others, indicating potential for learning new roles",
+      "Demonstrates punctuality and reliability in previous roles, aligning with the job's need for these traits"
+    ],
+    "weaknesses": [
+      "Lacks relevant experience in physical and manual work, crucial for the deckhand role",
+      "No prior experience with maritime work or familiarity with fishing operations",
+      "Does not possess the necessary physical fitness or comfort with outdoor, weather-exposed work environments",
+      "Lacks sea legs or experience with maritime safety procedures"
+    ],
+    "summary": "The candidate lacks relevant skills and experience for the physically demanding and maritime-focused role of a boat hand.",
+    "candidate": "middle_chinese",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "technical skills in backend and frontend development",
+      "experience in API design and integration"
+    ],
+    "weaknesses": [
+      "lack of experience in maritime or fishing industry",
+      "no physical fitness or sea experience mentioned"
+    ],
+    "summary": "Zhang Wei is highly skilled in software engineering but lacks the necessary maritime experience and physical fitness for the role of a boat hand.",
+    "candidate": "middle_chinese",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate demonstrates clear fit for the requirement of being physically fit and comfortable with heavy, repetitive manual work. Their experience aligns well with the need for sea legs, as they have extensive sailing experience. They also show reliability and punctuality. Basic numeracy and willingness to work early and long shifts are reasonably inferred from the experience listed. However, there is no clear evidence regarding a history of severe seasickness.",
+    "candidate": "middle_chinese",
+    "type": "essential_requirements"
+  }
+]

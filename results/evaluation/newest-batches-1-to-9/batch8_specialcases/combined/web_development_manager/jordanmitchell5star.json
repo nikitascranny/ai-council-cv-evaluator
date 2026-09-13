@@ -1,0 +1,40 @@
+[
+  {
+    "score": 6,
+    "strengths": [
+      "Experience with backend services and collaboration with product and design teams.",
+      "Familiarity with CI/CD practices and reducing regression bugs.",
+      "Certifications in AWS and Kubernetes which align with cloud infrastructure skills needed."
+    ],
+    "weaknesses": [
+      "Lacks experience in line-managing engineers and team leadership.",
+      "No direct experience with React/TypeScript or Node.js/NET stacks.",
+      "Limited exposure to the travel or transport sector and high-volume transactional systems.",
+      "Insufficient evidence of driving technical change or managing architecture reviews."
+    ],
+    "summary": "The candidate has relevant backend experience and some cloud skills, but lacks direct experience in key areas like leadership, specific tech stacks, and the relevant industry sector.",
+    "candidate": "JordanMitchell5Star",
+    "model": "phi4"
+  },
+  {
+    "score": 6,
+    "strengths": [
+      "Experience in backend development with Python and Go",
+      "AWS certification",
+      "Kubernetes knowledge"
+    ],
+    "weaknesses": [
+      "Less than 5 years of professional experience",
+      "No line-management experience",
+      "No significant technical change leadership"
+    ],
+    "summary": "Jordan Mitchell has relevant technical skills but lacks the required years of experience and leadership in major technical changes.",
+    "candidate": "JordanMitchell5Star",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate meets the essential requirement of 5+ years of professional web/software engineering experience with relevant work in CI/CD and automation. They are a reasonable/close match for the experience in modern web stacks and leading technical change, as evidenced by their work on service migrations and automated tests. However, the candidate lacks the specific experience of line managing engineers and leading significant technical changes in a team setting.",
+    "candidate": "JordanMitchell5Star",
+    "type": "essential_requirements"
+  }
+]

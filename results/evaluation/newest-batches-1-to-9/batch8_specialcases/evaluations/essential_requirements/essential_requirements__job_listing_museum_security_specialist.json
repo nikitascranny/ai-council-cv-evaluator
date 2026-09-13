@@ -1,0 +1,54 @@
+[
+  {
+    "summary": "The candidate's experience in software engineering does not meet the job's essential requirement of 3 years' experience in a security role. However, the skills related to written and verbal communication, as well as some technical knowledge, may be transferable. The physical ability and flexibility to work varying shifts is unclear from the CV.",
+    "candidate": "BrendanPythno"
+  },
+  {
+    "summary": "The candidate's experience is primarily in a technical field and does not demonstrate any relevant security or venue management experience, making it unclear if they meet the minimum 3 years' experience in a security role. Their educational background in Information Technology is relevant but does not directly address the technical security systems knowledge required. However, their note-taking and communication skills could be considered a reasonable match for the written and verbal communication skills needed for the role.",
+    "candidate": "CaseyWhitmore"
+  },
+  {
+    "summary": "The candidate has 4 years of experience in a security role, which closely matches the minimum 3 years' experience required. The candidate's SIA Door Supervisor licence is a clear match. The CV indicates working knowledge of CCTV and alarm systems, which is a reasonable match for the requirement. The candidate's experience in writing incident reports aligns with the need for strong communication skills and the ability to remain calm under pressure. However, the physical capability to patrol a large multi-floor site for extended periods is unclear from the CV and requires further clarification. The flexible working schedule is not addressed in the provided CV.",
+    "candidate": "Chen_Special"
+  },
+  {
+    "summary": "The candidate's experience in security roles is unclear due to the use of non-English terms. The certifications and training section suggests potential relevant experience, but it is not explicitly stated. The candidate lacks clear evidence of working knowledge of CCTV, intruder alarm, and access control systems. The physical and flexibility requirements are unclear due to the lack of specific details. Strong written and verbal communication skills and the ability to remain calm under pressure are reasonable close matches based on the context.",
+    "candidate": "HomerSimsSon"
+  },
+  {
+    "summary": "The candidate does not clearly meet the minimum 3 years' experience in a security role. However, the experience in maintaining and building APIs and ETL scripts shows strong technical skills that could be transferable to a security role. The candidate has not provided evidence of holding an SIA Door Supervisor or Security Guarding licence. Knowledge of systems such as Kubernetes and AWS might be relevant to some aspects of the role but do not directly meet the requirement for working with CCTV, intruder alarm, and access control systems. The candidate demonstrates strong communication skills and the ability to work flexible hours, which are reasonable matches.",
+    "candidate": "JordanMitchell5Star"
+  },
+  {
+    "summary": "The candidate has 4 years of experience in a security role, which closely matches the minimum 3 years' requirement. The candidate's SIA Door Supervisor licence meets the security licensing requirement. Working knowledge of CCTV, intruder alarm, and access control systems is evident from their experience. Strong written and verbal communication skills are demonstrated through their experience in writing incident reports. The candidate can remain calm under pressure and is physically capable of patrolling a large site. However, the flexibility to work early, late, weekend, and overnight shifts on a rota basis is not explicitly mentioned in the CV.",
+    "candidate": "Li_ExtraSpecial"
+  },
+  {
+    "summary": "The candidate does not meet the minimum 3 years' experience in a security role requirement. However, the experience in data analysis and analytics shows strong written and verbal communication skills, which can be considered a reasonable/close match for the ability to write incident reports. The physical ability and flexibility to work various shifts are unclear from the CV. Certifications in analytics and data handling could be seen as transferable skills for working with CCTV, intruder alarm, and access control systems, but this is not directly evidenced.",
+    "candidate": "MathNaledi"
+  },
+  {
+    "summary": "The candidate does not clearly meet the essential requirement of minimum 3 years' experience in a security role. However, their experience as a Junior Software Engineer may be a reasonable close match for the technical skills required. The candidate's physical and flexible working conditions are unclear from the CV. They do not provide evidence of the necessary security certifications or knowledge of security systems.",
+    "candidate": "MegaMarcus"
+  },
+  {
+    "summary": "The candidate's experience does not clearly meet the essential requirement of at least 3 years' experience in a security role. Their certification in software engineering and relevant coursework in computer science are a reasonable match for the technical knowledge required, such as working with systems like CCTV and access control. The ability to work shifts and physically patrol a site is unclear from the CV. The candidate's skills in communication and decision-making are not evidenced, but are implied as transferable from their professional background.",
+    "candidate": "PriyaPicture"
+  },
+  {
+    "summary": "The candidate has clearly met the minimum 3 years' experience in a security role and the physical ability to patrol a large multi-floor site. Their working knowledge of CCTV and intruder alarm systems is a reasonable/close match. However, it is unclear whether they possess the required SIA Door Supervisor or Security Guarding licence, and there is no evidence of strong written and verbal communication skills or incident report writing experience.",
+    "candidate": "SamanthaOne"
+  },
+  {
+    "summary": "The candidate's CV clearly meets the minimum 3 years' experience in a security role and the ability to physically patrol a large multi-floor site. The SIA Door Supervisor or Security Guarding licence is a reasonable match, as is the working knowledge of CCTV, intruder alarm, and access control systems. Strong written and verbal communication skills are demonstrated through experience writing incident reports. However, there is no clear indication of the candidate's flexibility to work early, late, weekend, and overnight shifts, which is an essential requirement.",
+    "candidate": "SystemShock"
+  },
+  {
+    "summary": "The candidate's experience does not clearly meet the essential requirement of at least 3 years in a security role. However, their experience in managing a team and making technical decisions could be considered a close match for strong decision-making skills. The candidate’s physical fitness and flexibility are not evidenced, nor are their skills in writing incident reports or working knowledge of security systems.",
+    "candidate": "TaylorGraphics"
+  },
+  {
+    "summary": "The candidate's experience in software engineering, particularly in leading teams and delivering major releases, shows strong written and verbal communication skills and the ability to make sound decisions under pressure, which are closely related to the security role requirements. However, the CV does not provide evidence of relevant security experience, licensing, or working knowledge of security systems such as CCTV and access control. The physical ability and flexibility for shift work are also not evidenced.",
+    "candidate": "VictoriaSterlingSilver"
+  }
+]

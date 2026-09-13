@@ -1,0 +1,110 @@
+{
+  "runs": [
+    {
+      "started": "2026-09-13T13:59:31+00:00",
+      "finished": "2026-09-13T14:17:58+00:00",
+      "exit_code": 0,
+      "python": "3.13.15",
+      "from": "evaluate",
+      "condition": "with-essential",
+      "force": false,
+      "cvs": "data/cvs/Batch4",
+      "jobs": "data/job-listings",
+      "out": "/content/drive/MyDrive/ai-cv-eval-results/Batch4",
+      "preflight": "ok",
+      "models": {
+        "council": [
+          "qwen2.5:14b",
+          "phi4"
+        ],
+        "essential_requirements": "qwen2.5:7b",
+        "judge": "deepseek-r1:8b"
+      },
+      "inputs": {
+        "job_listings": [
+          "job_listing_aquarium_biologist_entry_level.pdf",
+          "job_listing_computer_repair_technician.pdf",
+          "job_listing_estate_groundskeeper.pdf",
+          "job_listing_fishing_boat_hand.pdf",
+          "job_listing_museum_security_specialist.pdf",
+          "job_listing_school_it_technician_coding.pdf",
+          "job_listing_secretary.pdf",
+          "job_listing_startup_fullstack_engineer.pdf",
+          "job_listing_web_development_manager.pdf"
+        ],
+        "cvs": [
+          "Ralph_Son_of_a_Shepard_Farm_CV.pdf",
+          "Ralph_Son_of_a_Shepard_IT_Transition_CV.pdf"
+        ]
+      },
+      "stages": {
+        "evaluate": {
+          "status": "ok",
+          "model_files": 18,
+          "evaluations": 36,
+          "unscored": 0,
+          "essential_files": 9,
+          "seconds": 506.8
+        },
+        "aggregate": {
+          "status": "ok",
+          "combined_files": 18,
+          "seconds": 0.2
+        },
+        "judge": {
+          "status": "ok",
+          "ok": 18,
+          "failed": 0,
+          "already_done": 0,
+          "total": 18,
+          "seconds": 599.6
+        }
+      }
+    },
+    {
+      "started": "2026-09-13T14:17:58+00:00",
+      "finished": "2026-09-13T14:23:42+00:00",
+      "exit_code": 0,
+      "python": "3.13.15",
+      "from": "judge",
+      "condition": "council-only",
+      "force": false,
+      "cvs": null,
+      "jobs": "data/job-listings",
+      "out": "/content/drive/MyDrive/ai-cv-eval-results/Batch4",
+      "preflight": "ok",
+      "models": {
+        "judge": "deepseek-r1:8b"
+      },
+      "inputs": {
+        "job_listings": [
+          "job_listing_aquarium_biologist_entry_level.pdf",
+          "job_listing_computer_repair_technician.pdf",
+          "job_listing_estate_groundskeeper.pdf",
+          "job_listing_fishing_boat_hand.pdf",
+          "job_listing_museum_security_specialist.pdf",
+          "job_listing_school_it_technician_coding.pdf",
+          "job_listing_secretary.pdf",
+          "job_listing_startup_fullstack_engineer.pdf",
+          "job_listing_web_development_manager.pdf"
+        ]
+      },
+      "stages": {
+        "evaluate": {
+          "status": "reused"
+        },
+        "aggregate": {
+          "status": "reused"
+        },
+        "judge": {
+          "status": "ok",
+          "ok": 18,
+          "failed": 0,
+          "already_done": 0,
+          "total": 18,
+          "seconds": 343.0
+        }
+      }
+    }
+  ]
+}

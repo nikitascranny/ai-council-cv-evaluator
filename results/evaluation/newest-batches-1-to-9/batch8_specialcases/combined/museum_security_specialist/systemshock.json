@@ -1,0 +1,37 @@
+[
+  {
+    "score": 2,
+    "strengths": [
+      "Ability to remain calm and make decisions under pressure (soft skill).",
+      "Possesses strong communication skills, potentially from software engineering."
+    ],
+    "weaknesses": [
+      "Lacks relevant security experience in museums or similar venues.",
+      "No evidence of a valid SIA Door Supervisor or Security Guarding licence.",
+      "No direct experience with CCTV, intruder alarm, or access-control systems.",
+      "Physically demanding patrol duties likely not part of previous role."
+    ],
+    "summary": "Jordan Mitchell's technical skills and problem-solving abilities are strengths, but the lack of relevant security experience and necessary certifications presents significant gaps for this role.",
+    "candidate": "SystemShock",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "None directly relevant to the museum security role"
+    ],
+    "weaknesses": [
+      "Lack of security experience",
+      "No relevant certifications",
+      "No experience in cultural property protection"
+    ],
+    "summary": "The candidate lacks any experience or qualifications pertinent to the museum security role, making them unsuitable for the position.",
+    "candidate": "SystemShock",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's CV clearly meets the minimum 3 years' experience in a security role and the ability to physically patrol a large multi-floor site. The SIA Door Supervisor or Security Guarding licence is a reasonable match, as is the working knowledge of CCTV, intruder alarm, and access control systems. Strong written and verbal communication skills are demonstrated through experience writing incident reports. However, there is no clear indication of the candidate's flexibility to work early, late, weekend, and overnight shifts, which is an essential requirement.",
+    "candidate": "SystemShock",
+    "type": "essential_requirements"
+  }
+]

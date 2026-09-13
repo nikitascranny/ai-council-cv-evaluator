@@ -1,0 +1,8 @@
+{
+  "candidate": "Alex Turner",
+  "final_score": 5,
+  "score_rationale": "Alex Turner has 4 years of relevant full-stack experience, including React and distributed systems fundamentals, but lacks backend experience with Go and direct evidence of operating services in production, which are critical for this role.",
+  "key_strengths": "4 years of experience shipping production software, strong React skills, demonstrated grasp of distributed systems fundamentals",
+  "key_weaknesses": "No backend language experience with Go, lack of event-driven architecture or time-series data experience, no clear evidence of production service operations or incident response",
+  "final_evaluation": "Alex has foundational full-stack skills and technical aptitude but does not meet the essential backend and production requirements for this high-pressure role. They would need to demonstrate Go and event-driven system experience, along with evidence of handling production issues, to be a stronger fit."
+}

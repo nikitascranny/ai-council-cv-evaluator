@@ -1,0 +1,64 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Good physical fitness implied by hobbies such as hiking",
+      "Punctuality and reliability as evidenced by work history",
+      "Comfortable with learning and adapting to new skills"
+    ],
+    "weaknesses": [
+      "No experience with fishing or marine activities",
+      "Lacks sea legs or comfort with working on boats",
+      "No experience with physical, manual labor in marine environments",
+      "No STCW Basic Safety Training or related maritime qualifications"
+    ],
+    "summary": "While the candidate is adaptable and has a strong work ethic, they lack the essential maritime experience and physical work background required for the boat hand position.",
+    "candidate": "Daniel_common"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Has experience with project management and teamwork through sprint planning and code reviews.",
+      "Possesses problem-solving skills as shown by bug fixing and improving reliability of internal tools."
+    ],
+    "weaknesses": [
+      "Lacks physical fitness and experience with manual labor, crucial for the role.",
+      "No prior experience with boats or fishing activities, which are central to the job.",
+      "Does not meet the essential requirement of sea legs or time on boats.",
+      "Lacks numeracy skills specific to fish grading and catch tallying."
+    ],
+    "summary": "The candidate has strong software engineering and teamwork skills, but lacks the physical, technical, and maritime experience necessary for the Deckhand position.",
+    "candidate": "Linus"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Demonstrates reliability and punctuality through consistent work history.",
+      "Possesses basic numeracy skills through software engineering experience."
+    ],
+    "weaknesses": [
+      "Lacks relevant work experience in the fishing industry or related physical work.",
+      "No evidence of physical fitness or comfort with heavy, repetitive manual work.",
+      "No sea experience, which is strongly preferred for the role.",
+      "No history of working in early morning or long-day shifts.",
+      "No certification in basic safety training or small-boat handling."
+    ],
+    "summary": "Lauren Fischer has relevant numeracy skills and a reliable work history but lacks the necessary physical fitness, sea experience, and relevant skills for the boat hand position.",
+    "candidate": "Lauren_common"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Demonstrates ability to learn and adapt to new technologies and tools, which is crucial for on-the-job training.",
+      "Possesses a work ethic and punctuality, inferred from previous employment history."
+    ],
+    "weaknesses": [
+      "Lacks any relevant work experience in fishing or maritime activities, which is essential for the role.",
+      "Does not meet the essential requirement of having 'sea legs' or experience working on boats.",
+      "No evidence of physical fitness or experience with manual, physical labor in challenging environments.",
+      "Lacks basic numeracy skills demonstrated in a maritime context, such as catch tallies and grading."
+    ],
+    "summary": "The candidate lacks relevant experience, physical fitness, and maritime skills necessary for the boat hand role.",
+    "candidate": "Margaret"
+  }
+]

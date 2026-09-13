@@ -1,0 +1,37 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Possesses a strong technical background which may contribute to IT support and software familiarity.",
+      "Likely has good organizational skills and attention to detail from software engineering experience."
+    ],
+    "weaknesses": [
+      "Lacks relevant secretarial, receptionist, or administrative experience.",
+      "No evidence of required skills such as confident telephone manner, or strong typing and document formatting abilities.",
+      "No experience in a professional-services environment like accountancy or legal offices."
+    ],
+    "summary": "Jordan Mitchell has technical skills that could be beneficial for IT-related tasks but lacks relevant experience and key skills required for the secretary/administrative assistant role.",
+    "candidate": "SystemShock",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong technical skills",
+      "Experience with software development"
+    ],
+    "weaknesses": [
+      "Lack of administrative experience",
+      "No experience in an accountancy or legal setting",
+      "Insufficient typing speed and accuracy"
+    ],
+    "summary": "Jordan Mitchell lacks the necessary administrative and clerical experience, as well as the specific skills required for the role of a Secretary / Administrative Assistant at Ashcombe & Vale Chartered Accountants.",
+    "candidate": "SystemShock",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's experience in office administration, along with their typing speed, spelling, and grammar, clearly meet the job's essential requirements. Their ability to handle multiple tasks and their warm, professional manner for clients are reasonable matches to the job description. However, it is unclear whether they have sufficient experience in handling confidential information, and their specific knowledge of Microsoft Excel and Outlook is not evidenced.",
+    "candidate": "SystemShock",
+    "type": "essential_requirements"
+  }
+]

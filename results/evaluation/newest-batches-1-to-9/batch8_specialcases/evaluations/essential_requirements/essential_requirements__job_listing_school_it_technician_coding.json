@@ -1,0 +1,54 @@
+[
+  {
+    "summary": "The candidate's experience in software engineering demonstrates practical IT support experience and a working knowledge of programming, which are closely related to the required skills. However, the CV does not explicitly mention relevant experience with Windows 11, Microsoft 365, or Intune. The candidate's enthusiasm for technology and willingness to undergo checks is evident, but direct evidence of working with young people is lacking.",
+    "candidate": "BrendanPythno"
+  },
+  {
+    "summary": "The candidate has practical IT support experience through an internship and relevant coursework. They meet the basic programming ability requirement as they have experience with fixing bugs in an internal tool, which may include debugging code. The education in Information Technology is a reasonable match for the role. However, the candidate has not provided evidence of working knowledge of Windows 11, Microsoft 365, or Intune. There is no clear evidence of enthusiasm for working with young people or understanding of safeguarding policies, though these can be verified through interviews or further questions.",
+    "candidate": "CaseyWhitmore"
+  },
+  {
+    "summary": "The candidate demonstrates practical IT support experience through a strong home lab background, meets the working knowledge of Windows 11 and Microsoft 365, and shows basic programming skills in Python, which is a reasonable match for the ability to assist young people. The enthusiasm for working with young people is evident, but the candidate's experience with Scratch is not clear. The commitment to safeguarding and willingness to undergo checks are not explicitly mentioned but are implied from the enthusiasm and background.",
+    "candidate": "Chen_Special"
+  },
+  {
+    "summary": "The candidate's experience and skills are not clearly defined in the provided CV, making it difficult to assess. However, the candidate demonstrates a willingness to work with young people and appears enthusiastic, which aligns with the requirement for a genuine enthusiasm for working with young people. The programming experience mentioned, while not explicitly stated, could be related to the basic programming ability required. The job's IT support experience and working knowledge of Windows 11, Microsoft 365, and device management are unclear, and the candidate has not shown any evidence of undergoing a DBS check. The requirement for understanding or willingness to train in safeguarding is also not addressed.",
+    "candidate": "HomerSimsSon"
+  },
+  {
+    "summary": "The candidate's experience as a Software Engineer and Junior Software Engineer demonstrates a practical background in IT support, closely related to the job's requirements. Their education and certifications in computer science and specific technologies, such as AWS and Kubernetes, provide a working knowledge of relevant tools. However, there is no direct evidence of experience with Windows 11, Microsoft 365, or Intune, nor is there evidence of working with young people or a specific commitment to safeguarding policies.",
+    "candidate": "JordanMitchell5Star"
+  },
+  {
+    "summary": "The candidate clearly meets the requirement for practical IT support experience and has a good understanding of Windows 11 and Microsoft 365. Their programming experience with Python and Scratch is a reasonable match for the requirement, and they demonstrate enthusiasm for working with young people. However, the understanding of safeguarding and willingness to undergo checks are not explicitly mentioned in the CV.",
+    "candidate": "Li_ExtraSpecial"
+  },
+  {
+    "summary": "The candidate's experience in data analysis and programming, particularly with R and Python, closely aligns with the basic programming requirement. Their education and certifications in data analytics and statistics also provide a strong foundation. However, there is no direct evidence of IT support or working knowledge of Microsoft 365 or Intune. Their enthusiasm for technology is evident, but there is no mention of working with young people or understanding safeguarding policies.",
+    "candidate": "MathNaledi"
+  },
+  {
+    "summary": "The candidate's experience as a Software Engineer and Junior Software Engineer demonstrates practical IT support and programming skills, meeting the basic programming and software development requirements. Their B.Sc. in Computer Science and relevant coursework provide a strong foundation in IT and programming, which can be considered a reasonable match for the IT support experience. The candidate's lack of direct IT support experience in a school, business, or home lab/volunteer setting is a clear mismatch. Their understanding of safeguarding and commitment to policies is not evident, though the willingness to undergo DBS checks is noted.",
+    "candidate": "MegaMarcus"
+  },
+  {
+    "summary": "The candidate clearly meets the practical IT support experience and working knowledge of Windows 11 and Microsoft 365 requirements through their background in software engineering. Basic programming ability is met with experience in web development and relevant coursework. The enthusiasm for technology and willingness to undergo background checks is evident. However, there is no clear indication of direct experience in IT support, basic programming for 11-14 year olds, or specific experience in working with young people.",
+    "candidate": "PriyaPicture"
+  },
+  {
+    "summary": "The candidate's IT support experience in a school setting is a clear match. Their working knowledge of Windows 11 and Microsoft 365, as well as their experience with Scratch, aligns closely with the requirements. Their programming skills in Python are not explicitly mentioned but can be considered a reasonable match given the context of working with young people. The candidate's enthusiasm for working with young people is evident. However, their understanding of safeguarding is unclear, and there is no evidence of their willingness to undergo an enhanced DBS check or barred list check.",
+    "candidate": "SamanthaOne"
+  },
+  {
+    "summary": "The candidate's IT support experience and working knowledge of Windows 11, Microsoft 365 are clearly met. Their basic programming skills in Python and Scratch, while not explicitly stated as helping children, are a reasonable match given the context. The enthusiasm for working with young people is noted, but direct experience or training in safeguarding is unclear, and there is no mention of a willingness to undergo DBS checks.",
+    "candidate": "SystemShock"
+  },
+  {
+    "summary": "The candidate meets the essential requirement for practical IT support experience through their extensive background in software engineering. Their working knowledge of Windows 11, Microsoft 365, and their technical expertise in programming languages like Python align closely with the job description. However, their education and certifications are more focused on cloud services and distributed systems, with limited evidence of working with Windows device management tools like Intune. The candidate’s enthusiasm for technology is evident from their career trajectory, and they are willing to undergo the necessary background checks. Their experience mentoring engineers could translate to working with young people, but this is not directly stated.",
+    "candidate": "TaylorGraphics"
+  },
+  {
+    "summary": "The candidate's experience and skills in software engineering and architecture clearly meet the technical requirements, including working knowledge of relevant technologies and programming. Their enthusiasm for working with technology is evident from their educational background and professional achievements. However, there is no evidence of practical IT support experience or working with young people, which are essential requirements.",
+    "candidate": "VictoriaSterlingSilver"
+  }
+]

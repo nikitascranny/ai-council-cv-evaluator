@@ -1,0 +1,38 @@
+[
+  {
+    "score": 2,
+    "strengths": [
+      "The candidate shows initiative and leadership through founding her own consultancy."
+    ],
+    "weaknesses": [
+      "Lack of relevant experience in groundskeeping, countryside management, or related fields.",
+      "No evidence of physical fitness or experience with tracking, search & rescue, or military backgrounds.",
+      "No demonstrated familiarity or comfort with the concepts of 'hunting' or immersive experiences.",
+      "Absence of technical or operational skills related to estate management or outdoor activities.",
+      "No indication of ability to maintain discretion or work under strict NDAs.",
+      "Lack of qualifications or experience in managing or coordinating events that involve safety protocols."
+    ],
+    "summary": "Sarah Lynne's experience is primarily in business consultancy and retail, which does not align with the hands-on, physical, and discreet nature required for the Groundskeeper & 'Hunt' Coordinator role at Blackmoor Hall Estate.",
+    "candidate": "bad_cv_sarah_lynne_van_der_merwe",
+    "model": "phi4"
+  },
+  {
+    "score": 1,
+    "strengths": [
+      "None directly applicable to the job description"
+    ],
+    "weaknesses": [
+      "Lacks any relevant skills or experience",
+      "Does not align with the physical and technical requirements of the role",
+      "No demonstrated ability to maintain confidentiality or work in remote, demanding conditions"
+    ],
+    "summary": "Candidate's background is entirely unrelated to the job, with no applicable skills or experience in groundskeeping, tracking, or immersive experiences.",
+    "candidate": "bad_cv_sarah_lynne_van_der_merwe",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's experience in leadership and consultancy does not clearly meet the groundskeeping, gamekeeping, or countryside management requirement. However, their tracking and optimization experience might reasonably align with the role's need for pursuit-oriented skills. The candidate's physical fitness and willingness to live on-site are unclear from the CV. The NDA and working alone at odd hours are not evidenced, but the role's nature might be a reasonable match for their adaptability. Their retail experience shows strong organizational and customer-facing skills, which could be transferable but do not directly meet the groundskeeping requirement.",
+    "candidate": "bad_cv_sarah_lynne_van_der_merwe",
+    "type": "essential_requirements"
+  }
+]

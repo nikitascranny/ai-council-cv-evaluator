@@ -1,0 +1,36 @@
+[
+  {
+    "score": 4,
+    "strengths": [
+      "Demonstrates adaptability and resilience across various operational environments.",
+      "Has experience in practical problem-solving and handling varied tasks."
+    ],
+    "weaknesses": [
+      "Lacks specific maritime experience and sea legs, which are crucial for the role.",
+      "Does not have experience with physical, repetitive manual work in marine settings.",
+      "Has not shown punctuality related to time-sensitive operations, critical for tide-dependent fishing schedules."
+    ],
+    "summary": "While Kevin shows adaptability and problem-solving skills, he lacks the maritime experience and physical readiness required for the physically demanding boat hand position.",
+    "candidate": "professional_cv_kevin_jones",
+    "model": "phi4"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "adaptability to different work environments",
+      "practical problem-solving skills"
+    ],
+    "weaknesses": [
+      "lack of experience in maritime or fishing industry",
+      "no relevant skills or experience listed for the role"
+    ],
+    "summary": "Kevin Jones demonstrates versatility and problem-solving skills but lacks direct experience in maritime or fishing, making him a weak fit for the role.",
+    "candidate": "professional_cv_kevin_jones",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's experience in adapting to diverse work environments and handling customer interactions suggests they could be reliable and solution-focused, potentially meeting the reliability and punctuality requirement. Their ability to handle administrative tasks and customer service could translate to basic numeracy for catch tallies. However, there is no evidence of sea experience or physical fitness for heavy, repetitive manual work in all weathers, which are clearly not met.",
+    "candidate": "professional_cv_kevin_jones",
+    "type": "essential_requirements"
+  }
+]

@@ -1,0 +1,39 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Strong technical background with extensive experience in software engineering and system architecture.",
+      "Proven track record of leadership and delivering complex projects successfully.",
+      "Holds multiple certifications in relevant technical fields."
+    ],
+    "weaknesses": [
+      "Lack of practical, hands-on PC/laptop repair skills specific to the job role.",
+      "Inappropriate interpersonal skills and attitude, as observed during the interview.",
+      "No experience in customer service or retail environments, which are key components of the role.",
+      "Potential cultural misfit for a small, family-run business with a collaborative and informal work atmosphere."
+    ],
+    "summary": "While Victoria Sterling has impressive technical and leadership skills, her lack of hands-on repair experience, poor interpersonal conduct, and potential cultural misfit make her a poor fit for the role at Brenda & Mick's Computer Repairs.",
+    "candidate": "VictoriaSterlingSilver",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Highly skilled in software engineering and system design",
+      "Proven track record of technical leadership and project delivery"
+    ],
+    "weaknesses": [
+      "Lacks practical PC/laptop repair skills",
+      "Incompatible work style and attitude with the casual, small business environment",
+      "No evidence of patience or customer service experience"
+    ],
+    "summary": "Victoria Sterling has impressive technical skills but her lack of relevant practical repair experience and her confrontational attitude make her a poor fit for the role.",
+    "candidate": "VictoriaSterlingSilver",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's experience and skills in software engineering clearly meet the technical and organizational requirements. Their ability to lead a team and deliver projects on time demonstrates reliability and honesty, closely matching the requirement for being able to handle responsibilities like the till and Brenda's biscuit tin. However, there is no evidence of practical PC/laptop repair skills, and the CV does not specify the candidate's ability to work Saturdays or their local transport availability.",
+    "candidate": "VictoriaSterlingSilver",
+    "type": "essential_requirements"
+  }
+]

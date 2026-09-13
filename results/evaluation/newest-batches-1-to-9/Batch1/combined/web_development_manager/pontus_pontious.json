@@ -1,0 +1,36 @@
+[
+  {
+    "score": 4,
+    "strengths": [
+      "Strong analytical and report writing skills demonstrated through various roles.",
+      "Effective stakeholder communication and organizational skills shown across positions."
+    ],
+    "weaknesses": [
+      "Lacks direct web/software engineering experience.",
+      "No prior experience in line-managing engineers or technical leadership roles.",
+      "No background in modern web stacks like React/TypeScript or cloud infrastructure such as AWS."
+    ],
+    "summary": "While the candidate demonstrates strong analytical and communication skills, they lack the necessary technical and leadership experience required for the engineering manager role.",
+    "candidate": "PONTUS PONTIOUS",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Detail-oriented",
+      "Strong in data analysis and reporting"
+    ],
+    "weaknesses": [
+      "Lack of relevant web/software engineering experience",
+      "No proven experience in leading teams through technical change"
+    ],
+    "summary": "Pontus Pontious lacks the necessary technical and leadership experience in web/software engineering, making them unsuitable for the Engineering Manager role at Northlight Digital.",
+    "candidate": "PONTUS PONTIOUS",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's background in financial analysis and pension modeling indicates a solid understanding of data analysis and reporting, which could be relevant to the CI/CD and automated testing roles. However, the CV does not clearly demonstrate professional web/software engineering experience or leadership in technical change. The candidate's experience in managing and analyzing data could be transferable to the role's communication and reporting requirements.",
+    "candidate": "PONTUS PONTIOUS",
+    "type": "essential_requirements"
+  }
+]

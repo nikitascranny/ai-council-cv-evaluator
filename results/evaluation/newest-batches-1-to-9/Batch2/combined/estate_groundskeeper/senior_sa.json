@@ -1,0 +1,39 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Excellent physical fitness and ability to work alone in remote areas could be inferred from managing large-scale, distributed systems in challenging environments.",
+      "Strong leadership and mentoring experience, which could aid in team coordination and management of tracking teams."
+    ],
+    "weaknesses": [
+      "Lacks direct experience in groundskeeping, gamekeeping, or countryside management, which are essential for the role.",
+      "No experience in tracking, search & rescue, or similar pursuit-oriented activities.",
+      "No background in working with hounds or tracking dogs, which is desirable for coordinating the hunt.",
+      "No evidence of familiarity with immersive theatre, airsoft event marshalling, or private security work.",
+      "May struggle with adapting to the physical and outdoor nature of the job, given a background in software engineering."
+    ],
+    "summary": "The candidate's technical leadership and problem-solving skills are strong, but lack relevant outdoor, pursuit-oriented, and countryside management experience critical for the role.",
+    "candidate": "senior_sa",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Highly skilled in software architecture and engineering",
+      "Proven track record in delivering resilient systems"
+    ],
+    "weaknesses": [
+      "No relevant experience in groundskeeping or hunting",
+      "Lacks physical fitness and outdoor survival skills",
+      "Inability to align with the unique cultural and operational requirements of the position"
+    ],
+    "summary": "The candidate's technical expertise in software engineering does not align with the physical and outdoor management requirements of the Groundskeeper position at Blackmoor Hall Estate.",
+    "candidate": "senior_sa",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's background in software engineering and computer science shows relevant experience and skills, potentially making them a reasonable match for the 'pursuit oriented' background requirement. The MSc and BSc degrees also indicate a high level of academic achievement, which could support the ability to handle complex tasks. However, there is no evidence of groundskeeping, gamekeeping, or countryside management experience, and the candidate's physical fitness and ability to work in remote areas are not explicitly mentioned.",
+    "candidate": "senior_sa",
+    "type": "essential_requirements"
+  }
+]

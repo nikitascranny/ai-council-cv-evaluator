@@ -1,0 +1,37 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Demonstrates strong work ethic and punctuality, which is essential for the role.",
+      "Has experience working in team settings, which could translate into cooperating well with the skipper."
+    ],
+    "weaknesses": [
+      "Lacks relevant experience in fishing or maritime activities.",
+      "No physical fitness or manual labor experience related to the required tasks.",
+      "No prior exposure to working with boats or handling heavy, repetitive manual work in all weathers.",
+      "No evidence of sea legs or experience in handling moderate seas."
+    ],
+    "summary": "The candidate's strong work ethic and team collaboration skills are positives, but lack of relevant maritime experience and physical labor skills are significant weaknesses for the deckhand position.",
+    "candidate": "beginner_chinese",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Basic numeracy and punctuality demonstrated through project management and teamwork in software engineering roles",
+      "Comfortable with repetitive manual tasks and physical fitness implied by coding and testing"
+    ],
+    "weaknesses": [
+      "No experience in the fishing industry or any marine-related work",
+      "Lack of physical skills or training required for the job, such as sea survival training or small boat handling"
+    ],
+    "summary": "Lin Xiaoyu lacks relevant industry experience and essential physical skills for the boat hand position but demonstrates basic numeracy and punctuality from software engineering roles.",
+    "candidate": "beginner_chinese",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate appears to meet the requirement for physical fitness and comfort with heavy, repetitive manual work. Their previous experience, while not specifically in fishing, could be a reasonable close match for the need for sea legs, as it involves working on a boat. However, there is no clear indication of reliability, punctuality, or willingness to work early starts and long days. Basic numeracy for catch tallies and grading is not evidenced, and there is no information about a history of seasickness.",
+    "candidate": "beginner_chinese",
+    "type": "essential_requirements"
+  }
+]

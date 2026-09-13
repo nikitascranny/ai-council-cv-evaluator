@@ -1,0 +1,37 @@
+[
+  {
+    "score": 5,
+    "strengths": [
+      "Has relevant experience in backend systems which aligns with part of the technical stack required.",
+      "Possesses 4 years of software engineering experience, providing a foundation for further development."
+    ],
+    "weaknesses": [
+      "Lacks specific experience with the required technologies such as React/TypeScript and Node.js.",
+      "Does not have documented leadership experience, especially in line-managing engineers.",
+      "Has no proven experience leading teams through significant technical changes like platform modernization."
+    ],
+    "summary": "Samantha has some relevant technical experience but lacks specific skills and leadership experience required for the Engineering Manager role.",
+    "candidate": "SamanthaOne",
+    "model": "phi4"
+  },
+  {
+    "score": 4,
+    "strengths": [
+      "4 years of backend systems experience",
+      "experience in Python, Java, and Go"
+    ],
+    "weaknesses": [
+      "less than 5 years of professional web/software engineering experience",
+      "no line management experience",
+      "no experience in modern web stacks"
+    ],
+    "summary": "Samantha has relevant backend experience but lacks the required years of experience, line management, and modern web stack knowledge for the role.",
+    "candidate": "SamanthaOne",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate clearly meets the requirement for 5+ years of professional web/software engineering experience and has a reasonable/close match for line managing engineers for at least 2 years. Their experience with modern web stacks such as React and a backend language (Node.js) also closely aligns with the job requirements. However, it is unclear whether they have led teams through significant technical change, and the specific experience with CI/CD, cloud infrastructure, and agile delivery, while likely applicable, is not explicitly stated.",
+    "candidate": "SamanthaOne",
+    "type": "essential_requirements"
+  }
+]

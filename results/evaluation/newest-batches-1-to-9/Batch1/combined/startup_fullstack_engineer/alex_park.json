@@ -1,0 +1,37 @@
+[
+  {
+    "score": 4,
+    "strengths": [
+      "Experience in automating tests and maintaining tests in CI/CD pipelines, which demonstrates some familiarity with software development processes.",
+      "Strong communication skills and experience in collaborating across teams, which are beneficial for working closely with the engineering team and stakeholders."
+    ],
+    "weaknesses": [
+      "Lack of experience with full-stack development, particularly in React/TypeScript and Go, which are essential for this role.",
+      "No direct experience with operating services in production environments, which is a key responsibility of the role.",
+      "Limited exposure to distributed systems fundamentals, event-driven architectures, or real-time data platforms like Kafka and TimescaleDB."
+    ],
+    "summary": "While Alex Park has strong testing and automation skills, their experience does not align closely with the full-stack development and production operations expertise required for the Pulsegrid role.",
+    "candidate": "ALEX PARK",
+    "model": "phi4"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Experience in test automation using Playwright and JEST",
+      "Strong in test plan development and defect management"
+    ],
+    "weaknesses": [
+      "Lacks full-stack development experience",
+      "No experience in TypeScript/React or Go",
+      "No experience in distributed systems or event-driven architectures"
+    ],
+    "summary": "Candidate has strong testing background but lacks the technical skills and experience in full-stack development, TypeScript/React, Go, and distributed systems required for the role.",
+    "candidate": "ALEX PARK",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate has relevant experience in testing and software development, which is a reasonable match for the production software shipping requirement. Their experience in operations and testing can be seen as transferable to the metrics, tracing, and incident response roles. However, the candidate lacks clear evidence of experience with TypeScript/React, backend languages, distributed systems fundamentals, or the energy, climate, or real-world problem domains. The communication skills and ability to explain technical matters are not directly evidenced but could be inferred from the test analyst experience.",
+    "candidate": "ALEX PARK",
+    "type": "essential_requirements"
+  }
+]

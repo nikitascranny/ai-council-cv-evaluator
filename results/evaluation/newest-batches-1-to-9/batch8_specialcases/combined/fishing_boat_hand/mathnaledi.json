@@ -1,0 +1,37 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Physically fit as indicated by active hobbies like running.",
+      "Demonstrates reliability and punctuality through consistent work history."
+    ],
+    "weaknesses": [
+      "Lack of relevant experience in fishing or maritime roles.",
+      "No evidence of physical or manual work experience, crucial for the job.",
+      "Absence of sea legs or any maritime experience, which is preferred.",
+      "No experience with vessel safety procedures or marine operations."
+    ],
+    "summary": "While Naledi is physically fit and demonstrates reliability, the lack of relevant experience and skills for a deckhand role significantly impacts suitability.",
+    "candidate": "MathNaledi",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Highly skilled in data analysis and reporting",
+      "Demonstrated proficiency in various data analysis tools and programming languages"
+    ],
+    "weaknesses": [
+      "Lack of experience in maritime or fishing industry",
+      "No physical fitness or maritime safety training"
+    ],
+    "summary": "Candidate is well-qualified in data analysis but lacks the physical and maritime experience required for the role.",
+    "candidate": "MathNaledi",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's CV clearly meets the requirement for basic numeracy and relevant experience in data analysis, which can be reasonably considered transferable to catch tallies and grading. However, there is no evidence of physical fitness for heavy, repetitive work or experience with boats, so these requirements are not met. The candidate's willingness to work early and long shifts is implied by their experience, making this a reasonable match.",
+    "candidate": "MathNaledi",
+    "type": "essential_requirements"
+  }
+]

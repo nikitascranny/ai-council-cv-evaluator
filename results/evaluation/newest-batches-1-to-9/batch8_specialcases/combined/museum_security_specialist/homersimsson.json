@@ -1,0 +1,35 @@
+[
+  {
+    "score": 2,
+    "strengths": [
+      "Candidate has some experience in a professional setting, as indicated by their work history."
+    ],
+    "weaknesses": [
+      "Lacks relevant work experience in security roles, particularly within a museum or similar environment.",
+      "No evidence of necessary certifications such as a valid SIA Door Supervisor or Security Guarding license.",
+      "Limited knowledge of CCTV, intruder alarm, and access-control systems.",
+      "Inadequate demonstration of strong written and verbal communication skills.",
+      "No physical fitness or readiness for extended patrols in a large multi-floor site."
+    ],
+    "summary": "The candidate's work experience and skills are not aligned with the security-focused requirements of the Museum Security Specialist role.",
+    "candidate": "HomerSimsSon",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "none evident"
+    ],
+    "weaknesses": [
+      "lack of relevant experience, non-relevant skills, unclear and nonsensical CV content"
+    ],
+    "summary": "The candidate does not meet any of the essential criteria for the position due to the lack of relevant experience and skills, and the CV content is unclear and nonsensical.",
+    "candidate": "HomerSimsSon",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's experience in security roles is unclear due to the use of non-English terms. The certifications and training section suggests potential relevant experience, but it is not explicitly stated. The candidate lacks clear evidence of working knowledge of CCTV, intruder alarm, and access control systems. The physical and flexibility requirements are unclear due to the lack of specific details. Strong written and verbal communication skills and the ability to remain calm under pressure are reasonable close matches based on the context.",
+    "candidate": "HomerSimsSon",
+    "type": "essential_requirements"
+  }
+]

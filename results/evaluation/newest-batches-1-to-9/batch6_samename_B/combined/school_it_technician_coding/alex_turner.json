@@ -1,0 +1,37 @@
+[
+  {
+    "score": 6,
+    "strengths": [
+      "Candidate has relevant experience with programming languages like JavaScript, which aligns with the basic programming abilities required.",
+      "Demonstrated problem-solving skills and performance optimization which could be useful in IT support roles.",
+      "Proactive in acquiring certifications, indicating a willingness to upskill."
+    ],
+    "weaknesses": [
+      "Lacks direct experience in IT support, especially in educational settings.",
+      "No experience with device management tools like Intune, which is essential for the role.",
+      "No specific experience with educational programming environments like Scratch or Python for young learners."
+    ],
+    "summary": "Alex Turner has relevant technical skills and a proactive approach to learning, but lacks direct IT support experience and specific educational technology experience required for this role.",
+    "candidate": "Alex Turner",
+    "model": "phi4"
+  },
+  {
+    "score": 5,
+    "strengths": [
+      "Full stack engineering experience",
+      "Frontend and backend development skills"
+    ],
+    "weaknesses": [
+      "Lacks specific IT support experience",
+      "No experience working with young people"
+    ],
+    "summary": "The candidate possesses strong technical skills but lacks direct experience in IT support and working with students, which are key for this role.",
+    "candidate": "Alex Turner",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate clearly meets the requirement for practical IT support experience through their previous roles. Their relevant coursework and certifications indicate a working knowledge of Windows 11 and Microsoft 365, and they have programming experience with Python and JavaScript, which can be considered transferable to Scratch. Their enthusiasm for technology and education is not explicitly stated, but their coursework and experience suggest a strong interest in IT. Safeguarding and DBS checks are not addressed in the CV.",
+    "candidate": "Alex Turner",
+    "type": "essential_requirements"
+  }
+]

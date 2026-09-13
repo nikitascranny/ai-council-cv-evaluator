@@ -1,0 +1,39 @@
+[
+  {
+    "score": 7,
+    "strengths": [
+      "Has relevant full-stack development experience with React and Node.js.",
+      "Demonstrates a history of improving application performance.",
+      "Shows evidence of collaboration with design teams.",
+      "Possesses a professional certification in Front End Development."
+    ],
+    "weaknesses": [
+      "Lacks direct experience in line-managing a team.",
+      "Does not have experience in architectural reviews or migration projects.",
+      "Missing specific experience with .NET and AWS.",
+      "Lacks explicit involvement in incident management or agile leadership."
+    ],
+    "summary": "Alex Turner has relevant technical skills and some leadership potential, but lacks direct experience in key areas such as team management and architectural migration.",
+    "candidate": "Alex Turner",
+    "model": "phi4"
+  },
+  {
+    "score": 5,
+    "strengths": [
+      "Full stack engineering experience with React and Node.js",
+      "Frontend performance optimization"
+    ],
+    "weaknesses": [
+      "Less than 5 years of professional experience",
+      "Lack of experience in team management and leadership"
+    ],
+    "summary": "Alex has relevant technical skills but lacks the required experience in team management and leadership roles.",
+    "candidate": "Alex Turner",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate has over 5 years of web/software engineering experience, which meets the requirement. Their experience in frontend performance tuning and working closely with the design team on UI components indicates a reasonable/close match for leading teams through significant technical change. They lack direct experience in line managing engineers and leading teams through technical change of a large scale (like replatforming or monolith decomposition). Their experience in CI/CD, cloud infrastructure (AWS), and automated testing is not explicitly mentioned, though they have a relevant background in web development and have completed a professional certificate in frontend development. Their excellent communication skills and experience in agile delivery are implied through their coursework and roles, but not explicitly stated. The candidate's experience with third-party APIs suggests some level of backend experience but is not as detailed as the job description requires.",
+    "candidate": "Alex Turner",
+    "type": "essential_requirements"
+  }
+]

@@ -1,0 +1,37 @@
+[
+  {
+    "score": 2,
+    "strengths": [
+      "Strong analytical and technical problem-solving skills evident from extensive software engineering experience.",
+      "Excellent leadership and management experience with large teams, showcasing ability to deliver complex projects."
+    ],
+    "weaknesses": [
+      "No relevant experience in marine biology, aquatic animal husbandry, or aquarium systems.",
+      "Lack of necessary skills in water chemistry, nitrogen cycles, and physical tasks related to aquarium maintenance.",
+      "Negative interpersonal behavior observed during the interview, indicating poor teamwork and communication skills."
+    ],
+    "summary": "The candidate's technical and leadership skills do not align with the entry-level aquarium biologist role, and their interpersonal behavior presents significant risks for team dynamics.",
+    "candidate": "VictoriaSterlingSilver",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong technical background",
+      "Leadership experience"
+    ],
+    "weaknesses": [
+      "No relevant aquatic biology or husbandry experience",
+      "Inappropriate behavior during interviews",
+      "Lack of interest in the role's physical and maintenance aspects"
+    ],
+    "summary": "The candidate lacks the essential skills and experience for the role and demonstrated behavior issues during the interview, making them unsuitable.",
+    "candidate": "VictoriaSterlingSilver",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate clearly does not meet the requirement for a degree in Marine Biology, Zoology, Aquatic Biology or a related life science. However, their experience in leading a team and delivering high-availability systems could be seen as a reasonable close match for the technical and leadership skills required. Their physical fitness and ability to work flexible hours are not evidenced, but these could be considered reasonable inferences given the nature of the role. Their technical expertise aligns well with the basic understanding of water chemistry and the nitrogen cycle, as both involve complex systems that benefit from careful observation and detail-oriented management.",
+    "candidate": "VictoriaSterlingSilver",
+    "type": "essential_requirements"
+  }
+]

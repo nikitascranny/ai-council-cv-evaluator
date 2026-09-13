@@ -1,0 +1,37 @@
+[
+  {
+    "score": 4,
+    "strengths": [
+      "Demonstrates adaptability and teamwork, which are crucial for working in a dynamic environment like fishing.",
+      "Shows practical problem-solving skills, which could be useful in handling various tasks on the fishing vessel."
+    ],
+    "weaknesses": [
+      "Lacks specific experience with maritime work or fishing vessels, which is essential for the role.",
+      "No evidence of experience with physical, repetitive manual work in wet conditions, which is a key requirement.",
+      "Does not have a history of working at sea or on boats, which is strongly preferred for the role.",
+      "Lacks any formal safety training or maritime certifications, which are desirable for the position."
+    ],
+    "summary": "While Jason Muller shows adaptability and problem-solving skills, his lack of maritime experience and physical work history in similar conditions significantly weakens his fit for the boat hand position.",
+    "candidate": "professional_cv_jason_muller",
+    "model": "phi4"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Adaptable and customer service oriented",
+      "Practical problem-solving skills"
+    ],
+    "weaknesses": [
+      "Lack of maritime experience",
+      "No direct correlation between previous roles and fishing industry"
+    ],
+    "summary": "Jason Muller lacks the essential maritime experience and direct correlation with the fishing industry to qualify for the position.",
+    "candidate": "professional_cv_jason_muller",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate has clear transferable skills in reliability, punctuality, and organizational coordination, which could be adapted to the role requirements. However, there is no evidence of physical fitness for heavy, repetitive manual work, sea experience, or basic numeracy for catch tallies. The self-directed learning in customer service might be a reasonable match for the need for reliability and punctuality.",
+    "candidate": "professional_cv_jason_muller",
+    "type": "essential_requirements"
+  }
+]

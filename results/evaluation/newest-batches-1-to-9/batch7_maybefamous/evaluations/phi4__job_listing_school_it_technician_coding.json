@@ -1,0 +1,62 @@
+[
+  {
+    "score": 7,
+    "strengths": [
+      "Strong background in software engineering with experience in Django and REST APIs, aligning with IT support and programming aspects of the role.",
+      "Comfortable working across the stack and quick to learn new frameworks, indicating adaptability and potential for managing the school's varied IT environment.",
+      "Microsoft Certified: Azure Fundamentals, demonstrating a commitment to upskilling and relevant technical knowledge."
+    ],
+    "weaknesses": [
+      "Lack of direct experience in educational settings, which may affect familiarity with school IT infrastructure and environment.",
+      "Limited experience with device management systems like Intune and classroom technology, important for the technician part of the role.",
+      "No specific experience with teaching or coding clubs for young people, which is crucial for the coding enrichment aspect of the position."
+    ],
+    "summary": "Daniel Rossouw possesses strong technical skills and adaptability, but would need experience in educational environments and youth-focused programming activities to fully fit the role.",
+    "candidate": "Daniel_common"
+  },
+  {
+    "score": 7,
+    "strengths": [
+      "Has a strong background in software engineering with experience in web application development using Django, relevant to the coding enrichment aspect of the role.",
+      "Comfortable working across the stack and picking up new frameworks quickly, which is beneficial for IT technician work and adapting to new technologies.",
+      "Certified in Azure Fundamentals, indicating a willingness and ability to gain further qualifications."
+    ],
+    "weaknesses": [
+      "Lacks direct experience in IT support or working in an educational setting, which is essential for the first-line technician responsibilities.",
+      "No specific experience with educational technology or programming languages like Python and Scratch, which are needed for supporting coding activities with students.",
+      "No explicit mention of experience with device management tools like Intune or classroom technology support."
+    ],
+    "summary": "Linus Torvalds has strong software engineering skills and a willingness to learn, but lacks direct experience in IT support and educational technology required for the role.",
+    "candidate": "Linus"
+  },
+  {
+    "score": 6,
+    "strengths": [
+      "Strong experience in software engineering and mobile app development, particularly with Flutter, aligning with the basic programming skills required.",
+      "Demonstrated problem-solving skills through improving app store ratings and reducing crash rates, indicating potential for technical support and debugging tasks.",
+      "Proven track record of collaboration with design teams, suggesting ability to work with the Head of Computing and support coding activities."
+    ],
+    "weaknesses": [
+      "Lack of direct experience in IT support or education settings, which are crucial for the first-line support and engagement with young people.",
+      "No explicit experience with Windows 11, Microsoft 365, or device management tools like Intune, which are essential for the role.",
+      "Limited exposure to safeguarding practices and school policies, important for working with young people."
+    ],
+    "summary": "Lauren Fischer has strong technical skills and problem-solving abilities relevant to the programming aspects of the role, but lacks direct experience in IT support and education settings, which are critical for the hybrid nature of the position.",
+    "candidate": "Lauren_common"
+  },
+  {
+    "score": 6,
+    "strengths": [
+      "Has experience in mobile app development which demonstrates a strong technical background and understanding of software engineering principles.",
+      "Possesses certifications in Google Associate Android Developer and Flutter & Dart, showing a willingness to learn and up-skill in relevant technologies.",
+      "Demonstrated ability to improve app performance and user experience, as evidenced by the improved app store rating."
+    ],
+    "weaknesses": [
+      "Lacks direct experience in IT support or device management, which is essential for the technician aspect of the role.",
+      "No experience with educational settings or working directly with young people, which is crucial for the coding enrichment lead aspect of the job.",
+      "Limited experience with Windows 11, Microsoft 365, and Intune, which are required skills for the role."
+    ],
+    "summary": "Margaret Hamilton has a strong technical background in software engineering and mobile app development, but lacks direct experience in IT support and educational settings, which are crucial for this hybrid role.",
+    "candidate": "Margaret"
+  }
+]

@@ -1,0 +1,37 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Strong technical skills in cloud engineering and data science.",
+      "Experience with project management and data accuracy improvement."
+    ],
+    "weaknesses": [
+      "Lack of relevant security or museum experience.",
+      "No demonstrated experience with CCTV, alarm systems, or physical security.",
+      "No evidence of working in high-risk or physical security environments.",
+      "Limited ability to operate in physically demanding or security-specific roles."
+    ],
+    "summary": "Emile Mokoena has a strong technical background but lacks the specific security and museum-related experience necessary for the Museum Security Specialist role.",
+    "candidate": "EMILE MOKOENA",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "cloud technologies and data management skills",
+      "excellent data validation and automation"
+    ],
+    "weaknesses": [
+      "no relevant security or museum experience",
+      "no emergency response or physical security background"
+    ],
+    "summary": "The candidate has strong technical skills in data management and cloud technologies but lacks the specific security and emergency response experience required for the role.",
+    "candidate": "EMILE MOKOENA",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate does not clearly meet the minimum 3 years of experience in a security role. However, their voluntary and part-time experience as a Machine Learning Engineer shows strong data handling and analysis skills, which could be transferable to security roles involving technology and decision-making. The candidate lacks the required SIA Door Supervisor or Security Guarding licence, but their strong communication and problem-solving skills, as evidenced by their data science experience, could be beneficial in a security role.",
+    "candidate": "EMILE MOKOENA",
+    "type": "essential_requirements"
+  }
+]

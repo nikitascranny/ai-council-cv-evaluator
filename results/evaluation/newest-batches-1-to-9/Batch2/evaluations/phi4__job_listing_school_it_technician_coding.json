@@ -1,0 +1,141 @@
+[
+  {
+    "score": 7,
+    "strengths": [
+      "Strong technical skills relevant to IT support and device management, including experience with Python and JavaScript.",
+      "Experience as a Teaching Assistant, which aligns with the role's requirement for working with young people and delivering programming activities.",
+      "Background in agile team collaboration and learning new tools quickly, which is beneficial for adapting to the school's IT environment."
+    ],
+    "weaknesses": [
+      "Lacks direct experience in school IT support or working within an educational setting.",
+      "No specific experience with device imaging, deployment, or managing user accounts in Active Directory/Entra ID.",
+      "Limited experience with network basics and school-specific platforms like Google Classroom."
+    ],
+    "summary": "Jordan Lee has strong technical skills and experience in teaching programming, but lacks direct experience in school IT environments and specific technical tasks required for the role.",
+    "candidate": "beginner_american"
+  },
+  {
+    "score": 7,
+    "strengths": [
+      "Strong programming skills in Python and familiarity with Scratch, which aligns with supporting KS3 programming activities.",
+      "Experience as a Peer Programming Facilitator demonstrates ability to work with young people and teach technical skills.",
+      "Relevant IT and software development experience with tools such as Git, GitHub, Docker, and experience with web technologies.",
+      "Proven collaborative skills and ability to work in team settings, important for the role's dual focus on technical and educational tasks."
+    ],
+    "weaknesses": [
+      "Lacks specific experience with Windows 11, Microsoft 365, or Intune, which are essential for the IT Technician part of the role.",
+      "No demonstrated experience with Google Workspace or Classroom administration, which is desirable for maintaining VLE and school website content.",
+      "Limited direct experience with device imaging, deployment, and network management, which are key responsibilities of the role.",
+      "Does not mention experience or skills in safeguarding, which is a critical requirement for the position."
+    ],
+    "summary": "Naledi Molefe has strong programming skills and experience in education, but needs to develop specific IT skills and safeguarding knowledge to fully meet the job requirements.",
+    "candidate": "beginner_sa"
+  },
+  {
+    "score": 7,
+    "strengths": [
+      "Strong technical skills in backend development, including Python, which aligns with the job's requirement for basic programming ability.",
+      "Experience in building dependable backend services and handling large-scale systems, demonstrating capability in managing and maintaining IT systems.",
+      "Leadership and mentoring experience, which can be valuable in supporting coding activities and managing the after-school Code Club."
+    ],
+    "weaknesses": [
+      "Limited direct experience in educational settings, which is desirable for understanding the specific needs of a school environment.",
+      "No specific experience with device imaging, deployment, or Windows management, which are key responsibilities of the role.",
+      "Lack of experience with Intune or similar device management tools, as well as limited exposure to school-specific IT technologies like Google Workspace."
+    ],
+    "summary": "Priya Nair demonstrates strong technical skills and leadership potential, but lacks direct experience in educational IT environments and specific school IT technologies.",
+    "candidate": "intermediate_american"
+  },
+  {
+    "score": 7,
+    "strengths": [
+      "Has practical IT support experience and familiarity with relevant technologies such as Windows 11, Microsoft 365, and Python.",
+      "Demonstrates enthusiasm for mentoring and coaching, which is crucial for the 30% of the role focused on coding enrichment and support.",
+      "Strong background in software engineering and problem-solving, which can be adapted to support school IT infrastructure and educational technology needs."
+    ],
+    "weaknesses": [
+      "Lacks direct experience in an educational setting, which would be beneficial for the role.",
+      "No explicit experience with device management tools like Intune or classroom AV support, which are part of the essential responsibilities.",
+      "Does not mention specific experience with Raspberry Pi, Micro:bit, or LEGO robotics, which are desirable for the robotics challenge and coding enrichment tasks."
+    ],
+    "summary": "The candidate has a strong technical background and mentoring experience, making them a good fit for the role, though they lack specific experience in educational settings and certain technical skills related to the job.",
+    "candidate": "middle_sa"
+  },
+  {
+    "score": 7,
+    "strengths": [
+      "Demonstrates strong technical skills in software architecture, cloud platforms, and programming languages such as Python, which aligns with the essential requirement for a working knowledge of IT systems.",
+      "Has experience in mentoring and supporting senior engineers, suggesting an ability to work with young people and offer guidance.",
+      "Shows a strong background in operational improvement and engineering practices, which can be valuable for maintaining IT infrastructure in a school environment."
+    ],
+    "weaknesses": [
+      "Lacks direct experience in education settings or working with young people, which is a key aspect of the role.",
+      "The role requires more hands-on IT support and device management experience, which is not explicitly mentioned in the candidate's experience.",
+      "No direct experience mentioned with specific technologies required for the role such as Intune or specific classroom AV technologies."
+    ],
+    "summary": "The candidate possesses strong technical and leadership skills with potential for up-skilling, but lacks direct experience in educational environments and specific IT support tasks required for the role.",
+    "candidate": "senior_sa"
+  },
+  {
+    "score": 6,
+    "strengths": [
+      "Has a basic programming ability in Python, which is desirable for supporting coding activities with students.",
+      "Experience as a Computer Science Teaching Assistant demonstrates an ability to work with young people and explain technical concepts."
+    ],
+    "weaknesses": [
+      "Lacks direct IT support experience, particularly in a school environment.",
+      "No experience with Windows 11, Microsoft 365, or Intune, which are essential for device management and support.",
+      "Limited experience in supporting classroom technology and managing school IT infrastructure.",
+      "No specific experience with coding education, though there is general software engineering experience."
+    ],
+    "summary": "The candidate has relevant programming skills and experience working with young people, but lacks direct IT support experience and specific skills required for the role.",
+    "candidate": "beginner_chinese"
+  },
+  {
+    "score": 6,
+    "strengths": [
+      "Strong technical skills in programming languages like Python, which is essential for coding enrichment activities.",
+      "Experience with system design and backend services relevant to managing IT infrastructure.",
+      "Mentoring experience which aligns with the role's requirement of working with young people and supporting educational activities."
+    ],
+    "weaknesses": [
+      "Limited direct experience in educational settings or with school IT systems, such as device imaging or classroom AV support.",
+      "Lacks specific experience with Windows 11, Microsoft 365, and Intune which are important for the IT technician aspect of the role.",
+      "No direct experience with Google Workspace or Classroom, and lack of Raspberry Pi or LEGO robotics experience which are desirable for the coding enrichment side."
+    ],
+    "summary": "The candidate possesses strong technical and mentoring skills but lacks direct experience in educational IT support and specific school-related technologies.",
+    "candidate": "middle_chinese"
+  },
+  {
+    "score": 6,
+    "strengths": [
+      "Strong technical background with experience in distributed systems, platform engineering, and technical leadership.",
+      "Experience with various programming languages and platforms, including Python, which aligns with the coding aspect of the role.",
+      "Demonstrated ability in mentoring and technical strategy, which could be valuable in the educational setting.",
+      "Proven track record of improving systems reliability and efficiency, relevant to maintaining school IT infrastructure."
+    ],
+    "weaknesses": [
+      "Lack of direct experience in educational or IT support settings.",
+      "No explicit experience with device management tools like Intune or classroom technology support.",
+      "Limited familiarity with specific educational technologies like Google Classroom or Scratch.",
+      "No demonstrated experience in safeguarding or working directly with young people."
+    ],
+    "summary": "Marcus Okafor has a strong technical foundation and leadership experience, but lacks direct experience in educational IT support and working with young people.",
+    "candidate": "senior_american"
+  },
+  {
+    "score": 6,
+    "strengths": [
+      "Strong technical leadership and systems engineering background.",
+      "Experience with distributed systems and platform engineering.",
+      "Experience in mentoring and technical strategy."
+    ],
+    "weaknesses": [
+      "Lack of specific experience in educational IT support or working with young people.",
+      "No demonstrated experience with Windows 11, Microsoft 365, or Intune.",
+      "Limited evidence of programming ability in Python or Scratch."
+    ],
+    "summary": "Chen Haoran has a strong technical background but lacks direct experience in educational IT and youth engagement, which are crucial for this role.",
+    "candidate": "senior_chinese"
+  }
+]

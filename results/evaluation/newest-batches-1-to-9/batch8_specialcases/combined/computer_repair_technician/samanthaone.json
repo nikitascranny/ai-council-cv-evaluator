@@ -1,0 +1,36 @@
+[
+  {
+    "score": 4,
+    "strengths": [
+      "Strong technical background in software engineering",
+      "Experience with backend systems and programming languages relevant to problem-solving"
+    ],
+    "weaknesses": [
+      "Lacks practical PC/laptop repair skills",
+      "No evidence of customer service experience or patience with non-technical users",
+      "Limited experience with hardware or operating systems like Windows XP"
+    ],
+    "summary": "While Samantha has strong technical skills, her background in software engineering doesn't directly align with the hands-on repair and customer service skills needed for this role.",
+    "candidate": "SamanthaOne",
+    "model": "phi4"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "4 years of experience in backend systems",
+      "proficient in multiple programming languages"
+    ],
+    "weaknesses": [
+      "no practical PC/laptop repair skills",
+      "no relevant work experience in customer service or computer repair"
+    ],
+    "summary": "Samantha has strong technical skills but lacks the practical repair and customer service experience required for the role.",
+    "candidate": "SamanthaOne",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's ability to perform PC/laptop repairs is clear, and their experience with customer service and reliability is demonstrated. Their availability for Saturdays is a reasonable match given their commitment. However, the candidate's mode of transportation and exact location in relation to Tillingford are not clearly specified.",
+    "candidate": "SamanthaOne",
+    "type": "essential_requirements"
+  }
+]

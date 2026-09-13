@@ -1,0 +1,40 @@
+[
+  {
+    "score": 5,
+    "strengths": [
+      "Demonstrates experience with relevant technologies such as React, Node.js, TypeScript, and PostgreSQL.",
+      "Has experience in a cross-functional team setting with contributions to sprint planning and peer reviews.",
+      "Shows a disciplined approach to testing and expanding test coverage in past projects."
+    ],
+    "weaknesses": [
+      "Lacks required experience in leadership roles, specifically line-managing engineers.",
+      "Insufficient professional experience, particularly in roles demanding significant technical change leadership.",
+      "No direct experience with cloud infrastructure management, specifically AWS.",
+      "Limited exposure to complex architecture reviews, CI/CD, and observability practices."
+    ],
+    "summary": "The candidate has a strong technical foundation and relevant skills but lacks the necessary leadership and professional experience for the Engineering Manager role.",
+    "candidate": "beginner_sa",
+    "model": "phi4"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Basic programming skills in JavaScript, TypeScript, React, and Node.js",
+      "Understanding of agile development practices",
+      "Experience with GitHub Actions and Docker"
+    ],
+    "weaknesses": [
+      "Lacks the required 5+ years of professional experience",
+      "No experience in leading teams through significant technical change",
+      "Insufficient experience with AWS and cloud infrastructure"
+    ],
+    "summary": "The candidate has basic technical skills but lacks the necessary professional experience and leadership track record to fit the role requirements.",
+    "candidate": "beginner_sa",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate meets the requirement of 5+ years of professional web/software engineering experience and has a line management experience of 2+ years. Their experience in modern web stacks, such as React and TypeScript, and a backend language aligns well with the job requirements. However, the clarity of their experience leading significant technical changes and running agile delivery with distributed teams is somewhat unclear from the CV.",
+    "candidate": "beginner_sa",
+    "type": "essential_requirements"
+  }
+]

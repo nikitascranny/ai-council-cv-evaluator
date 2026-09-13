@@ -1,0 +1,32 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Demonstrates strong independent working skills and adaptability",
+      "Possesses solid problem-solving abilities and a methodical approach"
+    ],
+    "weaknesses": [
+      "Lacks experience in full-stack development, particularly in TypeScript/React and Go",
+      "No background in operating services in production environments",
+      "Missing experience with event-driven architectures and distributed systems"
+    ],
+    "summary": "The candidate shows strong independent work ethic and adaptability but lacks essential technical experience and skills required for the role.",
+    "candidate": "Ralph_Son_of_a_Shepard_IT_Transition_CV"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong record keeping and attention to detail, as shown by accurate flock management and record maintenance.",
+      "Experienced in managing operations independently and under challenging conditions."
+    ],
+    "weaknesses": [
+      "Lacks relevant technical skills in full-stack development, such as TypeScript, React, or Go.",
+      "No experience in software development or engineering roles.",
+      "No experience with distributed systems, observability, alerting, or event-driven architectures.",
+      "No demonstrated ability to work in a high-velocity, uncertain environment typical of a startup.",
+      "No experience with the energy sector or related technologies."
+    ],
+    "summary": "The candidate's skills in record keeping and independent operation are noted, but they lack the necessary technical experience and industry knowledge for the engineering role.",
+    "candidate": "Ralph_Son_of_a_Shepard_Farm_CV"
+  }
+]

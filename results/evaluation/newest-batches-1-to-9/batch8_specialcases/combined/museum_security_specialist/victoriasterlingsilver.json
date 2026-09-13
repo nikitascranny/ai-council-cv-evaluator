@@ -1,0 +1,37 @@
+[
+  {
+    "score": 2,
+    "strengths": [
+      "Strong technical background in systems design and architecture",
+      "Experience in leading engineering teams and delivering complex projects"
+    ],
+    "weaknesses": [
+      "No relevant experience in security roles or museum environments",
+      "Lacks necessary qualifications such as SIA Door Supervisor or Security Guarding licence",
+      "Unsuitable interpersonal skills and behavior for team collaboration",
+      "No experience with CCTV, intruder alarm, or access-control systems"
+    ],
+    "summary": "The candidate's technical skills and leadership experience are strong but entirely irrelevant to the security-focused role, coupled with inappropriate interview behavior and lack of necessary qualifications and experience.",
+    "candidate": "VictoriaSterlingSilver",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong technical background",
+      "Leadership experience"
+    ],
+    "weaknesses": [
+      "Lacks relevant security experience",
+      "Unsuitable work attitude and behavior"
+    ],
+    "summary": "The candidate possesses significant technical and leadership skills but entirely lacks the necessary security experience and exhibits a highly problematic attitude and behavior that would be detrimental to the team and organization.",
+    "candidate": "VictoriaSterlingSilver",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's experience in software engineering, particularly in leading teams and delivering major releases, shows strong written and verbal communication skills and the ability to make sound decisions under pressure, which are closely related to the security role requirements. However, the CV does not provide evidence of relevant security experience, licensing, or working knowledge of security systems such as CCTV and access control. The physical ability and flexibility for shift work are also not evidenced.",
+    "candidate": "VictoriaSterlingSilver",
+    "type": "essential_requirements"
+  }
+]

@@ -1,0 +1,37 @@
+[
+  {
+    "score": 5,
+    "strengths": [
+      "Has relevant technical skills such as Python and Django, which could be applicable to some computer repair tasks.",
+      "Demonstrates ability to quickly pick up new frameworks, indicating adaptability to new technical challenges.",
+      "Possesses customer service experience through team collaboration and code reviews, which could translate to interacting with customers."
+    ],
+    "weaknesses": [
+      "Lacks direct experience in hands-on hardware repair or basic PC maintenance, which is essential for the role.",
+      "Experience is primarily in software engineering and web application development, which is not directly relevant to hardware repair.",
+      "No evidence of practical skills in areas such as RAM reseating, virus clean-ups, or explaining non-technical issues to customers."
+    ],
+    "summary": "Linus Torvalds has strong technical skills and adaptability but lacks direct experience and practical skills in hardware repair, which are crucial for this role.",
+    "candidate": "Linus",
+    "model": "phi4"
+  },
+  {
+    "score": 6,
+    "strengths": [
+      "reparative skills through hobby interests",
+      "technical proficiency in software and hardware"
+    ],
+    "weaknesses": [
+      "lacks direct experience in customer service",
+      "lacks formal training in computer repair"
+    ],
+    "summary": "Linus Torvalds has relevant technical skills and interests that align with the job's requirements, but lacks direct experience in customer service and computer repair.",
+    "candidate": "Linus",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate has experience in software development, which could be relevant for basic PC/laptop repair skills, but specific repair experience is unclear. They meet the requirement for honesty and reliability, and demonstrate friendly and patient communication through their coursework and previous roles. The ability to work Saturdays is not clear from the CV. The candidate is local to the area.",
+    "candidate": "Linus",
+    "type": "essential_requirements"
+  }
+]

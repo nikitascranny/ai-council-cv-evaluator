@@ -1,0 +1,38 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Willingness to work and adaptability to various job roles",
+      "Basic understanding of work environments from diverse job experiences"
+    ],
+    "weaknesses": [
+      "Lack of relevant education or experience in Marine Biology or related fields",
+      "Unavailable for weekend and holiday shifts as required",
+      "Limited experience in tasks involving physical labor or detailed, repetitive work",
+      "No experience in water quality testing, aquarium maintenance, or animal care"
+    ],
+    "summary": "Kevin Jones lacks the necessary educational background, relevant experience, and availability for this entry-level Aquarium Biologist position.",
+    "candidate": "bad_cv_kevin_jones",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "willingness to work",
+      "ability to learn"
+    ],
+    "weaknesses": [
+      "lack of relevant experience",
+      "poor employment history",
+      "inconsistent work ethic"
+    ],
+    "summary": "Kevin Jones lacks the relevant experience and consistency required for the role of Aquarium Biologist.",
+    "candidate": "bad_cv_kevin_jones",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate has a high school diploma but lacks a degree in Marine Biology, Zoology, Aquatic Biology or a related life science, which is a clear requirement. However, their varied work experience, including physically demanding roles and administrative tasks, suggests transferable skills that could reasonably match the willingness to carry out physical tasks and strong observational skills. The physical fitness requirement appears to be met, but there is no evidence of relevant education or experience in water chemistry or the nitrogen cycle. The willingness to work flexible hours, including weekends and early mornings, is demonstrated. A full right to work in the UK and the ability to pass a basic background check are not addressed in the CV.",
+    "candidate": "bad_cv_kevin_jones",
+    "type": "essential_requirements"
+  }
+]

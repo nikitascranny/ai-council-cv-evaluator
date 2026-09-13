@@ -1,0 +1,63 @@
+[
+  {
+    "score": 2,
+    "strengths": [
+      "Strong technical skills in software development with experience in web application development.",
+      "Has a track record of learning and applying new frameworks quickly."
+    ],
+    "weaknesses": [
+      "Lacks relevant experience in groundskeeping, countryside management, or related fields.",
+      "No evidence of physical fitness or experience in tracking, search & rescue, or military backgrounds.",
+      "Unfamiliar with working with animals, specifically bloodhounds, or event management.",
+      "No background in handling outdoor, remote work situations, especially under discretion and confidentiality."
+    ],
+    "summary": "Daniel Rossouw possesses strong technical skills but lacks the essential experience, physical fitness, and specific background required for the Groundskeeper & 'Hunt' Coordinator role at Blackmoor Hall Estate.",
+    "candidate": "Daniel_common"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong analytical and problem-solving skills from software engineering experience",
+      "Technical proficiency with cross-platform app development"
+    ],
+    "weaknesses": [
+      "Lacks relevant groundskeeping or countryside management experience",
+      "No experience with tracking, search & rescue, or similar pursuit-oriented activities",
+      "No physical fitness or outdoor skills relevant to the role",
+      "No demonstrated ability to work discreetly or maintain confidentiality under strict conditions"
+    ],
+    "summary": "Lauren Fischer has strong technical skills but lacks the essential experience and physical capabilities required for the Groundskeeper & 'Hunt' Coordinator position.",
+    "candidate": "Lauren_common"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Demonstrates strong technical skills in software engineering.",
+      "Experienced in team collaboration through sprint planning and code reviews."
+    ],
+    "weaknesses": [
+      "Lacks experience in groundskeeping, gamekeeping, or countryside management.",
+      "No experience with tracking, search & rescue, or military-related tasks.",
+      "No physical fitness or experience with outdoor activities or working in remote areas.",
+      "Unfamiliar with working with hounds or handling outdoor equipment.",
+      "No evidence of experience in immersive theater, event marshalling, or private security."
+    ],
+    "summary": "The candidate's technical and teamwork skills are strong, but they lack the necessary outdoor, physical, and relevant experience for the estate groundskeeper and hunt coordinator role.",
+    "candidate": "Linus"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Demonstrates strong technical skills in app development with relevant tools such as Flutter.",
+      "Has experience in collaborative environments and improving user experience."
+    ],
+    "weaknesses": [
+      "Lacks relevant experience in groundskeeping, gamekeeping, or countryside management.",
+      "No experience with tracking, military, or search and rescue activities.",
+      "No evidence of physical fitness or ability to work in remote, outdoor environments.",
+      "No experience or comfort with live-action role-playing, immersive experiences, or working with animals."
+    ],
+    "summary": "Margaret Hamilton's software engineering background does not align with the essential skills and experiences required for the Groundskeeper & 'Hunt' Coordinator role at Blackmoor Hall Estate.",
+    "candidate": "Margaret"
+  }
+]

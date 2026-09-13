@@ -1,0 +1,56 @@
+[
+  {
+    "summary": "The candidate's CV does not meet the essential requirements for the job. The candidate lacks the necessary groundskeeping, gamekeeping, or countryside management experience, and there is no evidence of hunting, tracking, search & rescue, military, or other pursuit-oriented background. However, the candidate's software engineering experience demonstrates strong technical skills, and the AWS Certified Cloud Practitioner and Scrumm Fundamentals certifications show relevant training in cloud computing and project management.",
+    "candidate": "BrendanPythno"
+  },
+  {
+    "summary": "The candidate does not meet the essential requirements for the role. The experience and education provided are not related to groundskeeping, gamekeeping, or countryside management. The candidate lacks the required physical fitness, hunting-related experience, and ability to work alone in remote areas. However, the strong preference for a pursuit-oriented background is not strictly required.",
+    "candidate": "CaseyWhitmore"
+  },
+  {
+    "summary": "The candidate's groundskeeping experience of 5 years clearly meets the requirement for groundskeeping experience. Their extensive physical fitness and ability to work alone in remote areas are reasonable matches, and their background in law enforcement aligns with the 'pursuit oriented' background preference. However, the lack of specific gamekeeping or countryside management experience, as well as the absence of hunting-related experience, are not clearly met. The candidate's full clean driving license and willingness to live on site are clearly met.",
+    "candidate": "Chen_Special"
+  },
+  {
+    "summary": "The candidate's experience in groundskeeping or related fields is unclear and does not meet the essential requirement. The physical fitness and comfort working alone in remote areas are reasonable matches based on the work history. The candidate's ability to work discreetly and handle unusual requests is not evidenced, and there is no explicit mention of relevant certifications or a clean driving license.",
+    "candidate": "HomerSimsSon"
+  },
+  {
+    "summary": "The candidate's experience as a software engineer does not meet the essential requirement of groundskeeping, gamekeeping, or countryside management experience. However, their technical experience and certifications in AWS and Kubernetes could be seen as a reasonable match for the 'pursuit oriented' background requirement. The candidate's education and certifications suggest they are capable and willing to learn new skills, which could be beneficial for the role. The physical fitness, discretion, and ability to work alone in remote areas are not evidenced in the CV but are implied through the nature of the candidate's current and previous roles.",
+    "candidate": "JordanMitchell5Star"
+  },
+  {
+    "summary": "The candidate demonstrates a reasonable match with the required groundskeeping experience, excellent physical fitness, and a background in pursuit-oriented activities. However, the clarity of the candidate's ability to work alone in remote areas is unclear, and there is no evidence of the absolute discretion required by the job.",
+    "candidate": "Li_ExtraSpecial"
+  },
+  {
+    "summary": "",
+    "error": "PARSE ERROR",
+    "candidate": "MathNaledi"
+  },
+  {
+    "summary": "The candidate's experience and skills do not clearly meet the job's essential requirements. Proven groundskeeping, gamekeeping, or countryside management experience is clearly not met. While the candidate has relevant software development experience and certifications, these do not directly align with the hunting or groundskeeping background. However, the candidate's strong technical skills and ability to work independently could be considered a reasonable match for some aspects of the role.",
+    "candidate": "MegaMarcus"
+  },
+  {
+    "summary": "The candidate's experience as a Software Engineer does not clearly meet the requirement for groundskeeping, gamekeeping, or countryside management experience. However, their technical and problem-solving skills from the software development role might be transferable to the tracking and search & rescue aspects of the job. The candidate's excellent physical fitness, willingness to work alone in remote areas, and ability to maintain confidentiality through certifications could reasonably align with the job's requirements. A driving license is unclear from the provided information.",
+    "candidate": "PriyaPicture"
+  },
+  {
+    "summary": "The candidate's groundskeeping experience is a reasonable match for the 'countryside management' requirement, and their tracking and search & rescue background strongly aligns with the 'pursuit oriented' background preference. However, the required physical fitness and ability to work in remote areas without phone signal are not explicitly stated in the CV, and there is no clear indication of experience with 'hunting' or 'unusual requests.' The absence of a clean driving licence and willingness to live on-site are also not evident from the provided information.",
+    "candidate": "SamanthaOne"
+  },
+  {
+    "summary": "",
+    "error": "PARSE ERROR",
+    "candidate": "SystemShock"
+  },
+  {
+    "summary": "The candidate's CV does not clearly meet the essential requirement of groundskeeping, gamekeeping, or 'countryside management' experience. However, the candidate's background in software engineering and architecture shows strong technical skills that could be transferable to roles involving system management and oversight. The physical fitness and ability to work in remote areas may be inferred from the demanding nature of the previous roles, but this is not explicitly stated. The candidate's excellent discretion through extensive handling of sensitive data and systems, along with the ability to work independently, are clearly met. The preference for a driving license is not demonstrated, but the willingness to live on-site where the Laird can 'reach' is clearly shown.",
+    "candidate": "TaylorGraphics"
+  },
+  {
+    "summary": "The candidate's CV does not clearly meet the essential requirements for groundskeeping, gamekeeping, or countryside management experience. However, the candidate's extensive experience in software engineering and leadership roles, along with technical expertise, suggests strong problem-solving and strategic thinking skills that could be transferable. The candidate's excellent communication and technical review skills, as well as their ability to work independently, may reasonably align with some of the job's requirements, but there is no direct evidence of experience with tracking, search & rescue, or working in rural, remote settings.",
+    "candidate": "VictoriaSterlingSilver"
+  }
+]

@@ -1,0 +1,36 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Strong analytical and problem-solving skills demonstrated through technical experience.",
+      "Good teamwork and communication abilities, as evidenced by participation in agile teams and collaborative projects."
+    ],
+    "weaknesses": [
+      "Lack of relevant education in Marine Biology, Zoology, Aquatic Biology, or related life sciences.",
+      "No practical experience or evidence of willingness to perform physical, dirty, and repetitive tasks associated with aquarium husbandry.",
+      "No background in water chemistry, aquatic life, or animal care."
+    ],
+    "summary": "While the candidate has strong technical skills and teamwork experience, they lack the relevant educational background and practical experience necessary for an entry-level Aquarium Biologist role.",
+    "candidate": "beginner_american",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong technical skills in software development",
+      "Experience in agile development and collaboration"
+    ],
+    "weaknesses": [
+      "Lack of relevant biological or aquatic science education",
+      "No practical experience in aquatic animal husbandry or life support systems"
+    ],
+    "summary": "The candidate has strong technical skills but lacks the necessary biological background and practical experience required for the aquarium biologist role.",
+    "candidate": "beginner_american",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's CV does not clearly meet the essential requirements for the role, as there is no evidence of a degree in Marine Biology, Zoology, Aquatic Biology, or a related life science. The job also requires practical experience in handling physical tasks, basic water chemistry understanding, and the ability to work in specific conditions, none of which are evident from the provided CV. However, the candidate's experience in software engineering and teaching assistant roles demonstrate strong technical skills and attention to detail, which are closely related to the required observational skills and record-keeping habits. The candidate's ability to pass a background check is implied by their certifications and university activities.",
+    "candidate": "beginner_american",
+    "type": "essential_requirements"
+  }
+]

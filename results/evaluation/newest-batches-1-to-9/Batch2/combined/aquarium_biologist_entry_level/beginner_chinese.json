@@ -1,0 +1,35 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Demonstrates ability to learn and adapt quickly to new tools and environments, as evidenced by work in diverse software engineering projects."
+    ],
+    "weaknesses": [
+      "Lacks relevant educational background in Marine Biology, Zoology, Aquatic Biology, or a related life science.",
+      "No experience in water quality testing, aquatic animal husbandry, or maintenance of life support systems.",
+      "No prior experience in aquarium or zoo settings, and no hands-on experience with marine or freshwater species."
+    ],
+    "summary": "The candidate lacks both the educational background and relevant experience in aquatic biology and husbandry required for the role, though they show potential for learning new skills.",
+    "candidate": "beginner_chinese",
+    "model": "phi4"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "technical skills in software development",
+      "experience in building web applications"
+    ],
+    "weaknesses": [
+      "lack of relevant experience in marine biology or aquatic animal husbandry",
+      "no evidence of physical fitness or willingness to perform hands-on, repetitive tasks"
+    ],
+    "summary": "The candidate has strong technical skills but lacks the necessary background in marine biology and hands-on experience with aquatic systems, making them unsuitable for the role.",
+    "candidate": "beginner_chinese",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's degree in Environmental Science is a reasonable match for the required degree in Marine Biology, Zoology, Aquatic Biology or a related life science. The candidate's experience with water filtration systems and maintenance, and detailed record keeping, are closely related and can be considered a strong match for the job requirements. The physical fitness requirements are unclear as no specific lifting or environmental work experience is mentioned. The candidate's availability for weekend and early morning shifts is clearly met. Full right to work in the UK and ability to pass a basic background check are also clearly met.",
+    "candidate": "beginner_chinese",
+    "type": "essential_requirements"
+  }
+]

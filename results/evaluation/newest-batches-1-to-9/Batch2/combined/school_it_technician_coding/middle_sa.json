@@ -1,0 +1,37 @@
+[
+  {
+    "score": 7,
+    "strengths": [
+      "Has practical IT support experience and familiarity with relevant technologies such as Windows 11, Microsoft 365, and Python.",
+      "Demonstrates enthusiasm for mentoring and coaching, which is crucial for the 30% of the role focused on coding enrichment and support.",
+      "Strong background in software engineering and problem-solving, which can be adapted to support school IT infrastructure and educational technology needs."
+    ],
+    "weaknesses": [
+      "Lacks direct experience in an educational setting, which would be beneficial for the role.",
+      "No explicit experience with device management tools like Intune or classroom AV support, which are part of the essential responsibilities.",
+      "Does not mention specific experience with Raspberry Pi, Micro:bit, or LEGO robotics, which are desirable for the robotics challenge and coding enrichment tasks."
+    ],
+    "summary": "The candidate has a strong technical background and mentoring experience, making them a good fit for the role, though they lack specific experience in educational settings and certain technical skills related to the job.",
+    "candidate": "middle_sa",
+    "model": "phi4"
+  },
+  {
+    "score": 6,
+    "strengths": [
+      "Strong programming skills with proficiency in Python, which aligns with the coding aspect of the role",
+      "Experience in API design and service management could be beneficial for maintaining the school's website and VLE"
+    ],
+    "weaknesses": [
+      "Lack of experience in an educational setting or with educational technology",
+      "No direct experience with Windows 11, Microsoft 365, or Intune"
+    ],
+    "summary": "Kagiso Ndlovu possesses strong technical skills but lacks direct experience in educational technology or a school setting.",
+    "candidate": "middle_sa",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate meets the essential requirement for practical IT support experience through their education and contributions. Their working knowledge of Windows 11 and Microsoft 365 is confirmed. Basic programming ability with Python is evidenced, and their enthusiasm for working with young people is implied through their contributions to engineering guilds. However, there is no clear indication of experience with Intune or similar device management, and the CV does not mention an understanding of safeguarding or willingness to undergo a DBS check.",
+    "candidate": "middle_sa",
+    "type": "essential_requirements"
+  }
+]

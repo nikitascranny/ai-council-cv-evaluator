@@ -1,0 +1,38 @@
+[
+  {
+    "summary": "The candidate's software engineering and teaching assistant experiences closely match the requirement for practical technical skills and clear communication. However, the CV does not provide evidence of PC/laptop repair skills, and the candidate's availability for Saturdays is unclear. The certifications and activities suggest reliability and a commitment to the field, which could be viewed favorably.",
+    "candidate": "beginner_american"
+  },
+  {
+    "summary": "The candidate appears to meet the requirement for basic PC/laptop repair skills through their relevant experience. Their ability to communicate effectively with older customers, as evidenced by references to past work with elderly clients, is a reasonable match for the requirement to be friendly and patient. The candidate's willingness to work Saturdays is clear, making this requirement met. However, the exact location or reliable transportation details are unclear from the CV, which makes it uncertain whether they can meet the last requirement.",
+    "candidate": "beginner_chinese"
+  },
+  {
+    "summary": "The candidate's CV clearly meets the requirements for practical PC/laptop repair skills, reliability, and ability to work on Saturdays. The friendly and patient demeanor with older customers is a reasonable/close match, as is the local or reliable transport to Tillingford. However, there is no clear evidence of the candidate's ability to explain things without jargon or sighing, which could be a concern.",
+    "candidate": "beginner_sa"
+  },
+  {
+    "summary": "The candidate clearly meets the requirement for basic PC/laptop repair skills, as they have a degree in Computer Engineering. Their ability to work Saturdays is unclear from the CV. The requirement for being friendly and patient with older customers and explaining things without jargon or sighing is a reasonable/close match due to their background in Computer Engineering. The requirement for being honest and reliable is also a reasonable/close match. The requirement for being local or able to get to Tillingford reliably is clearly not met, as there is no information about their location or commuting ability.",
+    "candidate": "intermediate_american"
+  },
+  {
+    "summary": "The candidate's PC/laptop repair skills are not explicitly detailed, but they could be a reasonable match based on their technical background. Their experience with explaining technical concepts in a simple manner aligns well with the requirement to be friendly and patient with older customers. The candidate’s reliability is supported by their consistent attendance at volunteer roles, and their willingness to work on Saturdays is clearly demonstrated. However, there is no specific mention of their proximity to Tillingford, which is a potential point of uncertainty.",
+    "candidate": "middle_chinese"
+  },
+  {
+    "summary": "The candidate's BEng Computer Engineering degree and AWS Certified Developer – Associate certification suggest they have the practical PC/laptop repair skills needed for the role. Their ability to explain technical concepts in a non-jargon manner aligns well with the requirement to be friendly and patient with older customers. However, there is no evidence of local residency or reliable transport to the workplace, which is a clear requirement.",
+    "candidate": "middle_sa"
+  },
+  {
+    "summary": "The candidate's experience in software engineering and technology leadership clearly meets the requirement for basic PC/laptop repair skills through reasonable leeway. The candidate’s experience with mentoring, technical leadership, and incident management closely aligns with the need for being friendly, patient, and honest. However, there is no evidence in the CV that the candidate has hands-on experience with PC/laptop repair, and their location is unclear.",
+    "candidate": "senior_american"
+  },
+  {
+    "summary": "候选人的技能与经验主要集中在软件工程和技术领导方面，与岗位的基本PC维修技能要求不符，这是一个明显的不匹配。然而，候选人的沟通能力和技术领导经验可能表明他能够友好和耐心地与客户交流，这与友好的客户服务要求较为接近。至于诚实和可靠性的要求，虽然CV中没有直接证据，但考虑到候选人在技术领域的成就和责任感，可以认为他具备这些品质。最后，候选人的职业经历显示他能够灵活工作，这与能工作周六的要求相符合。",
+    "candidate": "senior_chinese"
+  },
+  {
+    "summary": "The candidate's educational background in software engineering and computer science clearly meets the technical requirements. Their ability to explain complex topics in a non-jargony way is a reasonable match for being friendly and patient with older customers. However, there is no evidence of practical PC/laptop repair skills, honesty, reliability, or the ability to work Saturdays.",
+    "candidate": "senior_sa"
+  }
+]

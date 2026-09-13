@@ -1,0 +1,38 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "The candidate has demonstrated strong organizational skills and attention to detail, which are beneficial in maintaining catch tallies and completing landing declarations.",
+      "Their experience with data analysis and report writing could be an asset in managing records and documentation required on board."
+    ],
+    "weaknesses": [
+      "Lacks relevant maritime or physical work experience, which is crucial for the physically demanding and hands-on role of a boat hand.",
+      "No prior experience or training in fishing, handling equipment, or vessel operations, all of which are essential for the position.",
+      "Does not have sea legs or experience working on boats, a key requirement for adapting to the maritime environment.",
+      "The candidate's background is predominantly in financial analysis and administration, far removed from the operational and manual tasks of the job."
+    ],
+    "summary": "The candidate's analytical and organizational skills are strong, but lack of relevant maritime experience and physical work history significantly hinder their suitability for the role.",
+    "candidate": "PONTUS PONTIOUS",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Attention to detail",
+      "Financial analysis skills"
+    ],
+    "weaknesses": [
+      "Lack of maritime experience",
+      "No physical labor background",
+      "No safety training certifications"
+    ],
+    "summary": "Pontus Pontious lacks the necessary maritime experience and physical labor skills required for the position, despite having strong analytical and financial skills.",
+    "candidate": "PONTUS PONTIOUS",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's CV does not clearly demonstrate the essential requirement of physical fitness for heavy, repetitive manual work in all weathers. However, their experience in finance and administration may be transferable to the role's administrative and reporting responsibilities. The candidate's educational background shows a strong numeracy skill set, which aligns with the basic numeracy requirement for catch tallies and grading. Their experience with data analysis and report preparation is a reasonable match for the basic numeracy requirement. The CV lacks specific evidence of sea legs or previous time on boats, making it unclear if the candidate meets this requirement.",
+    "candidate": "PONTUS PONTIOUS",
+    "type": "essential_requirements"
+  }
+]

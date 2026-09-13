@@ -1,0 +1,37 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Excellent communication and interpersonal skills",
+      "Ability to work under pressure and independently",
+      "Strong organizational and administrative skills"
+    ],
+    "weaknesses": [
+      "Lack of sea experience or boat handling skills",
+      "No relevant experience in fishing or maritime work",
+      "No physical fitness evidence for demanding manual work"
+    ],
+    "summary": "The candidate demonstrates strong organizational and interpersonal skills but lacks the necessary sea experience and physical fitness for the physically demanding role of a boat hand on an inshore fishing vessel.",
+    "candidate": "NDLOVU KARABO REFILWE",
+    "model": "phi4"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "excellent organizational and administrative skills",
+      "dependable and detail-oriented"
+    ],
+    "weaknesses": [
+      "lacks relevant maritime or fishing industry experience",
+      "no experience with physical labor or manual work"
+    ],
+    "summary": "The candidate possesses strong administrative skills but lacks the necessary maritime experience and physical capabilities required for the job.",
+    "candidate": "NDLOVU KARABO REFILWE",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's CV does not clearly demonstrate physical fitness for heavy, repetitive manual work or experience on boats. However, it does show a strong background in records and information management, including tasks related to file management, classification, and disposal, which are closely related to the role's requirements. The candidate's willingness to work early starts and long days is also evidenced by past roles that involved extensive administrative tasks.",
+    "candidate": "NDLOVU KARABO REFILWE",
+    "type": "essential_requirements"
+  }
+]

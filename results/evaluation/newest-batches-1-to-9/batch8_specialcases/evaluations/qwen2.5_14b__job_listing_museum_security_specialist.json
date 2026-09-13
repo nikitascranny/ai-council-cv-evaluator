@@ -1,0 +1,167 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "technical skills",
+      "problem-solving ability"
+    ],
+    "weaknesses": [
+      "lack of professional security experience",
+      "no SIA licence"
+    ],
+    "summary": "The candidate demonstrates strong technical and problem-solving skills but lacks the essential professional security experience and qualifications required for the role.",
+    "candidate": "Li_ExtraSpecial"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Technical skills in software engineering",
+      "Previous experience in software development roles"
+    ],
+    "weaknesses": [
+      "Lack of relevant experience in museum security",
+      "No alignment between candidate skills and job requirements"
+    ],
+    "summary": "The candidate's background in software engineering does not align with the required skills for a Museum Security Specialist role.",
+    "candidate": "BrendanPythno"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "technical skills in Python and Go",
+      "relevant education in computer science"
+    ],
+    "weaknesses": [
+      "lack of experience in security roles",
+      "no relevant certifications for security positions",
+      "no direct experience with CCTV, intruder alarm systems or access-control platforms"
+    ],
+    "summary": "Candidate lacks the essential security experience and certifications required for the Museum Security Specialist role.",
+    "candidate": "Chen_Special"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "none evident"
+    ],
+    "weaknesses": [
+      "lack of relevant experience, non-relevant skills, unclear and nonsensical CV content"
+    ],
+    "summary": "The candidate does not meet any of the essential criteria for the position due to the lack of relevant experience and skills, and the CV content is unclear and nonsensical.",
+    "candidate": "HomerSimsSon"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong data analysis and technical skills",
+      "Experience in optimizing reporting pipelines"
+    ],
+    "weaknesses": [
+      "No relevant security experience",
+      "Lack of physical security qualifications"
+    ],
+    "summary": "The candidate has strong data analysis skills but lacks any relevant security experience or qualifications, making them unsuitable for the role.",
+    "candidate": "MathNaledi"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Proficient in backend systems using Python and Go",
+      "Experience in maintaining internal tooling and dashboards"
+    ],
+    "weaknesses": [
+      "No experience in security roles or relevant certifications",
+      "No relevant work experience in museum/gallery security or emergency response"
+    ],
+    "summary": "The candidate lacks the essential security experience and certifications required for the position, making them a poor fit despite their technical skills.",
+    "candidate": "MegaMarcus"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong in software development and UI/UX design",
+      "Has a background in UI component library partnership"
+    ],
+    "weaknesses": [
+      "Lacks security experience and qualifications",
+      "No experience with museum/gallery operations or security systems"
+    ],
+    "summary": "Priya Chetty's background in software engineering and UI/UX design is commendable, but she lacks the essential security experience and qualifications required for the Museum Security Specialist role.",
+    "candidate": "PriyaPicture"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "None directly related to the job description"
+    ],
+    "weaknesses": [
+      "No experience in security roles",
+      "No relevant certifications or knowledge of security systems",
+      "No experience working in a museum or heritage site"
+    ],
+    "summary": "The candidate lacks any experience or skills that match the job requirements for a Museum Security Specialist.",
+    "candidate": "SamanthaOne"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "None directly relevant to the museum security role"
+    ],
+    "weaknesses": [
+      "Lack of security experience",
+      "No relevant certifications",
+      "No experience in cultural property protection"
+    ],
+    "summary": "The candidate lacks any experience or qualifications pertinent to the museum security role, making them unsuitable for the position.",
+    "candidate": "SystemShock"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Technical expertise in software engineering",
+      "Proven track record in system architecture and team leadership"
+    ],
+    "weaknesses": [
+      "Lack of relevant security experience",
+      "No direct experience in museum or cultural institution settings",
+      "Insufficient evidence of experience with security systems and emergency response"
+    ],
+    "summary": "While the candidate demonstrates strong technical and leadership skills in software engineering, they lack the specific experience and qualifications required for a Museum Security Specialist role.",
+    "candidate": "TaylorGraphics"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong technical background",
+      "Leadership experience"
+    ],
+    "weaknesses": [
+      "Lacks relevant security experience",
+      "Unsuitable work attitude and behavior"
+    ],
+    "summary": "The candidate possesses significant technical and leadership skills but entirely lacks the necessary security experience and exhibits a highly problematic attitude and behavior that would be detrimental to the team and organization.",
+    "candidate": "VictoriaSterlingSilver"
+  },
+  {
+    "score": 1,
+    "strengths": [
+      "None directly relevant to the security role"
+    ],
+    "weaknesses": [
+      "Lack of experience in security, museums, or related fields; no alignment with essential requirements"
+    ],
+    "summary": "The candidate's extensive background in software engineering does not align with the job's essential requirements for museum security, making them unsuitable for the position.",
+    "candidate": "CaseyWhitmore"
+  },
+  {
+    "score": 1,
+    "strengths": [],
+    "weaknesses": [
+      "Lack of relevant security experience",
+      "No SIA licence or similar",
+      "No experience with CCTV, intruder alarm, or access-control systems"
+    ],
+    "summary": "The candidate lacks any experience in security roles or relevant technology systems and has no qualifications that would suggest up-skilling potential for the specific job requirements.",
+    "candidate": "JordanMitchell5Star"
+  }
+]

@@ -1,0 +1,8 @@
+{
+  "candidate": "ALEX PARK",
+  "final_score": 2,
+  "score_rationale": "The candidate has strong testing and automation skills, but lacks the essential full-stack development experience (TypeScript/React, Go) and production operations expertise required for the Pulsegrid role.",
+  "key_strengths": "Experience in test automation and strong communication skills.",
+  "key_weaknesses": "No experience with React/TypeScript, Go, or distributed systems like Kafka/TimescaleDB.",
+  "final_evaluation": "Alex has valuable skills in testing and communication but does not meet the core technical requirements for this role, which demands strong full-stack development and production systems experience."
+}

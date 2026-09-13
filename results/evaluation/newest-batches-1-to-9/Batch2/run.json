@@ -1,0 +1,117 @@
+{
+  "runs": [
+    {
+      "started": "2026-09-13T11:22:36+00:00",
+      "finished": "2026-09-13T12:30:37+00:00",
+      "exit_code": 0,
+      "python": "3.13.15",
+      "from": "evaluate",
+      "condition": "with-essential",
+      "force": false,
+      "cvs": "data/cvs/Batch2",
+      "jobs": "data/job-listings",
+      "out": "/content/drive/MyDrive/ai-cv-eval-results/Batch2",
+      "preflight": "ok",
+      "models": {
+        "council": [
+          "qwen2.5:14b",
+          "phi4"
+        ],
+        "essential_requirements": "qwen2.5:7b",
+        "judge": "deepseek-r1:8b"
+      },
+      "inputs": {
+        "job_listings": [
+          "job_listing_aquarium_biologist_entry_level.pdf",
+          "job_listing_computer_repair_technician.pdf",
+          "job_listing_estate_groundskeeper.pdf",
+          "job_listing_fishing_boat_hand.pdf",
+          "job_listing_museum_security_specialist.pdf",
+          "job_listing_school_it_technician_coding.pdf",
+          "job_listing_secretary.pdf",
+          "job_listing_startup_fullstack_engineer.pdf",
+          "job_listing_web_development_manager.pdf"
+        ],
+        "cvs": [
+          "beginner_american.pdf",
+          "beginner_chinese.pdf",
+          "beginner_sa.pdf",
+          "intermediate_american.pdf",
+          "middle_chinese.pdf",
+          "middle_sa.pdf",
+          "senior_american.pdf",
+          "senior_chinese.pdf",
+          "senior_sa.pdf"
+        ]
+      },
+      "stages": {
+        "evaluate": {
+          "status": "ok",
+          "model_files": 18,
+          "evaluations": 162,
+          "unscored": 0,
+          "essential_files": 9,
+          "seconds": 2277.1
+        },
+        "aggregate": {
+          "status": "ok",
+          "combined_files": 81,
+          "seconds": 0.6
+        },
+        "judge": {
+          "status": "ok",
+          "ok": 81,
+          "failed": 0,
+          "already_done": 0,
+          "total": 81,
+          "seconds": 1802.6
+        }
+      }
+    },
+    {
+      "started": "2026-09-13T12:30:37+00:00",
+      "finished": "2026-09-13T12:59:33+00:00",
+      "exit_code": 0,
+      "python": "3.13.15",
+      "from": "judge",
+      "condition": "council-only",
+      "force": false,
+      "cvs": null,
+      "jobs": "data/job-listings",
+      "out": "/content/drive/MyDrive/ai-cv-eval-results/Batch2",
+      "preflight": "ok",
+      "models": {
+        "judge": "deepseek-r1:8b"
+      },
+      "inputs": {
+        "job_listings": [
+          "job_listing_aquarium_biologist_entry_level.pdf",
+          "job_listing_computer_repair_technician.pdf",
+          "job_listing_estate_groundskeeper.pdf",
+          "job_listing_fishing_boat_hand.pdf",
+          "job_listing_museum_security_specialist.pdf",
+          "job_listing_school_it_technician_coding.pdf",
+          "job_listing_secretary.pdf",
+          "job_listing_startup_fullstack_engineer.pdf",
+          "job_listing_web_development_manager.pdf"
+        ]
+      },
+      "stages": {
+        "evaluate": {
+          "status": "reused"
+        },
+        "aggregate": {
+          "status": "reused"
+        },
+        "judge": {
+          "status": "ok",
+          "ok": 81,
+          "failed": 0,
+          "already_done": 0,
+          "total": 81,
+          "seconds": 1735.9
+        }
+      }
+    }
+  ]
+}

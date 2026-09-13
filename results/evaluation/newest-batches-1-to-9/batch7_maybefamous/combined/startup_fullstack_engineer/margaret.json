@@ -1,0 +1,39 @@
+[
+  {
+    "score": 5,
+    "strengths": [
+      "Strong experience in mobile app development, indicating proficiency in front-end development and user experience design.",
+      "Demonstrates an ability to improve product quality and user satisfaction, as seen in improving app store ratings.",
+      "Solid educational background in software engineering with relevant coursework.",
+      "Certification in Google Associate Android Developer, showcasing commitment to learning and professional development."
+    ],
+    "weaknesses": [
+      "Lacks experience with TypeScript/React and Go, which are essential for the role.",
+      "No demonstrated experience with backend development, observability, or incident response in production environments.",
+      "Limited exposure to distributed systems fundamentals, event-driven architectures, or real-time data processing.",
+      "No direct experience in the energy sector or with technologies like Kafka, TimescaleDB, or Redis."
+    ],
+    "summary": "Margaret has strong front-end development skills and a commitment to learning but lacks the specific technical experience and domain knowledge required for the role.",
+    "candidate": "Margaret",
+    "model": "phi4"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "4 years of software engineering experience",
+      "experience with mobile app development using Flutter"
+    ],
+    "weaknesses": [
+      "lack of full-stack development experience",
+      "no experience with Go, Kafka, TimescaleDB, or Redis"
+    ],
+    "summary": "Margaret Hamilton has mobile app development experience but lacks the full-stack and backend experience required for the role.",
+    "candidate": "Margaret",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate has 4+ years of experience shipping production software, which is clearly met. Their experience with Flutter and Dart is a reasonable match for the TypeScript/React requirement, and they have relevant coursework in Agile Practices. However, there is no evidence of experience with Go or other backend languages, nor with operating services in production or distributed systems fundamentals.",
+    "candidate": "Margaret",
+    "type": "essential_requirements"
+  }
+]

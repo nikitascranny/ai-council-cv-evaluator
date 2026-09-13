@@ -1,0 +1,37 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Strong problem-solving skills from software engineering experience",
+      "Ability to collaborate effectively with cross-functional teams"
+    ],
+    "weaknesses": [
+      "Lack of direct experience in security roles, particularly within a museum or similar setting",
+      "No evidence of working knowledge of CCTV, intruder alarm, or access-control systems",
+      "No physical security experience or evidence of ability to conduct patrols or handle emergencies",
+      "Absence of qualifications or experience in security licensing"
+    ],
+    "summary": "Priya Chetty has strong technical and problem-solving skills but lacks direct experience and qualifications in security, making her a less ideal fit for the Museum Security Specialist role.",
+    "candidate": "PriyaPicture",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong in software development and UI/UX design",
+      "Has a background in UI component library partnership"
+    ],
+    "weaknesses": [
+      "Lacks security experience and qualifications",
+      "No experience with museum/gallery operations or security systems"
+    ],
+    "summary": "Priya Chetty's background in software engineering and UI/UX design is commendable, but she lacks the essential security experience and qualifications required for the Museum Security Specialist role.",
+    "candidate": "PriyaPicture",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's experience does not clearly meet the essential requirement of at least 3 years' experience in a security role. Their certification in software engineering and relevant coursework in computer science are a reasonable match for the technical knowledge required, such as working with systems like CCTV and access control. The ability to work shifts and physically patrol a site is unclear from the CV. The candidate's skills in communication and decision-making are not evidenced, but are implied as transferable from their professional background.",
+    "candidate": "PriyaPicture",
+    "type": "essential_requirements"
+  }
+]

@@ -1,0 +1,36 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Shows evidence of adaptability and problem-solving in high-stress situations.",
+      "Possesses a strong work ethic demonstrated by leadership and initiative in extreme conditions."
+    ],
+    "weaknesses": [
+      "Lacks direct experience in fishing or maritime work.",
+      "Missing specific physical fitness evidence required for demanding sea conditions.",
+      "No formal training in maritime safety or boat handling."
+    ],
+    "summary": "The candidate has strong adaptability and problem-solving skills but lacks relevant maritime experience and specific physical and safety training needed for the role.",
+    "candidate": "Li_ExtraSpecial",
+    "model": "phi4"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Physical fitness and survival skills",
+      "Problem-solving and improvisation"
+    ],
+    "weaknesses": [
+      "No direct fishing experience",
+      "Limited relevant maritime skills"
+    ],
+    "summary": "Candidate demonstrates strong survival and problem-solving skills but lacks direct experience relevant to fishing or maritime work.",
+    "candidate": "Li_ExtraSpecial",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's CV clearly meets the requirements for being physically fit and comfortable with heavy, repetitive manual work. Their experience is a reasonable match for having sea legs, as they have participated in scuba diving and surfing, which indicate they are used to the sea environment. The candidate is punctual and reliable, as evidenced by their consistent work history. However, their numeracy skills are not explicitly mentioned, and there is no clear indication of willingness to work early starts or long days. There is no history of severe seasickness mentioned, but their experience with water activities suggests they may be able to handle moderate seas.",
+    "candidate": "Li_ExtraSpecial",
+    "type": "essential_requirements"
+  }
+]

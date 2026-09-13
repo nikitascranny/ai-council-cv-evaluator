@@ -1,0 +1,37 @@
+[
+  {
+    "score": 4,
+    "strengths": [
+      "Physically fit and willing to perform manual tasks, as indicated by readiness to handle physical, dirty, and repetitive tasks in a software engineering role.",
+      "Strong attention to detail and analytical skills demonstrated through software engineering experience."
+    ],
+    "weaknesses": [
+      "Lacks relevant educational background in Marine Biology, Zoology, Aquatic Biology, or a related life science.",
+      "No direct experience in aquatic animal husbandry, water quality testing, or maintenance of life support systems.",
+      "Absence of experience or certification in SCUBA diving, which is desirable for the role."
+    ],
+    "summary": "While Zanele demonstrates physical fitness and analytical skills, their extensive experience and education are in software engineering, lacking the specific qualifications and background necessary for the Aquarium Biologist role.",
+    "candidate": "senior_sa",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Technical skills in software engineering",
+      "Experience in leading and mentoring teams"
+    ],
+    "weaknesses": [
+      "No background in marine biology or zoology",
+      "Lack of experience in aquatic animal husbandry",
+      "No hands-on experience with life support systems"
+    ],
+    "summary": "The candidate lacks the essential background and experience required for the entry-level aquarium biologist position.",
+    "candidate": "senior_sa",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate does not meet the requirement for a degree in Marine Biology, Zoology, Aquatic Biology or a related life science. However, their engineering background and experience in software and computer science could be seen as a reasonable match for some aspects of the job, particularly the observational and detail-oriented skills. The physical fitness requirements are unclear as the CV does not mention lifting capabilities or working in specific environments. The ability to work weekends and during early mornings is not mentioned, but can be inferred as a reasonable expectation given the candidate's engineering and technical experience.",
+    "candidate": "senior_sa",
+    "type": "essential_requirements"
+  }
+]

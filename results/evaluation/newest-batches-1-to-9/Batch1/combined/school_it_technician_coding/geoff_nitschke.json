@@ -1,0 +1,38 @@
+[
+  {
+    "score": 4,
+    "strengths": [
+      "Strong research and analytical skills demonstrated through experience in uncovering customer needs and driving user-centric culture.",
+      "Proven leadership and mentoring experience, which can be valuable in supporting young people in the school environment.",
+      "Excellent communication skills, as evidenced by engaging and influencing executives and facilitating workshops."
+    ],
+    "weaknesses": [
+      "Lack of practical IT support experience, particularly in a school environment.",
+      "No demonstrated knowledge of Windows 11, Microsoft 365, or Intune.",
+      "Absence of programming skills in Python or Scratch, which are essential for assisting with coding activities in the role.",
+      "No experience with safeguarding practices or understanding of school policies, which are critical for this position."
+    ],
+    "summary": "The candidate has strong research, leadership, and communication skills but lacks the necessary IT and programming expertise, as well as experience in safeguarding, required for the role.",
+    "candidate": "GEOFF NITSCHKE",
+    "model": "phi4"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "strong user research and engagement skills",
+      "experience in mentoring and leading workshops"
+    ],
+    "weaknesses": [
+      "lacks IT support experience",
+      "no direct experience in education or coding"
+    ],
+    "summary": "The candidate excels in user research and engagement but lacks the direct IT and educational experience required for the role.",
+    "candidate": "GEOFF NITSCHKE",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's experience in UX research and design clearly meets the requirement for practical IT support experience and the ability to conduct and apply research insights. Their programming background is not explicitly stated, but their experience in UX design and research suggests a reasonable match for basic programming ability to help young people debug code. The candidate's lack of direct IT support experience, particularly in the context of Windows 11 or Microsoft 365, is a clear mismatch. Their enthusiasm and willingness to undergo necessary checks are not evidenced in the CV, though these are implied through their professional experience and role titles.",
+    "candidate": "GEOFF NITSCHKE",
+    "type": "essential_requirements"
+  }
+]

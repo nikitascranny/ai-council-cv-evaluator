@@ -1,0 +1,38 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Adaptability and ability to work independently in varied environments",
+      "Experience in customer service and communication"
+    ],
+    "weaknesses": [
+      "Lack of specific groundskeeping, gamekeeping, or countryside management experience",
+      "No evidence of physical fitness or experience with tracking, search & rescue, or military pursuits",
+      "No experience with hounds or similar tracking dogs",
+      "No background in immersive theatre, airsoft event marshalling, or private security work"
+    ],
+    "summary": "While Kevin Jones has a versatile background and strong communication skills, he lacks the specific experience and skills required for the Groundskeeper & Hunt Coordinator role at Blackmoor Hall Estate.",
+    "candidate": "professional_cv_kevin_jones",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "versatile and adaptable",
+      "practical problem-solving skills"
+    ],
+    "weaknesses": [
+      "no relevant work experience",
+      "lack of specific skills related to the role",
+      "inability to address the job's unique requirements"
+    ],
+    "summary": "Kevin Jones lacks the necessary background and specific skills required for the unique and demanding role of Groundskeeper & Hunt Coordinator at Blackmoor Hall Estate.",
+    "candidate": "professional_cv_kevin_jones",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate does not clearly meet the essential requirement of groundskeeping, gamekeeping, or countryside management experience. However, their adaptability in various roles and practical judgment could reasonably match the requirement for a solution-focused approach. The candidate's driving licence is clearly met, but their comfort in working alone in remote areas is unclear from the CV. Their excellent physical fitness and ability to handle unusual requests are not evidenced, but they show strong communication and customer service skills that might relate to the tracking and search & rescue background preferred.",
+    "candidate": "professional_cv_kevin_jones",
+    "type": "essential_requirements"
+  }
+]

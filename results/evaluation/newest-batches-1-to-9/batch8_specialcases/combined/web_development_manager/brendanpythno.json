@@ -1,0 +1,41 @@
+[
+  {
+    "score": 5,
+    "strengths": [
+      "Experience with backend systems and modern technologies like Python and Go",
+      "Familiarity with CI/CD pipelines and AWS",
+      "Solid educational background with relevant coursework in databases, networking, and software testing"
+    ],
+    "weaknesses": [
+      "Lacks experience in web development, specifically in React/TypeScript and Node.js/.NET",
+      "Insufficient experience with team management and leading technical changes",
+      "No evidence of experience with service-oriented architectures or cloud infrastructure management beyond basic AWS certification"
+    ],
+    "summary": "Brendan has relevant technical skills and some cloud knowledge but lacks experience in web development technologies and leadership required for the role.",
+    "candidate": "BrendanPythno",
+    "model": "phi4"
+  },
+  {
+    "score": 4,
+    "strengths": [
+      "Solid background in backend development with Python and Go",
+      "Experience in high transaction volume systems",
+      "AWS certification",
+      "Scrum fundamentals certification"
+    ],
+    "weaknesses": [
+      "Insufficient years of experience (4 years total, 2 years in current role)",
+      "Lack of leadership experience",
+      "No direct experience with React/TypeScript or .NET",
+      "Poor grammar and spelling in CV"
+    ],
+    "summary": "Brendan has the technical skills but lacks the required leadership experience and relevant technology expertise for the position.",
+    "candidate": "BrendanPythno",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate clearly meets the requirement for 5+ years of professional web/software engineering experience and has a reasonable match for a background in modern web stacks, having experience with backend languages and CI/CD. However, the candidate does not have clear evidence of line managing engineers or leading significant technical changes, and the education section does not explicitly state relevant coursework in modern web technologies such as React/TypeScript. The candidate does have relevant certifications for cloud infrastructure and agile delivery.",
+    "candidate": "BrendanPythno",
+    "type": "essential_requirements"
+  }
+]

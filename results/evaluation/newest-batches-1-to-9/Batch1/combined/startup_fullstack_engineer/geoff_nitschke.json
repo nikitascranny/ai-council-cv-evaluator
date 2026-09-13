@@ -1,0 +1,37 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Strong background in user research and experience with cross-functional collaboration.",
+      "Proven track record in conducting research that informs product and service design."
+    ],
+    "weaknesses": [
+      "Lacks relevant technical skills and experience in full-stack development, particularly in TypeScript/React and Go.",
+      "No experience with production-grade system operations like observability, alerting, or incident response.",
+      "Does not have experience in event-driven architectures or distributed systems, which are key for this role.",
+      "No demonstrated experience in energy sector domain knowledge, which is desirable for the role."
+    ],
+    "summary": "The candidate has strong experience in UX research and user-centered design, but lacks the technical skills and experience in full-stack development, production operations, and domain knowledge required for the role.",
+    "candidate": "GEOFF NITSCHKE",
+    "model": "phi4"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Strong background in UX research and design",
+      "Experience in qualitative and quantitative research"
+    ],
+    "weaknesses": [
+      "Lacks technical programming skills",
+      "No experience in energy sector or distributed systems"
+    ],
+    "summary": "The candidate has a strong background in UX research but lacks the technical skills and domain knowledge required for the position.",
+    "candidate": "GEOFF NITSCHKE",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's experience does not clearly meet the requirement for shipping production software, though their experience in UX research and design shows strong technical communication and user-centric mindset. Their experience with usability testing, research, and design aligns closely with some of the technical communication and distributed systems fundamentals requirements. The candidate's background in research and design does not indicate hands-on production software development experience, which is a core requirement.",
+    "candidate": "GEOFF NITSCHKE",
+    "type": "essential_requirements"
+  }
+]

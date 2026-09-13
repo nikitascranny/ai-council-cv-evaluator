@@ -1,0 +1,36 @@
+[
+  {
+    "score": 4,
+    "strengths": [
+      "Strong analytical skills with relevant experience in data analysis and statistical testing.",
+      "High proficiency in technical skills such as SQL, Python, and Tableau which can be beneficial for data-driven tasks like water quality testing."
+    ],
+    "weaknesses": [
+      "Lack of a degree in Marine Biology, Zoology, Aquatic Biology, or a related life science, which is an essential requirement for the role.",
+      "No prior experience in aquatic animal husbandry, aquarium maintenance, or related fields.",
+      "Absence of demonstrated physical fitness and willingness to perform dirty and repetitive tasks, which are crucial for the role."
+    ],
+    "summary": "The candidate has strong technical and analytical skills but lacks the essential educational background and practical experience required for an entry-level Aquarium Biologist position.",
+    "candidate": "MathNaledi",
+    "model": "phi4"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "strong analytical and data handling skills",
+      "ability to optimize processes and reporting pipelines"
+    ],
+    "weaknesses": [
+      "lack of relevant biology or aquatic science education",
+      "no hands-on experience in aquarium maintenance or life support systems"
+    ],
+    "summary": "The candidate has impressive data analysis skills but lacks the necessary background in marine biology or related fields and hands-on experience in aquarium husbandry, making them a poor fit for the position.",
+    "candidate": "MathNaledi",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's B.Sc. in Applied Mathematics does not meet the requirement for a degree in Marine Biology, Zoology, Aquatic Biology or a related life science. Their experience in data analysis and technical skills align closely with the job's requirements for observational skills, attention to detail, and record-keeping habits, but it does not directly relate to the specific tasks of filter cleaning and LSS maintenance, nor does it address the need for water chemistry knowledge. Physical fitness and the ability to work weekends are not evidenced in the CV.",
+    "candidate": "MathNaledi",
+    "type": "essential_requirements"
+  }
+]

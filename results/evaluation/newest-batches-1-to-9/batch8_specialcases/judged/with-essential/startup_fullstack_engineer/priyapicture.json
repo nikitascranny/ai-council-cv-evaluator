@@ -1,0 +1,8 @@
+{
+  "candidate": "PriyaPicture",
+  "final_score": 4,
+  "score_rationale": "The candidate's frontend skills (React/TypeScript) are strong, but they lack explicit backend language experience (Go, Rust, etc.), evidence of distributed systems fundamentals, and demonstrated experience with incident response and production operations, key essential requirements.",
+  "key_strengths": "4+ years of production software experience, strong React/TypeScript skills, UI development expertise, performance optimization experience.",
+  "key_weaknesses": "No backend language experience (Go preferred), unclear grasp of distributed systems concepts, no evidence of incident response or observability practices, communication skills not verified, lack of energy sector passion/desire.",
+  "final_evaluation": "Priya has substantial frontend experience which is a plus, but the essential requirements for backend language, distributed systems, and production operations are not met. Without these, she would not be a good fit for the role of Founding Full-Stack Engineer at Pulsegrid."
+}

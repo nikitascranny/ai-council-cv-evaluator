@@ -1,0 +1,195 @@
+[
+  {
+    "score": 7,
+    "strengths": [
+      "Possesses extensive experience in software engineering with expertise in high-level architecture and distributed systems.",
+      "Strong analytical and problem-solving skills demonstrated through past roles and achievements.",
+      "Extensive knowledge of multiple programming languages and platforms.",
+      "Exemplary reliability and leadership as evidenced by multiple 'Employee of the Year' recognitions."
+    ],
+    "weaknesses": [
+      "Lack of specific experience in basic hardware repair and troubleshooting.",
+      "No direct experience with customer service or retail environment.",
+      "Overqualified for the part-time, entry-level nature of the role.",
+      "Potential mismatch in work hours and environment, given the candidate's advanced qualifications and likely preferences."
+    ],
+    "summary": "The candidate's technical expertise and reliability are strong assets, but their lack of specific hardware repair skills and experience in customer service presents a challenge for this part-time, entry-level retail position.",
+    "candidate": "CaseyWhitmore"
+  },
+  {
+    "score": 6,
+    "strengths": [
+      "Demonstrates problem-solving skills and technical aptitude through unconventional methods.",
+      "Has experience in a role that requires patience, adaptability, and innovation under pressure."
+    ],
+    "weaknesses": [
+      "Lacks direct experience in PC/laptop repair and customer service in a retail setting.",
+      "No evidence of formal training or certification in PC/laptop repair, which is an essential requirement."
+    ],
+    "summary": "The candidate possesses strong problem-solving and technical skills, but lacks direct experience and formal qualifications in computer repair and customer service.",
+    "candidate": "Li_ExtraSpecial"
+  },
+  {
+    "score": 5,
+    "strengths": [
+      "Possesses a technical background as a Software Engineer, which could be beneficial for diagnosing and fixing computer problems.",
+      "Likely has experience with hardware and software integration, useful for tasks like RAM and SSD upgrades.",
+      "Experience in software engineering suggests potential for up-skilling in customer service and specific repair tasks."
+    ],
+    "weaknesses": [
+      "No direct evidence of hands-on PC/laptop repair skills, which are essential for the role.",
+      "Lacks specific experience in customer service, especially with older customers.",
+      "No indication of local availability or ability to reliably travel to Tillingford.",
+      "No mention of ability to work flexible hours or on Saturdays."
+    ],
+    "summary": "While Jordan has a technical background that aligns with some repair tasks, the lack of direct repair experience and customer service skills presents significant gaps for the role.",
+    "candidate": "SystemShock"
+  },
+  {
+    "score": 4,
+    "strengths": [
+      "Has technical background with experience in software development and system maintenance",
+      "Possesses knowledge of programming languages like Python and Go"
+    ],
+    "weaknesses": [
+      "Lacks direct experience in hardware repair or customer service",
+      "No evidence of practical PC/laptop repair skills",
+      "No experience with customer-facing roles or managing customer expectations"
+    ],
+    "summary": "While the candidate has a strong technical background, their skills and experience are not aligned with the practical, hands-on, and customer service-focused nature of the job.",
+    "candidate": "Chen_Special"
+  },
+  {
+    "score": 4,
+    "strengths": [
+      "Strong technical foundation in software engineering",
+      "Experience with building and maintaining complex systems"
+    ],
+    "weaknesses": [
+      "Lack of practical PC/laptop repair skills",
+      "No experience in customer service or hands-on hardware repair",
+      "No evidence of working with older operating systems like Windows XP"
+    ],
+    "summary": "Jordan Mitchell has strong technical skills but lacks the practical repair experience and customer service skills required for the role at Brenda & Mick's Computer Repairs.",
+    "candidate": "JordanMitchell5Star"
+  },
+  {
+    "score": 4,
+    "strengths": [
+      "Strong analytical and technical skills in data analysis and statistics",
+      "Experience with software tools like Python, R, SQL, Tableau, and Excel"
+    ],
+    "weaknesses": [
+      "Lack of practical PC/laptop repair experience",
+      "No direct experience with customer service or hands-on technical support",
+      "No demonstrated experience in a retail or customer-facing environment"
+    ],
+    "summary": "While Naledi has strong analytical skills and relevant technical expertise, they lack the practical repair and customer service experience necessary for this role.",
+    "candidate": "MathNaledi"
+  },
+  {
+    "score": 4,
+    "strengths": [
+      "Candidate has strong analytical and problem-solving skills from software engineering experience.",
+      "Possesses a solid educational background in Computer Science."
+    ],
+    "weaknesses": [
+      "Lacks practical PC/laptop repair skills required for the role.",
+      "No experience with customer service or hardware repair.",
+      "No evidence of hands-on experience with RAM, SSDs, or other hardware components.",
+      "No local presence or indication of ability to reliably commute to Tillingford."
+    ],
+    "summary": "While Marcus Vandenberg has technical skills and a strong background in software engineering, he lacks the practical repair and customer service experience necessary for the role at Brenda & Mick's Computer Repairs.",
+    "candidate": "MegaMarcus"
+  },
+  {
+    "score": 4,
+    "strengths": [
+      "Demonstrates strong technical skills and problem-solving abilities.",
+      "Has relevant experience in software development which can translate to troubleshooting and fixing computer issues."
+    ],
+    "weaknesses": [
+      "Lacks practical PC/laptop repair skills and experience.",
+      "No experience with customer service, especially with older customers.",
+      "No mention of local availability or ability to reliably commute to Tillingford.",
+      "No demonstrated experience in hardware repairs such as RAM, SSD, or screen replacements."
+    ],
+    "summary": "Priya has strong technical skills but lacks direct experience in PC repair and customer service, which are essential for this role.",
+    "candidate": "PriyaPicture"
+  },
+  {
+    "score": 4,
+    "strengths": [
+      "Strong technical background in software engineering",
+      "Experience with backend systems and programming languages relevant to problem-solving"
+    ],
+    "weaknesses": [
+      "Lacks practical PC/laptop repair skills",
+      "No evidence of customer service experience or patience with non-technical users",
+      "Limited experience with hardware or operating systems like Windows XP"
+    ],
+    "summary": "While Samantha has strong technical skills, her background in software engineering doesn't directly align with the hands-on repair and customer service skills needed for this role.",
+    "candidate": "SamanthaOne"
+  },
+  {
+    "score": 4,
+    "strengths": [
+      "Strong technical background with advanced problem-solving skills.",
+      "Experience in leadership and team management.",
+      "Good track record of system reliability improvements and infrastructure cost reductions."
+    ],
+    "weaknesses": [
+      "Lack of hands-on PC/laptop repair experience.",
+      "No experience with basic hardware tasks like reseating RAM or cleaning laptops.",
+      "No demonstrated experience in customer service or explaining technical issues to non-technical customers.",
+      "No relevant work experience in a retail or customer-facing environment."
+    ],
+    "summary": "The candidate has strong technical skills and leadership experience but lacks the specific hands-on repair and customer service skills required for the role.",
+    "candidate": "TaylorGraphics"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Possesses technical skills relevant to software development and problem-solving.",
+      "Has experience with databases, which could be beneficial for diagnosing computer issues."
+    ],
+    "weaknesses": [
+      "Lack of practical PC/laptop repair skills and experience.",
+      "No demonstrated experience with customer service or working in a retail environment.",
+      "No mention of ability to work with or explain technical issues to non-technical customers."
+    ],
+    "summary": "While the candidate has strong technical skills in software engineering, they lack the practical repair experience and customer service skills essential for the role.",
+    "candidate": "BrendanPythno"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Candidate has experience in a software engineering role, suggesting familiarity with computers and technical environments.",
+      "Has worked with 'software engineering' and 'software development', which may include handling technical issues."
+    ],
+    "weaknesses": [
+      "Lack of specific experience in computer repair or technical support.",
+      "CV is not clear about practical skills in hardware repair or customer service.",
+      "No mention of experience in handling common computer repair tasks like RAM upgrades, virus clean-ups, or customer interaction.",
+      "Limited information on customer service skills, particularly with older customers."
+    ],
+    "summary": "The candidate has some technical background but lacks specific experience and clear evidence of skills in computer repair and customer service, which are crucial for this role.",
+    "candidate": "HomerSimsSon"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Strong technical background with extensive experience in software engineering and system architecture.",
+      "Proven track record of leadership and delivering complex projects successfully.",
+      "Holds multiple certifications in relevant technical fields."
+    ],
+    "weaknesses": [
+      "Lack of practical, hands-on PC/laptop repair skills specific to the job role.",
+      "Inappropriate interpersonal skills and attitude, as observed during the interview.",
+      "No experience in customer service or retail environments, which are key components of the role.",
+      "Potential cultural misfit for a small, family-run business with a collaborative and informal work atmosphere."
+    ],
+    "summary": "While Victoria Sterling has impressive technical and leadership skills, her lack of hands-on repair experience, poor interpersonal conduct, and potential cultural misfit make her a poor fit for the role at Brenda & Mick's Computer Repairs.",
+    "candidate": "VictoriaSterlingSilver"
+  }
+]

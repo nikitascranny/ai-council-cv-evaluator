@@ -1,0 +1,37 @@
+[
+  {
+    "score": 9,
+    "strengths": [
+      "Extensive experience with distributed systems and event-driven architectures, matching the essential requirements.",
+      "Strong background in full-stack engineering, with proficiency in Go, TypeScript, and React, aligning with the role's technical demands.",
+      "Proven ability to operate services in production and improve system reliability, directly relevant to the job's responsibilities.",
+      "Leadership and mentoring experience, beneficial for shaping the team culture and onboarding new engineers."
+    ],
+    "weaknesses": [
+      "Limited direct experience with the energy sector, although this is not an essential requirement.",
+      "No explicit mention of experience with TimescaleDB or Redis, which are part of the job's technical stack."
+    ],
+    "summary": "Marcus Okafor is an exceptionally strong candidate for the role, with a robust technical background and leadership experience that align well with the job requirements, though some up-skilling in specific technologies may be needed.",
+    "candidate": "senior_american",
+    "model": "phi4"
+  },
+  {
+    "score": 8,
+    "strengths": [
+      "Strong background in distributed systems and platform engineering",
+      "Experience with Go, Kafka, and event-driven architectures"
+    ],
+    "weaknesses": [
+      "Limited direct experience in the energy sector",
+      "No prior experience with TypeScript/React for front-end development"
+    ],
+    "summary": "Marcus Okafor is a strong candidate with extensive experience in distributed systems and platform engineering, but lacks direct experience in the energy sector and front-end development with React/TypeScript.",
+    "candidate": "senior_american",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate clearly meets the requirement of 4+ years of experience shipping production software, with extensive experience in TypeScript/React and Go. Their experience with distributed systems, reliability, and incident response is a reasonable/close match. However, there is no clear evidence of strong experience in Rust, Node, or Java as backend languages, which are noted as acceptable alternatives but not demonstrated in the CV.",
+    "candidate": "senior_american",
+    "type": "essential_requirements"
+  }
+]

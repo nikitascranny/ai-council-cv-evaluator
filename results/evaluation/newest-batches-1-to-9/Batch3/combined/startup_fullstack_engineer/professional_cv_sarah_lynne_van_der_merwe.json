@@ -1,0 +1,37 @@
+[
+  {
+    "score": 4,
+    "strengths": [
+      "Strong stakeholder communication and team coordination skills.",
+      "Proven experience in operational management and initiative delivery."
+    ],
+    "weaknesses": [
+      "Lack of technical experience, especially in software engineering, TypeScript/React, or Go.",
+      "No experience with production software, distributed systems, or event-driven architectures.",
+      "Missing background in the energy sector or related domains."
+    ],
+    "summary": "While Sarah Lynne has strong leadership and communication skills, she lacks the technical experience and specific domain knowledge required for the full-stack engineering role at Pulsegrid.",
+    "candidate": "professional_cv_sarah_lynne_van_der_merwe",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Business development and brand positioning",
+      "Customer experience improvement"
+    ],
+    "weaknesses": [
+      "Lack of technical background",
+      "No experience in software development",
+      "No experience with the technologies mentioned in the job description"
+    ],
+    "summary": "The candidate does not meet the technical requirements of the role and lacks relevant experience in software engineering or energy sector technologies.",
+    "candidate": "professional_cv_sarah_lynne_van_der_merwe",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate does not clearly meet the requirement for shipping production software, but their role as a Senior Retail Team Leader and experience in managing end-to-end processes, including operations and team coordination, provides a reasonable close match. The candidate's background in business administration and leadership development offers relevant transferable skills, but does not directly address the technical and distributed systems knowledge required. Their energy and passion for practical business improvement initiatives could be seen as a match for the interest in real-world problems.",
+    "candidate": "professional_cv_sarah_lynne_van_der_merwe",
+    "type": "essential_requirements"
+  }
+]

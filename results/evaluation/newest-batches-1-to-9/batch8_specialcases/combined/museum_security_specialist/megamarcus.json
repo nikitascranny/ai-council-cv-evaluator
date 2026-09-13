@@ -1,0 +1,37 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Has technical skills related to CCTV and access-control systems.",
+      "Possesses strong problem-solving and communication skills, evident from software engineering experience."
+    ],
+    "weaknesses": [
+      "Lacks direct experience in a security role or museum environment.",
+      "No valid SIA Door Supervisor or Security Guarding licence.",
+      "No physical evidence of ability to patrol large sites or handle physical security tasks.",
+      "Lacks experience in handling high-risk or high-value objects."
+    ],
+    "summary": "Marcus Vandenberg has technical skills that could be relevant, but lacks direct security experience and the necessary physical and certification requirements for the role.",
+    "candidate": "MegaMarcus",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Proficient in backend systems using Python and Go",
+      "Experience in maintaining internal tooling and dashboards"
+    ],
+    "weaknesses": [
+      "No experience in security roles or relevant certifications",
+      "No relevant work experience in museum/gallery security or emergency response"
+    ],
+    "summary": "The candidate lacks the essential security experience and certifications required for the position, making them a poor fit despite their technical skills.",
+    "candidate": "MegaMarcus",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate does not clearly meet the essential requirement of minimum 3 years' experience in a security role. However, their experience as a Junior Software Engineer may be a reasonable close match for the technical skills required. The candidate's physical and flexible working conditions are unclear from the CV. They do not provide evidence of the necessary security certifications or knowledge of security systems.",
+    "candidate": "MegaMarcus",
+    "type": "essential_requirements"
+  }
+]

@@ -1,0 +1,37 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Strong technical skills with relevant certifications.",
+      "Experience with project management and performance optimization."
+    ],
+    "weaknesses": [
+      "Lack of administrative or secretarial experience.",
+      "No experience with Microsoft Office suite or practice management software.",
+      "No demonstrated skills in client-facing roles or managing correspondence and diaries."
+    ],
+    "summary": "The candidate has strong technical skills but lacks the necessary administrative experience and relevant office software proficiency required for the secretarial/administrative assistant role.",
+    "candidate": "Alex Turner",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong technical skills in software development",
+      "Experience with React and Node.js"
+    ],
+    "weaknesses": [
+      "Lack of administrative or secretarial experience",
+      "No direct relevance to accountancy practice management",
+      "Insufficient evidence of required soft skills such as organizational and client interaction abilities"
+    ],
+    "summary": "The candidate's technical background does not align with the administrative role requirements, and they lack relevant experience and soft skills necessary for the position.",
+    "candidate": "Alex Turner",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's previous experience in software engineering and development is a reasonable match for the required office administration experience. They have relevant technical skills but lack direct secretarial or administrative experience. Their skills in Microsoft Office and multitasking are clearly demonstrated, and their ability to handle sensitive information through their coursework and certifications aligns well with the need for discretion. However, the specific years of experience in secretarial roles are not evidenced.",
+    "candidate": "Alex Turner",
+    "type": "essential_requirements"
+  }
+]

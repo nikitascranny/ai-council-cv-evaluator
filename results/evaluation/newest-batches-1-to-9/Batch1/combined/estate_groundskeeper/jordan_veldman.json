@@ -1,0 +1,39 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Strong project management and technical skills in architectural software and tools.",
+      "Proven experience in managing and coordinating complex projects.",
+      "Ability to work independently and maintain compliance with standards."
+    ],
+    "weaknesses": [
+      "Lack of direct experience in groundskeeping, gamekeeping, or countryside management.",
+      "No demonstrated experience with tracking, search & rescue, or military/pursuit-oriented activities.",
+      "Not accustomed to working in remote, outdoor environments or with hounds.",
+      "No experience in immersive theatre, airsoft event marshalling, or private security work."
+    ],
+    "summary": "While the candidate has strong project management and technical skills, they lack the specific experience and skills required for the groundskeeper and hunt coordinator role at Blackmoor Hall Estate.",
+    "candidate": "JORDAN VELDMAN",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Analytical and project management skills",
+      "Experience with digital modeling and software"
+    ],
+    "weaknesses": [
+      "No relevant experience in groundskeeping or hunting",
+      "No military or pursuit-oriented background",
+      "Inexperience with tracking and emergency situations"
+    ],
+    "summary": "The candidate lacks relevant experience and skills for the unique role of Groundskeeper & Hunt Coordinator at Blackmoor Hall Estate.",
+    "candidate": "JORDAN VELDMAN",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate does not meet the essential requirement of groundskeeping, gamekeeping, or countryside management experience. Their experience is clearly aligned with architectural and technical project management, which is a reasonable/close match to the analytical and problem-solving skills required. The candidate's physical fitness and ability to work alone in remote areas are unclear from the CV, but the discretion requirement is met as the candidate has a background in sensitive research topics.",
+    "candidate": "JORDAN VELDMAN",
+    "type": "essential_requirements"
+  }
+]

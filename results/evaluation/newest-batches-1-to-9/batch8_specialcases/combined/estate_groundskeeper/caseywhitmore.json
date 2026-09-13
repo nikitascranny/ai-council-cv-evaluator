@@ -1,0 +1,34 @@
+[
+  {
+    "score": 2,
+    "strengths": [
+      "Possesses a highly advanced technical background in software engineering and distributed systems",
+      "Demonstrates exceptional leadership and problem-solving capabilities in technology sectors"
+    ],
+    "weaknesses": [
+      "Lacks relevant experience in groundskeeping, gamekeeping, or countryside management",
+      "Does not have experience or skills related to tracking, outdoor physical activities, or managing live-action experiences",
+      "The role requires discretion and comfort with unusual tasks, which are not demonstrated in a tech-centric career"
+    ],
+    "summary": "Despite the candidate's exceptional technical and leadership skills, they lack the necessary experience and skills in groundskeeping and outdoor management crucial for this role.",
+    "candidate": "CaseyWhitmore",
+    "model": "phi4"
+  },
+  {
+    "score": 1,
+    "strengths": [],
+    "weaknesses": [
+      "Lack of relevant experience or skills in groundskeeping, hunting, or outdoor pursuits",
+      "No background or interest in the unique requirements of the role such as tracking, search and rescue, or working with hounds",
+      "Inability to fulfill the physical demands of the job"
+    ],
+    "summary": "Casey Whitmore is highly qualified in software engineering but completely unsuited for the role of Estate Groundskeeper & Hunt Coordinator at Blackmoor Hall.",
+    "candidate": "CaseyWhitmore",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate does not meet the essential requirements for the role. The experience and education provided are not related to groundskeeping, gamekeeping, or countryside management. The candidate lacks the required physical fitness, hunting-related experience, and ability to work alone in remote areas. However, the strong preference for a pursuit-oriented background is not strictly required.",
+    "candidate": "CaseyWhitmore",
+    "type": "essential_requirements"
+  }
+]

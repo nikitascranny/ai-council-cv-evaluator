@@ -1,0 +1,38 @@
+[
+  {
+    "score": 2,
+    "strengths": [
+      "The candidate has experience with JavaScript, which might aid in learning new skills.",
+      "They are comfortable with early mornings and possibly long days given the structured nature of a software engineer's work."
+    ],
+    "weaknesses": [
+      "Lacks physical fitness and experience with manual work in all weather conditions.",
+      "No experience with boats or fishing-related activities.",
+      "No sea legs or experience working on vessels.",
+      "No relevant work experience related to fishing or maritime activities.",
+      "No STCW certification or willingness to complete it immediately."
+    ],
+    "summary": "The candidate lacks the physical, technical, and maritime experience required for the boat hand role, despite having some transferable skills in learning and adaptation.",
+    "candidate": "Alex Turner",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "physically fit",
+      "has some experience with repetitive manual tasks through coding"
+    ],
+    "weaknesses": [
+      "no relevant sea experience",
+      "no direct alignment between software engineering background and fishing industry role"
+    ],
+    "summary": "The candidate lacks any relevant experience in the fishing industry and the required physical and maritime skills for the role, making them a poor fit.",
+    "candidate": "Alex Turner",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's experience and education do not clearly meet the physical and manual labor requirements. However, their software development experience is a reasonable match for the basic numeracy requirement, as it involves problem-solving and attention to detail. The candidate's work history and certifications show reliability and adaptability, which aligns with the punctuality and willingness to work long hours. There is no evidence of sea experience or the ability to work on boats, which is a clear requirement not met by the CV.",
+    "candidate": "Alex Turner",
+    "type": "essential_requirements"
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "score": 4,
+    "strengths": [
+      "The candidate has demonstrated strong organizational and leadership skills through various managerial roles.",
+      "Extensive experience in risk management and compliance, which aligns with the need for discretion and handling confidential information.",
+      "Good IT certification background and familiarity with various software and security systems."
+    ],
+    "weaknesses": [
+      "Lacks direct experience in secretarial, receptionist, or administrative roles, which is essential for the position.",
+      "No specific experience with practice management software or accountancy systems mentioned.",
+      "Limited evidence of proficiency in Microsoft Word, Excel, and Outlook.",
+      "No experience in handling client onboarding or preparing engagement letters and meeting packs."
+    ],
+    "summary": "The candidate demonstrates strong organizational and risk management skills, but lacks direct experience and specific software knowledge required for the secretarial/administrative role.",
+    "candidate": "PATRICK MARAIS",
+    "model": "phi4"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "excellent in risk mitigation and strategic management",
+      "strong in IT certifications and cybersecurity"
+    ],
+    "weaknesses": [
+      "lacks relevant administrative or secretarial experience",
+      "no direct experience in accounting or legal services"
+    ],
+    "summary": "Candidate has strong background in cybersecurity and management but lacks relevant administrative experience for the position.",
+    "candidate": "PATRICK MARAIS",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's CV clearly meets the requirement for previous office administration experience, especially from roles such as Operations Manager, Security Associate, and Principal Investigator. The CV also shows a reasonable match for the ability to handle confidential information and demonstrate strong organizational skills from roles like Special Investigator and Forensic and Security Manager. However, there is no clear evidence of recent and relevant experience in Microsoft Office applications or fast typing, and the candidate's current employment does not indicate a recent history in secretarial, receptionist, or client-facing roles, which could be seen as a reasonable match for the required telephone and client interaction skills.",
+    "candidate": "PATRICK MARAIS",
+    "type": "essential_requirements"
+  }
+]

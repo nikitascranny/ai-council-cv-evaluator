@@ -1,0 +1,40 @@
+[
+  {
+    "score": 4,
+    "strengths": [
+      "Familiarity with the required tech stack including React, Node.js, and TypeScript.",
+      "Experience in agile environments, sprint planning, and code reviews.",
+      "Basic understanding of CI/CD with GitHub Actions and Docker."
+    ],
+    "weaknesses": [
+      "Lacks the 5+ years of professional experience required.",
+      "No experience line-managing engineers or leading teams through technical change.",
+      "Limited exposure to cloud infrastructure, specifically AWS, and large-scale systems.",
+      "No prior experience with .NET or migrations from .NET to Node.js.",
+      "Lacks experience in accessibility standards or inclusive design practices."
+    ],
+    "summary": "Jordan Lee has relevant technical skills and experience in agile environments but lacks the required professional experience, leadership experience, and specific knowledge in cloud infrastructure and accessibility.",
+    "candidate": "beginner_american",
+    "model": "phi4"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Basic understanding of web technologies such as React, Node.js, and TypeScript",
+      "Experience with Agile methodologies and collaboration"
+    ],
+    "weaknesses": [
+      "Lacks experience in team management and leading significant technical changes",
+      "Insufficient experience in the required backend languages (.NET or Node.js)",
+      "Inadequate experience in cloud infrastructure and CI/CD processes"
+    ],
+    "summary": "Jordan Lee possesses foundational technical skills but lacks the necessary experience and leadership qualifications for the Engineering Manager position.",
+    "candidate": "beginner_american",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's experience in React/TypeScript and backend development aligns well with the job requirements, and their role as a software engineering intern shows relevant technical skills. Their experience as a teaching assistant, while not directly in software engineering, demonstrates strong communication skills, which is a significant requirement. However, the candidate lacks the specified 5+ years of professional web/software engineering experience and line management experience.",
+    "candidate": "beginner_american",
+    "type": "essential_requirements"
+  }
+]

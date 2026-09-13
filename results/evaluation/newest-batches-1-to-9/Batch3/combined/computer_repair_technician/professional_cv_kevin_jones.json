@@ -1,0 +1,39 @@
+[
+  {
+    "score": 7,
+    "strengths": [
+      "Demonstrates strong adaptability and customer service skills across various industries.",
+      "Experience in practical problem solving and independent work, which aligns with handling everyday computer issues.",
+      "Strong communication and adaptability in customer-facing roles, beneficial for dealing with clients.",
+      "Experience in diverse operational environments suggests capability to learn and adapt to computer repair tasks."
+    ],
+    "weaknesses": [
+      "Lacks direct experience or skills in computer repair or IT environments.",
+      "No demonstrated ability to perform specific technical tasks like reseating RAM or diagnosing hardware issues.",
+      "Limited evidence of familiarity with technology-specific tasks such as Windows updates or data recovery.",
+      "Lack of local knowledge or ability to commute reliably to Tillingford."
+    ],
+    "summary": "Kevin Jones has strong customer service and adaptability skills but lacks direct experience in computer repair, though his ability to learn new tasks quickly is promising.",
+    "candidate": "professional_cv_kevin_jones",
+    "model": "phi4"
+  },
+  {
+    "score": 4,
+    "strengths": [
+      "Adaptability to diverse work environments",
+      "Customer service and communication skills"
+    ],
+    "weaknesses": [
+      "Lack of specific technical skills for PC/laptop repair",
+      "No mention of experience with older technology"
+    ],
+    "summary": "Kevin Jones demonstrates versatility and customer service skills but lacks the specific technical knowledge and experience with older technology required for the computer repair role.",
+    "candidate": "professional_cv_kevin_jones",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's CV demonstrates strong communication and customer service skills, which align well with the requirement of being friendly and patient with older customers. Their adaptability and diverse work experience suggest practical problem-solving abilities, which could translate to basic PC/laptop repair skills. However, there is no clear evidence of hands-on technical skills related to PC/laptop repair. The candidate is also able to work on Saturdays and is local, meeting those requirements.",
+    "candidate": "professional_cv_kevin_jones",
+    "type": "essential_requirements"
+  }
+]

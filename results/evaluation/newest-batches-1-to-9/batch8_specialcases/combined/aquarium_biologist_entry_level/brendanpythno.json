@@ -1,0 +1,37 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Strong technical skills in programming languages such as Python and Go.",
+      "Experience in teamwork and collaboration through code reviews and pair programming."
+    ],
+    "weaknesses": [
+      "Lack of relevant educational background in marine biology or related life sciences.",
+      "No direct experience or skills in aquatic animal husbandry or life support systems.",
+      "No experience with water quality testing or aquarium maintenance.",
+      "No demonstrated interest or experience in working with aquatic life or related environments."
+    ],
+    "summary": "Brendan's technical skills are strong, but his background in software engineering lacks the relevant biological and practical experience required for the Aquarium Biologist position.",
+    "candidate": "BrendanPythno",
+    "model": "phi4"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Passion for hands-on work and learning new skills",
+      "Some physical fitness and willingness to work irregular hours"
+    ],
+    "weaknesses": [
+      "Lack of relevant education and experience in marine biology or zoology",
+      "No practical experience with aquatic life support systems or animal husbandry"
+    ],
+    "summary": "Brendan has potential due to his willingness to learn new skills and engage in practical tasks, but lacks the essential educational background and direct experience required for the role.",
+    "candidate": "BrendanPythno",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's CV does not clearly meet the essential requirement for a degree in Marine Biology, Zoology, Aquatic Biology or a related life science. However, the experience in software engineering demonstrates strong technical skills, which could be transferable to the role. The candidate's physical fitness and willingness to work varied hours are not evidenced, but the degree in Computer Science and relevant coursework suggest a strong work ethic and adaptability. There is no clear evidence of a basic understanding of water chemistry or the ability to perform physical tasks like filter cleaning and LSS maintenance.",
+    "candidate": "BrendanPythno",
+    "type": "essential_requirements"
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "score": 8,
+    "strengths": [
+      "Strong experience with backend languages (Java, Kotlin) and React/TypeScript, aligning with the required skills.",
+      "Proven ability to operate services in production, demonstrated through experience with observability and reducing incident investigation time.",
+      "Solid experience with event-driven architectures and distributed systems, as evidenced by work with Kafka and Redis.",
+      "Strong track record of shipping production software and working in fast-paced environments."
+    ],
+    "weaknesses": [
+      "Lack of specific experience with Go, which is preferred for the backend responsibilities in this role.",
+      "Limited direct customer interaction and experience in shaping product roadmaps, which are key aspects of the role.",
+      "No explicit mention of experience in the energy sector or with specific technologies like TimescaleDB."
+    ],
+    "summary": "The candidate demonstrates strong technical skills and relevant experience, particularly in full-stack development and event-driven systems, but lacks specific Go experience and direct customer engagement.",
+    "candidate": "middle_sa",
+    "model": "phi4"
+  },
+  {
+    "score": 7,
+    "strengths": [
+      "Strong background in backend development with Java and Kotlin",
+      "Experience in distributed systems and observability"
+    ],
+    "weaknesses": [
+      "No direct experience with Go, which is preferred by the company",
+      "Limited experience with the energy sector"
+    ],
+    "summary": "Kagiso Ndlovu has a solid background in backend development and systems architecture but lacks direct experience with the specific technologies and industry sector the position requires.",
+    "candidate": "middle_sa",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate clearly meets the requirement for 4+ years of experience shipping production software and has a solid grasp of distributed systems fundamentals. Their experience aligns closely with the need for strong TypeScript/React skills and backend languages. However, the exact production experience in metrics, tracing, and incident response is not evidenced. Their communication skills and enthusiasm for real-world problems are also demonstrated, but more explicit experience in these areas would strengthen their application.",
+    "candidate": "middle_sa",
+    "type": "essential_requirements"
+  }
+]

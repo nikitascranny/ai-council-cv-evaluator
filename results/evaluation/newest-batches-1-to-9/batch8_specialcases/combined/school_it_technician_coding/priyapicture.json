@@ -1,0 +1,38 @@
+[
+  {
+    "score": 6,
+    "strengths": [
+      "Strong technical skills in software development, including Python and JavaScript, relevant for coding enrichment.",
+      "Experience with web development and optimizing web performance, indicating capability in maintaining and updating school website content.",
+      "Certifications in Meta Front End Development and AWS Cloud Practitioner, showing commitment to upskilling."
+    ],
+    "weaknesses": [
+      "Lack of direct experience in an educational setting, which is desirable for understanding school dynamics.",
+      "No specific experience with device management systems like Intune or Active Directory/Entra ID.",
+      "No demonstrated experience with Raspberry Pi, Micro:bit, or LEGO robotics, which are desirable for the role.",
+      "Limited mention of experience with Windows 11 and Microsoft 365, which are essential for the role."
+    ],
+    "summary": "Priya has strong technical skills and a commitment to upskilling, but lacks direct experience in educational IT and some specific technical skills required for the role.",
+    "candidate": "PriyaPicture",
+    "model": "phi4"
+  },
+  {
+    "score": 6,
+    "strengths": [
+      "Python programming ability",
+      "Basic understanding of web development tools"
+    ],
+    "weaknesses": [
+      "Lacks experience in education or IT support roles",
+      "No direct experience with Microsoft 365 or Intune"
+    ],
+    "summary": "Priya has relevant technical skills but lacks direct experience in educational IT support and lacks some of the specific tools mentioned in the job description.",
+    "candidate": "PriyaPicture",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate clearly meets the practical IT support experience and working knowledge of Windows 11 and Microsoft 365 requirements through their background in software engineering. Basic programming ability is met with experience in web development and relevant coursework. The enthusiasm for technology and willingness to undergo background checks is evident. However, there is no clear indication of direct experience in IT support, basic programming for 11-14 year olds, or specific experience in working with young people.",
+    "candidate": "PriyaPicture",
+    "type": "essential_requirements"
+  }
+]

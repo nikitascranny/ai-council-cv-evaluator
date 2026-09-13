@@ -1,0 +1,38 @@
+[
+  {
+    "score": 5,
+    "strengths": [
+      "Possesses a technical background as a Software Engineer, which could be beneficial for diagnosing and fixing computer problems.",
+      "Likely has experience with hardware and software integration, useful for tasks like RAM and SSD upgrades.",
+      "Experience in software engineering suggests potential for up-skilling in customer service and specific repair tasks."
+    ],
+    "weaknesses": [
+      "No direct evidence of hands-on PC/laptop repair skills, which are essential for the role.",
+      "Lacks specific experience in customer service, especially with older customers.",
+      "No indication of local availability or ability to reliably travel to Tillingford.",
+      "No mention of ability to work flexible hours or on Saturdays."
+    ],
+    "summary": "While Jordan has a technical background that aligns with some repair tasks, the lack of direct repair experience and customer service skills presents significant gaps for the role.",
+    "candidate": "SystemShock",
+    "model": "phi4"
+  },
+  {
+    "score": 5,
+    "strengths": [
+      "software engineering background",
+      "likely possesses basic computer repair skills"
+    ],
+    "weaknesses": [
+      "no direct experience in retail or customer service",
+      "no experience with small business operations"
+    ],
+    "summary": "Jordan Mitchell has a software engineering background which might translate to basic computer repair skills, but lacks direct retail experience and customer service skills, which are essential for the role.",
+    "candidate": "SystemShock",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate appears to meet the requirement for basic, practical PC/laptop repair skills based on their relevant experience. Their ability to interact with older customers and provide clear explanations suggests they could meet the requirement for friendliness and patience. Their stated reliability and honesty, along with references, could support the trust needed for handling the till and other responsibilities. However, the specific requirement to work Saturdays is unclear, as the CV does not mention availability for that day.",
+    "candidate": "SystemShock",
+    "type": "essential_requirements"
+  }
+]

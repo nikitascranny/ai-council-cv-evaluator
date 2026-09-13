@@ -1,0 +1,136 @@
+[
+  {
+    "score": 8,
+    "strengths": [
+      "Extensive experience in partnership management and strategic alliances",
+      "Strong background in project management and IT"
+    ],
+    "weaknesses": [
+      "Limited direct experience in software development",
+      "Less emphasis on hard technical skills"
+    ],
+    "summary": "The candidate has a strong track record in partnership management and project coordination, aligning well with the role's requirements, though there is room for improvement in technical skills and direct software development experience.",
+    "candidate": "LERATO MUNCHE"
+  },
+  {
+    "score": 8,
+    "strengths": [
+      "Strong background in records management and archives",
+      "Excellent communication and organizational skills"
+    ],
+    "weaknesses": [
+      "Limited direct healthcare experience",
+      "No specific mention of security policy development"
+    ],
+    "summary": "The candidate possesses extensive experience in records management and archiving, but lacks direct experience in the healthcare sector and specific expertise in security policy development.",
+    "candidate": "NDLOVU KARABO REFILWE"
+  },
+  {
+    "score": 8,
+    "strengths": [
+      "Extensive experience in security management and operations",
+      "Proven track record in developing and implementing security solutions"
+    ],
+    "weaknesses": [
+      "Limited direct experience in cloud computing and artificial intelligence",
+      "Less emphasis on specific cyber security certifications"
+    ],
+    "summary": "The candidate has robust experience in security management and operations, but could benefit from additional training in cloud computing and artificial intelligence.",
+    "candidate": "PATRICK MARAIS"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "proven ability to work in remote or isolated environments",
+      "excellent communication and leadership skills"
+    ],
+    "weaknesses": [
+      "lack of relevant experience in groundskeeping, hunting, or outdoor survival",
+      "no background in tracking, search & rescue, or military"
+    ],
+    "summary": "Candidate lacks direct experience in the required fields and has no background in tracking or search & rescue, making them unsuitable for the role despite strong communication and leadership skills.",
+    "candidate": "GEOFF NITSCHKE"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong analytical skills",
+      "Experience in training junior staff"
+    ],
+    "weaknesses": [
+      "No relevant experience in groundskeeping or outdoor activities",
+      "Lacks experience in tracking, search and rescue, or similar pursuit-oriented roles",
+      "No background in live-action experiences or event coordination"
+    ],
+    "summary": "Candidate lacks the essential outdoor and event management experience required for the role.",
+    "candidate": "ALEX PARK"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Technical skills in cloud engineering and data management",
+      "Experience with data analysis and automation"
+    ],
+    "weaknesses": [
+      "No relevant work experience in groundskeeping or hunting coordination",
+      "Lack of physical fitness and tracking experience",
+      "No background in immersive theatre or outdoor activities"
+    ],
+    "summary": "The candidate's technical background is impressive but completely irrelevant to the job's requirements, highlighting a significant mismatch.",
+    "candidate": "EMILE MOKOENA"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Analytical and project management skills",
+      "Experience with digital modeling and software"
+    ],
+    "weaknesses": [
+      "No relevant experience in groundskeeping or hunting",
+      "No military or pursuit-oriented background",
+      "Inexperience with tracking and emergency situations"
+    ],
+    "summary": "The candidate lacks relevant experience and skills for the unique role of Groundskeeper & Hunt Coordinator at Blackmoor Hall Estate.",
+    "candidate": "JORDAN VELDMAN"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "data analysis",
+      "report writing"
+    ],
+    "weaknesses": [
+      "lack of physical fitness and outdoors experience",
+      "inability to match the unique job requirements"
+    ],
+    "summary": "Pontus Pontious lacks the essential physical and outdoors experience required for the position, and his financial and data analysis background does not align with the unique role of a Groundskeeper and Hunt Coordinator.",
+    "candidate": "PONTUS PONTIOUS"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Proven leadership and strategic skills in digital marketing",
+      "Experience in user experience research and development"
+    ],
+    "weaknesses": [
+      "No relevant experience in groundskeeping or hunting",
+      "Lacks outdoor and physical fitness experience as required"
+    ],
+    "summary": "The candidate has strong leadership and digital marketing skills but lacks the essential outdoor and physical fitness experience required for the role.",
+    "candidate": "RIAAN GOVEN"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong background in business analysis and systems management",
+      "Experience with compliance and process improvement"
+    ],
+    "weaknesses": [
+      "No experience in groundskeeping or hunting",
+      "Lack of relevant physical and outdoor skills",
+      "No background in security or tracking"
+    ],
+    "summary": "The candidate's business and systems analysis skills are impressive but entirely irrelevant to the job requirements, which demand specific physical and outdoor skills.",
+    "candidate": "THE DANIEL"
+  }
+]

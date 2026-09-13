@@ -1,0 +1,172 @@
+[
+  {
+    "score": 6,
+    "strengths": [
+      "具备Python编程能力",
+      "有软件开发与维护经验"
+    ],
+    "weaknesses": [
+      "缺乏教育领域的经验",
+      "缺乏IT技术支持的具体经验"
+    ],
+    "summary": "该候选人具备基本的编程技能和软件开发背景，但缺乏在学校环境中提供IT支持和直接的相关工作经验。",
+    "candidate": "Chen_Special"
+  },
+  {
+    "score": 6,
+    "strengths": [
+      "Python programming ability",
+      "Basic understanding of web development tools"
+    ],
+    "weaknesses": [
+      "Lacks experience in education or IT support roles",
+      "No direct experience with Microsoft 365 or Intune"
+    ],
+    "summary": "Priya has relevant technical skills but lacks direct experience in educational IT support and lacks some of the specific tools mentioned in the job description.",
+    "candidate": "PriyaPicture"
+  },
+  {
+    "score": 6,
+    "strengths": [
+      "practical IT support experience",
+      "programming ability"
+    ],
+    "weaknesses": [
+      "lack of experience in an educational setting",
+      "no direct experience with Microsoft Intune"
+    ],
+    "summary": "Jordan Mitchell has relevant technical skills but lacks experience in an educational environment and specific tools mentioned in the job description.",
+    "candidate": "SystemShock"
+  },
+  {
+    "score": 5,
+    "strengths": [
+      "Experience with Python and backend systems",
+      "Knowledge of Google Workspace tools"
+    ],
+    "weaknesses": [
+      "Lack of direct IT support experience",
+      "No experience in an education setting"
+    ],
+    "summary": "Brendan has relevant technical skills but lacks the direct IT support and educational experience required for the role.",
+    "candidate": "BrendanPythno"
+  },
+  {
+    "score": 4,
+    "strengths": [
+      "Strong programming skills in Python",
+      "Experience with backend systems"
+    ],
+    "weaknesses": [
+      "Lack of relevant IT support experience",
+      "No experience in an educational setting"
+    ],
+    "summary": "Marcus Vandenberg has strong programming skills but lacks relevant IT support and educational experience, making him a less suitable candidate for the role.",
+    "candidate": "MegaMarcus"
+  },
+  {
+    "score": 4,
+    "strengths": [
+      "Python experience which aligns with coding support for KS3",
+      "background in technology which is relevant for IT support"
+    ],
+    "weaknesses": [
+      "lack of education sector experience",
+      "no direct experience in IT support or classroom technology",
+      "no indication of enthusiasm for working with young people"
+    ],
+    "summary": "Candidate has relevant technical skills but lacks experience and enthusiasm for the education sector.",
+    "candidate": "SamanthaOne"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Strong programming skills in Python",
+      "Experience with automation and testing"
+    ],
+    "weaknesses": [
+      "Lacks relevant experience in IT support or education",
+      "No specific experience with school IT systems"
+    ],
+    "summary": "Jordan Mitchell's strong programming background is a plus, but the candidate lacks direct experience in IT support or education, and the role-specific skills are underrepresented in the CV.",
+    "candidate": "JordanMitchell5Star"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "具备Python编程能力",
+      "有基本的IT支持经验"
+    ],
+    "weaknesses": [
+      "工作经验与教育背景不符合教育领域的职位要求",
+      "缺乏教育环境下的工作经验",
+      "没有提及与未成年人互动的经验或兴趣"
+    ],
+    "summary": "尽管候选人拥有编程和IT支持技能，但其工作经验与教育领域的职位要求差距较大，且缺乏与未成年人互动的经验或兴趣。",
+    "candidate": "Li_ExtraSpecial"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Strong analytical and programming skills",
+      "Experience with Python"
+    ],
+    "weaknesses": [
+      "Lack of IT support experience",
+      "No experience in an education setting",
+      "No relevant coding club experience"
+    ],
+    "summary": "The candidate possesses strong technical skills but lacks the specific IT support and educational experience required for the role.",
+    "candidate": "MathNaledi"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Strong programming background with Python",
+      "Experience with system architecture and reliability"
+    ],
+    "weaknesses": [
+      "Lack of IT support experience in an educational setting",
+      "No experience with educational technology or coding clubs"
+    ],
+    "summary": "While Taylor has extensive technical skills and experience in software engineering, the role requires specific experience in educational IT support and coding enrichment, which Taylor lacks.",
+    "candidate": "TaylorGraphics"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "PhD in Computer Science",
+      "Published over 40 peer-reviewed papers"
+    ],
+    "weaknesses": [
+      "Limited relevant experience in IT support or education",
+      "No specific experience with school IT or teaching youth"
+    ],
+    "summary": "Despite impressive academic and technical achievements, the candidate lacks direct experience in school IT support and working with young people, critical for this role.",
+    "candidate": "CaseyWhitmore"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Possesses some technical skills and experience"
+    ],
+    "weaknesses": [
+      "Incomprehensible CV content, no direct experience in education, lacks essential programming proficiency"
+    ],
+    "summary": "The candidate's CV is largely unintelligible, making it difficult to ascertain their suitability for the role. They may have some technical skills, but the lack of clarity and relevance to the job requirements significantly weakens their application.",
+    "candidate": "HomerSimsSon"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong technical background",
+      "Experience in system design and architecture"
+    ],
+    "weaknesses": [
+      "Lacks relevant IT support and education sector experience",
+      "Unsuitable behavior during interview"
+    ],
+    "summary": "Despite strong technical skills, the candidate's lack of relevant experience in IT support and education, along with unsuitable behavior, makes them a poor fit for the role.",
+    "candidate": "VictoriaSterlingSilver"
+  }
+]

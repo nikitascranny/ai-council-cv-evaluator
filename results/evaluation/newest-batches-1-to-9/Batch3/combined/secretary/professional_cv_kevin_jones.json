@@ -1,0 +1,37 @@
+[
+  {
+    "score": 6,
+    "strengths": [
+      "Has experience in a variety of roles requiring adaptability and strong communication skills, which align with client interaction requirements.",
+      "Demonstrates strong telephone engagement skills relevant to the role's requirement of managing the reception area and client communication.",
+      "Shows a history of adapting to different workflows and responsibilities, which is beneficial for handling varied administrative tasks."
+    ],
+    "weaknesses": [
+      "Lacks direct experience in administrative or secretarial roles, which is preferred for the position.",
+      "No specific experience with accounting or legal environments, which could be beneficial for understanding the context of the work.",
+      "Does not list experience with practice management software or familiarity with finance-related tasks."
+    ],
+    "summary": "Kevin Jones has relevant customer service and communication skills for the role, but lacks specific administrative and accounting experience, affecting the overall fit for the position.",
+    "candidate": "professional_cv_kevin_jones",
+    "model": "phi4"
+  },
+  {
+    "score": 6,
+    "strengths": [
+      "Strong customer service and communication skills",
+      "Adaptability across various work environments"
+    ],
+    "weaknesses": [
+      "Lacks specific administrative or secretarial experience",
+      "No experience in an accountancy or legal office"
+    ],
+    "summary": "Kevin Jones demonstrates strong customer service and adaptability, but lacks specific administrative and professional office experience required for the role.",
+    "candidate": "professional_cv_kevin_jones",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate clearly meets the requirements for previous office administration experience and strong communication skills, including telephone manner. Their experience with customer service and administrative tasks is a reasonable match for the job description. However, their typing speed and proficiency with Microsoft Office applications are unclear from the provided CV.",
+    "candidate": "professional_cv_kevin_jones",
+    "type": "essential_requirements"
+  }
+]

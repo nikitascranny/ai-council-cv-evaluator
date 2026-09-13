@@ -1,0 +1,38 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "The candidate has a strong work ethic and leadership experience, as demonstrated by their career progression and support for the growth of senior engineers.",
+      "Zanele has shown an ability to handle large-scale, complex systems, which indicates a capacity for adapting to new environments and tasks."
+    ],
+    "weaknesses": [
+      "Lack of direct experience in fishing, boat handling, or manual labor, which are critical for this role.",
+      "No evidence of physical fitness or comfort with heavy, repetitive manual work in all weather conditions.",
+      "Absence of experience with maritime activities or familiarity with the sea, which is essential for the role.",
+      "No history of working in environments with early starts and long days, typical for this fishing job."
+    ],
+    "summary": "Zanele Madondo possesses strong leadership and technical skills but lacks the necessary maritime experience and physical fitness required for a boat hand/ deckhand position.",
+    "candidate": "senior_sa",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "technical leadership",
+      "software architecture"
+    ],
+    "weaknesses": [
+      "no maritime experience",
+      "lack of physical labor skills",
+      "incompatible work schedule"
+    ],
+    "summary": "Candidate lacks any maritime experience and the physical labor skills required for the role, with an incompatible work schedule for early starts and long days at sea.",
+    "candidate": "senior_sa",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's MSc and BSc degrees in software engineering and computer science indicate a strong educational background, but do not clearly meet the physical and manual labor requirements. Their engineering excellence award and patent contributions suggest they are reliable and capable, though specific examples of sea legs or early start experience are lacking. The 'Willing to work early starts' and 'Basic numeracy' requirements are reasonable/close matches, but 'Physically fit and comfortable with heavy, repetitive manual work in all weathers' and 'Sea legs' are clearly not met or unclear from the CV.",
+    "candidate": "senior_sa",
+    "type": "essential_requirements"
+  }
+]

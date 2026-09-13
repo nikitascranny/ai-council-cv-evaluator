@@ -1,0 +1,38 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Demonstrates team coordination and leadership through acting management role at Uncle Dave’s Car Wash",
+      "Shows adaptability in fast-paced environments"
+    ],
+    "weaknesses": [
+      "Lacks professional web/software engineering experience",
+      "No evidence of line-managing engineers in a technical context",
+      "No experience with modern web stacks or technical architecture",
+      "No background in CI/CD, cloud infrastructure, or technical roadmap planning",
+      "Lacks experience in agile delivery or leading technical changes"
+    ],
+    "summary": "The candidate demonstrates leadership and adaptability but lacks the essential technical skills and engineering management experience required for the Engineering Manager role.",
+    "candidate": "professional_cv_jason_muller",
+    "model": "phi4"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Adaptable and proactive in maintaining service continuity",
+      "Good interpersonal communication and team morale support"
+    ],
+    "weaknesses": [
+      "Lacks professional web/software engineering experience",
+      "No experience in leading technical teams through significant change"
+    ],
+    "summary": "Jason Muller demonstrates adaptability and communication skills but falls short in technical and leadership experience relevant to the Engineering Manager role.",
+    "candidate": "professional_cv_jason_muller",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's experience in managing a team and maintaining service continuity is a reasonable match for the requirement to line manage engineers. Their self-directed learning in customer service and operations aligns closely with the communication skills and agile delivery experience needed. However, there is no evidence of professional web/software engineering experience, knowledge of modern web stacks, or experience with CI/CD and cloud infrastructure.",
+    "candidate": "professional_cv_jason_muller",
+    "type": "essential_requirements"
+  }
+]

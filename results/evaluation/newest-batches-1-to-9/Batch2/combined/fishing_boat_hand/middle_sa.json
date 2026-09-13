@@ -1,0 +1,37 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Experienced in working in physically demanding environments (engineering and construction contexts may imply physical adaptability)",
+      "Demonstrates reliability and punctuality through sustained employment history"
+    ],
+    "weaknesses": [
+      "Lacks direct experience in fishing or maritime activities, crucial for this role",
+      "No evidence of physical fitness or comfort with repetitive manual work",
+      "No sea legs or experience on boats, which is essential for the job",
+      "Does not possess any of the desirable skills like STCW certification or small-boat handling experience"
+    ],
+    "summary": "Kagiso Ndlovu lacks the essential maritime experience and physical fitness required for a Boat Hand role, though demonstrates reliability and punctuality.",
+    "candidate": "middle_sa",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong technical background in software engineering",
+      "Experience in leading and coaching junior engineers"
+    ],
+    "weaknesses": [
+      "Lacks any experience related to fishing or maritime work",
+      "No physical fitness evidence relevant to the job's manual and physically demanding nature"
+    ],
+    "summary": "The candidate has impressive technical skills but lacks any relevant experience or physical fitness for the role of a boat hand on a fishing vessel.",
+    "candidate": "middle_sa",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's BEng degree in Computer Engineering and AWS certification suggest a strong background in technical areas, but do not indicate relevant physical or manual labor experience. Their willingness to work early starts and long days is clear. However, there is no evidence of physical fitness for heavy, repetitive manual work, sea experience, basic numeracy for catch tallies, or a history of seasickness. The presentation on API operations is unrelated to the job requirements.",
+    "candidate": "middle_sa",
+    "type": "essential_requirements"
+  }
+]

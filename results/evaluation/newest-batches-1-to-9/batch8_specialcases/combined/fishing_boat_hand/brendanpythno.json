@@ -1,0 +1,37 @@
+[
+  {
+    "score": 2,
+    "strengths": [
+      "Has relevant hobbies such as fishing, which indicates some interest in the maritime environment.",
+      "Possesses general problem-solving and technical skills which could be transferrable to learning new tasks."
+    ],
+    "weaknesses": [
+      "Lacks any relevant work experience in fishing or marine environments.",
+      "Does not meet essential requirements such as physical fitness for heavy, repetitive manual work in all weathers.",
+      "No prior sea experience or training in safety procedures specific to fishing vessels.",
+      "No evidence of skills in tasks such as handling equipment, grading shellfish, or vessel maintenance."
+    ],
+    "summary": "The candidate lacks the necessary experience and qualifications for a physically demanding role on a fishing vessel, with only a tangential interest in fishing.",
+    "candidate": "BrendanPythno",
+    "model": "phi4"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Passionate about fishing as a hobby",
+      "Technical background with strong programming skills"
+    ],
+    "weaknesses": [
+      "Lacks direct experience in maritime or fishing industry",
+      "No relevant certifications for maritime work"
+    ],
+    "summary": "Candidate's enthusiasm for fishing and technical expertise are positive attributes, but the lack of direct industry experience and relevant certifications significantly hinders their fit for the role.",
+    "candidate": "BrendanPythno",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's experience as a software engineer does not directly meet the job's essential requirements for physical fitness, manual labor, or sea experience. However, their willingness to work early starts and long days is evident. Their basic numeracy from their coursework could be a reasonable match for catch tallies and grading. There is no evidence of the candidate's ability to work in physically demanding environments, so this requirement is not met.",
+    "candidate": "BrendanPythno",
+    "type": "essential_requirements"
+  }
+]

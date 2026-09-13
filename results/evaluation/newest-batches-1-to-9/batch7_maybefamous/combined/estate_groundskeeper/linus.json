@@ -1,0 +1,38 @@
+[
+  {
+    "score": 2,
+    "strengths": [
+      "Demonstrates strong technical skills in software engineering.",
+      "Experienced in team collaboration through sprint planning and code reviews."
+    ],
+    "weaknesses": [
+      "Lacks experience in groundskeeping, gamekeeping, or countryside management.",
+      "No experience with tracking, search & rescue, or military-related tasks.",
+      "No physical fitness or experience with outdoor activities or working in remote areas.",
+      "Unfamiliar with working with hounds or handling outdoor equipment.",
+      "No evidence of experience in immersive theater, event marshalling, or private security."
+    ],
+    "summary": "The candidate's technical and teamwork skills are strong, but they lack the necessary outdoor, physical, and relevant experience for the estate groundskeeper and hunt coordinator role.",
+    "candidate": "Linus",
+    "model": "phi4"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Comfortable with physical activities like hiking",
+      "Has relevant skills in tracking and rescue through hobbies"
+    ],
+    "weaknesses": [
+      "Lacks any experience or skills related to estate management or hunting",
+      "No background in security, military, or pursuit-oriented roles"
+    ],
+    "summary": "Linus Torvalds has minimal relevant experience and skills for the role of Groundskeeper & Hunt Coordinator at Blackmoor Hall Estate, but his physical fitness and outdoor interests might be seen as minor strengths.",
+    "candidate": "Linus",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's experience as a Software Engineer and Junior Developer does not meet the essential requirement of groundskeeping, gamekeeping, or countryside management experience. However, the candidate's experience in working with technology and code reviews could be seen as a reasonable/close match to the 'pursuit oriented' background requirement. The candidate's education and certifications do not clearly address the physical fitness or discretion requirements. Overall, the candidate does not meet the essential requirements of the job description.",
+    "candidate": "Linus",
+    "type": "essential_requirements"
+  }
+]

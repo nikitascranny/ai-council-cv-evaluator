@@ -1,0 +1,38 @@
+[
+  {
+    "score": 6,
+    "strengths": [
+      "Strong experience in digital marketing and data analysis, which are valuable for diagnosing tech issues.",
+      "Demonstrates leadership and project management skills, useful for taking initiative and handling customer interactions.",
+      "Has a background in UX design and digital product management, which can contribute to understanding customer needs and improving service delivery."
+    ],
+    "weaknesses": [
+      "Lacks specific experience in hands-on PC/laptop repair or technical support roles.",
+      "No direct experience with hardware components like RAM, SSDs, or physical repairs.",
+      "Resume focuses more on strategic and digital roles rather than practical, technical skills required for the job."
+    ],
+    "summary": "The candidate has strong strategic, analytical, and leadership skills but lacks direct experience in practical computer repair and hands-on technical support.",
+    "candidate": "RIAAN GOVEN",
+    "model": "phi4"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "strong background in digital product management and marketing",
+      "proficient in various digital marketing tools and languages"
+    ],
+    "weaknesses": [
+      "lacks direct experience in hands-on computer repair",
+      "no evidence of practical PC repair skills",
+      "limited relevance of previous roles to the job description"
+    ],
+    "summary": "The candidate has a strong digital marketing and product management background but lacks the hands-on technical skills and experience required for the computer repair role.",
+    "candidate": "RIAAN GOVEN",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate meets the requirement of being able to work Saturdays. Their experience in digital marketing and customer engagement aligns closely with the need to be friendly and patient with older customers. However, there is no clear evidence of practical PC/laptop repair skills, and the honesty and reliability aspects are not directly addressed in their CV.",
+    "candidate": "RIAAN GOVEN",
+    "type": "essential_requirements"
+  }
+]

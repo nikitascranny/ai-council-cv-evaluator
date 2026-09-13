@@ -1,0 +1,37 @@
+[
+  {
+    "score": 5,
+    "strengths": [
+      "Strong communication and analytical skills demonstrated through experience in research and presenting insights.",
+      "Experience in leadership and mentoring roles indicating good organizational skills and ability to manage multiple tasks.",
+      "Proficiency in tools like Hotjar and Lookback.io may translate to adeptness with Microsoft Office, although direct experience is not mentioned."
+    ],
+    "weaknesses": [
+      "Lack of direct experience in secretarial, receptionist, or administrative roles as required by the job.",
+      "No specific mention of experience with Microsoft Office suite or practice management software, which are key requirements.",
+      "The candidate's focus on UX research and design does not align closely with the administrative and secretarial tasks of the role."
+    ],
+    "summary": "The candidate possesses strong organizational and analytical skills, but lacks direct experience in administrative roles and proficiency in required software tools.",
+    "candidate": "GEOFF NITSCHKE",
+    "model": "phi4"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Excellent communication and organizational skills",
+      "Experience in handling diverse client interactions"
+    ],
+    "weaknesses": [
+      "Lack of experience in secretarial or administrative roles",
+      "No direct experience with practice management software"
+    ],
+    "summary": "The candidate possesses strong communication and organizational skills but lacks the specific administrative and secretarial experience required for the role.",
+    "candidate": "GEOFF NITSCHKE",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's experience in UX research and design, as well as their ability to facilitate usability testing, provides a reasonable match for the secretarial and office administration experience requirement. Their strong organizational skills and focus on user needs are evident, closely aligning with the ability to juggle multiple tasks. However, there is no evidence of direct secretarial, receptionist, or office administration experience, nor specific skills in Microsoft Word, Excel, and Outlook, which are clearly not met.",
+    "candidate": "GEOFF NITSCHKE",
+    "type": "essential_requirements"
+  }
+]

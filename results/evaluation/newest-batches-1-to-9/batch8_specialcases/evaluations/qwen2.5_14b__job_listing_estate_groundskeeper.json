@@ -1,0 +1,169 @@
+[
+  {
+    "score": 6,
+    "strengths": [
+      "出色的野外生存技能",
+      "在高压环境下工作的能力"
+    ],
+    "weaknesses": [
+      "缺乏传统意义上的园林管理经验",
+      "没有提到与猎犬或追踪工作相关的经验"
+    ],
+    "summary": "候选人具备强大的生存技能和适应高压环境的能力，但缺乏直接相关的传统园林管理和追踪经验。",
+    "candidate": "Li_ExtraSpecial"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Strong data analysis and modeling skills",
+      "Proven ability to optimize reporting and reduce manual work"
+    ],
+    "weaknesses": [
+      "Lack of relevant experience in groundskeeping or hunt coordination",
+      "No background in tracking, search and rescue, or military"
+    ],
+    "summary": "Candidate excels in data analysis but lacks the necessary background in groundskeeping and pursuit-oriented activities for the role.",
+    "candidate": "MathNaledi"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong background in software engineering",
+      "Experience with Python and Go"
+    ],
+    "weaknesses": [
+      "No relevant experience in groundskeeping or hunting coordination",
+      "Lacks necessary physical fitness and outdoor skills"
+    ],
+    "summary": "The candidate has strong technical skills but lacks the necessary experience and physical capabilities for the role.",
+    "candidate": "BrendanPythno"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "technical skills in software engineering",
+      "relevant certifications"
+    ],
+    "weaknesses": [
+      "no relevant experience in groundskeeping, hunting, or outdoor pursuits",
+      "lack of physical fitness and tracking background"
+    ],
+    "summary": "The candidate's background in software engineering and certifications do not align with the required physical and experiential skills needed for the role of Groundskeeper and Hunt Coordinator.",
+    "candidate": "Chen_Special"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong background in software engineering and technical skills",
+      "Hiking and landscape photography suggest a connection to the outdoors"
+    ],
+    "weaknesses": [
+      "Lack of relevant experience in groundskeeping or estate management",
+      "No background in tracking, search and rescue, or experience working with dogs",
+      "No experience in private security or immersive theatre"
+    ],
+    "summary": "Marcus Vandenberg lacks the essential experience and skills required for the groundskeeper and 'Hunt' coordinator role at Blackmoor Hall Estate.",
+    "candidate": "MegaMarcus"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "excellent in software engineering",
+      "has some relevant hobbies like hiking"
+    ],
+    "weaknesses": [
+      "no relevant experience in groundskeeping or hunting",
+      "lacks the physical fitness and outdoor survival skills required",
+      "no background in tracking or search and rescue"
+    ],
+    "summary": "Priya Chetty is well-qualified as a software engineer but lacks the necessary background and skills for the role of Groundskeeper & Hunt Coordinator at Blackmoor Hall.",
+    "candidate": "PriyaPicture"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Software engineering background",
+      "Experience with Python, Java, and Go"
+    ],
+    "weaknesses": [
+      "No relevant experience in groundskeeping, search and rescue, or military background",
+      "No physical fitness or outdoor work experience mentioned",
+      "Inability to address the unique requirements of the job"
+    ],
+    "summary": "Candidate lacks the necessary background in groundskeeping, search and rescue, and physical fitness, which are critical for this role.",
+    "candidate": "SamanthaOne"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "software engineering background with potential for problem-solving"
+    ],
+    "weaknesses": [
+      "no relevant experience in groundskeeping, tracking, or live-action experiences; lacks the physical fitness and experience required for the job"
+    ],
+    "summary": "Jordan Mitchell's background in software engineering does not align with the job's requirements for physical labor, tracking expertise, and experience in groundskeeping or immersive experiences.",
+    "candidate": "SystemShock"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong background in software engineering and system architecture",
+      "Experience in team leadership and mentoring"
+    ],
+    "weaknesses": [
+      "No relevant experience in groundskeeping, search and rescue, or tracking",
+      "Lack of physical fitness experience as required for the job",
+      "No background in outdoor or adventurous activities"
+    ],
+    "summary": "Taylor Okafor's background in software engineering and leadership is impressive but completely irrelevant to the role of Groundskeeper & Hunt Coordinator at Blackmoor Hall Estate, which requires specific outdoor and search and rescue skills.",
+    "candidate": "TaylorGraphics"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong technical background",
+      "Experience in system design and leadership"
+    ],
+    "weaknesses": [
+      "Incompatible work style with team dynamics",
+      "Relevant experience not aligned with job requirements"
+    ],
+    "summary": "Victoria Sterling's technical skills and leadership experience do not outweigh her disruptive and uncollaborative behavior, making her unsuitable for the role.",
+    "candidate": "VictoriaSterlingSilver"
+  },
+  {
+    "score": 1,
+    "strengths": [],
+    "weaknesses": [
+      "Lack of relevant experience or skills in groundskeeping, hunting, or outdoor pursuits",
+      "No background or interest in the unique requirements of the role such as tracking, search and rescue, or working with hounds",
+      "Inability to fulfill the physical demands of the job"
+    ],
+    "summary": "Casey Whitmore is highly qualified in software engineering but completely unsuited for the role of Estate Groundskeeper & Hunt Coordinator at Blackmoor Hall.",
+    "candidate": "CaseyWhitmore"
+  },
+  {
+    "score": 1,
+    "strengths": [
+      "None evident"
+    ],
+    "weaknesses": [
+      "Lack of relevant experience",
+      "Incomprehensible CV",
+      "No alignment with job requirements"
+    ],
+    "summary": "The candidate does not meet any of the job's criteria due to an incomprehensible CV and complete mismatch with the required skills and experience.",
+    "candidate": "HomerSimsSon"
+  },
+  {
+    "score": 1,
+    "strengths": [
+      "None that match the job's specific requirements"
+    ],
+    "weaknesses": [
+      "Lack of relevant experience in groundskeeping, hunting, tracking, or outdoor management; irrelevant skills for the role"
+    ],
+    "summary": "The candidate's background in software engineering does not align with the required skills and experience for the Estate Groundskeeper & Hunt Coordinator role.",
+    "candidate": "JordanMitchell5Star"
+  }
+]

@@ -1,0 +1,42 @@
+[
+  {
+    "summary": "The candidate has relevant experience in testing and software development, which is a reasonable match for the production software shipping requirement. Their experience in operations and testing can be seen as transferable to the metrics, tracing, and incident response roles. However, the candidate lacks clear evidence of experience with TypeScript/React, backend languages, distributed systems fundamentals, or the energy, climate, or real-world problem domains. The communication skills and ability to explain technical matters are not directly evidenced but could be inferred from the test analyst experience.",
+    "candidate": "ALEX PARK"
+  },
+  {
+    "summary": "The candidate has relevant experience in data processing and analysis but lacks direct experience in shipping production software. Their background in distributed systems fundamentals and communication is a reasonable match. Certifications in cloud and Kubernetes are a strong fit, but specific backend language experience is unclear from the CV.",
+    "candidate": "EMILE MOKOENA"
+  },
+  {
+    "summary": "The candidate's experience does not clearly meet the requirement for shipping production software, though their experience in UX research and design shows strong technical communication and user-centric mindset. Their experience with usability testing, research, and design aligns closely with some of the technical communication and distributed systems fundamentals requirements. The candidate's background in research and design does not indicate hands-on production software development experience, which is a core requirement.",
+    "candidate": "GEOFF NITSCHKE"
+  },
+  {
+    "summary": "The candidate has relevant experience in technical documentation and project management, which is a reasonable match for the production software experience requirement. They have shown strong problem-solving and analytical skills, which are closely related to the distributed systems fundamentals and comfort with ambiguity. However, there is no evidence of experience in TypeScript/React or backend languages, which are clearly not met.",
+    "candidate": "JORDAN VELDMAN"
+  },
+  {
+    "summary": "The candidate meets the essential requirements for the job, particularly in coordinating resources, managing projects, and building partnerships. The skills in managing budgets, contracts, and stakeholder relations are clearly demonstrated. However, the lack of explicit experience in specific technical or regulatory aspects of internet governance may be a close match or unclear, given the diverse roles and projects listed.",
+    "candidate": "LERATO MUNCHE"
+  },
+  {
+    "summary": "The candidate's work experience in records management and archives aligns closely with the production software shipping requirement, as these roles involve handling and organizing information systems. The experience in records and archives management provides a reasonable match for the distributed systems fundamentals and communication skills required. However, the candidate lacks direct experience in shipping production software, particularly with TypeScript/React or a backend language, which are key requirements for the position.",
+    "candidate": "NDLOVU KARABO REFILWE"
+  },
+  {
+    "summary": "The candidate has a reasonable match with the job's essential requirements, demonstrating experience in security and compliance assessments, project management, and operational management. However, there is no clear evidence of shipping production software or experience in TypeScript/React, and the background in security and compliance does not fully align with the distributed systems and velocity-related aspects of the role.",
+    "candidate": "PATRICK MARAIS"
+  },
+  {
+    "summary": "The candidate's experience primarily focuses on administrative and financial roles, which do not clearly meet the requirement for shipping production software with strong experience in TypeScript/React and backend languages. However, the candidate's experience in producing reports and analysing data could be a reasonable match for the need to communicate technical trade-offs effectively. There is no evidence of experience with distributed systems or incident response, which are clearly not met.",
+    "candidate": "PONTUS PONTIOUS"
+  },
+  {
+    "summary": "The candidate has 4+ years of experience shipping production software, which is a clear match. They have experience in TypeScript/React but do not have backend language experience in Go, Rust, Node, or Java, which is a reasonable/close match. The candidate's experience with distributed systems fundamentals is unclear from the CV. The candidate's communication skills are evident from their cross-functional responsibilities, making it a reasonable/close match. There is no clear evidence of having operated services in production or comfort with ambiguity and velocity, which are clearly not met.",
+    "candidate": "RIAAN GOVEN"
+  },
+  {
+    "summary": "The candidate has 2+ years of relevant work experience, which is a reasonable close match to the 4+ years required. Their coursework and certificates indicate a solid foundation in business information systems, but specific experience in TypeScript/React or backend languages is unclear. Their experience managing business processes and systems is relevant, and their ability to explain technical trade-offs is implied. However, there is no clear evidence of experience with distributed systems, production operations, or shipping production software.",
+    "candidate": "THE DANIEL"
+  }
+]
