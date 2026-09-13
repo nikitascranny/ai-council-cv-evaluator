@@ -1,0 +1,33 @@
+[
+  {
+    "score": 4,
+    "strengths": [
+      "Strong technical skills and problem-solving abilities, demonstrated through experience with machine learning and software development.",
+      "Commitment to law and order, which aligns with the responsibilities of maintaining security and order at the museum.",
+      "Experience in volunteer roles with structured organization and coordination, which may be beneficial for supervising security operations."
+    ],
+    "weaknesses": [
+      "Lack of direct experience in security roles, particularly in a museum or similar setting.",
+      "No evidence of familiarity with CCTV, intruder alarm, or access-control systems.",
+      "Absence of required SIA Door Supervisor or Security Guarding license.",
+      "No experience in conducting physical security patrols or handling incidents like theft or vandalism."
+    ],
+    "summary": "The candidate has strong technical and organizational skills but lacks the specific security experience and required qualifications for the Museum Security Specialist role.",
+    "candidate": "ColtonBrad"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Strong analytical and problem-solving skills demonstrated through experience in machine learning and NLP systems",
+      "Good communication skills, evidenced by volunteer work and coordination roles"
+    ],
+    "weaknesses": [
+      "Lacks direct experience in security roles or environments such as museums, galleries, or heritage sites",
+      "No experience with CCTV, intruder alarm, or access-control systems",
+      "No physical or security-specific skills such as object protection or alarm system operation",
+      "Does not meet essential requirements like SIA Door Supervisor or Security Guarding license"
+    ],
+    "summary": "The candidate has strong analytical and communication skills but lacks relevant security experience and necessary certifications for the role.",
+    "candidate": "SkyeWhite"
+  }
+]

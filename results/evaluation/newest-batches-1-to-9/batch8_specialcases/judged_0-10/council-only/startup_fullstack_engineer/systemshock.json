@@ -1,0 +1,8 @@
+{
+  "candidate": "SystemShock",
+  "final_score": 5,
+  "score_rationale": "The candidate has relevant production software experience and distributed systems skills, but lacks proficiency in TypeScript and Go, which are critical for the role.",
+  "key_strengths": "4+ years of production software experience, strong grasp of distributed systems fundamentals, comfort with ambiguity and fast-paced environments",
+  "key_weaknesses": "No experience with TypeScript/React (or it was not explicitly mentioned), lack of Go experience (the preferred backend language), no energy sector domain knowledge",
+  "final_evaluation": "The candidate has a solid foundation in relevant skills and adaptability but does not meet several core technical requirements, particularly TypeScript/React and backend language (Go). They may need to demonstrate these gaps in a technical assessment."
+}

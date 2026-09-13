@@ -1,0 +1,8 @@
+{
+  "candidate": "SamanthaOne",
+  "final_score": 4,
+  "score_rationale": "Samantha has relevant backend experience with Go, which aligns with the job's preferences, but lacks essential frontend skills (TypeScript/React) and critical production responsibilities experience like observability and incident response.",
+  "key_strengths": "4+ years of backend systems experience, including proficiency in Go (preferred language).",
+  "key_weaknesses": "No direct experience with TypeScript/React (essential frontend requirement), and missing evidence of operating services in production (essential requirement).",
+  "final_evaluation": "Samantha has a strong backend foundation but lacks the essential frontend capabilities and production experience needed for this role. Her background requires significant upskilling in critical areas, potentially making her a poor fit for the intense, full-stack position at Pulsegrid."
+}

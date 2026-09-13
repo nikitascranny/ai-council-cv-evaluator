@@ -1,0 +1,38 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Demonstrates commitment to law and order, which may align with discretion and following structured frameworks.",
+      "Experience with large-scale data analysis and operational efficiency improvements.",
+      "Strong advocacy skills demonstrated in volunteer roles for political campaigns."
+    ],
+    "weaknesses": [
+      "Lacks direct experience in groundskeeping, countryside management, or related fields.",
+      "No experience with tracking, search & rescue, military, or similar pursuit-oriented activities.",
+      "Absence of skills related to outdoor activities, handling dogs, or operating airsoft and pursuit equipment.",
+      "No evidence of comfort with or experience in immersive or theatrical settings."
+    ],
+    "summary": "The candidate lacks relevant experience and skills in groundskeeping, outdoor activities, and pursuit-oriented work necessary for the Groundskeeper & Hunt Coordinator role.",
+    "candidate": "ColtonBrad",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong commitment to law and order",
+      "Experience in predictive maintenance"
+    ],
+    "weaknesses": [
+      "No relevant groundskeeping or tracking experience",
+      "No background in immersive theatre or security work"
+    ],
+    "summary": "Colton Braddock lacks the necessary background in groundskeeping, tracking, and security work, despite his strong technical skills and commitment to law and order.",
+    "candidate": "ColtonBrad",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate does not clearly meet the essential requirement of groundskeeping, gamekeeping, or countryside management experience. However, their experience as a volunteer Data & Field Operations Analyst and their Campaign Field Operations Certificate are reasonable/close matches, as they involved field operations and coordination. The candidate also lacks the required physical fitness and willingness to live on-site, but their software engineering experience with infrastructure decisions and predictive maintenance could be relevant to some extent. The candidate's work on energy independence and infrastructure resilience also aligns with the required discretion and pursuit-oriented background.",
+    "candidate": "ColtonBrad",
+    "type": "essential_requirements"
+  }
+]

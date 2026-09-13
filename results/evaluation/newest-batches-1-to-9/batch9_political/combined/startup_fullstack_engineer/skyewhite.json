@@ -1,0 +1,37 @@
+[
+  {
+    "score": 5,
+    "strengths": [
+      "The candidate has 4+ years of experience building production software, satisfying the essential experience requirement.",
+      "Strong skills in Python and NLP, which demonstrate the ability to work with complex data systems.",
+      "Shows a commitment to community and ethical considerations, aligning with the company's focus on real-world problems."
+    ],
+    "weaknesses": [
+      "Lacks direct experience with the required technologies: TypeScript/React, Go, Kafka, TimescaleDB, and Redis.",
+      "No experience with full-stack development, particularly in building both frontend and backend services.",
+      "No demonstrated experience in handling production services, including observability, alerting, and on-call participation."
+    ],
+    "summary": "While the candidate has relevant experience in production software and ethical AI development, they lack the specific technical skills and experience with the required technologies and production systems needed for this role.",
+    "candidate": "SkyeWhite",
+    "model": "phi4"
+  },
+  {
+    "score": 4,
+    "strengths": [
+      "Experience with building AI systems that prioritize social and ethical considerations",
+      "Background in machine learning and data governance"
+    ],
+    "weaknesses": [
+      "Lacks experience with TypeScript/React and Go backend services",
+      "No direct experience in the energy sector or event-driven architectures"
+    ],
+    "summary": "Skye Whitfield demonstrates a strong commitment to ethical AI and data governance but lacks the technical background in full-stack engineering required for the role.",
+    "candidate": "SkyeWhite",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate clearly meets the requirement for experience in shipping production software, as evidenced by roles at GreenGrid Collective and the social media company's AI division. Their experience with TypeScript and React aligns closely with the need for strong experience in these technologies, and their background in machine learning and AI ethics also supports their relevance to the role. However, the candidate's experience with Go or another backend language is unclear, and the specific operational experience in production, such as metrics and tracing, is not detailed in the CV.",
+    "candidate": "SkyeWhite",
+    "type": "essential_requirements"
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "score": 4,
+    "strengths": [
+      "Candidate has a strong technical background with experience in machine learning, Python, and other relevant programming languages.",
+      "Candidate has demonstrated the ability to work with large-scale models and data analysis, which may be beneficial for managing IT assets and educational technology tools."
+    ],
+    "weaknesses": [
+      "Lack of direct experience in IT support or educational technology, which is essential for the role.",
+      "No evidence of experience working with young people or in educational settings.",
+      "Absence of knowledge in Windows 11, Microsoft 365, or device management tools like Intune, which are essential for the role.",
+      "Candidate's interests and experiences suggest a potential cultural mismatch with the school environment."
+    ],
+    "summary": "The candidate possesses strong technical skills but lacks relevant experience in IT support and education, which are critical for the role.",
+    "candidate": "ColtonBrad",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong technical background in Python and other relevant technologies",
+      "Experience with distributed systems and infrastructure"
+    ],
+    "weaknesses": [
+      "Lack of education or experience in an educational setting",
+      "No direct experience in IT support or coding enrichment for young people",
+      "Limited alignment of political and social interests with typical school environment"
+    ],
+    "summary": "The candidate has strong technical skills but lacks relevant educational experience and direct alignment with the educational and youth-focused aspects of the role.",
+    "candidate": "ColtonBrad",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's experience does not clearly meet the essential requirement for practical IT support experience, though their background in software engineering could be transferable. Their skills in programming, particularly with Python, align closely with the requirement for basic programming ability. The candidate's enthusiasm for working with technology and the provided education and certifications suggest a genuine interest in the field, but direct experience working with young people is unclear. The candidate has no evident experience with device management or Windows 11, and there is no mention of any DBS or safeguarding training.",
+    "candidate": "ColtonBrad",
+    "type": "essential_requirements"
+  }
+]

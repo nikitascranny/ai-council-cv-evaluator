@@ -1,0 +1,29 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Experience in building predictive models",
+      "Technical background in machine learning"
+    ],
+    "weaknesses": [
+      "Lack of direct experience in web development",
+      "No history of line management",
+      "No experience in agile delivery"
+    ],
+    "summary": "Candidate lacks direct experience in web development, line management, and agile methodologies, which are crucial for the Engineering Manager role.",
+    "candidate": "ColtonBrad"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Experience in building NLP systems",
+      "Commitment to ethical AI practices"
+    ],
+    "weaknesses": [
+      "Lack of web development experience",
+      "Limited team management experience in technical change"
+    ],
+    "summary": "The candidate lacks the required web development and team leadership experience, but shows strong ethical and responsible AI practices.",
+    "candidate": "SkyeWhite"
+  }
+]

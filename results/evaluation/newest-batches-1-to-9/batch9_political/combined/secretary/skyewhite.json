@@ -1,0 +1,36 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Demonstrates strong organization and multitasking skills as evidenced by extensive volunteer and professional experience.",
+      "Possesses excellent technical skills and has a proactive approach to advocating for responsible practices, indicating a strong work ethic and integrity."
+    ],
+    "weaknesses": [
+      "Lacks direct secretarial, receptionist, or office administration experience.",
+      "No familiarity with Microsoft Office applications or practice management software as mentioned in the job requirements.",
+      "No demonstrated experience in managing diaries, post, or client communications in a professional office setting."
+    ],
+    "summary": "The candidate exhibits strong organizational and ethical skills, but lacks the specific administrative experience and software proficiency required for the secretary/assistant role.",
+    "candidate": "SkyeWhite",
+    "model": "phi4"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Strong commitment to social justice and ethical AI practices",
+      "Experience in data governance and community oversight"
+    ],
+    "weaknesses": [
+      "Lack of relevant administrative or secretarial experience",
+      "No direct experience in accounting or professional services"
+    ],
+    "summary": "Candidate has commendable ethical and community-oriented qualities but lacks the specific administrative and professional services experience required for the role.",
+    "candidate": "SkyeWhite",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's experience is primarily in machine learning and AI, which does not directly align with the secretarial, receptionist, or office administration experience required. However, the candidate's ability to handle complex projects, work on teams, and manage data-related tasks demonstrates a strong organizational skill set that could be transferable. The candidate's proficiency in Microsoft tools and their typing speed are not evidenced in the CV, though their technical background suggests a high level of competence. The 'attitude counts most' criterion is likely met given the candidate's contributions and leadership roles, but specific examples are lacking.",
+    "candidate": "SkyeWhite",
+    "type": "essential_requirements"
+  }
+]

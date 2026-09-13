@@ -1,0 +1,29 @@
+[
+  {
+    "score": 4,
+    "strengths": [
+      "strong background in technology and programming",
+      "commitment to social justice and equitable technology"
+    ],
+    "weaknesses": [
+      "lacks direct experience in an education setting",
+      "no specific experience with Windows 11 or Microsoft 365"
+    ],
+    "summary": "Skye Whitfield has a strong technical background and ethical commitment, but lacks direct educational experience and specific IT skills listed in the job description.",
+    "candidate": "SkyeWhite"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong technical background in Python and other relevant technologies",
+      "Experience with distributed systems and infrastructure"
+    ],
+    "weaknesses": [
+      "Lack of education or experience in an educational setting",
+      "No direct experience in IT support or coding enrichment for young people",
+      "Limited alignment of political and social interests with typical school environment"
+    ],
+    "summary": "The candidate has strong technical skills but lacks relevant educational experience and direct alignment with the educational and youth-focused aspects of the role.",
+    "candidate": "ColtonBrad"
+  }
+]

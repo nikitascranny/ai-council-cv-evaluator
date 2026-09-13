@@ -1,0 +1,10 @@
+[
+  {
+    "summary": "The candidate meets the requirement for relevant engineering experience but does not have line management experience. They have a strong background in modern web stacks and CI/CD, which are closely related to the job requirements. Their role as a Data & Field Operations Analyst aligns with communication and coordination skills needed for the job, but this is not explicitly stated in their experience. The role as a Software Engineer at PetroTech Energy Analytics shows technical experience but does not specifically address the web/software engineering experience required.",
+    "candidate": "ColtonBrad"
+  },
+  {
+    "summary": "The candidate has a clear match for the essential requirement of 5+ years of professional web/software engineering experience, though the role was not specifically an engineering manager. Their experience aligns closely with the modern web stack and ML/AI work, particularly in the AI division role. The candidate also has relevant experience in leading technical change and running agile delivery, which suggests they can translate between engineers, product managers, and executives. However, there is no clear evidence of line management or specific CI/CD, cloud infrastructure, or observability experience.",
+    "candidate": "SkyeWhite"
+  }
+]

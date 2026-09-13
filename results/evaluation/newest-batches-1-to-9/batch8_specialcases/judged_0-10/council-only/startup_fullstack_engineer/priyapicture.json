@@ -1,0 +1,8 @@
+{
+  "candidate": "PriyaPicture",
+  "final_score": 4,
+  "score_rationale": "Priya has strong frontend skills but lacks essential backend experience and demonstrated production operations expertise, which are critical for this role.",
+  "key_strengths": "Solid 4+ years of production software experience, strong React/TypeScript skills, performance optimization experience (reduced page load times), AWS certification.",
+  "key_weaknesses": "No experience with Go or backend development, no demonstrated experience with distributed systems or operating services in production.",
+  "final_evaluation": "Priya is well-suited for frontend-focused roles but lacks the necessary backend and production operations skills required for this engineering position at a fast-paced startup like Pulsegrid."
+}

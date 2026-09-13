@@ -1,0 +1,31 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Has technical experience with hardware and software, including CUDA which involves some hardware knowledge.",
+      "Possesses strong problem-solving skills and experience in data analysis, which could be useful for diagnosing computer issues."
+    ],
+    "weaknesses": [
+      "Lacks practical PC/laptop repair skills specifically relevant to the job, with experience focused on machine learning and software engineering.",
+      "No evidence of experience in customer service or working in a retail environment, which is essential for the role.",
+      "No experience with the specific hardware brands mentioned (HP, Lenovo) or common consumer-level computer problems.",
+      "No demonstrated patience or communication skills with non-technical individuals, particularly older customers."
+    ],
+    "summary": "The candidate has technical and analytical skills but lacks practical experience in PC repair and customer service, making them a less suitable fit for the role without significant upskilling.",
+    "candidate": "ColtonBrad"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Strong problem-solving and technical skills demonstrated through experience in machine learning and AI.",
+      "Good communication and organization skills, as evidenced by experience in political organizing and volunteer coordination."
+    ],
+    "weaknesses": [
+      "Lack of practical PC/laptop repair experience required for the role.",
+      "No local experience or specific skills related to computer hardware repairs or customer service in a repair shop.",
+      "No evidence of experience with the types of common hardware issues mentioned (e.g., RAM reseating, screen replacements)."
+    ],
+    "summary": "Skye Whitfield has strong technical and problem-solving skills, but lacks the practical repair experience and local availability needed for the computer repair shop role.",
+    "candidate": "SkyeWhite"
+  }
+]

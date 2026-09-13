@@ -1,0 +1,36 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Physically fit and capable of working in various environments as indicated by hobbies like off-roading and target shooting",
+      "Strong analytical skills demonstrated through data modeling and analysis in previous roles"
+    ],
+    "weaknesses": [
+      "Lack of relevant education or experience in marine biology, zoology, or aquatic biology",
+      "No demonstrated experience or skills in water chemistry or life support systems",
+      "No evidence of experience in animal husbandry or aquarium maintenance tasks"
+    ],
+    "summary": "The candidate has strong analytical and physical capabilities but lacks the relevant education, experience, and skills specific to the role of an Aquarium Biologist.",
+    "candidate": "ColtonBrad",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong technical background in machine learning and data analytics",
+      "Experience with predictive maintenance and efficiency improvements"
+    ],
+    "weaknesses": [
+      "No relevant experience in marine biology, zoology or aquatic animal husbandry",
+      "Lacks hands-on experience with aquatic life support systems"
+    ],
+    "summary": "The candidate has strong technical skills but lacks the necessary background and experience in aquatic animal husbandry and life support systems.",
+    "candidate": "ColtonBrad",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate does not clearly meet the requirement for a degree in Marine Biology, Zoology, Aquatic Biology, or a related life science, nor do they have direct experience in physical, dirty, and repetitive tasks like filter cleaning and LSS maintenance. However, their background in engineering and data analysis, especially with computational and sensor technologies, provides a reasonable close match to the technical and observational skills required. The physical fitness requirements are unclear from the CV, and the candidate's right to work in the UK is not stated.",
+    "candidate": "ColtonBrad",
+    "type": "essential_requirements"
+  }
+]

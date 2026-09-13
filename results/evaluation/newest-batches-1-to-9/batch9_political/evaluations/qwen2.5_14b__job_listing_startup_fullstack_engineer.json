@@ -1,0 +1,28 @@
+[
+  {
+    "score": 5,
+    "strengths": [
+      "Experience with large-scale model training and distributed systems",
+      "Relevant background in energy systems"
+    ],
+    "weaknesses": [
+      "Lack of full-stack engineering experience",
+      "No direct experience with the technologies mentioned in the job description (React/TypeScript, Go, Kafka, TimescaleDB)"
+    ],
+    "summary": "Colton has a solid background in energy systems and large-scale model training, but lacks the specific full-stack engineering skills and direct experience with the technologies required for the role.",
+    "candidate": "ColtonBrad"
+  },
+  {
+    "score": 4,
+    "strengths": [
+      "Experience with building AI systems that prioritize social and ethical considerations",
+      "Background in machine learning and data governance"
+    ],
+    "weaknesses": [
+      "Lacks experience with TypeScript/React and Go backend services",
+      "No direct experience in the energy sector or event-driven architectures"
+    ],
+    "summary": "Skye Whitfield demonstrates a strong commitment to ethical AI and data governance but lacks the technical background in full-stack engineering required for the role.",
+    "candidate": "SkyeWhite"
+  }
+]

@@ -1,0 +1,36 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Strong problem-solving and technical skills demonstrated through experience in machine learning and AI.",
+      "Good communication and organization skills, as evidenced by experience in political organizing and volunteer coordination."
+    ],
+    "weaknesses": [
+      "Lack of practical PC/laptop repair experience required for the role.",
+      "No local experience or specific skills related to computer hardware repairs or customer service in a repair shop.",
+      "No evidence of experience with the types of common hardware issues mentioned (e.g., RAM reseating, screen replacements)."
+    ],
+    "summary": "Skye Whitfield has strong technical and problem-solving skills, but lacks the practical repair experience and local availability needed for the computer repair shop role.",
+    "candidate": "SkyeWhite",
+    "model": "phi4"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Strong technical skills in machine learning and NLP",
+      "Experience in data governance and responsible AI"
+    ],
+    "weaknesses": [
+      "Lack of direct experience in PC/laptop repair",
+      "No evidence of customer service or retail experience"
+    ],
+    "summary": "Skye has impressive technical skills but lacks the practical repair and customer service experience required for the role.",
+    "candidate": "SkyeWhite",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's CV clearly meets the requirement for basic, practical PC/laptop repair skills, as the role of ML Engineer involves working with technology and could reasonably include such skills. The candidate's friendly and patient demeanor, as well as their ability to explain complex concepts, is demonstrated through their volunteer and previous work experience. Honesty and reliability are evidenced by their completion of certifications and their advocacy for community governance. The candidate’s ability to work on Saturdays is not directly evidenced but can be inferred from their work schedule. Their availability to work in the Tillingford area is unclear from the CV.",
+    "candidate": "SkyeWhite",
+    "type": "essential_requirements"
+  }
+]

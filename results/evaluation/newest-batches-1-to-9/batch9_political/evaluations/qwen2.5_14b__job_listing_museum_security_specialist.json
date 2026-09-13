@@ -1,0 +1,28 @@
+[
+  {
+    "score": 2,
+    "strengths": [
+      "Strong commitment to law and order",
+      "Background in predictive maintenance models"
+    ],
+    "weaknesses": [
+      "Lack of security or museum experience",
+      "No direct experience with security systems or incident response"
+    ],
+    "summary": "The candidate lacks direct experience in security or museum operations and does not meet the essential requirements of the role.",
+    "candidate": "ColtonBrad"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "commitment to social justice",
+      "volunteering in political organizing"
+    ],
+    "weaknesses": [
+      "no relevant security experience",
+      "no direct experience with security systems"
+    ],
+    "summary": "The candidate shows strong social and ethical commitments but lacks the specific security expertise required for the role.",
+    "candidate": "SkyeWhite"
+  }
+]

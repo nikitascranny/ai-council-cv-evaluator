@@ -1,0 +1,30 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Physically fit and capable of working in various environments as indicated by hobbies like off-roading and target shooting",
+      "Strong analytical skills demonstrated through data modeling and analysis in previous roles"
+    ],
+    "weaknesses": [
+      "Lack of relevant education or experience in marine biology, zoology, or aquatic biology",
+      "No demonstrated experience or skills in water chemistry or life support systems",
+      "No evidence of experience in animal husbandry or aquarium maintenance tasks"
+    ],
+    "summary": "The candidate has strong analytical and physical capabilities but lacks the relevant education, experience, and skills specific to the role of an Aquarium Biologist.",
+    "candidate": "ColtonBrad"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Strong problem-solving skills demonstrated through machine learning projects.",
+      "Good analytical skills with experience in data modeling and data governance."
+    ],
+    "weaknesses": [
+      "Lack of relevant educational background in marine or aquatic biology.",
+      "No practical experience in aquatic animal husbandry or life support systems.",
+      "No demonstrated experience with physical, dirty, and repetitive tasks as required for the role."
+    ],
+    "summary": "While the candidate has strong analytical and problem-solving skills, they lack the specific educational background, practical experience, and physical work capacity needed for an Aquarium Biologist role.",
+    "candidate": "SkyeWhite"
+  }
+]

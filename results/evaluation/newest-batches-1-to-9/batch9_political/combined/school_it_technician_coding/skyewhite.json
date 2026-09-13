@@ -1,0 +1,37 @@
+[
+  {
+    "score": 4,
+    "strengths": [
+      "Strong programming skills in Python, which is relevant for supporting coding activities.",
+      "Experience with responsible AI and data governance, indicating a commitment to ethical technology deployment."
+    ],
+    "weaknesses": [
+      "Lack of direct experience in IT support or educational settings, which are essential for the role.",
+      "No demonstrated experience with Windows 11, Microsoft 365, or device management tools like Intune.",
+      "No experience with Raspberry Pi, Micro:bit, or LEGO robotics, which are desirable for the role.",
+      "Lacks specific experience with classroom technology support or managing school IT infrastructure."
+    ],
+    "summary": "The candidate has strong programming skills and a commitment to ethical technology, but lacks direct experience in IT support and education, which are crucial for this role.",
+    "candidate": "SkyeWhite",
+    "model": "phi4"
+  },
+  {
+    "score": 4,
+    "strengths": [
+      "strong background in technology and programming",
+      "commitment to social justice and equitable technology"
+    ],
+    "weaknesses": [
+      "lacks direct experience in an education setting",
+      "no specific experience with Windows 11 or Microsoft 365"
+    ],
+    "summary": "Skye Whitfield has a strong technical background and ethical commitment, but lacks direct educational experience and specific IT skills listed in the job description.",
+    "candidate": "SkyeWhite",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's experience and education clearly meet the essential requirement for practical IT support experience and a relevant background in ML and AI. Their experience with Python and open source toolkits closely matches the basic programming ability and working with young people requirement. The volunteer experience and certifications provide reasonable assurance for safeguarding and DBS checks, though explicit evidence for Microsoft 365 or Intune experience is lacking.",
+    "candidate": "SkyeWhite",
+    "type": "essential_requirements"
+  }
+]

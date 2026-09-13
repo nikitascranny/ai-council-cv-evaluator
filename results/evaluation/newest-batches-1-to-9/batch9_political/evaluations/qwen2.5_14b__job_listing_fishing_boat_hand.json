@@ -1,0 +1,28 @@
+[
+  {
+    "score": 2,
+    "strengths": [
+      "Experience with energy systems",
+      "Technical skills in Python and C++"
+    ],
+    "weaknesses": [
+      "No relevant marine or fishing experience",
+      "Lack of physical labor and manual work experience"
+    ],
+    "summary": "The candidate lacks relevant marine or fishing experience and the physical stamina required for the job, but possesses technical skills that could be transferable.",
+    "candidate": "ColtonBrad"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "strong commitment to social justice and workers' rights",
+      "technical skills in machine learning and NLP"
+    ],
+    "weaknesses": [
+      "no relevant work experience in fishing or maritime industry",
+      "lacks essential physical and practical skills required for the job"
+    ],
+    "summary": "Candidate's background in machine learning and ethical AI aligns poorly with the physical and maritime skills required for boat hand position at Kestrel Bay Fishing Co.",
+    "candidate": "SkyeWhite"
+  }
+]

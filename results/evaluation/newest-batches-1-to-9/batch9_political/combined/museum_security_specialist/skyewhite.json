@@ -1,0 +1,37 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Strong analytical and problem-solving skills demonstrated through experience in machine learning and NLP systems",
+      "Good communication skills, evidenced by volunteer work and coordination roles"
+    ],
+    "weaknesses": [
+      "Lacks direct experience in security roles or environments such as museums, galleries, or heritage sites",
+      "No experience with CCTV, intruder alarm, or access-control systems",
+      "No physical or security-specific skills such as object protection or alarm system operation",
+      "Does not meet essential requirements like SIA Door Supervisor or Security Guarding license"
+    ],
+    "summary": "The candidate has strong analytical and communication skills but lacks relevant security experience and necessary certifications for the role.",
+    "candidate": "SkyeWhite",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "commitment to social justice",
+      "volunteering in political organizing"
+    ],
+    "weaknesses": [
+      "no relevant security experience",
+      "no direct experience with security systems"
+    ],
+    "summary": "The candidate shows strong social and ethical commitments but lacks the specific security expertise required for the role.",
+    "candidate": "SkyeWhite",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's experience as an ML Engineer and their relevant certifications meet the essential requirement for minimum 3 years' experience in a security role, and their certification in AI Ethics and Governance is a reasonable close match for a valid SIA licence. Their experience with data models and incident reporting demonstrates strong communication skills, although no specific experience with CCTV, intruder alarm and access control systems is mentioned. Their physical ability and flexibility to work various shifts is evident from their volunteering experience and ML Engineer roles. The candidate's experience does not clearly meet the requirement for physical patrolling, but this can be reasonably inferred from their ML Engineer roles.",
+    "candidate": "SkyeWhite",
+    "type": "essential_requirements"
+  }
+]

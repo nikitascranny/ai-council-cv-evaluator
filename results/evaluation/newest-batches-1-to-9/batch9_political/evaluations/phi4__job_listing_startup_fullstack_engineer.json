@@ -1,0 +1,31 @@
+[
+  {
+    "score": 5,
+    "strengths": [
+      "The candidate has 4+ years of experience building production software, satisfying the essential experience requirement.",
+      "Strong skills in Python and NLP, which demonstrate the ability to work with complex data systems.",
+      "Shows a commitment to community and ethical considerations, aligning with the company's focus on real-world problems."
+    ],
+    "weaknesses": [
+      "Lacks direct experience with the required technologies: TypeScript/React, Go, Kafka, TimescaleDB, and Redis.",
+      "No experience with full-stack development, particularly in building both frontend and backend services.",
+      "No demonstrated experience in handling production services, including observability, alerting, and on-call participation."
+    ],
+    "summary": "While the candidate has relevant experience in production software and ethical AI development, they lack the specific technical skills and experience with the required technologies and production systems needed for this role.",
+    "candidate": "SkyeWhite"
+  },
+  {
+    "score": 4,
+    "strengths": [
+      "Experience in building large-scale machine learning models which may translate to handling complex systems.",
+      "Strong understanding of infrastructure decisions with an emphasis on energy, aligning with the company's focus on energy systems."
+    ],
+    "weaknesses": [
+      "Lack of direct experience with full-stack development, particularly in React/TypeScript and Go.",
+      "No specific experience in event-driven architectures or distributed systems, which are key for the role.",
+      "No demonstrated experience with real-time data systems or operational dashboards."
+    ],
+    "summary": "Colton has relevant experience with large-scale systems and energy infrastructure but lacks direct experience in the key technologies and practices required for this engineering role.",
+    "candidate": "ColtonBrad"
+  }
+]

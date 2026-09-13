@@ -1,0 +1,36 @@
+[
+  {
+    "score": 4,
+    "strengths": [
+      "Experience in building large-scale machine learning models which may translate to handling complex systems.",
+      "Strong understanding of infrastructure decisions with an emphasis on energy, aligning with the company's focus on energy systems."
+    ],
+    "weaknesses": [
+      "Lack of direct experience with full-stack development, particularly in React/TypeScript and Go.",
+      "No specific experience in event-driven architectures or distributed systems, which are key for the role.",
+      "No demonstrated experience with real-time data systems or operational dashboards."
+    ],
+    "summary": "Colton has relevant experience with large-scale systems and energy infrastructure but lacks direct experience in the key technologies and practices required for this engineering role.",
+    "candidate": "ColtonBrad",
+    "model": "phi4"
+  },
+  {
+    "score": 5,
+    "strengths": [
+      "Experience with large-scale model training and distributed systems",
+      "Relevant background in energy systems"
+    ],
+    "weaknesses": [
+      "Lack of full-stack engineering experience",
+      "No direct experience with the technologies mentioned in the job description (React/TypeScript, Go, Kafka, TimescaleDB)"
+    ],
+    "summary": "Colton has a solid background in energy systems and large-scale model training, but lacks the specific full-stack engineering skills and direct experience with the technologies required for the role.",
+    "candidate": "ColtonBrad",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate has experience in shipping production software and a solid grasp of distributed systems fundamentals, which aligns well with the job requirements. Their background in energy-related software and advocacy for energy self sufficiency is relevant to the job's focus on energy, climate, or hard real-world problems. However, there is no direct evidence of experience with TypeScript/React, Go, or operating services in production, which are key areas where they may need to rely on transferable skills or experience.",
+    "candidate": "ColtonBrad",
+    "type": "essential_requirements"
+  }
+]

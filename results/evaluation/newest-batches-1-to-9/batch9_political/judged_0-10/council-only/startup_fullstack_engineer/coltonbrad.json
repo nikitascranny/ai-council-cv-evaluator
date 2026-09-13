@@ -1,0 +1,8 @@
+{
+  "candidate": "ColtonBrad",
+  "final_score": 4,
+  "score_rationale": "Colton has a relevant background in energy systems and experience with large-scale distributed systems, but lacks direct proficiency in the specific technologies (React/TypeScript, Go, Kafka, TimescaleDB) and full-stack practices required for this role.",
+  "key_strengths": "Relevant energy sector knowledge and experience with distributed systems concepts.",
+  "key_weaknesses": "No direct experience with the essential tech stack (React/TypeScript, Go, Kafka, TimescaleDB) or shipping full-stack features.",
+  "final_evaluation": "Colton has a strong foundation in systems and energy, but the specific technical gaps in the required stack make him unlikely to succeed in this high-pressure, fast-paced engineering role at Pulsegrid."
+}

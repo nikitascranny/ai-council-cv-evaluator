@@ -1,0 +1,28 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Strong technical skills in machine learning and NLP",
+      "Experience in data governance and responsible AI"
+    ],
+    "weaknesses": [
+      "Lack of direct experience in PC/laptop repair",
+      "No evidence of customer service or retail experience"
+    ],
+    "summary": "Skye has impressive technical skills but lacks the practical repair and customer service experience required for the role.",
+    "candidate": "SkyeWhite"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Technical skills in computer engineering and machine learning",
+      "Experience with predictive maintenance models"
+    ],
+    "weaknesses": [
+      "Lack of practical PC/laptop repair experience",
+      "No relevant retail or customer service experience"
+    ],
+    "summary": "The candidate's technical background is strong but lacks the practical repair skills and customer service experience necessary for the role.",
+    "candidate": "ColtonBrad"
+  }
+]

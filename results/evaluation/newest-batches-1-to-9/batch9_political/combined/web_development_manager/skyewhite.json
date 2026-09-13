@@ -1,0 +1,37 @@
+[
+  {
+    "score": 4,
+    "strengths": [
+      "Demonstrates strong problem-solving and project management skills through roles in data modeling and AI system alignment.",
+      "Has leadership experience through volunteer organizing roles which shows potential for team management."
+    ],
+    "weaknesses": [
+      "Lacks direct experience in web development or managing web engineering teams.",
+      "Insufficient experience with the specific tech stack required (React/TypeScript, Node.js, .NET).",
+      "No prior experience with CI/CD, cloud infrastructure, or managing technical roadmaps in a service-oriented architecture.",
+      "No demonstrated experience in handling major platform modernization or monolith decomposition."
+    ],
+    "summary": "The candidate has relevant leadership and project management experience, but lacks the specific technical skills and experience in web development and engineering management required for this role.",
+    "candidate": "SkyeWhite",
+    "model": "phi4"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Experience in building NLP systems",
+      "Commitment to ethical AI practices"
+    ],
+    "weaknesses": [
+      "Lack of web development experience",
+      "Limited team management experience in technical change"
+    ],
+    "summary": "The candidate lacks the required web development and team leadership experience, but shows strong ethical and responsible AI practices.",
+    "candidate": "SkyeWhite",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate has a clear match for the essential requirement of 5+ years of professional web/software engineering experience, though the role was not specifically an engineering manager. Their experience aligns closely with the modern web stack and ML/AI work, particularly in the AI division role. The candidate also has relevant experience in leading technical change and running agile delivery, which suggests they can translate between engineers, product managers, and executives. However, there is no clear evidence of line management or specific CI/CD, cloud infrastructure, or observability experience.",
+    "candidate": "SkyeWhite",
+    "type": "essential_requirements"
+  }
+]

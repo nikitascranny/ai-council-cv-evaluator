@@ -1,0 +1,37 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Demonstrates strong work ethic and commitment to social causes.",
+      "Has technical skills and a background in data modeling, which could be leveraged in data-related tasks on the boat."
+    ],
+    "weaknesses": [
+      "Lacks direct experience with fishing or maritime activities.",
+      "No evidence of physical fitness or experience handling heavy, repetitive manual tasks in outdoor conditions.",
+      "No background in maritime safety or vessel operations.",
+      "No prior experience with the specific fishing techniques mentioned in the job description."
+    ],
+    "summary": "While Skye Whitfield shows strong technical skills and a commitment to community, they lack the necessary maritime experience and physical requirements for a boat hand position.",
+    "candidate": "SkyeWhite",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "strong commitment to social justice and workers' rights",
+      "technical skills in machine learning and NLP"
+    ],
+    "weaknesses": [
+      "no relevant work experience in fishing or maritime industry",
+      "lacks essential physical and practical skills required for the job"
+    ],
+    "summary": "Candidate's background in machine learning and ethical AI aligns poorly with the physical and maritime skills required for boat hand position at Kestrel Bay Fishing Co.",
+    "candidate": "SkyeWhite",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's ML engineering experience, particularly with AI systems and data governance, closely matches the requirement for basic numeracy and the ability to work with data. However, there is no evidence of sea experience or physical fitness for heavy, repetitive manual work in all weathers, which are essential requirements. The candidate's willingness to work early starts and long days is implied through their previous roles, and their reliability is suggested by their consistent employment. ",
+    "candidate": "SkyeWhite",
+    "type": "essential_requirements"
+  }
+]

@@ -1,0 +1,28 @@
+[
+  {
+    "score": 2,
+    "strengths": [
+      "Strong commitment to law and order",
+      "Experience in predictive maintenance"
+    ],
+    "weaknesses": [
+      "No relevant groundskeeping or tracking experience",
+      "No background in immersive theatre or security work"
+    ],
+    "summary": "Colton Braddock lacks the necessary background in groundskeeping, tracking, and security work, despite his strong technical skills and commitment to law and order.",
+    "candidate": "ColtonBrad"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Experience in responsible AI and ethical governance",
+      "Background in data governance and community oversight"
+    ],
+    "weaknesses": [
+      "Lack of relevant work experience in hunting, tracking, or gamekeeping",
+      "No background in security, search and rescue, or military"
+    ],
+    "summary": "The candidate lacks direct experience in the essential and desirable requirements of the role but has a strong background in ethical AI governance.",
+    "candidate": "SkyeWhite"
+  }
+]

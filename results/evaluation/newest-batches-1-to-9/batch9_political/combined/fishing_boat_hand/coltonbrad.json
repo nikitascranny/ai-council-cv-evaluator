@@ -1,0 +1,36 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Candidate has demonstrated problem-solving and analytical skills through their experience in machine learning and predictive modeling."
+    ],
+    "weaknesses": [
+      "Lack of relevant maritime experience or skills related to fishing or boat operations.",
+      "No evidence of physical fitness or comfort with manual, physical labor in all weather conditions.",
+      "Absence of experience with early starts or long workdays typical of fishing operations.",
+      "Missing sea survival training or any related maritime certifications."
+    ],
+    "summary": "Colton Braddock possesses strong analytical and problem-solving skills but lacks the necessary maritime experience, physical fitness, and relevant certifications for the Boat Hand / Deckhand role.",
+    "candidate": "ColtonBrad",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Experience with energy systems",
+      "Technical skills in Python and C++"
+    ],
+    "weaknesses": [
+      "No relevant marine or fishing experience",
+      "Lack of physical labor and manual work experience"
+    ],
+    "summary": "The candidate lacks relevant marine or fishing experience and the physical stamina required for the job, but possesses technical skills that could be transferable.",
+    "candidate": "ColtonBrad",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate demonstrates a reasonable match with the job's essential requirements, as they have relevant experience in data and field operations, which can be closely related to the role. However, the CV does not clearly show physical fitness for heavy, repetitive manual work or sea experience, which are essential for the position. The candidate's certifications and training in computational and data analysis areas are pertinent but do not explicitly address the need for basic numeracy for catch tallies and grading or the willingness to work early starts and long days.",
+    "candidate": "ColtonBrad",
+    "type": "essential_requirements"
+  }
+]

@@ -1,0 +1,28 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "strong commitment to ethical practices",
+      "relevant volunteer experience in environmental and social justice"
+    ],
+    "weaknesses": [
+      "lack of formal education or experience in marine biology or zoology",
+      "no direct experience with aquatic life support systems"
+    ],
+    "summary": "The candidate demonstrates strong ethical and social values, but lacks the specific educational background and technical skills required for the role of Aquarium Biologist.",
+    "candidate": "SkyeWhite"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong technical background in machine learning and data analytics",
+      "Experience with predictive maintenance and efficiency improvements"
+    ],
+    "weaknesses": [
+      "No relevant experience in marine biology, zoology or aquatic animal husbandry",
+      "Lacks hands-on experience with aquatic life support systems"
+    ],
+    "summary": "The candidate has strong technical skills but lacks the necessary background and experience in aquatic animal husbandry and life support systems.",
+    "candidate": "ColtonBrad"
+  }
+]

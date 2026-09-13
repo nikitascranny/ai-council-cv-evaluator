@@ -1,0 +1,36 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Strong problem-solving skills demonstrated through machine learning projects.",
+      "Good analytical skills with experience in data modeling and data governance."
+    ],
+    "weaknesses": [
+      "Lack of relevant educational background in marine or aquatic biology.",
+      "No practical experience in aquatic animal husbandry or life support systems.",
+      "No demonstrated experience with physical, dirty, and repetitive tasks as required for the role."
+    ],
+    "summary": "While the candidate has strong analytical and problem-solving skills, they lack the specific educational background, practical experience, and physical work capacity needed for an Aquarium Biologist role.",
+    "candidate": "SkyeWhite",
+    "model": "phi4"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "strong commitment to ethical practices",
+      "relevant volunteer experience in environmental and social justice"
+    ],
+    "weaknesses": [
+      "lack of formal education or experience in marine biology or zoology",
+      "no direct experience with aquatic life support systems"
+    ],
+    "summary": "The candidate demonstrates strong ethical and social values, but lacks the specific educational background and technical skills required for the role of Aquarium Biologist.",
+    "candidate": "SkyeWhite",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's M.Sc. in Machine Learning from the University of Cape Town meets the educational requirement, although the field is not precisely in marine biology or aquatic biology. The candidate's experience as an ML Engineer and their volunteer role as a Data & Digital Organizer demonstrate a strong understanding of data and a willingness to work on complex, collaborative tasks. However, there is no clear evidence of practical experience in filter cleaning, water chemistry, or working in warm, humid environments, which are essential requirements for the role.",
+    "candidate": "SkyeWhite",
+    "type": "essential_requirements"
+  }
+]

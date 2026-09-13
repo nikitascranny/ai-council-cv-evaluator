@@ -1,0 +1,10 @@
+[
+  {
+    "summary": "The candidate has experience in shipping production software and a solid grasp of distributed systems fundamentals, which aligns well with the job requirements. Their background in energy-related software and advocacy for energy self sufficiency is relevant to the job's focus on energy, climate, or hard real-world problems. However, there is no direct evidence of experience with TypeScript/React, Go, or operating services in production, which are key areas where they may need to rely on transferable skills or experience.",
+    "candidate": "ColtonBrad"
+  },
+  {
+    "summary": "The candidate clearly meets the requirement for experience in shipping production software, as evidenced by roles at GreenGrid Collective and the social media company's AI division. Their experience with TypeScript and React aligns closely with the need for strong experience in these technologies, and their background in machine learning and AI ethics also supports their relevance to the role. However, the candidate's experience with Go or another backend language is unclear, and the specific operational experience in production, such as metrics and tracing, is not detailed in the CV.",
+    "candidate": "SkyeWhite"
+  }
+]

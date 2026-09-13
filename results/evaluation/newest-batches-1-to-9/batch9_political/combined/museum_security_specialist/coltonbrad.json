@@ -1,0 +1,38 @@
+[
+  {
+    "score": 4,
+    "strengths": [
+      "Strong technical skills and problem-solving abilities, demonstrated through experience with machine learning and software development.",
+      "Commitment to law and order, which aligns with the responsibilities of maintaining security and order at the museum.",
+      "Experience in volunteer roles with structured organization and coordination, which may be beneficial for supervising security operations."
+    ],
+    "weaknesses": [
+      "Lack of direct experience in security roles, particularly in a museum or similar setting.",
+      "No evidence of familiarity with CCTV, intruder alarm, or access-control systems.",
+      "Absence of required SIA Door Supervisor or Security Guarding license.",
+      "No experience in conducting physical security patrols or handling incidents like theft or vandalism."
+    ],
+    "summary": "The candidate has strong technical and organizational skills but lacks the specific security experience and required qualifications for the Museum Security Specialist role.",
+    "candidate": "ColtonBrad",
+    "model": "phi4"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong commitment to law and order",
+      "Background in predictive maintenance models"
+    ],
+    "weaknesses": [
+      "Lack of security or museum experience",
+      "No direct experience with security systems or incident response"
+    ],
+    "summary": "The candidate lacks direct experience in security or museum operations and does not meet the essential requirements of the role.",
+    "candidate": "ColtonBrad",
+    "model": "qwen2.5_14b"
+  },
+  {
+    "summary": "The candidate's experience does not clearly meet the essential requirement of at least 3 years' experience in a security role. However, their roles as a Data & Field Operations Analyst and a Software Engineer demonstrate strong problem-solving and coordination skills, which could be relevant. The Candidate's physical fitness and ability to work flexible shifts are not explicitly mentioned, but their diverse work experience shows adaptability. The SIA or regional equivalent certification is unclear, and there is no clear indication of working knowledge of CCTV, intruder alarm, and access control systems.",
+    "candidate": "ColtonBrad",
+    "type": "essential_requirements"
+  }
+]

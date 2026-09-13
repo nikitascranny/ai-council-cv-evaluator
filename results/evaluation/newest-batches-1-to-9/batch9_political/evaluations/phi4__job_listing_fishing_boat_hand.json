@@ -1,0 +1,31 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Candidate has demonstrated problem-solving and analytical skills through their experience in machine learning and predictive modeling."
+    ],
+    "weaknesses": [
+      "Lack of relevant maritime experience or skills related to fishing or boat operations.",
+      "No evidence of physical fitness or comfort with manual, physical labor in all weather conditions.",
+      "Absence of experience with early starts or long workdays typical of fishing operations.",
+      "Missing sea survival training or any related maritime certifications."
+    ],
+    "summary": "Colton Braddock possesses strong analytical and problem-solving skills but lacks the necessary maritime experience, physical fitness, and relevant certifications for the Boat Hand / Deckhand role.",
+    "candidate": "ColtonBrad"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Demonstrates strong work ethic and commitment to social causes.",
+      "Has technical skills and a background in data modeling, which could be leveraged in data-related tasks on the boat."
+    ],
+    "weaknesses": [
+      "Lacks direct experience with fishing or maritime activities.",
+      "No evidence of physical fitness or experience handling heavy, repetitive manual tasks in outdoor conditions.",
+      "No background in maritime safety or vessel operations.",
+      "No prior experience with the specific fishing techniques mentioned in the job description."
+    ],
+    "summary": "While Skye Whitfield shows strong technical skills and a commitment to community, they lack the necessary maritime experience and physical requirements for a boat hand position.",
+    "candidate": "SkyeWhite"
+  }
+]

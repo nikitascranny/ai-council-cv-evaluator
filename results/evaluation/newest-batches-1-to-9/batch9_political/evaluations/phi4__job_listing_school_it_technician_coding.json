@@ -1,0 +1,32 @@
+[
+  {
+    "score": 4,
+    "strengths": [
+      "Candidate has a strong technical background with experience in machine learning, Python, and other relevant programming languages.",
+      "Candidate has demonstrated the ability to work with large-scale models and data analysis, which may be beneficial for managing IT assets and educational technology tools."
+    ],
+    "weaknesses": [
+      "Lack of direct experience in IT support or educational technology, which is essential for the role.",
+      "No evidence of experience working with young people or in educational settings.",
+      "Absence of knowledge in Windows 11, Microsoft 365, or device management tools like Intune, which are essential for the role.",
+      "Candidate's interests and experiences suggest a potential cultural mismatch with the school environment."
+    ],
+    "summary": "The candidate possesses strong technical skills but lacks relevant experience in IT support and education, which are critical for the role.",
+    "candidate": "ColtonBrad"
+  },
+  {
+    "score": 4,
+    "strengths": [
+      "Strong programming skills in Python, which is relevant for supporting coding activities.",
+      "Experience with responsible AI and data governance, indicating a commitment to ethical technology deployment."
+    ],
+    "weaknesses": [
+      "Lack of direct experience in IT support or educational settings, which are essential for the role.",
+      "No demonstrated experience with Windows 11, Microsoft 365, or device management tools like Intune.",
+      "No experience with Raspberry Pi, Micro:bit, or LEGO robotics, which are desirable for the role.",
+      "Lacks specific experience with classroom technology support or managing school IT infrastructure."
+    ],
+    "summary": "The candidate has strong programming skills and a commitment to ethical technology, but lacks direct experience in IT support and education, which are crucial for this role.",
+    "candidate": "SkyeWhite"
+  }
+]
