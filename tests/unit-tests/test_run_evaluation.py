@@ -322,7 +322,6 @@ class TestRunRecord:
         assert run["stages"]["evaluate"]["evaluations"] == 1
         assert run["stages"]["aggregate"]["combined_files"] == 1
         assert run["stages"]["judge"]["ok"] == 1
-        assert run["git"] is None or len(run["git"]["commit"]) == 40
         assert "command" not in run
 
     def test_each_later_run_into_the_same_out_is_appended(self, folders):
@@ -384,11 +383,3 @@ class TestRunRecord:
         # A committed run.json should not carry one person's home folder.
         assert runner.display_path(runner.ROOT_DIR / "data" / "cvs" / "Batch1") == "data/cvs/Batch1"
         assert runner.display_path(tmp_path) == str(tmp_path.resolve())
-
-    def test_without_git_the_commit_is_recorded_as_unknown(self, monkeypatch):
-        def no_git(*args, **kwargs):
-            raise OSError("git not found")
-
-        monkeypatch.setattr(runner.subprocess, "run", no_git)
-
-        assert runner.git_state() is None

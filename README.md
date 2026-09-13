@@ -42,7 +42,7 @@ same `--out` with `--from judge --no-essential` gives both conditions from one
 evaluation, in `judged/with-essential/` and `judged/council-only/`. A rerun
 skips pairs that already have a valid verdict. `--help` lists every option.
 
-Each run also adds a record to `<out>/run.json`: when it ran, the git commit,
+Each run also adds a record to `<out>/run.json`: when it ran,
 the models and options, and each stage's status, counts and timing. 
 
 Before any model call it checks that Ollama is running with every model

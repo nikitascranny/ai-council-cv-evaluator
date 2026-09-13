@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """
 run_evaluation.py
 
@@ -169,19 +168,6 @@ def display_path(path: Path) -> str:
         return str(resolved)
 
 
-def git_state():
-    """The commit the code was at, and whether tracked files had uncommitted
-    changes - which code a run's results came from. None without git."""
-    def git(*args):
-        return subprocess.run(["git", *args], cwd=ROOT_DIR, capture_output=True,
-                              text=True, check=True).stdout.strip()
-    try:
-        return {"commit": git("rev-parse", "HEAD"),
-                "uncommitted_changes": bool(git("status", "--porcelain", "--untracked-files=no"))}
-    except (OSError, subprocess.CalledProcessError):
-        return None
-
-
 def new_record(options) -> dict:
     # The options are recorded one by one rather than as the command typed:
     # an absolute path on the command line would put a home folder into a
@@ -190,7 +176,6 @@ def new_record(options) -> dict:
         "started": _now(),
         "finished": None,
         "exit_code": None,
-        "git": git_state(),
         "python": platform.python_version(),
         "from": options.start,
         "condition": condition(options),
