@@ -427,14 +427,16 @@ def aggregate_stage(options, log, run=run_step, stage=None) -> bool:
 
 
 def is_valid_verdict(path: Path) -> bool:
-    """A verdict worth keeping: JSON holding a numeric final_score in [0, 10]."""
+    """
+    A verdict worth keeping: JSON holding a numeric final_score in [1, 10].
+    if model returns 0, logged as failure, judge again
+    """
     try:
         with open(path, encoding="utf-8") as f:
             score = json.load(f).get("final_score")
     except Exception:
         return False
-    return isinstance(score, (int, float)) and not isinstance(score, bool) and 0 <= score <= 10
-
+    return isinstance(score, (int, float)) and not isinstance(score, bool) and 1 <= score <= 10 
 
 def judge_stage(options, log, run=run_step, stage=None) -> bool:
     stage = {} if stage is None else stage

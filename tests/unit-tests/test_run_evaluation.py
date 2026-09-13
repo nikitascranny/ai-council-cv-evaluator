@@ -102,7 +102,7 @@ def _run(folders, *extra, scripts=None, models=ALL_MODELS):
 class TestIsValidVerdict:
     @pytest.mark.parametrize("content, valid", [
         ({"final_score": 7}, True),
-        ({"final_score": 0}, True),
+        ({"final_score": 0}, False),
         ({"final_score": 10}, True),
         ({"final_score": 7.5}, True),
         ({"final_score": 11}, False),

@@ -17,7 +17,7 @@ prompt is built by default.
 Pass --keep-scores to disable this.
 
 The judge's own output is validated before it is written anywhere: it must
-parse as JSON and carry a numeric final_score in [0, 10]. If it doesn't,
+parse as JSON and carry a numeric final_score in [1, 10]. If it doesn't,
 nothing is written to the "clean" output path -- the raw response is instead
 saved next to it with an ".invalid.json" suffix and the script exits non-zero,
 so a driving shell script can flag the failure instead of silently writing a
@@ -317,7 +317,7 @@ Respond with ONLY a single valid JSON object (no markdown fences, no extra comme
 with exactly these keys:
 {{
   "candidate": "{candidate_name}",
-  "final_score": <integer 0-10>,
+  "final_score": <integer 1-10>,
   "score_rationale": "<1-3 sentences on why this score>",
   "key_strengths": "<synthesized strengths most relevant to the job listing>",
   "key_weaknesses": "<synthesized weaknesses/gaps most relevant to the job listing>",
