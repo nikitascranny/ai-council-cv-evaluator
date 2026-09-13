@@ -100,6 +100,41 @@ def test_essential_stage_scopes_the_cv_rather_than_sending_all_of_it():
     assert seen["scoped"] == "scoped"
 
 
+def test_essential_stage_scopes_the_job_listing_to_its_requirements_section():
+    """job_req_parser should hand the essential check just the requirements,
+    not the whole listing - the same principle already applied to the CV."""
+    seen = {}
+
+    def check(job_text, scoped, candidate, model):
+        seen["job_text"] = job_text
+        return {"summary": "meets"}
+
+    listing = ("About the role\nWe build great things.\n\n"
+               "Essential Requirements\n- Own transport\n- 2 years experience\n\n"
+               "Benefits\nMedical aid.")
+    _drain(essential_stage(listing, _fake_cv(), "ALEX", "qwen",
+                           _deps(check_essential=check)))
+    assert "Own transport" in seen["job_text"]
+    assert "2 years experience" in seen["job_text"]
+    assert "great things" not in seen["job_text"]
+    assert "Medical aid" not in seen["job_text"]
+
+
+def test_essential_stage_sends_the_whole_listing_when_no_requirements_heading_is_found():
+    """A listing job_req_parser can't segment must still reach the model
+    whole, not as an empty string."""
+    seen = {}
+
+    def check(job_text, scoped, candidate, model):
+        seen["job_text"] = job_text
+        return {"summary": "meets"}
+
+    listing = "Just some prose about the role, with no recognised heading at all."
+    _drain(essential_stage(listing, _fake_cv(), "ALEX", "qwen",
+                           _deps(check_essential=check)))
+    assert seen["job_text"] == listing
+
+
 def test_a_rewrite_with_no_matching_headings_falls_back_to_the_whole_text():
     """Plain prose that segment_text cannot resolve to any of the three
     wanted sections must still reach the model - as the whole rewrite,
