@@ -23,6 +23,7 @@ _ROOT = Path(__file__).resolve().parent.parent.parent
 if str(_ROOT / "parser") not in sys.path:
     sys.path.insert(0, str(_ROOT / "parser"))
 
+import job_req_parser  # noqa: E402
 import txt_cv_parser  # noqa: E402
 
 
@@ -82,21 +83,37 @@ def _scope_rewrite(text: str) -> str:
     return scoped or text
 
 
-def essential_stage(job_text, cv, candidate, model, deps):
-    """Scoped input rather than the whole CV - the point of sections_named().
+def _scope_job_requirements(job_text: str) -> str:
+    """The listing's essential-requirements section alone, not the whole ad.
 
-    cv may also be plain text - a rewrite from candidate mode, which has no
-    ParsedCV sections of its own - and is scoped by segmenting it with
-    txt_cv_parser first, falling back to the whole text if that finds none of
-    the three sections wanted.
+    job_req_parser looks for a heading in its own vocabulary and stops at the
+    next section heading. `or job_text` covers both failure modes the same
+    way - a heading it doesn't recognise (returns None) and a recognised
+    heading immediately followed by another one (returns ""): either way,
+    the essential-requirements model should see the whole listing rather
+    than an accidentally empty one.
+    """
+    section = job_req_parser.extract_requirements_section(job_text)
+    return section or job_text
+
+
+def essential_stage(job_text, cv, candidate, model, deps):
+    """Scoped input on both sides, not the whole listing and the whole CV.
+
+    The CV side is scoped to experience/education/certifications, by
+    sections_named() for a parsed CV or txt_cv_parser for a rewrite (see
+    _scope_rewrite). The listing side is scoped to its essential-requirements
+    section by job_req_parser (see _scope_job_requirements). Both fall back
+    to their whole, unscoped text when scoping finds nothing.
     """
     yield Event("essential", "start", {"model": model}, candidate=candidate)
     started = time.time()
     if isinstance(cv, str):
-        scoped = _scope_rewrite(cv)
+        scoped_cv = _scope_rewrite(cv)
     else:
-        scoped = cv.sections_named(*_ESSENTIAL_SECTIONS)
-    result = deps.check_essential(job_text, scoped, candidate, model=model)
+        scoped_cv = cv.sections_named(*_ESSENTIAL_SECTIONS)
+    scoped_job = _scope_job_requirements(job_text)
+    result = deps.check_essential(scoped_job, scoped_cv, candidate, model=model)
     yield Event("essential", "done", {"summary": result.get("summary", "")},
                 time.time() - started, candidate)
     return result
