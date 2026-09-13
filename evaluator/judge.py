@@ -471,7 +471,7 @@ def main():
         print("Essential-requirements check: included")
     prompt = build_judge_prompt(job_text, summaries, candidate_name, essential,
                                 keep_scores=args.keep_scores)
-    print(f"prompt:\n{prompt}")
+    # print(f"prompt:\n{prompt}")
 
     print(f"Sending {len(summaries)} summary(ies) for '{candidate_name}' ({job_name}) to {args.model} at {args.host} ...")
     start_time = time.time()
