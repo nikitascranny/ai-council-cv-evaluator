@@ -26,31 +26,33 @@ import rewriter_v2 as rv2
 # ---------------- build_rewrite_prompt ----------------
 
 class TestBuildRewritePrompt:
-    def test_substitutes_job_and_cv_text(self):
-        prompt = rv2.build_rewrite_prompt("MY CV BODY", "MY JOB BODY", "Some Role")
+    def test_substitutes_cv_text_and_job_title(self):
+        prompt = rv2.build_rewrite_prompt("MY CV BODY", "Some Role")
         assert "MY CV BODY" in prompt
-        assert "MY JOB BODY" in prompt
+        assert "Some Role" in prompt
 
     def test_curly_braces_in_cv_text_survive_literally(self):
         # Plain string.replace is used specifically because a CV can
         # contain literal "{" / "}" (template artifacts) that .format()
         # would misparse as fields. Confirm they pass through untouched.
         cv_text = "Skills: {Python, C++}, salary expectation: {negotiable}"
-        prompt = rv2.build_rewrite_prompt(cv_text, "job text", "Role")
+        prompt = rv2.build_rewrite_prompt(cv_text, "Role")
         assert cv_text in prompt
 
-    def test_job_title_not_inserted_directly(self):
-        # Per the function's own docstring: the model infers the role
-        # from job_text, job_title is not substituted into the prompt.
-        prompt = rv2.build_rewrite_prompt("cv", "job", "UNIQUE_TITLE_TOKEN")
-        assert "UNIQUE_TITLE_TOKEN" not in prompt
+    def test_job_title_is_inserted_directly(self):
+        # Per the function's own docstring: v2 has no job description to
+        # infer the role from, so job_title IS substituted into the prompt
+        # (unlike rewriter_v1, which withholds it).
+        prompt = rv2.build_rewrite_prompt("cv", "UNIQUE_TITLE_TOKEN")
+        assert "UNIQUE_TITLE_TOKEN" in prompt
+        assert "{job_title}" not in prompt
 
     def test_strict_false_omits_strict_suffix(self):
-        prompt = rv2.build_rewrite_prompt("cv", "job", "Role", strict=False)
+        prompt = rv2.build_rewrite_prompt("cv", "Role", strict=False)
         assert "INVENTED information" not in prompt
 
     def test_strict_true_appends_strict_suffix(self):
-        prompt = rv2.build_rewrite_prompt("cv", "job", "Role", strict=True)
+        prompt = rv2.build_rewrite_prompt("cv", "Role", strict=True)
         assert "INVENTED information" in prompt
         # Strict suffix must come after the base prompt content, not replace it
         assert prompt.index("cv") < prompt.index("INVENTED information") or "cv" in prompt
@@ -123,7 +125,7 @@ class TestRunAgent:
         monkeypatch.setattr(rv2, "rejection_reasons", lambda *a, **k: [])
         monkeypatch.setattr(rv2, "advisory_caps_runs", lambda *a, **k: [])
 
-        result = rv2._run_agent("original cv", "job text", "Role", "Candidate", "phi4")
+        result = rv2._run_agent("original cv", "Role", "Candidate", "phi4")
 
         assert result.rewritten_text == "REWRITTEN TEXT"
         assert result.rejected is False
@@ -140,7 +142,7 @@ class TestRunAgent:
 
         monkeypatch.setattr(rv2, "call_ollama_text", fake_call)
 
-        result = rv2._run_agent("original cv", "job text", "Role", "Candidate", "phi4")
+        result = rv2._run_agent("original cv", "Role", "Candidate", "phi4")
 
         assert result.error == "connection refused"
         assert result.rewritten_text == "original cv"  # falls back to init value
@@ -162,7 +164,7 @@ class TestRunAgent:
         monkeypatch.setattr(rv2, "rejection_reasons", fake_reasons)
         monkeypatch.setattr(rv2, "advisory_caps_runs", lambda *a, **k: [])
 
-        result = rv2._run_agent("original cv", "job text", "Role", "Candidate", "phi4")
+        result = rv2._run_agent("original cv", "Role", "Candidate", "phi4")
 
         assert len(calls) == 2
         assert result.retried is True
@@ -175,7 +177,7 @@ class TestRunAgent:
         monkeypatch.setattr(rv2, "rejection_reasons", lambda *a, **k: ["invented fact"])
         monkeypatch.setattr(rv2, "advisory_caps_runs", lambda *a, **k: [])
 
-        result = rv2._run_agent("ORIGINAL CV TEXT", "job text", "Role", "Candidate", "phi4")
+        result = rv2._run_agent("ORIGINAL CV TEXT", "Role", "Candidate", "phi4")
 
         assert result.retried is True
         assert result.rejected is True
@@ -194,7 +196,7 @@ class TestRunAgent:
         monkeypatch.setattr(rv2, "call_ollama_text", fake_call)
         monkeypatch.setattr(rv2, "rejection_reasons", lambda *a, **k: ["invented fact"])
 
-        result = rv2._run_agent("original cv", "job text", "Role", "Candidate", "phi4")
+        result = rv2._run_agent("original cv", "Role", "Candidate", "phi4")
 
         assert result.error == "timeout"
         assert result.retried is True
@@ -205,7 +207,7 @@ class TestRunAgent:
         monkeypatch.setattr(rv2, "rejection_reasons", lambda *a, **k: [])
         monkeypatch.setattr(rv2, "advisory_caps_runs", lambda *a, **k: [])
 
-        result = rv2._run_agent("word word", "job", "Role", "Candidate", "phi4")
+        result = rv2._run_agent("word word", "Role", "Candidate", "phi4")
 
         assert result.length_ratio == len("word word word") / len("word word")
         assert 0.0 <= result.similarity <= 1.0
@@ -215,7 +217,7 @@ class TestRunAgent:
         monkeypatch.setattr(rv2, "rejection_reasons", lambda *a, **k: [])
         monkeypatch.setattr(rv2, "advisory_caps_runs", lambda *a, **k: [])
 
-        result = rv2._run_agent("", "job", "Role", "Candidate", "phi4")
+        result = rv2._run_agent("", "Role", "Candidate", "phi4")
 
         assert result.length_ratio is None
 
@@ -229,7 +231,7 @@ class TestRewriteCv:
         monkeypatch.setattr(rv2, "rejection_reasons", lambda *a, **k: [])
         monkeypatch.setattr(rv2, "advisory_caps_runs", lambda *a, **k: [])
 
-        results = rv2.rewrite_cv("cv text", "job text", "Role", candidate_name="Candidate")
+        results = rv2.rewrite_cv("cv text", "Role", candidate_name="Candidate")
 
         assert [r.agent_model for r in results] == ["phi4", "qwen2.5:14b"]
         assert results[0].rewritten_text == "text from phi4"
