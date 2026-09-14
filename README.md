@@ -20,34 +20,6 @@ python app.py --no-browser
 
 Requires Python 3.13. Stop the server with Ctrl-C.
 
-## Batch evaluation (command line, use for experiments)
-
-To evaluate a folder of CVs against a folder of job listings without the web
-app, run the pipeline script:
-
-```
-python evaluator/run_evaluation.py --cvs data/cvs/Batch1 --out results/evaluation/batch1
-```
-
-It runs three steps in order:
-
-1. `Evaluate_CV.py` scores every CV against every job listing with each council
-   model, and runs the essential-requirements check.
-2. `aggregate_results.py` combines those into one file per job and candidate.
-3. `judge.py` gives each of those a final verdict, with the
-   essential-requirements summary in its own section of the prompt.
-
-`--no-essential` judges on the council's summaries alone. Running again on the
-same `--out` with `--from judge --no-essential` gives both conditions from one
-evaluation, in `judged/with-essential/` and `judged/council-only/`. A rerun
-skips pairs that already have a valid verdict. `--help` lists every option.
-
-Each run also adds a record to `<out>/run.json`: when it ran,
-the models and options, and each stage's status, counts and timing. 
-
-Before any model call it checks that Ollama is running with every model
-pulled, that job listings are named `job_listing_<slug>.pdf`, and that no two CVs share a candidate name.
-
 ## Modes
 
 The app has two modes, linked from the home page:
@@ -77,6 +49,34 @@ The app has two modes, linked from the home page:
   Any real rewrite (not a fact-guard fallback) can then be sent back through
   the council with **Re-evaluate this version**, and its new scores are shown
   beside the original CV's.
+
+## Batch evaluation (command line, use for experiments)
+
+To evaluate a folder of CVs against a folder of job listings without the web
+app, run the pipeline script:
+
+```
+python evaluator/run_evaluation.py --cvs data/cvs/Batch1 --out results/evaluation/batch1
+```
+
+It runs three steps in order:
+
+1. `Evaluate_CV.py` scores every CV against every job listing with each council
+   model, and runs the essential-requirements check.
+2. `aggregate_results.py` combines those into one file per job and candidate.
+3. `judge.py` gives each of those a final verdict, with the
+   essential-requirements summary in its own section of the prompt.
+
+`--no-essential` judges on the council's summaries alone. Running again on the
+same `--out` with `--from judge --no-essential` gives both conditions from one
+evaluation, in `judged/with-essential/` and `judged/council-only/`. A rerun
+skips pairs that already have a valid verdict. `--help` lists every option.
+
+Each run also adds a record to `<out>/run.json`: when it ran,
+the models and options, and each stage's status, counts and timing. 
+
+Before any model call it checks that Ollama is running with every model
+pulled, that job listings are named `job_listing_<slug>.pdf`, and that no two CVs share a candidate name.
 
 ## Layout
 
