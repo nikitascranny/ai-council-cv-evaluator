@@ -1,0 +1,3 @@
+candidate,job_title,agent_model,used_fallback,rejected,retried,reasons,advisory,length_ratio,similarity,error
+ALEX PARK,Startup Fullstack Engineer,phi4,False,False,False,[],"['insurance consultant key responsibilities', 'retail it department key responsibilities', 'shared services department key responsibilities']",1.0269220094365805,0.7536800785083415,
+ALEX PARK,Startup Fullstack Engineer,qwen2.5:14b,True,True,True,['job title claimed but not held: Startup Fullstack Engineer'],['startup fullstack engineer west edge'],1.0,1.0,

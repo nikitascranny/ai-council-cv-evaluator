@@ -1,0 +1,3 @@
+candidate,job_title,agent_model,used_fallback,rejected,retried,reasons,advisory,length_ratio,similarity,error
+GEOFF NITSCHKE,Computer Repair Technician,phi4,False,False,False,[],[],0.9730178497301785,0.7455252918287938,
+GEOFF NITSCHKE,Computer Repair Technician,qwen2.5:14b,True,True,True,['job title claimed but not held: Computer Repair Technician'],['gn geoffnitschke computer repair technician'],1.0,1.0,

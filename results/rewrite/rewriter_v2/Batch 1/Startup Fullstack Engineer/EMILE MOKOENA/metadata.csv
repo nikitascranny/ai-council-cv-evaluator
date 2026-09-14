@@ -1,0 +1,3 @@
+candidate,job_title,agent_model,used_fallback,rejected,retried,reasons,advisory,length_ratio,similarity,error
+EMILE MOKOENA,Startup Fullstack Engineer,phi4,False,False,True,[],['work experience lead machine learning engineer'],1.1146435452793835,0.7867528271405493,
+EMILE MOKOENA,Startup Fullstack Engineer,qwen2.5:14b,False,False,True,[],['work experience lead machine learning engineer'],0.9959055876685935,0.7780590717299578,

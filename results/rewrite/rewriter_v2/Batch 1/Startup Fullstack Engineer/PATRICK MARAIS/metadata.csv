@@ -1,0 +1,3 @@
+candidate,job_title,agent_model,used_fallback,rejected,retried,reasons,advisory,length_ratio,similarity,error
+PATRICK MARAIS,Startup Fullstack Engineer,phi4,True,True,True,"['number dropped from the CV: 2015', 'number dropped from the CV: 2021', 'number dropped from the CV: 300', 'number dropped from the CV: 40', 'number dropped from the CV: 700']",['community health care services'],1.0,1.0,
+PATRICK MARAIS,Startup Fullstack Engineer,qwen2.5:14b,True,True,True,"['number dropped from the CV: 2019', 'number dropped from the CV: 2021', 'number dropped from the CV: 2022', 'number dropped from the CV: 300', 'number dropped from the CV: 40', 'number dropped from the CV: 700']",[],1.0,1.0,

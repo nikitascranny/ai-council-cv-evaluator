@@ -1,0 +1,3 @@
+candidate,job_title,agent_model,used_fallback,rejected,retried,reasons,advisory,length_ratio,similarity,error
+GEOFF NITSCHKE,Startup Fullstack Engineer,phi4,False,False,False,[],['supported ux'],0.8096720630967207,0.6445578231292517,
+GEOFF NITSCHKE,Startup Fullstack Engineer,qwen2.5:14b,False,False,False,[],['afriux collective apr'],0.9736405147364051,0.8742331288343558,
