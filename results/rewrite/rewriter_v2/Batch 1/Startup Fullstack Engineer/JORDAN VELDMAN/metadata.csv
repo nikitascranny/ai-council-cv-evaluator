@@ -1,0 +1,3 @@
+candidate,job_title,agent_model,used_fallback,rejected,retried,reasons,advisory,length_ratio,similarity,error
+JORDAN VELDMAN,Startup Fullstack Engineer,phi4,False,False,False,[],['jordan veldman cape town'],0.7959681352625589,0.6141843971631206,
+JORDAN VELDMAN,Startup Fullstack Engineer,qwen2.5:14b,False,False,True,[],['microsoft office jordan veldman experience candidate senior architectural technologist marchetti'],0.9354576491627378,0.8696774193548387,
