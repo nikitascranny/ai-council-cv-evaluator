@@ -1,0 +1,8 @@
+{
+  "candidate": "bad_cv_sarah_lynne_van_der_merwe",
+  "final_score": 3,
+  "score_rationale": "The candidate does not meet the essential requirements for a founding full-stack engineer, particularly lacking experience with TypeScript/React and backend languages, nor a solid grasp of distributed systems.",
+  "key_strengths": "Leadership experience, communication skills.",
+  "key_weaknesses": "No evidence of shipping production software with required technologies, lack of experience with distributed systems or energy sector domain knowledge.",
+  "final_evaluation": "The candidate does not meet the essential technical requirements of the role. Their experience is in business leadership and lacks the specific technical skills needed for this engineering position."
+}

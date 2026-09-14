@@ -1,0 +1,8 @@
+{
+  "candidate": "SamanthaOne",
+  "final_score": 5,
+  "score_rationale": "Samantha has strong backend experience with Go, meeting essential requirements, but lacks direct frontend experience in React/TypeScript and evidence of handling production incidents, which are critical for this role.",
+  "key_strengths": "4+ years of backend experience, particularly with Go, aligning with the essential backend requirement.",
+  "key_weaknesses": "No direct experience with TypeScript/React, which is essential for frontend development, and no evidence of handling production observability, incidents, or 24/7 on-call responsibilities.",
+  "final_evaluation": "Samantha is a strong candidate for a backend-focused role due to her Go expertise, but the role requires full-stack capability and proven experience with production systems and ambiguity. She may need additional frontend development experience to fully meet the requirements."
+}

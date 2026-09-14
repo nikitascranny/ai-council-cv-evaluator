@@ -1,0 +1,8 @@
+{
+  "candidate": "HomerSimsSon",
+  "final_score": 3,
+  "score_rationale": "The candidate has 4+ years of production software experience but lacks clear evidence for the specific technologies (TypeScript/React, Go) and methodologies (distributed systems, event-driven) required by the job listing.",
+  "key_strengths": "Relevant software engineering experience (4+ years) and potential exposure to frontend technologies.",
+  "key_weaknesses": "No clear evidence of backend language proficiency (specifically Go), distributed systems knowledge, or demonstrated communication skills in the role.",
+  "final_evaluation": "The candidate has some relevant experience, but the lack of clear evidence for the essential technical skills and production experience required by Pulsegrid makes it unlikely they are a strong fit for this role."
+}

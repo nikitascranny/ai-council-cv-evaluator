@@ -1,0 +1,8 @@
+{
+  "candidate": "SystemShock",
+  "final_score": 6,
+  "score_rationale": "The candidate meets essential requirements for shipping production software and distributed systems knowledge but lacks direct Go experience and observability/on-call expertise, which are critical for the role.",
+  "key_strengths": "4+ years of production software experience, strong TypeScript/React and backend skills (Node/Python), comfort with ambiguity, and excellent communication.",
+  "key_weaknesses": "No direct experience with Go (preferred backend) or observability/on-call, and gaps in event-driven systems and energy sector domain knowledge.",
+  "final_evaluation": "The candidate has a solid technical foundation and adaptability but misses key backend and operational skills required for this high-velocity role. They could still be considered with a strong interview, but the lack of Go and observability experience is a notable weakness."
+}

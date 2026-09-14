@@ -1,0 +1,8 @@
+{
+  "candidate": "bad_cv_jason_muller",
+  "final_score": 2,
+  "score_rationale": "The candidate has a fast learning trait but lacks the essential technical skills, production experience, and distributed systems knowledge required for this role.",
+  "key_strengths": "Fast learning ability, minimal responsibility preference",
+  "key_weaknesses": "No evidence of shipping production software with TypeScript/React/Go or operating production systems, lack of industry knowledge, unclear grasp of distributed systems fundamentals",
+  "final_evaluation": "The candidate does not meet the core requirements for this role. They lack direct technical experience in the required stacks and production systems knowledge. While fast learning is a positive trait, it is insufficient to compensate for the missing essential skills and experience."
+}

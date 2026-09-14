@@ -1,0 +1,8 @@
+{
+  "candidate": "PriyaPicture",
+  "final_score": 3,
+  "score_rationale": "The candidate has strong React/TypeScript skills but lacks any backend experience, which is essential for the role.",
+  "key_strengths": "Relevant full-stack frontend experience (React/TypeScript), 4+ years of production software shipping, demonstrated performance optimization skills.",
+  "key_weaknesses": "No experience with backend languages (Go, Rust, Java), lack of production system operations experience (metrics, tracing, incident response), no energy sector domain knowledge.",
+  "final_evaluation": "Priya possesses strong frontend skills but is unsuitable for this role due to the critical requirement for backend development and production operations experience."
+}

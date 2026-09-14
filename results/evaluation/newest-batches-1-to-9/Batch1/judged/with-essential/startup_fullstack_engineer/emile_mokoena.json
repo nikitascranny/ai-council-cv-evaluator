@@ -1,0 +1,8 @@
+{
+  "candidate": "EMILE MOKOENA",
+  "final_score": 3,
+  "score_rationale": "The candidate's core technical skills in TypeScript/React and Go are insufficient, and they lack evidence of shipping complex full-stack systems or direct energy sector experience, despite having AWS cloud knowledge.",
+  "key_strengths": "Strong AWS cloud and distributed systems knowledge, demonstrated by certifications and relevant experience.",
+  "key_weaknesses": "Lack of direct experience with TypeScript/React full-stack development, Go backend language, and shipping complex production systems.",
+  "final_evaluation": "This candidate has relevant cloud and distributed systems knowledge but lacks the essential full-stack development and backend language experience required for this role."
+}

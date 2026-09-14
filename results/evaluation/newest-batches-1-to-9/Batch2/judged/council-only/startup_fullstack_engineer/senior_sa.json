@@ -1,0 +1,8 @@
+{
+  "candidate": "senior_sa",
+  "final_score": 5,
+  "score_rationale": "The candidate's strong backend and distributed systems experience is highly relevant, but the lack of required TypeScript/React expertise and energy sector familiarity are significant gaps.",
+  "key_strengths": "Proven backend engineering skills (Go) and distributed systems expertise, demonstrated ability to build and operate scalable services, leadership experience in technical roles.",
+  "key_weaknesses": "No experience with TypeScript/React as required by the role, limited direct exposure to energy sector technologies or domain.",
+  "final_evaluation": "The candidate is technically competent but misses the essential frontend skills (TypeScript/React) needed for the role. Without addressing this gap, they won't be able to fully own product surfaces end-to-end as required."
+}

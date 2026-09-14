@@ -1,0 +1,8 @@
+{
+  "candidate": "professional_cv_sarah_lynne_van_der_merwe",
+  "final_score": 2,
+  "score_rationale": "The candidate has significant transferable leadership and communication skills but lacks the crucial technical experience required for this full-stack engineering role, particularly in shipping production software, working with TypeScript/React, backend languages (Go), and distributed systems.",
+  "key_strengths": "Leadership experience, stakeholder communication skills, enthusiasm for real-world problems.",
+  "key_weaknesses": "No evidence of shipping production software, lack of technical expertise in key areas (TypeScript/React, Go, distributed systems).",
+  "final_evaluation": "This candidate does not meet the essential technical requirements for the role. While they possess strong leadership and communication skills, these are not a substitute for the hands-on software engineering and distributed systems experience needed to succeed as a founding engineer at Pulsegrid."
+}

@@ -1,0 +1,8 @@
+{
+  "candidate": "bad_cv_jason_muller",
+  "final_score": 2,
+  "score_rationale": "The candidate's lack of essential experience in relevant technologies and production systems outweighs their potential adaptability.",
+  "key_strengths": "Fast learner when motivated, decisive communication (potential)",
+  "key_weaknesses": "Lacks direct experience with TypeScript/React, Go, Kafka, TimescaleDB, and managing production services",
+  "final_evaluation": "This candidate does not meet the core requirements of the role, despite potential learning ability, making them a poor fit for the fast-paced, production-focused engineering position."
+}

@@ -1,0 +1,8 @@
+{
+  "candidate": "Margaret",
+  "final_score": 3,
+  "score_rationale": "Margaret has demonstrable front-end skills but lacks the essential backend and distributed systems experience required for the Pulsegrid role.",
+  "key_strengths": "Strong front-end development experience (mobile apps using Flutter) and proven ability to improve product quality and user satisfaction.",
+  "key_weaknesses": "No experience with TypeScript/React (essential for frontend), Go backend, Kafka, TimescaleDB, Redis, or distributed systems fundamentals. Also lacks demonstrated experience with observability, incident response, or scaling event-driven platforms.",
+  "final_evaluation": "Margaret has some relevant front-end skills and a strong foundation in software engineering, but critically misses the backend and distributed systems expertise required for this engineering role. While adaptable, she would need to prove these essential skills before being considered a good fit."
+}

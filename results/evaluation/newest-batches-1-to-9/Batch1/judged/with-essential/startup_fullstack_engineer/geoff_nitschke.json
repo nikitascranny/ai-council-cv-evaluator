@@ -1,0 +1,8 @@
+{
+  "candidate": "GEOFF NITSCHKE",
+  "final_score": 3,
+  "score_rationale": "The candidate's score is low due to a clear lack of full-stack development experience, particularly in backend languages like Go, and no evidence of production system operations knowledge, despite some alignment between their research skills and communication requirements.",
+  "key_strengths": "Strong background in UX research and design, experience in qualitative and quantitative research methods.",
+  "key_weaknesses": "No evidence of shipping production software with TypeScript/React and Go, lacks experience in observability, incident response, or event-driven architectures, no energy sector domain knowledge.",
+  "final_evaluation": "The candidate does not meet the core requirements for the founding Full-Stack Engineer role, despite some strengths in research and communication. Their lack of technical skills and production experience makes them unsuitable for this position."
+}

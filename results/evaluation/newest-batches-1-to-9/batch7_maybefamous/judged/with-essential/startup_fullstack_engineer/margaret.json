@@ -1,0 +1,8 @@
+{
+  "candidate": "Margaret",
+  "final_score": 5,
+  "score_rationale": "Margaret has strong front-end and Agile-related experience, but lacks evidence of backend development, distributed systems, and production observability skills, which are critical for the role.",
+  "key_strengths": "4+ years of production software experience, mobile app development with Flutter/Dart (which aligns with front-end needs), relevant coursework in Agile practices.",
+  "key_weaknesses": "No demonstrated experience with backend languages (Go required), Kafka, TimescaleDB, or Redis; no evidence of operating services in production or understanding distributed systems fundamentals.",
+  "final_evaluation": "Margaret has a solid foundation in software engineering and front-end development relevant to the role, but the essential backend and distributed systems requirements are not met. She may not be the best fit for this highly technical and demanding position."
+}

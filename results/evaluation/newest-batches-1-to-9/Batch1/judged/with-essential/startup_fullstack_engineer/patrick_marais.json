@@ -1,0 +1,8 @@
+{
+  "candidate": "PATRICK MARAIS",
+  "final_score": 3,
+  "score_rationale": "The candidate's experience does not align with the job's essential technical requirements, particularly a lack of demonstrated skills in full-stack development with TypeScript/React and Go, nor evidence of working with distributed systems or the energy sector.",
+  "key_strengths": "Leadership experience and background in compliance/risk management.",
+  "key_weaknesses": "No clear evidence of shipping production software with React/TypeScript and Go, lack of experience with distributed systems or the energy sector.",
+  "final_evaluation": "The candidate has strengths in management and compliance but lacks the core technical skills and sector-specific experience required for this engineering role. Their background does not match the job's requirements for full-stack development and distributed systems expertise."
+}

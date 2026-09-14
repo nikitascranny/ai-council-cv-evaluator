@@ -1,0 +1,8 @@
+{
+  "candidate": "professional_cv_sarah_lynne_van_der_merwe",
+  "final_score": 1,
+  "score_rationale": "The candidate's CV lacks essential technical experience required for the role, particularly in full-stack development, backend languages (Go), and distributed systems, despite some strengths in communication and leadership.",
+  "key_strengths": "Business development and communication skills.",
+  "key_weaknesses": "Complete lack of technical experience in software engineering, TypeScript, React, Go, and distributed systems, missing the essential foundation for the role.",
+  "final_evaluation": "The candidate does not meet the technical requirements for Pulsegrid's Full-Stack Engineer role, which demands specific expertise in full-stack development, backend languages, and distributed systems."
+}

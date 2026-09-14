@@ -1,0 +1,8 @@
+{
+  "candidate": "bad_cv_kevin_jones",
+  "final_score": 2,
+  "score_rationale": "The candidate's CV lacks any evidence of relevant technical skills or production experience, which are essential for this fast-paced, early-stage engineering role.",
+  "key_strengths": "None identified that are relevant to the job listing.",
+  "key_weaknesses": "Severe lack of experience with core technologies (React/TypeScript, Go, Kafka, TimescaleDB) and shipping software in production.",
+  "final_evaluation": "The candidate does not appear to meet the essential requirements for this role, particularly the need for proven experience with the specified technologies and production environments."
+}

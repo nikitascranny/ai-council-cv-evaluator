@@ -1,0 +1,8 @@
+{
+  "candidate": "intermediate_american",
+  "final_score": 5,
+  "score_rationale": "Priya Nair has a strong technical foundation and leadership experience, but notable gaps exist in essential backend technologies (Node.js, .NET) and experience with high-volume booking systems.",
+  "key_strengths": "Proven leadership and mentorship, strong technical skills in modern web stacks (React, TypeScript, Java/Kotlin), experience in cloud infrastructure and observability.",
+  "key_weaknesses": "Lack of direct experience with Node.js and .NET (essential requirement), no experience with accessibility standards or high-volume booking systems (desirable requirement).",
+  "final_evaluation": "Priya Nair demonstrates relevant technical and leadership skills but requires additional experience in Node.js/.NET and understanding of transport-specific systems to fully meet the role's requirements."
+}

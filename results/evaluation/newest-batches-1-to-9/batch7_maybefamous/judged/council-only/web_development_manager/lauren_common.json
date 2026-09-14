@@ -1,0 +1,8 @@
+{
+  "candidate": "Lauren_common",
+  "final_score": 3,
+  "score_rationale": "The candidate's experience focuses on mobile development, which does not align with the required web technologies. There is no evidence of team management or leading technical change, two essential aspects of the role.",
+  "key_strengths": "Mobile app development experience and demonstrated ability to improve product quality.",
+  "key_weaknesses": "Lack of direct experience with required web technologies (React/TypeScript, Node.js or .NET) and no experience in line-managing engineers or leading technical change.",
+  "final_evaluation": "While the candidate possesses some technical and quality improvement skills, they lack the core web development experience and leadership capabilities required for this Engineering Manager role."
+}

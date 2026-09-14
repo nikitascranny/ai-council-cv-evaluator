@@ -1,1 +1,0 @@
-results should be sorted by batch, then job description, then candidate. don't mess it up :]
