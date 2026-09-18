@@ -22,8 +22,18 @@ ORIGINAL CV text (result.used_fallback = True). The caller/eventual UI
 should surface this clearly rather than let a fallback look like a normal
 rewrite - the point is the user always gets two things to compare, and
 never an unflagged fabrication.
+
+Two sets of agents: the local pair (phi4, qwen2.5:14b) through the Ollama
+daemon on this machine, and a larger cloud pair on Ollama Cloud, chosen with
+rewrite_cv(profile="cloud"). A cloud agent that fails - no key, no
+connection, a usage limit, a timeout - does not cost the candidate that
+slot: its local partner rewrites the CV instead, and the result records
+which cloud model it replaced and why (replaced_cloud_model, cloud_error).
+That is a different thing from used_fallback, which means the fact guard
+rejected a rewrite and the slot holds the ORIGINAL CV.
 """
 
+import os
 import sys
 import csv
 import difflib
@@ -70,6 +80,26 @@ AGENT_MODELS = ["phi4","qwen2.5:14b"]
 # a case for parsed_cv's chunks() rather than pushing this number higher.
 REWRITE_NUM_PREDICT = 4096
 
+LOCAL = "local"
+CLOUD = "cloud"
+PROFILES = (LOCAL, CLOUD)
+
+# Ollama Cloud's agents, each paired with the local agent that takes its slot
+# if the cloud call fails. Two families again (OpenAI, Google), for the same
+# reason the local pair is phi4 and qwen: two versions worth comparing, not
+# one model's second draft. Both are on Ollama's free plan's starter models.
+CLOUD_AGENTS = [("gpt-oss:120b", "phi4"), ("gemma4:31b", "qwen2.5:14b")]
+CLOUD_HOST = "https://ollama.com/api/chat"
+CLOUD_API_KEY_ENV = "OLLAMA_API_KEY"
+# gpt-oss always reasons before it answers, and those tokens count against
+# num_predict - so the cloud budget is larger than the local one, and its
+# reasoning is kept to "low" so it cannot spend the budget thinking.
+CLOUD_NUM_PREDICT = 16384
+CLOUD_THINK = {"gpt-oss:120b": "low"}
+# A cloud call that hangs costs the candidate this long before the local
+# fallback starts, so it is minutes rather than the local hour.
+CLOUD_TIMEOUT = 300
+
 
 @dataclass
 class RewriteResult:
@@ -94,6 +124,15 @@ class RewriteResult:
     length_ratio: float | None = None
     similarity: float | None = None
     error: str | None = None
+    # Where agent_model ran: LOCAL or CLOUD.
+    provider: str = LOCAL
+    # Set when this local result stands in for a cloud agent that failed.
+    replaced_cloud_model: str | None = None
+    cloud_error: str | None = None
+    # Tokens Ollama Cloud counted across this agent's calls (retry included),
+    # which is what its usage is billed on. None for local runs.
+    tokens_in: int | None = None
+    tokens_out: int | None = None
 
     def to_dict(self) -> dict:
         return asdict(self)
@@ -159,7 +198,32 @@ def build_rewrite_prompt(cv_text: str, job_title: str, *, strict: bool = False) 
     return prompt + _STRICT_SUFFIX if strict else prompt
 
 
-def _run_agent(cv_text: str, job_title: str, candidate_name: str, model: str) -> RewriteResult:
+def _call(model: str, prompt: str, result: RewriteResult, api_key: str | None):
+    """One model call, local or cloud depending on result.provider.
+
+    The local call is exactly the one this module always made. A cloud call
+    adds the host, the key, the larger budget and the shorter timeout, and
+    adds the tokens it used to the result.
+    """
+    if result.provider != CLOUD:
+        return call_ollama_text(model, prompt, num_predict=REWRITE_NUM_PREDICT)
+
+    stats = {}
+    kwargs = {"num_predict": CLOUD_NUM_PREDICT, "host": CLOUD_HOST,
+              "headers": {"Authorization": "Bearer " + (api_key or "")},
+              "keep_alive": None, "timeout": CLOUD_TIMEOUT, "stats": stats}
+    if model in CLOUD_THINK:
+        kwargs["think"] = CLOUD_THINK[model]
+    text, error = call_ollama_text(model, prompt, **kwargs)
+    if stats.get("prompt_eval_count") is not None:
+        result.tokens_in = (result.tokens_in or 0) + stats["prompt_eval_count"]
+    if stats.get("eval_count") is not None:
+        result.tokens_out = (result.tokens_out or 0) + stats["eval_count"]
+    return text, error
+
+
+def _run_agent(cv_text: str, job_title: str, candidate_name: str, model: str,
+               provider: str = LOCAL, api_key: str | None = None) -> RewriteResult:
     """
     One agent's full attempt: rewrite, guard, retry once with a strict
     reminder if flagged, and fall back to the original CV text if the
@@ -168,11 +232,11 @@ def _run_agent(cv_text: str, job_title: str, candidate_name: str, model: str) ->
     """
     result = RewriteResult(
         candidate=candidate_name, job_title=job_title, agent_model=model,
-        original_text=cv_text, rewritten_text=cv_text,
+        original_text=cv_text, rewritten_text=cv_text, provider=provider,
     )
 
     prompt = build_rewrite_prompt(cv_text, job_title)
-    text, error = call_ollama_text(model, prompt, num_predict=REWRITE_NUM_PREDICT)
+    text, error = _call(model, prompt, result, api_key)
     if error:
         result.error = error
         return result  # rewritten_text stays as the original, set above
@@ -181,7 +245,7 @@ def _run_agent(cv_text: str, job_title: str, candidate_name: str, model: str) ->
     if reasons:
         result.retried = True
         strict_prompt = build_rewrite_prompt(cv_text, job_title, strict=True)
-        text, error = call_ollama_text(model, strict_prompt, num_predict=REWRITE_NUM_PREDICT)
+        text, error = _call(model, strict_prompt, result, api_key)
         if error:
             result.error = error
             return result
@@ -210,19 +274,62 @@ def _run_agent(cv_text: str, job_title: str, candidate_name: str, model: str) ->
     return result
 
 
-def rewrite_cv(cv_text: str, job_title: str, candidate_name: str = "") -> list[RewriteResult]:
+def rewrite_cv(cv_text: str, job_title: str, candidate_name: str = "",
+               profile: str = LOCAL) -> list[RewriteResult]:
     """
     Run both independent rewriting agents against one candidate/job pair
     and return both results, for the caller to display side by side.
+
+    profile picks the agents: LOCAL runs AGENT_MODELS on this machine, CLOUD
+    runs CLOUD_AGENTS on Ollama Cloud with a local fallback per slot (see
+    _rewrite_on_cloud).
 
     Reconciling or critiquing the two versions (the "judge" step from the
     diagram) is intentionally not built here - this function's whole job
     is producing the two candidate rewrites plus their guard status.
     """
+    if profile == CLOUD:
+        return _rewrite_on_cloud(cv_text, job_title, candidate_name)
+    if profile != LOCAL:
+        raise ValueError(f"unknown rewriter profile: {profile!r}")
     return [
         _run_agent(cv_text, job_title, candidate_name, model)
         for model in AGENT_MODELS
     ]
+
+
+def _rewrite_on_cloud(cv_text: str, job_title: str, candidate_name: str) -> list[RewriteResult]:
+    """
+    Each cloud agent in turn; any that fails is replaced by its local
+    partner, so the candidate still gets two versions.
+
+    Only a failed call counts (result.error) - a cloud rewrite the fact guard
+    rejected is a finished result about that model, not an outage, and is
+    returned as it is.
+
+    Once one cloud call has failed, the rest of the run stays local rather
+    than trying the cloud again: the usual causes (no key, no connection, a
+    usage limit) will fail the next call the same way, and a timeout would
+    cost the candidate another CLOUD_TIMEOUT before its fallback even starts.
+    """
+    api_key = os.environ.get(CLOUD_API_KEY_ENV, "").strip()
+    cloud_error = None if api_key else f"{CLOUD_API_KEY_ENV} is not set"
+
+    results = []
+    for cloud_model, local_model in CLOUD_AGENTS:
+        if cloud_error is None:
+            result = _run_agent(cv_text, job_title, candidate_name, cloud_model,
+                                provider=CLOUD, api_key=api_key)
+            if not result.error:
+                results.append(result)
+                continue
+            cloud_error = result.error
+
+        result = _run_agent(cv_text, job_title, candidate_name, local_model)
+        result.replaced_cloud_model = cloud_model
+        result.cloud_error = cloud_error
+        results.append(result)
+    return results
 
 
 def _safe_folder_name(name: str) -> str:
@@ -279,7 +386,8 @@ def save_results(results: list[RewriteResult]):
     fieldnames = [
         "candidate", "job_title", "agent_model", "used_fallback",
         "rejected", "retried", "reasons", "advisory",
-        "length_ratio", "similarity", "error"
+        "length_ratio", "similarity", "error",
+        "provider", "replaced_cloud_model", "cloud_error", "tokens_in", "tokens_out"
     ]
     
     with csv_file_path.open("w", encoding="utf-8", newline="") as f:
@@ -302,6 +410,10 @@ def main():
     ap.add_argument("--cv", help="CV filename inside data/cvs/Batch1/ (defaults to the first one found)")
     ap.add_argument("--job", help="Job listing filename inside data/job-listings/ (defaults to the first one found)")
     ap.add_argument("--job-title", help="Human-readable job title (defaults to the job PDF's filename, cleaned up)")
+    ap.add_argument("--cloud", action="store_true",
+                    help=f"Rewrite with the Ollama Cloud agents ({', '.join(c for c, _ in CLOUD_AGENTS)}) "
+                         f"instead of the local ones. Needs {CLOUD_API_KEY_ENV} set; a cloud agent "
+                         f"that fails is replaced by its local partner.")
     args = ap.parse_args()
 
     cv_files = sorted(CVS_FOLDER.glob("*.pdf"))
@@ -322,7 +434,8 @@ def main():
     cv = load_cv(cv_path)
     cv_text = cv.full_text()
 
-    results = rewrite_cv(cv_text, job_title, candidate_name=candidate_name)
+    results = rewrite_cv(cv_text, job_title, candidate_name=candidate_name,
+                         profile=CLOUD if args.cloud else LOCAL)
 
     # Save outputs to structured directories
     saved_dir = save_results(results)
@@ -331,8 +444,12 @@ def main():
 
     for r in results:
         print(f"\n{'=' * 60}")
-        print(f" AGENT: {r.agent_model}")
+        print(f" AGENT: {r.agent_model}  ({r.provider})")
         print(f"{'=' * 60}")
+        if r.replaced_cloud_model:
+            print(f"  [!] ran locally in place of {r.replaced_cloud_model}: {r.cloud_error}")
+        if r.tokens_in is not None or r.tokens_out is not None:
+            print(f"  cloud tokens: {r.tokens_in} in, {r.tokens_out} out")
         if r.error:
             print(f"  [!] {r.error}")
             continue

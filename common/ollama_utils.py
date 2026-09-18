@@ -32,6 +32,17 @@ def extract_json(text: str) -> dict:
     return json.loads(match.group(0))
 
 
+def _error_detail(response) -> str:
+    """The "error" field of a failed Ollama reply, or "" if there is none."""
+    if response is None:
+        return ""
+    try:
+        detail = response.json().get("error", "")
+    except Exception:
+        return ""
+    return detail if isinstance(detail, str) else ""
+
+
 def call_ollama_json(model: str,
                      prompt: str,
                      num_predict: int = 1024,
@@ -92,12 +103,20 @@ def call_ollama_text(model: str,
                      temperature=None, # float
                      timeout: int=3600, # guard against hung request (alive but stuck process). To refactor in evaluate files.
                      num_ctx: int = None, # context window size in tokens; None leaves Ollama's default (usually 4096)
+                     headers: dict = None, # e.g. {"Authorization": "Bearer <key>"} for Ollama Cloud
+                     think=None, # reasoning level for models that take one, e.g. "low" for gpt-oss; None sends nothing
+                     stats: dict = None, # if given, filled with the reply's token counts and done_reason
                     ):
 
     """
-    Send a single user-turn prompt to a local Ollama model and return its
+    Send a single user-turn prompt to an Ollama model and return its
     raw text reply - no JSON parsing. For tasks where the model's output
     IS the deliverable (e.g. a rewritten CV), not a JSON envelope around it.
+
+    host defaults to the local daemon. Ollama Cloud (https://ollama.com/api/chat)
+    takes the same request body, so a cloud call is the same call with a
+    different host and an Authorization header - and keep_alive=None, since
+    there is no local model to keep loaded.
 
     Returns a (text, error) tuple, matching call_ollama_json's shape:
       - On success: (str, None)
@@ -111,28 +130,45 @@ def call_ollama_text(model: str,
     options: dict[str, Union[int, float]] = {"num_predict": num_predict}
     if num_ctx is not None:
         options["num_ctx"] = num_ctx
+    body = {
+        "model": model,
+        "messages": [{"role": "user", "content": prompt}],
+        "stream": False,
+        "options": options,
+    }
+    if keep_alive is not None:
+        body["keep_alive"] = keep_alive
+    if think is not None:
+        body["think"] = think
+    extra = {"headers": headers} if headers else {}
     try:
-        # gets the models reply from the local Ollama API and raises an exception if the request fails
+        # gets the models reply from the Ollama API and raises an exception if the request fails
         response = requests.post(
             host,
-            json={
-                "model": model,
-                "messages": [{"role": "user", "content": prompt}],
-                "stream": False,
-                "options": options,
-                "keep_alive": keep_alive,
-            },
-            timeout=timeout ## Use to avoid hung request
+            json=body,
+            timeout=timeout, ## Use to avoid hung request
+            **extra,
         )
         response.raise_for_status()
 
     except requests.exceptions.RequestException as e: # includes HTTPError
-        # Catches connection failures (Ollama not running), timeouts, and HTTP error statuses alike, 
+        # Catches connection failures (Ollama not running), timeouts, and HTTP error statuses alike,
         # so callers always get back a (dict,str) pair instead of an uncaught exception killing the run.
         error = f"REQUEST ERROR: {e}"
+        detail = _error_detail(getattr(e, "response", None))
+        if detail:
+            # Ollama says why in the body ({"error": "..."}), which the status
+            # line alone does not - "429 Too Many Requests" could be the plan's
+            # concurrency limit or its usage running out.
+            error += f" ({detail})"
         return ({}, error)
 
-    raw_reply = response.json()["message"]["content"]
+    reply = response.json()
+    if stats is not None:
+        stats.update({"prompt_eval_count": reply.get("prompt_eval_count"),
+                      "eval_count": reply.get("eval_count"),
+                      "done_reason": reply.get("done_reason")})
+    raw_reply = reply["message"]["content"]
     cleaned = strip_think_tags(raw_reply)
 
     if not cleaned:
