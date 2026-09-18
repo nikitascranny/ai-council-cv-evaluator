@@ -38,7 +38,6 @@ FEEDBACK_BACKEND = None
 
 # rewriter_v2_judge's own CLI defaults. Its module constants cover the model,
 # host, token budget and context size; these three exist only in argparse.
-_JUDGE_TEMPERATURE = 0.2
 _JUDGE_TIMEOUT = 3600
 _JUDGE_MAX_RETRIES = 3
 
@@ -300,7 +299,7 @@ def _load_feedback_backend():
                 prompt, names,
                 judge.DEFAULT_MODEL, judge.DEFAULT_HOST,
                 num_predict=judge.DEFAULT_NUM_PREDICT,
-                temperature=_JUDGE_TEMPERATURE, timeout=_JUDGE_TIMEOUT,
+                timeout=_JUDGE_TIMEOUT,
                 max_retries=_JUDGE_MAX_RETRIES,
                 num_ctx=judge_num_ctx(prompt, judge.DEFAULT_NUM_PREDICT,
                                       judge.DEFAULT_NUM_CTX))
