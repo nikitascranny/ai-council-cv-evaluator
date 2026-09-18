@@ -1,0 +1,40 @@
+[
+  {
+    "score": 1,
+    "strengths": [],
+    "weaknesses": [
+      "Complete lack of required educational background in Marine Biology, Zoology, or Life Sciences",
+      "No evidence of experience with aquatic husbandry or life support systems",
+      "No evidence of physical fitness or willingness to perform manual labor/cleaning tasks",
+      "Located in the USA (Austin, Texas) with no mention of UK right to work",
+      "Professional experience is entirely in software engineering, which is irrelevant to this role"
+    ],
+    "summary": "The candidate is a software engineer with no relevant education or experience for an entry-level Aquarium Biologist position.",
+    "candidate": "intermediate_american",
+    "tokens_in": 1820,
+    "tokens_out": 153,
+    "model": "gemma4_31b"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong technical problem‑solving and documentation skills",
+      "Experience with monitoring, logging and systematic troubleshooting"
+    ],
+    "weaknesses": [
+      "No marine biology, zoology or related life‑science education",
+      "No experience with aquarium husbandry, water chemistry, or life‑support systems",
+      "Lacks physical‑hands‑on animal care or filter‑cleaning background"
+    ],
+    "summary": "Despite solid engineering abilities, the candidate lacks the essential biological knowledge and practical aquarium experience required for the role.",
+    "candidate": "intermediate_american",
+    "tokens_in": 1702,
+    "tokens_out": 154,
+    "model": "gpt-oss_120b"
+  },
+  {
+    "summary": "The candidate does not meet the educational requirement as their degree is in Computer Engineering rather than Marine Biology, Zoology, Aquatic Biology or a related life science. They have relevant transferable skills such as a strong attention to detail and record keeping from their studies, which align with the job's observational and record-keeping needs. Physical fitness requirements are unclear due to lack of specific information, but they can lift up to 25 kg, which is a reasonable match. The job requires full right to work in the UK and ability to pass a background check, which are not addressed in the CV.",
+    "candidate": "intermediate_american",
+    "type": "essential_requirements"
+  }
+]

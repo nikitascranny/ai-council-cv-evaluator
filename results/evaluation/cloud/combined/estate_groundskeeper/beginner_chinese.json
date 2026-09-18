@@ -1,0 +1,40 @@
+[
+  {
+    "score": 1,
+    "strengths": [],
+    "weaknesses": [
+      "No experience in groundskeeping, gamekeeping, or countryside management",
+      "No evidence of physical fitness, tracking, or search and rescue capabilities",
+      "No experience working with hounds or managing estate boundaries",
+      "Professional background is entirely in software engineering, which is irrelevant to the role",
+      "No evidence of military or security background"
+    ],
+    "summary": "The candidate is a junior software engineer with zero relevant skills or experience for a live-in estate groundskeeper and hunt coordinator role.",
+    "candidate": "beginner_chinese",
+    "tokens_in": 2222,
+    "tokens_out": 141,
+    "model": "gemma4_31b"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Demonstrates ability to learn new tools quickly",
+      "Strong technical and documentation skills"
+    ],
+    "weaknesses": [
+      "No relevant groundskeeping, gamekeeping, or outdoor experience",
+      "Lacks physical fitness, tracking, dog handling, or pursuit background required by the role",
+      "Unfamiliar with the unique, high‑discretion, live‑in estate environment"
+    ],
+    "summary": "The candidate's software background offers little to no relevance to the demanding, outdoors‑focused, high‑discretion role.",
+    "candidate": "beginner_chinese",
+    "tokens_in": 2097,
+    "tokens_out": 162,
+    "model": "gpt-oss_120b"
+  },
+  {
+    "summary": "The candidate has 5 years of groundskeeping experience, which meets the requirement for 'proven groundskeeping experience' and is likely transferable to 'gamekeeping' or 'countryside management.' The candidate's excellent physical fitness is evident from a marathon completion and relevant job experience. There is no explicit mention of hunting experience or 'pursuit oriented' background, but the experience in tracking and search & rescue is a reasonable close match. The candidate has a clean driving license and mentions willingness to live on site, suggesting a reasonable match for working in remote areas. There is no clear evidence of unconditional discretion or the need to sign a comprehensive NDA, which is a clear requirement.",
+    "candidate": "beginner_chinese",
+    "type": "essential_requirements"
+  }
+]

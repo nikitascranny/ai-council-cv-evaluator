@@ -1,0 +1,42 @@
+[
+  {
+    "score": 1,
+    "strengths": [
+      "Strong general technical aptitude",
+      "Experience with troubleshooting complex systems"
+    ],
+    "weaknesses": [
+      "No evidence of hardware repair skills (RAM, SSD, screen replacements)",
+      "Overqualified in software engineering but underqualified in physical technician work",
+      "Located in China, whereas the job is in Tillingford, UK",
+      "Lack of experience in retail/customer service for non-technical users"
+    ],
+    "summary": "The candidate is a high-level software engineer based in China, making them entirely unsuitable for a local, hands-on hardware repair and shop assistant role in a small UK village.",
+    "candidate": "middle_chinese",
+    "tokens_in": 1773,
+    "tokens_out": 144,
+    "model": "gemma4_31b"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong software engineering background",
+      "Experience with troubleshooting complex systems and mentoring"
+    ],
+    "weaknesses": [
+      "No hands‑on PC/laptop repair or hardware experience",
+      "No customer‑facing retail or informal service experience",
+      "Location in China, unlikely to commute to Tillingford"
+    ],
+    "summary": "Highly skilled in software development but lacks the practical hardware repair and local customer service experience required for the role.",
+    "candidate": "middle_chinese",
+    "tokens_in": 1650,
+    "tokens_out": 142,
+    "model": "gpt-oss_120b"
+  },
+  {
+    "summary": "The candidate's CV demonstrates a clear match for the ability to work Saturdays and a reasonable match for being friendly and patient with older customers. However, there is no evidence provided for basic PC/laptop repair skills or honesty and reliability, making these requirements unclear from the CV.",
+    "candidate": "middle_chinese",
+    "type": "essential_requirements"
+  }
+]

@@ -1,0 +1,39 @@
+[
+  {
+    "score": 1,
+    "strengths": [],
+    "weaknesses": [
+      "No experience with commercial fishing or boat handling",
+      "No evidence of physical fitness or ability to perform heavy manual labor",
+      "Professional background is entirely in software engineering, not maritime work",
+      "Located in Beijing, China, while the job is based in Kestrel Bay, UK",
+      "No evidence of 'sea legs' or ability to work in harsh weather conditions"
+    ],
+    "summary": "The candidate is a software engineer with no relevant skills, experience, or geographical proximity to the requirements of a deckhand role.",
+    "candidate": "beginner_chinese",
+    "tokens_in": 1689,
+    "tokens_out": 148,
+    "model": "gemma4_31b"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Demonstrates ability to learn new tools quickly",
+      "Strong teamwork and communication experience from teaching and internship"
+    ],
+    "weaknesses": [
+      "No maritime or physical labor experience",
+      "Lacks required sea legs, fitness, early‑morning availability, and relevant certifications"
+    ],
+    "summary": "The candidate’s tech background shows learning potential but offers virtually no relevant fishing or boat‑hand experience.",
+    "candidate": "beginner_chinese",
+    "tokens_in": 1587,
+    "tokens_out": 127,
+    "model": "gpt-oss_120b"
+  },
+  {
+    "summary": "The candidate demonstrates clear fit for the physically fit and comfortable with heavy, repetitive manual work, basic numeracy for catch tallies and grading, and willingness to work early starts and long days. The requirement for sea legs is a reasonable/close match as the candidate has experience in leisure boating, though no commercial or sea angling experience is listed. The candidate's punctuality and reliability are unclear from the CV, and there is no evidence of a history of severe seasickness.",
+    "candidate": "beginner_chinese",
+    "type": "essential_requirements"
+  }
+]

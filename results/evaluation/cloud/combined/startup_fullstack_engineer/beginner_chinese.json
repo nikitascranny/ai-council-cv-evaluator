@@ -1,0 +1,45 @@
+[
+  {
+    "score": 2,
+    "strengths": [
+      "Proficiency in TypeScript and JavaScript",
+      "Experience with full-stack development (Vue.js, Node.js, Python)",
+      "Familiarity with Docker and AWS basics"
+    ],
+    "weaknesses": [
+      "Severe lack of professional experience (Junior/Intern vs. required 4+ years)",
+      "No experience with the core backend stack (Go) or distributed systems (Kafka, TimescaleDB)",
+      "No evidence of operating production services at scale or handling on-call responsibilities",
+      "Location mismatch (Beijing-based vs. UK/EU timezone requirement)",
+      "Lacks the 'founding engineer' seniority needed to help interview and onboard the next ten engineers"
+    ],
+    "summary": "The candidate is an entry-level graduate whose experience level and location are entirely incompatible with the requirements of a Founding Full-Stack Engineer role.",
+    "candidate": "beginner_chinese",
+    "tokens_in": 1905,
+    "tokens_out": 215,
+    "model": "gemma4_31b"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Experience building web front‑ends with Vue.js and TypeScript",
+      "Familiar with REST APIs, Docker, CI/CD, and writing unit tests",
+      "Strong academic background and teaching/mentoring experience"
+    ],
+    "weaknesses": [
+      "Only ~1 year of professional experience, far below the 4+ years required",
+      "No experience with React, Go, Kafka, TimescaleDB, or high‑throughput event‑driven systems",
+      "Limited exposure to production‑grade observability, on‑call duties, and large‑scale distributed systems"
+    ],
+    "summary": "The candidate shows solid early‑career web development skills but lacks the senior full‑stack, Go, and real‑time systems experience essential for a founding engineer at Pulsegrid.",
+    "candidate": "beginner_chinese",
+    "tokens_in": 1754,
+    "tokens_out": 217,
+    "model": "gpt-oss_120b"
+  },
+  {
+    "summary": "The candidate clearly meets the requirement for 4+ years of experience shipping production software, with strong experience in TypeScript/React and a solid grasp of distributed systems fundamentals. Their communication skills are also evident. The requirement for backend language experience, specifically Go, is a reasonable/close match as the candidate has experience in Rust/Node/Java. Operating services in production is not explicitly mentioned, but the candidate's experience in distributed systems and incident response is a reasonable inference. The requirement for experience with energy, climate, or hard real-world problems is unclear from the CV.",
+    "candidate": "beginner_chinese",
+    "type": "essential_requirements"
+  }
+]

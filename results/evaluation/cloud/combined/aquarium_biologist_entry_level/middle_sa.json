@@ -1,0 +1,42 @@
+[
+  {
+    "score": 1,
+    "strengths": [],
+    "weaknesses": [
+      "Complete lack of relevant educational background in Marine Biology, Zoology, or Life Sciences",
+      "No experience in aquatic animal husbandry or life support system (LSS) maintenance",
+      "No evidence of the physical fitness requirements or willingness to perform manual cleaning tasks",
+      "Located in South Africa with no mentioned right to work in the UK",
+      "Professional experience is entirely within Software Engineering and Fintech"
+    ],
+    "summary": "The candidate is a Software Engineer with no relevant qualifications, experience, or geographic proximity for an entry-level Aquarium Biologist role.",
+    "candidate": "middle_sa",
+    "tokens_in": 1814,
+    "tokens_out": 152,
+    "model": "gemma4_31b"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Demonstrated strong analytical and problem‑solving skills from software engineering roles",
+      "Experience with monitoring, logging, and systematic troubleshooting that could translate to equipment maintenance",
+      "Proven ability to learn new technologies quickly and mentor junior staff"
+    ],
+    "weaknesses": [
+      "No relevant degree or formal education in marine biology, zoology, or related life sciences",
+      "No experience with aquarium husbandry, water chemistry, or life support system maintenance",
+      "Lacks right‑to‑work status in the UK and has no indication of willingness to relocate",
+      "Physical fitness for heavy, dirty, repetitive tasks and weekend/holiday rota not demonstrated"
+    ],
+    "summary": "The candidate’s technical aptitude is strong but they lack the essential biological background, hands‑on aquarium experience, and UK work eligibility required for the role.",
+    "candidate": "middle_sa",
+    "tokens_in": 1699,
+    "tokens_out": 262,
+    "model": "gpt-oss_120b"
+  },
+  {
+    "summary": "The candidate's education and professional experience in computer engineering do not meet the requirement for a degree in Marine Biology, Zoology, Aquatic Biology or a related life science. However, their contribution to engineering guilds and experience in API operations could be seen as transferable skills for some aspects of the role. Their physical fitness and ability to work flexible hours are clearly met, but there is no evidence of a basic understanding of water chemistry or filter cleaning tasks.",
+    "candidate": "middle_sa",
+    "type": "essential_requirements"
+  }
+]

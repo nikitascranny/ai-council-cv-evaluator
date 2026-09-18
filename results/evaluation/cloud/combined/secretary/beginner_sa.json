@@ -1,0 +1,42 @@
+[
+  {
+    "score": 1,
+    "strengths": [
+      "Strong technical literacy and proficiency with software",
+      "Experience in organized, deadline-driven environments (sprints)"
+    ],
+    "weaknesses": [
+      "Complete lack of secretarial or administrative experience",
+      "No evidence of reception, diary management, or client-facing office skills",
+      "Career goals are focused on software engineering, not practice administration",
+      "Location mismatch (candidate is based in South Africa for a UK on-site role)"
+    ],
+    "summary": "The candidate is a specialized Software Developer whose skills and career objectives are entirely unrelated to the Secretary / Administrative Assistant role.",
+    "candidate": "beginner_sa",
+    "tokens_in": 1655,
+    "tokens_out": 157,
+    "model": "gemma4_31b"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Demonstrates strong technical and analytical skills",
+      "Shows ability to learn new tools and collaborate in teams"
+    ],
+    "weaknesses": [
+      "Lacks any secretarial, receptionist or office administration experience",
+      "No evidence of required typing speed, Microsoft Office proficiency, or handling confidential client information",
+      "Career objective focused on software development, not administrative support"
+    ],
+    "summary": "The candidate's background is unrelated to the administrative secretary role, resulting in a very low fit.",
+    "candidate": "beginner_sa",
+    "tokens_in": 1538,
+    "tokens_out": 141,
+    "model": "gpt-oss_120b"
+  },
+  {
+    "summary": "The candidate's CV clearly meets the requirement for good typing speed and accuracy, as well as knowledge of Microsoft Office. The candidate's phone and face-to-face communication skills are a reasonable match based on the listed responsibilities. The CV does not provide clear evidence of previous secretarial, receptionist, or office administration experience, though the candidate's attitude is noted as a strong point. Discretion and organization skills are also inferred from the candidate's experience and are considered reasonable matches.",
+    "candidate": "beginner_sa",
+    "type": "essential_requirements"
+  }
+]

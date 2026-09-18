@@ -1,0 +1,38 @@
+[
+  {
+    "summary": "The candidate's education in Computer Science does not meet the requirement for a degree in Marine Biology, Zoology, Aquatic Biology or a related life science. However, their strong technical skills and experience in software development could be relevant to the 'basic understanding of water chemistry and the nitrogen cycle in closed aquatic systems' requirement, as they may be able to apply their technical expertise to this area. The physical fitness and willingness to work odd hours are not explicitly met, but the candidate's involvement in mentoring and hackathons suggests they might be adaptable to such tasks. The candidate's ability to work on projects and collaborate with teams could also be transferable to the role.",
+    "candidate": "beginner_american"
+  },
+  {
+    "summary": "The candidate appears to meet the essential requirement of a degree in a related life science, though the specific field is not explicitly stated. The willingness to perform physical tasks is evident, making the second requirement a reasonable match. The candidate's observational skills and attention to detail, coupled with careful record keeping, align well with the third requirement. Physical fitness and willingness to work during non-standard hours also appear to be met. However, the candidate's background in water chemistry and the nitrogen cycle in closed aquatic systems is unclear from the CV.",
+    "candidate": "beginner_chinese"
+  },
+  {
+    "summary": "The candidate's degree in Environmental Science, while not exactly in Marine Biology, Zoology, or Aquatic Biology, is a reasonable close match. The ability to lift up to 25 kg and work on ladders, along with physical fitness, meets the physical requirements. The candidate's experience in biological research and field work suggests a willingness to perform physical and repetitive tasks, though no specific mention is made of filter cleaning or LSS maintenance. Observational skills, attention to detail, and record keeping are indicated. Basic knowledge of water chemistry and the nitrogen cycle is not explicitly stated but is implied by the research background. The candidate’s ability to work on weekends and in warm environments is confirmed. There is no evidence of a right to work in the UK or a background check.",
+    "candidate": "beginner_sa"
+  },
+  {
+    "summary": "The candidate does not meet the educational requirement as their degree is in Computer Engineering rather than Marine Biology, Zoology, Aquatic Biology or a related life science. They have relevant transferable skills such as a strong attention to detail and record keeping from their studies, which align with the job's observational and record-keeping needs. Physical fitness requirements are unclear due to lack of specific information, but they can lift up to 25 kg, which is a reasonable match. The job requires full right to work in the UK and ability to pass a background check, which are not addressed in the CV.",
+    "candidate": "intermediate_american"
+  },
+  {
+    "summary": "The candidate's degree in Marine Biology clearly meets the job requirement. Their detailed description of laboratory and field work experience, including tasks involving physical labor and observational skills, is a reasonable match. However, specific mention of water chemistry or the nitrogen cycle is unclear, and the candidate's physical fitness and ability to work weekends are not directly evidenced.",
+    "candidate": "middle_chinese"
+  },
+  {
+    "summary": "The candidate's education and professional experience in computer engineering do not meet the requirement for a degree in Marine Biology, Zoology, Aquatic Biology or a related life science. However, their contribution to engineering guilds and experience in API operations could be seen as transferable skills for some aspects of the role. Their physical fitness and ability to work flexible hours are clearly met, but there is no evidence of a basic understanding of water chemistry or filter cleaning tasks.",
+    "candidate": "middle_sa"
+  },
+  {
+    "summary": "The candidate's degree in Computer Science is a reasonable match for the required life science degree, as both involve strong analytical and technical skills. Their experience in technical leadership, reliability, and incident management could transfer well to the physical, dirty, and repetitive tasks required. However, their background lacks direct experience in marine biology, zoology, or aquatic biology, and there is no evidence of a basic understanding of water chemistry or the nitrogen cycle in closed aquatic systems, which are essential requirements for the role.",
+    "candidate": "senior_american"
+  },
+  {
+    "summary": "The candidate's degree in Computer Science is a reasonable/close match to the required degree in a life science. They lack relevant experience in the marine biology or aquatic biology fields. Their physical fitness and willingness to perform dirty, repetitive tasks are not evidenced, but closely related experience in leading and mentoring teams can count as strong observational skills and attention to detail. The candidate does not have a background in water chemistry or the nitrogen cycle, which are clearly not met. They do not mention availability to work weekends, bank holidays, or early mornings, which is unclear from the CV.",
+    "candidate": "senior_chinese"
+  },
+  {
+    "summary": "The candidate does not meet the essential requirement of a degree in Marine Biology, Zoology, Aquatic Biology, or a related life science. However, their experience in engineering and software development shows strong observational skills and attention to detail, which could be transferable. The physical fitness requirements are unclear as there is no evidence of lifting or working in specific environments. The other requirements, such as the ability to work weekends and a background check, are not addressed in the CV.",
+    "candidate": "senior_sa"
+  }
+]

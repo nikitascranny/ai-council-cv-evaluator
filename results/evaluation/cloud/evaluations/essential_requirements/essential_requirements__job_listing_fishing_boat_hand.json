@@ -1,0 +1,38 @@
+[
+  {
+    "summary": "The candidate does not clearly meet the essential requirement of physical fitness for heavy, repetitive manual work in all weathers or the need for sea legs. However, their experience in software engineering and teaching assistant roles demonstrates reliable and punctual work, basic numeracy, and the ability to work flexible hours. There is no evidence of previous experience on boats, and no history of severe seasickness is provided.",
+    "candidate": "beginner_american"
+  },
+  {
+    "summary": "The candidate demonstrates clear fit for the physically fit and comfortable with heavy, repetitive manual work, basic numeracy for catch tallies and grading, and willingness to work early starts and long days. The requirement for sea legs is a reasonable/close match as the candidate has experience in leisure boating, though no commercial or sea angling experience is listed. The candidate's punctuality and reliability are unclear from the CV, and there is no evidence of a history of severe seasickness.",
+    "candidate": "beginner_chinese"
+  },
+  {
+    "summary": "The candidate's CV demonstrates physical fitness and comfort with manual work, which are clear matches. Previous experience in sailing is not explicitly mentioned, but the CV could indicate a reasonable match through unrelated maritime or boating experiences. The candidate shows reliability and punctuality through work history, and basic numeracy is evident from academic achievements. Early starts and long working hours are not directly addressed in the CV, but the candidate's history of consistent work could be seen as relevant. There is no clear indication of a history of severe seasickness.",
+    "candidate": "beginner_sa"
+  },
+  {
+    "summary": "The candidate's education and technical skills, while relevant to other roles, do not clearly meet the physical and practical requirements of the job. Their educational background and AWS certification indicate a strong aptitude for technology, but they lack evidence of physical fitness for heavy, repetitive manual work or sea experience. The absence of information on reliability, punctuality, and willingness to work early starts or long days leaves these requirements unclear.",
+    "candidate": "intermediate_american"
+  },
+  {
+    "summary": "The candidate's CV clearly meets the requirement of being physically fit and comfortable with heavy, repetitive manual work. The candidate's experience is a reasonable/close match to the need for sea legs, as they have worked on a boat for leisure activities. The candidate appears to meet the requirement of reliability and punctuality. Basic numeracy skills are evident, and the candidate is willing to work early starts and long days. However, there is no clear evidence of a history of working in moderate seas, which is a clearly not met requirement.",
+    "candidate": "middle_chinese"
+  },
+  {
+    "summary": "The candidate's BEng Computer Engineering degree and AWS Certified Developer – Associate certification suggest strong technical skills, but these are not directly related to the physical and manual work requirements. They have relevant experience from engineering guilds, which could indicate a reasonable match for reliability and teamwork. However, the CV does not provide evidence of physical fitness for heavy, repetitive manual work or sea legs, and there is no indication of previous time on boats, which are crucial for the role. The willingness to work early starts and long days is implied, and there is no mention of a history of severe seasickness.",
+    "candidate": "middle_sa"
+  },
+  {
+    "summary": "The candidate's CV does not clearly demonstrate the essential requirements for the job. They are clearly not met in terms of physical fitness, manual work experience, sea legs, and willingness to work early starts and long days. A reasonable/close match includes basic numeracy for catch tallies and grading, as the candidate has experience in technical planning and reliability scorecards. The CV does not provide evidence of the candidate's ability to work in challenging weather conditions or their history of working offshore.",
+    "candidate": "senior_american"
+  },
+  {
+    "summary": "The candidate's CV does not clearly demonstrate physical fitness for heavy, repetitive manual work or experience on boats. However, their technical skills, leadership experience, and willingness to work early shifts align closely with the job requirements. Their numeracy skills and ability to work in challenging environments may also be transferable.",
+    "candidate": "senior_chinese"
+  },
+  {
+    "summary": "The candidate's education in computer science and software engineering provides a reasonable match for the technical skills and reliability required. However, there is no evidence of relevant manual work experience or sea legs, which are clearly not met. The willingness to work early starts and long days is clearly implied by the speaker role at the engineering forum, suggesting strong reliability and punctuality.",
+    "candidate": "senior_sa"
+  }
+]

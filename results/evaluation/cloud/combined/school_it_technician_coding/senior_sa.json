@@ -1,0 +1,44 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Exceptional programming ability with proficiency in Python",
+      "Proven track record of mentoring and growing technical talent",
+      "Deep understanding of complex systems and technical planning"
+    ],
+    "weaknesses": [
+      "Severe over-qualification; candidate is a Principal Engineer applying for a technician role",
+      "No evidence of first-line IT support experience (hardware, printers, AV, imaging)",
+      "No experience working with children or in an educational setting",
+      "Lack of specific tool experience (Intune, Active Directory, Google Classroom, Scratch)",
+      "Geographic misalignment (based in South Africa for a UK on-site role)"
+    ],
+    "summary": "While technically brilliant in software engineering, the candidate is vastly overqualified and lacks the specific first-line IT support and safeguarding experience required for a school environment.",
+    "candidate": "senior_sa",
+    "tokens_in": 2153,
+    "tokens_out": 204,
+    "model": "gemma4_31b"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Strong technical background in Windows, Python and cloud infrastructure",
+      "Experience mentoring and teaching complex concepts to engineers"
+    ],
+    "weaknesses": [
+      "No experience with school IT support, device imaging, Active Directory/Intune or AV equipment",
+      "No history of working with children, safeguarding awareness, or education setting",
+      "Career level far above the senior‑technician/assistant role and unlikely to accept term‑time contract"
+    ],
+    "summary": "Highly skilled technically but lacks the essential education‑sector experience and child‑focused competencies required for the role.",
+    "candidate": "senior_sa",
+    "tokens_in": 1959,
+    "tokens_out": 183,
+    "model": "gpt-oss_120b"
+  },
+  {
+    "summary": "The candidate's MSc and BSc in Software Engineering clearly indicate practical IT support experience. Their working knowledge of Python aligns with the basic programming ability requirement, and their background in engineering and technology can be considered a close match for explaining technology clearly. There is no direct evidence of Windows 11, Microsoft 365, or Intune experience, but given their software engineering background, this is a reasonable match. The candidate's enthusiasm for working with young people and commitment to policies are not directly evidenced but can be inferred from their background in engineering excellence and speaker experience. Safeguarding and DBS checks are not mentioned, but given the role’s nature, this is a reasonable assumption.",
+    "candidate": "senior_sa",
+    "type": "essential_requirements"
+  }
+]

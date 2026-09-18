@@ -1,0 +1,8 @@
+{
+  "candidate": "senior_chinese",
+  "final_score": 5,
+  "score_rationale": "The candidate exceeds backend and distributed‑systems expectations but lacks recent React/TypeScript frontend experience, early‑stage startup exposure, and faces a significant timezone mismatch, which are important for this founding full‑stack role.",
+  "key_strengths": "Deep expertise in Go, Kafka, Redis and event‑driven architectures; proven record operating high‑availability production services, incident response, and scaling platforms; strong technical leadership, RFC writing, and mentorship experience.",
+  "key_weaknesses": "No demonstrated recent hands‑on React/TypeScript frontend work; background mainly in large‑scale corporate environments rather than chaotic startups; based in Shenzhen, China, creating timezone challenges for a UK/EU‑centric team; limited energy/climate domain knowledge.",
+  "final_evaluation": "While the candidate would immediately strengthen Pulsegrid’s backend and data‑pipeline capabilities, the role requires end‑to‑end full‑stack ownership, comfort with rapid iteration, and close collaboration within UK/EU hours. Addressing the frontend gap and adapting to a startup’s pace would be necessary, making the fit moderate at best."
+}

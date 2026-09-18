@@ -1,0 +1,47 @@
+[
+  {
+    "score": 2,
+    "strengths": [
+      "Proficient in React and TypeScript",
+      "Academic excellence (Graduated with distinction)",
+      "Experience with PostgreSQL and Docker"
+    ],
+    "weaknesses": [
+      "Lacks the required 4+ years of production experience (is a recent graduate)",
+      "No experience with Go, Kafka, or distributed systems fundamentals",
+      "No evidence of operating high-scale production services or handling on-call incidents",
+      "No prior experience in early-stage startups or the energy sector"
+    ],
+    "summary": "The candidate is a promising junior developer but lacks the seniority, production experience, and specific technical stack (Go/Kafka) required for a Founding Engineer role at a Series A startup.",
+    "candidate": "beginner_sa",
+    "tokens_in": 1886,
+    "tokens_out": 179,
+    "model": "gemma4_31b"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Experience with React and TypeScript",
+      "Proficient in building REST APIs with Node/Express",
+      "Good testing practices and CI/CD exposure",
+      "Collaborative team experience and communication skills"
+    ],
+    "weaknesses": [
+      "Lacks Go or comparable backend language experience",
+      "No demonstrated experience with event‑driven systems (Kafka, TimescaleDB, Redis)",
+      "No production on‑call or incident‑response background",
+      "Limited senior‑level autonomy; primarily an intern/graduate role",
+      "No explicit energy or climate domain knowledge"
+    ],
+    "summary": "Promising frontend and API skills but falls short of the senior full‑stack, production‑ops, and domain experience required for a founding engineer role.",
+    "candidate": "beginner_sa",
+    "tokens_in": 1740,
+    "tokens_out": 198,
+    "model": "gpt-oss_120b"
+  },
+  {
+    "summary": "The candidate clearly meets the requirement of shipping production software with relevant experience in TypeScript/React and Node.js. They have a reasonable match with experience in distributed systems fundamentals and are described as comfortable with ambiguity and velocity. However, it is unclear whether they have significant experience in Go, and there is no specific mention of operating services in production or managing incidents.",
+    "candidate": "beginner_sa",
+    "type": "essential_requirements"
+  }
+]

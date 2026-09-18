@@ -1,0 +1,38 @@
+[
+  {
+    "score": 1,
+    "strengths": [],
+    "weaknesses": [
+      "Complete lack of security industry experience",
+      "No SIA license or regional equivalent",
+      "No experience in physical security, patrolling, or museum operations",
+      "Professional background is entirely in software engineering and cloud infrastructure"
+    ],
+    "summary": "The candidate is a highly skilled software engineer with no relevant experience or qualifications for a physical security role at a museum.",
+    "candidate": "senior_chinese",
+    "tokens_in": 1888,
+    "tokens_out": 112,
+    "model": "gemma4_31b"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Extensive experience in technical leadership and incident management in high‑availability systems",
+      "Strong written communication demonstrated through technical documentation and incident reports"
+    ],
+    "weaknesses": [
+      "No background in security, museum/gallery or public‑venue environments",
+      "Lacks SIA licence, CCTV/alarms/access‑control experience, and physical patrol/first‑aid qualifications"
+    ],
+    "summary": "While technically strong, the candidate has no relevant security or museum experience, making them a poor fit for the role.",
+    "candidate": "senior_chinese",
+    "tokens_in": 1755,
+    "tokens_out": 148,
+    "model": "gpt-oss_120b"
+  },
+  {
+    "summary": "The candidate's experience in software engineering does not clearly meet the security role requirements. However, their strong technical and leadership skills, along with their experience in reliability and incident management, could be considered a reasonable/close match for some of the non-security specific requirements. The absence of relevant security or physical site experience is a clear mismatch.",
+    "candidate": "senior_chinese",
+    "type": "essential_requirements"
+  }
+]

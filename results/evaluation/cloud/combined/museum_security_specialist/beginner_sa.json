@@ -1,0 +1,39 @@
+[
+  {
+    "score": 1,
+    "strengths": [],
+    "weaknesses": [
+      "Complete lack of security experience",
+      "No valid SIA licence or regional equivalent",
+      "No experience with CCTV, alarm systems, or physical site patrolling",
+      "Professional background is in software development, not facilities or visitor safety",
+      "Located in South Africa, whereas the role is on-site in Dunbridge, UK"
+    ],
+    "summary": "The candidate is a graduate software developer with no relevant experience or certifications for a physical security role.",
+    "candidate": "beginner_sa",
+    "tokens_in": 1619,
+    "tokens_out": 132,
+    "model": "gemma4_31b"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong technical and analytical skills demonstrated through software development projects",
+      "Proven ability to learn new tools quickly and work in cross‑functional teams"
+    ],
+    "weaknesses": [
+      "No experience in security, CCTV, access‑control or museum/gallery environments",
+      "Lacks required SIA licence and any first‑aid or high‑value object protection credentials"
+    ],
+    "summary": "The candidate’s background is centred on software development with no relevant security or museum experience, making them a poor fit for this role.",
+    "candidate": "beginner_sa",
+    "tokens_in": 1507,
+    "tokens_out": 182,
+    "model": "gpt-oss_120b"
+  },
+  {
+    "summary": "The candidate has 3 years' experience in a security role, which is a clear match. The candidate's physical fitness and willingness to work flexible shifts are reasonable matches. However, the candidate's work history is not specified to be in a museum, gallery, heritage site, or public venue, which is a clear requirement. The candidate lacks explicit mention of a valid SIA Door Supervisor or Security Guarding licence, though this could be a regional equivalent. The candidate has experience writing incident reports, which aligns with the requirement for strong written communication skills.",
+    "candidate": "beginner_sa",
+    "type": "essential_requirements"
+  }
+]

@@ -1,0 +1,162 @@
+[
+  {
+    "score": 8,
+    "strengths": [
+      "Extensive Go and Kafka experience building high‑throughput, event‑driven back‑ends",
+      "Proven track record designing, operating, and scaling distributed systems with strong SRE practices",
+      "Leadership and mentorship experience relevant to early‑stage team building",
+      "Solid track record delivering production‑grade features rapidly and improving latency"
+    ],
+    "weaknesses": [
+      "No demonstrated frontend experience with React/TypeScript, a core part of the role",
+      "Limited exposure to the energy/climate domain and associated protocols",
+      "Based in China, which may create timezone challenges for a UK/EU‑centric remote team"
+    ],
+    "summary": "The candidate excels in backend, distributed systems, and production operations but lacks the required full‑stack frontend expertise and domain knowledge for Pulsegrid.",
+    "candidate": "senior_chinese",
+    "tokens_in": 1988,
+    "tokens_out": 245
+  },
+  {
+    "score": 8,
+    "strengths": [
+      "12+ years of production software experience, including extensive Go and Kafka work",
+      "Strong background in distributed systems, observability, on‑call, and incident response",
+      "Proven ability to design and ship high‑scale backend services and lead engineering teams",
+      "Experience with event‑driven architectures, time‑series data, and cloud infrastructure"
+    ],
+    "weaknesses": [
+      "No explicit experience with React/TypeScript front‑end development required for the dashboard",
+      "Limited direct exposure to the energy/climate domain and specific protocols (Modbus, BMS)"
+    ],
+    "summary": "Highly experienced backend engineer with the required distributed‑systems skills, but missing front‑end expertise and domain knowledge.",
+    "candidate": "senior_sa",
+    "tokens_in": 1934,
+    "tokens_out": 229
+  },
+  {
+    "score": 7,
+    "strengths": [
+      "Proven experience building and operating high‑throughput backend services with Kotlin/Spring Boot and Python/FastAPI",
+      "Strong React and TypeScript front‑end skills, plus experience delivering full‑stack features",
+      "Hands‑on work with Kafka, Redis, PostgreSQL, OpenTelemetry, and Kubernetes demonstrating distributed systems and observability expertise",
+      "Mentoring and code‑review experience indicating ability to help shape early engineering culture"
+    ],
+    "weaknesses": [
+      "Primary backend languages are Kotlin/Java and Python, not Go (preferred for the role)",
+      "No explicit energy‑sector or climate domain experience, and no prior early‑stage startup founding engineer background",
+      "Based in Austin (US) which may limit overlap with UK/EU core hours for on‑call rotations"
+    ],
+    "summary": "Priya has strong full‑stack and event‑driven system experience that aligns well with Pulsegrid's needs, but gaps in Go expertise, domain knowledge, and geographic timing lower the overall fit.",
+    "candidate": "intermediate_american",
+    "tokens_in": 1792,
+    "tokens_out": 288
+  },
+  {
+    "score": 7,
+    "strengths": [
+      "Strong full‑stack experience with React/TypeScript front‑end and Java/Kotlin back‑end services",
+      "Hands‑on with Kafka, Redis, observability, tracing and on‑call incident response",
+      "Proven ability to ship production features at scale and improve reliability",
+      "Mentoring and code‑review experience, aligning with early‑team culture"
+    ],
+    "weaknesses": [
+      "No direct Go experience (primary language in the role)",
+      "Limited domain exposure to energy/real‑time grid orchestration",
+      "No explicit early‑stage startup or founding engineer background"
+    ],
+    "summary": "Kagiso brings solid full‑stack and event‑driven engineering skills and productionOps experience, but lacks Go expertise and domain/startup depth, making them a strong but not perfect fit.",
+    "candidate": "middle_sa",
+    "tokens_in": 1789,
+    "tokens_out": 263
+  },
+  {
+    "score": 7,
+    "strengths": [
+      "Extensive experience with Go, Kafka, Redis, and building highly available, low‑latency services",
+      "Proven track record of operating production systems, incident response, observability, and SRE practices",
+      "Strong background in distributed systems design and event‑driven architectures",
+      "Leadership, mentorship, and RFC/process creation experience aligning with early‑stage culture"
+    ],
+    "weaknesses": [
+      "No explicit experience with React/TypeScript front‑end development, a core part of the role",
+      "Career level is senior/staff rather than a founding engineer, may expect different scope or autonomy",
+      "Limited stated exposure to energy/climate domain, though enthusiasm can be learned"
+    ],
+    "summary": "Highly qualified for the back‑end and systems side but missing front‑end expertise and domain experience, making them a strong but not perfect fit.",
+    "candidate": "senior_american",
+    "tokens_in": 1941,
+    "tokens_out": 251
+  },
+  {
+    "score": 6,
+    "strengths": [
+      "Strong backend experience with Java/Kotlin, Spring Boot and Kafka; proven production ownership and incident handling",
+      "Experience building event‑driven services, idempotency, OpenTelemetry observability and CI/CD pipelines",
+      "Demonstrated mentoring and cross‑team collaboration, matching early‑stage team needs"
+    ],
+    "weaknesses": [
+      "Primary frontend stack is Vue/Nuxt, not React/TypeScript required by role",
+      "No explicit Go experience; energy domain knowledge and real‑time grid focus are missing"
+    ],
+    "summary": "Solid backend and event‑driven expertise but limited fit on the required React/Go stack and domain knowledge.",
+    "candidate": "middle_chinese",
+    "tokens_in": 1830,
+    "tokens_out": 176
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Experience with React and TypeScript for building web interfaces",
+      "Implemented REST APIs using Node/Express and wrote unit tests",
+      "Demonstrated ability to learn new tools quickly (Docker, AWS certification)"
+    ],
+    "weaknesses": [
+      "Only 4‑6 months of internship experience; no senior‑level production responsibility",
+      "No Go, Rust, or comparable backend language experience; lacks event‑driven/Kafka expertise",
+      "No demonstrated ops/observability, on‑call, or distributed systems work",
+      "Limited exposure to energy or real‑time domain; no startup founding experience"
+    ],
+    "summary": "The candidate shows solid front‑end basics but lacks the depth, backend language, and production‑scale experience required for a founding full‑stack engineer at Pulsegrid.",
+    "candidate": "beginner_american",
+    "tokens_in": 1701,
+    "tokens_out": 204
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Experience with React and TypeScript",
+      "Proficient in building REST APIs with Node/Express",
+      "Good testing practices and CI/CD exposure",
+      "Collaborative team experience and communication skills"
+    ],
+    "weaknesses": [
+      "Lacks Go or comparable backend language experience",
+      "No demonstrated experience with event‑driven systems (Kafka, TimescaleDB, Redis)",
+      "No production on‑call or incident‑response background",
+      "Limited senior‑level autonomy; primarily an intern/graduate role",
+      "No explicit energy or climate domain knowledge"
+    ],
+    "summary": "Promising frontend and API skills but falls short of the senior full‑stack, production‑ops, and domain experience required for a founding engineer role.",
+    "candidate": "beginner_sa",
+    "tokens_in": 1740,
+    "tokens_out": 198
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Experience building web front‑ends with Vue.js and TypeScript",
+      "Familiar with REST APIs, Docker, CI/CD, and writing unit tests",
+      "Strong academic background and teaching/mentoring experience"
+    ],
+    "weaknesses": [
+      "Only ~1 year of professional experience, far below the 4+ years required",
+      "No experience with React, Go, Kafka, TimescaleDB, or high‑throughput event‑driven systems",
+      "Limited exposure to production‑grade observability, on‑call duties, and large‑scale distributed systems"
+    ],
+    "summary": "The candidate shows solid early‑career web development skills but lacks the senior full‑stack, Go, and real‑time systems experience essential for a founding engineer at Pulsegrid.",
+    "candidate": "beginner_chinese",
+    "tokens_in": 1754,
+    "tokens_out": 217
+  }
+]

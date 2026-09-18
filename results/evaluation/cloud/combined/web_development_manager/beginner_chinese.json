@@ -1,0 +1,43 @@
+[
+  {
+    "score": 1,
+    "strengths": [
+      "Knowledge of TypeScript, Node.js, and AWS (Cloud Practitioner certification)",
+      "Experience with agile methodologies and booking application logic in a personal project"
+    ],
+    "weaknesses": [
+      "Lacks the required 5+ years of professional experience (candidate is entry-level/intern)",
+      "No experience in line-management or leadership (required 2+ years)",
+      "No experience leading monolith-to-service architecture migrations",
+      "Incorrect seniority level for an Engineering Manager role"
+    ],
+    "summary": "The candidate is a junior software engineer and is entirely unqualified for a senior leadership role requiring extensive management experience and architectural oversight.",
+    "candidate": "beginner_chinese",
+    "tokens_in": 1713,
+    "tokens_out": 168,
+    "model": "gemma4_31b"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Experience with JavaScript/TypeScript and modern web frameworks (Vue.js, Node.js)",
+      "Hands‑on work with REST APIs, unit testing, CI (GitHub Actions) and Docker",
+      "AWS Certified Cloud Practitioner showing cloud‑foundations"
+    ],
+    "weaknesses": [
+      "Only 1 year of internship experience; far short of the 5+ years required",
+      "No line‑management or people‑leadership experience; no demonstrated ability to run a team",
+      "Lacks React, .NET, large‑scale re‑platforming or service‑oriented architecture experience"
+    ],
+    "summary": "The candidate has solid junior‑level web development skills but lacks the extensive experience and leadership required for an Engineering Manager role.",
+    "candidate": "beginner_chinese",
+    "tokens_in": 1577,
+    "tokens_out": 250,
+    "model": "gpt-oss_120b"
+  },
+  {
+    "summary": "The candidate has 5+ years of professional web/software engineering experience and has line managed engineers for at least 2 years, meeting both requirements. They possess a strong background in modern web stacks, particularly React/TypeScript, and have experience with a backend language. The candidate has led teams through significant technical changes, indicating relevant experience in CI/CD, cloud infrastructure, and automated testing. Their communication skills are evident, and they have experience running agile delivery with distributed teams. However, the exact years of experience in leading technical change and specific cloud infrastructure experience with AWS are not explicitly stated.",
+    "candidate": "beginner_chinese",
+    "type": "essential_requirements"
+  }
+]

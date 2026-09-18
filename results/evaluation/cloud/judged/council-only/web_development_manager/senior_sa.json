@@ -1,0 +1,8 @@
+{
+  "candidate": "senior_sa",
+  "final_score": 4,
+  "score_rationale": "The candidate excels at leading monolith-to-service migrations and has strong cloud/AWS, CI/CD, observability, and people‑leadership experience, but lacks the required React/TypeScript front‑end and .NET/Node.js back‑end expertise, shows no accessibility or large‑scale incident‑management background, and is based in South Africa, which conflicts with the UK hybrid work requirement.",
+  "key_strengths": "Extensive experience leading monolith‑to‑services replatforming; strong AWS, CI/CD, observability and SRE background; proven technical leadership, architecture governance and mentoring of senior engineers; 5+ years leading large engineering teams; expertise in high‑volume transactional systems (payments/logistics) – a desirable domain.",
+  "key_weaknesses": "No explicit React/TypeScript front‑end or .NET/Node.js back‑end experience; lacking evidence of accessibility (WCAG) work or dedicated incident‑management at scale in a customer‑facing web context; location in South Africa versus the required UK hybrid (minimum 2 days/week on‑site); limited direct evidence of hands‑on line‑management duties (1:1s, performance reviews, hiring) for a team of eight.",
+  "final_evaluation": "While the candidate’s leadership and replatforming track record align well with the core goal of modernising the booking platform, the gaps in the required web stack, absence of accessibility/experience, and geographical mismatch substantially reduce their suitability for the Engineering Manager role unless they are willing to relocate and acquire the specific technical competencies."
+}

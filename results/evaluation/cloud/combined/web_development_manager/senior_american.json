@@ -1,0 +1,46 @@
+[
+  {
+    "score": 6,
+    "strengths": [
+      "Extensive experience in monolith decomposition and service-oriented architecture migrations",
+      "Strong background in high-volume transactional systems (payments/logistics)",
+      "Deep expertise in AWS, CI/CD, observability, and distributed systems",
+      "Proven track record of technical leadership, mentoring, and setting engineering standards"
+    ],
+    "weaknesses": [
+      "Lack of explicit evidence of formal line-management experience (1:1s, performance reviews, hiring)",
+      "Location mismatch (based in Seattle, USA for a Levenwick, UK hybrid role)",
+      "Limited evidence of frontend-specific leadership (React/TypeScript) compared to heavy backend/systems focus",
+      "No mentioned experience with WCAG accessibility standards"
+    ],
+    "summary": "While Marcus is a world-class technical leader with perfect experience in platform modernization and high-scale systems, he lacks documented formal line-management experience and is based in the wrong country for a hybrid UK role.",
+    "candidate": "senior_american",
+    "tokens_in": 1918,
+    "tokens_out": 233,
+    "model": "gemma4_31b"
+  },
+  {
+    "score": 6,
+    "strengths": [
+      "Over 12 years of software engineering experience with proven leadership (principal, staff roles)",
+      "Demonstrated ability to lead large‑scale monolith decomposition and platform modernization",
+      "Strong background in cloud (AWS), CI/CD, observability, and SRE practices",
+      "Track record of mentoring engineers and building technical roadmaps"
+    ],
+    "weaknesses": [
+      "Primary tech stack is Go/Java/Python, not React/TypeScript or .NET, which are central to the role",
+      "No explicit experience with front‑end accessibility (WCAG) or high‑volume consumer booking systems",
+      "Limited evidence of hands‑on web development or UI work required for 15‑20% coding time"
+    ],
+    "summary": "The candidate excels in engineering leadership and large‑scale platform modernization but lacks the specific web stack and front‑end expertise the role demands.",
+    "candidate": "senior_american",
+    "tokens_in": 1764,
+    "tokens_out": 250,
+    "model": "gpt-oss_120b"
+  },
+  {
+    "summary": "The candidate clearly meets the requirement for 5+ years of professional web/software engineering experience and has a strong background in modern web stacks, particularly TypeScript and Node.js. They also meet the requirement for leading teams through significant technical changes and have excellent communication skills. The role management experience is not explicitly stated but can be reasonably inferred from their leadership roles. The candidate does not have clear experience with React, but their experience with TypeScript and other modern web technologies is a reasonable match. Cloud infrastructure experience is primarily with AWS, Kubernetes, and Terraform, which meets the requirement. Agile delivery experience is evident but not in a distributed or hybrid setting. The candidate's mentoring experience and technical leadership roles are well-documented.",
+    "candidate": "senior_american",
+    "type": "essential_requirements"
+  }
+]

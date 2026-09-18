@@ -1,0 +1,43 @@
+[
+  {
+    "score": 1,
+    "strengths": [
+      "Strong technical proficiency with Microsoft Office equivalents and general computer literacy",
+      "Experience with scheduling logic via personal projects"
+    ],
+    "weaknesses": [
+      "No professional experience in secretarial, receptionist, or office administration roles",
+      "Lack of experience in professional services (accounting/legal)",
+      "No evidence of audio typing, diary management, or client-facing front-office experience",
+      "Career trajectory is focused on Software Engineering, making them a high flight risk for an administrative role"
+    ],
+    "summary": "The candidate is a Software Engineer with a completely different professional profile and skill set, making them entirely unsuitable for a Secretary/Administrative Assistant position.",
+    "candidate": "beginner_american",
+    "tokens_in": 1620,
+    "tokens_out": 171,
+    "model": "gemma4_31b"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong technical skills and experience with documentation and collaborative tools (Git, Jira)",
+      "Demonstrated ability to learn new tools quickly and produce accurate work"
+    ],
+    "weaknesses": [
+      "No secretarial, receptionist, or office administration experience",
+      "Lacks required proficiency in MS Word/Excel/Outlook and typing speed for admin tasks",
+      "No experience handling confidential client financial information or managing diaries",
+      "Career focus is software engineering, not aligned with accountancy office environment"
+    ],
+    "summary": "The candidate's background is largely technical with little relevant administrative experience, making them a poor fit for the secretary role.",
+    "candidate": "beginner_american",
+    "tokens_in": 1499,
+    "tokens_out": 181,
+    "model": "gpt-oss_120b"
+  },
+  {
+    "summary": "The candidate's experience in software engineering and teaching does not directly meet the secretarial or administrative role requirements, but the technical skills in Microsoft tools and the ability to manage tasks could be transferable. The CV lacks clear evidence of previous secretarial or receptionist experience, a confident telephone manner, and handling of confidential information.",
+    "candidate": "beginner_american",
+    "type": "essential_requirements"
+  }
+]

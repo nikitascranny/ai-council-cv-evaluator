@@ -1,0 +1,41 @@
+[
+  {
+    "score": 1,
+    "strengths": [],
+    "weaknesses": [
+      "No degree or experience in Marine Biology, Zoology, or any life sciences",
+      "No evidence of ability or willingness to perform physical labor such as cleaning filters and scrubbing sumps",
+      "Complete lack of knowledge regarding water chemistry or the nitrogen cycle",
+      "No experience in animal husbandry or aquatic life support systems",
+      "Professional background is entirely in software engineering and distributed systems"
+    ],
+    "summary": "The candidate is a highly experienced Senior Software Engineer with zero qualifications, education, or experience relevant to the role of an Aquarium Biologist.",
+    "candidate": "senior_chinese",
+    "tokens_in": 2030,
+    "tokens_out": 150,
+    "model": "gemma4_31b"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong technical problem‑solving and systematic thinking from senior software engineering background",
+      "Demonstrated ability to learn complex systems quickly and mentor others"
+    ],
+    "weaknesses": [
+      "No degree, experience or practical exposure in marine/aquatic biology, husbandry or water chemistry",
+      "Career focused on software/platform engineering; lacks physical, dirty, repetitive tasks and LSS familiarity",
+      "No evidence of right‑to‑work in the UK, physical fitness for lifting/working in wet environments, or willingness to work weekends/holidays",
+      "No relevant volunteering, aquarium keeping, or SCUBA experience"
+    ],
+    "summary": "The candidate’s expertise is entirely unrelated to aquarium biology and hands‑on husbandry, making them a poor fit for the role.",
+    "candidate": "senior_chinese",
+    "tokens_in": 1898,
+    "tokens_out": 194,
+    "model": "gpt-oss_120b"
+  },
+  {
+    "summary": "The candidate's degree in Computer Science is a reasonable/close match to the required degree in a life science. They lack relevant experience in the marine biology or aquatic biology fields. Their physical fitness and willingness to perform dirty, repetitive tasks are not evidenced, but closely related experience in leading and mentoring teams can count as strong observational skills and attention to detail. The candidate does not have a background in water chemistry or the nitrogen cycle, which are clearly not met. They do not mention availability to work weekends, bank holidays, or early mornings, which is unclear from the CV.",
+    "candidate": "senior_chinese",
+    "type": "essential_requirements"
+  }
+]

@@ -1,0 +1,39 @@
+[
+  {
+    "score": 1,
+    "strengths": [],
+    "weaknesses": [
+      "Zero evidence of physical fitness or ability to perform heavy manual labor",
+      "No maritime experience or 'sea legs'",
+      "Location is in South Africa, while the job is based in Kestrel Bay, UK",
+      "Professional background is entirely in software engineering, which is irrelevant to commercial fishing"
+    ],
+    "summary": "The candidate is a software developer with no relevant experience or skills for a physical deckhand role on a fishing vessel.",
+    "candidate": "beginner_sa",
+    "tokens_in": 1670,
+    "tokens_out": 129,
+    "model": "gemma4_31b"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Demonstrates reliability and punctuality through consistent internship attendance",
+      "Strong learning ability and proven up‑skilling in technical domains"
+    ],
+    "weaknesses": [
+      "No maritime experience, sea legs, or physical fishing work",
+      "Lacks basic numeracy for catch tallying in a practical offshore context",
+      "No relevant certifications (STCW, RYA) or driving licence for deliveries"
+    ],
+    "summary": "The candidate’s technical background shows learning potential but they lack all essential fishing‑boat experience and physical suitability for the role.",
+    "candidate": "beginner_sa",
+    "tokens_in": 1573,
+    "tokens_out": 163,
+    "model": "gpt-oss_120b"
+  },
+  {
+    "summary": "The candidate's CV demonstrates physical fitness and comfort with manual work, which are clear matches. Previous experience in sailing is not explicitly mentioned, but the CV could indicate a reasonable match through unrelated maritime or boating experiences. The candidate shows reliability and punctuality through work history, and basic numeracy is evident from academic achievements. Early starts and long working hours are not directly addressed in the CV, but the candidate's history of consistent work could be seen as relevant. There is no clear indication of a history of severe seasickness.",
+    "candidate": "beginner_sa",
+    "type": "essential_requirements"
+  }
+]

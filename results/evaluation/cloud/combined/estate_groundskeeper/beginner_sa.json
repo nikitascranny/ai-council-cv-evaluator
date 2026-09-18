@@ -1,0 +1,41 @@
+[
+  {
+    "score": 1,
+    "strengths": [],
+    "weaknesses": [
+      "Complete lack of groundskeeping, gamekeeping, or countryside management experience",
+      "No evidence of tracking, search and rescue, or military background",
+      "Professional background is exclusively in software development",
+      "No evidence of physical fitness or ability to work in remote outdoor environments",
+      "No experience with hounds or estate maintenance"
+    ],
+    "summary": "The candidate is a software developer with zero relevant skills or experience for a physical estate management and tracking role.",
+    "candidate": "beginner_sa",
+    "tokens_in": 2203,
+    "tokens_out": 133,
+    "model": "gemma4_31b"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Demonstrates strong technical learning ability and recent graduate experience in fast‑paced environments",
+      "Proven teamwork, documentation, and attention to detail through software projects"
+    ],
+    "weaknesses": [
+      "No experience in groundskeeping, gamekeeping, or countryside management",
+      "Lacks physical, tracking, hunting or canine handling background required for the role",
+      "No evidence of discretion or experience with confidential, high‑value environments",
+      "Unfamiliar with outdoor safety, first aid, or relevant certifications"
+    ],
+    "summary": "The candidate’s tech background does not match the essential countryside, hunting and discretion requirements of the role.",
+    "candidate": "beginner_sa",
+    "tokens_in": 2083,
+    "tokens_out": 175,
+    "model": "gpt-oss_120b"
+  },
+  {
+    "summary": "The candidate's groundskeeping experience and physical fitness are clearly met. A tracking background is a reasonable match. However, there is no clear evidence of hunting experience, and the CV does not specify living on-site or having a clean driving license, though these are implied to be desirable.",
+    "candidate": "beginner_sa",
+    "type": "essential_requirements"
+  }
+]

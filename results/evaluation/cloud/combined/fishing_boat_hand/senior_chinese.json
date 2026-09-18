@@ -1,0 +1,39 @@
+[
+  {
+    "score": 1,
+    "strengths": [],
+    "weaknesses": [
+      "Complete lack of maritime or fishing experience",
+      "No evidence of physical fitness or ability to perform heavy manual labor",
+      "Professional background is exclusively in software engineering and distributed systems",
+      "No mentioned availability for 04:00 starts or working in all-weather conditions",
+      "Based in China, whereas the role is located in Kestrel Bay, UK"
+    ],
+    "summary": "The candidate is a high-level software engineer with absolutely no relevant skills or experience for a physical deckhand role on a fishing vessel.",
+    "candidate": "senior_chinese",
+    "tokens_in": 1939,
+    "tokens_out": 149,
+    "model": "gemma4_31b"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong technical problem‑solving and learning ability",
+      "Demonstrated reliability and leadership in fast‑paced environments"
+    ],
+    "weaknesses": [
+      "No maritime, fishing, or manual‑labour experience",
+      "Lacks physical fitness evidence and sea‑legs required for deckhand role"
+    ],
+    "summary": "Highly qualified in software engineering but virtually no relevance to the physical, maritime duties of a boat hand.",
+    "candidate": "senior_chinese",
+    "tokens_in": 1821,
+    "tokens_out": 125,
+    "model": "gpt-oss_120b"
+  },
+  {
+    "summary": "The candidate's CV does not clearly demonstrate physical fitness for heavy, repetitive manual work or experience on boats. However, their technical skills, leadership experience, and willingness to work early shifts align closely with the job requirements. Their numeracy skills and ability to work in challenging environments may also be transferable.",
+    "candidate": "senior_chinese",
+    "type": "essential_requirements"
+  }
+]

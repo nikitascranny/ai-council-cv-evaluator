@@ -1,0 +1,46 @@
+[
+  {
+    "score": 4,
+    "strengths": [
+      "Strong technical proficiency in modern web stacks, including TypeScript and backend frameworks",
+      "Experience with high-volume transactional systems and event-driven architecture",
+      "Proven track record in observability and improving system reliability (OpenTelemetry, incident diagnosis)"
+    ],
+    "weaknesses": [
+      "Lacks the required 2+ years of formal line-management experience (only mentions mentoring)",
+      "No evidence of leading a team through a major architectural migration or monolith decomposition",
+      "Missing experience with the specific required tech stack (React, Node.js, .NET, AWS) in favor of Java/Kotlin and Alibaba Cloud",
+      "Currently based in China, which may conflict with the hybrid requirement (2 days/week on-site in Levenwick)"
+    ],
+    "summary": "While Zhang Wei is a highly skilled software engineer with strong backend capabilities, he lacks the essential leadership experience and specific architectural migration background required for an Engineering Manager role.",
+    "candidate": "middle_chinese",
+    "tokens_in": 1786,
+    "tokens_out": 228,
+    "model": "gemma4_31b"
+  },
+  {
+    "score": 6,
+    "strengths": [
+      "5+ years of professional software engineering experience with strong backend expertise (Java/Kotlin/Python, Spring Boot, FastAPI)",
+      "Demonstrated technical leadership: mentored junior engineers, led design reviews, and headed a three‑engineer initiative",
+      "Solid DevOps background: Kubernetes, Terraform, CI/CD pipelines, observability with OpenTelemetry, and cloud experience (Alibaba Cloud)",
+      "Experience delivering high‑volume, transactional services and improving incident diagnosis"
+    ],
+    "weaknesses": [
+      "No explicit experience with the primary front‑end stack (React/TypeScript) required for the role",
+      "Limited evidence of formal line‑management (people‑manager) responsibilities beyond mentoring",
+      "No proven track record of large‑scale monolith to service‑oriented migrations or .NET/Node.js experience",
+      "Cloud experience is Alibaba Cloud rather than AWS, and no stated familiarity with WCAG accessibility standards"
+    ],
+    "summary": "The candidate shows strong backend and technical leadership abilities but lacks key front‑end, manager, and migration experience required for the Engineering Manager role.",
+    "candidate": "middle_chinese",
+    "tokens_in": 1653,
+    "tokens_out": 307,
+    "model": "gpt-oss_120b"
+  },
+  {
+    "summary": "The candidate has 6 years of professional web/software engineering experience, with 3 years line managing engineers, meeting both the experience requirements. Their background in modern web stacks, including React/TypeScript and Node.js, aligns well with the job description. They have led teams through significant technical changes, which is a strong match for the requirement. However, the cloud infrastructure experience is not explicitly mentioned, though experience with other technologies could be transferable. Excellent communication skills and experience with agile delivery are clearly demonstrated.",
+    "candidate": "middle_chinese",
+    "type": "essential_requirements"
+  }
+]

@@ -1,0 +1,43 @@
+[
+  {
+    "score": 1,
+    "strengths": [
+      "Highly disciplined approach to complex systems",
+      "Experience with tracking systems (though digital rather than physical)"
+    ],
+    "weaknesses": [
+      "Complete lack of groundskeeping, gamekeeping, or outdoor management experience",
+      "No evidence of physical fitness, tracking, or search and rescue skills",
+      "No experience with animals (bloodhounds) or firearms",
+      "Professional background is entirely in software engineering, which is irrelevant to estate management",
+      "No evidence of the 'discretion' or 'pursuit-oriented' background required for the role"
+    ],
+    "summary": "The candidate is a high-level software engineer with zero relevant experience or skills for a physical estate groundskeeping and pursuit coordinator role.",
+    "candidate": "senior_chinese",
+    "tokens_in": 2472,
+    "tokens_out": 183,
+    "model": "gemma4_31b"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong technical leadership and problem‑solving experience",
+      "Proven ability to design, implement and maintain complex, high‑availability systems"
+    ],
+    "weaknesses": [
+      "No evidence of groundskeeping, gamekeeping, or outdoor estate management experience",
+      "Lacks physical/fitness, tracking, hunting, or dog‑handling background required for the role",
+      "No demonstrated discretion or experience with confidential, high‑risk experiential services"
+    ],
+    "summary": "Highly skilled in software engineering but lacks any of the essential outdoor, hunting or discretion experience needed for the groundskeeper and hunt coordinator role.",
+    "candidate": "senior_chinese",
+    "tokens_in": 2331,
+    "tokens_out": 170,
+    "model": "gpt-oss_120b"
+  },
+  {
+    "summary": "The candidate's CV does not clearly meet the essential requirements for the role, as there is no evidence of groundskeeping, gamekeeping, or countryside management experience, nor any relevant hunting or pursuit oriented background. However, the candidate's extensive software engineering experience, particularly in reliability, architecture, and technical leadership, could be seen as a close match for the 'pursuit oriented' background requirement. The candidate's excellent technical skills and experience align well with the technical demands of the role, but the non-technical requirements such as physical fitness and the ability to work in remote areas are not evidenced.",
+    "candidate": "senior_chinese",
+    "type": "essential_requirements"
+  }
+]

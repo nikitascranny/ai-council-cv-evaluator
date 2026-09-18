@@ -1,0 +1,41 @@
+[
+  {
+    "score": 2,
+    "strengths": [
+      "Strong technical foundation in computer science",
+      "Experience explaining technical concepts as a Peer Programming Facilitator"
+    ],
+    "weaknesses": [
+      "No evidence of hardware repair skills (RAM, SSD, screens)",
+      "No experience with OS troubleshooting or physical device maintenance",
+      "Based in South Africa, making the 'local to Tillingford' requirement impossible",
+      "Overqualified in software engineering but underqualified in practical electronics/IT support"
+    ],
+    "summary": "The candidate is a software developer with zero hardware repair experience and is located in a different country, making them completely unsuitable for a local shop assistant role.",
+    "candidate": "beginner_sa",
+    "tokens_in": 1681,
+    "tokens_out": 164,
+    "model": "gemma4_31b"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Demonstrates strong software development and debugging skills",
+      "Experience mentoring and explaining technical concepts to novices"
+    ],
+    "weaknesses": [
+      "No evidence of practical PC/laptop hardware repair or upgrade experience",
+      "Lacks customer‑facing retail or cash‑handling background and local UK availability"
+    ],
+    "summary": "Solid programming background but missing the hands‑on repair and retail experience essential for the role.",
+    "candidate": "beginner_sa",
+    "tokens_in": 1560,
+    "tokens_out": 129,
+    "model": "gpt-oss_120b"
+  },
+  {
+    "summary": "The candidate demonstrates clear practical PC repair skills, aligning with the job requirement. Their experience in working with diverse customers is a reasonable match for the need to be friendly and patient. However, there is no evidence provided regarding their ability to work Saturdays or their location relative to Tillingford.",
+    "candidate": "beginner_sa",
+    "type": "essential_requirements"
+  }
+]

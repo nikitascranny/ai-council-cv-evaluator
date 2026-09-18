@@ -1,0 +1,39 @@
+[
+  {
+    "score": 1,
+    "strengths": [],
+    "weaknesses": [
+      "Complete lack of groundskeeping, gamekeeping, or countryside management experience",
+      "No evidence of physical fitness, tracking, or search and rescue capabilities",
+      "No experience working with bloodhounds or pursuit-oriented activities",
+      "Professional background is entirely in software engineering, which is irrelevant to estate maintenance and immersive 'hunting' coordination",
+      "Located in China, whereas the role requires living on-site in the UK"
+    ],
+    "summary": "The candidate is a software engineer with no relevant experience or skills for a physical estate management and pursuit coordinator role.",
+    "candidate": "middle_chinese",
+    "tokens_in": 2295,
+    "tokens_out": 154,
+    "model": "gemma4_31b"
+  },
+  {
+    "score": 1,
+    "strengths": [
+      "Strong technical and programming expertise",
+      "Experience leading software projects and mentoring"
+    ],
+    "weaknesses": [
+      "No relevant groundskeeping, wildlife, or countryside management experience",
+      "Lacks physical outdoor, tracking, dog handling, and discretion-focused background required for the role"
+    ],
+    "summary": "The candidate’s skills are unrelated to the estate groundskeeping and hunt coordination duties.",
+    "candidate": "middle_chinese",
+    "tokens_in": 2173,
+    "tokens_out": 117,
+    "model": "gpt-oss_120b"
+  },
+  {
+    "summary": "The candidate's groundskeeping experience appears to be a reasonable match for the required groundskeeping, gamekeeping, or 'countryside management' experience. Physical fitness and the ability to work in remote areas at odd hours are clearly met. There is some uncertainty about the candidate's comfort with the 'hunting' premise and their background, as these are strongly preferred but not explicitly stated as requirements. Full clean driving license and willingness to live on-site are clearly present.",
+    "candidate": "middle_chinese",
+    "type": "essential_requirements"
+  }
+]

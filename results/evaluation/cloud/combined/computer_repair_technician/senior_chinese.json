@@ -1,0 +1,42 @@
+[
+  {
+    "score": 1,
+    "strengths": [
+      "Extremely high technical proficiency in computer science",
+      "Deep understanding of systems and infrastructure"
+    ],
+    "weaknesses": [
+      "Complete lack of evidence for hardware repair skills (RAM, SSD, screen replacement)",
+      "Overqualified to an extreme degree; experience is in distributed systems, not retail shop assistance",
+      "No evidence of customer service experience with non-technical users",
+      "Located in China, whereas the job is in Tillingford, UK"
+    ],
+    "summary": "The candidate is a high-level software architect whose skills are entirely unrelated to physical hardware repair and retail service, and they are located in a different country.",
+    "candidate": "senior_chinese",
+    "tokens_in": 1950,
+    "tokens_out": 169,
+    "model": "gemma4_31b"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Extensive experience with complex software systems and troubleshooting at a high technical level",
+      "Demonstrated ability to learn new technologies quickly and mentor others"
+    ],
+    "weaknesses": [
+      "No hands‑on experience with basic PC/laptop hardware repair, RAM/SSD upgrades, or consumer‑grade troubleshooting",
+      "Career focused on senior software engineering and architecture, not retail customer service or part‑time shop work",
+      "Lacks evidence of patience with older customers, cash‑handling, or local availability"
+    ],
+    "summary": "Highly skilled software engineer but lacks the practical hardware, customer‑service, and part‑time shop experience required for the role.",
+    "candidate": "senior_chinese",
+    "tokens_in": 1808,
+    "tokens_out": 170,
+    "model": "gpt-oss_120b"
+  },
+  {
+    "summary": "The candidate's experience in technical leadership, reliability practices, and mentoring strongly align with the required skills. However, there is no evidence of practical PC/laptop repair skills. The candidate's ability to explain technical concepts in plain language and the requirement to work Saturdays are not clearly addressed in the CV.",
+    "candidate": "senior_chinese",
+    "type": "essential_requirements"
+  }
+]

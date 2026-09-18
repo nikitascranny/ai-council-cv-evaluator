@@ -1,0 +1,40 @@
+[
+  {
+    "score": 1,
+    "strengths": [],
+    "weaknesses": [
+      "No security experience or SIA licence",
+      "Lack of experience with CCTV or access-control systems",
+      "No background in museum or heritage site operations",
+      "Candidate is a Software Engineer, not a Security Specialist"
+    ],
+    "summary": "The candidate is entirely unqualified for this role as their professional background is in software engineering rather than physical security.",
+    "candidate": "beginner_american",
+    "tokens_in": 1584,
+    "tokens_out": 111,
+    "model": "gemma4_31b"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong technical aptitude and proven ability to learn new tools quickly",
+      "Excellent written communication demonstrated through documentation and reporting in software projects",
+      "Experience working in team-oriented, shift-like environments (agile sprints) and handling incidents (bug/issue resolution)"
+    ],
+    "weaknesses": [
+      "No experience in security, museum, or public venue settings",
+      "Lacks required SIA Door Supervisor/Security Guarding licence and familiarity with CCTV, alarm or access‑control systems",
+      "No physical patrol or emergency response background; does not meet physical or shift‑work requirements"
+    ],
+    "summary": "The candidate shows strong general competencies but lacks the essential security experience, licences, and physical duties required for the Museum Security Specialist role.",
+    "candidate": "beginner_american",
+    "tokens_in": 1468,
+    "tokens_out": 233,
+    "model": "gpt-oss_120b"
+  },
+  {
+    "summary": "The candidate does not clearly meet the essential requirement of having minimum 3 years' experience in a security role. Their experience in software engineering and teaching assistant roles is a reasonable/close match for some of the other requirements, such as strong communication skills and the ability to work in a team. However, the candidate lacks the required security-specific certifications and practical security experience.",
+    "candidate": "beginner_american",
+    "type": "essential_requirements"
+  }
+]

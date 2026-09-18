@@ -1,0 +1,43 @@
+[
+  {
+    "score": 1,
+    "strengths": [
+      "Highly proficient in technical software and digital tools",
+      "Proven experience in professional environments and high-responsibility roles"
+    ],
+    "weaknesses": [
+      "No experience in secretarial, receptionist, or general office administration",
+      "Complete mismatch in professional level (Principal Engineer vs. Administrative Assistant)",
+      "Lack of evidence for specific requirements such as diary management, audio typing, or client greeting",
+      "Location is in South Africa, whereas the role is an on-site position in Ashcombe, UK"
+    ],
+    "summary": "The candidate is an overqualified software engineering leader whose skills and career trajectory bear no relevance to the administrative and secretarial requirements of this role.",
+    "candidate": "senior_sa",
+    "tokens_in": 1883,
+    "tokens_out": 174,
+    "model": "gemma4_31b"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Demonstrated high-level organisational and project‑management abilities in complex technical environments",
+      "Proven track record of learning new tools and processes quickly (e.g., cloud platforms, CI/CD pipelines)",
+      "Strong written communication and documentation experience from creating technical specifications and RFCs"
+    ],
+    "weaknesses": [
+      "No experience in secretarial, receptionist or general office administration roles",
+      "Lacks proven proficiency with Microsoft Office (Word, Excel, Outlook) and typical admin tasks such as typing, filing, handling post, and client onboarding",
+      "Career focus is senior software engineering, not client‑facing front‑office duties or handling confidential financial information in an accountancy setting"
+    ],
+    "summary": "While the candidate shows excellent technical leadership and learning ability, they lack the essential administrative and client‑service experience required for the Secretary/Administrative Assistant role.",
+    "candidate": "senior_sa",
+    "tokens_in": 1732,
+    "tokens_out": 262,
+    "model": "gpt-oss_120b"
+  },
+  {
+    "summary": "The candidate's academic background in software engineering and computer science provides a strong technical foundation, but does not clearly meet the secretarial or administrative experience requirement. Their ability to handle complex tasks and their technical skills suggest a strong work ethic and organizational capability, which are reasonable matches. However, their typing speed and proficiency with Microsoft Office applications are unclear from the provided information. Handling of confidential information could be inferred from their role as a co-inventor, but explicit mention of discretion is lacking.",
+    "candidate": "senior_sa",
+    "type": "essential_requirements"
+  }
+]

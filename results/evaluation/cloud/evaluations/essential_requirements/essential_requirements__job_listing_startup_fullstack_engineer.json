@@ -1,0 +1,38 @@
+[
+  {
+    "summary": "The candidate has 10 months of relevant experience, which is close to the 4+ years required. They have TypeScript/React experience and some backend experience, meeting the technology requirements. The candidate has experience with metrics, tracing, and code reviews, suggesting they can operate services in production. Their communication experience through teaching and code reviews supports the communication requirement. However, the candidate lacks extensive experience in shipping production software, especially with a preferred backend language like Go, and there is no clear evidence of their experience with distributed systems fundamentals.",
+    "candidate": "beginner_american"
+  },
+  {
+    "summary": "The candidate clearly meets the requirement for 4+ years of experience shipping production software, with strong experience in TypeScript/React and a solid grasp of distributed systems fundamentals. Their communication skills are also evident. The requirement for backend language experience, specifically Go, is a reasonable/close match as the candidate has experience in Rust/Node/Java. Operating services in production is not explicitly mentioned, but the candidate's experience in distributed systems and incident response is a reasonable inference. The requirement for experience with energy, climate, or hard real-world problems is unclear from the CV.",
+    "candidate": "beginner_chinese"
+  },
+  {
+    "summary": "The candidate clearly meets the requirement of shipping production software with relevant experience in TypeScript/React and Node.js. They have a reasonable match with experience in distributed systems fundamentals and are described as comfortable with ambiguity and velocity. However, it is unclear whether they have significant experience in Go, and there is no specific mention of operating services in production or managing incidents.",
+    "candidate": "beginner_sa"
+  },
+  {
+    "summary": "The candidate's experience shipping production software and technical credentials meet the essential requirements. Their background in TypeScript/React and backend languages like Java or Node.js align closely with the job description. However, there is no evidence of hands-on experience with Go, distributed systems, or production operations, which are clearly not met. The candidate's communication skills and problem-solving enthusiasm are also well-documented.",
+    "candidate": "intermediate_american"
+  },
+  {
+    "summary": "The candidate has 4+ years of experience shipping production software, which meets the requirement. Experience in TypeScript/React and Go is noted, aligning with the backend language preferences. The candidate has operated services in production, indicating experience with metrics, tracing, and incident response, which is a reasonable match. However, the level of detail regarding comfort with ambiguity and velocity, and the solid grasp of distributed systems fundamentals, is unclear from the CV. The candidate's communication skills and excitement about relevant problems are also unclear.",
+    "candidate": "middle_chinese"
+  },
+  {
+    "summary": "The candidate has relevant experience in software development, meeting the 4+ years requirement. Their contribution to engineering guilds and presentation on API operations suggest they have communication skills and some experience in production software, which may be a reasonable match. However, their current AWS certification is for 2024, indicating they are not yet in the workforce, and there is no clear evidence of experience with TypeScript, React, or backend languages such as Go, Rust, Node, or Java. Distributed systems fundamentals are not explicitly stated as a part of their education or experience.",
+    "candidate": "middle_sa"
+  },
+  {
+    "summary": "The candidate clearly meets the 4+ years shipping production software experience and has strong experience in TypeScript/React, as well as Go. The candidate's experience with distributed systems, production operations, and mentoring is a reasonable/close match. The use of backend languages other than Go is noted but still aligns with the requirements. The candidate's experience with energy or climate problems is not explicitly stated, so it is unclear if this requirement is met.",
+    "candidate": "senior_american"
+  },
+  {
+    "summary": "The candidate clearly meets the requirement of 4+ years shipping production software, with strong experience in TypeScript/React and Go. The candidate also meets the requirement of operating services in production and has a solid grasp of distributed systems fundamentals. The requirement for excellent communication and genuine excitement about energy, climate or hard real world problems is a reasonable/close match based on the technical leadership and contributions mentioned. The requirement for comfort with ambiguity and velocity is less clear from the CV and would require further discussion.",
+    "candidate": "senior_chinese"
+  },
+  {
+    "summary": "The candidate has a clear match for the MSc in Software Engineering and BSc in Computer Science, indicating relevant education. The adaptive workload routing patent and technical speaking experience suggest a strong grasp of distributed systems and communication skills, which are closely related to the job requirements. However, the years of shipping production software specifically with TypeScript/React and backend experience are not explicitly stated, making these requirements unclear from the CV.",
+    "candidate": "senior_sa"
+  }
+]

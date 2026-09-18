@@ -1,0 +1,41 @@
+[
+  {
+    "score": 1,
+    "strengths": [
+      "High technical literacy",
+      "Experience with complex systems"
+    ],
+    "weaknesses": [
+      "Location mismatch (Austin, Texas vs. Tillingford, UK)",
+      "Overqualified for basic hardware repair",
+      "No evidence of physical PC repair skills (RAM, SSD, screens)",
+      "Lack of customer-facing retail experience"
+    ],
+    "summary": "The candidate is a high-level Software Engineer based in the US, making them entirely unsuitable for a local, entry-level hardware repair and shop assistant role in the UK.",
+    "candidate": "intermediate_american",
+    "tokens_in": 1740,
+    "tokens_out": 128,
+    "model": "gemma4_31b"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong technical background and problem‑solving experience",
+      "Proven ability to learn new technologies quickly and mentor others"
+    ],
+    "weaknesses": [
+      "No evidence of hands‑on PC/laptop hardware repair or consumer‑level troubleshooting",
+      "Lacks experience dealing with older, non‑technical customers in a shop environment"
+    ],
+    "summary": "Highly skilled software engineer but lacks the practical hardware repair and customer‑service experience required for the role.",
+    "candidate": "intermediate_american",
+    "tokens_in": 1612,
+    "tokens_out": 166,
+    "model": "gpt-oss_120b"
+  },
+  {
+    "summary": "The candidate's BS in Computer Engineering clearly meets the basic PC/laptop repair requirement. Their ability to communicate effectively with older customers is a reasonable match as it involves clear explanation without jargon. The requirement for honesty and reliability is not explicitly evidenced, but the candidate's academic qualifications and AWS certification suggest a commitment to excellence. Saturday work is unclear, but given the candidate's degree and certification, they are likely capable of working on weekends if needed. The candidate's education is from the University of Illinois, Urbana Champaign, which is not in Tillingford, making local availability uncertain.",
+    "candidate": "intermediate_american",
+    "type": "essential_requirements"
+  }
+]

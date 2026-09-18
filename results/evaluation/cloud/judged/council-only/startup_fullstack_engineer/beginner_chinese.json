@@ -1,0 +1,8 @@
+{
+  "candidate": "beginner_chinese",
+  "final_score": 2,
+  "score_rationale": "The candidate shows solid TypeScript and full-stack web skills but falls far short of the required 4+ years of production experience, lacks exposure to the essential backend stack (Go) and distributed systems (Kafka, TimescaleDB), and has no demonstrable production observability or on-call experience.",
+  "key_strengths": "Proficiency in TypeScript/JavaScript, experience with full-stack development (Vue.js, Node.js, Python), familiarity with Docker, AWS basics, CI/CD, REST APIs, unit testing, and strong academic/teaching background.",
+  "key_weaknesses": "Only ~1 year of professional experience (vs. 4+ required), no React or Go experience, no Kafka/TimescaleDB or event‑driven system exposure, lacking production observability, incident response, and on‑call duties, located outside the UK/EU timezone, and insufficient seniority to act as a founding engineer responsible for interviewing and onboarding others.",
+  "final_evaluation": "Overall, the candidate is not a fit for the Founding Full‑Stack Engineer role at Pulsegrid. They would need substantial additional experience in production backend systems, distributed architectures, and senior‑level responsibilities before being considered for this position."
+}

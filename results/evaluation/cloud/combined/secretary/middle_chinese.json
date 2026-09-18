@@ -1,0 +1,41 @@
+[
+  {
+    "score": 1,
+    "strengths": [
+      "Highly proficient in technical software and data systems"
+    ],
+    "weaknesses": [
+      "No secretarial or administrative experience",
+      "No evidence of reception or front-office skills",
+      "Lack of experience with office management tasks",
+      "Candidate is a Software Engineer, not an Administrative Assistant",
+      "Located in China, while the job is on-site in Ashcombe, UK"
+    ],
+    "summary": "The candidate is a highly skilled Software Engineer whose professional background and location are entirely unrelated to the requirements of a Secretary/Administrative Assistant role.",
+    "candidate": "middle_chinese",
+    "tokens_in": 1747,
+    "tokens_out": 130,
+    "model": "gemma4_31b"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong technical proficiency and experience with complex software projects",
+      "Demonstrated ability to learn new tools quickly and mentor others"
+    ],
+    "weaknesses": [
+      "No experience in secretarial, reception or office administration tasks",
+      "Lacks required skills such as Microsoft Office, typing speed, client-facing phone etiquette, and knowledge of finance/accountancy environments"
+    ],
+    "summary": "The candidate’s background is entirely technical and does not meet the core administrative and client‑service requirements of the role.",
+    "candidate": "middle_chinese",
+    "tokens_in": 1628,
+    "tokens_out": 150,
+    "model": "gpt-oss_120b"
+  },
+  {
+    "summary": "The candidate's previous experience as a secretary and their strong typing speed and accuracy clearly meet the job requirements. Their ability to handle multiple tasks and their professional manner when dealing with clients are reasonable matches. However, there is no evidence of good working knowledge of Microsoft Word, Excel, and Outlook, nor of handling confidential financial and personal information.",
+    "candidate": "middle_chinese",
+    "type": "essential_requirements"
+  }
+]

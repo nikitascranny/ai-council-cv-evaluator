@@ -1,0 +1,40 @@
+[
+  {
+    "score": 1,
+    "strengths": [],
+    "weaknesses": [
+      "Complete lack of groundskeeping or countryside management experience",
+      "No evidence of tracking, search and rescue, or military background",
+      "No experience with bloodhounds or outdoor pursuit protocols",
+      "Professional background is entirely in software engineering and distributed systems",
+      "Located in Seattle, WA, with no indicated willingness to relocate to a live-in role in Fellmoor"
+    ],
+    "summary": "The candidate is a highly skilled software engineer with zero relevant experience or qualifications for a live-in estate groundskeeper and hunt coordinator role.",
+    "candidate": "senior_american",
+    "tokens_in": 2427,
+    "tokens_out": 148,
+    "model": "gemma4_31b"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Demonstrated strong leadership and project management skills",
+      "Excellent technical problem‑solving and analytical abilities"
+    ],
+    "weaknesses": [
+      "No experience in groundskeeping, gamekeeping, or countryside management",
+      "Lacks physical, tracking, hunting or dog‑handling background required for the role",
+      "No evidence of discretion or experience with confidential, high‑risk entertainment events"
+    ],
+    "summary": "Highly skilled in software engineering but fundamentally unsuited to the physical, outdoors‑focused, discretion‑heavy duties of the estate groundskeeper and hunt coordinator role.",
+    "candidate": "senior_american",
+    "tokens_in": 2284,
+    "tokens_out": 168,
+    "model": "gpt-oss_120b"
+  },
+  {
+    "summary": "The candidate's experience does not clearly meet the essential requirements of groundskeeping, gamekeeping, or countryside management experience, nor the physical fitness or ability to work in remote areas. However, their extensive background in software engineering, particularly in distributed systems and reliability, provides a close match to the 'pursuit oriented' background preference. The candidate's demonstrated leadership and technical skills, as well as their ability to work in large, complex systems, may transfer to the role's operational needs, though direct experience is lacking.",
+    "candidate": "senior_american",
+    "type": "essential_requirements"
+  }
+]

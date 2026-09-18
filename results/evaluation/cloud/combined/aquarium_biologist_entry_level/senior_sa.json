@@ -1,0 +1,39 @@
+[
+  {
+    "score": 1,
+    "strengths": [],
+    "weaknesses": [
+      "No degree or experience in Marine Biology, Zoology, or life sciences",
+      "No evidence of physical fitness or willingness to perform manual labor/cleaning tasks",
+      "No knowledge of water chemistry or aquatic life support systems",
+      "Lack of right to work in the UK mentioned",
+      "Professional background is entirely unrelated (Software Engineering)"
+    ],
+    "summary": "The candidate is a highly experienced software engineer with no relevant qualifications, experience, or skills for an entry-level Aquarium Biologist role.",
+    "candidate": "senior_sa",
+    "tokens_in": 1989,
+    "tokens_out": 141,
+    "model": "gemma4_31b"
+  },
+  {
+    "score": 1,
+    "strengths": [
+      "Extensive leadership and technical project management experience",
+      "Strong analytical and problem‑solving skills"
+    ],
+    "weaknesses": [
+      "No relevant education or experience in marine biology, zoology or aquatic systems",
+      "Lacks hands‑on husbandry, water‑quality testing, and life‑support system knowledge; not physically oriented for filter cleaning tasks"
+    ],
+    "summary": "The candidate’s software engineering background does not meet the essential aquatic biology and husbandry requirements for the role.",
+    "candidate": "senior_sa",
+    "tokens_in": 1844,
+    "tokens_out": 143,
+    "model": "gpt-oss_120b"
+  },
+  {
+    "summary": "The candidate does not meet the essential requirement of a degree in Marine Biology, Zoology, Aquatic Biology, or a related life science. However, their experience in engineering and software development shows strong observational skills and attention to detail, which could be transferable. The physical fitness requirements are unclear as there is no evidence of lifting or working in specific environments. The other requirements, such as the ability to work weekends and a background check, are not addressed in the CV.",
+    "candidate": "senior_sa",
+    "type": "essential_requirements"
+  }
+]

@@ -1,0 +1,8 @@
+{
+  "candidate": "intermediate_american",
+  "final_score": 6,
+  "score_rationale": "The candidate meets the essential technical requirements (TypeScript/React, a backend language, production observability, distributed systems knowledge) but lacks the desired energy/sector passion, explicit Go experience, early‑stage startup background, and has a timezone mismatch that could affect on‑call overlap.",
+  "key_strengths": "Strong full‑stack expertise with React/TypeScript and backend experience in Java/Kotlin/Python; proven work with Kafka, Redis, OpenTelemetry, and production incident response; demonstrated ability to own services, mentor others, and ship end‑to‑end features.",
+  "key_weaknesses": "Located in Austin, TX, limiting real‑time overlap with UK/EU core hours; no explicit Go language experience; no evidenced interest or experience in the energy/climate domain; limited early‑stage startup or founding‑engineer background.",
+  "final_evaluation": "Technically the candidate is a solid fit for the full‑stack and distributed‑systems demands of the role, but the missing domain enthusiasm, timezone constraints, and lack of Go/startup exposure make them a moderate risk for a founding engineer position at Pulsegrid."
+}

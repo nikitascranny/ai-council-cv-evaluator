@@ -1,0 +1,144 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Demonstrated ability to learn new technologies quickly",
+      "Experience troubleshooting code and debugging",
+      "Good communication skills from teaching assistant role"
+    ],
+    "weaknesses": [
+      "No practical PC/laptop hardware repair experience",
+      "Lacks experience with older customers and face‑to‑face service",
+      "Not local to Tillingford and no mention of transport reliability"
+    ],
+    "summary": "While technically capable and quick to learn, the candidate lacks the hands‑on hardware repair and customer‑service background essential for this role.",
+    "candidate": "beginner_american",
+    "tokens_in": 1521,
+    "tokens_out": 163
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Demonstrates strong software development and debugging skills",
+      "Experience mentoring and explaining technical concepts to novices"
+    ],
+    "weaknesses": [
+      "No evidence of practical PC/laptop hardware repair or upgrade experience",
+      "Lacks customer‑facing retail or cash‑handling background and local UK availability"
+    ],
+    "summary": "Solid programming background but missing the hands‑on repair and retail experience essential for the role.",
+    "candidate": "beginner_sa",
+    "tokens_in": 1560,
+    "tokens_out": 129
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Demonstrates ability to learn new tools quickly",
+      "Experience teaching debugging and troubleshooting concepts"
+    ],
+    "weaknesses": [
+      "No hands‑on PC/laptop repair or hardware experience",
+      "Lacks customer‑facing retail experience and local UK availability",
+      "Focuses on software development rather than the practical hardware tasks required"
+    ],
+    "summary": "Candidate lacks the essential hardware repair skills and local retail experience needed for the role.",
+    "candidate": "beginner_chinese",
+    "tokens_in": 1574,
+    "tokens_out": 144
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong technical background and problem‑solving experience",
+      "Proven ability to learn new technologies quickly and mentor others"
+    ],
+    "weaknesses": [
+      "No evidence of hands‑on PC/laptop hardware repair or consumer‑level troubleshooting",
+      "Lacks experience dealing with older, non‑technical customers in a shop environment"
+    ],
+    "summary": "Highly skilled software engineer but lacks the practical hardware repair and customer‑service experience required for the role.",
+    "candidate": "intermediate_american",
+    "tokens_in": 1612,
+    "tokens_out": 166
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong software engineering background",
+      "Experience with troubleshooting complex systems and mentoring"
+    ],
+    "weaknesses": [
+      "No hands‑on PC/laptop repair or hardware experience",
+      "No customer‑facing retail or informal service experience",
+      "Location in China, unlikely to commute to Tillingford"
+    ],
+    "summary": "Highly skilled in software development but lacks the practical hardware repair and local customer service experience required for the role.",
+    "candidate": "middle_chinese",
+    "tokens_in": 1650,
+    "tokens_out": 142
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong software development background",
+      "Experience with troubleshooting complex systems and mentoring junior staff"
+    ],
+    "weaknesses": [
+      "No evidence of hands‑on PC/laptop hardware repair or repair of peripherals",
+      "Lacks experience dealing directly with retail customers, especially older people",
+      "No local UK residency or transport availability mentioned"
+    ],
+    "summary": "Highly skilled as a software engineer but lacks the practical hardware repair and customer‑facing experience required for the shop role.",
+    "candidate": "middle_sa",
+    "tokens_in": 1609,
+    "tokens_out": 141
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Extensive experience with hardware‑level troubleshooting in high‑availability data‑center environments",
+      "Strong problem‑solving mindset and ability to learn new technologies quickly"
+    ],
+    "weaknesses": [
+      "No evidence of hands‑on PC/laptop repair, RAM/SSD upgrades, or consumer‑grade troubleshooting",
+      "Career focused on senior software engineering and cloud platforms, not retail customer service or cash handling",
+      "Located in the US, far from Tillingford, with no indication of willingness to relocate or commute"
+    ],
+    "summary": "The candidate’s senior software engineering background does not match the practical, local, customer‑facing computer repair role.",
+    "candidate": "senior_american",
+    "tokens_in": 1761,
+    "tokens_out": 174
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Extensive experience with complex software systems and troubleshooting at a high technical level",
+      "Demonstrated ability to learn new technologies quickly and mentor others"
+    ],
+    "weaknesses": [
+      "No hands‑on experience with basic PC/laptop hardware repair, RAM/SSD upgrades, or consumer‑grade troubleshooting",
+      "Career focused on senior software engineering and architecture, not retail customer service or part‑time shop work",
+      "Lacks evidence of patience with older customers, cash‑handling, or local availability"
+    ],
+    "summary": "Highly skilled software engineer but lacks the practical hardware, customer‑service, and part‑time shop experience required for the role.",
+    "candidate": "senior_chinese",
+    "tokens_in": 1808,
+    "tokens_out": 170
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong technical troubleshooting and problem‑solving abilities demonstrated in high‑scale software systems",
+      "Extensive experience mentoring and communicating complex concepts to less‑technical audiences"
+    ],
+    "weaknesses": [
+      "No evidence of practical, hands‑on PC/laptop hardware repair, RAM/SSD upgrades, or OS reinstallations",
+      "Highly senior, office‑based role background; lacks experience with retail/customer‑service environment and local commuting to Tillingford"
+    ],
+    "summary": "While technically brilliant, Zanele lacks the practical hardware repair and retail customer‑service experience required for the shop role.",
+    "candidate": "senior_sa",
+    "tokens_in": 1754,
+    "tokens_out": 208
+  }
+]

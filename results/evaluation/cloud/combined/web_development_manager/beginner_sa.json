@@ -1,0 +1,43 @@
+[
+  {
+    "score": 1,
+    "strengths": [
+      "Familiarity with the core tech stack (React, TypeScript, Node.js)",
+      "Possesses AWS Cloud Practitioner certification",
+      "Academic excellence (BSc Computer Science with distinction)"
+    ],
+    "weaknesses": [
+      "Complete lack of leadership and line-management experience (required 2+ years)",
+      "Insufficient professional engineering experience (graduate level vs 5+ years required)",
+      "No evidence of leading monolith decomposition or large-scale platform modernization",
+      "No experience managing on-call rotas, incident response, or engineering standards for a team"
+    ],
+    "summary": "The candidate is a junior/graduate developer and is entirely unqualified for a senior Engineering Manager role requiring extensive leadership and architectural experience.",
+    "candidate": "beginner_sa",
+    "tokens_in": 1694,
+    "tokens_out": 185,
+    "model": "gemma4_31b"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Experience with React, TypeScript, Node.js, and AWS (Cloud Practitioner)",
+      "Hands‑on coding experience and familiarity with CI/CD tools like GitHub Actions and Docker"
+    ],
+    "weaknesses": [
+      "Only 9 months of graduate‑level experience; no proven line‑management or people‑leadership history",
+      "No experience leading large‑scale replatforming, service‑oriented architecture migrations, or managing on‑call/incident response",
+      "Limited exposure to .NET, large transactional booking systems, and accessibility standards"
+    ],
+    "summary": "The candidate shows solid technical fundamentals but lacks the senior engineering and management experience required for the Engineering Manager role.",
+    "candidate": "beginner_sa",
+    "tokens_in": 1563,
+    "tokens_out": 181,
+    "model": "gpt-oss_120b"
+  },
+  {
+    "summary": "The candidate has 5+ years of web/software engineering experience and at least 2 years in line management, which clearly meet the job requirements. Their background in modern web stacks such as React/TypeScript and backend languages (Node.js) is also a reasonable match. However, their experience in leading significant technical changes, particularly monolith decomposition, is unclear from the CV. The candidate's experience in CI/CD, cloud infrastructure, automated testing, observability, and agile delivery, especially with distributed teams, is well-aligned with the job requirements. Communication skills are not explicitly mentioned, but the overall CV suggests strong interpersonal skills.",
+    "candidate": "beginner_sa",
+    "type": "essential_requirements"
+  }
+]

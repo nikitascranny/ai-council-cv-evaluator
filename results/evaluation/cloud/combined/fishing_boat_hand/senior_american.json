@@ -1,0 +1,39 @@
+[
+  {
+    "score": 1,
+    "strengths": [],
+    "weaknesses": [
+      "Complete lack of maritime or commercial fishing experience",
+      "No evidence of physical fitness or ability to perform heavy manual labor",
+      "Based in Seattle, WA, while the job is located in Kestrel Bay, UK",
+      "Professional background is entirely in software engineering/IT"
+    ],
+    "summary": "The candidate is a high-level software engineer with no relevant skills or experience for a physical deckhand role and is located on a different continent.",
+    "candidate": "senior_american",
+    "tokens_in": 1894,
+    "tokens_out": 131,
+    "model": "gemma4_31b"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Demonstrates strong reliability and punctuality in professional settings",
+      "Proven ability to learn complex technical systems quickly"
+    ],
+    "weaknesses": [
+      "No demonstrable sea‑going, fishing, or pot‑handling experience",
+      "Lacks physical/manual labour background and fitness evidence required for heavy wet work",
+      "No certifications or training related to maritime safety, navigation, or vessel operation"
+    ],
+    "summary": "Highly qualified for software engineering but lacks the essential fishing, sea‑leg, and manual‑work experience needed for the deckhand role.",
+    "candidate": "senior_american",
+    "tokens_in": 1774,
+    "tokens_out": 190,
+    "model": "gpt-oss_120b"
+  },
+  {
+    "summary": "The candidate's CV does not clearly demonstrate the essential requirements for the job. They are clearly not met in terms of physical fitness, manual work experience, sea legs, and willingness to work early starts and long days. A reasonable/close match includes basic numeracy for catch tallies and grading, as the candidate has experience in technical planning and reliability scorecards. The CV does not provide evidence of the candidate's ability to work in challenging weather conditions or their history of working offshore.",
+    "candidate": "senior_american",
+    "type": "essential_requirements"
+  }
+]

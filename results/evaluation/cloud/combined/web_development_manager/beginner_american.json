@@ -1,0 +1,44 @@
+[
+  {
+    "score": 1,
+    "strengths": [
+      "Familiarity with the required tech stack (React, TypeScript, Node.js)",
+      "AWS Certified Cloud Practitioner certification",
+      "Experience with Agile methodologies and unit testing"
+    ],
+    "weaknesses": [
+      "Lacks the 5+ years of professional experience required",
+      "No experience line-managing engineers (essential requirement)",
+      "No experience leading architectural migrations or monolith decomposition",
+      "Currently at a Junior/Entry level rather than an Engineering Manager level"
+    ],
+    "summary": "The candidate is a junior engineer and is entirely unqualified for a senior leadership role requiring extensive management and architectural experience.",
+    "candidate": "beginner_american",
+    "tokens_in": 1659,
+    "tokens_out": 162,
+    "model": "gemma4_31b"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Proficient in React, TypeScript, Node.js and related web technologies",
+      "Experience with agile ceremonies, code reviews, testing, CI (GitHub Actions) and Docker",
+      "AWS Cloud Practitioner certification showing some cloud understanding"
+    ],
+    "weaknesses": [
+      "No line‑management or people‑leadership experience (required 2+ years)",
+      "Lacks experience with large‑scale platform migrations, service‑oriented architecture, .NET or AWS infrastructure at production scale",
+      "Insufficient senior‑level experience for hands‑on critical path work and incident management"
+    ],
+    "summary": "The candidate demonstrates solid junior engineering skills but does not meet the senior leadership and architecture experience required for the Engineering Manager role.",
+    "candidate": "beginner_american",
+    "tokens_in": 1524,
+    "tokens_out": 198,
+    "model": "gpt-oss_120b"
+  },
+  {
+    "summary": "The candidate has a strong background in modern web technologies (React and Express) but lacks the required professional experience. The internship experience shows relevant skills in building React interfaces and implementing backend services, which can be considered a reasonable match. The candidate has not provided evidence of line management or leading significant technical changes, and while they have experience in agile delivery, it does not explicitly mention distributed or hybrid teams. Communication skills are implied from the internship experience but are not explicitly stated. The AWS certification and cloud infrastructure knowledge are relevant but not as detailed as required.",
+    "candidate": "beginner_american",
+    "type": "essential_requirements"
+  }
+]

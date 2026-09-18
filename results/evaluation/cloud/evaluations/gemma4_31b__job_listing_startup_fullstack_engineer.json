@@ -1,0 +1,168 @@
+[
+  {
+    "score": 8,
+    "strengths": [
+      "Deep expertise in the required tech stack, specifically Go, TypeScript, Kafka, and Redis",
+      "Proven track record with high-scale distributed systems and event-driven architectures (18M events daily)",
+      "Strong operational maturity with experience in SRE, incident response, and 99.99% availability",
+      "Significant experience with RFCs, architecture reviews, and mentoring, aligning with the 'early culture' requirement"
+    ],
+    "weaknesses": [
+      "Potential over-qualification; current 'Principal' level may clash with the 'Founding Engineer' hands-on execution requirements",
+      "No specific domain experience in energy or climate tech",
+      "Located in South Africa (UTC+2), which fits the EU timezone requirement but may pose communication challenges for a London-hubbed team"
+    ],
+    "summary": "An exceptionally strong technical candidate with the exact distributed systems and language expertise required, though there is a risk they may be too senior for a hands-on 'founding' role.",
+    "candidate": "senior_sa",
+    "tokens_in": 2114,
+    "tokens_out": 245
+  },
+  {
+    "score": 7,
+    "strengths": [
+      "Strong alignment with the tech stack (React, TypeScript, Kafka, Redis, PostgreSQL)",
+      "Proven experience with distributed systems fundamentals including idempotency and event-driven architectures",
+      "Direct evidence of owning production observability (OpenTelemetry) and incident response",
+      "Experience building full-stack features from API to frontend (Developer Portal, Onboarding workflows)"
+    ],
+    "weaknesses": [
+      "Location mismatch (based in Austin, TX while the role requires UK/EU timezone)",
+      "Lack of Go experience (though proficient in Java/Kotlin/Python)",
+      "No explicit evidence of early-stage startup experience (appears to be mid-to-large company backgrounds)",
+      "No mentioned interest or experience in the energy/climate sector"
+    ],
+    "summary": "Priya is a technically excellent full-stack engineer with the exact distributed systems and observability experience required, but the significant timezone difference and lack of Go/startup experience make her a risky fit for a founding role.",
+    "candidate": "intermediate_american",
+    "tokens_in": 1945,
+    "tokens_out": 237
+  },
+  {
+    "score": 7,
+    "strengths": [
+      "Strong full-stack alignment with React/TypeScript and backend experience (Java/Kotlin/Python)",
+      "Direct experience with the required data stack: Kafka, Redis, and PostgreSQL",
+      "Proven track record in production observability, distributed tracing, and idempotency",
+      "Experience building internal developer tools and mentoring junior engineers"
+    ],
+    "weaknesses": [
+      "Lacks experience with Go (the preferred backend language), though has strong alternatives",
+      "Located in South Africa (UTC+2), which is compatible but outside the stated UK/EU preference",
+      "No explicit evidence of working in a high-velocity, 'chaotic' early-stage startup environment"
+    ],
+    "summary": "A technically strong full-stack engineer with excellent production and distributed systems experience who meets almost all requirements, pending a check on timezone/relocation and Go proficiency.",
+    "candidate": "middle_sa",
+    "tokens_in": 1939,
+    "tokens_out": 212
+  },
+  {
+    "score": 7,
+    "strengths": [
+      "Exceptional backend and distributed systems expertise with deep experience in Go and Kafka",
+      "Proven track record of operating high-availability production services and leading incident response",
+      "Strong technical leadership skills, including writing RFCs and mentoring senior engineers",
+      "Experience with event-driven architectures and scaling platforms for high transaction volumes"
+    ],
+    "weaknesses": [
+      "Lack of explicit professional experience with React/TypeScript for frontend development (listed as a language, but no project evidence)",
+      "Currently operating at a Principal/Staff level, which may be overqualified for an individual contributor 'Founding Engineer' role",
+      "Location is Seattle, WA, while the role is remote-first for UK/EU timezones",
+      "Experience is primarily in larger corporate environments (Payments, Cloud Services) rather than early-stage, chaotic startups"
+    ],
+    "summary": "A world-class systems engineer who perfectly hits the backend and infrastructure requirements but lacks proven frontend delivery and is based in a conflicting timezone.",
+    "candidate": "senior_american",
+    "tokens_in": 2110,
+    "tokens_out": 242
+  },
+  {
+    "score": 7,
+    "strengths": [
+      "Exceptional backend and distributed systems expertise with Go, Kafka, and Redis",
+      "Proven track record of operating high-availability production services and managing incident response",
+      "Strong experience with event-driven architectures and scaling platforms",
+      "Demonstrated technical leadership and ability to write RFCs and mentor engineers"
+    ],
+    "weaknesses": [
+      "Lack of evidence for recent, hands-on React/TypeScript frontend development (profile is heavily backend/infrastructure focused)",
+      "Experience is primarily in large-scale corporate environments (Principal/Staff level) rather than early-stage, chaotic startups",
+      "Potential timezone/location mismatch (currently based in Shenzhen, China vs UK/EU requirement)"
+    ],
+    "summary": "A world-class distributed systems engineer who exceeds all backend requirements but lacks documented recent full-stack/frontend experience and startup-specific agility.",
+    "candidate": "senior_chinese",
+    "tokens_in": 2155,
+    "tokens_out": 212
+  },
+  {
+    "score": 6,
+    "strengths": [
+      "Strong experience with distributed systems fundamentals, specifically Kafka and event-driven architectures",
+      "Proven track record in production operations, including OpenTelemetry, alerting, and incident response",
+      "Full-stack capability with experience in both backend (Java/Kotlin/Python) and frontend (Vue/TypeScript) frameworks",
+      "Experience with idempotency and scaling high-volume event processing"
+    ],
+    "weaknesses": [
+      "No experience with Go (preferred) or React (required); uses Vue.js instead",
+      "Location is China, while the role requires UK/EU timezone (Remote-first)",
+      "Lack of evidence regarding early-stage startup 'chaos' or direct customer-facing product ownership",
+      "No mentioned interest or experience in energy/climate sectors"
+    ],
+    "summary": "Technically proficient in the required distributed systems and production operational patterns, but possesses a significant timezone mismatch and lacks the specific React/Go stack and startup agility required for this founding role.",
+    "candidate": "middle_chinese",
+    "tokens_in": 1978,
+    "tokens_out": 237
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Proficiency in React and TypeScript",
+      "Experience with PostgreSQL and Docker",
+      "Strong academic background in Computer Science"
+    ],
+    "weaknesses": [
+      "Lacks the required 4+ years of professional production experience",
+      "No experience with Go, Kafka, or distributed systems",
+      "No evidence of operating services in production or handling on-call/incident response",
+      "Based in Seattle (US), whereas the role requires UK/EU timezone"
+    ],
+    "summary": "The candidate is a recent graduate seeking an entry-level role, making them entirely unqualified for a Founding Full-Stack Engineer position that requires senior-level production experience and specific timezone alignment.",
+    "candidate": "beginner_american",
+    "tokens_in": 1851,
+    "tokens_out": 176
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Proficiency in TypeScript and JavaScript",
+      "Experience with full-stack development (Vue.js, Node.js, Python)",
+      "Familiarity with Docker and AWS basics"
+    ],
+    "weaknesses": [
+      "Severe lack of professional experience (Junior/Intern vs. required 4+ years)",
+      "No experience with the core backend stack (Go) or distributed systems (Kafka, TimescaleDB)",
+      "No evidence of operating production services at scale or handling on-call responsibilities",
+      "Location mismatch (Beijing-based vs. UK/EU timezone requirement)",
+      "Lacks the 'founding engineer' seniority needed to help interview and onboard the next ten engineers"
+    ],
+    "summary": "The candidate is an entry-level graduate whose experience level and location are entirely incompatible with the requirements of a Founding Full-Stack Engineer role.",
+    "candidate": "beginner_chinese",
+    "tokens_in": 1905,
+    "tokens_out": 215
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Proficient in React and TypeScript",
+      "Academic excellence (Graduated with distinction)",
+      "Experience with PostgreSQL and Docker"
+    ],
+    "weaknesses": [
+      "Lacks the required 4+ years of production experience (is a recent graduate)",
+      "No experience with Go, Kafka, or distributed systems fundamentals",
+      "No evidence of operating high-scale production services or handling on-call incidents",
+      "No prior experience in early-stage startups or the energy sector"
+    ],
+    "summary": "The candidate is a promising junior developer but lacks the seniority, production experience, and specific technical stack (Go/Kafka) required for a Founding Engineer role at a Series A startup.",
+    "candidate": "beginner_sa",
+    "tokens_in": 1886,
+    "tokens_out": 179
+  }
+]

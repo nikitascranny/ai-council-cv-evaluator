@@ -1,0 +1,44 @@
+[
+  {
+    "score": 4,
+    "strengths": [
+      "Strong technical alignment with the web stack (React, TypeScript, AWS)",
+      "Experience with high-volume event processing and observability",
+      "Proven ability to mentor junior engineers and lead small project-based initiatives"
+    ],
+    "weaknesses": [
+      "Lacks the required 2+ years of formal line-management experience (performance reviews, hiring, career plans)",
+      "No evidence of leading a large-scale architectural migration from monolith to service-oriented architecture",
+      "Currently based in South Africa, while the role requires a hybrid presence in Levenwick (UK)",
+      "Insufficient overall professional experience (approx 4 years) compared to the 5+ years required"
+    ],
+    "summary": "While Kagiso is a strong technical engineer with relevant stack experience, they lack the essential leadership tenure and formal people-management experience required for an Engineering Manager role.",
+    "candidate": "middle_sa",
+    "tokens_in": 1747,
+    "tokens_out": 214,
+    "model": "gemma4_31b"
+  },
+  {
+    "score": 4,
+    "strengths": [
+      "Strong full‑stack experience with React, TypeScript and modern cloud/AWS tooling",
+      "Proven track record delivering high‑volume services, observability, and CI/CD pipelines",
+      "Demonstrated mentorship and coaching of junior engineers"
+    ],
+    "weaknesses": [
+      "No documented line‑management experience (required 2+ years managing engineers)",
+      "Primary backend languages are Java/Kotlin/Python, not Node.js or .NET as specified",
+      "No direct experience leading a large re‑platform or monolith‑to‑SOA migration"
+    ],
+    "summary": "Solid engineering background but lacks the required management experience and specific tech stack for the role.",
+    "candidate": "middle_sa",
+    "tokens_in": 1612,
+    "tokens_out": 239,
+    "model": "gpt-oss_120b"
+  },
+  {
+    "summary": "The candidate's education and AWS certification clearly meet the technical requirements. Line management experience is not evidenced but contributing to engineering guilds and presenting at forums could be considered relevant. The required years of professional experience, specific web stack skills, and experience leading significant technical changes are not met. Excellent communication skills are implied through the presented content, but this is not explicitly stated.",
+    "candidate": "middle_sa",
+    "type": "essential_requirements"
+  }
+]

@@ -1,0 +1,40 @@
+[
+  {
+    "score": 1,
+    "strengths": [],
+    "weaknesses": [
+      "Zero experience in groundskeeping, gamekeeping, or countryside management",
+      "No evidence of tracking, search and rescue, or military pursuit experience",
+      "Lack of physical fitness verification or ability to work in remote moorland environments",
+      "No experience with bloodhounds or estate maintenance",
+      "Professional background is entirely technical/software-based and incompatible with the role"
+    ],
+    "summary": "The candidate is a junior software engineer with no relevant skills or experience for an estate groundskeeper and hunt coordinator position.",
+    "candidate": "beginner_american",
+    "tokens_in": 2168,
+    "tokens_out": 144,
+    "model": "gemma4_31b"
+  },
+  {
+    "score": 1,
+    "strengths": [
+      "Demonstrates strong technical and analytical skills",
+      "Proven ability to learn new tools quickly"
+    ],
+    "weaknesses": [
+      "No experience in groundskeeping, gamekeeping, or countryside management",
+      "Lacks physical fitness, tracking, or dog handling background",
+      "No evidence of discretion or suitability for covert, high‑risk estate role"
+    ],
+    "summary": "The candidate's software engineering background does not meet any of the essential requirements for the estate groundskeeper and hunt coordinator position.",
+    "candidate": "beginner_american",
+    "tokens_in": 2044,
+    "tokens_out": 144,
+    "model": "gpt-oss_120b"
+  },
+  {
+    "summary": "The candidate does not meet the essential requirement of groundskeeping, gamekeeping, or countryside management experience. The experience in software engineering and teaching is not closely related to the job requirements. However, the candidate's excellent physical fitness, ability to work alone, and willingness to live on-site align well with the job's needs. The candidate's background in technology and problem-solving could be seen as a close match to the 'pursuit oriented' background requirement, though this is not a direct fit.",
+    "candidate": "beginner_american",
+    "type": "essential_requirements"
+  }
+]

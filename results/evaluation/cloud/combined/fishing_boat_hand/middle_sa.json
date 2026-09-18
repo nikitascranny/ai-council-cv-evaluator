@@ -1,0 +1,39 @@
+[
+  {
+    "score": 1,
+    "strengths": [],
+    "weaknesses": [
+      "Zero evidence of physical fitness or ability to perform manual labor",
+      "No maritime experience or 'sea legs'",
+      "Current professional background is entirely in software engineering",
+      "Based in South Africa, whereas the role is located in Kestrel Bay, UK",
+      "No evidence of driving license or relevant certifications (STCW/RYA)"
+    ],
+    "summary": "The candidate is a Software Engineer with no relevant experience, skills, or geographical proximity for a physically demanding deckhand role on a fishing vessel.",
+    "candidate": "middle_sa",
+    "tokens_in": 1723,
+    "tokens_out": 144,
+    "model": "gemma4_31b"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Demonstrates strong work ethic and ability to learn complex systems",
+      "Certified AWS Developer showing commitment to upskilling"
+    ],
+    "weaknesses": [
+      "No maritime or physical labor experience; lacks sea legs and boat handling",
+      "No relevant certifications (STCW, RYA) or manual fish handling skills"
+    ],
+    "summary": "Highly skilled in software engineering but lacks any of the essential fishing and boat-hand experience required for the role.",
+    "candidate": "middle_sa",
+    "tokens_in": 1622,
+    "tokens_out": 134,
+    "model": "gpt-oss_120b"
+  },
+  {
+    "summary": "The candidate's BEng Computer Engineering degree and AWS Certified Developer – Associate certification suggest strong technical skills, but these are not directly related to the physical and manual work requirements. They have relevant experience from engineering guilds, which could indicate a reasonable match for reliability and teamwork. However, the CV does not provide evidence of physical fitness for heavy, repetitive manual work or sea legs, and there is no indication of previous time on boats, which are crucial for the role. The willingness to work early starts and long days is implied, and there is no mention of a history of severe seasickness.",
+    "candidate": "middle_sa",
+    "type": "essential_requirements"
+  }
+]

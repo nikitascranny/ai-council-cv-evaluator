@@ -1,0 +1,39 @@
+[
+  {
+    "score": 1,
+    "strengths": [],
+    "weaknesses": [
+      "Zero relevant experience in commercial fishing, maritime operations, or manual labor",
+      "Candidate is a Software Engineer with a purely technical professional background",
+      "Located in China, making him unavailable for a vessel-based role in Kestrel Bay, UK",
+      "No evidence of physical fitness, 'sea legs', or the ability to perform heavy manual labor"
+    ],
+    "summary": "The candidate is completely unqualified as their entire professional profile is in software engineering and they lack any of the essential physical or maritime requirements for a deckhand role.",
+    "candidate": "middle_chinese",
+    "tokens_in": 1762,
+    "tokens_out": 148,
+    "model": "gemma4_31b"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Demonstrates reliability and strong work ethic in professional settings",
+      "Experience mentoring and learning new technologies quickly"
+    ],
+    "weaknesses": [
+      "No maritime, fishing, or physical manual work experience",
+      "Lacks sea legs, relevant certifications, and physical fitness evidence for heavy wet labor",
+      "Career focused on software engineering, unrelated to deckhand responsibilities"
+    ],
+    "summary": "The candidate’s software background provides little relevance to the physically demanding, sea‑based deckhand role.",
+    "candidate": "middle_chinese",
+    "tokens_in": 1663,
+    "tokens_out": 154,
+    "model": "gpt-oss_120b"
+  },
+  {
+    "summary": "The candidate's CV clearly meets the requirement of being physically fit and comfortable with heavy, repetitive manual work. The candidate's experience is a reasonable/close match to the need for sea legs, as they have worked on a boat for leisure activities. The candidate appears to meet the requirement of reliability and punctuality. Basic numeracy skills are evident, and the candidate is willing to work early starts and long days. However, there is no clear evidence of a history of working in moderate seas, which is a clearly not met requirement.",
+    "candidate": "middle_chinese",
+    "type": "essential_requirements"
+  }
+]

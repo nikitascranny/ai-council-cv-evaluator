@@ -1,0 +1,146 @@
+[
+  {
+    "score": 4,
+    "strengths": [
+      "Strong programming background in Python and experience mentoring university students in coding",
+      "Experience with Windows development environments and modern development tools (Git, Docker, CI/CD)",
+      "Demonstrated ability to create teaching resources and support learners"
+    ],
+    "weaknesses": [
+      "No demonstrated experience with school IT support, device imaging, Active Directory/Intune, or managing Windows laptops, iPads, Chromebooks",
+      "Lacks exposure to classroom AV, Wi‑Fi/network troubleshooting, and school safeguarding policies",
+      "No prior experience in an education setting or with Google Workspace/Google Classroom administration"
+    ],
+    "summary": "The candidate shows solid programming and mentoring skills but lacks the essential IT support and school‑focused experience required for the role.",
+    "candidate": "beginner_sa",
+    "tokens_in": 1765,
+    "tokens_out": 231
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Strong Python programming knowledge and experience debugging code",
+      "Previous teaching assistant role demonstrating ability to explain technical concepts to learners",
+      "Experience with Git, Docker, and cloud services showing good technical aptitude"
+    ],
+    "weaknesses": [
+      "No evidence of experience with Windows 11, Microsoft 365, Intune, Active Directory, or school‑focused device imaging and support",
+      "Lacks background in classroom AV equipment, Wi‑Fi/network troubleshooting, and maintaining school IT estates",
+      "No demonstrated safeguarding training or experience working specifically with 11‑16 school pupils"
+    ],
+    "summary": "While technically competent, the candidate lacks the core school IT support and safeguarding experience required for the role.",
+    "candidate": "beginner_american",
+    "tokens_in": 1726,
+    "tokens_out": 228
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Solid programming knowledge in Python and JavaScript",
+      "Experience tutoring university students in programming",
+      "Experience with version control, testing and agile processes"
+    ],
+    "weaknesses": [
+      "No demonstrated experience with Windows 11, Microsoft 365, Active Directory/Intune or school‑level device management",
+      "Lacks first‑line IT support or hardware troubleshooting background",
+      "No experience in a school setting, safeguarding or working with 11‑14 year olds in a classroom environment"
+    ],
+    "summary": "The candidate is technically capable but lacks the core school IT support and safeguarding experience required for the role.",
+    "candidate": "beginner_chinese",
+    "tokens_in": 1779,
+    "tokens_out": 181
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Strong programming experience in Python and other languages",
+      "Experience mentoring junior staff and explaining technical concepts"
+    ],
+    "weaknesses": [
+      "No demonstrated experience with school IT support, device imaging, or Windows/Intune administration",
+      "Lacks any background in education settings, safeguarding, or work with pupils"
+    ],
+    "summary": "Highly skilled software engineer but missing the essential school IT and youth‑engagement experience required for the role.",
+    "candidate": "intermediate_american",
+    "tokens_in": 1817,
+    "tokens_out": 154
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Strong programming experience in Python and related technologies",
+      "Experience mentoring junior engineers and explaining technical concepts"
+    ],
+    "weaknesses": [
+      "No evidence of IT support, device imaging, or classroom technology experience",
+      "Lacks familiarity with Windows 11, Microsoft 365/Intune, Active Directory, and school safeguarding requirements"
+    ],
+    "summary": "Solid software development background but minimal relevant school IT and teaching support experience, resulting in a low overall fit.",
+    "candidate": "middle_chinese",
+    "tokens_in": 1855,
+    "tokens_out": 160
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Strong Python competency and overall software development experience",
+      "Proven troubleshooting and debugging skills in complex systems",
+      "Experience mentoring junior engineers, indicating ability to explain technical concepts"
+    ],
+    "weaknesses": [
+      "No demonstrated experience in school‑based IT support, device imaging, Active Directory/Intune, or classroom AV",
+      "Lacks any background working with children, safeguarding knowledge, or extracurricular coding clubs",
+      "No exposure to Google Workspace/VLE administration, micro‑bit/robotics, or network infrastructure"
+    ],
+    "summary": "The candidate excels in professional software engineering but lacks the essential school IT support and youth‑engagement experience required for the role.",
+    "candidate": "middle_sa",
+    "tokens_in": 1814,
+    "tokens_out": 255
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Strong programming background, especially Python",
+      "Extensive experience with Windows servers and cloud infrastructure"
+    ],
+    "weaknesses": [
+      "No demonstrated experience in first‑line school IT support, device imaging, or Active Directory/Intune management",
+      "No experience working with children, safeguarding, or delivering coding clubs in an educational setting"
+    ],
+    "summary": "Highly skilled in software engineering but lacks the practical school‑IT and youth‑engagement experience essential for the role.",
+    "candidate": "senior_american",
+    "tokens_in": 1966,
+    "tokens_out": 160
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Strong technical background in software engineering and systems design",
+      "Experience with Python and teaching/mentoring engineers which could translate to youth tutoring"
+    ],
+    "weaknesses": [
+      "No experience with school IT environments, Windows device imaging, Intune, or basic desktop support",
+      "Lacks direct experience working with children, safeguarding, or educational technology platforms (Google Workspace, VLE)"
+    ],
+    "summary": "Highly skilled in enterprise software engineering but lacks the core school‑IT support and youth‑focused experience required for the role.",
+    "candidate": "senior_chinese",
+    "tokens_in": 2013,
+    "tokens_out": 164
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Strong technical background in Windows, Python and cloud infrastructure",
+      "Experience mentoring and teaching complex concepts to engineers"
+    ],
+    "weaknesses": [
+      "No experience with school IT support, device imaging, Active Directory/Intune or AV equipment",
+      "No history of working with children, safeguarding awareness, or education setting",
+      "Career level far above the senior‑technician/assistant role and unlikely to accept term‑time contract"
+    ],
+    "summary": "Highly skilled technically but lacks the essential education‑sector experience and child‑focused competencies required for the role.",
+    "candidate": "senior_sa",
+    "tokens_in": 1959,
+    "tokens_out": 183
+  }
+]

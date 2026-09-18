@@ -1,0 +1,42 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Strong programming proficiency in Python, which is essential for the coding enrichment aspect of the role",
+      "Experience mentoring junior engineers, suggesting a capacity for supporting students"
+    ],
+    "weaknesses": [
+      "No evidence of first-line IT support, hardware maintenance, or classroom AV experience",
+      "Lacks knowledge of school-specific tools like Intune, Active Directory, Google Classroom, or Scratch",
+      "Overqualified in software engineering but underqualified in systems administration and technical support",
+      "No demonstrated experience working with children or understanding of safeguarding requirements",
+      "Currently based in China, posing a significant geographical barrier for an on-site role in Wexborne"
+    ],
+    "summary": "While the candidate is a highly skilled software engineer, they lack the essential IT technician experience and pedagogical enthusiasm required for this specific hybrid school role.",
+    "candidate": "middle_chinese",
+    "tokens_in": 2017,
+    "tokens_out": 207,
+    "model": "gemma4_31b"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Strong programming experience in Python and related technologies",
+      "Experience mentoring junior engineers and explaining technical concepts"
+    ],
+    "weaknesses": [
+      "No evidence of IT support, device imaging, or classroom technology experience",
+      "Lacks familiarity with Windows 11, Microsoft 365/Intune, Active Directory, and school safeguarding requirements"
+    ],
+    "summary": "Solid software development background but minimal relevant school IT and teaching support experience, resulting in a low overall fit.",
+    "candidate": "middle_chinese",
+    "tokens_in": 1855,
+    "tokens_out": 160,
+    "model": "gpt-oss_120b"
+  },
+  {
+    "summary": "The candidate clearly meets the requirement for practical IT support experience through their home lab background. They have a reasonable match with their working knowledge of Windows 11 and Microsoft 365, and their basic programming ability in Python, which is relevant for helping young people debug code. The candidate's enthusiasm for working with young people and their willingness to undergo necessary checks is clearly stated. However, their experience with device management tools like Intune is unclear, and while they have programming skills, their ability to help 11-14 year olds debug their own code is not explicitly mentioned.",
+    "candidate": "middle_chinese",
+    "type": "essential_requirements"
+  }
+]

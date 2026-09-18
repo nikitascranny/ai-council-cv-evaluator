@@ -1,0 +1,8 @@
+{
+  "candidate": "senior_chinese",
+  "final_score": 3,
+  "score_rationale": "The candidate demonstrates strong Python and mentoring skills but lacks essential IT support experience (Intune, Active Directory, first-line hardware/AV support) and any background working with children or in an educational setting, which are core to the role.",
+  "key_strengths": "Expert-level Python proficiency, proven mentorship and leadership abilities, strong technical background in software engineering and systems design.",
+  "key_weaknesses": "No experience with first-line IT support, Windows device imaging, Intune, Active Directory, or Google Classroom; no direct work with children, safeguarding, or school IT environments; overqualified for the salary and technical scope.",
+  "final_evaluation": "While the candidate could contribute to coding enrichment, they would require substantial training in school-based IT support and safeguarding to meet the essential requirements, making them a poor fit for this hybrid technician/coding lead position."
+}

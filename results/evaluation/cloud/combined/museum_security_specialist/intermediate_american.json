@@ -1,0 +1,43 @@
+[
+  {
+    "score": 1,
+    "strengths": [
+      "Strong technical background in access-control policies (digital)",
+      "Experience with audit trails and compliance"
+    ],
+    "weaknesses": [
+      "No experience in physical security or museum operations",
+      "Lacks required SIA Door Supervisor or Security Guarding licence",
+      "No evidence of experience with CCTV, intruder alarms, or physical patrolling",
+      "Based in Austin, Texas, whereas the role is on-site in Dunbridge, UK",
+      "Professional background is entirely in Software Engineering rather than Security Operations"
+    ],
+    "summary": "The candidate is a Software Engineer with no relevant physical security experience or certifications, making them entirely unsuitable for this on-site Museum Security Specialist role.",
+    "candidate": "intermediate_american",
+    "tokens_in": 1678,
+    "tokens_out": 177,
+    "model": "gemma4_31b"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong technical background and proven ability to learn complex systems quickly",
+      "Experience with incident monitoring and implementing audit trails and security controls in software projects"
+    ],
+    "weaknesses": [
+      "No museum, gallery or public‑venue security experience",
+      "Lacks required SIA licence, CCTV/alarm/access‑control operation experience, and physical patrol background",
+      "No evidence of first‑aid, high‑value object protection, or shift‑work flexibility"
+    ],
+    "summary": "Candidate lacks the essential security and museum experience required for the role despite solid technical abilities.",
+    "candidate": "intermediate_american",
+    "tokens_in": 1559,
+    "tokens_out": 163,
+    "model": "gpt-oss_120b"
+  },
+  {
+    "summary": "The candidate's CV clearly meets the requirement for a valid SIA Door Supervisor or Security Guarding licence, as it does not yet list a specific one. However, there is a reasonable match for the required experience in a security role, given the candidate's background in computer engineering. The candidate's education and skills in technology do not directly meet the requirement for working knowledge of security systems. The physical and flexible working conditions are not evidenced, but the security role experience suggests a relevant transferable skill set.",
+    "candidate": "intermediate_american",
+    "type": "essential_requirements"
+  }
+]

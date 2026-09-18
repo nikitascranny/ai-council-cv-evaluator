@@ -1,0 +1,47 @@
+[
+  {
+    "score": 7,
+    "strengths": [
+      "Extensive experience leading monolith-to-services migrations, directly aligning with the core requirement for platform modernisation.",
+      "Deep expertise in high-volume transactional systems (payments and logistics), which is a highly desirable industry background.",
+      "Strong cloud and infrastructure proficiency (AWS, Kubernetes, CI/CD) and a proven track record of improving operational maturity and observability.",
+      "Significant experience in technical leadership, architecture governance, and mentoring senior engineers."
+    ],
+    "weaknesses": [
+      "Lack of explicit evidence of direct line-management experience (1:1s, performance reviews, hiring) for a team of 8; experience is primarily as a technical/principal lead.",
+      "No mentioned experience with the specific frontend stack required (React) or .NET, though TypeScript and general web proficiency are present.",
+      "Current location is South Africa, while the role requires a hybrid presence in Levenwick, UK (minimum 2 days/week)."
+    ],
+    "summary": "A technically exceptional candidate with a perfect track record in replatforming and high-volume systems, but lacks confirmed people-management experience and has significant geographical barriers.",
+    "candidate": "senior_sa",
+    "tokens_in": 1922,
+    "tokens_out": 268,
+    "model": "gemma4_31b"
+  },
+  {
+    "score": 8,
+    "strengths": [
+      "12+ years of software engineering experience with 5+ years leading large engineering teams",
+      "Proven track record of migrating monolithic systems to service‑oriented architectures and improving release cadence",
+      "Strong background in cloud (AWS), CI/CD, observability, and SRE practices",
+      "Hands‑on coding experience across multiple languages including TypeScript and experience with distributed systems",
+      "Demonstrated ability to drive technical standards, RFC processes, and mentor senior engineers"
+    ],
+    "weaknesses": [
+      "Primary technical stack is Go/Java/Python; limited explicit experience with React/TypeScript front‑end development",
+      "No direct .NET or Node.js experience, which are part of the target stack",
+      "Lacks specific domain experience in ferry/coastal transport or high‑volume booking systems",
+      "No mention of accessibility (WCAG) work or dedicated incident‑management at scale in a customer‑facing web context"
+    ],
+    "summary": "Zanele brings strong engineering leadership and migration experience that aligns well with the role, but gaps in the specific front‑end/.NET stack and domain knowledge lower the overall fit.",
+    "candidate": "senior_sa",
+    "tokens_in": 1757,
+    "tokens_out": 319,
+    "model": "gpt-oss_120b"
+  },
+  {
+    "summary": "The candidate clearly meets the requirement for a minimum of 5 years of professional web/software engineering experience and has co-invented a patent, indicating technical expertise. Experience in adaptive workload routing and speaking at an engineering forum suggests a solid background in modern web stacks and communication skills. However, the exact years of line management experience are not clearly stated, and the specific backend language experience is not mentioned, making those requirements a reasonable/close match. The candidate's education and industry activities do not provide clear evidence of CI/CD, cloud infrastructure, or agile delivery experience.",
+    "candidate": "senior_sa",
+    "type": "essential_requirements"
+  }
+]

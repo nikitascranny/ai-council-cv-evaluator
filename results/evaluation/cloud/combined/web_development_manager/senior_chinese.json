@@ -1,0 +1,45 @@
+[
+  {
+    "score": 7,
+    "strengths": [
+      "Extensive experience in monolith decomposition and service-oriented architecture migration, which is a primary goal of the role",
+      "Proven track record in high-volume transactional systems (payments and logistics) mirroring the company's booking platform needs",
+      "Strong leadership and mentoring experience, including scaling engineers into staff roles and setting technical direction for large teams",
+      "Expertise in observability, incident management, and CI/CD 'golden paths' to improve developer velocity"
+    ],
+    "weaknesses": [
+      "Lack of explicit evidence for direct line management duties (1:1s, performance reviews, hiring) compared to technical leadership/mentoring",
+      "Missing specific experience with the required frontend stack (React) and .NET, though proficient in TypeScript and other backend languages",
+      "No mentioned experience with accessibility standards (WCAG 2.2 AA)",
+      "Current location is China, while the role requires hybrid presence in Levenwick, UK"
+    ],
+    "summary": "A highly skilled technical leader with perfect experience in replatforming and high-scale systems, though lacking specific frontend/dotnet expertise and confirmed HR-style line management experience.",
+    "candidate": "senior_chinese",
+    "tokens_in": 1963,
+    "tokens_out": 272,
+    "model": "gemma4_31b"
+  },
+  {
+    "score": 7,
+    "strengths": [
+      "12+ years of software engineering with extensive experience in large‑scale platform modernization and monolith decomposition",
+      "Proven line‑management of engineering teams (26 engineers) and mentorship of senior staff",
+      "Strong background in cloud infrastructure, CI/CD, observability, and reliability engineering (Kubernetes, Terraform, OpenTelemetry)",
+      "Demonstrated ability to lead technical roadmaps, incident management, and cross‑functional collaboration"
+    ],
+    "weaknesses": [
+      "Limited explicit experience with the required front‑end stack (React/TypeScript) and .NET ecosystem",
+      "Primary cloud experience on Alibaba Cloud rather than AWS, and no direct travel/transport domain exposure"
+    ],
+    "summary": "The candidate excels in technical leadership and large‑scale backend modernization, but lacks the specific front‑end and AWS/.NET experience central to the role.",
+    "candidate": "senior_chinese",
+    "tokens_in": 1811,
+    "tokens_out": 272,
+    "model": "gpt-oss_120b"
+  },
+  {
+    "summary": "The candidate meets the 5+ years of professional web/software engineering experience and line management experience clearly. Strong background in modern web stacks, significant technical change leadership, CI/CD, cloud infrastructure, and agile delivery practices are reasonable/close matches. However, there is no clear evidence of specific experience with AWS or the exact backend languages mentioned in the job description.",
+    "candidate": "senior_chinese",
+    "type": "essential_requirements"
+  }
+]

@@ -1,0 +1,39 @@
+[
+  {
+    "score": 1,
+    "strengths": [],
+    "weaknesses": [
+      "No experience in security, museum operations, or heritage site protection",
+      "Lacks a mandatory SIA Door Supervisor or Security Guarding licence",
+      "No experience with physical patrolling, CCTV monitoring, or access-control hardware",
+      "Candidate is a Software Engineer based in China, applying for an on-site physical security role in the UK"
+    ],
+    "summary": "The candidate is a software engineer with no relevant experience or certifications for a physical museum security role.",
+    "candidate": "middle_chinese",
+    "tokens_in": 1711,
+    "tokens_out": 134,
+    "model": "gemma4_31b"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong technical and analytical skills",
+      "Experience with risk‑related documentation and compliance processes"
+    ],
+    "weaknesses": [
+      "No security, CCTV, alarm or access‑control experience",
+      "Lacks required SIA licence and museum/heritage background",
+      "No evidence of physical patrol or incident response capability"
+    ],
+    "summary": "The candidate’s software engineering background does not meet the essential security and museum experience required for the role.",
+    "candidate": "middle_chinese",
+    "tokens_in": 1597,
+    "tokens_out": 149,
+    "model": "gpt-oss_120b"
+  },
+  {
+    "summary": "The candidate has 2 years' experience in a security role, which is a reasonable close match to the minimum 3 years required. The candidate holds a valid SIA Door Supervisor licence, meeting one of the essential requirements. The candidate's experience includes basic CCTV monitoring and report writing, indicating relevant knowledge and experience, but may not fully meet the requirement of 'working knowledge' of all systems. Physical fitness and flexibility are not explicitly stated, but the candidate's background suggests these skills. However, the candidate lacks formal experience in a museum, gallery, heritage site, or other public venue, which is clearly not met.",
+    "candidate": "middle_chinese",
+    "type": "essential_requirements"
+  }
+]

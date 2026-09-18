@@ -1,0 +1,38 @@
+[
+  {
+    "summary": "The candidate clearly meets the requirement for practical IT support experience through their role as a Computer Science Teaching Assistant, where they guided students through programming fundamentals. Their experience with programming languages such as Python aligns well with the basic programming ability requirement. The role does not explicitly mention device management or Windows 11, but their background in software development and cloud certifications suggest relevant skills. The enthusiasm for working with young people is evident from their teaching assistant experience. Safeguarding and DBS checks are not addressed in the CV.",
+    "candidate": "beginner_american"
+  },
+  {
+    "summary": "The candidate's IT support experience and working knowledge of Windows 11 and Microsoft 365 are clearly met. Their ability in Python and Scratch is a reasonable match for the basic programming requirement. The enthusiasm for working with young people and their understanding of safeguarding are not explicitly stated, but are likely based on their background. An enhanced DBS check and barred list check are not mentioned, but may be assumed. The candidate’s volunteer background in IT support provides a reasonable substitute for the standard work experience.",
+    "candidate": "beginner_chinese"
+  },
+  {
+    "summary": "The candidate clearly meets the practical IT support experience and working knowledge of Windows 11 and Microsoft 365 requirements. Basic programming ability using Python is a reasonable match, and enthusiasm for working with young people is also evident. However, the candidate's experience with device management tools and safeguarding training is unclear.",
+    "candidate": "beginner_sa"
+  },
+  {
+    "summary": "The candidate has a strong educational background in Computer Engineering, which is a clear match. Practical IT support experience is not explicitly stated but is a reasonable match given the strong home lab/volunteer background mentioned. Working knowledge of Windows 11 and Microsoft 365 is not directly stated, but the AWS Certified Developer certification suggests a related level of expertise. Basic programming ability in Python is evidenced, which is a clear match for the requirement. The enthusiasm for working with young people is not explicitly stated, but the focus on AWS certification and volunteering background suggests an interest in technology education. Safeguarding and DBS check requirements are not clearly met, as they are not referenced in the CV.",
+    "candidate": "intermediate_american"
+  },
+  {
+    "summary": "The candidate clearly meets the requirement for practical IT support experience through their home lab background. They have a reasonable match with their working knowledge of Windows 11 and Microsoft 365, and their basic programming ability in Python, which is relevant for helping young people debug code. The candidate's enthusiasm for working with young people and their willingness to undergo necessary checks is clearly stated. However, their experience with device management tools like Intune is unclear, and while they have programming skills, their ability to help 11-14 year olds debug their own code is not explicitly mentioned.",
+    "candidate": "middle_chinese"
+  },
+  {
+    "summary": "The candidate clearly meets the requirement for practical IT support experience through their education and outside work. Their BEng in Computer Engineering and contributions to engineering guilds suggest a strong background in IT. They have a reasonable/close match for the working knowledge of Windows 11 and Microsoft 365, though no mention of Intune or similar device management tools. Their AWS Certified Developer – Associate certification provides relevant programming skills, but there is no direct evidence of teaching or debugging experience with Python or Scratch. The candidate's enthusiasm for working with young people is not explicitly stated, and there is no clear information on their understanding or willingness to train in safeguarding. They are willing to undergo the required checks.",
+    "candidate": "middle_sa"
+  },
+  {
+    "summary": "The candidate's professional experience in software engineering and technical leadership clearly meets the practical IT support and programming experience requirements. Their background in mentoring and technical leadership also closely aligns with the need for enthusiasm and clear communication when working with young people. However, there is no evidence of IT support experience in a school, business, or home lab/volunteer context, nor of a working knowledge of Windows 11, Microsoft 365, or device management systems like Intune.",
+    "candidate": "senior_american"
+  },
+  {
+    "summary": "The candidate clearly meets the practical IT support experience requirement with their extensive background in software engineering. They have a reasonable/close match for basic programming ability, as they are proficient in multiple programming languages, including Python. The candidate does not clearly meet the requirement for working knowledge of Windows 11, Microsoft 365, or Intune, and the CV does not provide clear evidence of a genuine enthusiasm for working with young people or understanding of safeguarding policies.",
+    "candidate": "senior_chinese"
+  },
+  {
+    "summary": "The candidate's MSc and BSc in Software Engineering clearly indicate practical IT support experience. Their working knowledge of Python aligns with the basic programming ability requirement, and their background in engineering and technology can be considered a close match for explaining technology clearly. There is no direct evidence of Windows 11, Microsoft 365, or Intune experience, but given their software engineering background, this is a reasonable match. The candidate's enthusiasm for working with young people and commitment to policies are not directly evidenced but can be inferred from their background in engineering excellence and speaker experience. Safeguarding and DBS checks are not mentioned, but given the role’s nature, this is a reasonable assumption.",
+    "candidate": "senior_sa"
+  }
+]

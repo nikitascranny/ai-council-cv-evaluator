@@ -1,0 +1,44 @@
+[
+  {
+    "score": 4,
+    "strengths": [
+      "Strong technical alignment with the modern web stack (React, TypeScript, AWS)",
+      "Experience with high-volume systems and distributed architectures",
+      "Proven ability to improve observability and incident diagnosis time",
+      "Experience mentoring junior engineers and leading small project initiatives"
+    ],
+    "weaknesses": [
+      "Lacks the required 2+ years of formal line-management experience (no evidence of performance reviews or career development ownership)",
+      "No evidence of leading a team through a major platform modernization or monolith decomposition",
+      "Does not meet the 5+ years of professional experience requirement (approx. 4.5 years)",
+      "Based in Austin, Texas, while the role is hybrid in Levenwick, UK"
+    ],
+    "summary": "While Priya is a highly skilled engineer with a relevant technical stack, she lacks the essential leadership experience and residency required for an Engineering Manager role.",
+    "candidate": "intermediate_american",
+    "tokens_in": 1753,
+    "tokens_out": 219,
+    "model": "gemma4_31b"
+  },
+  {
+    "score": 5,
+    "strengths": [
+      "Strong experience with modern web stacks (React, TypeScript, Node.js‑adjacent Kotlin/Spring Boot)",
+      "Proven delivery of high‑volume, observable services on AWS with CI/CD and Terraform",
+      "Hands‑on leadership in mentoring and technical design reviews"
+    ],
+    "weaknesses": [
+      "No demonstrated line‑management of engineers (required 2+ years of manager experience)",
+      "Limited direct experience with .NET or full‑stack service‑oriented migration projects"
+    ],
+    "summary": "Candidate shows solid technical depth and some informal leadership, but lacks the required engineering‑manager experience and specific replatforming background.",
+    "candidate": "intermediate_american",
+    "tokens_in": 1615,
+    "tokens_out": 187,
+    "model": "gpt-oss_120b"
+  },
+  {
+    "summary": "The candidate meets the requirement for a strong background in modern web stacks, with experience in React and a backend language. They also have relevant education and an AWS certification. However, the experience in line management and leading significant technical change is unclear, and there is no evidence of running agile delivery with distributed or hybrid teams.",
+    "candidate": "intermediate_american",
+    "type": "essential_requirements"
+  }
+]

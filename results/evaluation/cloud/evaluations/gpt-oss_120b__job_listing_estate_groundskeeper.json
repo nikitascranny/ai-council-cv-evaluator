@@ -1,0 +1,143 @@
+[
+  {
+    "score": 2,
+    "strengths": [
+      "Demonstrates ability to learn new tools quickly",
+      "Strong technical and documentation skills"
+    ],
+    "weaknesses": [
+      "No relevant groundskeeping, gamekeeping, or outdoor experience",
+      "Lacks physical fitness, tracking, dog handling, or pursuit background required by the role",
+      "Unfamiliar with the unique, high‑discretion, live‑in estate environment"
+    ],
+    "summary": "The candidate's software background offers little to no relevance to the demanding, outdoors‑focused, high‑discretion role.",
+    "candidate": "beginner_chinese",
+    "tokens_in": 2097,
+    "tokens_out": 162
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Demonstrates strong technical learning ability and recent graduate experience in fast‑paced environments",
+      "Proven teamwork, documentation, and attention to detail through software projects"
+    ],
+    "weaknesses": [
+      "No experience in groundskeeping, gamekeeping, or countryside management",
+      "Lacks physical, tracking, hunting or canine handling background required for the role",
+      "No evidence of discretion or experience with confidential, high‑value environments",
+      "Unfamiliar with outdoor safety, first aid, or relevant certifications"
+    ],
+    "summary": "The candidate’s tech background does not match the essential countryside, hunting and discretion requirements of the role.",
+    "candidate": "beginner_sa",
+    "tokens_in": 2083,
+    "tokens_out": 175
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong technical and analytical skills",
+      "Proven ability to learn and implement new technologies quickly"
+    ],
+    "weaknesses": [
+      "No relevant groundskeeping, hunting, or outdoor experience",
+      "Lacks physical fitness and tracking background required for role"
+    ],
+    "summary": "Excellent software engineer but lacks any of the essential countryside, hunting, or discretion experience needed for the estate position.",
+    "candidate": "intermediate_american",
+    "tokens_in": 2135,
+    "tokens_out": 113
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Demonstrated strong leadership and project management skills",
+      "Excellent technical problem‑solving and analytical abilities"
+    ],
+    "weaknesses": [
+      "No experience in groundskeeping, gamekeeping, or countryside management",
+      "Lacks physical, tracking, hunting or dog‑handling background required for the role",
+      "No evidence of discretion or experience with confidential, high‑risk entertainment events"
+    ],
+    "summary": "Highly skilled in software engineering but fundamentally unsuited to the physical, outdoors‑focused, discretion‑heavy duties of the estate groundskeeper and hunt coordinator role.",
+    "candidate": "senior_american",
+    "tokens_in": 2284,
+    "tokens_out": 168
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong technical leadership and problem‑solving experience",
+      "Proven ability to design, implement and maintain complex, high‑availability systems"
+    ],
+    "weaknesses": [
+      "No evidence of groundskeeping, gamekeeping, or outdoor estate management experience",
+      "Lacks physical/fitness, tracking, hunting, or dog‑handling background required for the role",
+      "No demonstrated discretion or experience with confidential, high‑risk experiential services"
+    ],
+    "summary": "Highly skilled in software engineering but lacks any of the essential outdoor, hunting or discretion experience needed for the groundskeeper and hunt coordinator role.",
+    "candidate": "senior_chinese",
+    "tokens_in": 2331,
+    "tokens_out": 170
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Extensive senior leadership and project management experience",
+      "Proven ability to learn complex technical systems quickly"
+    ],
+    "weaknesses": [
+      "No demonstrated groundskeeping, gamekeeping, or outdoor/country management experience",
+      "Lacks any background in tracking, hunting, dog handling, or relevant physical fitness for remote estate work"
+    ],
+    "summary": "Highly skilled software leader but missing all core estate and hunt‑coordination requirements.",
+    "candidate": "senior_sa",
+    "tokens_in": 2277,
+    "tokens_out": 168
+  },
+  {
+    "score": 1,
+    "strengths": [
+      "Demonstrates strong technical and analytical skills",
+      "Proven ability to learn new tools quickly"
+    ],
+    "weaknesses": [
+      "No experience in groundskeeping, gamekeeping, or countryside management",
+      "Lacks physical fitness, tracking, or dog handling background",
+      "No evidence of discretion or suitability for covert, high‑risk estate role"
+    ],
+    "summary": "The candidate's software engineering background does not meet any of the essential requirements for the estate groundskeeper and hunt coordinator position.",
+    "candidate": "beginner_american",
+    "tokens_in": 2044,
+    "tokens_out": 144
+  },
+  {
+    "score": 1,
+    "strengths": [
+      "Strong technical and programming expertise",
+      "Experience leading software projects and mentoring"
+    ],
+    "weaknesses": [
+      "No relevant groundskeeping, wildlife, or countryside management experience",
+      "Lacks physical outdoor, tracking, dog handling, and discretion-focused background required for the role"
+    ],
+    "summary": "The candidate’s skills are unrelated to the estate groundskeeping and hunt coordination duties.",
+    "candidate": "middle_chinese",
+    "tokens_in": 2173,
+    "tokens_out": 117
+  },
+  {
+    "score": 1,
+    "strengths": [
+      "Demonstrates strong technical and software engineering expertise",
+      "Proven record of leadership and project delivery in tech environments"
+    ],
+    "weaknesses": [
+      "No experience in groundskeeping, wildlife management, or related outdoor physical work",
+      "Lacks relevant skills in tracking, hound handling, or immersive event coordination required by the role"
+    ],
+    "summary": "The candidate's tech background does not align with the estate, hunting, and discretion requirements of the position.",
+    "candidate": "middle_sa",
+    "tokens_in": 2132,
+    "tokens_out": 130
+  }
+]

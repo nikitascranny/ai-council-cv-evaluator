@@ -1,0 +1,39 @@
+[
+  {
+    "score": 1,
+    "strengths": [],
+    "weaknesses": [
+      "Lack of required degree in Marine Biology, Zoology, or related life sciences",
+      "No experience with aquatic animal husbandry or life support systems (LSS)",
+      "Professional background is entirely in software engineering",
+      "No evidence of physical fitness or willingness to perform manual labor",
+      "Based in China with no indicated right to work in the UK"
+    ],
+    "summary": "The candidate is a software engineer with no relevant biological qualifications or experience, making them entirely unsuitable for an Aquarium Biologist role.",
+    "candidate": "middle_chinese",
+    "tokens_in": 1853,
+    "tokens_out": 142,
+    "model": "gemma4_31b"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong technical/problem‑solving skills",
+      "Experience with detailed documentation and systematic testing in software projects"
+    ],
+    "weaknesses": [
+      "No relevant marine/biological education or experience",
+      "Lacks any aquaculture, water‑quality, or animal‑care background; no evidence of physical‑hand‑on work or willingness to perform dirty, repetitive tasks"
+    ],
+    "summary": "The candidate’s tech background does not match the biological and hands‑on requirements of the aquarium biologist role.",
+    "candidate": "middle_chinese",
+    "tokens_in": 1740,
+    "tokens_out": 135,
+    "model": "gpt-oss_120b"
+  },
+  {
+    "summary": "The candidate's degree in Marine Biology clearly meets the job requirement. Their detailed description of laboratory and field work experience, including tasks involving physical labor and observational skills, is a reasonable match. However, specific mention of water chemistry or the nitrogen cycle is unclear, and the candidate's physical fitness and ability to work weekends are not directly evidenced.",
+    "candidate": "middle_chinese",
+    "type": "essential_requirements"
+  }
+]

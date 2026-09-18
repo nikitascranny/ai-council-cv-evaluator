@@ -1,0 +1,8 @@
+{
+  "candidate": "intermediate_american",
+  "final_score": 3,
+  "score_rationale": "The candidate falls short of the essential requirements: less than 5 years of experience, no demonstrated line‑management experience, and no evidence of leading a major platform migration or monolith decomposition, which are core to the role.",
+  "key_strengths": "Strong proficiency in React/TypeScript, AWS, CI/CD, observability, and high‑volume systems; experience mentoring juniors and delivering reliable services.",
+  "key_weaknesses": "Insufficient overall engineering experience (~4.5 years), lacks ≥2 years of formal line‑management, has not led a significant replatforming effort, and is based outside the UK making hybrid on‑site work unlikely.",
+  "final_evaluation": "While the candidate is a capable individual contributor with relevant technical depth, they do not meet the leadership and experience thresholds required for an Engineering Manager leading a web‑development team through a major modernization. Consequently, they are a poor fit for this position unless they gain the missing managerial and replatforming experience and are willing to relocate."
+}

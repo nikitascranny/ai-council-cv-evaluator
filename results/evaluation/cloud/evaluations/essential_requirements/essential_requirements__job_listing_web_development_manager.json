@@ -1,0 +1,38 @@
+[
+  {
+    "summary": "The candidate has a strong background in modern web technologies (React and Express) but lacks the required professional experience. The internship experience shows relevant skills in building React interfaces and implementing backend services, which can be considered a reasonable match. The candidate has not provided evidence of line management or leading significant technical changes, and while they have experience in agile delivery, it does not explicitly mention distributed or hybrid teams. Communication skills are implied from the internship experience but are not explicitly stated. The AWS certification and cloud infrastructure knowledge are relevant but not as detailed as required.",
+    "candidate": "beginner_american"
+  },
+  {
+    "summary": "The candidate has 5+ years of professional web/software engineering experience and has line managed engineers for at least 2 years, meeting both requirements. They possess a strong background in modern web stacks, particularly React/TypeScript, and have experience with a backend language. The candidate has led teams through significant technical changes, indicating relevant experience in CI/CD, cloud infrastructure, and automated testing. Their communication skills are evident, and they have experience running agile delivery with distributed teams. However, the exact years of experience in leading technical change and specific cloud infrastructure experience with AWS are not explicitly stated.",
+    "candidate": "beginner_chinese"
+  },
+  {
+    "summary": "The candidate has 5+ years of web/software engineering experience and at least 2 years in line management, which clearly meet the job requirements. Their background in modern web stacks such as React/TypeScript and backend languages (Node.js) is also a reasonable match. However, their experience in leading significant technical changes, particularly monolith decomposition, is unclear from the CV. The candidate's experience in CI/CD, cloud infrastructure, automated testing, observability, and agile delivery, especially with distributed teams, is well-aligned with the job requirements. Communication skills are not explicitly mentioned, but the overall CV suggests strong interpersonal skills.",
+    "candidate": "beginner_sa"
+  },
+  {
+    "summary": "The candidate meets the requirement for a strong background in modern web stacks, with experience in React and a backend language. They also have relevant education and an AWS certification. However, the experience in line management and leading significant technical change is unclear, and there is no evidence of running agile delivery with distributed or hybrid teams.",
+    "candidate": "intermediate_american"
+  },
+  {
+    "summary": "The candidate has 6 years of professional web/software engineering experience, with 3 years line managing engineers, meeting both the experience requirements. Their background in modern web stacks, including React/TypeScript and Node.js, aligns well with the job description. They have led teams through significant technical changes, which is a strong match for the requirement. However, the cloud infrastructure experience is not explicitly mentioned, though experience with other technologies could be transferable. Excellent communication skills and experience with agile delivery are clearly demonstrated.",
+    "candidate": "middle_chinese"
+  },
+  {
+    "summary": "The candidate's education and AWS certification clearly meet the technical requirements. Line management experience is not evidenced but contributing to engineering guilds and presenting at forums could be considered relevant. The required years of professional experience, specific web stack skills, and experience leading significant technical changes are not met. Excellent communication skills are implied through the presented content, but this is not explicitly stated.",
+    "candidate": "middle_sa"
+  },
+  {
+    "summary": "The candidate clearly meets the requirement for 5+ years of professional web/software engineering experience and has a strong background in modern web stacks, particularly TypeScript and Node.js. They also meet the requirement for leading teams through significant technical changes and have excellent communication skills. The role management experience is not explicitly stated but can be reasonably inferred from their leadership roles. The candidate does not have clear experience with React, but their experience with TypeScript and other modern web technologies is a reasonable match. Cloud infrastructure experience is primarily with AWS, Kubernetes, and Terraform, which meets the requirement. Agile delivery experience is evident but not in a distributed or hybrid setting. The candidate's mentoring experience and technical leadership roles are well-documented.",
+    "candidate": "senior_american"
+  },
+  {
+    "summary": "The candidate meets the 5+ years of professional web/software engineering experience and line management experience clearly. Strong background in modern web stacks, significant technical change leadership, CI/CD, cloud infrastructure, and agile delivery practices are reasonable/close matches. However, there is no clear evidence of specific experience with AWS or the exact backend languages mentioned in the job description.",
+    "candidate": "senior_chinese"
+  },
+  {
+    "summary": "The candidate clearly meets the requirement for a minimum of 5 years of professional web/software engineering experience and has co-invented a patent, indicating technical expertise. Experience in adaptive workload routing and speaking at an engineering forum suggests a solid background in modern web stacks and communication skills. However, the exact years of line management experience are not clearly stated, and the specific backend language experience is not mentioned, making those requirements a reasonable/close match. The candidate's education and industry activities do not provide clear evidence of CI/CD, cloud infrastructure, or agile delivery experience.",
+    "candidate": "senior_sa"
+  }
+]

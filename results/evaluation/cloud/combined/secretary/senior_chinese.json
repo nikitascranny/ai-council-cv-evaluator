@@ -1,0 +1,41 @@
+[
+  {
+    "score": 1,
+    "strengths": [
+      "High level of technical proficiency in software engineering",
+      "Proven track record of professionalism and leadership in a corporate environment"
+    ],
+    "weaknesses": [
+      "Complete lack of secretarial or administrative experience",
+      "Overqualified in technical domains but lacks basic requirements for the role (e.g., reception, diary management, filing)",
+      "No evidence of the specific soft skills required for a front-office client-facing role in a small accounting firm",
+      "Location mismatch (based in China, job is on-site in Ashcombe, UK)"
+    ],
+    "summary": "The candidate is a highly skilled Senior Software Engineer whose profile is entirely unrelated to the Administrative Assistant role, making them a complete mismatch for the position.",
+    "candidate": "senior_chinese",
+    "tokens_in": 1924,
+    "tokens_out": 185,
+    "model": "gemma4_31b"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong technical background and proven leadership in complex projects",
+      "Excellent written communication demonstrated in documentation and presentations"
+    ],
+    "weaknesses": [
+      "No relevant secretarial, receptionist or office administration experience",
+      "Lacks basic administrative skills such as typing speed, Microsoft Office proficiency, and client-facing reception duties"
+    ],
+    "summary": "Highly qualified in software engineering but lacks the essential administrative experience and skills required for the secretary/administrative assistant role.",
+    "candidate": "senior_chinese",
+    "tokens_in": 1786,
+    "tokens_out": 136,
+    "model": "gpt-oss_120b"
+  },
+  {
+    "summary": "The candidate's technical experience and skills in technology leadership clearly do not meet the job's requirements. However, their professional experience in software engineering and the mentioned skills in Microsoft Office tools represent a reasonable/close match. The 'attitude counts most' aspect is not directly addressed, but the candidate's leadership and problem-solving experience might suggest a positive attitude.",
+    "candidate": "senior_chinese",
+    "type": "essential_requirements"
+  }
+]

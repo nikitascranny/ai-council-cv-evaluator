@@ -1,0 +1,42 @@
+[
+  {
+    "score": 2,
+    "strengths": [
+      "Highly technical background in computer engineering",
+      "Strong problem-solving abilities and attention to detail"
+    ],
+    "weaknesses": [
+      "Overqualified for basic hardware repairs and shop assistance",
+      "No evidence of hardware repair skills (RAM, SSD, screen replacements)",
+      "Located in South Africa, while the job is a local shop in Tillingford, UK",
+      "Experience is in high-level software engineering rather than consumer electronics repair"
+    ],
+    "summary": "The candidate is a professional software engineer based in another continent whose skills are entirely mismatched with the requirements of a local, hands-on computer repair shop.",
+    "candidate": "middle_sa",
+    "tokens_in": 1734,
+    "tokens_out": 165,
+    "model": "gemma4_31b"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong software development background",
+      "Experience with troubleshooting complex systems and mentoring junior staff"
+    ],
+    "weaknesses": [
+      "No evidence of hands‑on PC/laptop hardware repair or repair of peripherals",
+      "Lacks experience dealing directly with retail customers, especially older people",
+      "No local UK residency or transport availability mentioned"
+    ],
+    "summary": "Highly skilled as a software engineer but lacks the practical hardware repair and customer‑facing experience required for the shop role.",
+    "candidate": "middle_sa",
+    "tokens_in": 1609,
+    "tokens_out": 141,
+    "model": "gpt-oss_120b"
+  },
+  {
+    "summary": "The candidate's BEng Computer Engineering degree clearly meets the requirement for basic PC/laptop repair skills. The ability to explain technical concepts without jargon and the presentation at a developer forum suggest they can communicate effectively with customers, which is a reasonable match for the requirement of being friendly and patient. The requirement for honest and reliable behavior is not directly evidenced but can be reasonably inferred from the candidate's professional involvement. The candidate's availability for Saturdays is unclear from the CV. Their willingness to contribute to engineering guilds is a reasonable match for the need to be able to get to Tillingford reliably.",
+    "candidate": "middle_sa",
+    "type": "essential_requirements"
+  }
+]

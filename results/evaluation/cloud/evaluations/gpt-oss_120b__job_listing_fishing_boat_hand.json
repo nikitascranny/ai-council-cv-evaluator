@@ -1,0 +1,141 @@
+[
+  {
+    "score": 2,
+    "strengths": [
+      "Demonstrates strong learning ability and quick adaptation to new tools",
+      "Proven reliability and teamwork in fast‑paced, deadline‑driven environments"
+    ],
+    "weaknesses": [
+      "No maritime or boat‑hand experience; lacks sea legs and physical fishing work background",
+      "No relevant certifications (STCW, RYA) or demonstrated ability to handle heavy manual tasks in wet conditions"
+    ],
+    "summary": "While a fast learner and dependable team player, Jordan lacks any fishing, sea‑hand, or physical labor experience required for the role.",
+    "candidate": "beginner_american",
+    "tokens_in": 1534,
+    "tokens_out": 194
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Demonstrates ability to learn new tools quickly",
+      "Strong teamwork and communication experience from teaching and internship"
+    ],
+    "weaknesses": [
+      "No maritime or physical labor experience",
+      "Lacks required sea legs, fitness, early‑morning availability, and relevant certifications"
+    ],
+    "summary": "The candidate’s tech background shows learning potential but offers virtually no relevant fishing or boat‑hand experience.",
+    "candidate": "beginner_chinese",
+    "tokens_in": 1587,
+    "tokens_out": 127
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Demonstrates reliability and punctuality through consistent internship attendance",
+      "Strong learning ability and proven up‑skilling in technical domains"
+    ],
+    "weaknesses": [
+      "No maritime experience, sea legs, or physical fishing work",
+      "Lacks basic numeracy for catch tallying in a practical offshore context",
+      "No relevant certifications (STCW, RYA) or driving licence for deliveries"
+    ],
+    "summary": "The candidate’s technical background shows learning potential but they lack all essential fishing‑boat experience and physical suitability for the role.",
+    "candidate": "beginner_sa",
+    "tokens_in": 1573,
+    "tokens_out": 163
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Demonstrates strong technical and analytical abilities",
+      "Proven track record of reliability and meeting deadlines in software projects"
+    ],
+    "weaknesses": [
+      "No maritime or manual‑labor experience; lacks sea legs and physical fishing skills",
+      "Career focus is software engineering, not suitable for early‑morning, heavy‑handed deck work"
+    ],
+    "summary": "The candidate is highly qualified for tech roles but lacks the essential fishing, boat handling, and physical requirements for the deckhand position.",
+    "candidate": "intermediate_american",
+    "tokens_in": 1625,
+    "tokens_out": 142
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Demonstrates reliability and strong work ethic in professional settings",
+      "Experience mentoring and learning new technologies quickly"
+    ],
+    "weaknesses": [
+      "No maritime, fishing, or physical manual work experience",
+      "Lacks sea legs, relevant certifications, and physical fitness evidence for heavy wet labor",
+      "Career focused on software engineering, unrelated to deckhand responsibilities"
+    ],
+    "summary": "The candidate’s software background provides little relevance to the physically demanding, sea‑based deckhand role.",
+    "candidate": "middle_chinese",
+    "tokens_in": 1663,
+    "tokens_out": 154
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Demonstrates strong work ethic and ability to learn complex systems",
+      "Certified AWS Developer showing commitment to upskilling"
+    ],
+    "weaknesses": [
+      "No maritime or physical labor experience; lacks sea legs and boat handling",
+      "No relevant certifications (STCW, RYA) or manual fish handling skills"
+    ],
+    "summary": "Highly skilled in software engineering but lacks any of the essential fishing and boat-hand experience required for the role.",
+    "candidate": "middle_sa",
+    "tokens_in": 1622,
+    "tokens_out": 134
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Demonstrates strong reliability and punctuality in professional settings",
+      "Proven ability to learn complex technical systems quickly"
+    ],
+    "weaknesses": [
+      "No demonstrable sea‑going, fishing, or pot‑handling experience",
+      "Lacks physical/manual labour background and fitness evidence required for heavy wet work",
+      "No certifications or training related to maritime safety, navigation, or vessel operation"
+    ],
+    "summary": "Highly qualified for software engineering but lacks the essential fishing, sea‑leg, and manual‑work experience needed for the deckhand role.",
+    "candidate": "senior_american",
+    "tokens_in": 1774,
+    "tokens_out": 190
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong technical problem‑solving and learning ability",
+      "Demonstrated reliability and leadership in fast‑paced environments"
+    ],
+    "weaknesses": [
+      "No maritime, fishing, or manual‑labour experience",
+      "Lacks physical fitness evidence and sea‑legs required for deckhand role"
+    ],
+    "summary": "Highly qualified in software engineering but virtually no relevance to the physical, maritime duties of a boat hand.",
+    "candidate": "senior_chinese",
+    "tokens_in": 1821,
+    "tokens_out": 125
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong technical problem‑solving and learning ability",
+      "Demonstrated leadership and mentorship experience"
+    ],
+    "weaknesses": [
+      "No maritime or physical labor experience",
+      "Lacks sea‑legs, potting/netting skills, and relevant certifications",
+      "Physical fitness and early‑morning work suitability not evidenced"
+    ],
+    "summary": "Excellent in software engineering but virtually no relevant fishing or boat‑hand experience, making them a poor fit for the role.",
+    "candidate": "senior_sa",
+    "tokens_in": 1767,
+    "tokens_out": 138
+  }
+]

@@ -1,0 +1,41 @@
+[
+  {
+    "score": 1,
+    "strengths": [],
+    "weaknesses": [
+      "Lack of required degree in Marine Biology, Zoology, or a related life science",
+      "No experience with aquatic animal husbandry or life support systems (LSS)",
+      "Professional background is entirely in software engineering, not biological sciences",
+      "No evidence of physical fitness or willingness to perform manual labor as described",
+      "Based in Seattle, WA, while the role is on-site in Marrow Bay, UK"
+    ],
+    "summary": "The candidate is a software engineer with no relevant qualifications, experience, or geographic proximity to the Aquarium Biologist role.",
+    "candidate": "beginner_american",
+    "tokens_in": 1726,
+    "tokens_out": 154,
+    "model": "gemma4_31b"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Demonstrates ability to learn new tools quickly and work in hands‑on environments",
+      "Strong record of teamwork, documentation and detail‑oriented work from software projects"
+    ],
+    "weaknesses": [
+      "No relevant degree or experience in marine biology, zoology or aquarium husbandry",
+      "Lacks practical experience with life support systems, water chemistry, or physical animal care tasks",
+      "Does not meet physical or location requirements (UK work rights, lifting, wet environments)",
+      "No evidence of interest in or willingness to perform dirty, repetitive filter‑cleaning duties"
+    ],
+    "summary": "The candidate’s technical and teamwork abilities are solid but they lack any aquatic biology background, relevant hands‑on experience, or eligibility for the UK role, making them a poor fit.",
+    "candidate": "beginner_american",
+    "tokens_in": 1611,
+    "tokens_out": 248,
+    "model": "gpt-oss_120b"
+  },
+  {
+    "summary": "The candidate's education in Computer Science does not meet the requirement for a degree in Marine Biology, Zoology, Aquatic Biology or a related life science. However, their strong technical skills and experience in software development could be relevant to the 'basic understanding of water chemistry and the nitrogen cycle in closed aquatic systems' requirement, as they may be able to apply their technical expertise to this area. The physical fitness and willingness to work odd hours are not explicitly met, but the candidate's involvement in mentoring and hackathons suggests they might be adaptable to such tasks. The candidate's ability to work on projects and collaborate with teams could also be transferable to the role.",
+    "candidate": "beginner_american",
+    "type": "essential_requirements"
+  }
+]

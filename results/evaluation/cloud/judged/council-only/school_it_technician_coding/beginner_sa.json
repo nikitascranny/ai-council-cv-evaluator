@@ -1,0 +1,8 @@
+{
+  "candidate": "beginner_sa",
+  "final_score": 3,
+  "score_rationale": "The candidate excels at the coding enrichment side but lacks virtually all of the essential IT support experience that makes up 70% of the role, such as device imaging, Active Directory/Intune management, and school‑based troubleshooting.",
+  "key_strengths": "Strong Python programming skills and proven ability to mentor and help students debug code; experience creating teaching resources and working with young people in coding contexts.",
+  "key_weaknesses": "No evidence of practical IT support, device imaging, or managing Windows laptops/iPads/Chromebooks; lacking knowledge of Intune, Active Directory/Entra ID, classroom AV, Wi‑Fi/network troubleshooting, and school safeguarding practices.",
+  "final_evaluation": "While the candidate would be a good fit for the coding enrichment portion, they are unlikely to succeed in the core technician responsibilities without substantial retraining. As the role is heavily weighted toward IT support, the overall fit for the position is poor."
+}

@@ -1,0 +1,155 @@
+[
+  {
+    "score": 2,
+    "strengths": [
+      "Strong technical foundation in computer science",
+      "Experience in teaching/guiding others which suggests patience"
+    ],
+    "weaknesses": [
+      "Lack of hardware repair experience (RAM, SSD, screen replacements)",
+      "No evidence of experience with legacy systems or consumer electronics",
+      "Geographic mismatch (based in Seattle, WA while the job is in Tillingford, UK)",
+      "Overqualified in software engineering but underqualified in physical repair"
+    ],
+    "summary": "The candidate is a software engineer with no hardware repair experience and is located in a different country, making them entirely unsuitable for this local technician role.",
+    "candidate": "beginner_american",
+    "tokens_in": 1646,
+    "tokens_out": 164
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong general technical aptitude and computer science foundation",
+      "Experience teaching/guiding others, which may translate to patience with customers"
+    ],
+    "weaknesses": [
+      "Complete lack of hardware repair experience (no mention of RAM, SSDs, or physical disassembly)",
+      "Overqualified in software engineering but underqualified in physical technician skills",
+      "Located in Beijing, China, making them unable to commute to Tillingford",
+      "Professional goals are focused on the 'growing tech sector' and software development rather than a local repair shop"
+    ],
+    "summary": "The candidate is a software engineer based in China with no evidence of hardware repair skills, making them entirely unsuitable for a local, hands-on technician role in Tillingford.",
+    "candidate": "beginner_chinese",
+    "tokens_in": 1700,
+    "tokens_out": 189
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong technical foundation in computer science",
+      "Experience explaining technical concepts as a Peer Programming Facilitator"
+    ],
+    "weaknesses": [
+      "No evidence of hardware repair skills (RAM, SSD, screens)",
+      "No experience with OS troubleshooting or physical device maintenance",
+      "Based in South Africa, making the 'local to Tillingford' requirement impossible",
+      "Overqualified in software engineering but underqualified in practical electronics/IT support"
+    ],
+    "summary": "The candidate is a software developer with zero hardware repair experience and is located in a different country, making them completely unsuitable for a local shop assistant role.",
+    "candidate": "beginner_sa",
+    "tokens_in": 1681,
+    "tokens_out": 164
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Highly technical background in computer engineering",
+      "Strong problem-solving abilities and attention to detail"
+    ],
+    "weaknesses": [
+      "Overqualified for basic hardware repairs and shop assistance",
+      "No evidence of hardware repair skills (RAM, SSD, screen replacements)",
+      "Located in South Africa, while the job is a local shop in Tillingford, UK",
+      "Experience is in high-level software engineering rather than consumer electronics repair"
+    ],
+    "summary": "The candidate is a professional software engineer based in another continent whose skills are entirely mismatched with the requirements of a local, hands-on computer repair shop.",
+    "candidate": "middle_sa",
+    "tokens_in": 1734,
+    "tokens_out": 165
+  },
+  {
+    "score": 1,
+    "strengths": [
+      "High technical literacy",
+      "Experience with complex systems"
+    ],
+    "weaknesses": [
+      "Location mismatch (Austin, Texas vs. Tillingford, UK)",
+      "Overqualified for basic hardware repair",
+      "No evidence of physical PC repair skills (RAM, SSD, screens)",
+      "Lack of customer-facing retail experience"
+    ],
+    "summary": "The candidate is a high-level Software Engineer based in the US, making them entirely unsuitable for a local, entry-level hardware repair and shop assistant role in the UK.",
+    "candidate": "intermediate_american",
+    "tokens_in": 1740,
+    "tokens_out": 128
+  },
+  {
+    "score": 1,
+    "strengths": [
+      "Strong general technical aptitude",
+      "Experience with troubleshooting complex systems"
+    ],
+    "weaknesses": [
+      "No evidence of hardware repair skills (RAM, SSD, screen replacements)",
+      "Overqualified in software engineering but underqualified in physical technician work",
+      "Located in China, whereas the job is in Tillingford, UK",
+      "Lack of experience in retail/customer service for non-technical users"
+    ],
+    "summary": "The candidate is a high-level software engineer based in China, making them entirely unsuitable for a local, hands-on hardware repair and shop assistant role in a small UK village.",
+    "candidate": "middle_chinese",
+    "tokens_in": 1773,
+    "tokens_out": 144
+  },
+  {
+    "score": 1,
+    "strengths": [
+      "Extremely high general technical literacy",
+      "Proven reliability and professional history"
+    ],
+    "weaknesses": [
+      "Complete lack of hardware repair experience (SSD/RAM/Screens)",
+      "Severe over-qualification; profile is for cloud architecture, not shop repair",
+      "Geographic mismatch (based in Seattle, WA; job is in Tillingford, UK)",
+      "No evidence of customer-facing retail experience or patience for 'non-technical' users"
+    ],
+    "summary": "The candidate is a world-class software architect based in the US, making him entirely unsuitable for a local, part-time hardware repair role in a small UK village shop.",
+    "candidate": "senior_american",
+    "tokens_in": 1905,
+    "tokens_out": 174
+  },
+  {
+    "score": 1,
+    "strengths": [
+      "Extremely high technical proficiency in computer science",
+      "Deep understanding of systems and infrastructure"
+    ],
+    "weaknesses": [
+      "Complete lack of evidence for hardware repair skills (RAM, SSD, screen replacement)",
+      "Overqualified to an extreme degree; experience is in distributed systems, not retail shop assistance",
+      "No evidence of customer service experience with non-technical users",
+      "Located in China, whereas the job is in Tillingford, UK"
+    ],
+    "summary": "The candidate is a high-level software architect whose skills are entirely unrelated to physical hardware repair and retail service, and they are located in a different country.",
+    "candidate": "senior_chinese",
+    "tokens_in": 1950,
+    "tokens_out": 169
+  },
+  {
+    "score": 1,
+    "strengths": [
+      "Extremely high level of general technical literacy",
+      "Proven reliability and professionalism in high-stakes environments"
+    ],
+    "weaknesses": [
+      "Complete lack of hardware repair experience (RAM, SSD, screen replacement)",
+      "Overqualified to an extreme degree (Principal Engineer vs. Shop Assistant)",
+      "Geographical mismatch (based in South Africa, job is in Tillingford, UK)",
+      "Experience is in distributed cloud systems, not consumer electronics/customer service"
+    ],
+    "summary": "The candidate is a world-class software architect whose skills are entirely irrelevant to physical computer repair and who resides on a different continent.",
+    "candidate": "senior_sa",
+    "tokens_in": 1909,
+    "tokens_out": 166
+  }
+]

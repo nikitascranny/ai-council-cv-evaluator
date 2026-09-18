@@ -1,0 +1,45 @@
+[
+  {
+    "score": 7,
+    "strengths": [
+      "Exceptional backend and distributed systems expertise with Go, Kafka, and Redis",
+      "Proven track record of operating high-availability production services and managing incident response",
+      "Strong experience with event-driven architectures and scaling platforms",
+      "Demonstrated technical leadership and ability to write RFCs and mentor engineers"
+    ],
+    "weaknesses": [
+      "Lack of evidence for recent, hands-on React/TypeScript frontend development (profile is heavily backend/infrastructure focused)",
+      "Experience is primarily in large-scale corporate environments (Principal/Staff level) rather than early-stage, chaotic startups",
+      "Potential timezone/location mismatch (currently based in Shenzhen, China vs UK/EU requirement)"
+    ],
+    "summary": "A world-class distributed systems engineer who exceeds all backend requirements but lacks documented recent full-stack/frontend experience and startup-specific agility.",
+    "candidate": "senior_chinese",
+    "tokens_in": 2155,
+    "tokens_out": 212,
+    "model": "gemma4_31b"
+  },
+  {
+    "score": 8,
+    "strengths": [
+      "Extensive Go and Kafka experience building high‑throughput, event‑driven back‑ends",
+      "Proven track record designing, operating, and scaling distributed systems with strong SRE practices",
+      "Leadership and mentorship experience relevant to early‑stage team building",
+      "Solid track record delivering production‑grade features rapidly and improving latency"
+    ],
+    "weaknesses": [
+      "No demonstrated frontend experience with React/TypeScript, a core part of the role",
+      "Limited exposure to the energy/climate domain and associated protocols",
+      "Based in China, which may create timezone challenges for a UK/EU‑centric remote team"
+    ],
+    "summary": "The candidate excels in backend, distributed systems, and production operations but lacks the required full‑stack frontend expertise and domain knowledge for Pulsegrid.",
+    "candidate": "senior_chinese",
+    "tokens_in": 1988,
+    "tokens_out": 245,
+    "model": "gpt-oss_120b"
+  },
+  {
+    "summary": "The candidate clearly meets the requirement of 4+ years shipping production software, with strong experience in TypeScript/React and Go. The candidate also meets the requirement of operating services in production and has a solid grasp of distributed systems fundamentals. The requirement for excellent communication and genuine excitement about energy, climate or hard real world problems is a reasonable/close match based on the technical leadership and contributions mentioned. The requirement for comfort with ambiguity and velocity is less clear from the CV and would require further discussion.",
+    "candidate": "senior_chinese",
+    "type": "essential_requirements"
+  }
+]

@@ -1,0 +1,41 @@
+[
+  {
+    "score": 1,
+    "strengths": [],
+    "weaknesses": [
+      "Lack of required degree in Marine Biology, Zoology, or related life sciences",
+      "No experience in aquatic animal husbandry or life support systems (LSS)",
+      "No evidence of ability to perform physical labor (lifting 25kg, cleaning filters)",
+      "Wrong professional field (Software Engineering vs. Biology)",
+      "Located in the USA, while the role is on-site in the UK"
+    ],
+    "summary": "The candidate is a high-level software engineer with no relevant education or experience for an entry-level aquarium biologist role.",
+    "candidate": "senior_american",
+    "tokens_in": 1985,
+    "tokens_out": 152,
+    "model": "gemma4_31b"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Demonstrated ability to learn and master complex technical systems quickly",
+      "Strong analytical, record‑keeping and troubleshooting skills from software reliability work"
+    ],
+    "weaknesses": [
+      "No education or experience in marine biology, zoology, or aquatic husbandry",
+      "No experience with physical, dirty, repetitive tasks such as filter cleaning or water‑quality testing",
+      "Lacks UK work eligibility and relevant certifications (e.g., SCUBA, driving licence)",
+      "Career history is exclusively software engineering, not related to aquarium or animal care"
+    ],
+    "summary": "Highly skilled engineer but lacks the required biological background, hands‑on aquarium experience, and eligibility for the role.",
+    "candidate": "senior_american",
+    "tokens_in": 1851,
+    "tokens_out": 235,
+    "model": "gpt-oss_120b"
+  },
+  {
+    "summary": "The candidate's degree in Computer Science is a reasonable match for the required life science degree, as both involve strong analytical and technical skills. Their experience in technical leadership, reliability, and incident management could transfer well to the physical, dirty, and repetitive tasks required. However, their background lacks direct experience in marine biology, zoology, or aquatic biology, and there is no evidence of a basic understanding of water chemistry or the nitrogen cycle in closed aquatic systems, which are essential requirements for the role.",
+    "candidate": "senior_american",
+    "type": "essential_requirements"
+  }
+]

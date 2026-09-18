@@ -1,0 +1,44 @@
+[
+  {
+    "score": 4,
+    "strengths": [
+      "Strong programming proficiency in Python",
+      "Experience mentoring graduate engineers",
+      "High technical competence in software engineering and system architecture"
+    ],
+    "weaknesses": [
+      "No evidence of first-line IT support experience (hardware, printers, AV)",
+      "No experience with school-specific tools like Intune, Active Directory, or Google Classroom",
+      "Overqualified for a technician role, posing a high flight risk",
+      "Based in South Africa, requiring significant relocation/visa sponsorship for a Scale 5-6 role"
+    ],
+    "summary": "While the candidate has excellent coding and mentoring skills, they lack the essential practical IT support experience and hardware maintenance skills required for 70% of the role.",
+    "candidate": "middle_sa",
+    "tokens_in": 1978,
+    "tokens_out": 184,
+    "model": "gemma4_31b"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Strong Python competency and overall software development experience",
+      "Proven troubleshooting and debugging skills in complex systems",
+      "Experience mentoring junior engineers, indicating ability to explain technical concepts"
+    ],
+    "weaknesses": [
+      "No demonstrated experience in school‑based IT support, device imaging, Active Directory/Intune, or classroom AV",
+      "Lacks any background working with children, safeguarding knowledge, or extracurricular coding clubs",
+      "No exposure to Google Workspace/VLE administration, micro‑bit/robotics, or network infrastructure"
+    ],
+    "summary": "The candidate excels in professional software engineering but lacks the essential school IT support and youth‑engagement experience required for the role.",
+    "candidate": "middle_sa",
+    "tokens_in": 1814,
+    "tokens_out": 255,
+    "model": "gpt-oss_120b"
+  },
+  {
+    "summary": "The candidate clearly meets the requirement for practical IT support experience through their education and outside work. Their BEng in Computer Engineering and contributions to engineering guilds suggest a strong background in IT. They have a reasonable/close match for the working knowledge of Windows 11 and Microsoft 365, though no mention of Intune or similar device management tools. Their AWS Certified Developer – Associate certification provides relevant programming skills, but there is no direct evidence of teaching or debugging experience with Python or Scratch. The candidate's enthusiasm for working with young people is not explicitly stated, and there is no clear information on their understanding or willingness to train in safeguarding. They are willing to undergo the required checks.",
+    "candidate": "middle_sa",
+    "type": "essential_requirements"
+  }
+]

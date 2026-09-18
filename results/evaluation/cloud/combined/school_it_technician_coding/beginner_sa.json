@@ -1,0 +1,43 @@
+[
+  {
+    "score": 5,
+    "strengths": [
+      "Strong programming foundations in Python, perfectly suited for the Code Club and KS3 support",
+      "Proven experience mentoring and helping students debug code as a Peer Programming Facilitator",
+      "High academic achievement (BSc Computer Science with distinction) and AWS certification"
+    ],
+    "weaknesses": [
+      "Complete lack of evidence regarding hardware support, device imaging, or IT infrastructure maintenance",
+      "No experience with school-specific software/ecosystems (Intune, Active Directory, Google Classroom)",
+      "Professional goals are aligned with Software Engineering rather than IT Support/Technician roles"
+    ],
+    "summary": "While the candidate is overqualified for the coding enrichment aspect, they lack the essential first-line hardware and systems administration experience required for 70% of the role.",
+    "candidate": "beginner_sa",
+    "tokens_in": 1925,
+    "tokens_out": 194,
+    "model": "gemma4_31b"
+  },
+  {
+    "score": 4,
+    "strengths": [
+      "Strong programming background in Python and experience mentoring university students in coding",
+      "Experience with Windows development environments and modern development tools (Git, Docker, CI/CD)",
+      "Demonstrated ability to create teaching resources and support learners"
+    ],
+    "weaknesses": [
+      "No demonstrated experience with school IT support, device imaging, Active Directory/Intune, or managing Windows laptops, iPads, Chromebooks",
+      "Lacks exposure to classroom AV, Wi‑Fi/network troubleshooting, and school safeguarding policies",
+      "No prior experience in an education setting or with Google Workspace/Google Classroom administration"
+    ],
+    "summary": "The candidate shows solid programming and mentoring skills but lacks the essential IT support and school‑focused experience required for the role.",
+    "candidate": "beginner_sa",
+    "tokens_in": 1765,
+    "tokens_out": 231,
+    "model": "gpt-oss_120b"
+  },
+  {
+    "summary": "The candidate clearly meets the practical IT support experience and working knowledge of Windows 11 and Microsoft 365 requirements. Basic programming ability using Python is a reasonable match, and enthusiasm for working with young people is also evident. However, the candidate's experience with device management tools and safeguarding training is unclear.",
+    "candidate": "beginner_sa",
+    "type": "essential_requirements"
+  }
+]

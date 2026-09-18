@@ -1,0 +1,44 @@
+[
+  {
+    "score": 6,
+    "strengths": [
+      "Strong experience with distributed systems fundamentals, specifically Kafka and event-driven architectures",
+      "Proven track record in production operations, including OpenTelemetry, alerting, and incident response",
+      "Full-stack capability with experience in both backend (Java/Kotlin/Python) and frontend (Vue/TypeScript) frameworks",
+      "Experience with idempotency and scaling high-volume event processing"
+    ],
+    "weaknesses": [
+      "No experience with Go (preferred) or React (required); uses Vue.js instead",
+      "Location is China, while the role requires UK/EU timezone (Remote-first)",
+      "Lack of evidence regarding early-stage startup 'chaos' or direct customer-facing product ownership",
+      "No mentioned interest or experience in energy/climate sectors"
+    ],
+    "summary": "Technically proficient in the required distributed systems and production operational patterns, but possesses a significant timezone mismatch and lacks the specific React/Go stack and startup agility required for this founding role.",
+    "candidate": "middle_chinese",
+    "tokens_in": 1978,
+    "tokens_out": 237,
+    "model": "gemma4_31b"
+  },
+  {
+    "score": 6,
+    "strengths": [
+      "Strong backend experience with Java/Kotlin, Spring Boot and Kafka; proven production ownership and incident handling",
+      "Experience building event‑driven services, idempotency, OpenTelemetry observability and CI/CD pipelines",
+      "Demonstrated mentoring and cross‑team collaboration, matching early‑stage team needs"
+    ],
+    "weaknesses": [
+      "Primary frontend stack is Vue/Nuxt, not React/TypeScript required by role",
+      "No explicit Go experience; energy domain knowledge and real‑time grid focus are missing"
+    ],
+    "summary": "Solid backend and event‑driven expertise but limited fit on the required React/Go stack and domain knowledge.",
+    "candidate": "middle_chinese",
+    "tokens_in": 1830,
+    "tokens_out": 176,
+    "model": "gpt-oss_120b"
+  },
+  {
+    "summary": "The candidate has 4+ years of experience shipping production software, which meets the requirement. Experience in TypeScript/React and Go is noted, aligning with the backend language preferences. The candidate has operated services in production, indicating experience with metrics, tracing, and incident response, which is a reasonable match. However, the level of detail regarding comfort with ambiguity and velocity, and the solid grasp of distributed systems fundamentals, is unclear from the CV. The candidate's communication skills and excitement about relevant problems are also unclear.",
+    "candidate": "middle_chinese",
+    "type": "essential_requirements"
+  }
+]

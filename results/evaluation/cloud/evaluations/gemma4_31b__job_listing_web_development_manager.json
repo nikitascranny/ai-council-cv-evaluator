@@ -1,0 +1,166 @@
+[
+  {
+    "score": 7,
+    "strengths": [
+      "Extensive experience in monolith decomposition and service-oriented architecture migration, which is a primary goal of the role",
+      "Proven track record in high-volume transactional systems (payments and logistics) mirroring the company's booking platform needs",
+      "Strong leadership and mentoring experience, including scaling engineers into staff roles and setting technical direction for large teams",
+      "Expertise in observability, incident management, and CI/CD 'golden paths' to improve developer velocity"
+    ],
+    "weaknesses": [
+      "Lack of explicit evidence for direct line management duties (1:1s, performance reviews, hiring) compared to technical leadership/mentoring",
+      "Missing specific experience with the required frontend stack (React) and .NET, though proficient in TypeScript and other backend languages",
+      "No mentioned experience with accessibility standards (WCAG 2.2 AA)",
+      "Current location is China, while the role requires hybrid presence in Levenwick, UK"
+    ],
+    "summary": "A highly skilled technical leader with perfect experience in replatforming and high-scale systems, though lacking specific frontend/dotnet expertise and confirmed HR-style line management experience.",
+    "candidate": "senior_chinese",
+    "tokens_in": 1963,
+    "tokens_out": 272
+  },
+  {
+    "score": 7,
+    "strengths": [
+      "Extensive experience leading monolith-to-services migrations, directly aligning with the core requirement for platform modernisation.",
+      "Deep expertise in high-volume transactional systems (payments and logistics), which is a highly desirable industry background.",
+      "Strong cloud and infrastructure proficiency (AWS, Kubernetes, CI/CD) and a proven track record of improving operational maturity and observability.",
+      "Significant experience in technical leadership, architecture governance, and mentoring senior engineers."
+    ],
+    "weaknesses": [
+      "Lack of explicit evidence of direct line-management experience (1:1s, performance reviews, hiring) for a team of 8; experience is primarily as a technical/principal lead.",
+      "No mentioned experience with the specific frontend stack required (React) or .NET, though TypeScript and general web proficiency are present.",
+      "Current location is South Africa, while the role requires a hybrid presence in Levenwick, UK (minimum 2 days/week)."
+    ],
+    "summary": "A technically exceptional candidate with a perfect track record in replatforming and high-volume systems, but lacks confirmed people-management experience and has significant geographical barriers.",
+    "candidate": "senior_sa",
+    "tokens_in": 1922,
+    "tokens_out": 268
+  },
+  {
+    "score": 6,
+    "strengths": [
+      "Extensive experience in monolith decomposition and service-oriented architecture migrations",
+      "Strong background in high-volume transactional systems (payments/logistics)",
+      "Deep expertise in AWS, CI/CD, observability, and distributed systems",
+      "Proven track record of technical leadership, mentoring, and setting engineering standards"
+    ],
+    "weaknesses": [
+      "Lack of explicit evidence of formal line-management experience (1:1s, performance reviews, hiring)",
+      "Location mismatch (based in Seattle, USA for a Levenwick, UK hybrid role)",
+      "Limited evidence of frontend-specific leadership (React/TypeScript) compared to heavy backend/systems focus",
+      "No mentioned experience with WCAG accessibility standards"
+    ],
+    "summary": "While Marcus is a world-class technical leader with perfect experience in platform modernization and high-scale systems, he lacks documented formal line-management experience and is based in the wrong country for a hybrid UK role.",
+    "candidate": "senior_american",
+    "tokens_in": 1918,
+    "tokens_out": 233
+  },
+  {
+    "score": 4,
+    "strengths": [
+      "Strong technical alignment with the modern web stack (React, TypeScript, AWS)",
+      "Experience with high-volume systems and distributed architectures",
+      "Proven ability to improve observability and incident diagnosis time",
+      "Experience mentoring junior engineers and leading small project initiatives"
+    ],
+    "weaknesses": [
+      "Lacks the required 2+ years of formal line-management experience (no evidence of performance reviews or career development ownership)",
+      "No evidence of leading a team through a major platform modernization or monolith decomposition",
+      "Does not meet the 5+ years of professional experience requirement (approx. 4.5 years)",
+      "Based in Austin, Texas, while the role is hybrid in Levenwick, UK"
+    ],
+    "summary": "While Priya is a highly skilled engineer with a relevant technical stack, she lacks the essential leadership experience and residency required for an Engineering Manager role.",
+    "candidate": "intermediate_american",
+    "tokens_in": 1753,
+    "tokens_out": 219
+  },
+  {
+    "score": 4,
+    "strengths": [
+      "Strong technical proficiency in modern web stacks, including TypeScript and backend frameworks",
+      "Experience with high-volume transactional systems and event-driven architecture",
+      "Proven track record in observability and improving system reliability (OpenTelemetry, incident diagnosis)"
+    ],
+    "weaknesses": [
+      "Lacks the required 2+ years of formal line-management experience (only mentions mentoring)",
+      "No evidence of leading a team through a major architectural migration or monolith decomposition",
+      "Missing experience with the specific required tech stack (React, Node.js, .NET, AWS) in favor of Java/Kotlin and Alibaba Cloud",
+      "Currently based in China, which may conflict with the hybrid requirement (2 days/week on-site in Levenwick)"
+    ],
+    "summary": "While Zhang Wei is a highly skilled software engineer with strong backend capabilities, he lacks the essential leadership experience and specific architectural migration background required for an Engineering Manager role.",
+    "candidate": "middle_chinese",
+    "tokens_in": 1786,
+    "tokens_out": 228
+  },
+  {
+    "score": 4,
+    "strengths": [
+      "Strong technical alignment with the web stack (React, TypeScript, AWS)",
+      "Experience with high-volume event processing and observability",
+      "Proven ability to mentor junior engineers and lead small project-based initiatives"
+    ],
+    "weaknesses": [
+      "Lacks the required 2+ years of formal line-management experience (performance reviews, hiring, career plans)",
+      "No evidence of leading a large-scale architectural migration from monolith to service-oriented architecture",
+      "Currently based in South Africa, while the role requires a hybrid presence in Levenwick (UK)",
+      "Insufficient overall professional experience (approx 4 years) compared to the 5+ years required"
+    ],
+    "summary": "While Kagiso is a strong technical engineer with relevant stack experience, they lack the essential leadership tenure and formal people-management experience required for an Engineering Manager role.",
+    "candidate": "middle_sa",
+    "tokens_in": 1747,
+    "tokens_out": 214
+  },
+  {
+    "score": 1,
+    "strengths": [
+      "Familiarity with the required tech stack (React, TypeScript, Node.js)",
+      "AWS Certified Cloud Practitioner certification",
+      "Experience with Agile methodologies and unit testing"
+    ],
+    "weaknesses": [
+      "Lacks the 5+ years of professional experience required",
+      "No experience line-managing engineers (essential requirement)",
+      "No experience leading architectural migrations or monolith decomposition",
+      "Currently at a Junior/Entry level rather than an Engineering Manager level"
+    ],
+    "summary": "The candidate is a junior engineer and is entirely unqualified for a senior leadership role requiring extensive management and architectural experience.",
+    "candidate": "beginner_american",
+    "tokens_in": 1659,
+    "tokens_out": 162
+  },
+  {
+    "score": 1,
+    "strengths": [
+      "Knowledge of TypeScript, Node.js, and AWS (Cloud Practitioner certification)",
+      "Experience with agile methodologies and booking application logic in a personal project"
+    ],
+    "weaknesses": [
+      "Lacks the required 5+ years of professional experience (candidate is entry-level/intern)",
+      "No experience in line-management or leadership (required 2+ years)",
+      "No experience leading monolith-to-service architecture migrations",
+      "Incorrect seniority level for an Engineering Manager role"
+    ],
+    "summary": "The candidate is a junior software engineer and is entirely unqualified for a senior leadership role requiring extensive management experience and architectural oversight.",
+    "candidate": "beginner_chinese",
+    "tokens_in": 1713,
+    "tokens_out": 168
+  },
+  {
+    "score": 1,
+    "strengths": [
+      "Familiarity with the core tech stack (React, TypeScript, Node.js)",
+      "Possesses AWS Cloud Practitioner certification",
+      "Academic excellence (BSc Computer Science with distinction)"
+    ],
+    "weaknesses": [
+      "Complete lack of leadership and line-management experience (required 2+ years)",
+      "Insufficient professional engineering experience (graduate level vs 5+ years required)",
+      "No evidence of leading monolith decomposition or large-scale platform modernization",
+      "No experience managing on-call rotas, incident response, or engineering standards for a team"
+    ],
+    "summary": "The candidate is a junior/graduate developer and is entirely unqualified for a senior Engineering Manager role requiring extensive leadership and architectural experience.",
+    "candidate": "beginner_sa",
+    "tokens_in": 1694,
+    "tokens_out": 185
+  }
+]

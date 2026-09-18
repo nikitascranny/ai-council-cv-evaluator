@@ -1,0 +1,42 @@
+[
+  {
+    "score": 2,
+    "strengths": [
+      "Expert-level Python proficiency",
+      "Extensive experience with complex systems and infrastructure",
+      "Proven mentorship and leadership capabilities"
+    ],
+    "weaknesses": [
+      "Complete lack of experience in first-line IT support (hardware, AV, printing)",
+      "No experience working with children or in an educational setting",
+      "Severely overqualified for the salary grade and technical scope of the role",
+      "No evidence of experience with Intune, Active Directory, or Google Classroom"
+    ],
+    "summary": "The candidate is a high-level software architect whose skills are entirely mismatched for a school-based IT technician and coding club lead role.",
+    "candidate": "senior_chinese",
+    "tokens_in": 2194,
+    "tokens_out": 148,
+    "model": "gemma4_31b"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Strong technical background in software engineering and systems design",
+      "Experience with Python and teaching/mentoring engineers which could translate to youth tutoring"
+    ],
+    "weaknesses": [
+      "No experience with school IT environments, Windows device imaging, Intune, or basic desktop support",
+      "Lacks direct experience working with children, safeguarding, or educational technology platforms (Google Workspace, VLE)"
+    ],
+    "summary": "Highly skilled in enterprise software engineering but lacks the core school‑IT support and youth‑focused experience required for the role.",
+    "candidate": "senior_chinese",
+    "tokens_in": 2013,
+    "tokens_out": 164,
+    "model": "gpt-oss_120b"
+  },
+  {
+    "summary": "The candidate clearly meets the practical IT support experience requirement with their extensive background in software engineering. They have a reasonable/close match for basic programming ability, as they are proficient in multiple programming languages, including Python. The candidate does not clearly meet the requirement for working knowledge of Windows 11, Microsoft 365, or Intune, and the CV does not provide clear evidence of a genuine enthusiasm for working with young people or understanding of safeguarding policies.",
+    "candidate": "senior_chinese",
+    "type": "essential_requirements"
+  }
+]

@@ -1,0 +1,40 @@
+[
+  {
+    "score": 1,
+    "strengths": [],
+    "weaknesses": [
+      "Complete lack of maritime or commercial fishing experience",
+      "No evidence of physical fitness or ability to perform heavy manual labor",
+      "Location is Cape Town, South Africa, while the role is in Kestrel Bay, UK",
+      "Professional background is entirely in high-level software engineering",
+      "No evidence of 'sea legs' or experience with potting/netting"
+    ],
+    "summary": "The candidate is a highly skilled software engineer with no relevant experience, skills, or geographical proximity for a physical deckhand role on a fishing vessel.",
+    "candidate": "senior_sa",
+    "tokens_in": 1898,
+    "tokens_out": 151,
+    "model": "gemma4_31b"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong technical problem‑solving and learning ability",
+      "Demonstrated leadership and mentorship experience"
+    ],
+    "weaknesses": [
+      "No maritime or physical labor experience",
+      "Lacks sea‑legs, potting/netting skills, and relevant certifications",
+      "Physical fitness and early‑morning work suitability not evidenced"
+    ],
+    "summary": "Excellent in software engineering but virtually no relevant fishing or boat‑hand experience, making them a poor fit for the role.",
+    "candidate": "senior_sa",
+    "tokens_in": 1767,
+    "tokens_out": 138,
+    "model": "gpt-oss_120b"
+  },
+  {
+    "summary": "The candidate's education in computer science and software engineering provides a reasonable match for the technical skills and reliability required. However, there is no evidence of relevant manual work experience or sea legs, which are clearly not met. The willingness to work early starts and long days is clearly implied by the speaker role at the engineering forum, suggesting strong reliability and punctuality.",
+    "candidate": "senior_sa",
+    "type": "essential_requirements"
+  }
+]

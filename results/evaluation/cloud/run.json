@@ -1,0 +1,73 @@
+{
+  "runs": [
+    {
+      "started": "2026-09-18T22:20:14+02:00",
+      "finished": "2026-09-18T23:49:05+02:00",
+      "exit_code": 0,
+      "python": "3.12.0",
+      "from": "evaluate",
+      "condition": "council-only",
+      "force": false,
+      "cloud": true,
+      "cvs": "data/cvs/Batch2",
+      "jobs": "data/job-listings",
+      "out": "results/evaluation/cloud",
+      "preflight": "ok",
+      "models": {
+        "council": [
+          "gemma4:31b",
+          "gpt-oss:120b"
+        ],
+        "essential_requirements": "qwen2.5:7b",
+        "judge": "nemotron-3-super"
+      },
+      "inputs": {
+        "job_listings": [
+          "job_listing_aquarium_biologist_entry_level.pdf",
+          "job_listing_computer_repair_technician.pdf",
+          "job_listing_estate_groundskeeper.pdf",
+          "job_listing_fishing_boat_hand.pdf",
+          "job_listing_museum_security_specialist.pdf",
+          "job_listing_school_it_technician_coding.pdf",
+          "job_listing_secretary.pdf",
+          "job_listing_startup_fullstack_engineer.pdf",
+          "job_listing_web_development_manager.pdf"
+        ],
+        "cvs": [
+          "beginner_american.pdf",
+          "beginner_chinese.pdf",
+          "beginner_sa.pdf",
+          "intermediate_american.pdf",
+          "middle_chinese.pdf",
+          "middle_sa.pdf",
+          "senior_american.pdf",
+          "senior_chinese.pdf",
+          "senior_sa.pdf"
+        ]
+      },
+      "stages": {
+        "evaluate": {
+          "status": "ok",
+          "model_files": 18,
+          "evaluations": 162,
+          "unscored": 0,
+          "essential_files": 9,
+          "seconds": 4345.0
+        },
+        "aggregate": {
+          "status": "ok",
+          "combined_files": 81,
+          "seconds": 0.4
+        },
+        "judge": {
+          "status": "ok",
+          "ok": 81,
+          "failed": 0,
+          "already_done": 0,
+          "total": 81,
+          "seconds": 983.4
+        }
+      }
+    }
+  ]
+}

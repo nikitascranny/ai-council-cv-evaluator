@@ -1,0 +1,145 @@
+[
+  {
+    "score": 2,
+    "strengths": [
+      "Strong technical aptitude and proven ability to learn new tools quickly",
+      "Excellent written communication demonstrated through documentation and reporting in software projects",
+      "Experience working in team-oriented, shift-like environments (agile sprints) and handling incidents (bug/issue resolution)"
+    ],
+    "weaknesses": [
+      "No experience in security, museum, or public venue settings",
+      "Lacks required SIA Door Supervisor/Security Guarding licence and familiarity with CCTV, alarm or access‑control systems",
+      "No physical patrol or emergency response background; does not meet physical or shift‑work requirements"
+    ],
+    "summary": "The candidate shows strong general competencies but lacks the essential security experience, licences, and physical duties required for the Museum Security Specialist role.",
+    "candidate": "beginner_american",
+    "tokens_in": 1468,
+    "tokens_out": 233
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong technical and analytical skills demonstrated through software development projects",
+      "Proven ability to learn new tools quickly and work in cross‑functional teams"
+    ],
+    "weaknesses": [
+      "No experience in security, CCTV, access‑control or museum/gallery environments",
+      "Lacks required SIA licence and any first‑aid or high‑value object protection credentials"
+    ],
+    "summary": "The candidate’s background is centred on software development with no relevant security or museum experience, making them a poor fit for this role.",
+    "candidate": "beginner_sa",
+    "tokens_in": 1507,
+    "tokens_out": 182
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong technical background and proven ability to learn complex systems quickly",
+      "Experience with incident monitoring and implementing audit trails and security controls in software projects"
+    ],
+    "weaknesses": [
+      "No museum, gallery or public‑venue security experience",
+      "Lacks required SIA licence, CCTV/alarm/access‑control operation experience, and physical patrol background",
+      "No evidence of first‑aid, high‑value object protection, or shift‑work flexibility"
+    ],
+    "summary": "Candidate lacks the essential security and museum experience required for the role despite solid technical abilities.",
+    "candidate": "intermediate_american",
+    "tokens_in": 1559,
+    "tokens_out": 163
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong technical and analytical skills",
+      "Experience with risk‑related documentation and compliance processes"
+    ],
+    "weaknesses": [
+      "No security, CCTV, alarm or access‑control experience",
+      "Lacks required SIA licence and museum/heritage background",
+      "No evidence of physical patrol or incident response capability"
+    ],
+    "summary": "The candidate’s software engineering background does not meet the essential security and museum experience required for the role.",
+    "candidate": "middle_chinese",
+    "tokens_in": 1597,
+    "tokens_out": 149
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong technical and problem‑solving skills",
+      "Proven ability to learn new systems quickly (cloud, CI/CD, observability)"
+    ],
+    "weaknesses": [
+      "No experience in security, CCTV, alarm or access‑control systems",
+      "Lacks required SIA licence and museum/heritage background",
+      "Physical patrol and shift work experience absent"
+    ],
+    "summary": "The candidate excels in software engineering but does not meet the core security and museum‑specific requirements of the role.",
+    "candidate": "middle_sa",
+    "tokens_in": 1556,
+    "tokens_out": 149
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong technical background and experience in incident response and documentation",
+      "Proven ability to learn complex systems and lead training initiatives"
+    ],
+    "weaknesses": [
+      "No museum, heritage, or public‑venue security experience",
+      "Lacks required SIA licence, CCTV/alarm system knowledge, and physical patrol background"
+    ],
+    "summary": "The candidate’s expertise is in software engineering rather than security, resulting in minimal fit for the museum security specialist role.",
+    "candidate": "senior_american",
+    "tokens_in": 1708,
+    "tokens_out": 138
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Extensive experience in technical leadership and incident management in high‑availability systems",
+      "Strong written communication demonstrated through technical documentation and incident reports"
+    ],
+    "weaknesses": [
+      "No background in security, museum/gallery or public‑venue environments",
+      "Lacks SIA licence, CCTV/alarms/access‑control experience, and physical patrol/first‑aid qualifications"
+    ],
+    "summary": "While technically strong, the candidate has no relevant security or museum experience, making them a poor fit for the role.",
+    "candidate": "senior_chinese",
+    "tokens_in": 1755,
+    "tokens_out": 148
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong technical and leadership experience in complex systems",
+      "Demonstrated ability to learn and implement new processes and tools"
+    ],
+    "weaknesses": [
+      "No experience in security roles, museum or public venue environments",
+      "Lacks SIA licence, CCTV/alarms/access‑control knowledge, and physical patrol experience",
+      "No first‑aid or high‑value object protection background"
+    ],
+    "summary": "Candidate excels in software engineering but lacks the essential security and museum experience required for the role.",
+    "candidate": "senior_sa",
+    "tokens_in": 1701,
+    "tokens_out": 156
+  },
+  {
+    "score": 1,
+    "strengths": [
+      "Demonstrates strong technical and problem‑solving abilities",
+      "Experience working in agile teams and delivering projects on time",
+      "Shows initiative in up‑skilling (AWS certification, teaching assistant role)"
+    ],
+    "weaknesses": [
+      "No experience in security, museum or public venue environments",
+      "Lacks required SIA Door Supervisor/Guard licence and knowledge of CCTV or access‑control systems",
+      "No physical patrol or emergency response experience, nor relevant first‑aid or high‑value object handling background"
+    ],
+    "summary": "The candidate’s technical background and adaptability are evident, but they lack all essential security qualifications and experience required for the Museum Security Specialist role.",
+    "candidate": "beginner_chinese",
+    "tokens_in": 1521,
+    "tokens_out": 229
+  }
+]

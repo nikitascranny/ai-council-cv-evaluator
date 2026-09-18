@@ -1,0 +1,137 @@
+[
+  {
+    "score": 1,
+    "strengths": [],
+    "weaknesses": [
+      "Lack of required degree in Marine Biology, Zoology, or a related life science",
+      "No experience with aquatic animal husbandry or life support systems (LSS)",
+      "Professional background is entirely in software engineering, not biological sciences",
+      "No evidence of physical fitness or willingness to perform manual labor as described",
+      "Based in Seattle, WA, while the role is on-site in Marrow Bay, UK"
+    ],
+    "summary": "The candidate is a software engineer with no relevant qualifications, experience, or geographic proximity to the Aquarium Biologist role.",
+    "candidate": "beginner_american",
+    "tokens_in": 1726,
+    "tokens_out": 154
+  },
+  {
+    "score": 1,
+    "strengths": [],
+    "weaknesses": [
+      "No degree or experience in Marine Biology, Zoology, or life sciences",
+      "No evidence of physical fitness or willingness to perform manual labor/filter cleaning",
+      "No knowledge of water chemistry or the nitrogen cycle",
+      "Professional background is entirely in software engineering",
+      "Based in Beijing, China, with no mention of UK right to work"
+    ],
+    "summary": "The candidate is a software engineer with no relevant biological qualifications, physical experience, or geographical alignment for this aquarium husbandry role.",
+    "candidate": "beginner_chinese",
+    "tokens_in": 1780,
+    "tokens_out": 141
+  },
+  {
+    "score": 1,
+    "strengths": [],
+    "weaknesses": [
+      "No degree in Marine Biology, Zoology, or related life sciences",
+      "No experience with aquatic animal husbandry or life support systems (LSS)",
+      "No evidence of physical fitness or willingness to perform manual labor (filter cleaning, scrubbing)",
+      "Professional background is entirely in software engineering and computer science",
+      "Located in South Africa with no mentioned right to work in the UK"
+    ],
+    "summary": "The candidate is a software developer with no relevant education, experience, or skills for an Aquarium Biologist role.",
+    "candidate": "beginner_sa",
+    "tokens_in": 1761,
+    "tokens_out": 146
+  },
+  {
+    "score": 1,
+    "strengths": [],
+    "weaknesses": [
+      "Complete lack of required educational background in Marine Biology, Zoology, or Life Sciences",
+      "No evidence of experience with aquatic husbandry or life support systems",
+      "No evidence of physical fitness or willingness to perform manual labor/cleaning tasks",
+      "Located in the USA (Austin, Texas) with no mention of UK right to work",
+      "Professional experience is entirely in software engineering, which is irrelevant to this role"
+    ],
+    "summary": "The candidate is a software engineer with no relevant education or experience for an entry-level Aquarium Biologist position.",
+    "candidate": "intermediate_american",
+    "tokens_in": 1820,
+    "tokens_out": 153
+  },
+  {
+    "score": 1,
+    "strengths": [],
+    "weaknesses": [
+      "Lack of required degree in Marine Biology, Zoology, or related life sciences",
+      "No experience with aquatic animal husbandry or life support systems (LSS)",
+      "Professional background is entirely in software engineering",
+      "No evidence of physical fitness or willingness to perform manual labor",
+      "Based in China with no indicated right to work in the UK"
+    ],
+    "summary": "The candidate is a software engineer with no relevant biological qualifications or experience, making them entirely unsuitable for an Aquarium Biologist role.",
+    "candidate": "middle_chinese",
+    "tokens_in": 1853,
+    "tokens_out": 142
+  },
+  {
+    "score": 1,
+    "strengths": [],
+    "weaknesses": [
+      "Complete lack of relevant educational background in Marine Biology, Zoology, or Life Sciences",
+      "No experience in aquatic animal husbandry or life support system (LSS) maintenance",
+      "No evidence of the physical fitness requirements or willingness to perform manual cleaning tasks",
+      "Located in South Africa with no mentioned right to work in the UK",
+      "Professional experience is entirely within Software Engineering and Fintech"
+    ],
+    "summary": "The candidate is a Software Engineer with no relevant qualifications, experience, or geographic proximity for an entry-level Aquarium Biologist role.",
+    "candidate": "middle_sa",
+    "tokens_in": 1814,
+    "tokens_out": 152
+  },
+  {
+    "score": 1,
+    "strengths": [],
+    "weaknesses": [
+      "Lack of required degree in Marine Biology, Zoology, or related life sciences",
+      "No experience in aquatic animal husbandry or life support systems (LSS)",
+      "No evidence of ability to perform physical labor (lifting 25kg, cleaning filters)",
+      "Wrong professional field (Software Engineering vs. Biology)",
+      "Located in the USA, while the role is on-site in the UK"
+    ],
+    "summary": "The candidate is a high-level software engineer with no relevant education or experience for an entry-level aquarium biologist role.",
+    "candidate": "senior_american",
+    "tokens_in": 1985,
+    "tokens_out": 152
+  },
+  {
+    "score": 1,
+    "strengths": [],
+    "weaknesses": [
+      "No degree or experience in Marine Biology, Zoology, or any life sciences",
+      "No evidence of ability or willingness to perform physical labor such as cleaning filters and scrubbing sumps",
+      "Complete lack of knowledge regarding water chemistry or the nitrogen cycle",
+      "No experience in animal husbandry or aquatic life support systems",
+      "Professional background is entirely in software engineering and distributed systems"
+    ],
+    "summary": "The candidate is a highly experienced Senior Software Engineer with zero qualifications, education, or experience relevant to the role of an Aquarium Biologist.",
+    "candidate": "senior_chinese",
+    "tokens_in": 2030,
+    "tokens_out": 150
+  },
+  {
+    "score": 1,
+    "strengths": [],
+    "weaknesses": [
+      "No degree or experience in Marine Biology, Zoology, or life sciences",
+      "No evidence of physical fitness or willingness to perform manual labor/cleaning tasks",
+      "No knowledge of water chemistry or aquatic life support systems",
+      "Lack of right to work in the UK mentioned",
+      "Professional background is entirely unrelated (Software Engineering)"
+    ],
+    "summary": "The candidate is a highly experienced software engineer with no relevant qualifications, experience, or skills for an entry-level Aquarium Biologist role.",
+    "candidate": "senior_sa",
+    "tokens_in": 1989,
+    "tokens_out": 141
+  }
+]

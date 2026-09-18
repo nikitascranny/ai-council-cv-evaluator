@@ -1,0 +1,8 @@
+{
+  "candidate": "senior_american",
+  "final_score": 5,
+  "score_rationale": "The candidate excels at backend, distributed systems, and production operations—core parts of the role—but lacks demonstrable React/TypeScript frontend experience and is based in a timezone that overlaps poorly with the UK/EU preference, which are both essential requirements.",
+  "key_strengths": "Deep expertise in Go, Kafka, Redis, and building highly available, low‑latency services; proven incident response and observability; strong leadership in writing RFCs, mentoring, and shaping processes; solid grasp of distributed systems fundamentals.",
+  "key_weaknesses": "No explicit professional experience with React/TypeScript frontend development; career history mainly in larger corporate settings rather than early‑stage, chaotic startups; located in Seattle (Pacific time) which limits overlap with UK/EU working hours; limited exposure to energy/climate domain.",
+  "final_evaluation": "While the candidate would be a strong asset for the backend and infrastructure side of Pulsegrid, the missing frontend expertise and timezone mismatch reduce overall fit for a founding full‑stack engineer role. They would need considerable upskilling in React/TypeScript and flexibility on collaboration hours to succeed."
+}

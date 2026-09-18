@@ -1,0 +1,46 @@
+[
+  {
+    "score": 7,
+    "strengths": [
+      "Strong alignment with the tech stack (React, TypeScript, Kafka, Redis, PostgreSQL)",
+      "Proven experience with distributed systems fundamentals including idempotency and event-driven architectures",
+      "Direct evidence of owning production observability (OpenTelemetry) and incident response",
+      "Experience building full-stack features from API to frontend (Developer Portal, Onboarding workflows)"
+    ],
+    "weaknesses": [
+      "Location mismatch (based in Austin, TX while the role requires UK/EU timezone)",
+      "Lack of Go experience (though proficient in Java/Kotlin/Python)",
+      "No explicit evidence of early-stage startup experience (appears to be mid-to-large company backgrounds)",
+      "No mentioned interest or experience in the energy/climate sector"
+    ],
+    "summary": "Priya is a technically excellent full-stack engineer with the exact distributed systems and observability experience required, but the significant timezone difference and lack of Go/startup experience make her a risky fit for a founding role.",
+    "candidate": "intermediate_american",
+    "tokens_in": 1945,
+    "tokens_out": 237,
+    "model": "gemma4_31b"
+  },
+  {
+    "score": 7,
+    "strengths": [
+      "Proven experience building and operating high‑throughput backend services with Kotlin/Spring Boot and Python/FastAPI",
+      "Strong React and TypeScript front‑end skills, plus experience delivering full‑stack features",
+      "Hands‑on work with Kafka, Redis, PostgreSQL, OpenTelemetry, and Kubernetes demonstrating distributed systems and observability expertise",
+      "Mentoring and code‑review experience indicating ability to help shape early engineering culture"
+    ],
+    "weaknesses": [
+      "Primary backend languages are Kotlin/Java and Python, not Go (preferred for the role)",
+      "No explicit energy‑sector or climate domain experience, and no prior early‑stage startup founding engineer background",
+      "Based in Austin (US) which may limit overlap with UK/EU core hours for on‑call rotations"
+    ],
+    "summary": "Priya has strong full‑stack and event‑driven system experience that aligns well with Pulsegrid's needs, but gaps in Go expertise, domain knowledge, and geographic timing lower the overall fit.",
+    "candidate": "intermediate_american",
+    "tokens_in": 1792,
+    "tokens_out": 288,
+    "model": "gpt-oss_120b"
+  },
+  {
+    "summary": "The candidate's experience shipping production software and technical credentials meet the essential requirements. Their background in TypeScript/React and backend languages like Java or Node.js align closely with the job description. However, there is no evidence of hands-on experience with Go, distributed systems, or production operations, which are clearly not met. The candidate's communication skills and problem-solving enthusiasm are also well-documented.",
+    "candidate": "intermediate_american",
+    "type": "essential_requirements"
+  }
+]

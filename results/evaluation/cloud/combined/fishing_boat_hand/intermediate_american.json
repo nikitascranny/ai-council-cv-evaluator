@@ -1,0 +1,39 @@
+[
+  {
+    "score": 1,
+    "strengths": [],
+    "weaknesses": [
+      "No experience with commercial fishing, potting, or netting",
+      "No evidence of physical fitness or ability to perform heavy manual labor",
+      "Located in Austin, Texas, while the job is based in Kestrel Bay, UK",
+      "Professional background is exclusively in software engineering",
+      "No mentioned certifications like STCW or RYA Powerboat Level 2"
+    ],
+    "summary": "The candidate is a software engineer with zero relevant skills or experience for a physical deckhand role and is located in a different continent.",
+    "candidate": "intermediate_american",
+    "tokens_in": 1729,
+    "tokens_out": 146,
+    "model": "gemma4_31b"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Demonstrates strong technical and analytical abilities",
+      "Proven track record of reliability and meeting deadlines in software projects"
+    ],
+    "weaknesses": [
+      "No maritime or manual‑labor experience; lacks sea legs and physical fishing skills",
+      "Career focus is software engineering, not suitable for early‑morning, heavy‑handed deck work"
+    ],
+    "summary": "The candidate is highly qualified for tech roles but lacks the essential fishing, boat handling, and physical requirements for the deckhand position.",
+    "candidate": "intermediate_american",
+    "tokens_in": 1625,
+    "tokens_out": 142,
+    "model": "gpt-oss_120b"
+  },
+  {
+    "summary": "The candidate's education and technical skills, while relevant to other roles, do not clearly meet the physical and practical requirements of the job. Their educational background and AWS certification indicate a strong aptitude for technology, but they lack evidence of physical fitness for heavy, repetitive manual work or sea experience. The absence of information on reliability, punctuality, and willingness to work early starts or long days leaves these requirements unclear.",
+    "candidate": "intermediate_american",
+    "type": "essential_requirements"
+  }
+]

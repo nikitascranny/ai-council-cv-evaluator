@@ -1,0 +1,40 @@
+[
+  {
+    "score": 1,
+    "strengths": [],
+    "weaknesses": [
+      "No degree or experience in Marine Biology, Zoology, or life sciences",
+      "No evidence of physical fitness or willingness to perform manual labor/filter cleaning",
+      "No knowledge of water chemistry or the nitrogen cycle",
+      "Professional background is entirely in software engineering",
+      "Based in Beijing, China, with no mention of UK right to work"
+    ],
+    "summary": "The candidate is a software engineer with no relevant biological qualifications, physical experience, or geographical alignment for this aquarium husbandry role.",
+    "candidate": "beginner_chinese",
+    "tokens_in": 1780,
+    "tokens_out": 141,
+    "model": "gemma4_31b"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Demonstrates strong technical learning ability and teamwork experience from software engineering internships and teaching assistant role",
+      "Good record of attentive work and documentation (unit tests, code reviews, creating study guides)"
+    ],
+    "weaknesses": [
+      "No academic background or practical experience in marine biology, zoology, or aquatic systems",
+      "Lacks any experience with water chemistry, life support system maintenance, or physical/dirty tasks required by the role",
+      "No right to work in the UK, no relevant certifications, and no evidence of physical fitness or willingness to perform manual labor"
+    ],
+    "summary": "The candidate lacks the necessary biological and hands‑on aquarium experience, making them a poor fit for this entry‑level aquarist position.",
+    "candidate": "beginner_chinese",
+    "tokens_in": 1664,
+    "tokens_out": 189,
+    "model": "gpt-oss_120b"
+  },
+  {
+    "summary": "The candidate appears to meet the essential requirement of a degree in a related life science, though the specific field is not explicitly stated. The willingness to perform physical tasks is evident, making the second requirement a reasonable match. The candidate's observational skills and attention to detail, coupled with careful record keeping, align well with the third requirement. Physical fitness and willingness to work during non-standard hours also appear to be met. However, the candidate's background in water chemistry and the nitrogen cycle in closed aquatic systems is unclear from the CV.",
+    "candidate": "beginner_chinese",
+    "type": "essential_requirements"
+  }
+]

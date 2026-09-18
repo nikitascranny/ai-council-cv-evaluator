@@ -1,0 +1,42 @@
+[
+  {
+    "score": 1,
+    "strengths": [
+      "Extremely high general technical literacy",
+      "Proven reliability and professional history"
+    ],
+    "weaknesses": [
+      "Complete lack of hardware repair experience (SSD/RAM/Screens)",
+      "Severe over-qualification; profile is for cloud architecture, not shop repair",
+      "Geographic mismatch (based in Seattle, WA; job is in Tillingford, UK)",
+      "No evidence of customer-facing retail experience or patience for 'non-technical' users"
+    ],
+    "summary": "The candidate is a world-class software architect based in the US, making him entirely unsuitable for a local, part-time hardware repair role in a small UK village shop.",
+    "candidate": "senior_american",
+    "tokens_in": 1905,
+    "tokens_out": 174,
+    "model": "gemma4_31b"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Extensive experience with hardware‑level troubleshooting in high‑availability data‑center environments",
+      "Strong problem‑solving mindset and ability to learn new technologies quickly"
+    ],
+    "weaknesses": [
+      "No evidence of hands‑on PC/laptop repair, RAM/SSD upgrades, or consumer‑grade troubleshooting",
+      "Career focused on senior software engineering and cloud platforms, not retail customer service or cash handling",
+      "Located in the US, far from Tillingford, with no indication of willingness to relocate or commute"
+    ],
+    "summary": "The candidate’s senior software engineering background does not match the practical, local, customer‑facing computer repair role.",
+    "candidate": "senior_american",
+    "tokens_in": 1761,
+    "tokens_out": 174,
+    "model": "gpt-oss_120b"
+  },
+  {
+    "summary": "The candidate's technical skills and experience in software engineering clearly meet the technical requirements, but do not align with the basic PC/laptop repair skills needed. The candidate’s ability to explain complex technical concepts without jargon may be transferable to explaining technical issues to older customers, potentially meeting the communication requirement. The candidate's reliable and leadership experience may support the honesty and reliability requirement. The candidate's location is unclear, so the ability to work Saturdays and local availability are not directly supported.",
+    "candidate": "senior_american",
+    "type": "essential_requirements"
+  }
+]

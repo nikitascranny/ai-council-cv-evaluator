@@ -1,0 +1,44 @@
+[
+  {
+    "score": 8,
+    "strengths": [
+      "Deep expertise in the required tech stack, specifically Go, TypeScript, Kafka, and Redis",
+      "Proven track record with high-scale distributed systems and event-driven architectures (18M events daily)",
+      "Strong operational maturity with experience in SRE, incident response, and 99.99% availability",
+      "Significant experience with RFCs, architecture reviews, and mentoring, aligning with the 'early culture' requirement"
+    ],
+    "weaknesses": [
+      "Potential over-qualification; current 'Principal' level may clash with the 'Founding Engineer' hands-on execution requirements",
+      "No specific domain experience in energy or climate tech",
+      "Located in South Africa (UTC+2), which fits the EU timezone requirement but may pose communication challenges for a London-hubbed team"
+    ],
+    "summary": "An exceptionally strong technical candidate with the exact distributed systems and language expertise required, though there is a risk they may be too senior for a hands-on 'founding' role.",
+    "candidate": "senior_sa",
+    "tokens_in": 2114,
+    "tokens_out": 245,
+    "model": "gemma4_31b"
+  },
+  {
+    "score": 8,
+    "strengths": [
+      "12+ years of production software experience, including extensive Go and Kafka work",
+      "Strong background in distributed systems, observability, on‑call, and incident response",
+      "Proven ability to design and ship high‑scale backend services and lead engineering teams",
+      "Experience with event‑driven architectures, time‑series data, and cloud infrastructure"
+    ],
+    "weaknesses": [
+      "No explicit experience with React/TypeScript front‑end development required for the dashboard",
+      "Limited direct exposure to the energy/climate domain and specific protocols (Modbus, BMS)"
+    ],
+    "summary": "Highly experienced backend engineer with the required distributed‑systems skills, but missing front‑end expertise and domain knowledge.",
+    "candidate": "senior_sa",
+    "tokens_in": 1934,
+    "tokens_out": 229,
+    "model": "gpt-oss_120b"
+  },
+  {
+    "summary": "The candidate has a clear match for the MSc in Software Engineering and BSc in Computer Science, indicating relevant education. The adaptive workload routing patent and technical speaking experience suggest a strong grasp of distributed systems and communication skills, which are closely related to the job requirements. However, the years of shipping production software specifically with TypeScript/React and backend experience are not explicitly stated, making these requirements unclear from the CV.",
+    "candidate": "senior_sa",
+    "type": "essential_requirements"
+  }
+]

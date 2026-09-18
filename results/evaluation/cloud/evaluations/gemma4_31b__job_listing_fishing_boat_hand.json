@@ -1,0 +1,134 @@
+[
+  {
+    "score": 1,
+    "strengths": [],
+    "weaknesses": [
+      "No experience with commercial fishing, potting, or netting",
+      "No evidence of physical fitness or ability to perform heavy manual labor",
+      "No history of working on boats or managing sea sickness",
+      "Based in Seattle, WA, while the job is located in Kestrel Bay, UK",
+      "Professional background is entirely in software engineering"
+    ],
+    "summary": "The candidate is completely unqualified for this role as they are a software engineer based in the US with no maritime or manual labor experience.",
+    "candidate": "beginner_american",
+    "tokens_in": 1635,
+    "tokens_out": 142
+  },
+  {
+    "score": 1,
+    "strengths": [],
+    "weaknesses": [
+      "No experience with commercial fishing or boat handling",
+      "No evidence of physical fitness or ability to perform heavy manual labor",
+      "Professional background is entirely in software engineering, not maritime work",
+      "Located in Beijing, China, while the job is based in Kestrel Bay, UK",
+      "No evidence of 'sea legs' or ability to work in harsh weather conditions"
+    ],
+    "summary": "The candidate is a software engineer with no relevant skills, experience, or geographical proximity to the requirements of a deckhand role.",
+    "candidate": "beginner_chinese",
+    "tokens_in": 1689,
+    "tokens_out": 148
+  },
+  {
+    "score": 1,
+    "strengths": [],
+    "weaknesses": [
+      "Zero evidence of physical fitness or ability to perform heavy manual labor",
+      "No maritime experience or 'sea legs'",
+      "Location is in South Africa, while the job is based in Kestrel Bay, UK",
+      "Professional background is entirely in software engineering, which is irrelevant to commercial fishing"
+    ],
+    "summary": "The candidate is a software developer with no relevant experience or skills for a physical deckhand role on a fishing vessel.",
+    "candidate": "beginner_sa",
+    "tokens_in": 1670,
+    "tokens_out": 129
+  },
+  {
+    "score": 1,
+    "strengths": [],
+    "weaknesses": [
+      "No experience with commercial fishing, potting, or netting",
+      "No evidence of physical fitness or ability to perform heavy manual labor",
+      "Located in Austin, Texas, while the job is based in Kestrel Bay, UK",
+      "Professional background is exclusively in software engineering",
+      "No mentioned certifications like STCW or RYA Powerboat Level 2"
+    ],
+    "summary": "The candidate is a software engineer with zero relevant skills or experience for a physical deckhand role and is located in a different continent.",
+    "candidate": "intermediate_american",
+    "tokens_in": 1729,
+    "tokens_out": 146
+  },
+  {
+    "score": 1,
+    "strengths": [],
+    "weaknesses": [
+      "Zero relevant experience in commercial fishing, maritime operations, or manual labor",
+      "Candidate is a Software Engineer with a purely technical professional background",
+      "Located in China, making him unavailable for a vessel-based role in Kestrel Bay, UK",
+      "No evidence of physical fitness, 'sea legs', or the ability to perform heavy manual labor"
+    ],
+    "summary": "The candidate is completely unqualified as their entire professional profile is in software engineering and they lack any of the essential physical or maritime requirements for a deckhand role.",
+    "candidate": "middle_chinese",
+    "tokens_in": 1762,
+    "tokens_out": 148
+  },
+  {
+    "score": 1,
+    "strengths": [],
+    "weaknesses": [
+      "Zero evidence of physical fitness or ability to perform manual labor",
+      "No maritime experience or 'sea legs'",
+      "Current professional background is entirely in software engineering",
+      "Based in South Africa, whereas the role is located in Kestrel Bay, UK",
+      "No evidence of driving license or relevant certifications (STCW/RYA)"
+    ],
+    "summary": "The candidate is a Software Engineer with no relevant experience, skills, or geographical proximity for a physically demanding deckhand role on a fishing vessel.",
+    "candidate": "middle_sa",
+    "tokens_in": 1723,
+    "tokens_out": 144
+  },
+  {
+    "score": 1,
+    "strengths": [],
+    "weaknesses": [
+      "Complete lack of maritime or commercial fishing experience",
+      "No evidence of physical fitness or ability to perform heavy manual labor",
+      "Based in Seattle, WA, while the job is located in Kestrel Bay, UK",
+      "Professional background is entirely in software engineering/IT"
+    ],
+    "summary": "The candidate is a high-level software engineer with no relevant skills or experience for a physical deckhand role and is located on a different continent.",
+    "candidate": "senior_american",
+    "tokens_in": 1894,
+    "tokens_out": 131
+  },
+  {
+    "score": 1,
+    "strengths": [],
+    "weaknesses": [
+      "Complete lack of maritime or fishing experience",
+      "No evidence of physical fitness or ability to perform heavy manual labor",
+      "Professional background is exclusively in software engineering and distributed systems",
+      "No mentioned availability for 04:00 starts or working in all-weather conditions",
+      "Based in China, whereas the role is located in Kestrel Bay, UK"
+    ],
+    "summary": "The candidate is a high-level software engineer with absolutely no relevant skills or experience for a physical deckhand role on a fishing vessel.",
+    "candidate": "senior_chinese",
+    "tokens_in": 1939,
+    "tokens_out": 149
+  },
+  {
+    "score": 1,
+    "strengths": [],
+    "weaknesses": [
+      "Complete lack of maritime or commercial fishing experience",
+      "No evidence of physical fitness or ability to perform heavy manual labor",
+      "Location is Cape Town, South Africa, while the role is in Kestrel Bay, UK",
+      "Professional background is entirely in high-level software engineering",
+      "No evidence of 'sea legs' or experience with potting/netting"
+    ],
+    "summary": "The candidate is a highly skilled software engineer with no relevant experience, skills, or geographical proximity for a physical deckhand role on a fishing vessel.",
+    "candidate": "senior_sa",
+    "tokens_in": 1898,
+    "tokens_out": 151
+  }
+]

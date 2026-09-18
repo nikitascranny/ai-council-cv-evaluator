@@ -1,0 +1,41 @@
+[
+  {
+    "score": 1,
+    "strengths": [
+      "Highly proficient in technical software and platform tools",
+      "Strong professional experience in high-pressure environments"
+    ],
+    "weaknesses": [
+      "No experience in secretarial, receptionist, or general office administration",
+      "Candidate is a Senior Software Engineer, making them drastically overqualified in technical skills but completely unqualified for the specific administrative duties",
+      "Based in the US (Seattle), while the job is an on-site role in Ashcombe, UK",
+      "No evidence of experience with diary management, client greeting, or audio typing"
+    ],
+    "summary": "The candidate is a high-level technical engineer whose profile bears no relevance to the administrative requirements of a local accountancy secretary role.",
+    "candidate": "senior_american",
+    "tokens_in": 1879,
+    "tokens_out": 179,
+    "model": "gemma4_31b"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Demonstrates strong technical expertise and leadership in software engineering",
+      "Experience with documentation and process creation in complex technical environments"
+    ],
+    "weaknesses": [
+      "No experience in secretarial, reception or office administration roles",
+      "Lacks required skills such as telephone etiquette, client-facing service, Microsoft Office proficiency, typing speed, and handling confidential financial information"
+    ],
+    "summary": "The candidate's background is entirely software‑engineering focused and does not meet the core administrative and client‑service requirements of the secretary role.",
+    "candidate": "senior_american",
+    "tokens_in": 1739,
+    "tokens_out": 145,
+    "model": "gpt-oss_120b"
+  },
+  {
+    "summary": "The candidate's experience as a software engineer does not clearly meet the essential requirement of secretarial, receptionist, or office administration experience. However, their strong organizational skills and ability to handle complex projects could be seen as a reasonable close match to the requirement for managing multiple tasks. The candidate's technical skills and experience do not align with the specific requirements of Microsoft Word, Excel, and Outlook proficiency, but their overall experience in managing and mentoring a team could indicate a strong work ethic and attention to detail that could be relevant to the role. ",
+    "candidate": "senior_american",
+    "type": "essential_requirements"
+  }
+]

@@ -1,0 +1,8 @@
+{
+  "candidate": "beginner_american",
+  "final_score": 2,
+  "score_rationale": "The candidate shows solid front‑end skills but falls far short of the 4+ years of production experience, backend language proficiency, production operations, and distributed‑systems knowledge required for a founding full‑stack engineer, and is also outside the required UK/EU timezone.",
+  "key_strengths": "Proficiency in React and TypeScript; ability to learn new tools quickly (Docker, AWS); experience building REST APIs with Node/Express and writing unit tests; strong academic background in Computer Science; familiarity with PostgreSQL and Docker.",
+  "key_weaknesses": "Less than 4 years of professional production software experience; no Go (or comparable backend language) experience; no exposure to Kafka, event‑driven architectures, or time‑series data; lacking demonstrated production observability, on‑call, or incident‑response work; no evidence of distributed‑systems fundamentals; based in Seattle (US) conflicting with UK/EU timezone requirement; no energy/domain exposure or early‑stage startup experience.",
+  "final_evaluation": "Overall, the candidate is not a fit for the Founding Full‑Stack Engineer role at Pulsegrid. They would need substantial upskilling in backend technologies, production operations, and distributed systems, as well as relocation or timezone alignment, before being considered for such a senior, founding‑engineer position."
+}

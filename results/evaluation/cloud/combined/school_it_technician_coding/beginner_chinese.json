@@ -1,0 +1,44 @@
+[
+  {
+    "score": 4,
+    "strengths": [
+      "Strong programming proficiency in Python, which is essential for the Coding Enrichment Lead aspect of the role",
+      "Proven experience in a teaching assistant capacity, demonstrating an ability to explain technical concepts to students",
+      "Strong academic background in Computer Science with an honors degree"
+    ],
+    "weaknesses": [
+      "Complete lack of evidence regarding IT support, hardware maintenance, or device imaging (Intune/Active Directory)",
+      "No experience with the specific hardware mentioned (iPads, Chromebooks, projectors, servers)",
+      "Career goals are aligned with software engineering rather than school IT support/technician work",
+      "Located in Beijing, China, while the role is an on-site position in Wexborne, UK"
+    ],
+    "summary": "While the candidate has excellent coding skills and teaching experience, they lack the essential practical IT support and hardware maintenance experience required for 70% of the role and are based in a different country.",
+    "candidate": "beginner_chinese",
+    "tokens_in": 1944,
+    "tokens_out": 229,
+    "model": "gemma4_31b"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Solid programming knowledge in Python and JavaScript",
+      "Experience tutoring university students in programming",
+      "Experience with version control, testing and agile processes"
+    ],
+    "weaknesses": [
+      "No demonstrated experience with Windows 11, Microsoft 365, Active Directory/Intune or school‑level device management",
+      "Lacks first‑line IT support or hardware troubleshooting background",
+      "No experience in a school setting, safeguarding or working with 11‑14 year olds in a classroom environment"
+    ],
+    "summary": "The candidate is technically capable but lacks the core school IT support and safeguarding experience required for the role.",
+    "candidate": "beginner_chinese",
+    "tokens_in": 1779,
+    "tokens_out": 181,
+    "model": "gpt-oss_120b"
+  },
+  {
+    "summary": "The candidate's IT support experience and working knowledge of Windows 11 and Microsoft 365 are clearly met. Their ability in Python and Scratch is a reasonable match for the basic programming requirement. The enthusiasm for working with young people and their understanding of safeguarding are not explicitly stated, but are likely based on their background. An enhanced DBS check and barred list check are not mentioned, but may be assumed. The candidate’s volunteer background in IT support provides a reasonable substitute for the standard work experience.",
+    "candidate": "beginner_chinese",
+    "type": "essential_requirements"
+  }
+]

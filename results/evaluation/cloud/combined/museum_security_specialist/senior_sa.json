@@ -1,0 +1,42 @@
+[
+  {
+    "score": 1,
+    "strengths": [
+      "Strong background in technical security reviews and threat modelling",
+      "Experience in incident command and operational maturity"
+    ],
+    "weaknesses": [
+      "No experience in physical security, museum operations, or gallery patrolling",
+      "Lacks required SIA Door Supervisor or Security Guarding licence",
+      "No experience with physical access-control hardware (Gallagher/Lenel) or CCTV monitoring",
+      "Professional background is in software engineering rather than facilities or visitor safety"
+    ],
+    "summary": "The candidate is a highly skilled software engineer with no relevant experience or certifications for a physical security role in a museum.",
+    "candidate": "senior_sa",
+    "tokens_in": 1847,
+    "tokens_out": 159,
+    "model": "gemma4_31b"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong technical and leadership experience in complex systems",
+      "Demonstrated ability to learn and implement new processes and tools"
+    ],
+    "weaknesses": [
+      "No experience in security roles, museum or public venue environments",
+      "Lacks SIA licence, CCTV/alarms/access‑control knowledge, and physical patrol experience",
+      "No first‑aid or high‑value object protection background"
+    ],
+    "summary": "Candidate excels in software engineering but lacks the essential security and museum experience required for the role.",
+    "candidate": "senior_sa",
+    "tokens_in": 1701,
+    "tokens_out": 156,
+    "model": "gpt-oss_120b"
+  },
+  {
+    "summary": "The candidate's experience in software engineering and computer science shows a strong background in technology, but there is no evidence of experience in a security role, particularly within a museum, gallery, heritage site, or public venue. The candidate's relevant skills include strong communication, which could be a reasonable match for writing incident reports, and the ability to work flexible shifts, which aligns with the requirement. However, there is no information regarding a security license or knowledge of security systems.",
+    "candidate": "senior_sa",
+    "type": "essential_requirements"
+  }
+]

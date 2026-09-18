@@ -1,0 +1,38 @@
+[
+  {
+    "summary": "The candidate does not clearly meet the essential requirement of having minimum 3 years' experience in a security role. Their experience in software engineering and teaching assistant roles is a reasonable/close match for some of the other requirements, such as strong communication skills and the ability to work in a team. However, the candidate lacks the required security-specific certifications and practical security experience.",
+    "candidate": "beginner_american"
+  },
+  {
+    "summary": "The candidate clearly meets the requirement for a minimum of 3 years' experience in a security role. Their written and verbal communication skills, and experience writing incident reports, are a reasonable match. The ability to patrol a large multi-floor site for extended periods is unclear from the CV, and there is no mention of the SIA Door Supervisor or Security Guarding licence, making this requirement unclear. The candidate’s ability to remain calm under pressure is a reasonable match, but there is no specific mention of working knowledge of CCTV, intruder alarm, and access control systems.",
+    "candidate": "beginner_chinese"
+  },
+  {
+    "summary": "The candidate has 3 years' experience in a security role, which is a clear match. The candidate's physical fitness and willingness to work flexible shifts are reasonable matches. However, the candidate's work history is not specified to be in a museum, gallery, heritage site, or public venue, which is a clear requirement. The candidate lacks explicit mention of a valid SIA Door Supervisor or Security Guarding licence, though this could be a regional equivalent. The candidate has experience writing incident reports, which aligns with the requirement for strong written communication skills.",
+    "candidate": "beginner_sa"
+  },
+  {
+    "summary": "The candidate's CV clearly meets the requirement for a valid SIA Door Supervisor or Security Guarding licence, as it does not yet list a specific one. However, there is a reasonable match for the required experience in a security role, given the candidate's background in computer engineering. The candidate's education and skills in technology do not directly meet the requirement for working knowledge of security systems. The physical and flexible working conditions are not evidenced, but the security role experience suggests a relevant transferable skill set.",
+    "candidate": "intermediate_american"
+  },
+  {
+    "summary": "The candidate has 2 years' experience in a security role, which is a reasonable close match to the minimum 3 years required. The candidate holds a valid SIA Door Supervisor licence, meeting one of the essential requirements. The candidate's experience includes basic CCTV monitoring and report writing, indicating relevant knowledge and experience, but may not fully meet the requirement of 'working knowledge' of all systems. Physical fitness and flexibility are not explicitly stated, but the candidate's background suggests these skills. However, the candidate lacks formal experience in a museum, gallery, heritage site, or other public venue, which is clearly not met.",
+    "candidate": "middle_chinese"
+  },
+  {
+    "summary": "The candidate does not meet the minimum 3 years' experience requirement. However, their AWS Certified Developer – Associate certification and experience in engineering guilds suggest strong technical skills, which could be relevant to a security role involving technology. There is no evidence of a security license, knowledge of security systems, or physical capabilities required for the role.",
+    "candidate": "middle_sa"
+  },
+  {
+    "summary": "The candidate's experience as a Principal Software Engineer, Staff Software Engineer, and Senior Software Engineer demonstrates strong technical and leadership skills, which are not directly related to the security role but show potential for adaptability. The requirements of minimum 3 years' experience in a security role, valid SIA licence, working knowledge of security systems, and ability to work shifts are clearly not met. Strong written and verbal communication skills, and decision-making under pressure are reasonable/close matches as evidenced by their leadership roles and incident reviews. Physical ability to patrol a large site is unclear from the CV.",
+    "candidate": "senior_american"
+  },
+  {
+    "summary": "The candidate's experience in software engineering does not clearly meet the security role requirements. However, their strong technical and leadership skills, along with their experience in reliability and incident management, could be considered a reasonable/close match for some of the non-security specific requirements. The absence of relevant security or physical site experience is a clear mismatch.",
+    "candidate": "senior_chinese"
+  },
+  {
+    "summary": "The candidate's experience in software engineering and computer science shows a strong background in technology, but there is no evidence of experience in a security role, particularly within a museum, gallery, heritage site, or public venue. The candidate's relevant skills include strong communication, which could be a reasonable match for writing incident reports, and the ability to work flexible shifts, which aligns with the requirement. However, there is no information regarding a security license or knowledge of security systems.",
+    "candidate": "senior_sa"
+  }
+]

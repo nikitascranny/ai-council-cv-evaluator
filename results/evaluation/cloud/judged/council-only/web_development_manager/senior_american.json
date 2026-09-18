@@ -1,0 +1,8 @@
+{
+  "candidate": "senior_american",
+  "final_score": 3,
+  "score_rationale": "The candidate demonstrates strong technical leadership and platform modernization experience but lacks essential evidence of formal line‑management, React/TypeScript/.NET stack expertise, accessibility knowledge, and hands‑on web work, plus a location mismatch for the hybrid UK role.",
+  "key_strengths": "Proven ability to lead large‑scale monolith decomposition and service‑oriented architecture migrations; deep expertise in AWS, CI/CD, observability, and distributed systems; track record of mentoring engineers and setting engineering standards; experience with high‑volume transactional systems.",
+  "key_weaknesses": "No explicit evidence of formal line‑management (1:1s, performance reviews, hiring); primary tech stack is Go/Java/Python rather than React/TypeScript or .NET; lacking WCAG accessibility experience; based in Seattle, USA, conflicting with the UK hybrid on‑site requirement; limited demonstration of hands‑on frontend/web development needed for the 15‑20% coding expectation.",
+  "final_evaluation": "While the candidate excels in architectural leadership and cloud infrastructure, they do not meet the core people‑management and specific web‑stack requirements of the Engineering Manager role, and the geographic mismatch further reduces suitability. Consequently, they are a poor fit for this position."
+}

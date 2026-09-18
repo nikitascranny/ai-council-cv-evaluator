@@ -1,0 +1,39 @@
+[
+  {
+    "score": 1,
+    "strengths": [],
+    "weaknesses": [
+      "No experience with commercial fishing, potting, or netting",
+      "No evidence of physical fitness or ability to perform heavy manual labor",
+      "No history of working on boats or managing sea sickness",
+      "Based in Seattle, WA, while the job is located in Kestrel Bay, UK",
+      "Professional background is entirely in software engineering"
+    ],
+    "summary": "The candidate is completely unqualified for this role as they are a software engineer based in the US with no maritime or manual labor experience.",
+    "candidate": "beginner_american",
+    "tokens_in": 1635,
+    "tokens_out": 142,
+    "model": "gemma4_31b"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Demonstrates strong learning ability and quick adaptation to new tools",
+      "Proven reliability and teamwork in fast‑paced, deadline‑driven environments"
+    ],
+    "weaknesses": [
+      "No maritime or boat‑hand experience; lacks sea legs and physical fishing work background",
+      "No relevant certifications (STCW, RYA) or demonstrated ability to handle heavy manual tasks in wet conditions"
+    ],
+    "summary": "While a fast learner and dependable team player, Jordan lacks any fishing, sea‑hand, or physical labor experience required for the role.",
+    "candidate": "beginner_american",
+    "tokens_in": 1534,
+    "tokens_out": 194,
+    "model": "gpt-oss_120b"
+  },
+  {
+    "summary": "The candidate does not clearly meet the essential requirement of physical fitness for heavy, repetitive manual work in all weathers or the need for sea legs. However, their experience in software engineering and teaching assistant roles demonstrates reliable and punctual work, basic numeracy, and the ability to work flexible hours. There is no evidence of previous experience on boats, and no history of severe seasickness is provided.",
+    "candidate": "beginner_american",
+    "type": "essential_requirements"
+  }
+]

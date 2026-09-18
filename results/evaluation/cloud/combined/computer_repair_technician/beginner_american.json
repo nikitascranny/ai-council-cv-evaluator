@@ -1,0 +1,43 @@
+[
+  {
+    "score": 2,
+    "strengths": [
+      "Strong technical foundation in computer science",
+      "Experience in teaching/guiding others which suggests patience"
+    ],
+    "weaknesses": [
+      "Lack of hardware repair experience (RAM, SSD, screen replacements)",
+      "No evidence of experience with legacy systems or consumer electronics",
+      "Geographic mismatch (based in Seattle, WA while the job is in Tillingford, UK)",
+      "Overqualified in software engineering but underqualified in physical repair"
+    ],
+    "summary": "The candidate is a software engineer with no hardware repair experience and is located in a different country, making them entirely unsuitable for this local technician role.",
+    "candidate": "beginner_american",
+    "tokens_in": 1646,
+    "tokens_out": 164,
+    "model": "gemma4_31b"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Demonstrated ability to learn new technologies quickly",
+      "Experience troubleshooting code and debugging",
+      "Good communication skills from teaching assistant role"
+    ],
+    "weaknesses": [
+      "No practical PC/laptop hardware repair experience",
+      "Lacks experience with older customers and face‑to‑face service",
+      "Not local to Tillingford and no mention of transport reliability"
+    ],
+    "summary": "While technically capable and quick to learn, the candidate lacks the hands‑on hardware repair and customer‑service background essential for this role.",
+    "candidate": "beginner_american",
+    "tokens_in": 1521,
+    "tokens_out": 163,
+    "model": "gpt-oss_120b"
+  },
+  {
+    "summary": "The candidate does not clearly meet the requirement for basic, practical PC/laptop repair skills. However, the role of a Software Engineering Intern and Computer Science Teaching Assistant show strong transferable skills in technical problem-solving and communication, which can be considered a reasonable/close match. The candidate meets the requirement for honesty and reliability, and shows availability for Saturdays through their academic schedule. The requirement for local or reliable transportation is unclear from the CV as no information on the candidate's current location or commuting arrangements is provided.",
+    "candidate": "beginner_american",
+    "type": "essential_requirements"
+  }
+]

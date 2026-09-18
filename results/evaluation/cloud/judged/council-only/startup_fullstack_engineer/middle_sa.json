@@ -1,0 +1,8 @@
+{
+  "candidate": "middle_sa",
+  "final_score": 7,
+  "score_rationale": "The candidate meets all essential requirements: strong TypeScript/React full-stack skills, a suitable backend language (Java/Kotlin), proven production observability and distributed systems experience, and solid communication/mentoring abilities. Gaps include lack of Go (preferred but not required), limited evidence of high‑velocity early‑stage startup work, minimal energy/domain exposure, and a timezone outside the preferred UK/EU range.",
+  "key_strengths": "Strong full‑stack expertise with React/TypeScript and Java/Kotlin back‑end; hands‑on experience with Kafka, Redis, observability, tracing, and idempotency; track record of shipping production features at scale, improving reliability, and mentoring/junior engineers; ability to operate services in production and participate in on‑call rotations.",
+  "key_weaknesses": "No direct Go experience (though has acceptable alternatives); no explicit early‑stage startup or founding‑engineer background to demonstrate comfort with extreme ambiguity and rapid iteration; limited domain knowledge or expressed enthusiasm for energy/climate problems; located in South Africa (UTC+2), which is slightly outside the stated UK/EU timezone preference.",
+  "final_evaluation": "Overall, the candidate is a technically strong fit for the core engineering demands of the role and would likely become productive quickly. The main risks are the unproven ability to thrive in the chaotic, high‑velocity startup environment and the lack of demonstrated passion for the energy domain; addressing these would require some ramp‑up and cultural alignment, but the foundation is solid for a founding engineer position."
+}

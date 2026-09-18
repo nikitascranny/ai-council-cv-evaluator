@@ -1,0 +1,159 @@
+[
+  {
+    "score": 8,
+    "strengths": [
+      "12+ years of software engineering experience with 5+ years leading large engineering teams",
+      "Proven track record of migrating monolithic systems to service‑oriented architectures and improving release cadence",
+      "Strong background in cloud (AWS), CI/CD, observability, and SRE practices",
+      "Hands‑on coding experience across multiple languages including TypeScript and experience with distributed systems",
+      "Demonstrated ability to drive technical standards, RFC processes, and mentor senior engineers"
+    ],
+    "weaknesses": [
+      "Primary technical stack is Go/Java/Python; limited explicit experience with React/TypeScript front‑end development",
+      "No direct .NET or Node.js experience, which are part of the target stack",
+      "Lacks specific domain experience in ferry/coastal transport or high‑volume booking systems",
+      "No mention of accessibility (WCAG) work or dedicated incident‑management at scale in a customer‑facing web context"
+    ],
+    "summary": "Zanele brings strong engineering leadership and migration experience that aligns well with the role, but gaps in the specific front‑end/.NET stack and domain knowledge lower the overall fit.",
+    "candidate": "senior_sa",
+    "tokens_in": 1757,
+    "tokens_out": 319
+  },
+  {
+    "score": 7,
+    "strengths": [
+      "12+ years of software engineering with extensive experience in large‑scale platform modernization and monolith decomposition",
+      "Proven line‑management of engineering teams (26 engineers) and mentorship of senior staff",
+      "Strong background in cloud infrastructure, CI/CD, observability, and reliability engineering (Kubernetes, Terraform, OpenTelemetry)",
+      "Demonstrated ability to lead technical roadmaps, incident management, and cross‑functional collaboration"
+    ],
+    "weaknesses": [
+      "Limited explicit experience with the required front‑end stack (React/TypeScript) and .NET ecosystem",
+      "Primary cloud experience on Alibaba Cloud rather than AWS, and no direct travel/transport domain exposure"
+    ],
+    "summary": "The candidate excels in technical leadership and large‑scale backend modernization, but lacks the specific front‑end and AWS/.NET experience central to the role.",
+    "candidate": "senior_chinese",
+    "tokens_in": 1811,
+    "tokens_out": 272
+  },
+  {
+    "score": 6,
+    "strengths": [
+      "5+ years of professional software engineering experience with strong backend expertise (Java/Kotlin/Python, Spring Boot, FastAPI)",
+      "Demonstrated technical leadership: mentored junior engineers, led design reviews, and headed a three‑engineer initiative",
+      "Solid DevOps background: Kubernetes, Terraform, CI/CD pipelines, observability with OpenTelemetry, and cloud experience (Alibaba Cloud)",
+      "Experience delivering high‑volume, transactional services and improving incident diagnosis"
+    ],
+    "weaknesses": [
+      "No explicit experience with the primary front‑end stack (React/TypeScript) required for the role",
+      "Limited evidence of formal line‑management (people‑manager) responsibilities beyond mentoring",
+      "No proven track record of large‑scale monolith to service‑oriented migrations or .NET/Node.js experience",
+      "Cloud experience is Alibaba Cloud rather than AWS, and no stated familiarity with WCAG accessibility standards"
+    ],
+    "summary": "The candidate shows strong backend and technical leadership abilities but lacks key front‑end, manager, and migration experience required for the Engineering Manager role.",
+    "candidate": "middle_chinese",
+    "tokens_in": 1653,
+    "tokens_out": 307
+  },
+  {
+    "score": 6,
+    "strengths": [
+      "Over 12 years of software engineering experience with proven leadership (principal, staff roles)",
+      "Demonstrated ability to lead large‑scale monolith decomposition and platform modernization",
+      "Strong background in cloud (AWS), CI/CD, observability, and SRE practices",
+      "Track record of mentoring engineers and building technical roadmaps"
+    ],
+    "weaknesses": [
+      "Primary tech stack is Go/Java/Python, not React/TypeScript or .NET, which are central to the role",
+      "No explicit experience with front‑end accessibility (WCAG) or high‑volume consumer booking systems",
+      "Limited evidence of hands‑on web development or UI work required for 15‑20% coding time"
+    ],
+    "summary": "The candidate excels in engineering leadership and large‑scale platform modernization but lacks the specific web stack and front‑end expertise the role demands.",
+    "candidate": "senior_american",
+    "tokens_in": 1764,
+    "tokens_out": 250
+  },
+  {
+    "score": 5,
+    "strengths": [
+      "Strong experience with modern web stacks (React, TypeScript, Node.js‑adjacent Kotlin/Spring Boot)",
+      "Proven delivery of high‑volume, observable services on AWS with CI/CD and Terraform",
+      "Hands‑on leadership in mentoring and technical design reviews"
+    ],
+    "weaknesses": [
+      "No demonstrated line‑management of engineers (required 2+ years of manager experience)",
+      "Limited direct experience with .NET or full‑stack service‑oriented migration projects"
+    ],
+    "summary": "Candidate shows solid technical depth and some informal leadership, but lacks the required engineering‑manager experience and specific replatforming background.",
+    "candidate": "intermediate_american",
+    "tokens_in": 1615,
+    "tokens_out": 187
+  },
+  {
+    "score": 4,
+    "strengths": [
+      "Strong full‑stack experience with React, TypeScript and modern cloud/AWS tooling",
+      "Proven track record delivering high‑volume services, observability, and CI/CD pipelines",
+      "Demonstrated mentorship and coaching of junior engineers"
+    ],
+    "weaknesses": [
+      "No documented line‑management experience (required 2+ years managing engineers)",
+      "Primary backend languages are Java/Kotlin/Python, not Node.js or .NET as specified",
+      "No direct experience leading a large re‑platform or monolith‑to‑SOA migration"
+    ],
+    "summary": "Solid engineering background but lacks the required management experience and specific tech stack for the role.",
+    "candidate": "middle_sa",
+    "tokens_in": 1612,
+    "tokens_out": 239
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Experience with React, TypeScript, Node.js, and AWS (Cloud Practitioner)",
+      "Hands‑on coding experience and familiarity with CI/CD tools like GitHub Actions and Docker"
+    ],
+    "weaknesses": [
+      "Only 9 months of graduate‑level experience; no proven line‑management or people‑leadership history",
+      "No experience leading large‑scale replatforming, service‑oriented architecture migrations, or managing on‑call/incident response",
+      "Limited exposure to .NET, large transactional booking systems, and accessibility standards"
+    ],
+    "summary": "The candidate shows solid technical fundamentals but lacks the senior engineering and management experience required for the Engineering Manager role.",
+    "candidate": "beginner_sa",
+    "tokens_in": 1563,
+    "tokens_out": 181
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Proficient in React, TypeScript, Node.js and related web technologies",
+      "Experience with agile ceremonies, code reviews, testing, CI (GitHub Actions) and Docker",
+      "AWS Cloud Practitioner certification showing some cloud understanding"
+    ],
+    "weaknesses": [
+      "No line‑management or people‑leadership experience (required 2+ years)",
+      "Lacks experience with large‑scale platform migrations, service‑oriented architecture, .NET or AWS infrastructure at production scale",
+      "Insufficient senior‑level experience for hands‑on critical path work and incident management"
+    ],
+    "summary": "The candidate demonstrates solid junior engineering skills but does not meet the senior leadership and architecture experience required for the Engineering Manager role.",
+    "candidate": "beginner_american",
+    "tokens_in": 1524,
+    "tokens_out": 198
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Experience with JavaScript/TypeScript and modern web frameworks (Vue.js, Node.js)",
+      "Hands‑on work with REST APIs, unit testing, CI (GitHub Actions) and Docker",
+      "AWS Certified Cloud Practitioner showing cloud‑foundations"
+    ],
+    "weaknesses": [
+      "Only 1 year of internship experience; far short of the 5+ years required",
+      "No line‑management or people‑leadership experience; no demonstrated ability to run a team",
+      "Lacks React, .NET, large‑scale re‑platforming or service‑oriented architecture experience"
+    ],
+    "summary": "The candidate has solid junior‑level web development skills but lacks the extensive experience and leadership required for an Engineering Manager role.",
+    "candidate": "beginner_chinese",
+    "tokens_in": 1577,
+    "tokens_out": 250
+  }
+]

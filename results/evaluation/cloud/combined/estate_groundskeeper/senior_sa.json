@@ -1,0 +1,42 @@
+[
+  {
+    "score": 1,
+    "strengths": [
+      "Highly disciplined professional background",
+      "Experience with 'recovery' and 'incident command' (though in a digital context)"
+    ],
+    "weaknesses": [
+      "Zero groundskeeping or countryside management experience",
+      "No evidence of tracking, search & rescue, or military background",
+      "Lack of experience with hounds/animals",
+      "Professional background is entirely software engineering based",
+      "No indicated willingness or ability to relocate to a live-in role in the UK"
+    ],
+    "summary": "The candidate is a highly qualified Software Engineer with absolutely no relevant skills or experience for a physical estate management and tracking role.",
+    "candidate": "senior_sa",
+    "tokens_in": 2431,
+    "tokens_out": 143,
+    "model": "gemma4_31b"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Extensive senior leadership and project management experience",
+      "Proven ability to learn complex technical systems quickly"
+    ],
+    "weaknesses": [
+      "No demonstrated groundskeeping, gamekeeping, or outdoor/country management experience",
+      "Lacks any background in tracking, hunting, dog handling, or relevant physical fitness for remote estate work"
+    ],
+    "summary": "Highly skilled software leader but missing all core estate and hunt‑coordination requirements.",
+    "candidate": "senior_sa",
+    "tokens_in": 2277,
+    "tokens_out": 168,
+    "model": "gpt-oss_120b"
+  },
+  {
+    "summary": "The candidate's MSc and BSc degrees in Engineering and Computer Science do not directly meet the groundskeeping or gamekeeping experience requirement. However, their adaptive workload routing patent and presentation on reliable design show a strong technical background that could be relevant to tracking and systems management. Their ability to work alone and in remote areas, along with their excellent physical fitness, strongly suggest they could meet the physical and logistical demands of the role. The candidate's discretion and willingness to live on site are clearly met, but their comfort with the 'hunting' premise is unclear.",
+    "candidate": "senior_sa",
+    "type": "essential_requirements"
+  }
+]

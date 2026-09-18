@@ -1,0 +1,42 @@
+[
+  {
+    "score": 2,
+    "strengths": [
+      "Strong general technical aptitude and computer science foundation",
+      "Experience teaching/guiding others, which may translate to patience with customers"
+    ],
+    "weaknesses": [
+      "Complete lack of hardware repair experience (no mention of RAM, SSDs, or physical disassembly)",
+      "Overqualified in software engineering but underqualified in physical technician skills",
+      "Located in Beijing, China, making them unable to commute to Tillingford",
+      "Professional goals are focused on the 'growing tech sector' and software development rather than a local repair shop"
+    ],
+    "summary": "The candidate is a software engineer based in China with no evidence of hardware repair skills, making them entirely unsuitable for a local, hands-on technician role in Tillingford.",
+    "candidate": "beginner_chinese",
+    "tokens_in": 1700,
+    "tokens_out": 189,
+    "model": "gemma4_31b"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Demonstrates ability to learn new tools quickly",
+      "Experience teaching debugging and troubleshooting concepts"
+    ],
+    "weaknesses": [
+      "No hands‑on PC/laptop repair or hardware experience",
+      "Lacks customer‑facing retail experience and local UK availability",
+      "Focuses on software development rather than the practical hardware tasks required"
+    ],
+    "summary": "Candidate lacks the essential hardware repair skills and local retail experience needed for the role.",
+    "candidate": "beginner_chinese",
+    "tokens_in": 1574,
+    "tokens_out": 144,
+    "model": "gpt-oss_120b"
+  },
+  {
+    "summary": "The candidate appears to meet the requirement for basic PC/laptop repair skills based on their experience in a related field. Their experience as a customer service representative suggests they are friendly, patient, and able to explain things without jargon, which aligns well with the need to interact with older customers. The requirement for honesty and reliability is also reasonably addressed by their positive references and professional history. Their stated availability for Saturdays is clear, and they have demonstrated local residency. However, the specific experience with handling a till and managing a biscuit tin is not clearly evidenced in their CV.",
+    "candidate": "beginner_chinese",
+    "type": "essential_requirements"
+  }
+]

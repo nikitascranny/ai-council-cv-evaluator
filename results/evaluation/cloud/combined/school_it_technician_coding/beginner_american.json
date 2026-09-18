@@ -1,0 +1,44 @@
+[
+  {
+    "score": 5,
+    "strengths": [
+      "Strong programming proficiency in Python, exceeding the basic requirements for KS3/GCSE support",
+      "Proven experience in a pedagogical role as a Computer Science Teaching Assistant",
+      "Experience with modern development tools and a strong academic foundation in Computer Science"
+    ],
+    "weaknesses": [
+      "Zero evidence of first-line IT support experience (hardware, imaging, AV, printers)",
+      "No experience with school-specific infrastructure like Intune, Active Directory, or Entra ID",
+      "Candidate is based in Seattle, WA, while the role is on-site in Wexborne, UK",
+      "Career trajectory is geared toward Software Engineering rather than IT Support/School Technicianship"
+    ],
+    "summary": "While the candidate has excellent coding and mentoring skills, they lack the essential hardware support experience and are geographically unsuitable for this on-site UK role.",
+    "candidate": "beginner_american",
+    "tokens_in": 1890,
+    "tokens_out": 213,
+    "model": "gemma4_31b"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Strong Python programming knowledge and experience debugging code",
+      "Previous teaching assistant role demonstrating ability to explain technical concepts to learners",
+      "Experience with Git, Docker, and cloud services showing good technical aptitude"
+    ],
+    "weaknesses": [
+      "No evidence of experience with Windows 11, Microsoft 365, Intune, Active Directory, or school‑focused device imaging and support",
+      "Lacks background in classroom AV equipment, Wi‑Fi/network troubleshooting, and maintaining school IT estates",
+      "No demonstrated safeguarding training or experience working specifically with 11‑16 school pupils"
+    ],
+    "summary": "While technically competent, the candidate lacks the core school IT support and safeguarding experience required for the role.",
+    "candidate": "beginner_american",
+    "tokens_in": 1726,
+    "tokens_out": 228,
+    "model": "gpt-oss_120b"
+  },
+  {
+    "summary": "The candidate clearly meets the requirement for practical IT support experience through their role as a Computer Science Teaching Assistant, where they guided students through programming fundamentals. Their experience with programming languages such as Python aligns well with the basic programming ability requirement. The role does not explicitly mention device management or Windows 11, but their background in software development and cloud certifications suggest relevant skills. The enthusiasm for working with young people is evident from their teaching assistant experience. Safeguarding and DBS checks are not addressed in the CV.",
+    "candidate": "beginner_american",
+    "type": "essential_requirements"
+  }
+]

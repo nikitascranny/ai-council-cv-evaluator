@@ -1,0 +1,41 @@
+[
+  {
+    "score": 1,
+    "strengths": [
+      "Extremely high level of general technical literacy",
+      "Proven reliability and professionalism in high-stakes environments"
+    ],
+    "weaknesses": [
+      "Complete lack of hardware repair experience (RAM, SSD, screen replacement)",
+      "Overqualified to an extreme degree (Principal Engineer vs. Shop Assistant)",
+      "Geographical mismatch (based in South Africa, job is in Tillingford, UK)",
+      "Experience is in distributed cloud systems, not consumer electronics/customer service"
+    ],
+    "summary": "The candidate is a world-class software architect whose skills are entirely irrelevant to physical computer repair and who resides on a different continent.",
+    "candidate": "senior_sa",
+    "tokens_in": 1909,
+    "tokens_out": 166,
+    "model": "gemma4_31b"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong technical troubleshooting and problem‑solving abilities demonstrated in high‑scale software systems",
+      "Extensive experience mentoring and communicating complex concepts to less‑technical audiences"
+    ],
+    "weaknesses": [
+      "No evidence of practical, hands‑on PC/laptop hardware repair, RAM/SSD upgrades, or OS reinstallations",
+      "Highly senior, office‑based role background; lacks experience with retail/customer‑service environment and local commuting to Tillingford"
+    ],
+    "summary": "While technically brilliant, Zanele lacks the practical hardware repair and retail customer‑service experience required for the shop role.",
+    "candidate": "senior_sa",
+    "tokens_in": 1754,
+    "tokens_out": 208,
+    "model": "gpt-oss_120b"
+  },
+  {
+    "summary": "The candidate has a strong academic background in computer science and software engineering, which suggests relevant technical skills. However, there is no evidence of practical PC/laptop repair skills. The candidate demonstrates communication skills through their presentations and the ability to explain concepts in plain language, which could meet the requirement for being friendly and patient with older customers. The candidate's ability to work Saturdays is unclear, and no information is provided about their location or transportation to Tillingford.",
+    "candidate": "senior_sa",
+    "type": "essential_requirements"
+  }
+]

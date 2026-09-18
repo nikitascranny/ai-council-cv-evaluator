@@ -1,0 +1,42 @@
+[
+  {
+    "score": 3,
+    "strengths": [
+      "Strong proficiency in Python, which is essential for the coding enrichment and GCSE support aspects of the role",
+      "Experience mentoring graduate engineers, indicating a potential ability to guide students",
+      "Deep technical background in systems and API design"
+    ],
+    "weaknesses": [
+      "Complete lack of first-line IT support experience (hardware, printing, AV, Wi-Fi troubleshooting)",
+      "No evidence of experience with school-specific tools like Intune, Active Directory, Google Classroom, or Scratch",
+      "Overqualified for a Scale 5-6 support role; professional background is in high-level software engineering rather than technical support",
+      "Based in Austin, Texas, while the role is on-site in Wexborne, UK"
+    ],
+    "summary": "While technically gifted in programming, the candidate is a professional software engineer with no IT support experience and is located in a different country, making them a poor fit for this specific school technician role.",
+    "candidate": "intermediate_american",
+    "tokens_in": 1984,
+    "tokens_out": 232,
+    "model": "gemma4_31b"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Strong programming experience in Python and other languages",
+      "Experience mentoring junior staff and explaining technical concepts"
+    ],
+    "weaknesses": [
+      "No demonstrated experience with school IT support, device imaging, or Windows/Intune administration",
+      "Lacks any background in education settings, safeguarding, or work with pupils"
+    ],
+    "summary": "Highly skilled software engineer but missing the essential school IT and youth‑engagement experience required for the role.",
+    "candidate": "intermediate_american",
+    "tokens_in": 1817,
+    "tokens_out": 154,
+    "model": "gpt-oss_120b"
+  },
+  {
+    "summary": "The candidate has a strong educational background in Computer Engineering, which is a clear match. Practical IT support experience is not explicitly stated but is a reasonable match given the strong home lab/volunteer background mentioned. Working knowledge of Windows 11 and Microsoft 365 is not directly stated, but the AWS Certified Developer certification suggests a related level of expertise. Basic programming ability in Python is evidenced, which is a clear match for the requirement. The enthusiasm for working with young people is not explicitly stated, but the focus on AWS certification and volunteering background suggests an interest in technology education. Safeguarding and DBS check requirements are not clearly met, as they are not referenced in the CV.",
+    "candidate": "intermediate_american",
+    "type": "essential_requirements"
+  }
+]

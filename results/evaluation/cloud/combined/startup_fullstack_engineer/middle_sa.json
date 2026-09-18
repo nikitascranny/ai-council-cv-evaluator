@@ -1,0 +1,45 @@
+[
+  {
+    "score": 7,
+    "strengths": [
+      "Strong full-stack alignment with React/TypeScript and backend experience (Java/Kotlin/Python)",
+      "Direct experience with the required data stack: Kafka, Redis, and PostgreSQL",
+      "Proven track record in production observability, distributed tracing, and idempotency",
+      "Experience building internal developer tools and mentoring junior engineers"
+    ],
+    "weaknesses": [
+      "Lacks experience with Go (the preferred backend language), though has strong alternatives",
+      "Located in South Africa (UTC+2), which is compatible but outside the stated UK/EU preference",
+      "No explicit evidence of working in a high-velocity, 'chaotic' early-stage startup environment"
+    ],
+    "summary": "A technically strong full-stack engineer with excellent production and distributed systems experience who meets almost all requirements, pending a check on timezone/relocation and Go proficiency.",
+    "candidate": "middle_sa",
+    "tokens_in": 1939,
+    "tokens_out": 212,
+    "model": "gemma4_31b"
+  },
+  {
+    "score": 7,
+    "strengths": [
+      "Strong full‑stack experience with React/TypeScript front‑end and Java/Kotlin back‑end services",
+      "Hands‑on with Kafka, Redis, observability, tracing and on‑call incident response",
+      "Proven ability to ship production features at scale and improve reliability",
+      "Mentoring and code‑review experience, aligning with early‑team culture"
+    ],
+    "weaknesses": [
+      "No direct Go experience (primary language in the role)",
+      "Limited domain exposure to energy/real‑time grid orchestration",
+      "No explicit early‑stage startup or founding engineer background"
+    ],
+    "summary": "Kagiso brings solid full‑stack and event‑driven engineering skills and productionOps experience, but lacks Go expertise and domain/startup depth, making them a strong but not perfect fit.",
+    "candidate": "middle_sa",
+    "tokens_in": 1789,
+    "tokens_out": 263,
+    "model": "gpt-oss_120b"
+  },
+  {
+    "summary": "The candidate has relevant experience in software development, meeting the 4+ years requirement. Their contribution to engineering guilds and presentation on API operations suggest they have communication skills and some experience in production software, which may be a reasonable match. However, their current AWS certification is for 2024, indicating they are not yet in the workforce, and there is no clear evidence of experience with TypeScript, React, or backend languages such as Go, Rust, Node, or Java. Distributed systems fundamentals are not explicitly stated as a part of their education or experience.",
+    "candidate": "middle_sa",
+    "type": "essential_requirements"
+  }
+]

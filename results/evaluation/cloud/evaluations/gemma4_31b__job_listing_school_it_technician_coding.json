@@ -1,0 +1,165 @@
+[
+  {
+    "score": 5,
+    "strengths": [
+      "Strong programming proficiency in Python, exceeding the basic requirements for KS3/GCSE support",
+      "Proven experience in a pedagogical role as a Computer Science Teaching Assistant",
+      "Experience with modern development tools and a strong academic foundation in Computer Science"
+    ],
+    "weaknesses": [
+      "Zero evidence of first-line IT support experience (hardware, imaging, AV, printers)",
+      "No experience with school-specific infrastructure like Intune, Active Directory, or Entra ID",
+      "Candidate is based in Seattle, WA, while the role is on-site in Wexborne, UK",
+      "Career trajectory is geared toward Software Engineering rather than IT Support/School Technicianship"
+    ],
+    "summary": "While the candidate has excellent coding and mentoring skills, they lack the essential hardware support experience and are geographically unsuitable for this on-site UK role.",
+    "candidate": "beginner_american",
+    "tokens_in": 1890,
+    "tokens_out": 213
+  },
+  {
+    "score": 5,
+    "strengths": [
+      "Strong programming foundations in Python, perfectly suited for the Code Club and KS3 support",
+      "Proven experience mentoring and helping students debug code as a Peer Programming Facilitator",
+      "High academic achievement (BSc Computer Science with distinction) and AWS certification"
+    ],
+    "weaknesses": [
+      "Complete lack of evidence regarding hardware support, device imaging, or IT infrastructure maintenance",
+      "No experience with school-specific software/ecosystems (Intune, Active Directory, Google Classroom)",
+      "Professional goals are aligned with Software Engineering rather than IT Support/Technician roles"
+    ],
+    "summary": "While the candidate is overqualified for the coding enrichment aspect, they lack the essential first-line hardware and systems administration experience required for 70% of the role.",
+    "candidate": "beginner_sa",
+    "tokens_in": 1925,
+    "tokens_out": 194
+  },
+  {
+    "score": 4,
+    "strengths": [
+      "Strong programming proficiency in Python, which is essential for the Coding Enrichment Lead aspect of the role",
+      "Proven experience in a teaching assistant capacity, demonstrating an ability to explain technical concepts to students",
+      "Strong academic background in Computer Science with an honors degree"
+    ],
+    "weaknesses": [
+      "Complete lack of evidence regarding IT support, hardware maintenance, or device imaging (Intune/Active Directory)",
+      "No experience with the specific hardware mentioned (iPads, Chromebooks, projectors, servers)",
+      "Career goals are aligned with software engineering rather than school IT support/technician work",
+      "Located in Beijing, China, while the role is an on-site position in Wexborne, UK"
+    ],
+    "summary": "While the candidate has excellent coding skills and teaching experience, they lack the essential practical IT support and hardware maintenance experience required for 70% of the role and are based in a different country.",
+    "candidate": "beginner_chinese",
+    "tokens_in": 1944,
+    "tokens_out": 229
+  },
+  {
+    "score": 4,
+    "strengths": [
+      "Strong programming proficiency in Python",
+      "Experience mentoring graduate engineers",
+      "High technical competence in software engineering and system architecture"
+    ],
+    "weaknesses": [
+      "No evidence of first-line IT support experience (hardware, printers, AV)",
+      "No experience with school-specific tools like Intune, Active Directory, or Google Classroom",
+      "Overqualified for a technician role, posing a high flight risk",
+      "Based in South Africa, requiring significant relocation/visa sponsorship for a Scale 5-6 role"
+    ],
+    "summary": "While the candidate has excellent coding and mentoring skills, they lack the essential practical IT support experience and hardware maintenance skills required for 70% of the role.",
+    "candidate": "middle_sa",
+    "tokens_in": 1978,
+    "tokens_out": 184
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Strong proficiency in Python, which is essential for the coding enrichment and GCSE support aspects of the role",
+      "Experience mentoring graduate engineers, indicating a potential ability to guide students",
+      "Deep technical background in systems and API design"
+    ],
+    "weaknesses": [
+      "Complete lack of first-line IT support experience (hardware, printing, AV, Wi-Fi troubleshooting)",
+      "No evidence of experience with school-specific tools like Intune, Active Directory, Google Classroom, or Scratch",
+      "Overqualified for a Scale 5-6 support role; professional background is in high-level software engineering rather than technical support",
+      "Based in Austin, Texas, while the role is on-site in Wexborne, UK"
+    ],
+    "summary": "While technically gifted in programming, the candidate is a professional software engineer with no IT support experience and is located in a different country, making them a poor fit for this specific school technician role.",
+    "candidate": "intermediate_american",
+    "tokens_in": 1984,
+    "tokens_out": 232
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Strong programming proficiency in Python, which is essential for the coding enrichment aspect of the role",
+      "Experience mentoring junior engineers, suggesting a capacity for supporting students"
+    ],
+    "weaknesses": [
+      "No evidence of first-line IT support, hardware maintenance, or classroom AV experience",
+      "Lacks knowledge of school-specific tools like Intune, Active Directory, Google Classroom, or Scratch",
+      "Overqualified in software engineering but underqualified in systems administration and technical support",
+      "No demonstrated experience working with children or understanding of safeguarding requirements",
+      "Currently based in China, posing a significant geographical barrier for an on-site role in Wexborne"
+    ],
+    "summary": "While the candidate is a highly skilled software engineer, they lack the essential IT technician experience and pedagogical enthusiasm required for this specific hybrid school role.",
+    "candidate": "middle_chinese",
+    "tokens_in": 2017,
+    "tokens_out": 207
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Exceptional programming ability with proficiency in Python",
+      "Proven track record of mentoring and growing technical talent",
+      "Deep understanding of complex systems and technical planning"
+    ],
+    "weaknesses": [
+      "Severe over-qualification; candidate is a Principal Engineer applying for a technician role",
+      "No evidence of first-line IT support experience (hardware, printers, AV, imaging)",
+      "No experience working with children or in an educational setting",
+      "Lack of specific tool experience (Intune, Active Directory, Google Classroom, Scratch)",
+      "Geographic misalignment (based in South Africa for a UK on-site role)"
+    ],
+    "summary": "While technically brilliant in software engineering, the candidate is vastly overqualified and lacks the specific first-line IT support and safeguarding experience required for a school environment.",
+    "candidate": "senior_sa",
+    "tokens_in": 2153,
+    "tokens_out": 204
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Expert-level proficiency in Python",
+      "Strong technical mentorship and leadership experience",
+      "Deep understanding of complex systems and troubleshooting"
+    ],
+    "weaknesses": [
+      "Severely overqualified; experience is in high-scale distributed systems rather than first-line IT support",
+      "No evidence of experience with school-specific hardware (iPads, Chromebooks, projectors) or MDM tools like Intune",
+      "No experience working with children/teenagers or in an educational setting",
+      "Location mismatch (Seattle, WA vs Wexborne, UK)",
+      "Lack of experience with Active Directory, Google Classroom, or basic school IT infrastructure"
+    ],
+    "summary": "The candidate is a world-class software engineer who is fundamentally mismatched for a junior-to-mid-level school technician role, possessing neither the required hardware support experience nor the geographical proximity.",
+    "candidate": "senior_american",
+    "tokens_in": 2149,
+    "tokens_out": 217
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Expert-level Python proficiency",
+      "Extensive experience with complex systems and infrastructure",
+      "Proven mentorship and leadership capabilities"
+    ],
+    "weaknesses": [
+      "Complete lack of experience in first-line IT support (hardware, AV, printing)",
+      "No experience working with children or in an educational setting",
+      "Severely overqualified for the salary grade and technical scope of the role",
+      "No evidence of experience with Intune, Active Directory, or Google Classroom"
+    ],
+    "summary": "The candidate is a high-level software architect whose skills are entirely mismatched for a school-based IT technician and coding club lead role.",
+    "candidate": "senior_chinese",
+    "tokens_in": 2194,
+    "tokens_out": 148
+  }
+]

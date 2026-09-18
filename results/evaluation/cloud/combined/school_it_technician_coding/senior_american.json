@@ -1,0 +1,43 @@
+[
+  {
+    "score": 2,
+    "strengths": [
+      "Expert-level proficiency in Python",
+      "Strong technical mentorship and leadership experience",
+      "Deep understanding of complex systems and troubleshooting"
+    ],
+    "weaknesses": [
+      "Severely overqualified; experience is in high-scale distributed systems rather than first-line IT support",
+      "No evidence of experience with school-specific hardware (iPads, Chromebooks, projectors) or MDM tools like Intune",
+      "No experience working with children/teenagers or in an educational setting",
+      "Location mismatch (Seattle, WA vs Wexborne, UK)",
+      "Lack of experience with Active Directory, Google Classroom, or basic school IT infrastructure"
+    ],
+    "summary": "The candidate is a world-class software engineer who is fundamentally mismatched for a junior-to-mid-level school technician role, possessing neither the required hardware support experience nor the geographical proximity.",
+    "candidate": "senior_american",
+    "tokens_in": 2149,
+    "tokens_out": 217,
+    "model": "gemma4_31b"
+  },
+  {
+    "score": 3,
+    "strengths": [
+      "Strong programming background, especially Python",
+      "Extensive experience with Windows servers and cloud infrastructure"
+    ],
+    "weaknesses": [
+      "No demonstrated experience in first‑line school IT support, device imaging, or Active Directory/Intune management",
+      "No experience working with children, safeguarding, or delivering coding clubs in an educational setting"
+    ],
+    "summary": "Highly skilled in software engineering but lacks the practical school‑IT and youth‑engagement experience essential for the role.",
+    "candidate": "senior_american",
+    "tokens_in": 1966,
+    "tokens_out": 160,
+    "model": "gpt-oss_120b"
+  },
+  {
+    "summary": "The candidate's professional experience in software engineering and technical leadership clearly meets the practical IT support and programming experience requirements. Their background in mentoring and technical leadership also closely aligns with the need for enthusiasm and clear communication when working with young people. However, there is no evidence of IT support experience in a school, business, or home lab/volunteer context, nor of a working knowledge of Windows 11, Microsoft 365, or device management systems like Intune.",
+    "candidate": "senior_american",
+    "type": "essential_requirements"
+  }
+]

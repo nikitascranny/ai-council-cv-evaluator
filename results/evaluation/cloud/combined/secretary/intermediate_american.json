@@ -1,0 +1,41 @@
+[
+  {
+    "score": 1,
+    "strengths": [
+      "Highly proficient in digital tools and software",
+      "Experience with onboarding workflows and compliance/audit trails"
+    ],
+    "weaknesses": [
+      "Completely mismatched professional profile (Software Engineer vs. Secretary)",
+      "No evidence of receptionist, secretarial, or office administration experience",
+      "Located in the US (Austin, Texas) for a UK-based on-site role (Ashcombe)",
+      "Lack of evidence for specific clerical skills such as audio typing, diary management, and physical front-office coordination"
+    ],
+    "summary": "The candidate is a highly skilled Software Engineer whose professional background, location, and career trajectory are entirely unrelated to the administrative and secretarial requirements of this role.",
+    "candidate": "intermediate_american",
+    "tokens_in": 1714,
+    "tokens_out": 179,
+    "model": "gemma4_31b"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong technical communication and documentation experience",
+      "Demonstrated ability to learn new tools quickly"
+    ],
+    "weaknesses": [
+      "No relevant secretarial, receptionist or office administration experience",
+      "Lack of proficiency with core office software (Word, Excel, Outlook) and typing speed required"
+    ],
+    "summary": "The candidate excels in software engineering but lacks the administrative background and essential skills needed for the secretary role.",
+    "candidate": "intermediate_american",
+    "tokens_in": 1590,
+    "tokens_out": 138,
+    "model": "gpt-oss_120b"
+  },
+  {
+    "summary": "The candidate has a strong technical background but lacks direct secretarial, receptionist, or office administration experience. Their ability to type and handle confidential information aligns with the job requirements, but their work experience does not clearly meet the stated preference. Their credentials in Microsoft Office software are a reasonable match.",
+    "candidate": "intermediate_american",
+    "type": "essential_requirements"
+  }
+]

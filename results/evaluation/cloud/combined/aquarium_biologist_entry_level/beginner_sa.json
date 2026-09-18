@@ -1,0 +1,40 @@
+[
+  {
+    "score": 1,
+    "strengths": [],
+    "weaknesses": [
+      "No degree in Marine Biology, Zoology, or related life sciences",
+      "No experience with aquatic animal husbandry or life support systems (LSS)",
+      "No evidence of physical fitness or willingness to perform manual labor (filter cleaning, scrubbing)",
+      "Professional background is entirely in software engineering and computer science",
+      "Located in South Africa with no mentioned right to work in the UK"
+    ],
+    "summary": "The candidate is a software developer with no relevant education, experience, or skills for an Aquarium Biologist role.",
+    "candidate": "beginner_sa",
+    "tokens_in": 1761,
+    "tokens_out": 146,
+    "model": "gemma4_31b"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Demonstrated ability to learn technical concepts quickly",
+      "Strong record of disciplined work habits and documentation"
+    ],
+    "weaknesses": [
+      "No relevant degree or experience in marine biology, zoology or aquatic husbandry",
+      "Lacks physical, dirty, repetitive task experience and water‑quality testing skills",
+      "No UK right‑to‑work, scuba or LSS familiarity"
+    ],
+    "summary": "The candidate lacks the essential biological and hands‑on aquarium experience required for the role, making them a poor fit despite good general learning abilities.",
+    "candidate": "beginner_sa",
+    "tokens_in": 1650,
+    "tokens_out": 163,
+    "model": "gpt-oss_120b"
+  },
+  {
+    "summary": "The candidate's degree in Environmental Science, while not exactly in Marine Biology, Zoology, or Aquatic Biology, is a reasonable close match. The ability to lift up to 25 kg and work on ladders, along with physical fitness, meets the physical requirements. The candidate's experience in biological research and field work suggests a willingness to perform physical and repetitive tasks, though no specific mention is made of filter cleaning or LSS maintenance. Observational skills, attention to detail, and record keeping are indicated. Basic knowledge of water chemistry and the nitrogen cycle is not explicitly stated but is implied by the research background. The candidate’s ability to work on weekends and in warm environments is confirmed. There is no evidence of a right to work in the UK or a background check.",
+    "candidate": "beginner_sa",
+    "type": "essential_requirements"
+  }
+]

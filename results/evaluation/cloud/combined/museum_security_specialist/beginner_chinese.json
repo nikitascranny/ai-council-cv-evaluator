@@ -1,0 +1,41 @@
+[
+  {
+    "score": 1,
+    "strengths": [],
+    "weaknesses": [
+      "Complete lack of security industry experience",
+      "No SIA license or regional equivalent",
+      "No experience with CCTV or access-control systems",
+      "Professional background is in software engineering, not physical security",
+      "Located in China, whereas the role is on-site in Dunbridge, UK"
+    ],
+    "summary": "The candidate is a Junior Software Engineer with no relevant experience or certifications for a Museum Security Specialist role.",
+    "candidate": "beginner_chinese",
+    "tokens_in": 1638,
+    "tokens_out": 127,
+    "model": "gemma4_31b"
+  },
+  {
+    "score": 1,
+    "strengths": [
+      "Demonstrates strong technical and problem‑solving abilities",
+      "Experience working in agile teams and delivering projects on time",
+      "Shows initiative in up‑skilling (AWS certification, teaching assistant role)"
+    ],
+    "weaknesses": [
+      "No experience in security, museum or public venue environments",
+      "Lacks required SIA Door Supervisor/Guard licence and knowledge of CCTV or access‑control systems",
+      "No physical patrol or emergency response experience, nor relevant first‑aid or high‑value object handling background"
+    ],
+    "summary": "The candidate’s technical background and adaptability are evident, but they lack all essential security qualifications and experience required for the Museum Security Specialist role.",
+    "candidate": "beginner_chinese",
+    "tokens_in": 1521,
+    "tokens_out": 229,
+    "model": "gpt-oss_120b"
+  },
+  {
+    "summary": "The candidate clearly meets the requirement for a minimum of 3 years' experience in a security role. Their written and verbal communication skills, and experience writing incident reports, are a reasonable match. The ability to patrol a large multi-floor site for extended periods is unclear from the CV, and there is no mention of the SIA Door Supervisor or Security Guarding licence, making this requirement unclear. The candidate’s ability to remain calm under pressure is a reasonable match, but there is no specific mention of working knowledge of CCTV, intruder alarm, and access control systems.",
+    "candidate": "beginner_chinese",
+    "type": "essential_requirements"
+  }
+]

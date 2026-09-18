@@ -1,0 +1,40 @@
+[
+  {
+    "score": 1,
+    "strengths": [],
+    "weaknesses": [
+      "No experience in security, museum operations, or physical asset protection",
+      "Lacks required SIA Door Supervisor or Security Guarding licence",
+      "Professional background is entirely in software engineering, not facilities or visitor safety",
+      "No evidence of physical patrol capabilities or emergency response experience",
+      "Located in South Africa, whereas the role is on-site in Dunbridge, UK"
+    ],
+    "summary": "The candidate is a software engineer with no relevant experience or certifications for a physical security role at a museum.",
+    "candidate": "middle_sa",
+    "tokens_in": 1672,
+    "tokens_out": 144,
+    "model": "gemma4_31b"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong technical and problem‑solving skills",
+      "Proven ability to learn new systems quickly (cloud, CI/CD, observability)"
+    ],
+    "weaknesses": [
+      "No experience in security, CCTV, alarm or access‑control systems",
+      "Lacks required SIA licence and museum/heritage background",
+      "Physical patrol and shift work experience absent"
+    ],
+    "summary": "The candidate excels in software engineering but does not meet the core security and museum‑specific requirements of the role.",
+    "candidate": "middle_sa",
+    "tokens_in": 1556,
+    "tokens_out": 149,
+    "model": "gpt-oss_120b"
+  },
+  {
+    "summary": "The candidate does not meet the minimum 3 years' experience requirement. However, their AWS Certified Developer – Associate certification and experience in engineering guilds suggest strong technical skills, which could be relevant to a security role involving technology. There is no evidence of a security license, knowledge of security systems, or physical capabilities required for the role.",
+    "candidate": "middle_sa",
+    "type": "essential_requirements"
+  }
+]

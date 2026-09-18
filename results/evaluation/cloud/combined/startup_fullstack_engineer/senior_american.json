@@ -1,0 +1,46 @@
+[
+  {
+    "score": 7,
+    "strengths": [
+      "Exceptional backend and distributed systems expertise with deep experience in Go and Kafka",
+      "Proven track record of operating high-availability production services and leading incident response",
+      "Strong technical leadership skills, including writing RFCs and mentoring senior engineers",
+      "Experience with event-driven architectures and scaling platforms for high transaction volumes"
+    ],
+    "weaknesses": [
+      "Lack of explicit professional experience with React/TypeScript for frontend development (listed as a language, but no project evidence)",
+      "Currently operating at a Principal/Staff level, which may be overqualified for an individual contributor 'Founding Engineer' role",
+      "Location is Seattle, WA, while the role is remote-first for UK/EU timezones",
+      "Experience is primarily in larger corporate environments (Payments, Cloud Services) rather than early-stage, chaotic startups"
+    ],
+    "summary": "A world-class systems engineer who perfectly hits the backend and infrastructure requirements but lacks proven frontend delivery and is based in a conflicting timezone.",
+    "candidate": "senior_american",
+    "tokens_in": 2110,
+    "tokens_out": 242,
+    "model": "gemma4_31b"
+  },
+  {
+    "score": 7,
+    "strengths": [
+      "Extensive experience with Go, Kafka, Redis, and building highly available, low‑latency services",
+      "Proven track record of operating production systems, incident response, observability, and SRE practices",
+      "Strong background in distributed systems design and event‑driven architectures",
+      "Leadership, mentorship, and RFC/process creation experience aligning with early‑stage culture"
+    ],
+    "weaknesses": [
+      "No explicit experience with React/TypeScript front‑end development, a core part of the role",
+      "Career level is senior/staff rather than a founding engineer, may expect different scope or autonomy",
+      "Limited stated exposure to energy/climate domain, though enthusiasm can be learned"
+    ],
+    "summary": "Highly qualified for the back‑end and systems side but missing front‑end expertise and domain experience, making them a strong but not perfect fit.",
+    "candidate": "senior_american",
+    "tokens_in": 1941,
+    "tokens_out": 251,
+    "model": "gpt-oss_120b"
+  },
+  {
+    "summary": "The candidate clearly meets the 4+ years shipping production software experience and has strong experience in TypeScript/React, as well as Go. The candidate's experience with distributed systems, production operations, and mentoring is a reasonable/close match. The use of backend languages other than Go is noted but still aligns with the requirements. The candidate's experience with energy or climate problems is not explicitly stated, so it is unclear if this requirement is met.",
+    "candidate": "senior_american",
+    "type": "essential_requirements"
+  }
+]

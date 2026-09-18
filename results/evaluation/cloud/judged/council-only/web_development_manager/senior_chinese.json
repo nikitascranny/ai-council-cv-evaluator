@@ -1,0 +1,8 @@
+{
+  "candidate": "senior_chinese",
+  "final_score": 7,
+  "score_rationale": "The candidate demonstrates strong line‑management, extensive monolith‑to‑service‑oriented migration experience, and solid CI/CD/observability/incident‑management background, which align well with the core responsibilities. However, they lack explicit React/.NET front‑end expertise, AWS cloud experience, accessibility knowledge, and are currently based outside the UK, creating notable gaps for the role.",
+  "key_strengths": "Proven leadership of large engineering teams (including 26 engineers) with mentorship and career‑development experience; deep expertise in large‑scale platform modernization, monolith decomposition, and service‑oriented architecture; strong background in CI/CD, observability, incident management, and reliability engineering; track record in high‑volume transactional systems similar to the booking platform.",
+  "key_weaknesses": "No clear evidence of hands‑on React/TypeScript front‑end work or .NET backend experience; primary cloud exposure is Alibaba Cloud rather than the preferred AWS; no mentioned familiarity with WCAG 2.2 AA accessibility standards; currently located in China, requiring relocation to meet the hybrid‑UK requirement.",
+  "final_evaluation": "Overall, the candidate is a strong technical leader whose experience in replatforming, team management, and operational excellence makes them a compelling fit for the Engineering Manager role. Addressing the front‑end/.NET, AWS, accessibility, and location gaps would be necessary for a seamless transition into the position."
+}

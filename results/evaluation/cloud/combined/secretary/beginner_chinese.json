@@ -1,0 +1,42 @@
+[
+  {
+    "score": 1,
+    "strengths": [
+      "Strong technical proficiency in Microsoft-adjacent digital tools",
+      "Experience with appointment scheduling logic (via personal project)"
+    ],
+    "weaknesses": [
+      "No secretarial, receptionist, or office administration experience",
+      "No evidence of client-facing professional service experience",
+      "Career goals are focused on software engineering, not practice administration",
+      "Located in Beijing, China, while the role is on-site in Ashcombe, UK"
+    ],
+    "summary": "The candidate is a Junior Software Engineer whose skills, experience, and career objectives are entirely unrelated to the Secretary / Administrative Assistant role.",
+    "candidate": "beginner_chinese",
+    "tokens_in": 1674,
+    "tokens_out": 140,
+    "model": "gemma4_31b"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Demonstrated ability to learn new tools quickly and work in structured, deadline‑driven environments",
+      "Strong attention to detail evident from software testing and documentation work"
+    ],
+    "weaknesses": [
+      "No relevant secretarial, receptionist or office administration experience",
+      "No proven proficiency with Microsoft Office, typing speed, or client‑facing telephone/face‑to‑face duties",
+      "Limited exposure to financial or professional‑services environments and confidentiality handling"
+    ],
+    "summary": "The candidate’s technical background shows good learning potential but lacks the essential admin and client‑service experience required for the secretary role.",
+    "candidate": "beginner_chinese",
+    "tokens_in": 1552,
+    "tokens_out": 218,
+    "model": "gpt-oss_120b"
+  },
+  {
+    "summary": "The candidate demonstrates a reasonable match for the job's essential requirements, with clear evidence of strong typing skills, experience in office administration, and proficiency in Microsoft Office tools. However, the level of previous secretarial, receptionist, or office administration experience is unclear, and the candidate's ability to handle confidential information is not explicitly stated.",
+    "candidate": "beginner_chinese",
+    "type": "essential_requirements"
+  }
+]

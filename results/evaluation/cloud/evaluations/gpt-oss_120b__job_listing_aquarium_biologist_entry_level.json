@@ -1,0 +1,149 @@
+[
+  {
+    "score": 2,
+    "strengths": [
+      "Demonstrates ability to learn new tools quickly and work in hands‑on environments",
+      "Strong record of teamwork, documentation and detail‑oriented work from software projects"
+    ],
+    "weaknesses": [
+      "No relevant degree or experience in marine biology, zoology or aquarium husbandry",
+      "Lacks practical experience with life support systems, water chemistry, or physical animal care tasks",
+      "Does not meet physical or location requirements (UK work rights, lifting, wet environments)",
+      "No evidence of interest in or willingness to perform dirty, repetitive filter‑cleaning duties"
+    ],
+    "summary": "The candidate’s technical and teamwork abilities are solid but they lack any aquatic biology background, relevant hands‑on experience, or eligibility for the UK role, making them a poor fit.",
+    "candidate": "beginner_american",
+    "tokens_in": 1611,
+    "tokens_out": 248
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Demonstrates strong technical learning ability and teamwork experience from software engineering internships and teaching assistant role",
+      "Good record of attentive work and documentation (unit tests, code reviews, creating study guides)"
+    ],
+    "weaknesses": [
+      "No academic background or practical experience in marine biology, zoology, or aquatic systems",
+      "Lacks any experience with water chemistry, life support system maintenance, or physical/dirty tasks required by the role",
+      "No right to work in the UK, no relevant certifications, and no evidence of physical fitness or willingness to perform manual labor"
+    ],
+    "summary": "The candidate lacks the necessary biological and hands‑on aquarium experience, making them a poor fit for this entry‑level aquarist position.",
+    "candidate": "beginner_chinese",
+    "tokens_in": 1664,
+    "tokens_out": 189
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Demonstrated ability to learn technical concepts quickly",
+      "Strong record of disciplined work habits and documentation"
+    ],
+    "weaknesses": [
+      "No relevant degree or experience in marine biology, zoology or aquatic husbandry",
+      "Lacks physical, dirty, repetitive task experience and water‑quality testing skills",
+      "No UK right‑to‑work, scuba or LSS familiarity"
+    ],
+    "summary": "The candidate lacks the essential biological and hands‑on aquarium experience required for the role, making them a poor fit despite good general learning abilities.",
+    "candidate": "beginner_sa",
+    "tokens_in": 1650,
+    "tokens_out": 163
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong technical problem‑solving and documentation skills",
+      "Experience with monitoring, logging and systematic troubleshooting"
+    ],
+    "weaknesses": [
+      "No marine biology, zoology or related life‑science education",
+      "No experience with aquarium husbandry, water chemistry, or life‑support systems",
+      "Lacks physical‑hands‑on animal care or filter‑cleaning background"
+    ],
+    "summary": "Despite solid engineering abilities, the candidate lacks the essential biological knowledge and practical aquarium experience required for the role.",
+    "candidate": "intermediate_american",
+    "tokens_in": 1702,
+    "tokens_out": 154
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong technical/problem‑solving skills",
+      "Experience with detailed documentation and systematic testing in software projects"
+    ],
+    "weaknesses": [
+      "No relevant marine/biological education or experience",
+      "Lacks any aquaculture, water‑quality, or animal‑care background; no evidence of physical‑hand‑on work or willingness to perform dirty, repetitive tasks"
+    ],
+    "summary": "The candidate’s tech background does not match the biological and hands‑on requirements of the aquarium biologist role.",
+    "candidate": "middle_chinese",
+    "tokens_in": 1740,
+    "tokens_out": 135
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Demonstrated strong analytical and problem‑solving skills from software engineering roles",
+      "Experience with monitoring, logging, and systematic troubleshooting that could translate to equipment maintenance",
+      "Proven ability to learn new technologies quickly and mentor junior staff"
+    ],
+    "weaknesses": [
+      "No relevant degree or formal education in marine biology, zoology, or related life sciences",
+      "No experience with aquarium husbandry, water chemistry, or life support system maintenance",
+      "Lacks right‑to‑work status in the UK and has no indication of willingness to relocate",
+      "Physical fitness for heavy, dirty, repetitive tasks and weekend/holiday rota not demonstrated"
+    ],
+    "summary": "The candidate’s technical aptitude is strong but they lack the essential biological background, hands‑on aquarium experience, and UK work eligibility required for the role.",
+    "candidate": "middle_sa",
+    "tokens_in": 1699,
+    "tokens_out": 262
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Demonstrated ability to learn and master complex technical systems quickly",
+      "Strong analytical, record‑keeping and troubleshooting skills from software reliability work"
+    ],
+    "weaknesses": [
+      "No education or experience in marine biology, zoology, or aquatic husbandry",
+      "No experience with physical, dirty, repetitive tasks such as filter cleaning or water‑quality testing",
+      "Lacks UK work eligibility and relevant certifications (e.g., SCUBA, driving licence)",
+      "Career history is exclusively software engineering, not related to aquarium or animal care"
+    ],
+    "summary": "Highly skilled engineer but lacks the required biological background, hands‑on aquarium experience, and eligibility for the role.",
+    "candidate": "senior_american",
+    "tokens_in": 1851,
+    "tokens_out": 235
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Strong technical problem‑solving and systematic thinking from senior software engineering background",
+      "Demonstrated ability to learn complex systems quickly and mentor others"
+    ],
+    "weaknesses": [
+      "No degree, experience or practical exposure in marine/aquatic biology, husbandry or water chemistry",
+      "Career focused on software/platform engineering; lacks physical, dirty, repetitive tasks and LSS familiarity",
+      "No evidence of right‑to‑work in the UK, physical fitness for lifting/working in wet environments, or willingness to work weekends/holidays",
+      "No relevant volunteering, aquarium keeping, or SCUBA experience"
+    ],
+    "summary": "The candidate’s expertise is entirely unrelated to aquarium biology and hands‑on husbandry, making them a poor fit for the role.",
+    "candidate": "senior_chinese",
+    "tokens_in": 1898,
+    "tokens_out": 194
+  },
+  {
+    "score": 1,
+    "strengths": [
+      "Extensive leadership and technical project management experience",
+      "Strong analytical and problem‑solving skills"
+    ],
+    "weaknesses": [
+      "No relevant education or experience in marine biology, zoology or aquatic systems",
+      "Lacks hands‑on husbandry, water‑quality testing, and life‑support system knowledge; not physically oriented for filter cleaning tasks"
+    ],
+    "summary": "The candidate’s software engineering background does not meet the essential aquatic biology and husbandry requirements for the role.",
+    "candidate": "senior_sa",
+    "tokens_in": 1844,
+    "tokens_out": 143
+  }
+]

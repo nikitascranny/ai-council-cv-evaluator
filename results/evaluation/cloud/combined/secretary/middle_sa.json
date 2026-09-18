@@ -1,0 +1,42 @@
+[
+  {
+    "score": 1,
+    "strengths": [
+      "Strong technical proficiency in software engineering",
+      "Experience with digital onboarding and compliance workflows"
+    ],
+    "weaknesses": [
+      "No experience in secretarial, receptionist, or general office administration",
+      "Lack of evidence for required soft skills (client-facing reception, phone manner)",
+      "Overqualified in technical areas but entirely unqualified for the specific role duties",
+      "Located in South Africa for a UK-based on-site role"
+    ],
+    "summary": "The candidate is a professional Software Engineer whose skills and experience have no alignment with the requirements of a Secretary/Administrative Assistant role.",
+    "candidate": "middle_sa",
+    "tokens_in": 1708,
+    "tokens_out": 138,
+    "model": "gemma4_31b"
+  },
+  {
+    "score": 2,
+    "strengths": [
+      "Demonstrates strong organizational skills in managing complex software projects",
+      "Quick learner with recent AWS certification indicating ability to up‑skill"
+    ],
+    "weaknesses": [
+      "No relevant secretarial, reception or office administration experience",
+      "Lacks evidence of required office software (Word, Excel, Outlook) and typing speed",
+      "No background in client‑facing or confidential financial handling"
+    ],
+    "summary": "The candidate’s technical background does not align with the administrative and client‑service focus of the role.",
+    "candidate": "middle_sa",
+    "tokens_in": 1587,
+    "tokens_out": 158,
+    "model": "gpt-oss_120b"
+  },
+  {
+    "summary": "The candidate has no relevant secretarial, receptionist, or office administration experience, and there is no mention of telephone or client interaction experience. However, their good working knowledge of Microsoft Office (Word, Excel, and Outlook) is clearly met. Their typing speed, spelling, and grammar are not evidenced, but their organisational skills and ability to handle tasks are implied from their contributions to engineering guilds. Discretion is not directly addressed but is an implied skill given their involvement in presenting and contributing to technical forums.",
+    "candidate": "middle_sa",
+    "type": "essential_requirements"
+  }
+]
