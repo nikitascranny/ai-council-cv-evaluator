@@ -1,32 +1,28 @@
 """
 rewriter_v2.py
 
-Rewriter Variant 2 (graduate use). Given one candidate's CV and a job
-title, runs two independent rewriting agents that each tailor the CV
+Rewriter Variant 2 (Used in candidate mode) Given one candidate's CV and a job
+title, this rewriter runs two independent rewriting agents that each tailor the CV
 toward that role, and returns both results for the user to compare.
 
-Each agent is given only the job TITLE, not the full job listing text -
-the same design rewriter_v1.py uses for its phrasing-sensitivity probe.
-Previously this variant deliberately passed the full listing (see git
-history for that version); that's been dropped in favour of title-only
-so both variants share the same input shape. The fact guard matters just
+Each agent is given only the job TITLE, not the full job listing text.
+Previously this variant deliberately passed the full listing. This has been dropped 
+due to our models fabricating information when rewritng CVs.
+The fact guard matters just
 as much either way: fact_guard.title_fabricated() still checks the
 rewrite hasn't claimed to already hold job_title, and the rest of the
 guard (new numbers, new qualifications) is independent of how much job
-context the model saw. See fact_guard.py for the shared check.
+context the model saw.
 
 Guard behaviour if an agent's rewrite is still flagged after one strict
 retry: rather than showing the user a rewrite we can't vouch for, or
 silently dropping it, that agent's slot falls back to the candidate's
-ORIGINAL CV text (result.used_fallback = True). The caller/eventual UI
-should surface this clearly rather than let a fallback look like a normal
-rewrite - the point is the user always gets two things to compare, and
-never an unflagged fabrication.
+ORIGINAL CV text (result.used_fallback = True).
 
 Two sets of agents: the local pair (phi4, qwen2.5:14b) through the Ollama
 daemon on this machine, and a larger cloud pair on Ollama Cloud, chosen with
 rewrite_cv(profile="cloud"). A cloud agent that fails - no key, no
-connection, a usage limit, a timeout - does not cost the candidate that
+connection, a usage limit, a timeout, does not cost the candidate that
 slot: its local partner rewrites the CV instead, and the result records
 which cloud model it replaced and why (replaced_cloud_model, cloud_error).
 That is a different thing from used_fallback, which means the fact guard
@@ -40,44 +36,27 @@ import difflib
 from dataclasses import dataclass, field, asdict
 from pathlib import Path
 
-# ---------------- CONFIG & PATHS ----------------
-# Repo layout, confirmed with the team:
-#
-#   ai-cv-eval-main/
-#   |-- common/               (document_utils.py, ollama_utils.py, results_io.py, fact_guard.py)
-#   |-- parser/cv_pdf_parser.py   (the one canonical CV PDF parser)
-#   |-- data/cvs/Batch1, data/job-listings/
-#   |-- evaluator/...
-#   \-- rewriter/rewriter_v2.py   <- this file
-#
-# rewriter/ is a direct child of the repo root, sibling to common/ and
-# parser/ - so ROOT_DIR needs exactly one .parent from this file.
+
 BASE_DIR = Path(__file__).resolve().parent   # .../ai-cv-eval-main/rewriter
 ROOT_DIR = BASE_DIR.parent                    # .../ai-cv-eval-main
 
-# document_utils.py, ollama_utils.py and fact_guard.py all live in the
-# shared common/ folder now - one sys.path insert covers all three,
-# rather than rewriter/ reaching into evaluator/'s own folder.
+
 sys.path.insert(0, str(ROOT_DIR / "common"))
 
 from document_utils import load_cv
 from ollama_utils import call_ollama_text
 from fact_guard import rejection_reasons, advisory_caps_runs
 
-# Real project layout: data/cvs/Batch1, data/job-listings/
+
 CVS_FOLDER = ROOT_DIR / "data" / "cvs" / "Batch1"
 JOB_DESCRIPTIONS_FOLDER = ROOT_DIR / "data" / "job-listings"
 REWRITE_RESULTS_FOLDER = ROOT_DIR / "data" / "rewrite_results"
 
-# The two independent rewriting agents. Kept distinct from
-# Evaluate_CV.py's EVALUATOR_MODELS on purpose - this file's job is
-# rewriting, not scoring, even though it happens to reuse the same models.
+
 AGENT_MODELS = ["phi4","qwen2.5:14b"]
-# A full CV rewrite can run long - LERATO MUNCHE's CV alone is ~23,500
+# A full CV rewrite can run long: LERATO MUNCHE's CV alone is ~23,500
 # characters of full_text(). 4096 gives real headroom over the 1024 used
-# for JSON scoring replies, but a CV meaningfully larger than that in the
-# corpus would still risk truncation; if that shows up in testing, that's
-# a case for parsed_cv's chunks() rather than pushing this number higher.
+# for JSON scoring replies.
 REWRITE_NUM_PREDICT = 4096
 
 LOCAL = "local"
@@ -256,10 +235,10 @@ def _run_agent(cv_text: str, job_title: str, candidate_name: str, model: str,
     result.advisory = advisory_caps_runs(cv_text, text)
 
     if result.rejected:
-        # Still flagged after the strict retry - do not hand the user a
+        # Still flagged after the strict retry In this case do not hand the user a
         # rewrite we can't vouch for. Fall back to their original text so
         # they still get two versions to compare; the caller/UI should
-        # surface *why* clearly rather than let this look like a normal
+        # surface WHY clearly rather than let this look like a normal
         # rewrite that happened not to change much.
         result.used_fallback = True
         result.rewritten_text = cv_text
@@ -284,9 +263,6 @@ def rewrite_cv(cv_text: str, job_title: str, candidate_name: str = "",
     runs CLOUD_AGENTS on Ollama Cloud with a local fallback per slot (see
     _rewrite_on_cloud).
 
-    Reconciling or critiquing the two versions (the "judge" step from the
-    diagram) is intentionally not built here - this function's whole job
-    is producing the two candidate rewrites plus their guard status.
     """
     if profile == CLOUD:
         return _rewrite_on_cloud(cv_text, job_title, candidate_name)
@@ -303,12 +279,12 @@ def _rewrite_on_cloud(cv_text: str, job_title: str, candidate_name: str) -> list
     Each cloud agent in turn; any that fails is replaced by its local
     partner, so the candidate still gets two versions.
 
-    Only a failed call counts (result.error) - a cloud rewrite the fact guard
+    Only a failed call counts (result.error): a cloud rewrite the fact guard
     rejected is a finished result about that model, not an outage, and is
     returned as it is.
 
     Once one cloud call has failed, the rest of the run stays local rather
-    than trying the cloud again: the usual causes (no key, no connection, a
+    than trying the cloud again: the usual causes (no key, no connection or a
     usage limit) will fail the next call the same way, and a timeout would
     cost the candidate another CLOUD_TIMEOUT before its fallback even starts.
     """

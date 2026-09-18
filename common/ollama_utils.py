@@ -62,8 +62,8 @@ def call_ollama_json(model: str,
       - On failure: ({}, "<human-readable error message>")
 
     keep_alive=0 unloads the model immediately after this request instead
-    of leaving it resident for Ollama's default 5-minute keep-alive - useful
-    when a pipeline cycles through several different models back to back.
+    of leaving it resident for Ollama's default 5-minute keep-alive.
+    This is useful when the pipeline cycles through several different models back to back.
 
     Callers are responsible for building a schema-appropriate fallback
     result around the error message - this function only knows about
