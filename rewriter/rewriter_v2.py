@@ -44,7 +44,7 @@ ROOT_DIR = BASE_DIR.parent                    # .../ai-cv-eval-main
 sys.path.insert(0, str(ROOT_DIR / "common"))
 
 from document_utils import load_cv
-from ollama_utils import call_ollama_text
+from ollama_utils import call_ollama_text, load_env_file
 from fact_guard import rejection_reasons, advisory_caps_runs
 
 
@@ -442,4 +442,5 @@ def main():
 
 
 if __name__ == "__main__":
+    load_env_file()
     main()

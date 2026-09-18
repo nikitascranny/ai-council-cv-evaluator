@@ -102,8 +102,9 @@ def cloud_status():
     """
     if os.environ.get(CLOUD_API_KEY_ENV, "").strip():
         return None
-    return ("No Ollama Cloud API key is set up. Set the {} environment "
-            "variable and restart the app.".format(CLOUD_API_KEY_ENV))
+    return ("No Ollama Cloud API key is set up. Add {}=<your key> to the .env "
+            "file in the repo root (or set it in the terminal) and restart the "
+            "app.".format(CLOUD_API_KEY_ENV))
 
 
 def rewriter_choices() -> list:

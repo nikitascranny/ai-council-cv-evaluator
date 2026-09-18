@@ -131,3 +131,32 @@ def test_call_ollama_json_malformed_reply_gives_parse_error(mock_post):
 
     assert parsed == {}
     assert error == "PARSE ERROR"
+
+
+# ---------------------------------------------------------------------------
+# load_env_file
+# ---------------------------------------------------------------------------
+
+def test_load_env_file_sets_unset_variables_only(tmp_path, monkeypatch):
+    import os
+    from ollama_utils import load_env_file
+
+    env = tmp_path / ".env"
+    env.write_text('# a comment\n\nOLLAMA_API_KEY="abc123"\nexport OTHER_TEST_VAR=x\n'
+                   "ALREADY_SET_TEST_VAR=from-file\nnot a variable\n", encoding="utf-8")
+    monkeypatch.delenv("OLLAMA_API_KEY", raising=False)
+    monkeypatch.delenv("OTHER_TEST_VAR", raising=False)
+    monkeypatch.setenv("ALREADY_SET_TEST_VAR", "from-terminal")
+
+    loaded = load_env_file(env)
+
+    assert sorted(loaded) == ["OLLAMA_API_KEY", "OTHER_TEST_VAR"]
+    assert os.environ["OLLAMA_API_KEY"] == "abc123"
+    assert os.environ["OTHER_TEST_VAR"] == "x"
+    assert os.environ["ALREADY_SET_TEST_VAR"] == "from-terminal"
+
+
+def test_load_env_file_without_a_file_does_nothing(tmp_path):
+    from ollama_utils import load_env_file
+
+    assert load_env_file(tmp_path / "missing.env") == []

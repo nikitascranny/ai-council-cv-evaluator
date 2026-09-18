@@ -8,12 +8,45 @@ summary) call through this module instead of each keeping their own copy
 of the same request/parse/error-handling logic.
 """
 
+import os
 import re
 import json
 import requests
+from pathlib import Path
 from typing import Union
 
 OLLAMA_URL = "http://localhost:11434/api/chat"
+
+# Where the command-line scripts look for an Ollama Cloud key kept in a file
+# rather than set in the terminal. Git-ignored (.gitignore: .env).
+ENV_FILE = Path(__file__).resolve().parent.parent / ".env"
+
+
+def load_env_file(path: Path = ENV_FILE) -> list:
+    """Copy KEY=VALUE lines from a .env file into os.environ, for variables
+    not already set - one set in the terminal wins over the file.
+
+    Blank lines and # comments are skipped, an "export " prefix is allowed,
+    and quotes around a value are removed. A missing file is not an error:
+    the key may be set in the terminal instead. Returns the names it set.
+    """
+    try:
+        lines = Path(path).read_text(encoding="utf-8-sig").splitlines()
+    except OSError:
+        return []
+    loaded = []
+    for line in lines:
+        line = line.strip()
+        if not line or line.startswith("#") or "=" not in line:
+            continue
+        name, _, value = line.removeprefix("export ").partition("=")
+        name, value = name.strip(), value.strip()
+        if len(value) >= 2 and value[0] == value[-1] and value[0] in "'\"":
+            value = value[1:-1]
+        if name and name not in os.environ:
+            os.environ[name] = value
+            loaded.append(name)
+    return loaded
 
 
 def strip_think_tags(text: str) -> str:
@@ -50,11 +83,15 @@ def call_ollama_json(model: str,
                      host: str = OLLAMA_URL,
                      timeout: int=3600, # guard against hung request (alive but stuck process). To refactor in evaluate files.
                      num_ctx: int = None, # context window size in tokens; None leaves Ollama's default (usually 4096)
+                     headers: dict = None, # passed through to call_ollama_text, e.g. for Ollama Cloud
+                     think=None,
+                     stats: dict = None,
                     ):
 
     """
-    Send a single user-turn prompt to a local Ollama model and return the
-    JSON object parsed out of its reply.
+    Send a single user-turn prompt to an Ollama model and return the
+    JSON object parsed out of its reply. headers/think/stats are as in
+    call_ollama_text, so a cloud call works the same way here.
 
     Returns a (parsed, error) tuple:
       - On success: (dict, None)
@@ -78,6 +115,9 @@ def call_ollama_json(model: str,
         host=host,
         timeout=timeout,
         num_ctx=num_ctx,
+        headers=headers,
+        think=think,
+        stats=stats,
     )
 
     if error:

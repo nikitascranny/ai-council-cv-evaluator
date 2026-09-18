@@ -488,4 +488,10 @@ def main(argv=None) -> int:
 
 
 if __name__ == "__main__":
+    # The Ollama Cloud key from the repo's .env, before the candidate form
+    # asks cloud_status() whether to offer the cloud rewriter. Here rather than
+    # in main() so the tests never pick up a real key.
+    sys.path.insert(0, str(Path(__file__).resolve().parent / "common"))
+    from ollama_utils import load_env_file
+    load_env_file()
     raise SystemExit(main())
