@@ -5,7 +5,7 @@ web form posts strings, and a half-parsed form must not silently produce a
 different model set than the one shown on screen.
 """
 
-from ui.pipeline.backends import (Settings, COUNCIL_MODELS, JUDGE_MODEL, FAST_MODELS,
+from ui.pipeline.backends import (Settings, COUNCIL_MODELS, JUDGE_MODEL, ESSENTIAL_MODEL,
                            REWRITER_MODEL, available_models, missing_models,
                            tags_url)
 
@@ -17,30 +17,15 @@ def test_defaults_are_the_teams_real_models():
     assert s.essential is False and s.rewrite is False
 
 
-def test_fast_mode_swaps_every_model_not_just_the_council():
-    """Half-swapping leaves a 14b judge behind a 7b council and the run crawls."""
-    s = Settings(fast=True)
-    assert s.council == FAST_MODELS["council"]
-    assert s.judge == FAST_MODELS["judge"]
-    assert s.essential_model == FAST_MODELS["essential"]
-    assert s.rewriter_model == FAST_MODELS["rewriter"]
-
-
-def test_the_rewriter_model_defaults_to_the_teams_real_model():
+def test_the_essential_and_rewriter_models_are_the_teams_real_models():
+    assert Settings().essential_model == ESSENTIAL_MODEL
     assert Settings().rewriter_model == REWRITER_MODEL
 
 
-def test_fast_mode_swaps_the_rewriter_too():
-    """I1: fast mode used to leave the paraphrase on the 14b, which could not
-    load on a memory-constrained machine while the rest of the run was small."""
-    assert Settings(fast=True).rewriter_model == "qwen2.5:7b"
-
-
-def test_an_explicit_model_beats_fast_mode():
-    """Switching to fast to get through a slow stage must not discard a choice."""
-    s = Settings(fast=True, council=["phi4"])
+def test_an_explicit_council_keeps_the_default_judge():
+    s = Settings(council=["phi4"])
     assert s.council == ["phi4"]
-    assert s.judge == FAST_MODELS["judge"]
+    assert s.judge == JUDGE_MODEL
 
 
 def test_stages_list_reflects_the_optional_toggles():
@@ -62,14 +47,12 @@ def test_needed_models_includes_the_rewriter_model_only_when_rewrite_is_on():
     assert Settings(council=["a"], judge="b").needed_models() == ["a", "b"]
     assert Settings(council=["a"], judge="b", rewrite=True).needed_models() == [
         "a", "b", REWRITER_MODEL]
-    assert Settings(council=["a"], judge="b", rewrite=True,
-                    fast=True).needed_models() == ["a", "b", "qwen2.5:7b"]
 
 
 def test_from_form_reads_checkbox_and_multi_select_fields():
-    s = Settings.from_form({"fast": ["on"], "rewrite": ["on"],
+    s = Settings.from_form({"rewrite": ["on"],
                             "council": ["phi4", "qwen2.5:14b"], "judge": ["phi4"]})
-    assert s.fast is True and s.rewrite is True and s.essential is False
+    assert s.rewrite is True and s.essential is False
     assert s.council == ["phi4", "qwen2.5:14b"]
     assert s.judge == "phi4"
 

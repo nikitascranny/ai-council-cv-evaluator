@@ -191,8 +191,11 @@ def test_the_job_title_passed_to_the_probe_comes_from_the_slug(tmp_path):
 
 
 def test_run_single_passes_the_settings_rewriter_model_to_the_probe(tmp_path):
-    """I1: fast mode swapped council, judge and essential but left the probe
-    on the 14b default because run_single never told it otherwise."""
+    """I1: run_single once left the probe on its own 14b default instead of
+    the model the settings chose. A model no default uses shows it is passed."""
+    class OtherRewriter(Settings):
+        rewriter_model = "tiny-rewriter:1b"
+
     seen = {}
 
     def probe(cv_text, job_title, scorer, **kwargs):
@@ -203,9 +206,9 @@ def test_run_single_passes_the_settings_rewriter_model_to_the_probe(tmp_path):
 
     _drain(evaluation.run_single(
         tmp_path / "job_listing_secretary.pdf", tmp_path / "ALEX PARK.pdf",
-        Settings(council=["phi4"], rewrite=True, fast=True), _deps(probe=probe),
+        OtherRewriter(council=["phi4"], rewrite=True), _deps(probe=probe),
         out_dir=tmp_path))
-    assert seen["rewriter_model"] == "qwen2.5:7b"
+    assert seen["rewriter_model"] == "tiny-rewriter:1b"
 
 
 def test_the_run_is_saved_and_the_final_event_names_the_file(tmp_path):

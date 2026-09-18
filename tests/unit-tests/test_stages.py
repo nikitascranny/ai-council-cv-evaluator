@@ -290,9 +290,8 @@ def test_capture_paraphrase_keeps_the_text_that_was_actually_scored():
 
 
 def test_rewrite_stage_passes_the_rewriter_model_through_to_probe():
-    """I1: fast mode swaps the council, judge and essential models but left
-    the paraphrase on the 14b default, because rewrite_stage never passed a
-    model through. This pins that it now does."""
+    """I1: rewrite_stage once left the paraphrase on probe()'s 14b default,
+    because it never passed a model through. This pins that it now does."""
     seen = {}
 
     def probe(cv, job, scorer, **kw):
