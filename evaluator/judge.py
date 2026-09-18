@@ -45,16 +45,22 @@ Usage:
     python judge.py --summaries summaries.json --job job.pdf \\
         --model deepseek-r1:8b --host http://localhost:11434
 
+    # judge on Ollama Cloud with CLOUD_MODEL (needs OLLAMA_API_KEY)
+    python judge.py --summaries summaries.json --job job.pdf --cloud
+
+--cloud is for the command line only: judge_candidate (the web app's entry
+point) always judges locally.
 """
 
 import argparse
 import json
+import os
 import sys
 import time
 from pathlib import Path
 _ROOT_DIR = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(_ROOT_DIR / "common"))
-from ollama_utils import call_ollama_json
+from ollama_utils import call_ollama_json, load_env_file
 from results_io import save_json
 from document_utils import extract_text_from_pdf
 
@@ -70,6 +76,18 @@ DEFAULT_NUM_PREDICT = 4096
 DEFAULT_MAX_RETRIES = 3
 DEFAULT_KEEP_ALIVE = "0m"
 DEFAULT_TIMEOUT = 3600
+
+# The judge with --cloud. DeepSeek like the local judge, and a family the
+# cloud council (Evaluate_CV.CLOUD_EVALUATOR_MODELS: Google, OpenAI) does not
+# use, so the judge is not grading its own model's summaries.
+CLOUD_MODEL = "nemotron-3-super"
+CLOUD_HOST = "https://ollama.com/api/chat"
+CLOUD_API_KEY_ENV = "OLLAMA_API_KEY"
+# Its reasoning counts against num_predict too, and a cloud token budget is
+# not load time on this machine, so it gets more room than the local judge.
+CLOUD_NUM_PREDICT = 8192
+# Minutes rather than the local hour, as for the cloud council.
+CLOUD_TIMEOUT = 300
 
 # =====================================================================
 # Argument parsing (cmd) 
@@ -95,8 +113,15 @@ def _parse_args():
                 "Defaults to the job PDF's filename stem.",
     )
     parser.add_argument(
-        "--model", default=DEFAULT_MODEL,
-        help=f"Ollama model name to use as the judge (default: {DEFAULT_MODEL}).",
+        "--model", default=None,
+        help=f"Ollama model name to use as the judge (default: {DEFAULT_MODEL}, "
+             f"or {CLOUD_MODEL} with --cloud).",
+    )
+    parser.add_argument(
+        "--cloud", action="store_true",
+        help=f"Judge on Ollama Cloud instead of the local daemon. Needs {CLOUD_API_KEY_ENV} "
+             f"set; --host, --num-predict, --keep-alive and --timeout give way to the "
+             f"cloud's own settings.",
     )
     parser.add_argument(
         "--host", default=DEFAULT_HOST,
@@ -141,7 +166,10 @@ def _parse_args():
         help="Path to save the final evaluation. "
     )
 
-    return parser.parse_args()
+    args = parser.parse_args()
+    if args.model is None:
+        args.model = CLOUD_MODEL if args.cloud else DEFAULT_MODEL
+    return args
 
 # =====================================================================
 # Loading input 
@@ -336,9 +364,18 @@ def build_judge_prompt(job_text, summaries, candidate_name, essential=None, keep
                         format_essential_for_prompt(essential))
 
 
-def call_judge(prompt, model, host, num_predict, keep_alive,timeout=3600):
+def cloud_call_options(api_key, stats):
+    """The call_judge arguments that send the judge to Ollama Cloud: the
+    host, budget and timeout in place of the local ones, plus the key."""
+    return {"host": CLOUD_HOST, "num_predict": CLOUD_NUM_PREDICT, "keep_alive": None,
+            "timeout": CLOUD_TIMEOUT,
+            "headers": {"Authorization": "Bearer " + api_key}, "stats": stats}
+
+
+def call_judge(prompt, model, host, num_predict, keep_alive,timeout=3600, headers=None, stats=None):
     """
-    Call the judge model via shared ollama_utils helper.
+    Call the judge model via shared ollama_utils helper. headers and stats are
+    for a cloud call (see cloud_call_options) and are left out of a local one.
 
     Go through /api/chat, strips <think> reasoning out of reply before hunting for JSON object.
     Connection-level failure (e.g. ollama not running / model not pulled/ timeout):
@@ -346,27 +383,35 @@ def call_judge(prompt, model, host, num_predict, keep_alive,timeout=3600):
     Parse failure (call succeeds but reply is not valid JSON):
         hand back to caller.
     """
+    cloud = {"headers": headers, "stats": stats} if headers else {}
     parsed, error = call_ollama_json(
         model, prompt,
         num_predict=num_predict,
         keep_alive=keep_alive,
         host=host,
         timeout = timeout,
+        **cloud,
     )
 
     if error and error.startswith("REQUEST ERROR"):
+        if headers:
+            sys.exit(f"err: could not get a response from Ollama Cloud at {host} ({error})."
+                     f" Check {CLOUD_API_KEY_ENV}, the plan's usage, and that {model} is offered.")
         sys.exit(f"err: could not get a response from ollama at {host} ({error})."
                  f" Check that `ollama serve` is running, and {model} is pulled.")
 
     return parsed,error
 
-def call_judge_with_retries(prompt, model, host, num_predict, keep_alive, timeout=3600, max_retries=3):
+def call_judge_with_retries(prompt, model, host, num_predict, keep_alive, timeout=3600, max_retries=3,
+                            **cloud):
     """
     Call judge model, retry if its reply doesn't parse as a JSON object 
     (PARSE ERROR from ollama_utils). This method is only triggered by a parse faillure. 
     Connection-level failures still exit immediately.
 
     If every attempt fails parsing (after max_retries), return last attempt's ({},"PARSE EROR")
+
+    cloud: headers and stats for a cloud call, passed to each attempt.
     """
     attempt = 0
     while True:
@@ -376,6 +421,7 @@ def call_judge_with_retries(prompt, model, host, num_predict, keep_alive, timeou
             num_predict=num_predict,
             keep_alive=keep_alive,
             timeout=timeout,
+            **cloud,
         )
         if not error:
             return parsed, error
@@ -463,19 +509,31 @@ def main():
                                 keep_scores=args.keep_scores)
     # print(f"prompt:\n{prompt}")
 
-    print(f"Sending {len(summaries)} summary(ies) for '{candidate_name}' ({job_name}) to {args.model} at {args.host} ...")
+    settings = {"host": args.host, "num_predict": args.num_predict,
+                "keep_alive": args.keep_alive, "timeout": args.timeout}
+    stats = {}
+    if args.cloud:
+        api_key = os.environ.get(CLOUD_API_KEY_ENV, "").strip()
+        if not api_key:
+            sys.exit(f"error: --cloud needs an Ollama API key: add {CLOUD_API_KEY_ENV}=<key> "
+                     f"to .env in the repo root (create one at https://ollama.com/settings/keys)")
+        settings = cloud_call_options(api_key, stats)
+    host = settings.pop("host")
+
+    print(f"Sending {len(summaries)} summary(ies) for '{candidate_name}' ({job_name}) to {args.model} at {host} ...")
     start_time = time.time()
     parsed, error = call_judge_with_retries(
-        prompt, args.model, args.host,
-        num_predict=args.num_predict,
-        keep_alive=args.keep_alive,
-        timeout=args.timeout,
-        max_retries=args.max_retries
+        prompt, args.model, host,
+        max_retries=args.max_retries,
+        **settings,
     )
 
 
     end_time = time.time()
     print(f"Model finished, time: {end_time - start_time:.4f}")
+    if args.cloud and stats:
+        # The last attempt's tokens only - a parse-error retry is not counted.
+        print(f"Cloud tokens: {stats.get('prompt_eval_count')} in, {stats.get('eval_count')} out")
     
     if error:
         print(f"\nWarning: {error} -- writing model output as-is anyway.")
@@ -490,4 +548,5 @@ def main():
 
 
 if __name__ == "__main__":
+    load_env_file()
     main()

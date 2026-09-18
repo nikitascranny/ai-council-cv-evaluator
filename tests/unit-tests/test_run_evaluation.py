@@ -224,6 +224,46 @@ class TestPreflightChecks:
         log = (out / "run.log").read_text(encoding="utf-8")
         assert "Secretary Job.pdf" in log and "Ollama does not have" in log
 
+    def test_cloud_needs_the_key_but_not_the_local_council_or_judge(self, folders, monkeypatch):
+        monkeypatch.delenv("OLLAMA_API_KEY", raising=False)
+        local_only = {"qwen2.5:7b"}
+
+        code, scripts = _run(folders, "--cloud", models=local_only)
+
+        assert code == 1 and scripts.calls == []
+        log = (folders[2] / "run.log").read_text(encoding="utf-8")
+        assert "OLLAMA_API_KEY" in log and "Ollama does not have" not in log
+
+    def test_cloud_is_passed_to_the_council_and_the_judge_and_recorded(self, folders, monkeypatch):
+        import judge
+
+        monkeypatch.setenv("OLLAMA_API_KEY", "secret")
+
+        code, scripts = _run(folders, "--cloud", models={"qwen2.5:7b"})
+
+        assert code == 0
+        assert "--cloud" in scripts.args_of("Evaluate_CV.py")
+        judge_args = scripts.args_of("judge.py")
+        assert "--cloud" in judge_args
+        assert judge_args[judge_args.index("--model") + 1] == judge.CLOUD_MODEL
+        run = json.loads((folders[2] / "run.json").read_text(encoding="utf-8"))["runs"][-1]
+        assert run["cloud"] is True
+        assert run["models"]["council"] == ["gemma4:31b", "gpt-oss:120b"]
+        assert run["models"]["judge"] == judge.CLOUD_MODEL
+        assert not set(run["models"]["council"]) & {run["models"]["judge"]}
+
+    def test_cloud_from_judge_rejudges_on_the_cloud_without_touching_ollama(self, folders, monkeypatch):
+        monkeypatch.setenv("OLLAMA_API_KEY", "secret")
+        _run(folders)
+        scripts = FakeScripts()
+
+        code, _ = _run(folders, "--from", "judge", "--cloud", "--force",
+                       scripts=scripts, models=set())
+
+        assert code == 0
+        assert [name for name, _ in scripts.calls] == ["judge.py"]
+        assert "--cloud" in scripts.args_of("judge.py")
+
 
 # ---------------------------------------------------------------------------
 # the pipeline

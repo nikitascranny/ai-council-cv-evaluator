@@ -11,6 +11,7 @@ docs/
 # judge run-state sentinels
 .done/
 *.log
+.env
 #a run's failure list belongs with its results
 !failures.log 
 # --- parser / rewriter working files ---

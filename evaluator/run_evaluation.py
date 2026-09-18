@@ -20,6 +20,9 @@ Usage (relative paths are taken from the folder you run it in):
     python evaluator/run_evaluation.py --cvs data/cvs/Batch1
     python evaluator/run_evaluation.py --cvs data/cvs/Batch2 --out results/evaluation/batch2
 
+    # the council and the judge on Ollama Cloud instead (needs OLLAMA_API_KEY)
+    python evaluator/run_evaluation.py --cvs data/cvs/Batch1 --cloud
+
     # the same evaluations, judged again on the council alone
     python evaluator/run_evaluation.py --out results/evaluation/batch2 --from judge --no-essential
 
@@ -86,9 +89,14 @@ def parse_args(argv=None):
     parser.add_argument("--no-essential", dest="essential", action="store_false",
                         help="Judge on the council's summaries only.")
     parser.add_argument("--judge-model", default=None,
-                        help="Ollama model for the judge (default: judge.py's own, deepseek-r1:8b).")
+                        help="Ollama model for the judge (default: judge.py's own - deepseek-r1:8b, "
+                             "or its CLOUD_MODEL with --cloud).")
     parser.add_argument("--force", action="store_true",
                         help="Re-judge pairs that already have a valid verdict.")
+    parser.add_argument("--cloud", action="store_true",
+                        help="Run the council and the judge on Ollama Cloud, as Evaluate_CV.py "
+                             "--cloud and judge.py --cloud (needs OLLAMA_API_KEY). The "
+                             "essential-requirements check stays local.")
     args = parser.parse_args(argv)
 
     resuming = args.start != "evaluate"
@@ -180,6 +188,7 @@ def new_record(options) -> dict:
         "from": options.start,
         "condition": condition(options),
         "force": options.force,
+        "cloud": options.cloud,
         "cvs": display_path(options.cvs) if options.start == "evaluate" else None,
         "jobs": display_path(options.jobs),
         "out": display_path(options.out),
@@ -197,7 +206,8 @@ def models_used(options) -> dict:
 
     models = {}
     if options.start == "evaluate":
-        models["council"] = list(Evaluate_CV.EVALUATOR_MODELS)
+        models["council"] = list(Evaluate_CV.CLOUD_EVALUATOR_MODELS if options.cloud
+                                 else Evaluate_CV.EVALUATOR_MODELS)
         models["essential_requirements"] = Evaluate_CV.ESSENTIAL_REQUIREMENTS_MODEL
     models["judge"] = options.judge_model
     return models
@@ -327,6 +337,15 @@ def check_models(wanted, fetch=fetch_ollama_models) -> list:
     return []
 
 
+def cloud_models(options) -> list:
+    """The models a --cloud run sends to Ollama Cloud: the council only when
+    the evaluate stage runs, the judge always."""
+    import Evaluate_CV
+
+    council = Evaluate_CV.CLOUD_EVALUATOR_MODELS if options.start == "evaluate" else []
+    return [*council, options.judge_model]
+
+
 def preflight(options, log, fetch=fetch_ollama_models) -> bool:
     """Every problem at once, before any model call. A missing model or a
     stopped Ollama would otherwise fail every one of hundreds of calls, one at
@@ -342,24 +361,32 @@ def preflight(options, log, fetch=fetch_ollama_models) -> bool:
     import Evaluate_CV
     import judge
 
-    options.judge_model = options.judge_model or judge.DEFAULT_MODEL
+    options.judge_model = options.judge_model or (judge.CLOUD_MODEL if options.cloud
+                                                  else judge.DEFAULT_MODEL)
     job_pdfs, problems = check_job_listings(options.jobs)
     found = f"{len(job_pdfs)} job listing(s)"
-    wanted = [options.judge_model]
+    # Cloud models are not pulled locally, so only the key is checked for them -
+    # whether ollama.com accepts it shows in the first call.
+    wanted = [] if options.cloud else [options.judge_model]
     if options.start == "evaluate":
         cv_pdfs, cv_problems = check_cvs(options.cvs)
         problems += cv_problems
         found += f", {len(cv_pdfs)} CV(s)"
-        wanted = [*Evaluate_CV.EVALUATOR_MODELS, Evaluate_CV.ESSENTIAL_REQUIREMENTS_MODEL,
-                  options.judge_model]
-    problems += check_models(wanted, fetch)
+        council = [] if options.cloud else list(Evaluate_CV.EVALUATOR_MODELS)
+        wanted = [*council, Evaluate_CV.ESSENTIAL_REQUIREMENTS_MODEL, *wanted]
+    if options.cloud and not os.environ.get(judge.CLOUD_API_KEY_ENV, "").strip():
+        problems.append(f"--cloud needs {judge.CLOUD_API_KEY_ENV}: add {judge.CLOUD_API_KEY_ENV}=<key> "
+                        f"to .env in the repo root (create a key at https://ollama.com/settings/keys)")
+    if wanted:
+        problems += check_models(wanted, fetch)
 
     if problems:
         log("Preflight failed:")
         for problem in problems:
             log("  - " + problem)
         return False
-    log(f"  OK: {found}; models: {', '.join(dict.fromkeys(wanted))}")
+    cloud = f"; on Ollama Cloud: {', '.join(cloud_models(options))}" if options.cloud else ""
+    log(f"  OK: {found}; local models: {', '.join(dict.fromkeys(wanted)) or 'none'}{cloud}")
     return True
 
 
@@ -395,8 +422,11 @@ def evaluate_stage(options, log, run=run_step, stage=None) -> bool:
     log(f"  CVs:  {options.cvs}")
     log(f"  Jobs: {options.jobs}")
     evaluations = options.out / "evaluations"
-    code = run([EVALUATOR_DIR / "Evaluate_CV.py", "--essential-requirements",
-                "--cvs", options.cvs, "--jobs", options.jobs, "--results", evaluations], log)
+    args = [EVALUATOR_DIR / "Evaluate_CV.py", "--essential-requirements",
+            "--cvs", options.cvs, "--jobs", options.jobs, "--results", evaluations]
+    if options.cloud:
+        args.append("--cloud")
+    code = run(args, log)
     if code != 0:
         log(f"error: Evaluate_CV.py failed (exit code {code})")
         return False
@@ -471,6 +501,8 @@ def judge_stage(options, log, run=run_step, stage=None) -> bool:
                     "--job-name", slug, "--output", verdict, "--model", options.judge_model]
             if not options.essential:
                 args.append("--no-essential")
+            if options.cloud:
+                args.append("--cloud")
             if run(args, log) == 0 and is_valid_verdict(verdict):
                 ok += 1
             else:
@@ -558,4 +590,8 @@ def main(argv=None, run=run_step, fetch=fetch_ollama_models) -> int:
 
 
 if __name__ == "__main__":
+    # Before main(), so the preflight key check sees it, and so each stage's
+    # subprocess inherits it through os.environ.
+    import ollama_utils
+    ollama_utils.load_env_file()
     sys.exit(main())

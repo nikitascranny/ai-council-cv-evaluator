@@ -9,6 +9,7 @@ Usage:
     python Evaluate_CV.py                              # council scoring only
     python Evaluate_CV.py --essential-requirements      # council + essential-requirements check
     python Evaluate_CV.py -e                            # same, short form
+    python Evaluate_CV.py -e --cloud                    # council on Ollama Cloud (needs OLLAMA_API_KEY)
     python Evaluate_CV.py -e --cvs data/cvs/Batch2 --jobs data/job-listings \
         --results results/evaluation/batch2              # other folders
 
@@ -27,9 +28,18 @@ evaluator/pipeline/Evaluate_CV.py):
     results/             - created automatically for output JSON
 
 essential_requirements.py is a file used only by this script.
+
+--cloud swaps the council for CLOUD_EVALUATOR_MODELS on Ollama Cloud, for
+comparing against the local council from the command line. Only the council
+moves: the essential-requirements check still runs locally. Unlike the cloud
+rewriter there is no local fallback - a local score saved under a cloud
+model's name would make its ranking file a mix of two models - so a failed
+cloud call is recorded like any other failed evaluation (score None, the
+error as its summary).
 """
 
 import argparse
+import os
 import sys
 from pathlib import Path
 
@@ -41,7 +51,7 @@ sys.path.insert(0, str(_ROOT_DIR / "common"))
 sys.path.insert(0, str(_ROOT_DIR / "parser"))
 
 from document_utils import extract_text_from_pdf, load_cv
-from ollama_utils import call_ollama_json
+from ollama_utils import call_ollama_json, load_env_file
 from results_io import safe_filename_part, save_json
 import essential_requirements  # sibling file, still in this same folder - no path change needed
 import job_req_parser
@@ -58,11 +68,41 @@ ESSENTIAL_REQUIREMENTS_FOLDER = RESULTS_FOLDER / "essential_requirements"
 EVALUATOR_MODELS = ["qwen2.5:14b", "phi4"] # The models used for scoring CVs against job descriptions
 ESSENTIAL_REQUIREMENTS_MODEL = "qwen2.5:7b"
 
+# The council with --cloud (same two cloud models as rewriter_v2's cloud)
+CLOUD_EVALUATOR_MODELS = ["gemma4:31b", "gpt-oss:120b"]
+CLOUD_HOST = "https://ollama.com/api/chat"
+CLOUD_API_KEY_ENV = "OLLAMA_API_KEY"
+# gpt-oss reasons before it answers and those tokens count against
+# num_predict, so the cloud budget is larger than the local 1024 and its
+# reasoning is kept to "low".
+CLOUD_NUM_PREDICT = 4096
+CLOUD_THINK = {"gpt-oss:120b": "low"}
+# Minutes rather than the local hour: a hung cloud call has no local load
+# time to excuse it.
+CLOUD_TIMEOUT = 300
 
-def evaluate_cv(job_text: str, cv_text: str, candidate_name: str, model: str) -> dict:
+
+def cloud_call_options(model: str, api_key: str, stats: dict) -> dict:
+    """The call_ollama_json arguments that send one evaluation to Ollama
+    Cloud instead of the local daemon."""
+    options = {"num_predict": CLOUD_NUM_PREDICT, 
+               "host": CLOUD_HOST,
+               "headers": {"Authorization": "Bearer " + api_key},
+               "keep_alive": None, 
+               "timeout": CLOUD_TIMEOUT, 
+               "stats": stats}
+    if model in CLOUD_THINK:
+        options["think"] = CLOUD_THINK[model]
+    return options
+
+
+def evaluate_cv(job_text: str, cv_text: str, candidate_name: str, model: str,
+                api_key: str = None) -> dict:
     """
     Send one CV + job description to an evaluator model and get back a
-    structured score.
+    structured score. With api_key, the model runs on Ollama Cloud and the
+    result also carries the tokens it used (tokens_in, tokens_out); the
+    prompt is the same either way.
 
     Note: This exact prompt was used to obtain our results shown in
     findings.docx, and it is the prompt we intend to use going forward for
@@ -94,13 +134,20 @@ def evaluate_cv(job_text: str, cv_text: str, candidate_name: str, model: str) ->
     print(f"  (CV text length: {len(cv_text)} characters)")
 
     # num_predict=1024: enough room for reasoning plus the full JSON reply
-    parsed, error = call_ollama_json(model, prompt, num_predict=1024)
+    stats = {}
+    if api_key:
+        parsed, error = call_ollama_json(model, prompt, **cloud_call_options(model, api_key, stats))
+    else:
+        parsed, error = call_ollama_json(model, prompt, num_predict=1024)
 
     if error:
         print(f"  [!] Evaluation failed for {candidate_name} ({model}): {error}") # returns an error message if the model fails to respond with valid JSON
         parsed = {"score": None, "strengths": [], "weaknesses": [], "summary": error} # This ensures the runs continue even if one candidate fails to be evaluated
 
     parsed["candidate"] = candidate_name
+    if api_key:
+        parsed["tokens_in"] = stats.get("prompt_eval_count")
+        parsed["tokens_out"] = stats.get("eval_count")
     return parsed
 
 
@@ -127,6 +174,12 @@ def parse_args() -> argparse.Namespace: # Parse command-line arguments for the s
         help="Folder to write result JSON into (default: results/). Essential-requirements "
              "results go into its essential_requirements/ subfolder.",
     )
+    parser.add_argument(
+        "--cloud", action="store_true",
+        help=f"Run the council on Ollama Cloud ({', '.join(CLOUD_EVALUATOR_MODELS)}) instead "
+             f"of locally. Needs {CLOUD_API_KEY_ENV} set. The essential-requirements check "
+             f"stays local.",
+    )
     return parser.parse_args()
 
 
@@ -136,7 +189,18 @@ def main():
     It processes each job description and evaluates all candidate CVs, saving the results in JSON format"""
     args = parse_args() # Retrieve command-line arguments
 
-    print(f"Evaluator models: {', '.join(EVALUATOR_MODELS)}")
+    api_key = None
+    evaluator_models = EVALUATOR_MODELS
+    if args.cloud:
+        api_key = os.environ.get(CLOUD_API_KEY_ENV, "").strip()
+        if not api_key:
+            # Stop here rather than write a run of "401 Unauthorized" scores.
+            sys.exit(f"--cloud needs an Ollama API key: add {CLOUD_API_KEY_ENV}=<key> to .env "
+                     f"in the repo root (create one at https://ollama.com/settings/keys)")
+        evaluator_models = CLOUD_EVALUATOR_MODELS
+
+    print(f"Evaluator models: {', '.join(evaluator_models)}"
+          + (" (Ollama Cloud)" if args.cloud else ""))
     if args.essential_requirements: # Checks if the essential req model is in use
         print(f"Essential-requirements check: ON ({ESSENTIAL_REQUIREMENTS_MODEL})")
     else:
@@ -183,7 +247,7 @@ def main():
                       f"of {len(job_text)} characters)\n")
 
         # Creates a dictionary to hold results for each evaluator model and a list for essential requirements results
-        results_by_model = {model: [] for model in EVALUATOR_MODELS}
+        results_by_model = {model: [] for model in evaluator_models}
         essential_requirements_results = []
 
         for cv_path in cv_files:
@@ -204,7 +268,7 @@ def main():
                     "weaknesses": [],
                     "summary": f"PDF EXTRACTION ERROR: {e}",
                 }
-                for model in EVALUATOR_MODELS: # Append the error result to each model's results list
+                for model in evaluator_models: # Append the error result to each model's results list
                     results_by_model[model].append(error_result)
                 if args.essential_requirements:
                     essential_requirements_results.append({
@@ -216,9 +280,10 @@ def main():
 
             cv_text = cv.full_text()
 
-            for model in EVALUATOR_MODELS:
+            for model in evaluator_models:
                 print(f"  Evaluating with {model}...")
-                result = evaluate_cv(job_text, cv_text, candidate_name, model) # Store the evaluation result for the candidate and model
+                extra = {"api_key": api_key} if api_key else {}
+                result = evaluate_cv(job_text, cv_text, candidate_name, model, **extra) # Store the evaluation result for the candidate and model
                 results_by_model[model].append(result) # appends it to the list of results for that model
                 print(f"    Score: {result.get('score')}")
 
@@ -240,6 +305,11 @@ def main():
                 print(f"{i}. {r['candidate']} — score {r['score']}") # shows their score and summary
                 print(f"   {r.get('summary', '')}")
 
+            if args.cloud:
+                tokens_in = sum(r.get("tokens_in") or 0 for r in results)
+                tokens_out = sum(r.get("tokens_out") or 0 for r in results)
+                print(f"Cloud tokens ({model}): {tokens_in} in, {tokens_out} out")
+
             filename = f"{model.replace(':', '_')}__{safe_filename_part(job_pdf.stem)}.json"
             output_path = save_json(results, results_folder, filename)
             print(f"Results saved to {output_path}\n")
@@ -254,4 +324,5 @@ def main():
 
 
 if __name__ == "__main__":
+    load_env_file()
     main()

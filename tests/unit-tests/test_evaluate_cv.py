@@ -79,6 +79,49 @@ def test_evaluate_cv_on_model_failure_returns_safe_fallback(mock_call):
     assert result["summary"] == "REQUEST ERROR: connection refused"
 
 
+@patch("Evaluate_CV.call_ollama_json")
+def test_evaluate_cv_without_a_key_calls_the_local_daemon_as_before(mock_call):
+    mock_call.return_value = ({"score": 5, "strengths": [], "weaknesses": [], "summary": "ok"}, None)
+
+    result = ecv.evaluate_cv("job", "cv", "Dan", "phi4")
+
+    assert mock_call.call_args.kwargs == {"num_predict": 1024}
+    assert "tokens_in" not in result
+
+
+@patch("Evaluate_CV.call_ollama_json")
+def test_evaluate_cv_with_a_key_sends_the_same_prompt_to_ollama_cloud(mock_call):
+    def reply(model, prompt, **kwargs):
+        kwargs["stats"].update(prompt_eval_count=900, eval_count=120)
+        return {"score": 7, "strengths": [], "weaknesses": [], "summary": "ok"}, None
+    mock_call.side_effect = reply
+
+    result = ecv.evaluate_cv("job", "cv", "Eve", "gpt-oss:120b", api_key="secret")
+
+    kwargs = mock_call.call_args.kwargs
+    assert kwargs["host"] == ecv.CLOUD_HOST
+    assert kwargs["headers"] == {"Authorization": "Bearer secret"}
+    assert kwargs["keep_alive"] is None
+    assert kwargs["think"] == "low"
+    assert (result["tokens_in"], result["tokens_out"]) == (900, 120)
+
+    mock_call.side_effect = None
+    mock_call.return_value = ({"score": 7, "strengths": [], "weaknesses": [], "summary": "ok"}, None)
+    ecv.evaluate_cv("job", "cv", "Eve", "phi4")
+    assert mock_call.call_args.args[1] == mock_call.call_args_list[0].args[1]
+
+
+@patch("Evaluate_CV.call_ollama_json")
+def test_a_failed_cloud_evaluation_is_recorded_not_replaced_by_a_local_one(mock_call):
+    mock_call.return_value = ({}, "REQUEST ERROR: 429 Too Many Requests")
+
+    result = ecv.evaluate_cv("job", "cv", "Fay", "gemma4:31b", api_key="secret")
+
+    assert mock_call.call_count == 1
+    assert result["score"] is None
+    assert result["summary"].startswith("REQUEST ERROR")
+
+
 # ---------------------------------------------------------------------------
 # parse_args
 # ---------------------------------------------------------------------------
@@ -166,3 +209,49 @@ def test_main_reads_and_writes_the_folders_it_is_given(monkeypatch, tmp_path):
         assert (out / f"{model.replace(':', '_')}__job_listing_secretary.json").is_file()
     assert (out / "essential_requirements" / "essential_requirements__job_listing_secretary.json").is_file()
     assert seen["sections"] == "scoped to experience,education,certifications"
+
+
+def test_main_with_cloud_runs_the_cloud_council_with_the_key(monkeypatch, tmp_path):
+    from types import SimpleNamespace
+
+    jobs = tmp_path / "jobs"
+    cvs = tmp_path / "cvs"
+    jobs.mkdir()
+    cvs.mkdir()
+    (jobs / "job_listing_secretary.pdf").write_bytes(b"")
+    (cvs / "ALEX PARK.pdf").write_bytes(b"")
+    out = tmp_path / "out"
+    keys = []
+
+    def evaluate(job, cv_text, name, model, api_key=None):
+        keys.append(api_key)
+        return {"candidate": name, "score": 6, "strengths": [], "weaknesses": [],
+                "summary": "ok", "tokens_in": 10, "tokens_out": 2}
+
+    monkeypatch.setenv(ecv.CLOUD_API_KEY_ENV, "secret")
+    monkeypatch.setattr(ecv, "extract_text_from_pdf", lambda path: "job text")
+    monkeypatch.setattr(ecv, "load_cv", lambda path: SimpleNamespace(full_text=lambda: "cv"))
+    monkeypatch.setattr(ecv, "evaluate_cv", evaluate)
+    monkeypatch.setattr("sys.argv", ["Evaluate_CV.py", "--cloud", "--cvs", str(cvs),
+                                     "--jobs", str(jobs), "--results", str(out)])
+
+    ecv.main()
+
+    assert keys == ["secret"] * len(ecv.CLOUD_EVALUATOR_MODELS)
+    for model in ecv.CLOUD_EVALUATOR_MODELS:
+        assert (out / f"{model.replace(':', '_')}__job_listing_secretary.json").is_file()
+    for model in ecv.EVALUATOR_MODELS:
+        assert not (out / f"{model.replace(':', '_')}__job_listing_secretary.json").exists()
+
+
+def test_main_with_cloud_and_no_key_stops_before_any_evaluation(monkeypatch, tmp_path):
+    import pytest
+
+    monkeypatch.delenv(ecv.CLOUD_API_KEY_ENV, raising=False)
+    monkeypatch.setattr(ecv, "evaluate_cv", lambda *a, **k: pytest.fail("evaluated"))
+    monkeypatch.setattr("sys.argv", ["Evaluate_CV.py", "--cloud", "--results", str(tmp_path)])
+
+    with pytest.raises(SystemExit) as stopped:
+        ecv.main()
+
+    assert ecv.CLOUD_API_KEY_ENV in str(stopped.value)

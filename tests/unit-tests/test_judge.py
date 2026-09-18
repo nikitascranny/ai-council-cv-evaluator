@@ -717,5 +717,94 @@ class TestMain:
         assert seen["prompt"] == judge.build_judge_prompt("job text", summaries, "Lerato", essential)
 
 
+
+# ---------------------------------------------------------------------------
+# --cloud
+# ---------------------------------------------------------------------------
+
+class TestCloud:
+    def _argv(self, monkeypatch, *extra):
+        monkeypatch.setattr(sys, "argv",
+                            ["judge.py", "--summaries", "s.json", "--job", "job.pdf", *extra])
+
+    def _main(self, monkeypatch, *extra):
+        """Run main() with its inputs faked; returns the call_judge_with_retries kwargs."""
+        seen = {}
+
+        def fake_retries(prompt, model, host, **kwargs):
+            seen.update(model=model, host=host, **kwargs)
+            if kwargs.get("stats") is not None:
+                kwargs["stats"].update(prompt_eval_count=500, eval_count=80)
+            return {"final_score": 7, "final_evaluation": "ok"}, None
+
+        monkeypatch.setattr(judge, "load_summaries", lambda paths: [{"candidate": "Lerato"}])
+        monkeypatch.setattr(judge, "extract_text_from_pdf", lambda path: "job text")
+        monkeypatch.setattr(judge, "call_judge_with_retries", fake_retries)
+        self._argv(monkeypatch, *extra)
+        judge.main()
+        return seen
+
+    def test_the_model_defaults_to_the_cloud_judge_only_with_cloud(self, monkeypatch):
+        self._argv(monkeypatch)
+        assert judge._parse_args().model == judge.DEFAULT_MODEL
+        self._argv(monkeypatch, "--cloud")
+        assert judge._parse_args().model == judge.CLOUD_MODEL
+        self._argv(monkeypatch, "--cloud", "--model", "glm-5.3")
+        assert judge._parse_args().model == "glm-5.3"
+
+    def test_the_cloud_judge_is_not_one_of_the_cloud_council(self):
+        import Evaluate_CV
+
+        assert judge.CLOUD_MODEL not in Evaluate_CV.CLOUD_EVALUATOR_MODELS
+
+    def test_cloud_sends_the_judge_to_ollama_com_with_the_key(self, monkeypatch, capsys):
+        monkeypatch.setenv(judge.CLOUD_API_KEY_ENV, "secret")
+
+        seen = self._main(monkeypatch, "--cloud")
+
+        assert seen["model"] == judge.CLOUD_MODEL
+        assert seen["host"] == judge.CLOUD_HOST
+        assert seen["headers"] == {"Authorization": "Bearer secret"}
+        assert seen["keep_alive"] is None
+        assert seen["num_predict"] == judge.CLOUD_NUM_PREDICT
+        assert seen["timeout"] == judge.CLOUD_TIMEOUT
+        assert "Cloud tokens: 500 in, 80 out" in capsys.readouterr().out
+
+    def test_a_local_run_sends_no_key(self, monkeypatch):
+        seen = self._main(monkeypatch)
+
+        assert seen["host"] == judge.DEFAULT_HOST
+        assert "headers" not in seen
+
+    def test_cloud_without_a_key_stops_before_calling(self, monkeypatch):
+        monkeypatch.delenv(judge.CLOUD_API_KEY_ENV, raising=False)
+
+        with pytest.raises(SystemExit) as stopped:
+            self._main(monkeypatch, "--cloud")
+
+        assert judge.CLOUD_API_KEY_ENV in str(stopped.value)
+
+    @patch("judge.call_ollama_json")
+    def test_call_judge_passes_the_key_on_and_blames_the_cloud_on_failure(self, mock_call):
+        mock_call.return_value = ({}, "REQUEST ERROR: 401 Unauthorized")
+
+        with pytest.raises(SystemExit) as stopped:
+            judge.call_judge("prompt", judge.CLOUD_MODEL, judge.CLOUD_HOST, 8192, None,
+                             headers={"Authorization": "Bearer secret"}, stats={})
+
+        assert mock_call.call_args.kwargs["headers"] == {"Authorization": "Bearer secret"}
+        assert "Ollama Cloud" in str(stopped.value) and "ollama serve" not in str(stopped.value)
+
+    @patch("judge.call_ollama_json")
+    def test_retries_keep_the_key(self, mock_call):
+        mock_call.side_effect = [({}, "PARSE ERROR"), ({"final_score": 6}, None)]
+
+        judge.call_judge_with_retries("prompt", judge.CLOUD_MODEL, judge.CLOUD_HOST, 8192, None,
+                                      headers={"Authorization": "Bearer k"}, stats={})
+
+        assert all(c.kwargs["headers"] == {"Authorization": "Bearer k"}
+                   for c in mock_call.call_args_list)
+
+
 if __name__ == "__main__":
     sys.exit(pytest.main([__file__, "-v"]))
