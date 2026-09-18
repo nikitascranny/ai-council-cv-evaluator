@@ -12,11 +12,9 @@ Evaluate_CV.py owns the job/CV loop and folder locations, which guarantees
 this check always runs against the exact same CVs and job descriptions as
 the evaluators, never a different set.
 
-FOR NOW: the whole job description text is passed in as-is (no separate
-step to break it into discrete essential requirements yet). This version
-asks the model for a single qualitative summary rather than a strict
-per-requirement yes/no - deliberately built with some leeway, so a CV
-doesn't get marked down just for phrasing something differently to the job
+The job description's essential requirements and the CVs education, qualifications
+and skills sections are extracted and parsed to this model. It is built with some 
+leeway, so a CV doesn't get marked down just for phrasing something differently to the job
 listing, or for having closely related rather than identical experience.
 """
 
@@ -28,7 +26,7 @@ sys.path.insert(0, str(_ROOT_DIR / "common"))
 
 from ollama_utils import call_ollama_json
 
-DEFAULT_MODEL = "qwen2.5:7b"  # narrow summary check - swap for your preferred 7B/8B
+DEFAULT_MODEL = "qwen2.5:7b" 
 
 
 def build_essential_requirement_prompt(job_text: str, cv_sections_text: str) -> str:
