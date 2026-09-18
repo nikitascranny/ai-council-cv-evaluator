@@ -380,12 +380,74 @@ _ACTION_CHOICES = (
 )
 
 
-def candidate_form(jobs, cvs, label_for) -> str:
+_REWRITER_LABELS = {
+    candidate_mod.LOCAL: (
+        "This computer",
+        "{models}, through Ollama on this machine. Your CV never leaves it."),
+    candidate_mod.CLOUD: (
+        "Ollama Cloud",
+        "{models} - larger models than this computer can run. Your CV text "
+        "is sent to ollama.com to be rewritten. If Ollama Cloud fails (no "
+        "connection, or the usage limit is reached), that version is "
+        "rewritten on this computer instead, and the results say so."),
+}
+
+# Rewriting models mean nothing to an evaluate-only run, so the choice is
+# disabled rather than left looking as if it mattered. A disabled fieldset is
+# not submitted, and the route reads a missing choice as the local default.
+_REWRITER_SCRIPT = """
+(function () {
+  const box = document.getElementById('rewriter');
+  if (!box) return;
+  function sync() {
+    const picked = document.querySelector("input[name='action']:checked");
+    box.disabled = !!picked && picked.value === 'EVALUATE';
+  }
+  document.querySelectorAll("input[name='action']").forEach(
+    (radio) => radio.addEventListener('change', sync));
+  sync();
+})();
+""".replace("EVALUATE", evaluation.EVALUATE)
+
+
+def _rewriter_fieldset(rewriters) -> str:
+    """Where the rewrite runs: this computer (the default) or Ollama Cloud.
+
+    A choice that cannot run is shown disabled with the reason, rather than
+    hidden - a candidate who knows the cloud option exists can ask for it to
+    be set up.
+    """
+    rows = []
+    for choice in rewriters:
+        value = choice["value"]
+        label, note = _REWRITER_LABELS[value]
+        note = note.format(models=" and ".join(choice["models"]))
+        why_not = choice.get("unavailable")
+        rows.append(
+            "<label class='choice'><input type='radio' name='rewriter' "
+            "value='{v}'{checked}{disabled}> <b>{label}</b><small>{note}"
+            "</small>{why_not}</label>".format(
+                v=html.escape(value), label=html.escape(label),
+                note=html.escape(note),
+                why_not=("<small><b>Can't be picked yet.</b> {}</small>".format(
+                    html.escape(why_not)) if why_not else ""),
+                checked=" checked" if value == candidate_mod.LOCAL else "",
+                disabled=" disabled" if why_not else ""))
+    return ("<fieldset id='rewriter'><legend>Rewriting models</legend>"
+            "<p class='hint'>Only used when rewriting. Scoring and the rewrite "
+            "judge always run on this computer.</p>{}</fieldset>"
+            ).format("".join(rows))
+
+
+def candidate_form(jobs, cvs, label_for, rewriters=None) -> str:
     """Pick one CV, one listing, and what to do with them.
 
     Single-select on both, unlike reviewer mode: v2 rewrites one CV for one
     job, and the two agents it runs are the comparison here - a second CV
     would just double an already slow run.
+
+    rewriters is candidate.rewriter_choices(); without it the form offers no
+    choice and every rewrite runs locally.
     """
     choices = "".join(
         "<label class='choice'><input type='radio' name='action' value='{v}'"
@@ -393,6 +455,7 @@ def candidate_form(jobs, cvs, label_for) -> str:
             v=value, label=html.escape(label), note=html.escape(note),
             checked=" checked" if value == evaluation.EVALUATE_REWRITE else "")
         for value, label, note in _ACTION_CHOICES)
+    where = _rewriter_fieldset(rewriters) if rewriters else ""
     body = ("<div class='card'><h2>Candidate</h2>"
             "<p>Aim your CV at a listing you are applying for: see how it "
             "scores, have it rewritten, or both.</p>"
@@ -402,10 +465,13 @@ def candidate_form(jobs, cvs, label_for) -> str:
             "<label for='cv'>Your CV</label>"
             "<select id='cv' name='cv' size='10'>{cvs}</select>"
             "<fieldset><legend>What to do</legend>{choices}</fieldset>"
+            "{where}"
             "<p><button type='submit'>Start</button></p>"
             "</form></div>").format(jobs=_options(jobs, label_for),
                                     cvs=_options(cvs, label_for),
-                                    choices=choices)
+                                    choices=choices, where=where)
+    if where:
+        body += "<script>{}</script>".format(_REWRITER_SCRIPT)
     return layout("Candidate - AI CV Evaluator", body, mode="candidate")
 
 
@@ -537,11 +603,12 @@ def _rewrite_card(run_id: str, index: int, result, recommended=False) -> str:
     finding that out is the exact confusion rewriter_v2 warns against.
     """
     error = getattr(result, "error", None)
+    cloud = _cloud_note(result)
     if error:
-        return ("<div class='card'><h3>{model}</h3>"
+        return ("<div class='card'><h3>{model}</h3>{cloud}"
                 "<div class='empty'><b>This model failed.</b><p>{err}</p></div>"
                 "</div>").format(model=html.escape(result.agent_model),
-                                 err=html.escape(str(error)))
+                                 cloud=cloud, err=html.escape(str(error)))
 
     if result.used_fallback:
         note = ("<div class='empty'><b>This is your original CV, not a "
@@ -567,12 +634,47 @@ def _rewrite_card(run_id: str, index: int, result, recommended=False) -> str:
         reasons = "<ul>{}</ul>".format("".join(
             "<li>{}</li>".format(html.escape(str(r))) for r in result.reasons))
 
-    tag = " <small>&middot; recommended</small>" if recommended else ""
-    return ("<div class='card'><h3>{model}{tag}</h3>{note}{reasons}{button}"
-            "<pre class='rewrite'>{text}</pre></div>").format(
-                model=html.escape(result.agent_model), tag=tag, note=note,
-                reasons=reasons, button=button,
+    tag = _where_tag(result)
+    if recommended:
+        tag += " <small>&middot; recommended</small>"
+    return ("<div class='card'><h3>{model}{tag}</h3>{cloud}{note}{reasons}"
+            "{button}<pre class='rewrite'>{text}</pre></div>").format(
+                model=html.escape(result.agent_model), tag=tag, cloud=cloud,
+                note=note, reasons=reasons, button=button,
                 text=html.escape(result.rewritten_text or ""))
+
+
+def _where_tag(result) -> str:
+    """Where a version was written, when the candidate asked for the cloud.
+
+    A local run has no tag at all - it is where every rewrite ran before the
+    cloud existed, and tagging it would clutter the common case.
+    """
+    if getattr(result, "replaced_cloud_model", None):
+        return " <small>&middot; on this computer</small>"
+    if getattr(result, "provider", None) == candidate_mod.CLOUD:
+        return " <small>&middot; Ollama Cloud</small>"
+    return ""
+
+
+def _cloud_note(result) -> str:
+    """Why a version the candidate asked the cloud for was written locally.
+
+    Stated above the text, like the guard's verdict: the candidate picked
+    Ollama Cloud, and reading a local model's rewrite as the cloud's would
+    be comparing the wrong things.
+    """
+    replaced = getattr(result, "replaced_cloud_model", None)
+    if not replaced:
+        return ""
+    cloud_error = getattr(result, "cloud_error", None)
+    return ("<div class='empty'><b>Rewritten on this computer instead.</b>"
+            "<p>{why} So {local} on this computer took the place of "
+            "{cloud}.</p><p class='hint'>Details: {detail}</p></div>").format(
+                why=html.escape(candidate_mod.describe_cloud_error(cloud_error)),
+                local=html.escape(result.agent_model),
+                cloud=html.escape(replaced),
+                detail=html.escape(str(cloud_error or "none given")))
 
 
 def candidate_results(run_id: str, payload) -> str:
@@ -592,6 +694,14 @@ def candidate_results(run_id: str, payload) -> str:
         intro = ("Rewritten for <b>{}</b> by {} models. They differ - that is "
                  "the point. Read both and pick the one that represents you "
                  "honestly, or have one scored again.").format(job, len(results))
+        replaced = sum(1 for r in results
+                       if getattr(r, "replaced_cloud_model", None))
+        if replaced:
+            intro += (" You picked Ollama Cloud, but it failed, so {} on this "
+                      "computer - see the note on {}.").format(
+                          "one version was rewritten" if replaced == 1
+                          else "{} versions were rewritten".format(replaced),
+                          "it" if replaced == 1 else "each")
         title = "Your rewritten CV"
     else:
         intro = "Scored against <b>{}</b>.".format(job)

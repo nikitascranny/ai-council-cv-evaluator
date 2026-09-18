@@ -1,8 +1,11 @@
 """Which models a run uses, and where they are called.
 
-Every model name and every host in the app resolves through this module, so
-pointing a batch run at a hosted Ollama is a config change rather than a
-rewrite. Nothing here calls a cloud endpoint today.
+Every model name and every host in reviewer mode resolves through this module,
+so pointing a batch run at a hosted Ollama is a config change rather than a
+rewrite. Nothing here calls a cloud endpoint. Candidate mode's rewriter v2 is
+the exception: its local agents and its Ollama Cloud agents are named in
+rewriter/rewriter_v2.py (AGENT_MODELS, CLOUD_AGENTS), next to the code that
+calls them.
 """
 
 import json

@@ -11,6 +11,7 @@ in-process, and the HTTP handler below is a shell that calls it.
 """
 
 import argparse
+import functools
 import html as html_mod
 import json
 import re
@@ -129,7 +130,8 @@ def candidate_view(form):
     if not jobs or not cvs:
         return Response(200, pages.candidate_page(
             "No job listings or CVs were found in the corpus.", available=True))
-    return Response(200, pages.candidate_form(jobs, cvs, corpus.label_for))
+    return Response(200, pages.candidate_form(
+        jobs, cvs, corpus.label_for, candidate_mod.rewriter_choices()))
 
 
 _BUSY = Response(409, pages.layout(
@@ -151,11 +153,33 @@ def candidate_run(form):
             "Nothing selected",
             "<div class='card'>Pick whether to rewrite your CV, evaluate it, "
             "or both.</div>"))
+    # The form leaves this out when the choice cannot apply (evaluate only,
+    # which disables the field), so a missing value is the local default.
+    rewriter = next(iter(form.get("rewriter", [])), candidate_mod.LOCAL)
+    if rewriter not in candidate_mod.REWRITERS:
+        return Response(400, pages.layout(
+            "Nothing selected",
+            "<div class='card'>Pick where to rewrite your CV: on this "
+            "computer or on Ollama Cloud.</div>"))
+    if action == evaluation.EVALUATE:
+        rewriter = candidate_mod.LOCAL
+    # The form greys the cloud out without a key; this refuses the request a
+    # stale page or a hand-built one sends anyway, rather than quietly
+    # running on the local models the candidate did not pick.
+    unavailable = (candidate_mod.cloud_status()
+                   if rewriter == candidate_mod.CLOUD else None)
+    if unavailable:
+        return Response(400, pages.layout(
+            "Ollama Cloud not set up",
+            "<div class='card'><h2>Ollama Cloud is not set up</h2><p>{}</p>"
+            "<p>Go back and pick <b>This computer</b> instead.</p>"
+            "</div>".format(html_mod.escape(unavailable))))
+    generate = functools.partial(candidate_mod.generate, profile=rewriter)
 
     def runner():
         deps = deps_mod.team_deps()
         return evaluation.run_candidate(
-            Path(job), Path(cv), deps, candidate_mod.generate,
+            Path(job), Path(cv), deps, generate,
             candidate_mod.feedback, action)
 
     try:
