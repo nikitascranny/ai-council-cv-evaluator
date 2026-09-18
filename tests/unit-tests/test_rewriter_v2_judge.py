@@ -424,7 +424,7 @@ class TestCallJudgeWithRetries:
         return rvj.call_judge_with_retries(
             prompt, self.AGENT_NAMES, model="deepseek-r1:8b",
             host="http://localhost:11434/api/chat", num_predict=4096,
-            temperature=0.2, timeout=3600, max_retries=max_retries,
+            timeout=3600, max_retries=max_retries,
         )
 
     @patch("rewriter_v2_judge.call_ollama_json")
@@ -521,8 +521,8 @@ class TestParseArgs:
         assert args.model == rvj.DEFAULT_MODEL
         assert args.host == rvj.DEFAULT_HOST
         assert args.num_predict == rvj.DEFAULT_NUM_PREDICT
-        assert args.temperature == 0.2
         assert args.timeout == 3600
+        assert not hasattr(args, "temperature")
         assert args.max_retries == 3
         assert args.force is False
 

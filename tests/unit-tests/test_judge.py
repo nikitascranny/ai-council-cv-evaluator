@@ -56,7 +56,6 @@ class TestParseArgs:
         assert args.num_predict == 4096
         assert args.max_retries == 3
         assert args.keep_alive == "0m"
-        assert args.temperature == 0.2
         assert args.timeout == 3600
         assert args.keep_scores is False
         assert args.candidate is None
@@ -64,15 +63,13 @@ class TestParseArgs:
         assert args.job_name is None
         assert args.no_essential is False
 
-    def test_temperature_and_timeout_have_correct_types_when_passed_on_cli(self, monkeypatch):
-        # Regression check: these must have type=float / type=int in the
-        # parser, or CLI-supplied values arrive as raw strings and break
+    def test_timeout_has_the_correct_type_when_passed_on_cli(self, monkeypatch):
+        # Regression check: this must have type=int in the parser, or a
+        # CLI-supplied value arrives as a raw string and breaks
         # requests.post(timeout=...) downstream.
-        self._set_argv(monkeypatch, "--temperature", "0.9", "--timeout", "120")
+        self._set_argv(monkeypatch, "--timeout", "120")
         args = judge._parse_args()
 
-        assert args.temperature == pytest.approx(0.9)
-        assert isinstance(args.temperature, float)
         assert args.timeout == 120
         assert isinstance(args.timeout, int)
 
@@ -404,7 +401,7 @@ class TestCallJudge:
             "deepseek-r1:8b", "prompt text",
             num_predict=4096, keep_alive="0m",
             host="http://localhost:11434/api/chat",
-            temperature=0.2, timeout=3600,
+            timeout=3600,
         )
 
     @patch("judge.call_ollama_json")
@@ -619,7 +616,7 @@ class TestMain:
 
         captured_kwargs = {}
 
-        def fake_retries(prompt, model, host, num_predict, keep_alive, temperature, timeout, max_retries):
+        def fake_retries(prompt, model, host, num_predict, keep_alive, timeout, max_retries):
             captured_kwargs["max_retries"] = max_retries
             return ({"candidate": "Lerato", "final_score": 8, "final_evaluation": "ok"}, None)
 
