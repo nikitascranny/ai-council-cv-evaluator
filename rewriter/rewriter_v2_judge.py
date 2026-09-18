@@ -60,19 +60,18 @@ from ollama_utils import call_ollama_json  # noqa: E402
 from results_io import save_json, safe_filename_part  # noqa: E402
 from document_utils import extract_text_from_pdf  # noqa: E402
 
+# Directory constants
 REWRITE_RESULTS_DIR = _ROOT_DIR / "data" / "rewrite_results"
 JOB_LISTINGS_DIR = _ROOT_DIR / "data" / "job-listings"
 FEEDBACK_DIR = _ROOT_DIR / "data" / "rewrite_feedback"
 
-# The project's established "judge" model (see evaluator/judge.py,
-# run_demo.py's JUDGE_MODEL) - kept distinct from the rewriting agents
-# (phi4, qwen2.5:14b) that produced the two CVs being judged here.
-DEFAULT_MODEL = "deepseek-r1:8b"
+# Judge settings
+DEFAULT_MODEL = "deepseek-r1:8b" # kept distinct from the rewriting agents (phi4, qwen2.5:14b)
 DEFAULT_HOST = "http://localhost:11434/api/chat"
 DEFAULT_NUM_PREDICT = 4096
 DEFAULT_NUM_CTX = 8192
 REQUIRED_KEYS = {"candidate", "job_title", "recommended_rewrite", "recommendation_reason",
-                 "career_roadmap", "alternative_careers"}
+                 "career_roadmap", "alternative_careers"} #recommended output of the rewriter judge
 
 
 # =====================================================================
@@ -81,8 +80,10 @@ REQUIRED_KEYS = {"candidate", "job_title", "recommended_rewrite", "recommendatio
 
 @dataclass
 class RewriteSubmission:
-    """One candidate's two (or more) agent rewrites for one job listing,
-    plus the metadata already computed when they were produced."""
+    """
+    One candidate's two (or more) agent rewrites for one job listing,
+    plus the metadata already computed when they were produced.
+    """
     job_title: str
     candidate: str
     job_pdf: Path
@@ -91,14 +92,14 @@ class RewriteSubmission:
 
 def _parse_list_field(raw: str) -> list:
     """
-    metadata.csv stores list fields (reasons, advisory) as Python repr
-    strings, e.g. "['alex park west edge']" or "[]" - literal_eval reads
-    those back; anything unparseable is treated as empty rather than
-    aborting the whole row over a cosmetic field.
+    raw: a Python repr string e.g. "['alex park west edge']" (list fields in metadata.csv)
+
+    Returns list converted string.
+    If unparseable, return empty rather than aborting the whole row.
     """
     try:
         value = ast.literal_eval(raw) if raw else []
-        return value if isinstance(value, list) else []
+        return value if isinstance(value, list) else [] 
     except (ValueError, SyntaxError):
         return []
 
@@ -108,8 +109,11 @@ def _parse_bool_field(raw: str) -> bool:
 
 
 def load_metadata(csv_path: Path) -> list:
-    """Read metadata.csv into a list of dicts, one per agent, with the
-    list/bool columns converted back from their CSV string form."""
+    """
+    csv_path: path to metadata.csv
+
+    Returns a list of dicts, one per agent.
+    """
     with csv_path.open("r", encoding="utf-8", newline="") as f:
         rows = list(csv.DictReader(f))
 
@@ -124,10 +128,10 @@ def load_metadata(csv_path: Path) -> list:
 
 def find_job_listing_pdf(job_title: str, job_listings_dir: Path = JOB_LISTINGS_DIR):
     """
-    job_title is the Title Case folder name (e.g. "Computer Repair
-    Technician"); job listing PDFs are job_listing_<slug>.pdf with an
-    all-lowercase, underscore-joined slug (e.g.
-    job_listing_computer_repair_technician.pdf)
+    job_title: the Title Case folder name (e.g. "Computer Repair Technician"); 
+    job_listings_dir: directory in which all job listing PDFs are stored
+    
+    job listing PDFs are job_listing_<slug>.pdf with an all-lowercase, underscore-joined slug.
     """
     slug = job_title.strip().lower().replace(" ", "_")
     candidate = job_listings_dir / f"job_listing_{slug}.pdf"
@@ -135,14 +139,14 @@ def find_job_listing_pdf(job_title: str, job_listings_dir: Path = JOB_LISTINGS_D
 
 
 def load_submission(job_title: str, candidate: str, submission_dir: Path):
-    """Load one data/rewrite_results/<job_title>/<candidate>/ folder.
+    """
+    Load one data/rewrite_results/<job_title>/<candidate>/ folder.
 
-    Returns (RewriteSubmission, None) or (None, "<reason>") - a missing
-    piece (no metadata.csv, no matching job listing, a row's .txt file
-    absent) is reported to the caller to warn-and-skip rather than raising 
-    -- one bad submission should not stop the rest of the batch.
+    Returns (RewriteSubmission, None) or (None, "<reason>") in the case of a bad submission 
+    (no metadata.csv, no matching job listing, a row's .txt file absent)
     """
     csv_path = submission_dir / "metadata.csv"
+
     if not csv_path.is_file():
         return None, f"no metadata.csv in {submission_dir}"
 
@@ -158,7 +162,7 @@ def load_submission(job_title: str, candidate: str, submission_dir: Path):
     for row in rows:
         agent_model = row.get("agent_model", "")
         text_path = submission_dir / f"{safe_filename_part(agent_model)}.txt"
-        if not text_path.is_file():
+        if not text_path.is_file(): 
             return None, f"metadata.csv lists agent {agent_model!r} but {text_path.name} is missing"
         row["text"] = text_path.read_text(encoding="utf-8")
         rewrites.append(row)
@@ -174,8 +178,8 @@ def load_submission(job_title: str, candidate: str, submission_dir: Path):
 
 def discover_submissions(results_dir: Path = REWRITE_RESULTS_DIR) -> list[tuple]:
     """
-    Every (job_title, candidate, submission_dir) under
-    data/rewrite_results/<job_title>/<candidate>/, sorted.
+    Returns a sorted list of (job_title, candidate, submission_dir) tuples for every 
+    data/rewrite_results/<job_title>/<candidate>/ folder
     """
     if not results_dir.is_dir():
         return []
@@ -193,7 +197,7 @@ def discover_submissions(results_dir: Path = REWRITE_RESULTS_DIR) -> list[tuple]
 def _format_rewrite_block(label: str, row: dict) -> str:
     """
     label: used in building the prompt ("REWRITE <label>", e.g. "REWRITE A")
-    row: RewriteSubmission.rewrites (one row of metadata.csv + text)
+    row: RewriteSubmission.rewrites (one row of metadata.csv + rewrite text)
     """
     flags = (f"rejected={row['rejected']}  "
              f"used_fallback={row['used_fallback']}  "
@@ -301,7 +305,7 @@ def _valid(parsed: dict, agent_names: list) -> bool:
 
 
 def call_judge_with_retries(prompt: str, agent_names: list, model: str, host: str,
-                             num_predict: int, temperature: float, timeout: int,
+                             num_predict: int, timeout: int,
                              max_retries: int, num_ctx: int = DEFAULT_NUM_CTX):
     """
     Call the judge model, retrying on a parse failure or a reply that
@@ -315,7 +319,7 @@ def call_judge_with_retries(prompt: str, agent_names: list, model: str, host: st
         attempt += 1
         parsed, error = call_ollama_json(
             model, prompt, num_predict=num_predict, keep_alive="5m", #TODO
-            host=host, temperature=temperature, timeout=timeout, num_ctx=num_ctx,
+            host=host, timeout=timeout, num_ctx=num_ctx,
         )
         if error and error.startswith("REQUEST ERROR"):
             sys.exit(f"err: could not get a response from ollama at {host} ({error}). "
@@ -365,7 +369,6 @@ def _parse_args():
                      help="Context window size in tokens (default: %(default)s). "
                           "Judge prompts (job listing + every rewrite) can exceed "
                           "Ollama's 4096-token default, causing a 400 error.")
-    ap.add_argument("--temperature", type=float, default=0.2)
     ap.add_argument("--timeout", type=int, default=3600)
     ap.add_argument("--max-retries", type=int, default=3)
     ap.add_argument("--force", action="store_true",
@@ -413,7 +416,7 @@ def main():
         start = time.time()
         parsed, error = call_judge_with_retries(
             prompt, agent_names, args.model, args.host,
-            num_predict=args.num_predict, temperature=args.temperature,
+            num_predict=args.num_predict,
             timeout=args.timeout, max_retries=args.max_retries, num_ctx=args.num_ctx,
         )
         print(f"  done in {time.time() - start:.1f}s")

@@ -1,9 +1,10 @@
-#!/usr/bin/env python3
 """
-judge.py
+judge.py 
+
+The judge of the council.
 
 aggregate_results.py -- turns raw per-model/per-job files 
-into one combined file per candidate-per-job 
+into one combined file per candidate-per-job (prepares data for the judge)
 
 Takes candidate.json file with a job listing PDF, and sends them to a local Ollama model 
 (e.g. deepseek-r1:8b) acting as a "judge" to produce a single, independent final
@@ -68,7 +69,6 @@ DEFAULT_HOST = "http://localhost:11434/api/chat"
 DEFAULT_NUM_PREDICT = 4096
 DEFAULT_MAX_RETRIES = 3
 DEFAULT_KEEP_ALIVE = "0m"
-DEFAULT_TEMPERATURE = 0.2
 DEFAULT_TIMEOUT = 3600
 
 # =====================================================================
@@ -117,10 +117,6 @@ def _parse_args():
     parser.add_argument(
         "--keep-alive", default=DEFAULT_KEEP_ALIVE,
         help=f"How long Ollama keeps the judge model loaded after this call (default: '{DEFAULT_KEEP_ALIVE}'). "
-    )
-
-    parser.add_argument(
-        "--temperature",type=float,default=DEFAULT_TEMPERATURE
     )
 
     parser.add_argument(
@@ -340,9 +336,7 @@ def build_judge_prompt(job_text, summaries, candidate_name, essential=None, keep
                         format_essential_for_prompt(essential))
 
 
-def call_judge(prompt, model, host, num_predict, keep_alive,
-               temperature=0.2,timeout=3600,
-               ):
+def call_judge(prompt, model, host, num_predict, keep_alive,timeout=3600):
     """
     Call the judge model via shared ollama_utils helper.
 
@@ -357,7 +351,6 @@ def call_judge(prompt, model, host, num_predict, keep_alive,
         num_predict=num_predict,
         keep_alive=keep_alive,
         host=host,
-        temperature=temperature,
         timeout = timeout,
     )
 
@@ -367,8 +360,7 @@ def call_judge(prompt, model, host, num_predict, keep_alive,
 
     return parsed,error
 
-def call_judge_with_retries(prompt, model, host, num_predict, keep_alive,
-                             temperature=0.2, timeout=3600, max_retries=3):
+def call_judge_with_retries(prompt, model, host, num_predict, keep_alive, timeout=3600, max_retries=3):
     """
     Call judge model, retry if its reply doesn't parse as a JSON object 
     (PARSE ERROR from ollama_utils). This method is only triggered by a parse faillure. 
@@ -383,7 +375,6 @@ def call_judge_with_retries(prompt, model, host, num_predict, keep_alive,
             prompt, model, host,
             num_predict=num_predict,
             keep_alive=keep_alive,
-            temperature=temperature,
             timeout=timeout,
         )
         if not error:
@@ -397,7 +388,7 @@ def call_judge_with_retries(prompt, model, host, num_predict, keep_alive,
 def judge_candidate(job_text, summaries, candidate_name, essential=None, *,
                     model=DEFAULT_MODEL, host=DEFAULT_HOST,
                     num_predict=DEFAULT_NUM_PREDICT, keep_alive=DEFAULT_KEEP_ALIVE,
-                    temperature=DEFAULT_TEMPERATURE, timeout=DEFAULT_TIMEOUT,
+                    timeout=DEFAULT_TIMEOUT,
                     max_retries=DEFAULT_MAX_RETRIES, keep_scores=False):
     """
     Judge one candidate with the prompt and call settings main() uses by
@@ -416,7 +407,6 @@ def judge_candidate(job_text, summaries, candidate_name, essential=None, *,
             prompt, model, host,
             num_predict=num_predict,
             keep_alive=keep_alive,
-            temperature=temperature,
             timeout=timeout,
             max_retries=max_retries,
         )
@@ -479,7 +469,6 @@ def main():
         prompt, args.model, args.host,
         num_predict=args.num_predict,
         keep_alive=args.keep_alive,
-        temperature=args.temperature,
         timeout=args.timeout,
         max_retries=args.max_retries
     )
