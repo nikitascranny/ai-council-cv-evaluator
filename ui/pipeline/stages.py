@@ -194,9 +194,8 @@ def rewrite_stage(cv_text, job_title, scorer, deps, candidate: str = "",
     A rejected rewrite is a result about the rewriting model, not an error: it
     means the paraphrase introduced a fact the original did not contain.
 
-    rewriter_model is passed through to probe() explicitly - left to its own
-    default, probe() paraphrases on the 14b even when the rest of the run is
-    in fast mode, and a memory-constrained machine cannot load it.
+    rewriter_model is passed through to probe() explicitly, so the run's
+    Settings decide which model paraphrases rather than probe()'s own default.
     """
     yield Event("rewrite", "start", {"job_title": job_title}, candidate=candidate)
     started = time.time()

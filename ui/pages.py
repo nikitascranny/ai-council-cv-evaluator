@@ -133,12 +133,6 @@ _REVIEWER_OPTIONS = (
      "done. The report shows both scores, the difference, and a highlighted "
      "diff of exactly what changed. Roughly doubles the time per candidate. "
      "(Called the phrasing-sensitivity probe elsewhere in the project.)"),
-    ("fast", False, "Use smaller, faster models",
-     "Runs every stage on qwen2.5:7b instead of the larger defaults "
-     "(qwen2.5:14b and phi4 for the council, deepseek-r1:8b for the judge). "
-     "Much quicker, and it still runs on a machine that cannot load the big "
-     "models - but the scores are rougher, so use it for a dry run or a demo "
-     "rather than for results you intend to report."),
 )
 
 _CV_PICKER_SCRIPT = """
