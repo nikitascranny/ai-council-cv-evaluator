@@ -15,6 +15,7 @@ mock that assumes the old contract still holds.
 """
 
 import csv
+import pytest
 import sys
 from pathlib import Path
 
@@ -334,3 +335,146 @@ class TestSaveResults:
         assert dir_a != dir_b
         assert (dir_a / "phi4.txt").read_text(encoding="utf-8") == "result for job A"
         assert (dir_b / "phi4.txt").read_text(encoding="utf-8") == "result for job B"
+
+
+# ---------------- rewrite_cv on Ollama Cloud ----------------
+
+class TestRewriteCvCloud:
+    """profile="cloud": the cloud pair, with each slot falling back to its
+    local partner when its cloud call fails."""
+
+    @pytest.fixture(autouse=True)
+    def _guard_passes(self, monkeypatch):
+        monkeypatch.setattr(rv2, "rejection_reasons", lambda *a, **k: [])
+        monkeypatch.setattr(rv2, "advisory_caps_runs", lambda *a, **k: [])
+        monkeypatch.setenv(rv2.CLOUD_API_KEY_ENV, "test-key")
+
+    def _record_calls(self, monkeypatch, fail=()):
+        """call_ollama_text that records every call and fails the models named."""
+        calls = []
+
+        def fake_call(model, prompt, **kw):
+            calls.append((model, kw))
+            if model in fail:
+                return {}, "REQUEST ERROR: 429 Client Error: Too Many Requests"
+            if "stats" in kw:
+                kw["stats"].update(prompt_eval_count=100, eval_count=50)
+            return f"text from {model}", None
+
+        monkeypatch.setattr(rv2, "call_ollama_text", fake_call)
+        return calls
+
+    def test_the_default_profile_is_still_the_local_pair(self, monkeypatch):
+        calls = self._record_calls(monkeypatch)
+
+        results = rv2.rewrite_cv("cv", "Role", "Candidate")
+
+        assert [r.agent_model for r in results] == ["phi4", "qwen2.5:14b"]
+        assert [r.provider for r in results] == ["local", "local"]
+        # The local call is exactly the one v2 always made.
+        assert [kw for _, kw in calls] == [{"num_predict": rv2.REWRITE_NUM_PREDICT}] * 2
+
+    def test_an_unknown_profile_is_refused(self):
+        with pytest.raises(ValueError):
+            rv2.rewrite_cv("cv", "Role", "Candidate", profile="gpu-farm")
+
+    def test_cloud_runs_the_cloud_pair_on_ollama_com_with_the_key(self, monkeypatch):
+        calls = self._record_calls(monkeypatch)
+
+        results = rv2.rewrite_cv("cv", "Role", "Candidate", profile="cloud")
+
+        assert [r.agent_model for r in results] == ["gpt-oss:120b", "gemma4:31b"]
+        assert [r.provider for r in results] == ["cloud", "cloud"]
+        assert all(r.replaced_cloud_model is None for r in results)
+        for _, kw in calls:
+            assert kw["host"] == "https://ollama.com/api/chat"
+            assert kw["headers"] == {"Authorization": "Bearer test-key"}
+            assert kw["keep_alive"] is None
+            assert kw["num_predict"] == rv2.CLOUD_NUM_PREDICT
+
+    def test_only_gpt_oss_is_told_how_hard_to_think(self, monkeypatch):
+        calls = self._record_calls(monkeypatch)
+
+        rv2.rewrite_cv("cv", "Role", "Candidate", profile="cloud")
+
+        think = {model: kw.get("think") for model, kw in calls}
+        assert think == {"gpt-oss:120b": "low", "gemma4:31b": None}
+
+    def test_cloud_tokens_are_added_up_across_the_retry(self, monkeypatch):
+        self._record_calls(monkeypatch)
+        checked = []
+
+        def first_draft_rejected(original, rewritten, job_title):
+            checked.append(rewritten)
+            return ["invented"] if len(checked) == 1 else []
+
+        monkeypatch.setattr(rv2, "rejection_reasons", first_draft_rejected)
+
+        result = rv2.rewrite_cv("cv", "Role", "Candidate", profile="cloud")[0]
+
+        assert result.retried is True
+        assert (result.tokens_in, result.tokens_out) == (200, 100)
+
+    def test_a_failed_cloud_agent_is_replaced_by_its_local_partner(self, monkeypatch):
+        self._record_calls(monkeypatch, fail={"gemma4:31b"})
+
+        results = rv2.rewrite_cv("cv", "Role", "Candidate", profile="cloud")
+
+        assert [r.agent_model for r in results] == ["gpt-oss:120b", "qwen2.5:14b"]
+        assert results[0].provider == "cloud"
+        stand_in = results[1]
+        assert stand_in.provider == "local"
+        assert stand_in.replaced_cloud_model == "gemma4:31b"
+        assert "429" in stand_in.cloud_error
+        assert stand_in.error is None
+        assert stand_in.rewritten_text == "text from qwen2.5:14b"
+
+    def test_once_the_cloud_fails_the_rest_of_the_run_stays_local(self, monkeypatch):
+        """A dead connection or a spent plan fails the next call the same way,
+        and a timeout would make the candidate wait for it twice."""
+        calls = self._record_calls(monkeypatch, fail={"gpt-oss:120b"})
+
+        results = rv2.rewrite_cv("cv", "Role", "Candidate", profile="cloud")
+
+        assert [model for model, _ in calls] == ["gpt-oss:120b", "phi4", "qwen2.5:14b"]
+        assert [r.agent_model for r in results] == ["phi4", "qwen2.5:14b"]
+        assert [r.replaced_cloud_model for r in results] == ["gpt-oss:120b", "gemma4:31b"]
+        assert all("429" in r.cloud_error for r in results)
+
+    def test_no_key_means_no_cloud_call_and_both_slots_run_locally(self, monkeypatch):
+        monkeypatch.delenv(rv2.CLOUD_API_KEY_ENV)
+        calls = self._record_calls(monkeypatch)
+
+        results = rv2.rewrite_cv("cv", "Role", "Candidate", profile="cloud")
+
+        assert [model for model, _ in calls] == ["phi4", "qwen2.5:14b"]
+        assert all(r.cloud_error == "OLLAMA_API_KEY is not set" for r in results)
+
+    def test_a_guard_rejection_on_the_cloud_is_a_result_not_an_outage(self, monkeypatch):
+        """The model answered - the guard just would not vouch for it. That is
+        a finding about the cloud model, and running a local one instead would
+        hide it."""
+        calls = self._record_calls(monkeypatch)
+        monkeypatch.setattr(rv2, "rejection_reasons", lambda *a, **k: ["invented"])
+
+        results = rv2.rewrite_cv("cv", "Role", "Candidate", profile="cloud")
+
+        assert {model for model, _ in calls} == {"gpt-oss:120b", "gemma4:31b"}
+        assert all(r.used_fallback and r.provider == "cloud" for r in results)
+        assert all(r.replaced_cloud_model is None for r in results)
+
+    def test_every_cloud_agent_falls_back_to_a_real_local_agent(self):
+        assert [local for _, local in rv2.CLOUD_AGENTS] == rv2.AGENT_MODELS
+
+    def test_metadata_csv_records_where_each_version_ran(self, tmp_path, monkeypatch):
+        monkeypatch.setattr(rv2, "REWRITE_RESULTS_FOLDER", tmp_path)
+        self._record_calls(monkeypatch, fail={"gemma4:31b"})
+        results = rv2.rewrite_cv("cv", "Role", "Candidate", profile="cloud")
+
+        saved_dir = rv2.save_results(results)
+
+        with (saved_dir / "metadata.csv").open(encoding="utf-8", newline="") as f:
+            rows = list(csv.DictReader(f))
+        assert [r["provider"] for r in rows] == ["cloud", "local"]
+        assert rows[1]["replaced_cloud_model"] == "gemma4:31b"
+        assert rows[0]["tokens_in"] == "100"
