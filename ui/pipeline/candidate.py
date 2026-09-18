@@ -17,8 +17,16 @@ guessed at: it returns TWO rewrites as plain text, not one document. It also
 takes only the job TITLE, not the listing text - v2 used to take the whole
 listing, and dropped it because the models borrowed facts from it. The .docx
 is made downstream in ui/docx_export.py, from whichever version the user picks.
+
+The candidate also picks where the rewrite runs: on this computer, or on
+Ollama Cloud's larger models. The judge and the scoring stay local either
+way. A cloud agent that fails is replaced by a local one inside v2 itself,
+so the page's job is to say so, not to arrange it.
 """
 
+import math
+import os
+import re
 import sys
 from pathlib import Path
 
@@ -34,6 +42,24 @@ _JUDGE_TEMPERATURE = 0.2
 _JUDGE_TIMEOUT = 3600
 _JUDGE_MAX_RETRIES = 3
 
+# The judge's context window grows to fit its prompt, up to this. Its prompt
+# holds the listing and both rewrites whole, and its own default (8192)
+# leaves too little room for a long CV twice over plus a reply - but every
+# token of context is memory on this machine, so it only grows when needed.
+_JUDGE_MAX_CTX = 16384
+# Characters per token, rounded down so the estimate of the prompt's size
+# errs high: too small a window drops part of a rewrite, too large costs a
+# little memory.
+_CHARS_PER_TOKEN = 3.5
+
+# rewriter_v2's profile names and the key its cloud agents read. Restated
+# rather than imported because rewriter_v2 is only imported on use (see
+# _load_rewriter); tests/unit-tests/test_candidate.py pins them together.
+LOCAL = "local"
+CLOUD = "cloud"
+REWRITERS = (LOCAL, CLOUD)
+CLOUD_API_KEY_ENV = "OLLAMA_API_KEY"
+
 
 class NotAvailable(RuntimeError):
     """Rewriter v2 cannot be reached."""
@@ -45,8 +71,8 @@ def _ensure_paths():
             sys.path.insert(0, str(directory))
 
 
-def _load_backend():
-    """rewriter_v2.rewrite_cv, imported on use rather than at module import.
+def _load_rewriter():
+    """The rewriter_v2 module, imported on use rather than at module import.
 
     Importing at module scope would make ui.pipeline.candidate - and so
     app.py - unimportable whenever rewriter/ is absent or its own imports
@@ -59,7 +85,71 @@ def _load_backend():
         raise NotAvailable(
             "rewriter v2 could not be loaded ({}). Candidate mode needs it to "
             "rewrite your CV.".format(exc))
-    return rewriter_v2.rewrite_cv
+    return rewriter_v2
+
+
+def _load_backend():
+    """rewriter_v2.rewrite_cv - see _load_rewriter."""
+    return _load_rewriter().rewrite_cv
+
+
+def cloud_status():
+    """None when the cloud rewriter can be offered, otherwise why not.
+
+    Only checks that a key is set. Whether ollama.com accepts it is found out
+    by the rewrite itself, which falls back to local if it does not -
+    checking here would put a network call in front of drawing a form.
+    """
+    if os.environ.get(CLOUD_API_KEY_ENV, "").strip():
+        return None
+    return ("No Ollama Cloud API key is set up. Set the {} environment "
+            "variable and restart the app.".format(CLOUD_API_KEY_ENV))
+
+
+def rewriter_choices() -> list:
+    """What the candidate form offers: each choice, the models it runs, and
+    why it cannot be picked (None if it can). The models come from v2 itself
+    so the form never names a model the rewrite would not run."""
+    rewriter_v2 = _load_rewriter()
+    return [
+        {"value": LOCAL, "models": list(rewriter_v2.AGENT_MODELS),
+         "unavailable": None},
+        {"value": CLOUD, "models": [c for c, _ in rewriter_v2.CLOUD_AGENTS],
+         "unavailable": cloud_status()},
+    ]
+
+
+_HTTP_STATUS = re.compile(r"\b(\d{3}) (?:Client|Server) Error")
+
+
+def describe_cloud_error(error) -> str:
+    """One plain sentence for why Ollama Cloud failed.
+
+    The raw text is a requests exception message - accurate, and useless to
+    a candidate. The status code is what tells the causes apart.
+    """
+    text = str(error or "")
+    if CLOUD_API_KEY_ENV in text and "not set" in text:
+        return "No Ollama Cloud API key is set up on this computer."
+    match = _HTTP_STATUS.search(text)
+    status = int(match.group(1)) if match else None
+    if status in (401, 403):
+        return ("Ollama Cloud did not accept the API key, or the model is not "
+                "included in the plan.")
+    if status == 429:
+        return ("Ollama Cloud's usage limit was reached, or it was busy with "
+                "another request.")
+    if status == 404:
+        return "Ollama Cloud does not offer that model."
+    if status is not None and status >= 500:
+        return "Ollama Cloud could not run the model just then."
+    if "timed out" in text.lower():
+        return "Ollama Cloud took too long to answer."
+    if "EMPTY RESPONSE" in text:
+        return "Ollama Cloud sent back an empty rewrite."
+    if "REQUEST ERROR" in text:
+        return "Ollama Cloud could not be reached - check the internet connection."
+    return "Ollama Cloud failed."
 
 
 ADDED = "added"
@@ -139,7 +229,7 @@ def is_rewrite(result) -> bool:
 
 
 def generate(cv_text: str, job_title: str, candidate_name: str = "",
-             backend=...):
+             backend=..., profile: str = LOCAL):
     """Both agents' attempts at one CV for one job.
 
     Takes text rather than paths: the caller has already parsed the CV once
@@ -148,14 +238,38 @@ def generate(cv_text: str, job_title: str, candidate_name: str = "",
     flags on each one are what the page and the .docx both key off, so
     flattening them into something smaller here would only lose the
     fallback status the UI is obliged to show.
+
+    profile is LOCAL or CLOUD. A local rewrite calls v2 exactly as it always
+    has; only a cloud one passes the profile on.
     """
+    if profile not in REWRITERS:
+        raise ValueError("unknown rewriter: {!r}".format(profile))
     backend = (BACKEND or _load_backend()) if backend is ... else backend
     if backend is None:
         raise NotAvailable("rewriter v2 is not wired up.")
-    results = backend(cv_text, job_title, candidate_name)
+    if profile == LOCAL:
+        results = backend(cv_text, job_title, candidate_name)
+    else:
+        results = backend(cv_text, job_title, candidate_name, profile=profile)
     if not results:
         raise NotAvailable("rewriter v2 returned no rewrites.")
     return list(results)
+
+
+def judge_num_ctx(prompt: str, num_predict: int, floor: int,
+                  ceiling: int = _JUDGE_MAX_CTX) -> int:
+    """A context window big enough for the judge's prompt and its reply.
+
+    The window holds both: a prompt that fills it leaves the reply no room,
+    and one that overflows it loses part of a rewrite before the judge reads
+    it. Never below the judge's own default, so a short prompt runs exactly
+    as it did; rounded up to a multiple of 2048 so nearby prompt sizes share
+    a window rather than each reloading the model at a slightly different
+    one.
+    """
+    needed = math.ceil(len(prompt) / _CHARS_PER_TOKEN) + num_predict
+    needed = math.ceil(needed / 2048) * 2048
+    return max(floor, min(needed, ceiling))
 
 
 def _load_feedback_backend():
@@ -179,13 +293,16 @@ def _load_feedback_backend():
             job_title=job_title, candidate=candidate_name, job_pdf=None,
             rewrites=rows)
         names = [row["agent_model"] for row in rows]
+        prompt = judge.build_prompt(job_text, submission)
         try:
             return judge.call_judge_with_retries(
-                judge.build_prompt(job_text, submission), names,
+                prompt, names,
                 judge.DEFAULT_MODEL, judge.DEFAULT_HOST,
                 num_predict=judge.DEFAULT_NUM_PREDICT,
                 temperature=_JUDGE_TEMPERATURE, timeout=_JUDGE_TIMEOUT,
-                max_retries=_JUDGE_MAX_RETRIES, num_ctx=judge.DEFAULT_NUM_CTX)
+                max_retries=_JUDGE_MAX_RETRIES,
+                num_ctx=judge_num_ctx(prompt, judge.DEFAULT_NUM_PREDICT,
+                                      judge.DEFAULT_NUM_CTX))
         except SystemExit as exc:
             # The judge exits the process when Ollama is unreachable - right
             # for its CLI batch, where every submission would fail the same

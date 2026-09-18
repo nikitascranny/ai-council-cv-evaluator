@@ -194,9 +194,8 @@ def rewrite_stage(cv_text, job_title, scorer, deps, candidate: str = "",
     A rejected rewrite is a result about the rewriting model, not an error: it
     means the paraphrase introduced a fact the original did not contain.
 
-    rewriter_model is passed through to probe() explicitly - left to its own
-    default, probe() paraphrases on the 14b even when the rest of the run is
-    in fast mode, and a memory-constrained machine cannot load it.
+    rewriter_model is passed through to probe() explicitly, so the run's
+    Settings decide which model paraphrases rather than probe()'s own default.
     """
     yield Event("rewrite", "start", {"job_title": job_title}, candidate=candidate)
     started = time.time()
@@ -233,16 +232,24 @@ def rewrite_v2_stage(cv_text, job_title, candidate_name, generate):
     Both agents failing is not an exception here: v2 records the failure on
     each result's .error and returns them anyway, and the page shows that
     rather than a blank screen.
+
+    A cloud run whose cloud agents failed says which local models stood in
+    for them, so the board does not show a cloud run that quietly went local.
+    Left out when nothing was replaced, which is every local run.
     """
     yield Event("rewrite_v2", "start", {"job_title": job_title},
                 candidate=candidate_name)
     started = time.time()
     results = generate(cv_text, job_title, candidate_name)
-    yield Event("rewrite_v2", "done",
-                {"agents": [r.agent_model for r in results],
-                 "fallbacks": [r.agent_model for r in results if r.used_fallback],
-                 "errors": [r.error for r in results if getattr(r, "error", None)]},
-                time.time() - started, candidate_name)
+    detail = {"agents": [r.agent_model for r in results],
+              "fallbacks": [r.agent_model for r in results if r.used_fallback],
+              "errors": [r.error for r in results if getattr(r, "error", None)]}
+    replaced = ["{} (for {})".format(r.agent_model, r.replaced_cloud_model)
+                for r in results if getattr(r, "replaced_cloud_model", None)]
+    if replaced:
+        detail["ran_locally_instead"] = replaced
+    yield Event("rewrite_v2", "done", detail, time.time() - started,
+                candidate_name)
     return results
 
 
