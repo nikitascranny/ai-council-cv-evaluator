@@ -379,7 +379,7 @@ ROOT = Path(__file__).resolve().parent.parent
 CV_DIR = ROOT / "Batch1" / "CVs"
 JOB_DIR = ROOT / "Batch1" / "Job Listings"
 OUT = ROOT / "Results" / "rewriter_v1.jsonl"
-# The council the team actually runs. The probe is a sanity check on that
+# The council the evaluator actually runs. The probe is a sanity check on that
 # ranking, so scoring it with smaller models measures a system nobody ships.
 DEFAULT_SCORER_MODELS = ["qwen2.5:14b", "phi4"]
 
@@ -388,8 +388,8 @@ def title_from_slug(slug: str) -> str:
     """job_listing_startup_fullstack_engineer -> "Startup Fullstack Engineer".
 
     The slug, not the title printed inside the PDF. The PDF titles are messier
-    ("Founding Full-Stack Engineer (#14)") and the slug is what Akram's and
-    Nikita's results files are already keyed by, so this keeps keys aligned.
+    ("Founding Full-Stack Engineer (#14)") and the slug is what the council
+    and judge results files are already keyed by, so this keeps keys aligned.
     """
     return slug.replace("job_listing_", "").replace("_", " ").title()
 

@@ -1,8 +1,8 @@
-"""The seam between our runner and the team's modules.
+"""The seam between the pipeline runner and the evaluator modules.
 
 The console app looked for integration/, which the September reorg replaced
 with the committed evaluator/. Every runner takes a Deps so tests never import
-the team's code or reach a model.
+the evaluator code or reach a model.
 """
 
 import pytest
@@ -21,7 +21,7 @@ def test_deps_can_be_built_entirely_from_fakes():
 
 
 def test_team_deps_points_at_evaluator_not_integration(tmp_path):
-    """The reorg moved the team's code; the old path is a dead directory."""
+    """The reorg moved the evaluator code; the old path is a dead directory."""
     with pytest.raises(MissingTeamCode, match="evaluator"):
         team_deps(root=tmp_path)
 

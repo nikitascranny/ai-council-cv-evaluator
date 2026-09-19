@@ -1,7 +1,7 @@
 """Where the pipeline's collaborators come from.
 
 The console app's _integration() looked for an integration/ directory holding
-the team's code vendored from their branches. The September reorg committed
+the evaluator code vendored from feature branches. The September reorg committed
 that code to evaluator/ instead, and left _integration() pointing at a path
 that no longer exists. This is its replacement.
 
@@ -12,7 +12,7 @@ So the modules this resolves against now come from four directories, not two,
 and common/ is the one that must exist for anything here to import at all.
 
 Runners take a Deps rather than importing any of this directly, so the test
-suite never loads the team's modules and never reaches Ollama.
+suite never loads the evaluator modules and never reaches Ollama.
 """
 
 import sys

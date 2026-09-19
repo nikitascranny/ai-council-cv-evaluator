@@ -93,7 +93,7 @@ python -m pytest -q
 
 Every stage that would otherwise need Ollama is tested against an injected
 fake (`ui/pipeline/deps.py`'s `Deps`), so the suite needs no model and no network
-access. A handful of tests do import the team's real modules to check the
+access. A handful of tests do import the real `evaluator/` modules to check the
 import wiring (`evaluator/` — the parser, evaluator, judge and essential-
 requirements code) but do not call a model.
 

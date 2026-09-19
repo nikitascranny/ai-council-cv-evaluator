@@ -28,7 +28,7 @@ import txt_cv_parser  # noqa: E402
 
 
 def parse_stage(cv_path, deps, candidate: str = ""):
-    """Our parser. Runs first because everything downstream reads its output."""
+    """The structured PDF parser. Runs first because everything downstream reads its output."""
     yield Event("parse", "start", {"path": str(cv_path)}, candidate=candidate)
     started = time.time()
     cv = deps.load_cv(cv_path)
@@ -124,7 +124,7 @@ def essential_in_prompt(essential) -> bool:
 
     The rule is judge.format_essential_for_prompt's - no result, a failed
     check or an empty summary is left out - restated rather than imported,
-    because stages reach the team's Ollama-calling modules only through Deps.
+    because stages reach the evaluator's Ollama-calling modules only through Deps.
     tests/unit-tests/test_stages.py pins the two together.
     """
     if not essential or essential.get("error"):

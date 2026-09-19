@@ -12,7 +12,7 @@ import json
 
 OLLAMA_HOST = "http://localhost:11434"
 
-# The team's real models.
+# The production models.
 COUNCIL_MODELS = ["qwen2.5:14b", "phi4"]
 ESSENTIAL_MODEL = "qwen2.5:7b"
 JUDGE_MODEL = "deepseek-r1:8b"

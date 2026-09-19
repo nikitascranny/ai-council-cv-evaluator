@@ -1,6 +1,6 @@
 """Candidate mode's seam onto rewriter v2.
 
-v2 is another team member's work: given a CV and a job listing it runs two
+Given a CV and a job listing, rewriter v2 runs two
 independent rewriting agents and returns both attempts, each carrying the
 fact guard's verdict. The UI shows both and lets the candidate download the
 one they want as a Word document.

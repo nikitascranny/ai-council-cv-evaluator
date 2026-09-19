@@ -1,8 +1,8 @@
-"""Finding the PDFs, on the layout the team committed.
+"""Finding the PDFs on the committed repo layout.
 
 Both corpora live under data/: job listings in data/job-listings, CVs in
-data/cvs/<batch>. Nikita committed the CVs there on 2026-09-06, so every
-clone has them and no local setup is needed. An absent corpus is still
+data/cvs/<batch>. Both are committed, so every clone has them and no local
+setup is needed. An absent corpus is still
 reported rather than raised - a shallow or partial checkout is possible.
 """
 
