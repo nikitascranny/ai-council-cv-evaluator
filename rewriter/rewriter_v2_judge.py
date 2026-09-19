@@ -22,7 +22,8 @@ candidate per job - not this file):
         metadata.csv          - one row per agent (RewriteResult fields,
                                  minus the CV text itself)
         <agent_model>.txt     - that agent's rewritten CV, filename derived
-                                 from the model name via safe_filename_part()
+                                 from the model name via results_io.safe_path_part()
+                                 (the same rule rewriter_v2.save_results writes it with)
 
 Output, one folder per submission, mirroring the input layout:
 
@@ -57,7 +58,7 @@ _ROOT_DIR = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(_ROOT_DIR / "common"))
 
 from ollama_utils import call_ollama_json  # noqa: E402
-from results_io import save_json, safe_filename_part  # noqa: E402
+from results_io import save_json, safe_path_part  # noqa: E402
 from document_utils import extract_text_from_pdf  # noqa: E402
 
 # Directory constants
@@ -161,7 +162,7 @@ def load_submission(job_title: str, candidate: str, submission_dir: Path):
     rewrites = []
     for row in rows:
         agent_model = row.get("agent_model", "")
-        text_path = submission_dir / f"{safe_filename_part(agent_model)}.txt"
+        text_path = submission_dir / f"{safe_path_part(agent_model)}.txt"
         if not text_path.is_file(): 
             return None, f"metadata.csv lists agent {agent_model!r} but {text_path.name} is missing"
         row["text"] = text_path.read_text(encoding="utf-8")

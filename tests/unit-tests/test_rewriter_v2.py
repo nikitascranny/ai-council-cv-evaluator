@@ -59,48 +59,48 @@ class TestBuildRewritePrompt:
         assert prompt.index("cv") < prompt.index("INVENTED information") or "cv" in prompt
 
 
-# ---------------- _safe_folder_name ----------------
+# ---------------- safe_path_part (results_io, as rewriter_v2 uses it) ----------------
 
 class TestSafeFolderName:
     def test_leaves_simple_name_untouched(self):
-        assert rv2._safe_folder_name("Alex Park") == "Alex Park"
+        assert rv2.safe_path_part("Alex Park") == "Alex Park"
 
     def test_replaces_colon(self):
         # The exact NTFS alternate-data-stream bug: a colon in a model
         # tag like "qwen2.5:14b" must not survive into a filename.
-        assert ":" not in rv2._safe_folder_name("qwen2.5:14b")
+        assert ":" not in rv2.safe_path_part("qwen2.5:14b")
 
     def test_replaces_slash_and_backslash(self):
-        result = rv2._safe_folder_name("Path/With\\Slashes")
+        result = rv2.safe_path_part("Path/With\\Slashes")
         assert "/" not in result and "\\" not in result
 
     def test_keeps_hyphen_underscore_parens_dots_and_spaces(self):
         name = "Full-Stack (Startup) Engineer_v2.1"
-        assert rv2._safe_folder_name(name) == name
+        assert rv2.safe_path_part(name) == name
 
     def test_keeps_version_dot_in_model_name(self):
         # Dots must survive - only ":" (the NTFS trap) needs stripping.
-        assert rv2._safe_folder_name("qwen2.5") == "qwen2.5"
-        assert rv2._safe_folder_name("qwen2.5:14b") == "qwen2.5_14b"
+        assert rv2.safe_path_part("qwen2.5") == "qwen2.5"
+        assert rv2.safe_path_part("qwen2.5:14b") == "qwen2.5_14b"
 
     def test_strips_leading_and_trailing_whitespace(self):
-        assert rv2._safe_folder_name("  Trailing Dots ") == "Trailing Dots"
+        assert rv2.safe_path_part("  Trailing Dots ") == "Trailing Dots"
 
     def test_strips_trailing_dot(self):
         # A trailing "." is invalid in a Windows filename/foldername even
         # though a mid-string "." is fine.
-        assert rv2._safe_folder_name("Trailing Dot.") == "Trailing Dot"
+        assert rv2.safe_path_part("Trailing Dot.") == "Trailing Dot"
 
     def test_empty_name_falls_back(self):
-        assert rv2._safe_folder_name("") == "unnamed"
+        assert rv2.safe_path_part("") == "unnamed"
 
     def test_whitespace_only_name_falls_back(self):
-        assert rv2._safe_folder_name("   ") == "unnamed"
+        assert rv2.safe_path_part("   ") == "unnamed"
 
     def test_colon_only_name_does_not_fall_back(self):
         # Colons become underscores, which are valid characters - the
         # result is non-empty, so this should NOT hit the "unnamed" path.
-        assert rv2._safe_folder_name("::::") == "____"
+        assert rv2.safe_path_part("::::") == "____"
 
 
 # ---------------- RewriteResult ----------------

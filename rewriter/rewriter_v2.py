@@ -46,6 +46,7 @@ sys.path.insert(0, str(ROOT_DIR / "common"))
 from document_utils import load_cv
 from ollama_utils import call_ollama_text, load_env_file
 from fact_guard import rejection_reasons, advisory_caps_runs
+from results_io import safe_path_part
 
 
 CVS_FOLDER = ROOT_DIR / "data" / "cvs" / "Batch1"
@@ -308,24 +309,6 @@ def _rewrite_on_cloud(cv_text: str, job_title: str, candidate_name: str) -> list
     return results
 
 
-def _safe_folder_name(name: str) -> str:
-    """
-    Job titles and candidate names end up as path components. They come
-    from filename-derived strings (see job_title_from_filename in
-    run_batch.py and cv_path.stem in main()) so this is mostly a
-    belt-and-braces pass - strip anything that isn't safe on disk rather
-    than trust the caller never hands us a stray "/" or ":".
-    """
-    # "." is deliberately kept: it's safe mid-name on every OS we care
-    # about (Windows/macOS/Linux) and this sanitizer is also applied to
-    # agent_model, where version-numbered tags like "qwen2.5" or
-    # "qwen2.5:14b" need their dot to survive - only the trailing-dot
-    # case (stripped below) and characters like ":" are actually unsafe.
-    keep = "-_(). "
-    cleaned = "".join(c if (c.isalnum() or c in keep) else "_" for c in name)
-    return cleaned.strip().strip(".") or "unnamed"
-
-
 def save_results(results: list[RewriteResult]):
     """
     Saves the rewritten CVs in individual text files and stores the metadata 
@@ -338,8 +321,8 @@ def save_results(results: list[RewriteResult]):
         return None
 
     # Determine job title / candidate name and create the target directory
-    job_title = _safe_folder_name(results[0].job_title)
-    candidate_name = _safe_folder_name(results[0].candidate)
+    job_title = safe_path_part(results[0].job_title)
+    candidate_name = safe_path_part(results[0].candidate)
     target_dir = REWRITE_RESULTS_FOLDER / job_title / candidate_name
     target_dir.mkdir(parents=True, exist_ok=True)
 
@@ -350,7 +333,7 @@ def save_results(results: list[RewriteResult]):
         # an alternate-data-stream separator, not a literal character. That
         # silently splits the write into a 0-byte visible file plus a
         # hidden stream holding the actual text, so sanitize before use.
-        safe_model_name = _safe_folder_name(r.agent_model)
+        safe_model_name = safe_path_part(r.agent_model)
         text_file_path = target_dir / f"{safe_model_name}.txt"
         with text_file_path.open("w", encoding="utf-8") as f:
             f.write(r.rewritten_text)

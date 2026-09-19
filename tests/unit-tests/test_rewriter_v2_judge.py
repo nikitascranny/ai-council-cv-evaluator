@@ -147,7 +147,7 @@ class TestLoadSubmission:
             writer.writerows(rows)
         if write_texts:
             for row in rows:
-                text_path = sub_dir / f"{rvj.safe_filename_part(row['agent_model'])}.txt"
+                text_path = sub_dir / f"{rvj.safe_path_part(row['agent_model'])}.txt"
                 text_path.write_text(f"CV text for {row['agent_model']}", encoding="utf-8")
         return sub_dir
 
@@ -224,6 +224,31 @@ class TestLoadSubmission:
         assert len(submission.rewrites) == 2
         assert submission.rewrites[0]["text"] == "CV text for phi4"
         assert submission.rewrites[1]["text"] == "CV text for qwen2.5:14b"
+
+    @patch("rewriter_v2_judge.find_job_listing_pdf")
+    def test_reads_back_what_rewriter_v2_save_results_writes(self, mock_find, tmp_path, monkeypatch):
+        import rewriter_v2 as rv2
+
+        mock_find.return_value = tmp_path / "job.pdf"
+        monkeypatch.setattr(rv2, "REWRITE_RESULTS_FOLDER", tmp_path / "results")
+        results = [
+            rv2.RewriteResult(candidate="ALEX PARK", job_title="Cashier", agent_model=model,
+                              original_text="original", rewritten_text=f"rewrite by {model}",
+                              reasons=["dropped a fact"], length_ratio=1.1, similarity=0.8)
+            for model in ("phi4", "qwen2.5:14b", "gpt-oss:120b")
+        ]
+        rv2.save_results(results)
+
+        [(job_title, candidate, sub_dir)] = rvj.discover_submissions(tmp_path / "results")
+        submission, reason = rvj.load_submission(job_title, candidate, sub_dir)
+
+        assert reason is None
+        assert (submission.job_title, submission.candidate) == ("Cashier", "ALEX PARK")
+        assert [row["agent_model"] for row in submission.rewrites] == \
+            ["phi4", "qwen2.5:14b", "gpt-oss:120b"]
+        assert [row["text"] for row in submission.rewrites] == \
+            ["rewrite by phi4", "rewrite by qwen2.5:14b", "rewrite by gpt-oss:120b"]
+        assert submission.rewrites[1]["reasons"] == ["dropped a fact"]
 
 
 # ---------------------------------------------------------------------------
