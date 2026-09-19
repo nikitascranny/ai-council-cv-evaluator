@@ -71,7 +71,7 @@ CLOUD_AGENTS = [("gpt-oss:120b", "phi4"), ("gemma4:31b", "qwen2.5:14b")]
 CLOUD_HOST = "https://ollama.com/api/chat"
 CLOUD_API_KEY_ENV = "OLLAMA_API_KEY"
 # gpt-oss always reasons before it answers, and those tokens count against
-# num_predict - so the cloud budget is larger than the local one, and its
+# num_predict so the cloud budget is larger than the local one, and its
 # reasoning is kept to "low" so it cannot spend the budget thinking.
 CLOUD_NUM_PREDICT = 16384
 CLOUD_THINK = {"gpt-oss:120b": "low"}
