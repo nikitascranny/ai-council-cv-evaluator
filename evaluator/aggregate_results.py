@@ -1,6 +1,9 @@
-#!/usr/bin/env python3
 """
 aggregate_results.py
+
+judge.py expects the following grouping: for ONE candidate applying to ONE job,
+all the independent models' evaluations of that candidate, combined into a single file. 
+This script does that regrouping for command line runs (i.e. preparing the data for the judge).
 
 Evaluate_CV.py produces one JSON file per (model, job listing) pair, e.g.:
 
@@ -29,9 +32,6 @@ candidate:
       ("error": "..." only when the check failed)
     }
 
-judge.py needs the opposite grouping: for ONE candidate applying to ONE job,
-all the independent models' evaluations of that candidate, combined into a
-single file. This script does that regrouping.
 
 Output layout:
 
@@ -43,15 +43,15 @@ gains a "model" field (for audit trail only -- judge.py never sends the
 model name to the judge model, and never reads "score" by default either).
 
 If an essential-requirements check exists for that candidate and job, it is
-added as the LAST entry, with its original fields untouched plus
+added as the last entry, with its original fields untouched plus
 "type": "essential_requirements" instead of a "model" field. It is not a
 reviewer's summary, and judge.py uses that marker to give it its own section
 of the prompt rather than numbering it among the reviewers. A check whose
-candidate has no model evaluations for that job is skipped with a warning:
-judge.py has nothing to judge without them.
+candidate has no model evaluations for that job is skipped with a warning
+(judge.py has nothing to judge without them)
 
 Usage:
-    # point at a directory of *__job_listing_*.json files
+    # point at a directory of *__job_listing_*.json files produced by Evaluate_CV.py
     python aggregate_results.py --results-dir results/ --outdir combined/
 
     # include the essential-requirements check
@@ -63,8 +63,8 @@ Usage:
     # recognised by its name and joined the same way
     python aggregate_results.py --results results/*.json --outdir combined/
 
-    # also strip "score" at aggregation time (judge.py
-    # already ignores it by default when building its prompt)
+    # also strip "score" at aggregation time 
+    # (judge.py already ignores it by default when building its prompt)
     python aggregate_results.py --results-dir results/ --outdir combined/ --drop-scores
 """
 
@@ -77,8 +77,8 @@ from collections import defaultdict
 from pathlib import Path
 
 # "<model>__job_listing_<job_slug>.json" -- model names may themselves
-# contain underscores/dots (e.g. "qwen2.5_14b"), so we split on the fixed
-# "__job_listing_" marker rather than trying to regex the model name shape.
+# contain underscores/dots (e.g. "qwen2.5_14b"), so split on the fixed
+# "__job_listing_" marker rather than trying to regex the model name shape
 SPLIT_MARKER = "__job_listing_"
 
 REQUIRED_KEYS = {"candidate", "summary"}
@@ -88,9 +88,9 @@ REQUIRED_KEYS = {"candidate", "summary"}
 ESSENTIAL_PREFIX = "essential_requirements"
 
 # Marks the essential-requirements entry in a combined file. Must equal
-# judge.ESSENTIAL_TYPE - kept as a copy rather than imported, because
-# importing judge.py would pull in the Ollama and PDF helpers this script has
-# no use for. tests/unit-tests/test_aggregate_results.py pins the two together.
+# judge.ESSENTIAL_TYPE - kept as a copy rather than imported 
+# (importing judge.py pulls in the Ollama and PDF helpers this script does not use) 
+# tests/unit-tests/test_aggregate_results.py pins the two together.
 ESSENTIAL_TYPE = "essential_requirements"
 
 
@@ -184,9 +184,7 @@ def aggregate(files, drop_scores=False):
 
     Model entries are tagged with "model", in file order. Each candidate's
     essential-requirements check, if any, is appended after them, tagged
-    with "type": ESSENTIAL_TYPE - see the module docstring for why it is
-    marked rather than tagged as a model, and why a check with no model
-    entries to join is skipped.
+    with "type": ESSENTIAL_TYPE (NOT marked as a model)
 
     Returns (combined, stats); stats counts files used and skipped, and
     lists the (job_slug, candidate_slug) pairs whose check was skipped.

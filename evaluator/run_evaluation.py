@@ -1,6 +1,9 @@
 """
 run_evaluation.py
 
+This script is used for experimentation and introspection into the results of the 
+evaluation council. 
+
 The whole evaluation pipeline over a folder of CVs and a folder of job
 listings, in one command:
 
@@ -375,7 +378,7 @@ def preflight(options, log, fetch=fetch_ollama_models) -> bool:
         council = [] if options.cloud else list(Evaluate_CV.EVALUATOR_MODELS)
         wanted = [*council, Evaluate_CV.ESSENTIAL_REQUIREMENTS_MODEL, *wanted]
     if options.cloud and not os.environ.get(judge.CLOUD_API_KEY_ENV, "").strip():
-        problems.append(f"--cloud needs {judge.CLOUD_API_KEY_ENV}: add {judge.CLOUD_API_KEY_ENV}=<key> "
+        problems.append(f"--cloud needs {judge.CLOUD_API_KEY_ENV}: set {judge.CLOUD_API_KEY_ENV} in terminal or add {judge.CLOUD_API_KEY_ENV}=<key> "
                         f"to .env in the repo root (create a key at https://ollama.com/settings/keys)")
     if wanted:
         problems += check_models(wanted, fetch)
