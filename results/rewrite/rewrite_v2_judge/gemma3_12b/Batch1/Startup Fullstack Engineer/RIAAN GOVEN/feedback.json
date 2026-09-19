@@ -1,0 +1,33 @@
+{
+  "candidate": "RIAAN GOVEN",
+  "job_title": "Startup Fullstack Engineer",
+  "recommended_rewrite": "qwen2.5:14b",
+  "recommendation_reason": "Both rewrites heavily relied on fallback from the original CV, indicating limited ability to re-frame the content effectively. However, Rewrite B exhibited slightly less egregious errors and retained more of the candidate's experience without introducing obviously false information flagged by the fact-check. Rewrite A’s use of “0.1”, “0.4%” and other numerical inaccuracies demonstrates a failure to grasp the specifics of the job description's compensation details. While both rewrites suffered, Rewrite B’s output was marginally better, suggesting a marginally stronger understanding of the prompt and more accurate translation of existing information into a more targeted narrative, even if it still needs significant human review.",
+  "career_roadmap": [
+    {
+      "step": "Apply for the role with Rewrite B",
+      "action": "Submit the revised CV (with careful human review to address fact-check issues) and prepare for the interview process, highlighting the leadership and digital product management experience."
+    },
+    {
+      "step": "Post-Offer Review",
+      "action": "Regardless of the outcome, seek detailed feedback from the hiring team about strengths and areas for improvement."
+    },
+    {
+      "step": "Deepen Distributed Systems Knowledge",
+      "action": "Focus on mastering concepts like Kafka, TimescaleDB and Redis - take online courses, contribute to open-source projects or build personal projects utilizing these technologies."
+    },
+    {
+      "step": "Expand Cloud Experience",
+      "action": "Gain proficiency with cloud platforms (AWS, Azure, GCP) and containerization technologies (Docker, Kubernetes), which are essential for production environments at scale."
+    },
+    {
+      "step": "Target Senior Fullstack Roles",
+      "action": "After 1-2 years at Pulsegrid, pursue Senior Fullstack Engineer roles at other startups or larger tech companies, leveraging the experience gained in building and scaling real-time data platforms."
+    }
+  ],
+  "alternative_careers": [
+    "Technical Product Manager",
+    "Lead Frontend Engineer",
+    "DevOps Engineer"
+  ]
+}

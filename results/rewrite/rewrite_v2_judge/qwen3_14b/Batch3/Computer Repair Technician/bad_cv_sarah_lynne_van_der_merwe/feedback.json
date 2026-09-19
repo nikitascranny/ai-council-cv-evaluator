@@ -1,0 +1,25 @@
+{
+  "candidate": "bad_cv_sarah_lynne_van_der_merwe",
+  "job_title": "Computer Repair Technician",
+  "recommended_rewrite": "qwen2.5:14b",
+  "recommendation_reason": "Rewrite B (qwen2.5:14b) aligns better with the job listing’s practical focus, even if it lacks explicit technical repair details. While both rewrites fail to address core computer repair skills, Rewrite B’s competencies (customer service, inventory management) and mention of leadership/initiative-taking are marginally more relevant to the role’s customer-facing and organizational needs. Rewrite A’s buzzword-heavy language and dropped numerical achievements (e.g., 100% attendance) make it less credible and misaligned with the job’s emphasis on hands-on technical ability and reliability. The fact-check results further validate Rewrite B’s superior adherence to the original CV’s factual content.",
+  "career_roadmap": [
+    {
+      "step": "Apply for the role with Rewrite B",
+      "action": "Submit Rewrite B to Mick@brendaandmicksrepairs-example.co.uk, emphasizing the customer service and problem-solving competencies listed, even if technical repair experience is not explicitly stated."
+    },
+    {
+      "step": "Upskill in Practical Repair Skills",
+      "action": "Enroll in a short-term computer repair certification program (e.g., CompTIA A+ or local vocational courses) to gain hands-on experience with hardware diagnostics, OS troubleshooting, and basic repairs."
+    },
+    {
+      "step": "Target Entry-Level Tech Roles",
+      "action": "Apply for roles such as IT Support Specialist, Help Desk Technician, or Computer Technician Assistant at small businesses or repair shops to build relevant experience and demonstrate technical proficiency."
+    }
+  ],
+  "alternative_careers": [
+    "IT Support Specialist",
+    "Customer Service Representative (Tech Industry)",
+    "Technical Sales Associate"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "candidate": "RIAAN GOVEN",
+  "job_title": "Computer Repair Technician",
+  "recommended_rewrite": "phi4",
+  "recommendation_reason": "Both rewrites fail to align with the job's requirements, but phi4's rewrite slightly better addresses the need for practical repair skills by mentioning 'reseat RAM' and 'wipe a laptop' in the advisory notes, even if it's buried in irrelevant content. However, neither rewrite removes the candidate's unrelated digital marketing experience, which is a major mismatch. The fact-checks show both models fell back to the original text, but phi4's flagged issues include 'do RAM' and 'essential requirements' which are marginally more relevant than qwen2.5:14b's '500%' metric. This is a weak recommendation, as neither rewrite is suitable for the role.",
+  "career_roadmap": [
+    {
+      "step": "Pursue Technical Certification",
+      "action": "Enroll in a certified computer repair course (e.g., CompTIA A+) to gain practical skills in hardware repair, OS installation, and customer service for technical issues."
+    },
+    {
+      "step": "Apply for Entry-Level IT Roles",
+      "action": "Target roles like 'Help Desk Technician' or 'IT Support Specialist' at small businesses or repair shops to build hands-on experience and demonstrate commitment to transitioning from digital marketing to technical fields."
+    },
+    {
+      "step": "Network in Tech Communities",
+      "action": "Join local IT professional groups or online forums (e.g., Reddit's r/techsupport) to gain visibility, learn repair techniques, and explore mentorship opportunities."
+    }
+  ],
+  "alternative_careers": [
+    "IT Project Manager",
+    "Technical Sales Representative",
+    "Digital Marketing IT Consultant"
+  ]
+}

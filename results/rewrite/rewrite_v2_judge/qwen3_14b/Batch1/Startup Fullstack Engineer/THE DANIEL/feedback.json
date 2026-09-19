@@ -1,0 +1,25 @@
+{
+  "candidate": "THE DANIEL",
+  "job_title": "Startup Fullstack Engineer",
+  "recommended_rewrite": "qwen2.5:14b",
+  "recommendation_reason": "Rewrite B (qwen2.5:14b) aligns more directly with the job's emphasis on technical skills (SQL, Python, system testing) and concise presentation of relevant experience, even if the candidate's background is not a perfect match. While Rewrite A (phi4) added tailored sections, its focus on South African courses and 'systems design' may dilute the candidate's actual technical qualifications. Rewrite B's brevity and explicit mention of 'business requirements into technical details' better reflects the job's need for translating specifications into code, despite the lack of full-stack engineering experience.",
+  "career_roadmap": [
+    {
+      "step": "Apply for the role with Rewrite B",
+      "action": "Submit the qwen2.5:14b rewrite to Pulsegrid, emphasizing the 'technical details' and 'system testing' experience as alignment with the job's full-stack requirements."
+    },
+    {
+      "step": "Upskill in Full-Stack Technologies",
+      "action": "Enroll in a React/TypeScript and Go backend development course (e.g., Udemy, Coursera) to bridge the gap between current skills and the job's technical requirements."
+    },
+    {
+      "step": "Build a Side Project",
+      "action": "Create a portfolio project demonstrating full-stack development (e.g., a real-time data dashboard using React, Go, and Kafka) to showcase technical capabilities."
+    }
+  ],
+  "alternative_careers": [
+    "Technical Product Manager",
+    "Data Analyst (Energy Sector)",
+    "Systems Analyst in Smart Building Technologies"
+  ]
+}

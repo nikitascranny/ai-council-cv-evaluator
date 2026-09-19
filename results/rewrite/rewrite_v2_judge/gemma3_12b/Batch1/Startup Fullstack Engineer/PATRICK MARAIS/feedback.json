@@ -1,0 +1,33 @@
+{
+  "candidate": "PATRICK MARAIS",
+  "job_title": "Startup Fullstack Engineer",
+  "recommended_rewrite": "qwen2.5:14b",
+  "recommendation_reason": "While both rewrites attempted to tailor the CV, Rewrite B produced a result virtually identical to the original, which is a significant issue given that it received a 'rejected' fact-check and a high 'used_fallback' score.  Rewrite A attempted to rewrite significantly more, and consequently introduced many more factual errors and unhelpful phrasing, rendering it unusable. The core issue is that both models struggled significantly with the candidate's unusually detailed and complex background, indicating a lack of understanding of how to translate the experience into a compelling narrative for a full-stack engineering role. Rewrite B, despite its failure to significantly alter the content, at least presented the original information without introducing further inaccuracies or removing critical details. This shows a better (though incomplete) understanding of the task’s fundamental constraints.",
+  "career_roadmap": [
+    {
+      "step": "Apply for the role with Rewrite B",
+      "action": "Submit the CV as is, highlighting transferable skills (leadership, risk mitigation, problem-solving) in the cover letter and addressing the lack of direct tech experience directly."
+    },
+    {
+      "step": "Bridge the Tech Gap",
+      "action": "Focus intensely on mastering the tech stack listed in the job description (React/TypeScript, Go, Kafka, TimescaleDB).  Build a personal project utilizing these technologies and contribute to open-source projects to gain practical experience."
+    },
+    {
+      "step": "Network and Learn",
+      "action": "Attend local tech meetups, connect with engineers on LinkedIn, and seek mentorship from experienced developers.  Actively seek feedback on code and technical approaches."
+    },
+    {
+      "step": "Target Mid-Level Engineer Roles",
+      "action": "After 6-12 months of dedicated learning and project building, begin applying for mid-level full-stack engineer roles, framing the experience in national security and leadership as valuable problem-solving and communication skills."
+    },
+    {
+      "step": "Specialize (Optional)",
+      "action": "Consider specializing in a niche area like real-time data processing or observability, leveraging experience in security and investigations to build expertise."
+    }
+  ],
+  "alternative_careers": [
+    "Cybersecurity Consultant",
+    "Security Operations Manager",
+    "Technical Project Manager"
+  ]
+}

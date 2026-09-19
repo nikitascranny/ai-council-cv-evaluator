@@ -1,0 +1,21 @@
+{
+  "candidate": "GEOFF NITSCHKE",
+  "job_title": "Startup Fullstack Engineer",
+  "recommended_rewrite": "qwen2.5:14b",
+  "recommendation_reason": "While both rewrites are factually accurate and similar in wording, Rewrite B (qwen2.5:14b) is slightly more concise and avoids the verbose phrasing in Rewrite A (phi4), which could risk diluting the candidate's focus. However, neither rewrite aligns with the job’s core requirements (e.g., full-stack engineering, Go/TypeScript, distributed systems), as the candidate’s background is in UX research. The fact-check results confirm accuracy, but the mismatch between the candidate’s skills and the role is critical. The recommendation is based on structural clarity rather than relevance to the job.",
+  "career_roadmap": [
+    {
+      "step": "Apply for the role with Rewrite B",
+      "action": "Submit the qwen2.5:14b rewrite, but explicitly address the skills gap in the cover letter (e.g., requesting consideration for a role that values research and user insight over engineering)."
+    },
+    {
+      "step": "Upskill in engineering",
+      "action": "Enroll in a full-stack development bootcamp or course (e.g., freeCodeCamp, The Odin Project) to gain foundational experience in React/TypeScript and Go."
+    }
+  ],
+  "alternative_careers": [
+    "UX Researcher at a Tech Startup",
+    "Product Manager in Fintech",
+    "User Experience Strategist in Energy Sector"
+  ]
+}

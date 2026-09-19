@@ -1,0 +1,25 @@
+{
+  "candidate": "PONTUS PONTIOUS",
+  "job_title": "Startup Fullstack Engineer",
+  "recommended_rewrite": "qwen2.5:14b",
+  "recommendation_reason": "Rewrite B (qwen2.5:14b) directly addresses the job's essential requirements by explicitly mentioning self-study in TypeScript/React and Go (key tech stack for the role), distributed systems knowledge (Kafka, Redis), and aligns with the startup's need for rapid iteration and technical depth. The fact-check shows higher wording similarity (0.80) and no retries, indicating better alignment with the job's language and priorities. Rewrite A (phi4) focuses on financial/analytical skills without clear tech-stack relevance, and its lower wording similarity (0.44) and need for retries suggest weaker alignment with the role's demands.",
+  "career_roadmap": [
+    {
+      "step": "Apply for the role with Rewrite B",
+      "action": "Submit the qwen2.5:14b rewrite to Pulsegrid, emphasizing the self-study in Go/TypeScript, distributed systems knowledge, and readiness for fast-paced startup environments."
+    },
+    {
+      "step": "Build technical depth in Go/TypeScript",
+      "action": "Enroll in advanced courses or contribute to open-source projects using Go and React/TypeScript to strengthen practical experience in the required tech stack."
+    },
+    {
+      "step": "Pursue production systems experience",
+      "action": "Seek internships or freelance opportunities involving backend service operations (e.g., observability, incident response) to meet the job's 'operated services in production' requirement."
+    }
+  ],
+  "alternative_careers": [
+    "Data Engineer (Real-Time Systems)",
+    "Tech Startup Product Manager",
+    "Energy Sector Software Consultant"
+  ]
+}

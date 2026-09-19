@@ -1,0 +1,25 @@
+{
+  "candidate": "bad_cv_jason_muller",
+  "job_title": "Computer Repair Technician",
+  "recommended_rewrite": "phi4",
+  "recommendation_reason": "Rewrite A (phi4) better aligns with the job listing’s emphasis on practical repair skills, customer service with older patrons, and reliability. It explicitly mentions explaining technical concepts without jargon, a key requirement, and directly ties the candidate’s experience to the role’s needs. While both rewrites passed fact-checks, Rewrite A’s structured format and targeted language (e.g., ‘high-reliability and patience,’ ‘local resident’) make it more compelling for this hands-on, customer-facing role. Rewrite B’s casual tone and vague skills (e.g., ‘Microsoft Word, mostly’) feel less aligned with the job’s practical demands.",
+  "career_roadmap": [
+    {
+      "step": "Apply for the role with Rewrite A",
+      "action": "Submit the phi4 rewrite to Mick via email, emphasizing the ‘Relevance to Brenda & Mick’s’ section and practical repair experience mentioned in the skills list."
+    },
+    {
+      "step": "Build targeted technical skills",
+      "action": "Enroll in a short-course certification program for basic PC repair (e.g., CompTIA A+ or local community college courses) to strengthen credibility for future roles."
+    },
+    {
+      "step": "Transition to senior technician roles",
+      "action": "Use this position as a stepping stone to apply for roles with higher technical complexity (e.g., IT support specialist or certified repair technician) after gaining 6–12 months of on-the-job experience."
+    }
+  ],
+  "alternative_careers": [
+    "IT Support Specialist",
+    "Technical Support Analyst",
+    "Electronics Repair Technician"
+  ]
+}

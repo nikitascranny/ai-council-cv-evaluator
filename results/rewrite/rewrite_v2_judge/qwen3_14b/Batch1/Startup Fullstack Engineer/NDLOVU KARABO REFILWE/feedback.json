@@ -1,0 +1,21 @@
+{
+  "candidate": "NDLOVU KARABO REFILWE",
+  "job_title": "Startup Fullstack Engineer",
+  "recommended_rewrite": "qwen2.5:14b",
+  "recommendation_reason": "Both rewrites are identical in content and fact-check issues, but 'qwen2.5:14b' is selected arbitrarily as neither aligns with the job's technical requirements. The CV emphasizes records management and archives, lacking critical skills like React/TypeScript, Go, or distributed systems. Fact-check issues (e.g., dropped numbers) suggest poor attention to detail, which conflicts with the job's demand for precision. The candidate's background is misaligned with the role, making neither rewrite suitable.",
+  "career_roadmap": [
+    {
+      "step": "Pursue Technical Upskilling",
+      "action": "Enroll in courses for React/TypeScript, Go, and distributed systems (e.g., Kafka, Redis) to bridge the skills gap for fullstack engineering roles."
+    },
+    {
+      "step": "Transition to Tech-Adjacent Roles",
+      "action": "Target roles like Data Analyst or Systems Administrator, leveraging organizational and classification skills while building technical proficiency."
+    }
+  ],
+  "alternative_careers": [
+    "Data Analyst",
+    "Systems Administrator",
+    "Archival Data Manager"
+  ]
+}

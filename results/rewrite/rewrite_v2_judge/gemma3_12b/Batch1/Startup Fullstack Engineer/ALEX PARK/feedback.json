@@ -1,0 +1,29 @@
+{
+  "candidate": "ALEX PARK",
+  "job_title": "Startup Fullstack Engineer",
+  "recommended_rewrite": "qwen2.5:14b",
+  "recommendation_reason": "Rewrite B demonstrates a better alignment with the startup environment described in the job listing. While Rewrite A attempts to tailor the CV, it highlights test analyst experience which, while valuable, isn't the core need of this role. Rewrite B, with its focus on end-to-end responsibilities, problem-solving, and collaboration, better reflects the 'early culture' and hands-on nature of the position. Importantly, Rewrite B's fact-check result of 'rejected=False' and 'used_fallback=False' shows it’s more effectively extracting and highlighting the candidate’s relevant experience without creating inaccurate information, whereas Rewrite A had multiple flagged issues indicating poorer performance. The rewrite also preserves the core experience information while reformatting and reframing it to better resonate with the startup’s needs.",
+  "career_roadmap": [
+    {
+      "step": "Apply for the Role with Rewrite B",
+      "action": "Submit the application with the recommended CV, and prepare for the interview process. Focus on showcasing the ability to learn quickly, work independently, and handle ambiguous situations."
+    },
+    {
+      "step": "Post-Interview Skill Gap Analysis",
+      "action": "Regardless of outcome, identify areas where the interview highlighted skills gaps (e.g., Go, Kafka, TimeSeriesDB) and prioritize learning those."
+    },
+    {
+      "step": "Contribute to Open Source",
+      "action": "Begin contributing to open-source projects using Go or relevant technologies to demonstrate skills and familiarity, focusing on areas aligning with real-time data processing and infrastructure."
+    },
+    {
+      "step": "Mid-Level Fullstack Engineer (larger company)",
+      "action": "After 6-12 months, target mid-level fullstack engineer roles in more established companies to gain experience with larger codebases and more structured processes, while still incorporating learnings from the startup application. Focus on companies using Go or related technologies."
+    }
+  ],
+  "alternative_careers": [
+    "Backend Engineer (fintech)",
+    "DevOps Engineer",
+    "Technical Consultant"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "candidate": "NDLOVU KARABO REFILWE",
+  "job_title": "Startup Fullstack Engineer",
+  "recommended_rewrite": "qwen2.5:14b",
+  "recommendation_reason": "Rewrite B by model qwen2.5:14b is recommended because it addresses more of the key requirements and skills mentioned in the job listing, despite having some flagged issues. The rewrite successfully highlights the candidate's experience in records management, which is a relevant skill for the position. Although it fell back to the original text for some numbers, this does not significantly detract from its overall quality. In contrast, Rewrite A by model phi4 has more dropped numbers and issues, making it a less strong candidate.",
+  "career_roadmap": [
+    {
+      "step": "Apply with Rewrite B",
+      "action": "Submit the rewritten CV to the job listing, highlighting relevant skills and experiences."
+    },
+    {
+      "step": "Build cloud infrastructure skills",
+      "action": "Acquire experience and training in cloud infrastructure management, such as AWS or Azure, to enhance the candidate's chances of success in a startup environment."
+    },
+    {
+      "step": "Target DevOps or SRE roles",
+      "action": "Explore and target DevOps or SRE positions in the industry, leveraging the candidate's existing skills in records management and infrastructure, as well as the experience gained in a startup environment."
+    }
+  ],
+  "alternative_careers": [
+    "Data Engineer",
+    "Information Architect"
+  ]
+}

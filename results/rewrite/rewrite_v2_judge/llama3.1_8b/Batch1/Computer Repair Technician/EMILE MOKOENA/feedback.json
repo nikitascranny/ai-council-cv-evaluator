@@ -1,0 +1,29 @@
+{
+  "candidate": "EMILE MOKOENA",
+  "job_title": "Computer Repair Technician",
+  "recommended_rewrite": "qwen2.5:14b",
+  "recommendation_reason": "Rewrite B is the recommended choice because it better matches the requirements of the job listing. Although both rewrites are highly similar, Rewrite B is fact-checked as accurate (rejected=False), whereas Rewrite A had issues with dropped numbers and had to fall back to the original text. Additionally, Rewrite B includes a relevant section on Technical Support Volunteer experience, which is a key requirement for the Computer Repair Technician role. This experience demonstrates Emile's ability to provide basic computer repairs and customer service, aligning well with the job listing's essential requirements.",
+  "career_roadmap": [
+    {
+      "step": "Apply for the role with Rewrite B",
+      "action": "Emile should submit the rewritten CV (Rewrite B) to Brenda & Mick's Computer Repairs, highlighting his technical support volunteer experience and cloud engineering skills."
+    },
+    {
+      "step": "Build practical computer repair skills",
+      "action": "Emile should consider taking online courses or attending workshops to improve his hands-on computer repair skills, which are essential for the Computer Repair Technician role."
+    },
+    {
+      "step": "Pursue data recovery and hardware repair certifications",
+      "action": "To enhance his chances of success in the role, Emile should look into certifications like CompTIA A+ or equivalent, which can demonstrate his knowledge of computer hardware and data recovery techniques."
+    },
+    {
+      "step": "Target similar roles in the tech industry",
+      "action": "After gaining experience as a Computer Repair Technician, Emile can start looking for similar roles in the tech industry, such as Field Service Technician or IT Support Specialist, where he can apply his technical skills and customer service experience."
+    }
+  ],
+  "alternative_careers": [
+    "Technical Support Specialist",
+    "Field Service Engineer",
+    "IT Project Manager"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "candidate": "LERATO MUNCHE",
+  "job_title": "Computer Repair Technician",
+  "recommended_rewrite": "phi4",
+  "recommendation_reason": "The 'phi4' rewrite is more concise and accurate in its representation of the candidate's skills and experience, as indicated by the fact-check results. It clearly highlights the candidate's technical and project management expertise, while also showcasing their ability to work in diverse environments and with various stakeholders. This rewrite is particularly effective in conveying the candidate's value proposition as a skilled professional with a strong track record of success.",
+  "career_roadmap": [
+    {
+      "step": "Apply with Rewrite",
+      "action": "Submit the rewritten application to the role of Computer Repair Technician"
+    },
+    {
+      "step": "Develop Data Analysis Skills",
+      "action": "Take courses or attend workshops to develop expertise in data analysis, a skill increasingly valued in the tech industry"
+    },
+    {
+      "step": "Pursue a Role in IT Project Management",
+      "action": "Target roles that leverage the candidate's project management experience and skills, such as IT project coordinator or manager"
+    }
+  ],
+  "alternative_careers": [
+    "Digital Marketing Specialist",
+    "Technical Writer"
+  ]
+}

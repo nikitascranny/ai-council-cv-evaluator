@@ -1,0 +1,25 @@
+{
+  "candidate": "GEOFF NITSCHKE",
+  "job_title": "Computer Repair Technician",
+  "recommended_rewrite": "qwen2.5:14b",
+  "recommendation_reason": "Both rewrites focus on Geoff's UX research background, which is unrelated to the technical and customer service requirements of the Computer Repair Technician role. However, 'qwen2.5:14b' includes slightly more concise language and avoids some of the overly academic phrasing in 'phi4', making it marginally more aligned with the informal, practical tone of the job listing. Neither rewrite addresses the essential technical skills (e.g., hardware repair, Windows troubleshooting) or customer-facing competencies required by the role. The fact-check results confirm accuracy but do not mitigate the fundamental mismatch between Geoff's background and the job's needs.",
+  "career_roadmap": [
+    {
+      "step": "Apply for the role with Rewrite B",
+      "action": "Submit the 'qwen2.5:14b' CV to Mick, emphasizing any transferable skills (e.g., problem-solving, customer communication) while acknowledging the lack of direct technical experience."
+    },
+    {
+      "step": "Upskill in Technical Repair",
+      "action": "Enroll in a certified computer repair course (e.g., CompTIA A+) to gain practical skills in hardware troubleshooting, OS installation, and basic networking."
+    },
+    {
+      "step": "Pursue Entry-Level Repair Roles",
+      "action": "Apply for entry-level positions at computer repair shops or IT service providers to build hands-on experience and demonstrate commitment to the field."
+    }
+  ],
+  "alternative_careers": [
+    "UX Researcher in Tech",
+    "Product Designer in Fintech",
+    "Customer Experience Specialist in Retail"
+  ]
+}

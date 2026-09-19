@@ -1,0 +1,25 @@
+{
+  "candidate": "bad_cv_kevin_jones",
+  "job_title": "Computer Repair Technician",
+  "recommended_rewrite": "qwen2.5:14b",
+  "recommendation_reason": "Rewrite B (qwen2.5:14b) more directly addresses the job’s emphasis on practical repair skills and customer service, mentioning 'basic computer repair' in its employment history and aligning with the need for 'friendly and patient' communication. Though both rewrites have irrelevant content, Rewrite B’s fact-check indicates no fallbacks were needed, suggesting higher accuracy. Rewrite A’s personal statement about 'needing money' feels unprofessional, while its covering letter lacks specific technical relevance compared to Rewrite B’s concise focus on repair and customer interaction.",
+  "career_roadmap": [
+    {
+      "step": "Apply for the role with Rewrite B",
+      "action": "Submit the qwen2.5:14b CV to mick@brendaandmicksrepairs-example.co.uk, ensuring the 'basic computer repair' mention in employment history is emphasized and the personal statement’s flexibility aligns with the shop’s informal culture."
+    },
+    {
+      "step": "Build Technical Proficiency",
+      "action": "Enroll in a short course on PC hardware repair, Windows troubleshooting, or data recovery to strengthen practical skills required for the role and future opportunities."
+    },
+    {
+      "step": "Target Similar Roles",
+      "action": "Apply for part-time tech support roles at small businesses or libraries, focusing on positions requiring customer-facing technical assistance and hands-on repair experience."
+    }
+  ],
+  "alternative_careers": [
+    "IT Support Specialist",
+    "Help Desk Technician",
+    "Technical Sales Representative"
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "candidate": "bad_cv_sarah_lynne_van_der_merwe",
+  "job_title": "Computer Repair Technician",
+  "recommended_rewrite": "qwen2.5:14b",
+  "recommendation_reason": "Rewrite B is a better fit for the job listing, as it focuses on the candidate's actual experience in customer service, inventory management, and leadership, rather than exaggerating or misrepresenting their skills. The fact-check results for Rewrite B indicate that it was more accurate and didn't have to fall back to the original text, unlike Rewrite A.",
+  "career_roadmap": [
+    {
+      "step": "Apply for the role with Rewrite B",
+      "action": "Submit Rewrite B to Brenda & Mick's Computer Repairs and schedule an interview"
+    },
+    {
+      "step": "Develop technical skills",
+      "action": "Take online courses or attend workshops to learn basic PC/laptop repair skills, data recovery, and phone/tablet screen repairs"
+    },
+    {
+      "step": "Gather work experience in a related field",
+      "action": "Consider taking on a part-time job in a computer repair shop or a similar role to gain hands-on experience and build a network in the industry"
+    },
+    {
+      "step": "Pursue certifications or formal education",
+      "action": "Look into certification programs or formal education in computer science or a related field to enhance employability and career prospects"
+    }
+  ],
+  "alternative_careers": [
+    "IT Project Manager",
+    "Technical Support Specialist",
+    "Digital Marketing Specialist"
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "candidate": "bad_cv_jason_muller",
+  "job_title": "Startup Fullstack Engineer",
+  "recommended_rewrite": "qwen2.5:14b",
+  "recommendation_reason": "Rewrite B is significantly better than Rewrite A, despite having some odd phrasing. Rewrite A's objective is generic and unprofessional, and it frames the candidate’s past roles in a way that diminishes his abilities. Rewrite B’s objective is much more aligned with the startup culture described in the listing. While both rewrites struggled to convincingly translate the candidate's experience, Rewrite B at least attempts to connect past experiences (e.g., 'Crypto Entrepreneur') to the requirements of the role, mentioning market dynamics and risk management. Rewrite A's fact check failed, it used fallback, and it seems to be hallucinating a full rewrite based on what it thinks the cv *should* say, which is a substantial quality flaw. It's also important to note Rewrite B included the phrase 'Basic knowledge of TypeScript/React and Go', which, while slightly underselling the candidate, is more honest than inventing skills.",
+  "career_roadmap": [
+    {
+      "step": "Apply for the role with Rewrite B",
+      "action": "Submit application using the tailored CV, preparing for the outlined interview process (intro call, take-home/pair session, half-day onsite/virtual)."
+    },
+    {
+      "step": "Build Backend Fundamentals",
+      "action": "Focus on mastering Go programming; practice building REST APIs and understanding database interactions. Online courses and smaller projects would be valuable."
+    },
+    {
+      "step": "Dive into Event-Driven Architectures",
+      "action": "Dedicate time to learning Kafka and TimescaleDB in greater detail. Consider building a small-scale project that leverages these technologies, such as a simple data pipeline."
+    },
+    {
+      "step": "Level Up React/TypeScript",
+      "action": "While the listing mentioned Go as preferred, strengthening React/TypeScript skills will broaden opportunities and make the candidate more versatile. Focus on component architecture and state management."
+    },
+    {
+      "step": "Target Mid-Level Backend Roles",
+      "action": "After 1-2 years of focused development and experience, begin applying for mid-level backend engineer positions, ideally at companies utilizing technologies similar to Pulsegrid."
+    }
+  ],
+  "alternative_careers": [
+    "Blockchain Developer",
+    "Data Engineer",
+    "Financial Technology (FinTech) Software Engineer"
+  ]
+}

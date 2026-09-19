@@ -1,0 +1,29 @@
+{
+  "candidate": "PONTUS PONTIOUS",
+  "job_title": "Computer Repair Technician",
+  "recommended_rewrite": "qwen2.5:14b",
+  "recommendation_reason": "Rewrite B by qwen2.5:14b is recommended because it more effectively highlights the candidate's relevant skills and experience, such as customer service and technical support, while still maintaining factual accuracy. The fact-check results indicate that this rewrite did not invent or drop any facts and did not require a fallback to the original CV text.",
+  "career_roadmap": [
+    {
+      "step": "Apply for the role with Rewrite B",
+      "action": "Submit the rewritten CV and attend an informal interview with Mick"
+    },
+    {
+      "step": "Develop technical skills",
+      "action": "Take online courses or attend workshops to improve skills in areas such as PC/laptop repair, data recovery, and software troubleshooting"
+    },
+    {
+      "step": "Gain experience in customer service",
+      "action": "Volunteer or take on a part-time job in a customer-facing role to build confidence and skills in interacting with customers"
+    },
+    {
+      "step": "Pursue certification or further education",
+      "action": "Consider enrolling in a certification program or taking a course to improve technical knowledge and stay up-to-date with industry developments"
+    }
+  ],
+  "alternative_careers": [
+    "Technical Support Specialist",
+    "IT Project Manager",
+    "Data Analyst"
+  ]
+}

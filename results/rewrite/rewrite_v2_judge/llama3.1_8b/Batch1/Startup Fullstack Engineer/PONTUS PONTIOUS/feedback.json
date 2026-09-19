@@ -1,0 +1,29 @@
+{
+  "candidate": "PONTUS PONTIOUS",
+  "job_title": "Startup Fullstack Engineer",
+  "recommended_rewrite": "qwen2.5:14b",
+  "recommendation_reason": "Rewrite B is more closely tailored to the job listing, with additional skills section highlighting the candidate's efforts to transition into full-stack development. This rewrite also shows a better understanding of the job requirements, such as familiarity with event-driven architectures and distributed systems. Although Rewrite A has some minor issues, Rewrite B is more suitable for this job listing.",
+  "career_roadmap": [
+    {
+      "step": "Apply for the role with Rewrite B",
+      "action": "Submit the rewritten CV to the job listing and prepare for the interview process"
+    },
+    {
+      "step": "Build distributed systems skills",
+      "action": "Continue studying and practicing distributed systems, event-driven architectures, and programming languages like TypeScript, React, and Go"
+    },
+    {
+      "step": "Gain experience with cloud infrastructure",
+      "action": "Explore cloud platforms like AWS, GCP, or Azure and gain hands-on experience with their services and tools"
+    },
+    {
+      "step": "Target similar startup roles",
+      "action": "Look for other startup positions that match the candidate's skills and interests, and tailor the CV and cover letter for each application"
+    }
+  ],
+  "alternative_careers": [
+    "DevOps Engineer",
+    "Cloud Architect",
+    "Data Scientist"
+  ]
+}

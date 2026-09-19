@@ -1,0 +1,29 @@
+{
+  "candidate": "NDLOVU KARABO REFILWE",
+  "job_title": "Computer Repair Technician",
+  "recommended_rewrite": "qwen2.5:14b",
+  "recommendation_reason": "Both rewrites triggered fact-checking rejections and fallback, indicating limitations in the models' ability to accurately capture the candidate's complex experience. However, Rewrite B, while flagged for dropped numbers (which are minor compared to the core skill relevance), maintains a more coherent and readable structure overall. Rewrite A’s retained wording similarity to the original raises concerns about its genuine tailoring. Although both rewrites struggled, Rewrite B presents a slightly better basis for further editing to align precisely with the job description, and it avoids the potentially awkward phrasing of Rewrite A. The more detailed descriptions in Rewrite B better showcase the candidate’s transferable skills like problem solving and systems management, valuable in a repair setting despite the differences in context.",
+  "career_roadmap": [
+    {
+      "step": "Apply for the role with Rewrite B",
+      "action": "Tailor Rewrite B to directly address the 'Key Responsibilities' and 'Essential Requirements' in the job listing, focusing on keywords like 'diagnose', 'RAM upgrades', and 'customer service'"
+    },
+    {
+      "step": "Initial Role Success",
+      "action": "Excel in the Computer Repair Technician role, demonstrating reliability and a willingness to learn beyond the stated responsibilities, especially related to data recovery."
+    },
+    {
+      "step": "Upskill: Networking and Security",
+      "action": "Take online courses or certifications in basic networking and IT security. This builds on existing repair skills and adds value to the shop."
+    },
+    {
+      "step": "Advanced Repair/IT Support Role",
+      "action": "Seek opportunities within the repair shop for more complex tasks, or transition to a broader IT support role providing on-site or remote assistance."
+    }
+  ],
+  "alternative_careers": [
+    "IT Support Specialist",
+    "Data Archivist",
+    "Technical Trainer"
+  ]
+}

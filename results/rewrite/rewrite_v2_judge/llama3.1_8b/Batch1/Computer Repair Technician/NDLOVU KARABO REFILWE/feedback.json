@@ -1,0 +1,28 @@
+{
+  "candidate": "NDLOVU KARABO REFILWE",
+  "job_title": "Computer Repair Technician",
+  "recommended_rewrite": "qwen2.5:14b",
+  "recommendation_reason": "Rewrite B by model qwen2.5:14b is the better choice, despite being flagged for dropped numbers and national diploma, because it still closely matches the original CV and shows a good grasp of the candidate's experience and skills. The model did a good job of extracting relevant information and presenting it in a clear and concise manner. In contrast, Rewrite A by model phi4 dropped more numbers and had to fall back to the original CV, indicating that it may not have fully understood the candidate's experience and skills.",
+  "career_roadmap": [
+    {
+      "step": "Apply for the role with Rewrite B",
+      "action": "Submit Rewrite B to the job listing and prepare for an interview"
+    },
+    {
+      "step": "Develop technical skills",
+      "action": "Take online courses or attend workshops to learn about computer repair, hardware, and software troubleshooting"
+    },
+    {
+      "step": "Gain experience in a related field",
+      "action": "Volunteer to help friends or family with their computer issues or consider taking on a part-time job in a computer repair shop"
+    },
+    {
+      "step": "Pursue certifications or further education",
+      "action": "Consider obtaining certifications such as CompTIA A+ or pursuing a degree in computer science or a related field"
+    }
+  ],
+  "alternative_careers": [
+    "Data Analyst",
+    "IT Project Manager"
+  ]
+}

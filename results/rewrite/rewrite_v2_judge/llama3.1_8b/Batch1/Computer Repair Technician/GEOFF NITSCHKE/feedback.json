@@ -1,0 +1,25 @@
+{
+  "candidate": "GEOFF NITSCHKE",
+  "job_title": "Computer Repair Technician",
+  "recommended_rewrite": "qwen2.5:14b",
+  "recommendation_reason": "Rewrite B by model qwen2.5:14b is the recommended choice because it more closely matches the job listing's requirements and tone. While both rewrites are fact-checked as accurate, Rewrite B's wording is more aligned with the job's informal and conversational style. Additionally, Rewrite B highlights the candidate's relevant experience in repairing and designing digital products, which is more directly applicable to the Computer Repair Technician role.",
+  "career_roadmap": [
+    {
+      "step": "Apply for the role with Rewrite B",
+      "action": "Submit the rewritten CV to Brenda and Mick's Computer Repairs and attend an informal interview."
+    },
+    {
+      "step": "Build repair skills and experience",
+      "action": "Take online courses or attend workshops to learn about hardware repair, troubleshooting, and customer service."
+    },
+    {
+      "step": "Network with industry professionals",
+      "action": "Attend industry events or join online forums to connect with experienced repair technicians and learn about best practices."
+    }
+  ],
+  "alternative_careers": [
+    "Technical Support Specialist",
+    "IT Consultant",
+    "Digital Product Designer"
+  ]
+}

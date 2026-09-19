@@ -1,0 +1,28 @@
+{
+  "candidate": "LERATO MUNCHE",
+  "job_title": "Startup Fullstack Engineer",
+  "recommended_rewrite": "qwen2.5:14b",
+  "recommendation_reason": "Rewrite B ('qwen2.5:14b') best matches the job listing's requirements, highlighting the candidate's experience in project management, team leadership, and digital governance, while also showcasing their technical skills in software development and data analysis. This rewrite is more concise and focused than Rewrite A ('phi4'), and more relevant to the job listing than the original text. The fact-check results also indicate that Rewrite B is the most accurate representation of the candidate's qualifications.",
+  "career_roadmap": [
+    {
+      "step": "Apply for the role with Rewrite B",
+      "action": "Submit the application with Rewrite B and tailor the resume and cover letter to match the job listing's requirements."
+    },
+    {
+      "step": "Develop data analysis skills",
+      "action": "Take online courses or attend workshops to improve data analysis and visualization skills, and apply them to personal projects or volunteer work."
+    },
+    {
+      "step": "Gain experience in DevOps",
+      "action": "Participate in open-source projects or contribute to existing ones to gain hands-on experience with DevOps tools and practices."
+    },
+    {
+      "step": "Pursue a Master's in Computer Science",
+      "action": "Enroll in a Master's program in Computer Science to deepen technical knowledge and improve chances of getting hired as a full-stack engineer."
+    }
+  ],
+  "alternative_careers": [
+    "Digital Governance Specialist",
+    "Data Science Consultant"
+  ]
+}

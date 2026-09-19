@@ -1,0 +1,29 @@
+{
+  "candidate": "PATRICK MARAIS",
+  "job_title": "Startup Fullstack Engineer",
+  "recommended_rewrite": "qwen2.5:14b",
+  "recommendation_reason": "The qwen2.5:14b rewrite is more tailored to the job listing, addressing key requirements such as experience in TypeScript/React, Go, and distributed systems. While both rewrites were flagged for fact-check issues, qwen2.5:14b's adjustments better match the job's focus on hands-on experience with modern technologies. The phi4 rewrite, while attempting to address similar requirements, appears to have dropped some relevant details, resulting in a flagged fact-check.",
+  "career_roadmap": [
+    {
+      "step": "Apply with Rewrite B",
+      "action": "Submit the qwen2.5:14b-rewritten CV to the job listing and proceed with the application process."
+    },
+    {
+      "step": "Build Cloud Experience",
+      "action": "Gain hands-on experience with cloud computing platforms, such as AWS or GCP, to enhance the candidate's skills and make them more competitive for similar roles."
+    },
+    {
+      "step": "Pursue Cybersecurity Specialization",
+      "action": "Invest in courses, certifications, or further education that focuses on cybersecurity, aligning with the candidate's existing background and the growing demand in the field."
+    },
+    {
+      "step": "Target Senior Roles",
+      "action": "As the candidate gains more experience and develops their skills, they should aim for senior positions in startups or larger companies, leveraging their technical expertise and leadership abilities."
+    }
+  ],
+  "alternative_careers": [
+    "DevOps Engineer",
+    "Cybersecurity Consultant",
+    "Data Architect"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "candidate": "JORDAN VELDMAN",
+  "job_title": "Startup Fullstack Engineer",
+  "recommended_rewrite": "qwen2.5:14b",
+  "recommendation_reason": "Rewrite B explicitly includes critical technical stack elements from the job listing (React/TypeScript, Go, Kafka, TimescaleDB, Redis) that are essential for the role, despite the candidate's non-technical background. The fact-check confirms no fallback was needed, showing the model successfully tailored content to match requirements. Rewrite A lacks these specific tech mentions and focuses more on architectural experience, which is less aligned with the job's emphasis on full-stack engineering and distributed systems. Although shorter, Rewrite B's targeted skill alignment makes it stronger for this application.",
+  "career_roadmap": [
+    {
+      "step": "Apply for the role with Rewrite B",
+      "action": "Submit the qwen2.5:14b rewrite to Pulsegrid, emphasizing the technical stack alignment and willingness to transition into full-stack engineering despite the current background."
+    },
+    {
+      "step": "Build backend development expertise",
+      "action": "Take Go and distributed systems courses (e.g., Kafka, Redis), and contribute to open-source projects to demonstrate hands-on experience with the required tech stack."
+    },
+    {
+      "step": "Pursue a full-stack engineering role",
+      "action": "Target mid-level Fullstack Engineer positions at startups or scaleups to gain practical experience with production systems and agile development."
+    }
+  ],
+  "alternative_careers": [
+    "Cloud Solutions Architect",
+    "Technical Product Manager",
+    "Systems Engineer"
+  ]
+}

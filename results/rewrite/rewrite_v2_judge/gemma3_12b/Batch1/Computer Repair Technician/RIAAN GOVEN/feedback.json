@@ -1,0 +1,29 @@
+{
+  "candidate": "RIAAN GOVEN",
+  "job_title": "Computer Repair Technician",
+  "recommended_rewrite": "qwen2.5:14b",
+  "recommendation_reason": "Both rewrites are significantly overqualified for the role and heavily rely on fallback content, indicating that neither AI effectively tailored the CV. However, Rewrite B exhibits slightly better flow and attempts to present the candidate’s experience in a way that's somewhat more accessible. The fact that both models struggled so much and fell back on large sections of the original suggests the inherent mismatch between the candidate's expertise and the job's requirements. Rewrite B had fewer flagged issues, which, alongside the fact that both had rejected fact-checks, suggests it contained slightly fewer invented/altered facts compared to Rewrite A. Ultimately, presenting *any* version of this CV risks appearing either too ambitious or demonstrating a lack of understanding of the required role, however the slight increase in readability of Rewrite B makes it *slightly* preferable.",
+  "career_roadmap": [
+    {
+      "step": "Apply for the role with Rewrite B",
+      "action": "Submit Rewrite B with a cover letter acknowledging overqualification and expressing genuine interest in the hands-on experience and relaxed environment."
+    },
+    {
+      "step": "Gain Experience & Upskill",
+      "action": "Focus on building practical repair skills, particularly with common issues mentioned in the job description (RAM upgrades, screen replacements). Consider a short, local practical repair course, emphasizing customer interaction and troubleshooting."
+    },
+    {
+      "step": "Transition to a Junior Tech Role",
+      "action": "Once comfortable with the repair work, actively seek junior IT technician roles that leverage the existing digital marketing/product management experience, e.g., a technician role at a company with a strong online presence, or a combined tech support/social media/content creation role."
+    },
+    {
+      "step": "Refine Career Direction",
+      "action": "Evaluate enjoyment of the repair technician role. If the hands-on nature is preferred, consider specializing in a particular repair area. If the desire for more digital/management work remains, leverage the experience to transition back into a more aligned tech support/product management role."
+    }
+  ],
+  "alternative_careers": [
+    "IT Support Specialist",
+    "Technical Sales Representative",
+    "Digital Marketing Consultant (specializing in tech/SMB)"
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "candidate": "RIAAN GOVEN",
+  "job_title": "Startup Fullstack Engineer",
+  "recommended_rewrite": "qwen2.5:14b",
+  "recommendation_reason": "Rewrite B by model qwen2.5:14b is the recommended choice because it more accurately targets the job listing's requirements. Although it was flagged for the issue with the '500%' value, it still provides a more relevant and concise representation of the candidate's skills and experience. In contrast, Rewrite A by model phi4 has more issues with accuracy, including flagged values for '0.1', '0.4%', and '014'.",
+  "career_roadmap": [
+    {
+      "step": "Apply with Rewrite B",
+      "action": "Submit the revised CV with the qwen2.5:14b model to the job listing and complete the application process."
+    },
+    {
+      "step": "Build relevant skills",
+      "action": "Focus on gaining experience and building skills in areas such as full-stack development, event-driven architectures, and distributed systems fundamentals."
+    },
+    {
+      "step": "Target cloud-related roles",
+      "action": "Consider applying for roles in cloud-related areas, such as cloud architect or cloud engineer, where the candidate's existing skills can be leveraged and built upon."
+    },
+    {
+      "step": "Explore DevOps roles",
+      "action": "Look into DevOps roles, such as DevOps engineer or Release Engineer, where the candidate's understanding of production environments, metrics, tracing, and incident response can be applied."
+    }
+  ],
+  "alternative_careers": [
+    "Cloud Architect",
+    "DevOps Engineer",
+    "Product Manager (Technology)"
+  ]
+}

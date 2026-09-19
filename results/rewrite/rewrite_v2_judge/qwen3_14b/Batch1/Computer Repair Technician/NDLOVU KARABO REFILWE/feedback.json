@@ -1,0 +1,25 @@
+{
+  "candidate": "NDLOVU KARABO REFILWE",
+  "job_title": "Computer Repair Technician",
+  "recommended_rewrite": "qwen2.5:14b",
+  "recommendation_reason": "Both rewrites are identical and lack direct alignment with the job's practical repair requirements. However, 'qwen2.5:14b' was flagged for fewer date-related omissions compared to 'phi4' (e.g., '2014' and 'diploma' issues). Despite this, neither rewrite addresses the job's need for hands-on technical skills or customer service experience, as the candidate's background in records management is unrelated. The fallback to original text suggests limited adaptation to the role, but 'qwen2.5:14b' is selected arbitrarily as both are equally unsuitable.",
+  "career_roadmap": [
+    {
+      "step": "Apply for the role with Rewrite B",
+      "action": "Submit the CV using 'qwen2.5:14b' to the specified email, emphasizing transferable skills like problem-solving and attention to detail, while requesting an interview to demonstrate practical repair knowledge."
+    },
+    {
+      "step": "Upskill in Technical Repair",
+      "action": "Enroll in a short-course program (e.g., CompTIA A+ or hardware repair certifications) to gain hands-on experience with PC/laptop repairs, focusing on RAM, SSDs, and basic diagnostics."
+    },
+    {
+      "step": "Pursue IT Support Roles",
+      "action": "Transition to entry-level IT support or helpdesk roles to build technical and customer service experience, leveraging the candidate's organizational and communication skills."
+    }
+  ],
+  "alternative_careers": [
+    "IT Support Specialist",
+    "Data Management Analyst",
+    "Library Technologist"
+  ]
+}

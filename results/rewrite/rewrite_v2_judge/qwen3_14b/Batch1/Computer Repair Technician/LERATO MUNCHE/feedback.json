@@ -1,0 +1,25 @@
+{
+  "candidate": "LERATO MUNCHE",
+  "job_title": "Computer Repair Technician",
+  "recommended_rewrite": "qwen2.5:14b",
+  "recommendation_reason": "The 'qwen2.5:14b' rewrite more accurately aligned with the job listing's technical requirements by emphasizing relevant skills (e.g., hardware/software troubleshooting) and omitting unrelated roles (e.g., political candidacy, PR coordination). However, the candidate's CV still lacks direct technical experience, so the rewrite fell back to the original text. This highlights a quality signal: the rewrite correctly identified misalignment but could not fabricate relevant experience.",
+  "career_roadmap": [
+    {
+      "step": "Apply for the role with Rewrite B",
+      "action": "Submit the revised CV using the 'qwen2.5:14b' version, focusing on any minor technical overlaps (e.g., 'No-Code Development,' 'IT Project Management') while acknowledging gaps in hands-on repair experience."
+    },
+    {
+      "step": "Upskill in Technical Repair",
+      "action": "Enroll in a certified IT support or computer repair course (e.g., CompTIA A+, Google IT Support Professional Certificate) to build foundational technical skills required for the role."
+    },
+    {
+      "step": "Target Entry-Level Tech Roles",
+      "action": "Apply for roles like 'IT Support Specialist' or 'Help Desk Technician' to gain on-the-job experience before reapplying for Computer Repair Technician positions."
+    }
+  ],
+  "alternative_careers": [
+    "IT Project Manager",
+    "Communications Specialist in Tech Organizations",
+    "Policy Advisor for Digital Governance Initiatives"
+  ]
+}

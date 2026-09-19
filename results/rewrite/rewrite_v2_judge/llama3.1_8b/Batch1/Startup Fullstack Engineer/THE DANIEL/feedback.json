@@ -1,0 +1,29 @@
+{
+  "candidate": "THE DANIEL",
+  "job_title": "Startup Fullstack Engineer",
+  "recommended_rewrite": "qwen2.5:14b",
+  "recommendation_reason": "Rewrite B is a better fit for the Pulsegrid job listing. It is more concise and directly addresses the key responsibilities and essential requirements. The fact-check result shows that it did not fall back to the original text, indicating that the model was able to accurately extract and highlight the candidate's relevant experience and skills. In contrast, Rewrite A is longer and includes some information that is not directly relevant to the job listing.",
+  "career_roadmap": [
+    {
+      "step": "Apply for the role with Rewrite B",
+      "action": "Submit the rewritten CV to Pulsegrid and prepare for the initial interview"
+    },
+    {
+      "step": "Gain industry experience",
+      "action": "Look for opportunities to work with energy or climate-related projects, and consider taking courses or attending workshops to learn more about distributed systems, event-driven architectures, and energy sector domain knowledge"
+    },
+    {
+      "step": "Develop full-stack skills",
+      "action": "Focus on learning React, TypeScript, Go, and Kafka, and practice building full-stack features and data pipelines"
+    },
+    {
+      "step": "Consider a master's degree",
+      "action": "If interested in further academic pursuit, research programs in computer science or a related field that align with the candidate's career goals"
+    }
+  ],
+  "alternative_careers": [
+    "Data Scientist",
+    "DevOps Engineer",
+    "Solutions Architect"
+  ]
+}

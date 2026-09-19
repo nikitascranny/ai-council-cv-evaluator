@@ -1,0 +1,25 @@
+{
+  "candidate": "EMILE MOKOENA",
+  "job_title": "Startup Fullstack Engineer",
+  "recommended_rewrite": "qwen2.5:14b",
+  "recommendation_reason": "Rewrite B (qwen2.5:14b) provides more detailed and specific bullet points in work experience compared to Rewrite A (phi4), despite both lacking direct alignment with the job’s core requirements (React/TypeScript, Go, distributed systems). Rewrite B did not require fallback, indicating stronger adherence to the original CV’s content. While neither rewrite addresses the job’s essential tech stack, Rewrite B’s enhanced specificity (e.g., re-projecting data with ArcGIS, managing Git repositories) may slightly better convey technical competence. However, the candidate’s background remains misaligned with the role’s demands.",
+  "career_roadmap": [
+    {
+      "step": "Apply for the role with Rewrite B",
+      "action": "Submit the qwen2.5:14b rewrite to Pulsegrid, emphasizing the candidate’s cloud engineering and data processing experience as transferable skills, while acknowledging gaps in full-stack and distributed systems expertise."
+    },
+    {
+      "step": "Upskill in Required Tech",
+      "action": "Enroll in courses or bootcamps for React/TypeScript, Go, and distributed systems (e.g., Kafka, TimescaleDB) to bridge the gap between current skills and the job’s requirements."
+    },
+    {
+      "step": "Build a Full-Stack Project",
+      "action": "Create a portfolio project demonstrating end-to-end full-stack development using the job’s target technologies to strengthen application credibility."
+    }
+  ],
+  "alternative_careers": [
+    "Cloud Solutions Architect",
+    "Data Engineering Lead",
+    "Machine Learning Engineer"
+  ]
+}

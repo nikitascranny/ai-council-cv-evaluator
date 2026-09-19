@@ -1,0 +1,29 @@
+{
+  "candidate": "ALEX PARK",
+  "job_title": "Startup Fullstack Engineer",
+  "recommended_rewrite": "qwen2.5:14b",
+  "recommendation_reason": "Rewrite B by qwen2.5:14b is more directly tailored to the job listing, with a clear focus on full-stack development and relevant experience highlighted. The fact-check results indicate that this rewrite is accurate and didn't fall back to the original text. In contrast, Rewrite A by phi4 is more verbose and doesn't directly address the job requirements, with some advisory notes suggesting a need for more relevant experience. Given the candidate's background, I believe Rewrite B is a better fit for the role.",
+  "career_roadmap": [
+    {
+      "step": "Apply for the role with Rewrite B",
+      "action": "Submit the tailored CV and prepare for the interview process, emphasizing relevant experience and skills."
+    },
+    {
+      "step": "Build backend development skills",
+      "action": "Invest time in learning and practicing backend development, particularly in Go, to increase chances of success in this role and future similar positions."
+    },
+    {
+      "step": "Gain experience with event-driven architectures",
+      "action": "Explore and work on projects or contribute to open-source initiatives that involve event-driven architectures, such as Kafka, NATS, or similar technologies."
+    },
+    {
+      "step": "Pursue leadership and mentorship roles",
+      "action": "Look for opportunities to take on leadership or mentorship roles within the company or in other projects, to develop and demonstrate skills in training and collaborating with teams."
+    }
+  ],
+  "alternative_careers": [
+    "DevOps Engineer",
+    "Cloud Architect",
+    "Technical Program Manager"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "candidate": "bad_cv_kevin_jones",
+  "job_title": "Startup Fullstack Engineer",
+  "recommended_rewrite": "phi4",
+  "recommendation_reason": "Rewrite A ('phi4') is a better representation of the candidate's skills and experiences, as it highlights their adaptability, customer interaction, and technical skills in a more coherent and relevant way. While Rewrite B ('qwen2.5:14b') is still fact-checked as correct, it relies on the candidate's original CV text and doesn't demonstrate a clear connection to the job listing's requirements. The phi4 rewrite is more effective in showcasing the candidate's potential as a Full-Stack Engineer.",
+  "career_roadmap": [
+    {
+      "step": "Apply to the role with Rewrite A",
+      "action": "Submit the phi4-revised CV to the job listing and prepare for the interview process"
+    },
+    {
+      "step": "Build relevant technical skills",
+      "action": "Invest time in learning TypeScript, React, and Go, and familiarize yourself with event-driven architectures and distributed systems"
+    },
+    {
+      "step": "Gain relevant experience",
+      "action": "Consider taking on freelance or part-time work as a Full-Stack Engineer, or participate in coding challenges and hackathons to build a portfolio"
+    }
+  ],
+  "alternative_careers": [
+    "DevOps Engineer",
+    "Cloud Solutions Architect"
+  ]
+}

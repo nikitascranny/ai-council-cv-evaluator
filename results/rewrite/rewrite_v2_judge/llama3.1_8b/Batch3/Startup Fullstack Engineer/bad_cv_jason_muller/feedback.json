@@ -1,0 +1,29 @@
+{
+  "candidate": "bad_cv_jason_muller",
+  "job_title": "Startup Fullstack Engineer",
+  "recommended_rewrite": "qwen2.5:14b",
+  "recommendation_reason": "Rewrite B by model qwen2.5:14b is the better choice because it directly addresses the job listing's requirements, particularly in the technical skills section, and provides a more coherent and relevant narrative. Although both rewrites highlight the candidate's adaptability and quick learning, only Rewrite B explicitly mentions their experience with event-driven architectures and distributed systems concepts, which is essential for the role. The fact-check results indicate that Rewrite B did not fall back to the original text or invent any facts.",
+  "career_roadmap": [
+    {
+      "step": "Apply for the role with Rewrite B",
+      "action": "Submit the revised CV and go through the interview process"
+    },
+    {
+      "step": "Build distributed systems skills",
+      "action": "Pursue online courses, attend workshops, or participate in projects that focus on distributed systems, event-driven architectures, and data pipelines"
+    },
+    {
+      "step": "Gain experience with TypeScript/React and Go",
+      "action": "Work on personal projects or contribute to open-source initiatives that utilize these technologies"
+    },
+    {
+      "step": "Develop soft skills",
+      "action": "Take courses or attend workshops on communication, team management, and leadership to complement technical skills"
+    }
+  ],
+  "alternative_careers": [
+    "Cloud Solutions Architect",
+    "DevOps Engineer",
+    "Technical Program Manager"
+  ]
+}

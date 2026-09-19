@@ -1,0 +1,25 @@
+{
+  "candidate": "ALEX PARK",
+  "job_title": "Computer Repair Technician",
+  "recommended_rewrite": "phi4",
+  "recommendation_reason": "Rewrite A (phi4) directly aligns with the job's essential requirements by explicitly listing 'Basic, practical PC/laptop repair skills' and 'Friendly and patient with customers' in the Key Skills section, which are critical for the role. Although Rewrite B (qwen2.5:14b) is factually accurate, its focus on software testing and full-stack development deviates from the job's emphasis on hands-on repair and customer service. Rewrite A's higher wording similarity to the original CV (0.93 vs. 0.74) ensures consistency in highlighting transferable skills like honesty and reliability, which are explicitly valued by the employer.",
+  "career_roadmap": [
+    {
+      "step": "Apply for the role with Rewrite A",
+      "action": "Submit the phi4 rewrite to Mick@brendaandmicksrepairs-example.co.uk, emphasizing the 'Basic, practical PC/laptop repair skills' and customer service experience in the Key Skills section."
+    },
+    {
+      "step": "Build hands-on repair experience",
+      "action": "Enroll in a certified PC repair course (e.g., CompTIA A+) or volunteer at local community tech clinics to strengthen practical skills required for the role."
+    },
+    {
+      "step": "Transition to IT Support roles",
+      "action": "After gaining repair experience, apply for IT Support Technician roles to leverage software testing and problem-solving skills from the original CV."
+    }
+  ],
+  "alternative_careers": [
+    "IT Support Specialist",
+    "Technical Support Analyst",
+    "Help Desk Technician"
+  ]
+}
