@@ -97,7 +97,7 @@ access. A handful of tests do import the team's real modules to check the
 import wiring (`evaluator/` — the parser, evaluator, judge and essential-
 requirements code) but do not call a model.
 
-## Batch evaluation (command line and separate from the web app, used for experiments producing evaluation results in results/evaluation/)
+## Batch evaluation (developer tooling, not part of the web app)
 
 To evaluate a folder of CVs against a folder of job listings without the web
 app, run the pipeline script:
@@ -119,8 +119,4 @@ same `--out` with `--from judge --no-essential` gives both conditions from one
 evaluation, in `judged/with-essential/` and `judged/council-only/`. A rerun
 skips pairs that already have a valid verdict. `--help` lists every option.
 
-Each run also adds a record to `<out>/run.json`: when it ran,
-the models and options, and each stage's status, counts and timing. 
-
-Before any model call it checks that Ollama is running with every model
-pulled, that job listings are named `job_listing_<slug>.pdf`, and that no two CVs share a candidate name.
+See `results/README.md`

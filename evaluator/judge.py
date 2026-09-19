@@ -2,48 +2,50 @@
 judge.py 
 
 The judge of the council.
+Several evaluator models (the 'council', Evaluate_CV.py) each review a CV independently; 
+this script has a separate model combine their summaries into one final verdict.
 
-aggregate_results.py -- turns raw per-model/per-job files 
-into one combined file per candidate-per-job (prepares data for the judge)
+Takes one or more reviewer-summary JSON files for a candidate and a job listing PDF, 
+and sends them to an Ollama model acting as a "judge" (locally DEFAULT_MODEL, deepseek-r1:8b;
+with --cloud, CLOUD_MODEL=nemotron-3-super on Ollama Cloud) to produce a single final evaluation and 
+score out of 10.
 
-Takes candidate.json file with a job listing PDF, and sends them to a local Ollama model 
-(e.g. deepseek-r1:8b) acting as a "judge" to produce a single, independent final
-evaluation and score out of 10.
+In batch evaluation (CLI, with run_evaluation.py): aggregate_results.py turns raw per-model/per-job files 
+into one combined file per candidate-per-job (prepares data for this judge).
 
-The job listing PDF is read with the cv-parser pipeline (parsed_cv.parse(...)
-.full_text())
+The job listing PDF is read as plain text with document_utils.extract_text_from_pdf (pdfplumber).
 
-Per-summary "score" fields are stripped out before the
-prompt is built by default. 
+Per-summary "score" fields are stripped out before the prompt is built by default. 
 Pass --keep-scores to disable this.
 
-The judge's own output is validated before it is written anywhere: it must
-parse as JSON and carry a numeric final_score in [1, 10]. If it doesn't,
-nothing is written to the "clean" output path -- the raw response is instead
-saved next to it with an ".invalid.json" suffix and the script exits non-zero,
-so a driving shell script can flag the failure instead of silently writing a
-bad row. CSV output is more forgiving: a validation problem is recorded in the
-row itself (in an "errors" column) rather than blocking the write, since a
-half-populated CSV row is much lower-risk than a structurally-broken JSON file
-representing itself as good data.
+The judge's reply must parse as a JSON object: if it doesn't, the call is
+retried, up to --max-retries attempts in total (default 3). Parse
+failures and empty replies are retried; a request failure (Ollama unreachable, 
+HTTP error such as a bad key or rate limit) exits immediately. 
+The reply is written unmodified to --output (or only printed when --output is not given).
+
+Checking the score itself is left to the caller: in batch runs,
+run_evaluation.py accepts a verdict only if final_score is a number in
+[1, 10], and logs any other verdict as a failure to be re-judged.
 
 If the summaries carry an essential-requirements entry (aggregate_results.py
 adds one per candidate when given that check's results), it is taken out of
 the reviewer summaries and given its own section of the prompt. Pass
 --no-essential to leave it out, which reproduces the council-only prompt.
 
-Usage:
+CLI Usage:
     python judge.py --summaries combined/secretary/lerato_munche.json \\
         --job job_listings/job_listing_secretary.pdf \\
         --output judged/secretary/lerato_munche.json
 
-    # multiple summary files also still works (e.g. one per grader run,
-    # aggregate_results.py not used) -- depends on output of evaluator models
+    # several summary files about the SAME candidate, e.g. the evaluators' raw outputs
+    # from an Evaluate_CV.py run on a single CV (raw outputs of a multi-CV run hold
+    # every candidate, so group them first with aggregate_results.py)
     python judge.py --summaries s1.json s2.json --job job_listing.pdf
 
     # choose a different local Ollama model / host
     python judge.py --summaries summaries.json --job job.pdf \\
-        --model deepseek-r1:8b --host http://localhost:11434
+        --model qwen2.5:7b --host http://localhost:11434/api/chat
 
     # judge on Ollama Cloud with CLOUD_MODEL (needs OLLAMA_API_KEY)
     python judge.py --summaries summaries.json --job job.pdf --cloud
@@ -77,16 +79,16 @@ DEFAULT_MAX_RETRIES = 3
 DEFAULT_KEEP_ALIVE = "0m"
 DEFAULT_TIMEOUT = 3600
 
-# The judge with --cloud. DeepSeek like the local judge, and a family the
+# The judge with --cloud. A model family (NVIDIA) which the 
 # cloud council (Evaluate_CV.CLOUD_EVALUATOR_MODELS: Google, OpenAI) does not
-# use, so the judge is not grading its own model's summaries.
+# use, so the judge is not grading its own model's summaries
 CLOUD_MODEL = "nemotron-3-super"
 CLOUD_HOST = "https://ollama.com/api/chat"
 CLOUD_API_KEY_ENV = "OLLAMA_API_KEY"
-# Its reasoning counts against num_predict too, and a cloud token budget is
-# not load time on this machine, so it gets more room than the local judge.
+# Its reasoning counts against num_predict too, and on the cloud a larger budget 
+# costs no local GPU time, so it gets more room than the local judge
 CLOUD_NUM_PREDICT = 8192
-# Minutes rather than the local hour, as for the cloud council.
+# 300s (5 minutes) rather than the local 3600s (same as in Evaluate_CV.py)
 CLOUD_TIMEOUT = 300
 
 # =====================================================================
@@ -95,7 +97,7 @@ CLOUD_TIMEOUT = 300
 
 def _parse_args():
     parser = argparse.ArgumentParser(
-            description="Judge multiple CV summaries against a job listing using a local Ollama model."
+            description="Judge multiple CV summaries against a job listing using an Ollama model (local or cloud)."
     )
     parser.add_argument(
         "--summaries", nargs="+", required=True,
@@ -109,8 +111,7 @@ def _parse_args():
     
     parser.add_argument(
         "--job-name", default=None,
-        help="Job label to record in output (e.g. for the CSV 'job' column). "
-                "Defaults to the job PDF's filename stem.",
+        help="Job label shown in the progress output.",
     )
     parser.add_argument(
         "--model", default=None,
@@ -129,14 +130,12 @@ def _parse_args():
     )
     parser.add_argument(
         "--num-predict", type=int, default=DEFAULT_NUM_PREDICT,
-        help="Max tokens the judge model may generate (default: 4096).", 
+        help=f"Max tokens the judge model may generate (default: {DEFAULT_NUM_PREDICT}).", 
     )
-    #set higher than indep evaluators, reasoning models (deepseek-r1) spend part of budget on <think>
-    # before JSON is ever written. If value is too low, reply can truncate before JSON is complete.
     
     parser.add_argument(
         "--max-retries",type=int,default=DEFAULT_MAX_RETRIES,
-        help="Max attempts to get a JSON-parseable reply from the judge model before giving up and writing {}. default=3"
+        help=f"Max attempts to get a usable (non-empty, JSON) reply from the judge model before giving up and writing {{}} (default:{DEFAULT_MAX_RETRIES})"
     )
 
     parser.add_argument(
@@ -145,7 +144,8 @@ def _parse_args():
     )
 
     parser.add_argument(
-        "--timeout",type=int,default=DEFAULT_TIMEOUT
+        "--timeout",type=int,default=DEFAULT_TIMEOUT,
+        help=f"Seconds to wait for the model's reply (default: {DEFAULT_TIMEOUT})."
     )
 
     parser.add_argument(
@@ -163,7 +163,7 @@ def _parse_args():
     )
     parser.add_argument(
         "--output", default=None,
-        help="Path to save the final evaluation. "
+        help="Path to save the final evaluation (JSON). "
     )
 
     args = parser.parse_args()
@@ -217,9 +217,7 @@ def split_essential(entries):
     Separate the essential-requirements check from the reviewer summaries.
 
     Returns (summaries, essential), where essential is the first entry whose
-    "type" is ESSENTIAL_TYPE, or None. Entries without a "type" - every
-    combined file written before the check was aggregated - are all
-    reviewer summaries, exactly as before.
+    "type" is ESSENTIAL_TYPE, or None. All other entries are reviewer summaries.
     """
     summaries = [e for e in entries if e.get("type") != ESSENTIAL_TYPE]
     checks = [e for e in entries if e.get("type") == ESSENTIAL_TYPE]
@@ -270,9 +268,10 @@ def format_essential_for_prompt(essential):
     """
     The essential-requirements check as prompt text, or None when there is
     nothing usable to show the judge: no entry, a check that failed (its
-    "error" field is set), or an empty summary. A failed check is left out
-    rather than passed through, so the judge never reads an error message as
-    an assessment of the candidate.
+    "error" field is set), or an empty summary. 
+
+    A failed check is left out rather than passed through, so the judge 
+    never reads an error message as an assessment of the candidate.
     """
     if not essential or essential.get("error"):
         return None
@@ -282,11 +281,8 @@ def format_essential_for_prompt(essential):
 
 def build_prompt(job_text, summaries_text, candidate_name, essential_text=None):
     """
-    essential_text is the essential-requirements check's summary (see
-    format_essential_for_prompt). Without it, the prompt is exactly the
-    council-only prompt from before the check was added, so results judged
-    that way stay reproducible. With it, the check gets its own section and
-    task step instead of posing as another reviewer's summary.
+    essential_text: the essential-requirements check's summary (see format_essential_for_prompt). 
+    The check gets its own section and task step instead of posing as another reviewer's summary.
 
     The section says the check read three CV sections - the scoping used by
     Evaluate_CV.py and by the web app's essential stage alike.
@@ -355,8 +351,7 @@ def build_judge_prompt(job_text, summaries, candidate_name, essential=None, keep
     The whole prompt for one candidate, from the reviewer summaries and the
     essential-requirements check's entry (None for the council-only prompt).
 
-    called by main() and judge_candidate(), so the command
-    line and the web app cannot drift apart on what the judge is shown. 
+    called by main() and judge_candidate() (command line and web app do not drift apart). 
     A failed or empty check is left out (format_essential_for_prompt).
     """
     summaries_text = format_summaries_for_prompt(summaries, keep_scores=keep_scores)
@@ -365,22 +360,28 @@ def build_judge_prompt(job_text, summaries, candidate_name, essential=None, keep
 
 
 def cloud_call_options(api_key, stats):
-    """The call_judge arguments that send the judge to Ollama Cloud: the
-    host, budget and timeout in place of the local ones, plus the key."""
-    return {"host": CLOUD_HOST, "num_predict": CLOUD_NUM_PREDICT, "keep_alive": None,
+    """
+    The call_judge arguments that send the judge to Ollama Cloud: 
+    the host, budget and timeout in place of the local ones, plus the key.
+    """
+    return {"host": CLOUD_HOST, 
+            "num_predict": CLOUD_NUM_PREDICT, 
+            "keep_alive": None,
             "timeout": CLOUD_TIMEOUT,
-            "headers": {"Authorization": "Bearer " + api_key}, "stats": stats}
+            "headers": {"Authorization": "Bearer " + api_key}, 
+            "stats": stats}
 
 
 def call_judge(prompt, model, host, num_predict, keep_alive,timeout=3600, headers=None, stats=None):
     """
-    Call the judge model via shared ollama_utils helper. headers and stats are
-    for a cloud call (see cloud_call_options) and are left out of a local one.
+    Call the judge model via shared ollama_utils helper. 
+    
+    `headers` and `stats` are for a cloud call (see cloud_call_options) and are left out of a local one.
 
-    Go through /api/chat, strips <think> reasoning out of reply before hunting for JSON object.
-    Connection-level failure (e.g. ollama not running / model not pulled/ timeout):
+    Go through /api/chat (on default, set by --host), strips <think> reasoning out of reply before hunting for JSON object.
+    Connection-level failure (e.g. ollama not running/model not pulled/timeout/HTTP error):
         exit with error message. 
-    Parse failure (call succeeds but reply is not valid JSON):
+    Parse failure (call succeeds but reply is not valid JSON) or empty reply:
         hand back to caller.
     """
     cloud = {"headers": headers, "stats": stats} if headers else {}
@@ -394,7 +395,7 @@ def call_judge(prompt, model, host, num_predict, keep_alive,timeout=3600, header
     )
 
     if error and error.startswith("REQUEST ERROR"):
-        if headers:
+        if headers: # a cloud call
             sys.exit(f"err: could not get a response from Ollama Cloud at {host} ({error})."
                      f" Check {CLOUD_API_KEY_ENV}, the plan's usage, and that {model} is offered.")
         sys.exit(f"err: could not get a response from ollama at {host} ({error})."
@@ -406,10 +407,10 @@ def call_judge_with_retries(prompt, model, host, num_predict, keep_alive, timeou
                             **cloud):
     """
     Call judge model, retry if its reply doesn't parse as a JSON object 
-    (PARSE ERROR from ollama_utils). This method is only triggered by a parse faillure. 
+    (PARSE ERROR from ollama_utils) or the reply is empty. 
     Connection-level failures still exit immediately.
 
-    If every attempt fails parsing (after max_retries), return last attempt's ({},"PARSE EROR")
+    If every attempt fails (after max_retries), return last attempt's ({},"<error>")
 
     cloud: headers and stats for a cloud call, passed to each attempt.
     """
@@ -438,10 +439,10 @@ def judge_candidate(job_text, summaries, candidate_name, essential=None, *,
                     max_retries=DEFAULT_MAX_RETRIES, keep_scores=False):
     """
     Judge one candidate with the prompt and call settings main() uses by
-    default - for callers other than command line (web app)
+    default - for callers other than command line (web app).
 
-    summaries: reviewer summaries only; essential is the essential-requirements check's 
-    result, or None for the council-only prompt.
+    summaries: reviewer summaries only
+    essential: the essential-requirements check's result, None for the council-only prompt
 
     Returns (parsed, error) (same as call_judge_with_retries). 
     Never exits the process: call_judge's sys.exit when Ollama cannot be
@@ -467,8 +468,7 @@ def judge_candidate(job_text, summaries, candidate_name, essential=None, *,
 def write_json_output(out_path, result):
     """
     Write the judge's raw output as JSON to out_path, exactly as returned
-    by the model (or `{}` if ollama_utils couldn't parse a JSON object out
-    of its reply at all)
+    by the model (or `{}` if every attempt failed)
     """
     out_path = Path(out_path)
 
@@ -507,7 +507,6 @@ def main():
         print("Essential-requirements check: included")
     prompt = build_judge_prompt(job_text, summaries, candidate_name, essential,
                                 keep_scores=args.keep_scores)
-    # print(f"prompt:\n{prompt}")
 
     settings = {"host": args.host, "num_predict": args.num_predict,
                 "keep_alive": args.keep_alive, "timeout": args.timeout}
@@ -515,7 +514,7 @@ def main():
     if args.cloud:
         api_key = os.environ.get(CLOUD_API_KEY_ENV, "").strip()
         if not api_key:
-            sys.exit(f"error: --cloud needs an Ollama API key: add {CLOUD_API_KEY_ENV}=<key> "
+            sys.exit(f"error: --cloud needs an Ollama API key: set {CLOUD_API_KEY_ENV} in your terminal or add {CLOUD_API_KEY_ENV}=<key> "
                      f"to .env in the repo root (create one at https://ollama.com/settings/keys)")
         settings = cloud_call_options(api_key, stats)
     host = settings.pop("host")
@@ -532,11 +531,11 @@ def main():
     end_time = time.time()
     print(f"Model finished, time: {end_time - start_time:.4f}")
     if args.cloud and stats:
-        # The last attempt's tokens only - a parse-error retry is not counted.
+        # The last attempt's tokens only - earlier attempts are not counted.
         print(f"Cloud tokens: {stats.get('prompt_eval_count')} in, {stats.get('eval_count')} out")
     
     if error:
-        print(f"\nWarning: {error} -- writing model output as-is anyway.")
+        print(f"\nWarning: {error} -- result is {{}}.")
 
     print(f"\nFinal score for {candidate_name}: {parsed.get('final_score', '?')}/10")
     print(f"Evaluation: {parsed.get('final_evaluation', '')}")

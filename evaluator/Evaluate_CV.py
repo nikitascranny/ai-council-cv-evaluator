@@ -195,7 +195,7 @@ def main():
         api_key = os.environ.get(CLOUD_API_KEY_ENV, "").strip()
         if not api_key:
             # Stop here rather than write a run of "401 Unauthorized" scores.
-            sys.exit(f"--cloud needs an Ollama API key: add {CLOUD_API_KEY_ENV}=<key> to .env "
+            sys.exit(f"--cloud needs an Ollama API key: set {CLOUD_API_KEY_ENV} in terminal or add {CLOUD_API_KEY_ENV}=<key> to .env "
                      f"in the repo root (create one at https://ollama.com/settings/keys)")
         evaluator_models = CLOUD_EVALUATOR_MODELS
 
