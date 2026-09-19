@@ -62,7 +62,7 @@ Usage:
     python rewriter/rewriter_v2_judge.py --force
 
     # one stored batch, writing its feedback to a folder of its own
-    python rewriter/rewriter_v2_judge.py --results-dir "results/rewrite/rewriter_v2/Batch 1" \\
+    python rewriter/rewriter_v2_judge.py --results-dir results/rewrite/rewriter_v2/Batch1 \\
         --outdir results/rewrite/rewriter_v2_judge/<run_name>
 
     # a different judge model

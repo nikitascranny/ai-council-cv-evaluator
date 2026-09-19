@@ -1,0 +1,3 @@
+candidate,job_title,agent_model,used_fallback,rejected,retried,reasons,advisory,length_ratio,similarity,error
+EMILE MOKOENA,Computer Repair Technician,phi4,True,True,True,"['number dropped from the CV: 10%', 'number dropped from the CV: 100', 'number dropped from the CV: 100%']",['linkedin professional summary experienced'],1.0,1.0,
+EMILE MOKOENA,Computer Repair Technician,qwen2.5:14b,False,False,True,[],[],0.9997591522157996,0.9974811083123426,

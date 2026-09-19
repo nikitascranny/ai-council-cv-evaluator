@@ -1,0 +1,3 @@
+candidate,job_title,agent_model,used_fallback,rejected,retried,reasons,advisory,length_ratio,similarity,error
+ALEX PARK,Computer Repair Technician,phi4,False,False,False,[],[],0.9944490702192618,0.6653185035389282,
+ALEX PARK,Computer Repair Technician,qwen2.5:14b,True,True,True,['job title claimed but not held: Computer Repair Technician'],['computer repair technician west edge'],1.0,1.0,

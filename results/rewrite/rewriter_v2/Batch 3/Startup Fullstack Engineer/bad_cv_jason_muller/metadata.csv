@@ -1,3 +1,0 @@
-candidate,job_title,agent_model,used_fallback,rejected,retried,reasons,advisory,length_ratio,similarity,error
-bad_cv_jason_muller,Startup Fullstack Engineer,phi4,False,False,False,[],"['education high school passed', 'fullstack engineer', 'work experience crypto entrepreneur']",1.4357682619647356,0.3308641975308642,
-bad_cv_jason_muller,Startup Fullstack Engineer,qwen2.5:14b,False,False,False,[],[],1.0957178841309825,0.6290322580645161,

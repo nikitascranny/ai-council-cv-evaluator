@@ -1,3 +1,0 @@
-candidate,job_title,agent_model,used_fallback,rejected,retried,reasons,advisory,length_ratio,similarity,error
-bad_cv_kevin_jones,Startup Fullstack Engineer,phi4,False,False,False,[],['references available'],1.8121041520056298,0.25170068027210885,
-bad_cv_kevin_jones,Startup Fullstack Engineer,qwen2.5:14b,False,False,False,[],"['employment history call centre agent', 'microsoft excel', 'references available']",1.0774102744546095,0.31277533039647576,

@@ -1,3 +1,0 @@
-candidate,job_title,agent_model,used_fallback,rejected,retried,reasons,advisory,length_ratio,similarity,error
-THE DANIEL,Startup Fullstack Engineer,phi4,False,False,False,[],['fullstack development'],1.0492544057840036,0.5510204081632653,
-THE DANIEL,Startup Fullstack Engineer,qwen2.5:14b,False,False,False,[],"['interpersonal skills collaboration reporting strategic thinking business analysis information management treasury languages', 'south africa work experience fullstack engineer', 'sql business analyst graduate', 'sql sales assistant', 'the daniel synth skills advanced excel sql python microsoft power apps data analysis automation critical thinking business intelligence communication']",1.018526886579304,0.6923076923076923,

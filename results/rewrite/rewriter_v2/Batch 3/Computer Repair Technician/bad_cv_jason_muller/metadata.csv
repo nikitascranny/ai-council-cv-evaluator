@@ -1,3 +1,0 @@
-candidate,job_title,agent_model,used_fallback,rejected,retried,reasons,advisory,length_ratio,similarity,error
-bad_cv_jason_muller,Computer Repair Technician,phi4,True,True,True,['job title claimed but not held: Computer Repair Technician'],"['computer repair technician', 'this cv']",1.0,1.0,
-bad_cv_jason_muller,Computer Repair Technician,qwen2.5:14b,False,False,False,[],[],1.0361041141897565,0.6703601108033241,

@@ -1,3 +1,0 @@
-candidate,job_title,agent_model,used_fallback,rejected,retried,reasons,advisory,length_ratio,similarity,error
-NDLOVU KARABO REFILWE,Startup Fullstack Engineer,phi4,True,True,True,"['number dropped from the CV: 1996', 'number dropped from the CV: 43']","['current key responsibilities', 'destruction schedules', 'key responsibilities', 'managing records management projects', 'records management policies']",1.0,1.0,
-NDLOVU KARABO REFILWE,Startup Fullstack Engineer,qwen2.5:14b,True,True,True,"['number dropped from the CV: 04', 'number dropped from the CV: 14', 'number dropped from the CV: 31']",['the cv'],1.0,1.0,

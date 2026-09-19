@@ -1,3 +1,0 @@
-candidate,job_title,agent_model,used_fallback,rejected,retried,reasons,advisory,length_ratio,similarity,error
-bad_cv_sarah_lynne_van_der_merwe,Computer Repair Technician,phi4,False,False,False,[],[],1.0298594847775175,0.5664488017429193,
-bad_cv_sarah_lynne_van_der_merwe,Computer Repair Technician,qwen2.5:14b,True,True,True,['01'],"['experience retail store', 'professional summary experienced']",1.0,1.0,

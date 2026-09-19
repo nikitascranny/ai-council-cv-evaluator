@@ -1,3 +1,0 @@
-candidate,job_title,agent_model,used_fallback,rejected,retried,reasons,advisory,length_ratio,similarity,error
-NDLOVU KARABO REFILWE,Computer Repair Technician,phi4,True,True,True,"['number dropped from the CV: 04', 'number dropped from the CV: 1996', 'number dropped from the CV: 2023', 'number dropped from the CV: 31', 'number dropped from the CV: 43']",[],1.0,1.0,
-NDLOVU KARABO REFILWE,Computer Repair Technician,qwen2.5:14b,True,True,True,"['number dropped from the CV: 02', 'number dropped from the CV: 04', 'number dropped from the CV: 14', 'number dropped from the CV: 2010', 'number dropped from the CV: 2018', 'number dropped from the CV: 2019', 'number dropped from the CV: 31']","['current duties involve the following', 'duties involve the following']",1.0,1.0,

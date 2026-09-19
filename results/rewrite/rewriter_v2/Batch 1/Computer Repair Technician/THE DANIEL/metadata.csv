@@ -1,3 +1,0 @@
-candidate,job_title,agent_model,used_fallback,rejected,retried,reasons,advisory,length_ratio,similarity,error
-THE DANIEL,Computer Repair Technician,phi4,False,False,False,[],[],0.965205603253502,0.5993031358885017,
-THE DANIEL,Computer Repair Technician,qwen2.5:14b,False,False,False,[],"['interpersonal skills business analysis python reporting research languages', 'management south africa bcom hons business information systems', 'the daniel synth skills advanced excel data analysis critical thinking automation sql information management technical collaboration user acceptance testing communication']",0.7352010845006778,0.7090558766859345,

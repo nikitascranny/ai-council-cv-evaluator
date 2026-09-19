@@ -1,3 +1,0 @@
-candidate,job_title,agent_model,used_fallback,rejected,retried,reasons,advisory,length_ratio,similarity,error
-PONTUS PONTIOUS,Computer Repair Technician,phi4,False,False,True,[],[],0.83407917383821,0.831858407079646,
-PONTUS PONTIOUS,Computer Repair Technician,qwen2.5:14b,False,False,False,[],['skills data'],0.9135972461273666,0.8858321870701513,

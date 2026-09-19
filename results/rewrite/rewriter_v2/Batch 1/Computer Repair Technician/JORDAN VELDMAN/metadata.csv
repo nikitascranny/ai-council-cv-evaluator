@@ -1,3 +1,0 @@
-candidate,job_title,agent_model,used_fallback,rejected,retried,reasons,advisory,length_ratio,similarity,error
-JORDAN VELDMAN,Computer Repair Technician,phi4,False,False,False,[],[],1.002276052674362,0.9203314212874443,
-JORDAN VELDMAN,Computer Repair Technician,qwen2.5:14b,False,False,True,[],['technical skills'],0.666233132823931,0.5292353823088456,
