@@ -469,6 +469,20 @@ class Handler(BaseHTTPRequestHandler):
         sys.stderr.write("  {} {}\n".format(self.command, self.path))
 
 
+def stop_models() -> list:
+    """Stop the models a run started, so Ctrl-C ends them and not only the page.
+
+    A run is a thread in this process calling Ollama, and Ollama keeps a model
+    loaded after its caller has gone. Not imported at the top: this file is
+    standard library only, and ollama_utils is not loaded until a run needs it -
+    when it never was, no run reached a model and there is nothing to stop.
+    """
+    ollama_utils = sys.modules.get("ollama_utils")
+    if ollama_utils is None:
+        return []
+    return ollama_utils.stop_local_models()
+
+
 def main(argv=None) -> int:
     parser = argparse.ArgumentParser(description="AI CV Evaluator web app")
     parser.add_argument("--port", type=int, default=PORT)
@@ -483,7 +497,11 @@ def main(argv=None) -> int:
     try:
         server.serve_forever()
     except KeyboardInterrupt:
-        print("\nstopped")
+        print("\nstopping...")
+        stopped = stop_models()
+        if stopped:
+            print("stopped models: {}".format(", ".join(stopped)))
+        print("stopped")
     return 0
 
 

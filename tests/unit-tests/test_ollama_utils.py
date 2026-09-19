@@ -134,6 +134,80 @@ def test_call_ollama_json_malformed_reply_gives_parse_error(mock_post):
 
 
 # ---------------------------------------------------------------------------
+# stop_local_models (Ctrl-C in the web app)
+# ---------------------------------------------------------------------------
+
+@pytest.fixture
+def fresh_stop_state():
+    """stop_local_models() flips a process-wide flag; put it back afterwards."""
+    import ollama_utils
+    ollama_utils._used_models.clear()
+    ollama_utils._stopping.clear()
+    yield ollama_utils
+    ollama_utils._used_models.clear()
+    ollama_utils._stopping.clear()
+
+
+def _ps(*names):
+    resp = MagicMock()
+    resp.json.return_value = {"models": [{"name": n, "model": n} for n in names]}
+    return resp
+
+
+@patch("ollama_utils.requests.post")
+def test_only_local_calls_are_remembered_for_shutdown(mock_post, fresh_stop_state):
+    mock_post.return_value = _mock_response("ok")
+
+    fresh_stop_state.call_ollama_text("phi4", "p", keep_alive="30m")
+    fresh_stop_state.call_ollama_text("gpt-oss:120b", "p", keep_alive=None,
+                                      host="https://ollama.com/api/chat")
+
+    assert fresh_stop_state._used_models == {"http://localhost:11434": {"phi4"}}
+
+
+@patch("ollama_utils.requests.get")
+@patch("ollama_utils.requests.post")
+def test_stop_unloads_only_our_loaded_models(mock_post, mock_get, fresh_stop_state):
+    mock_post.return_value = _mock_response("ok")
+    fresh_stop_state.call_ollama_text("phi4", "p", keep_alive="30m")
+    fresh_stop_state.call_ollama_text("qwen2.5:14b", "p", keep_alive="30m")
+    mock_post.reset_mock()
+    # phi4 is loaded (as phi4:latest), qwen2.5:14b is not, and llama3 is someone else's.
+    mock_get.return_value = _ps("phi4:latest", "llama3:8b")
+
+    stopped = fresh_stop_state.stop_local_models()
+
+    assert stopped == ["phi4:latest"]
+    mock_get.assert_called_once()
+    assert mock_get.call_args.args[0] == "http://localhost:11434/api/ps"
+    mock_post.assert_called_once()
+    assert mock_post.call_args.args[0] == "http://localhost:11434/api/generate"
+    assert mock_post.call_args.kwargs["json"] == {"model": "phi4:latest", "keep_alive": 0}
+
+
+@patch("ollama_utils.requests.post")
+def test_calls_after_stop_are_cancelled_without_reaching_ollama(mock_post, fresh_stop_state):
+    with patch("ollama_utils.requests.get", return_value=_ps()):
+        fresh_stop_state.stop_local_models()
+
+    text, error = fresh_stop_state.call_ollama_text("phi4", "p", keep_alive="30m")
+
+    assert text == ""
+    assert error.startswith("CANCELLED")
+    mock_post.assert_not_called()
+
+
+@patch("ollama_utils.requests.get")
+@patch("ollama_utils.requests.post")
+def test_stop_skips_a_daemon_that_cannot_be_reached(mock_post, mock_get, fresh_stop_state):
+    mock_post.return_value = _mock_response("ok")
+    fresh_stop_state.call_ollama_text("phi4", "p", keep_alive="30m")
+    mock_get.side_effect = requests.exceptions.ConnectionError("down")
+
+    assert fresh_stop_state.stop_local_models() == []
+
+
+# ---------------------------------------------------------------------------
 # load_env_file
 # ---------------------------------------------------------------------------
 

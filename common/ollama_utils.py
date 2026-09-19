@@ -11,11 +11,19 @@ of the same request/parse/error-handling logic.
 import os
 import re
 import json
+import threading
 import requests
 from pathlib import Path
 from typing import Union
 
 OLLAMA_URL = "http://localhost:11434/api/chat"
+
+# What stop_local_models() needs to shut this process's models down: the
+# daemons this process has asked to run a local model, and which models. Cloud
+# calls (keep_alive=None) are not recorded - there is nothing loaded locally.
+_used_models: dict = {}
+_used_lock = threading.Lock()
+_stopping = threading.Event()
 
 # Where the command-line scripts look for an Ollama Cloud key kept in a file
 # rather than set in the terminal. Git-ignored (.gitignore: .env).
@@ -74,6 +82,53 @@ def _error_detail(response) -> str:
     except Exception:
         return ""
     return detail if isinstance(detail, str) else ""
+
+
+def _daemon_base(host: str) -> str:
+    """http://localhost:11434 from http://localhost:11434/api/chat."""
+    return host.split("/api/")[0].rstrip("/")
+
+
+def _tagged(name: str) -> str:
+    """Ollama lists "phi4" as "phi4:latest"; compare on the tagged form."""
+    return name if ":" in name else name + ":latest"
+
+
+def stop_local_models(timeout: float = 3) -> list:
+    """Stop this process's models on the local Ollama daemon, for Ctrl-C.
+
+    Exiting the process drops any request in flight and Ollama cancels it, but
+    the model itself stays loaded for its keep_alive (30 minutes for the
+    rewriter) - what `ollama ps` shows as still running. keep_alive=0 is what
+    `ollama stop` sends; a model still busy unloads as soon as its request
+    ends. Only models this process asked for and that are loaded right now are
+    touched, so another program's models are left alone and nothing gets
+    loaded just to be unloaded.
+
+    Also makes every later call return a CANCELLED error at once. Returns the
+    names it stopped; a daemon that cannot be reached is skipped, not an error.
+    """
+    _stopping.set()
+    with _used_lock:
+        used = {base: set(models) for base, models in _used_models.items()}
+    stopped = []
+    for base, models in used.items():
+        wanted = {_tagged(m) for m in models}
+        try:
+            loaded = requests.get(base + "/api/ps", timeout=timeout).json().get("models", [])
+        except (requests.exceptions.RequestException, ValueError):
+            continue
+        for entry in loaded:
+            name = entry.get("model") or entry.get("name")
+            if not name or _tagged(name) not in wanted:
+                continue
+            try:
+                requests.post(base + "/api/generate", timeout=timeout,
+                              json={"model": name, "keep_alive": 0})
+            except requests.exceptions.RequestException:
+                continue
+            stopped.append(name)
+    return stopped
 
 
 def call_ollama_json(model: str,
@@ -164,6 +219,10 @@ def call_ollama_text(model: str,
     rather than a valid empty rewrite - silently accepting "" here would
     make a blank CV look like it passed every downstream check.
     """
+    if _stopping.is_set():
+        # Ctrl-C arrived while a run was between two model calls. Starting the
+        # next one would load a model just after stop_local_models() unloaded it.
+        return "", "CANCELLED: the app is shutting down"
     options: dict[str, Union[int, float]] = {"num_predict": num_predict}
     if num_ctx is not None:
         options["num_ctx"] = num_ctx
@@ -175,6 +234,8 @@ def call_ollama_text(model: str,
     }
     if keep_alive is not None:
         body["keep_alive"] = keep_alive
+        with _used_lock:
+            _used_models.setdefault(_daemon_base(host), set()).add(model)
     if think is not None:
         body["think"] = think
     extra = {"headers": headers} if headers else {}
