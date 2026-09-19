@@ -121,7 +121,7 @@ def call_ollama_json(model: str,
     )
 
     if error:
-        return parsed_text, error
+        return {}, error
 
     try:
         parsed = extract_json(parsed_text)
@@ -198,7 +198,7 @@ def call_ollama_text(model: str,
             # line alone does not - "429 Too Many Requests" could be the plan's
             # concurrency limit or its usage running out.
             error += f" ({detail})"
-        return ({}, error)
+        return "", error
 
     reply = response.json()
     if stats is not None:

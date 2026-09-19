@@ -356,7 +356,7 @@ class TestRewriteCvCloud:
         def fake_call(model, prompt, **kw):
             calls.append((model, kw))
             if model in fail:
-                return {}, "REQUEST ERROR: 429 Client Error: Too Many Requests"
+                return "", "REQUEST ERROR: 429 Client Error: Too Many Requests"
             if "stats" in kw:
                 kw["stats"].update(prompt_eval_count=100, eval_count=50)
             return f"text from {model}", None
