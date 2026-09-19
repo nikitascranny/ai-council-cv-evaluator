@@ -70,6 +70,7 @@ One folder per component, matching the rest of the repo:
 | `common/` | shared helpers: Ollama calls, PDF text, the fact guard, writing results |
 | `ui/` | this web app — `pages.py`, `report.py`, `facts.py` for what a reviewer sees, and `pipeline/` for the orchestration that drives the components above in order and reports progress |
 | `app.py` | the server entry point |
+| `prompts.py`, `run_evaluations.py` | from the first prototype, kept because rewriter v1's phrasing probe still uses them (`prompts.build`, and `call_ollama`, `is_truncated` and `parse_response`). `run_evaluations.py`'s own command line is no longer used — not to be confused with `evaluator/run_evaluation.py` |
 | `data/` | `job-listings/` and `cvs/`, both committed |
 | `results/` | output of the experiments run during development (see [results/README.md](results/README.md)) |
 | `tests/` | the test suite |
