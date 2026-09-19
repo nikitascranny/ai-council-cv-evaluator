@@ -277,7 +277,7 @@ class ProbeResult:
 def probe(cv_text: str, job_title: str, scorer, *,
           candidate: str = "", job: str = "",
           rewriter_model: str = DEFAULT_REWRITER_MODEL,
-          paraphrase_fn=None) -> ProbeResult:
+          paraphrase_fn=None, score_rejected: bool = True) -> ProbeResult:
     """One candidate against one job: score, paraphrase, guard, re-score.
 
     Never raises on a model failure. A failed row is recorded with `error` set
@@ -288,9 +288,19 @@ def probe(cv_text: str, job_title: str, scorer, *,
     AttributeError a body that is not a mapping: one of those uncaught would
     take the whole batch down.
 
-    A rejected rewrite is still scored and still returned. The rejection rate
-    is itself a finding about the rewriting model, and dropping those rows
-    here would hide it. Reporting excludes them from the headline delta.
+    A rejected rewrite is still scored and still returned by default. The
+    rejection rate is itself a finding about the rewriting model, and dropping
+    those rows here would hide it; reporting excludes them from the headline
+    delta.
+
+    score_rejected=False turns that second scoring call off. A rewrite the
+    guard has thrown out is a rewrite that failed, and scoring it costs
+    another full evaluator call - minutes of a reviewer's time, on a web page
+    that never shows the number. The row still comes back with `rejected`,
+    `reasons` and every other measurement set; only score_after and delta stay
+    None, exactly as they do when the rewrite raised. The batch CLI below
+    leaves it at True, so results/ stays comparable with the rows already
+    recorded there.
 
     Rejection is driven by check_no_new_facts alone. advisory_caps_runs is
     recorded on `advisory` and never rejects.
@@ -324,6 +334,12 @@ def probe(cv_text: str, job_title: str, scorer, *,
         # is unambiguous ("Umoja Bank" absent means a dropped employer), whereas
         # gaining one is usually just re-casing.
         result.facts_lost = len(_new_against(rewritten, extract_facts(cv_text)))
+
+        # Everything above is text measurement - free, and worth having even
+        # for a rewrite that failed. The scoring call below is the expensive
+        # one, and it is the one a caller can decline.
+        if result.rejected and not score_rejected:
+            return result
 
         result.score_after = scorer(rewritten, job_title)
         result.truncated_after = getattr(scorer, "last_truncated", None)

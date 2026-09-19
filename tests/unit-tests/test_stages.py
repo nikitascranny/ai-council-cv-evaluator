@@ -316,6 +316,40 @@ def test_rewrite_stage_omits_rewriter_model_when_not_given():
     assert "rewriter_model" not in seen
 
 
+def test_rewrite_stage_declines_to_score_a_rejected_rewrite():
+    """A rewrite the guard threw out is a rewrite that failed, and scoring it
+    would put the CV through the evaluator a second time for a delta the
+    report then has to disown. The reviewer waits minutes for that call."""
+    seen = {}
+
+    def probe(cv, job, scorer, **kw):
+        seen.update(kw)
+        return {"delta": 0, "score_before": 5, "score_after": 5}
+
+    _drain(rewrite_stage("cv", "Engineer", scorer=None, deps=_deps(probe=probe)))
+    assert seen["score_rejected"] is False
+
+
+def test_the_board_says_why_a_rejected_rewrite_has_no_score():
+    """Otherwise the stage reads as one that half-finished and declines to
+    say why."""
+    result = {"rejected": True, "reasons": ["invented: PhD"], "delta": None,
+              "score_before": 5, "score_after": None, "similarity": 0.4}
+    events, _ = _drain(rewrite_stage("cv", "Engineer", scorer=None,
+                                     deps=_deps(probe=lambda *a, **k: result)))
+    done = [e for e in events if e.state == "done"][0]
+    assert "not_scored" in done.detail
+
+
+def test_a_scored_rewrite_says_nothing_about_not_being_scored():
+    result = {"rejected": True, "reasons": ["invented: PhD"], "delta": -1,
+              "score_before": 5, "score_after": 4, "similarity": 0.4}
+    events, _ = _drain(rewrite_stage("cv", "Engineer", scorer=None,
+                                     deps=_deps(probe=lambda *a, **k: result)))
+    done = [e for e in events if e.state == "done"][0]
+    assert "not_scored" not in done.detail
+
+
 def test_every_event_carries_the_candidate_for_batch_runs():
     events, _ = _drain(council_stage("job", "cv", "ALEX", ["phi4"], _deps()))
     assert all(e.candidate == "ALEX" for e in events)

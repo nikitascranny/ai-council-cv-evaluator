@@ -70,6 +70,14 @@ legend { font-weight: 600; padding: 0 6px; }
 pre.rewrite { white-space: pre-wrap; overflow-wrap: anywhere; }
 .score { font-size: 34px; font-weight: 600; margin: 4px 0; }
 .score small { font-size: 15px; font-weight: 400; color: #5b606b; }
+/* A ranking row is a control, not just a label - it swaps the board above to
+   that candidate's run - so it has to look like one. */
+#ranking tr { cursor: pointer; }
+#ranking tr:hover { background: #eef2ff; }
+#ranking tr.picked { background: #e7ecff; }
+#ranking tr.picked td { font-weight: 600; }
+#ranking a.pick { color: inherit; text-decoration: none; }
+#ranking tr:hover a.pick { text-decoration: underline; }
 """
 
 
@@ -131,8 +139,11 @@ _REVIEWER_OPTIONS = (
      "scores that version too. If the two scores differ much, the ranking is "
      "reacting to how the CV is written rather than to what the candidate has "
      "done. The report shows both scores, the difference, and a highlighted "
-     "diff of exactly what changed. Roughly doubles the time per candidate. "
-     "(Called the phrasing-sensitivity probe elsewhere in the project.)"),
+     "diff of exactly what changed. A reworded version that fails the fact "
+     "check is not scored - there is nothing to learn from the score of a "
+     "rewrite that changed the facts - and the report says so instead. "
+     "Roughly doubles the time per candidate. (Called the "
+     "phrasing-sensitivity probe elsewhere in the project.)"),
 )
 
 _CV_PICKER_SCRIPT = """
@@ -234,94 +245,208 @@ def stages_for(mode: str, action: str = None) -> tuple:
     return _CANDIDATE_STAGES.get(action, _CANDIDATE_STAGES[evaluation.REWRITE])
 
 
+# --- The live view ---------------------------------------------------------
+#
+# Every placeholder in the scripts below is substituted ONCE, on the fully
+# assembled script, in live_view(). An earlier version substituted RUNID into
+# the shared script and only then pasted the ranking renderer in, so the
+# renderer's own RUNID was never replaced and every ranking row linked to a
+# literal /run/RUNID/report/<n>. Assembling first and substituting last is what
+# keeps that class of bug from coming back.
+
+_LIVE_SCRIPT = """
+const EVENTS_URL = '/run/RUNID/events';
+const source = new EventSource(EVENTS_URL);
+
+// One entry per candidate: its stage rows as last reported, the index of its
+// payload (completion order, which is what the report route takes) and why
+// it failed if it did. A batch's board is keyed by stage, not by candidate -
+// ten CVs would otherwise give a fifty-row board - so the board describes one
+// candidate at a time, and this is where the rest are kept.
+const runs = {};
+let live = null;       // the candidate the stream is on
+let shown = null;      // the candidate the board is describing
+let following = true;  // whether the board follows the stream
+let finished = false;
+let completed = 0;     // candidates finished so far = the next payload index
+
+function escapeHtml(s) {
+  return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#39;');
+}
+function runFor(name) {
+  if (!runs[name]) runs[name] = {stages: {}, index: null, error: null};
+  return runs[name];
+}
+function detailText(detail) {
+  // A field with no value is dropped rather than printed as "delta: null",
+  // which tells the reviewer nothing and crowds out the fields that do.
+  return Object.entries(detail || {})
+    .filter(([, v]) => v !== null && v !== undefined)
+    .map(([k, v]) => k + ': ' + v).join('  ');
+}
+function heading() {
+  // A re-evaluation carries no candidate name; there is nothing to say about
+  // who is running, and a bare "Evaluating: " would read as a bug.
+  if (!shown) return '';
+  if (shown === live && !finished) return 'Evaluating: ' + escapeHtml(shown);
+  let text = 'Showing: ' + escapeHtml(shown);
+  if (!finished && live && live !== shown) {
+    text += " &mdash; <a class='follow' href='#'>back to " +
+      escapeHtml(live) + ", running now</a>";
+  }
+  return text;
+}
+// The board is redrawn from `runs` rather than written into as events land, so
+// switching candidate is the same operation as showing progress, and a
+// finished candidate's rows are still there to switch back to.
+function draw() {
+  const entry = shown === null ? null : runs[shown];
+  document.querySelectorAll('#board tr').forEach((row) => {
+    const cell = entry ? entry.stages[row.dataset.stage] : null;
+    row.querySelector('.state').textContent = cell ? cell.state : 'waiting';
+    row.querySelector('.detail').textContent = cell ? cell.detail : '';
+  });
+  document.getElementById('candidate').innerHTML = heading();
+  document.getElementById('done').innerHTML = entry ? doneHtml(entry) : '';
+  document.querySelectorAll('#ranking tr').forEach((row) => {
+    row.classList.toggle('picked', row.dataset.candidate === shown);
+  });
+}
+document.getElementById('candidate').addEventListener('click', (event) => {
+  const link = event.target.closest('a.follow');
+  if (!link) return;
+  event.preventDefault();
+  following = true;
+  shown = live;
+  draw();
+});
+source.onmessage = (message) => {
+  const e = JSON.parse(message.data);
+  // rank/done carries no candidate: taking a name off it would blank the
+  // board at the very end of a batch.
+  if (e.stage === 'rank') {
+    renderRanking(e.detail.ranking || []);
+    draw();
+    return;
+  }
+  const name = e.candidate || '';
+  const entry = runFor(name);
+  if (name !== live) {
+    live = name;
+    if (following) shown = name;
+  }
+  if (e.stage === 'run' && e.state === 'done') {
+    entry.index = completed;
+    completed += 1;
+  } else if (e.stage === 'run' && e.state === 'failed') {
+    entry.error = e.detail.error || 'unknown error';
+    // Appended under the board on purpose rather than written into a stage
+    // row: a failed candidate must not vanish when the board moves on to the
+    // next one.
+    const item = document.createElement('li');
+    item.innerHTML = '<b>' + escapeHtml(name || '?') + '</b> failed: ' +
+      escapeHtml(entry.error);
+    document.getElementById('failures').appendChild(item);
+    document.getElementById('failures-card').hidden = false;
+  } else if (e.stage !== 'run') {
+    entry.stages[e.stage] = {state: e.state, detail: detailText(e.detail)};
+  }
+  draw();
+};
+source.addEventListener('end', () => {
+  source.close();
+  finished = true;
+  draw();
+});
+"""
+
+# Reviewer mode: the ranking is the way into every candidate's run, so a row
+# both swaps the board to that candidate and carries a real link to their
+# report - the link so ctrl-click and middle-click still open it in a tab, the
+# handler so a plain click stays on this page and shows the run instead.
+_REVIEWER_SCRIPT = """
+const REPORT_URL = '/run/RUNID/report/';
+function doneHtml(entry) {
+  if (entry.error !== null) {
+    return 'This candidate failed: ' + escapeHtml(entry.error);
+  }
+  if (entry.index === null) return '';
+  return "<a href='" + REPORT_URL + entry.index + "'>Open the full report</a>";
+}
+function renderRanking(ranking) {
+  const rows = ranking.map((r, i) => {
+    // The row's own payload_index, not its rank: the ranking is by score and
+    // /report/<n> indexes by completion order, and those differ whenever the
+    // best candidate was not the first to finish.
+    if (r.payload_index !== undefined && r.payload_index !== null) {
+      runFor(r.candidate).index = r.payload_index;
+    }
+    return '<tr data-candidate="' + escapeHtml(r.candidate) + '"><td>' +
+      (i + 1) + '</td><td><a class="pick" href="' + REPORT_URL +
+      r.payload_index + '">' + escapeHtml(r.candidate) + '</a></td><td>' +
+      (r.final_score === null ? '-' : r.final_score) + '</td></tr>';
+  }).join('');
+  const card = document.getElementById('ranking');
+  card.innerHTML = '<h3>Ranking</h3><p class="hint">Pick a candidate to put ' +
+    'their run back on the board above.</p><table>' + rows + '</table>';
+  card.hidden = false;
+}
+document.getElementById('ranking').addEventListener('click', (event) => {
+  const link = event.target.closest('a.pick');
+  if (!link) return;
+  // A modified click keeps the browser's own meaning - open the report in a
+  // new tab - and only a plain one swaps the board.
+  if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+  event.preventDefault();
+  following = false;
+  shown = link.closest('tr').dataset.candidate;
+  draw();
+});
+"""
+
+# Candidate mode is one CV: no shortlist, so no ranking renderer and no
+# ranking card. The stub keeps the shared handler above from needing to know
+# which mode it is running in.
+_CANDIDATE_SCRIPT = """
+const RESULTS_URL = '/candidate/RUNID';
+function doneHtml(entry) {
+  if (entry.error !== null) return 'This run failed: ' + escapeHtml(entry.error);
+  if (entry.index === null) return '';
+  return "<a href='" + RESULTS_URL + "'>DONETEXT</a>";
+}
+function renderRanking(ranking) {}
+"""
+
+
 def live_view(run_id: str, mode: str = "reviewer", action: str = None) -> str:
     """Stage list that fills in from the event stream.
 
     One view for both modes: the event stream, the board and the failure list
     are identical, and only the stage names and where "done" points differ.
+
+    In reviewer mode the board is also addressable. A batch reuses one set of
+    stage rows for every candidate, so progress for the candidate that
+    finished ten minutes ago used to be gone for good; now every candidate's
+    rows are kept, and picking a name out of the ranking puts that candidate's
+    run - and the link to their full report - back on the board.
     """
     rows = "".join(
-        "<tr id='stage-{s}'><td>{s}</td><td class='state'>waiting</td>"
-        "<td class='detail'></td></tr>".format(s=s)
+        "<tr id='stage-{s}' data-stage='{s}'><td>{s}</td>"
+        "<td class='state'>waiting</td><td class='detail'></td></tr>".format(s=s)
         for s in stages_for(mode, action))
-    script = """
-    const source = new EventSource('/run/RUNID/events');
-    let currentCandidate = null;
-    function escapeHtml(s) {
-      return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;')
-        .replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#39;');
-    }
-    function resetBoard() {
-      document.querySelectorAll('#board tr').forEach((row) => {
-        row.querySelector('.state').textContent = 'waiting';
-        row.querySelector('.detail').textContent = '';
-      });
-    }
-    function ensureCandidate(name) {
-      // A batch's stage rows are shared across candidates - keyed only by
-      // stage, not by candidate, or ten CVs would give a fifty-row board.
-      // So when the candidate changes, name it and reset the rows rather
-      // than silently letting the next candidate's progress overwrite the
-      // previous one's under the same label.
-      if (!name || name === currentCandidate) return;
-      currentCandidate = name;
-      document.getElementById('candidate').innerHTML =
-        'Evaluating: ' + escapeHtml(name);
-      resetBoard();
-    }
-    source.onmessage = (message) => {
-      const e = JSON.parse(message.data);
-      ensureCandidate(e.candidate);
-      if (e.stage === 'run' && e.state === 'done') {
-        document.getElementById('done').innerHTML =
-          "<a href='DONEHREF'>DONETEXT</a>";
-        return;
-      }
-      if (e.stage === 'run' && e.state === 'failed') {
-        // Survives resetBoard() on purpose: this appends to a list under the
-        // board rather than writing into a stage row, so a failed candidate
-        // does not vanish when the next candidate's progress resets the rows.
-        const item = document.createElement('li');
-        item.innerHTML = '<b>' + escapeHtml(e.candidate || '?') +
-          '</b> failed: ' + escapeHtml(e.detail.error || 'unknown error');
-        document.getElementById('failures').appendChild(item);
-        document.getElementById('failures-card').hidden = false;
-        return;
-      }
-      if (e.stage === 'rank') { RANKCALL return; }
-      const row = document.getElementById('stage-' + e.stage);
-      if (!row) return;
-      row.querySelector('.state').textContent = e.state;
-      row.querySelector('.detail').textContent =
-        Object.entries(e.detail).map(([k, v]) => k + ': ' + v).join('  ');
-    };
-    source.addEventListener('end', () => source.close());
-    RANKFN
-    """.replace("RUNID", run_id)
-    # Candidate mode never emits a rank event - one CV, no shortlist - so its
-    # page ships neither the renderer nor the card. Leaving them in would put
-    # an empty "Ranking" panel and a /report link on a page that has no report.
-    ranking_fn = """function renderRanking(ranking) {
-      document.getElementById('ranking').innerHTML =
-        '<h3>Ranking</h3><table>' + ranking.map((r, i) =>
-          '<tr><td>' + (i + 1) + '</td><td><a href="/run/RUNID/report/' +
-          r.payload_index + '">' + escapeHtml(r.candidate) +
-          '</a></td><td>' + (r.final_score === null ? '-' : r.final_score) +
-          '</td></tr>').join('') + '</table>';
-    }"""
     if mode == "candidate":
         done_text = _CANDIDATE_DONE_TEXT.get(
             action, _CANDIDATE_DONE_TEXT[evaluation.REWRITE])
-        script = (script.replace("DONEHREF", "/candidate/" + run_id)
-                        .replace("DONETEXT", done_text)
-                        .replace("RANKCALL", "").replace("RANKFN", ""))
+        mode_script = _CANDIDATE_SCRIPT.replace("DONETEXT", done_text)
         ranking_card = ""
     else:
-        script = (script.replace("DONEHREF", "/run/" + run_id + "/report")
-                        .replace("DONETEXT", "Open the full report")
-                        .replace("RANKCALL", "renderRanking(e.detail.ranking);")
-                        .replace("RANKFN", ranking_fn))
-        ranking_card = "<div class='card' id='ranking'></div>"
+        mode_script = _REVIEWER_SCRIPT
+        # Hidden until a rank event fills it: a single-CV run never emits one,
+        # and a permanently empty "Ranking" panel reads as something that
+        # failed rather than something that was never asked for.
+        ranking_card = "<div class='card' id='ranking' hidden></div>"
+    script = (mode_script + _LIVE_SCRIPT).replace("RUNID", run_id)
     body = ("<div class='card'><h2>Running</h2>"
             "<p id='candidate'></p>"
             "<table id='board'>{rows}</table>"

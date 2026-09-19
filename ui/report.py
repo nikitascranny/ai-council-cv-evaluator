@@ -133,8 +133,15 @@ def render_report(payload: dict) -> str:
     if rewrite:
         delta = rewrite.get("delta")
         shown = "&mdash;" if delta is None else ("+{}".format(delta) if delta > 0 else delta)
-        note = "MODEL ERROR: {}".format(rewrite["error"]) if rewrite.get("error") \
-            else "{} -> {}".format(rewrite.get("score_before"), rewrite.get("score_after"))
+        if rewrite.get("error"):
+            note = "MODEL ERROR: {}".format(rewrite["error"])
+        elif rewrite.get("score_after") is None:
+            # A rejected rewrite is not scored - "5 -> None" would read as a
+            # scoring that broke, when there was no second scoring at all.
+            note = "{} -> not scored".format(rewrite.get("score_before"))
+        else:
+            note = "{} -> {}".format(rewrite.get("score_before"),
+                                     rewrite.get("score_after"))
         tiles.append(_tile("rewrite delta", shown, note))
 
     similarity = rewrite.get("similarity")
@@ -157,10 +164,18 @@ def render_report(payload: dict) -> str:
 
     if rewrite.get("rejected"):
         reasons = ", ".join(str(r) for r in (rewrite.get("reasons") or []))
+        # Said outright rather than left to be inferred from an em dash in the
+        # tile: the reviewer ticked this box to find out what rewording does
+        # to the score, and the answer for this run is that the rewrite never
+        # got far enough to be asked.
+        unscored = ("" if rewrite.get("score_after") is not None else
+                    " It was not scored, so this run has no delta; the CV's "
+                    "own scores above are unaffected.")
         flag = ('<div class="flag"><b>Rewrite rejected by the fact guard.</b> '
                 'The paraphrase introduced material the original did not contain: '
                 '{}. This is a result about the rewriting model, not a failure of '
-                'the run.</div>').format(html.escape(reasons) or "unrecorded")
+                'the run.{}</div>').format(
+                    html.escape(reasons) or "unrecorded", unscored)
 
     panes = [_pane("Job listing", html.escape(payload.get("job_text") or ""))]
 

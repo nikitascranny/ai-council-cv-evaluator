@@ -342,6 +342,84 @@ class TestProbe:
         assert result.rejected is False
         assert any("bright" in a for a in result.advisory)
 
+    # --- score_rejected=False: a failed rewrite is not scored --------------
+    #
+    # A rewrite the guard threw out is a rewrite that failed. Scoring it is a
+    # second full evaluator call - minutes, locally - for a number the web app
+    # never shows. The batch CLI still wants it (see the default), so the
+    # caller chooses.
+
+    def test_score_rejected_false_does_not_score_a_rejected_rewrite(self):
+        cv_text = "Assisted with support tickets."
+        # Only one score is available: asking for a second would raise
+        # IndexError off the end of the list, which is the point.
+        scorer = _fake_scorer([3])
+        paraphrase_fn = _fake_paraphrase([
+            "Resolved 500 support tickets.",
+            "Resolved 900 support tickets.",
+        ])
+
+        result = rv1.probe(cv_text, "Support Technician", scorer,
+                           paraphrase_fn=paraphrase_fn, score_rejected=False)
+
+        assert result.rejected is True
+        assert result.error is None          # declined, not broken
+        assert result.score_before == 3
+        assert result.score_after is None
+        assert result.delta is None
+
+    def test_score_rejected_false_still_records_every_free_measurement(self):
+        """Only the scoring call is skipped. Everything the guard and the text
+        comparison already computed is still on the row, so the report can say
+        what was wrong with the rewrite."""
+        cv_text = "Assisted with support tickets."
+        scorer = _fake_scorer([3])
+        paraphrase_fn = _fake_paraphrase([
+            "Resolved 500 support tickets.",
+            "Resolved 900 support tickets.",
+        ])
+
+        result = rv1.probe(cv_text, "Support Technician", scorer,
+                           paraphrase_fn=paraphrase_fn, score_rejected=False)
+
+        assert result.retried is True
+        assert any("900" in r for r in result.reasons)
+        assert result.similarity is not None
+        assert result.length_ratio is not None
+        assert result.facts_lost is not None
+
+    def test_score_rejected_false_still_scores_a_clean_rewrite(self):
+        """The switch turns off the scoring of a FAILED rewrite, not scoring.
+        A rewrite that passes the guard is what the probe exists to measure."""
+        cv_text = "Assisted with support tickets."
+        scorer = _fake_scorer([3, 5])
+        paraphrase_fn = _fake_paraphrase(
+            ["Provided assistance with support tickets."])
+
+        result = rv1.probe(cv_text, "Support Technician", scorer,
+                           paraphrase_fn=paraphrase_fn, score_rejected=False)
+
+        assert result.rejected is False
+        assert result.score_after == 5
+        assert result.delta == 2
+
+    def test_score_rejected_false_still_scores_a_retry_that_came_back_clean(self):
+        """A first attempt that was rejected and a strict retry that was not
+        is a successful rewrite, and the delta is the finding. Keying the skip
+        off `retried` rather than off the final verdict would throw it away."""
+        cv_text = "Assisted with support tickets."
+        scorer = _fake_scorer([3, 4])
+        paraphrase_fn = _fake_paraphrase([
+            "Resolved 500 support tickets.",
+            "Provided assistance with support tickets.",
+        ])
+
+        result = rv1.probe(cv_text, "Support Technician", scorer,
+                           paraphrase_fn=paraphrase_fn, score_rejected=False)
+
+        assert result.retried is True and result.rejected is False
+        assert result.delta == 1
+
 
 # ---------------- verify_determinism ----------------
 

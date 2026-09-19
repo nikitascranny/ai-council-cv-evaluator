@@ -286,6 +286,80 @@ def test_ranking_row_payload_index_points_at_its_own_finisher_not_its_rank(
     assert by_candidate == {"winner": 1, "loser": 0}
 
 
+
+
+# --- A ranking row is the way into its candidate's run ----------------------
+#
+# The row rendered a link to a literal "/run/RUNID/report/<n>": live_view
+# substituted the run id into its shared script and only then pasted the
+# ranking renderer in, so the renderer's own placeholder was never replaced.
+# Every name in the shortlist was a dead link, which is what a reviewer saw as
+# "clicking a candidate does nothing".
+
+
+def test_the_ranking_rows_carry_the_real_run_id_not_a_placeholder():
+    body = app.pages.live_view("abc123def456", "reviewer")
+    assert "RUNID" not in body
+    assert "/run/abc123def456/report/" in body
+
+
+def test_every_url_the_live_view_uses_is_substituted_once_and_literally():
+    """The placeholder bug came from substituting into a fragment and then
+    assembling. Naming each URL as its own substituted constant is what keeps
+    a later fragment from carrying an unsubstituted one - so pin that the
+    page declares them rather than building paths out of pieces."""
+    body = app.pages.live_view("abc123def456", "reviewer")
+    assert "const EVENTS_URL = '/run/abc123def456/events';" in body
+    assert "const REPORT_URL = '/run/abc123def456/report/';" in body
+
+    body = app.pages.live_view("abc123def456", "candidate", "rewrite")
+    assert "const RESULTS_URL = '/candidate/abc123def456';" in body
+
+
+def test_clicking_a_ranking_row_shows_that_candidates_run_here():
+    """A plain click must stay on the live view and put that candidate's
+    stages and report link back on the board - not navigate to the report and
+    not, as before, do nothing at all. The href stays real so ctrl-click still
+    opens the report in a tab, which is why the handler has to refuse the
+    browser's own default only for an unmodified click."""
+    body = app.pages.live_view("abc123def456", "reviewer")
+    assert "a.pick" in body
+    assert "event.preventDefault()" in body
+    assert "dataset.candidate" in body
+    # A modified click is left to the browser.
+    assert "event.metaKey || event.ctrlKey" in body
+
+
+def test_a_finished_candidate_keeps_its_stage_rows_for_the_ranking_to_show():
+    """The board is one set of rows shared by every candidate, so showing a
+    finished candidate again means the rows were kept rather than overwritten.
+    This pins the per-candidate record, which is the whole reason a ranking
+    row has anything to show."""
+    body = app.pages.live_view("abc123def456", "reviewer")
+    assert "function runFor(name)" in body
+    assert "entry.stages[e.stage] = {state: e.state, detail: detailText(e.detail)}" in body
+
+
+def test_candidate_mode_ships_no_ranking_card():
+    """One CV, no shortlist. An empty 'Ranking' panel and a report link on a
+    page that has no report would both be lies."""
+    body = app.pages.live_view("abc123def456", "candidate", "rewrite")
+    # The shared stylesheet carries the ranking rules on every page; what
+    # candidate mode must not have is the card itself, a renderer to fill it,
+    # or a report to point at.
+    assert "id='ranking' hidden" not in body
+    assert "function renderRanking(ranking) {}" in body
+    assert "Open the full report" not in body
+
+
+def test_the_reviewer_ranking_card_is_hidden_until_there_is_a_ranking():
+    """A single-CV run never emits a rank event, and a permanently empty card
+    reads as something that failed rather than something never asked for."""
+    body = app.pages.live_view("abc123def456", "reviewer")
+    assert "id='ranking' hidden" in body
+    assert "card.hidden = false;" in body
+
+
 # --- Fix round 1: the SSE loop must re-drain after observing done, the
 # stage board must name the candidate it is showing, and a client
 # disconnect must not print a traceback from the streaming thread.
@@ -386,15 +460,22 @@ def test_the_live_view_names_the_current_candidate_and_resets_the_board(
         monkeypatch):
     """A batch shares one set of stage rows across every candidate - ten CVs
     would give a fifty-row board if each got its own. So the board must say
-    who it is currently describing, and reset the rows when the candidate
-    changes, rather than silently letting one candidate's progress read as
-    another's."""
+    who it is currently describing, and show only that candidate's rows,
+    rather than silently letting one candidate's progress read as another's.
+
+    The board is drawn from a per-candidate record rather than written into
+    as events land, which is what makes switching candidate and showing
+    progress the same operation - and is why there is no separate reset."""
     started = _start(monkeypatch, lambda: iter([Event("parse", "done")]))
     run_id = started.headers["Location"].rsplit("/", 1)[-1]
     body = app.dispatch("GET", "/run/" + run_id, {}).bytes().decode("utf-8")
     assert "id='candidate'" in body
-    assert "ensureCandidate" in body and "resetBoard" in body
-    assert "escapeHtml(name)" in body
+    # One record per candidate, and the board redrawn from whichever is shown.
+    assert "function runFor(name)" in body and "function draw()" in body
+    # Rows not covered by the shown candidate's record go back to 'waiting',
+    # so the previous candidate's progress cannot survive the switch.
+    assert "cell ? cell.state : 'waiting'" in body
+    assert "escapeHtml(shown)" in body
 
 
 def test_candidate_mode_offers_a_picker_now_that_v2_exists():
@@ -500,20 +581,24 @@ def test_an_unknown_run_or_version_is_a_404_not_a_crash():
 
 def test_the_live_view_renders_a_failures_area_that_survives_reset(monkeypatch):
     """run/failed has no matching stage-<s> row - the live view must render
-    it somewhere that resetBoard() (fired on every candidate change) does not
-    wipe, so a crashed candidate is still visible once the batch finishes."""
+    it somewhere that draw() (which rewrites the board on every event and on
+    every switch of candidate) does not wipe, so a crashed candidate is still
+    visible once the batch finishes."""
     started = _start(monkeypatch, lambda: iter([]))
     body = app.dispatch(
         "GET", "/run/" + started.headers["Location"].rsplit("/", 1)[-1], {}
     ).bytes().decode("utf-8")
     assert "id='failures'" in body
     assert "id='failures-card'" in body
-    assert "resetBoard" in body
+    assert "function draw()" in body
     assert "run' && e.state === 'failed'" in body
-    # resetBoard() only touches '#board tr' rows, never #failures - so the
-    # failures list is untouched by the reset that fires on candidate change.
-    reset_body = body.split("function resetBoard")[1].split("}")[0]
-    assert "failures" not in reset_body
+    # draw() is what rewrites the board on every event and on every switch of
+    # candidate, and it touches '#board tr', '#candidate', '#done' and the
+    # ranking rows - never #failures. So a crashed candidate's entry outlives
+    # every candidate that runs after it.
+    draw_body = body.split("function draw()")[1].split("\n}")[0]
+    assert "#board tr" in draw_body
+    assert "failures" not in draw_body
 
 
 # --- I5: a missing evaluator/rewriter must render a page, not a traceback --
@@ -547,15 +632,16 @@ def test_an_unexpected_route_error_is_a_500_page_not_a_dead_socket(monkeypatch):
 
 def test_a_candidate_failure_event_names_the_candidate_and_the_error(
         monkeypatch):
-    """The failure detail JS reads e.candidate and e.detail.error and escapes
-    both - pin that the client script actually does this rather than assuming
-    silently-correct JS."""
+    """The failure detail JS reads the event's candidate and its error and
+    escapes both - pin that the client script actually does this rather than
+    assuming silently-correct JS."""
     started = _start(monkeypatch, lambda: iter([]))
     body = app.dispatch(
         "GET", "/run/" + started.headers["Location"].rsplit("/", 1)[-1], {}
     ).bytes().decode("utf-8")
-    assert "escapeHtml(e.candidate" in body
-    assert "escapeHtml(e.detail.error" in body
+    assert "e.detail.error || 'unknown error'" in body
+    assert "escapeHtml(name || '?')" in body
+    assert "escapeHtml(entry.error)" in body
 
 
 # --- the live view serves both modes ---------------------------------------

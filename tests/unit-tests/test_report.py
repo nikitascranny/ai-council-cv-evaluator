@@ -247,6 +247,37 @@ def test_report_surfaces_a_rewrite_probe_error_rather_than_a_bare_dash():
     assert "HTTPError: HTTP Error 500" in html
 
 
+# --- a rejected rewrite is not scored ---------------------------------------
+#
+# The web app asks probe() not to score a rewrite the guard threw out: it is a
+# second full evaluator call for a number the report would then have to
+# disown. So score_after is None here for a reason, and the report has to say
+# which reason - "3 -> None" reads as a scoring that broke.
+
+
+def test_report_says_a_rejected_rewrite_was_not_scored():
+    html = report.render_report(_payload(
+        rewrite={"score_before": 3, "score_after": None, "delta": None,
+                 "rejected": True, "reasons": ["invented: PhD"],
+                 "similarity": 0.4}))
+    assert "3 -&gt; not scored" in html
+    assert "None" not in html
+    assert "It was not scored" in html
+
+
+def test_report_still_shows_both_scores_when_the_rewrite_was_scored():
+    """The switch only covers a rewrite that failed. A scored one, rejected or
+    not, still reports what it scored."""
+    html = report.render_report(_payload(
+        rewrite={"score_before": 3, "score_after": 2, "delta": -1,
+                 "rejected": True, "reasons": ["invented: PhD"],
+                 "similarity": 0.4}))
+    assert "3 -&gt; 2" in html
+    assert "It was not scored" not in html
+
+
+
+
 def test_report_escapes_a_judge_error():
     html = report.render_report(_payload(
         judge={"final_score": None, "error": "<script>alert(1)</script>"}))

@@ -194,6 +194,13 @@ def rewrite_stage(cv_text, job_title, scorer, deps, candidate: str = "",
     A rejected rewrite is a result about the rewriting model, not an error: it
     means the paraphrase introduced a fact the original did not contain.
 
+    score_rejected=False because a rejected rewrite is a rewrite that failed,
+    and scoring it would put the CV through the evaluator a second time to
+    produce a delta this stage would then have to disown. The reviewer waits
+    minutes for that call, and the report shows the rejection rather than the
+    number. The batch CLI in rewriter_v1 keeps probe()'s default, where the
+    score of a rejected rewrite is part of the research record.
+
     rewriter_model is passed through to probe() explicitly, so the run's
     Settings decide which model paraphrases rather than probe()'s own default.
     """
@@ -202,7 +209,7 @@ def rewrite_stage(cv_text, job_title, scorer, deps, candidate: str = "",
     extra = {"paraphrase_fn": paraphrase_fn} if paraphrase_fn else {}
     if rewriter_model:
         extra["rewriter_model"] = rewriter_model
-    result = deps.probe(cv_text, job_title, scorer, **extra)
+    result = deps.probe(cv_text, job_title, scorer, score_rejected=False, **extra)
     out = result if isinstance(result, dict) else vars(result)
 
     # probe() returns a ProbeResult dataclass in production, and ProbeResult has
@@ -216,6 +223,10 @@ def rewrite_stage(cv_text, job_title, scorer, deps, candidate: str = "",
               "score_after": out.get("score_after"),
               "similarity": out.get("similarity"),
               "new_facts": list(out.get("reasons") or out.get("new_facts") or [])}
+    # Why there is no score_after, so the board does not read as a stage that
+    # half-finished for reasons it declines to give.
+    if out.get("rejected") and out.get("score_after") is None:
+        detail["not_scored"] = "the rewrite was rejected, so it was not scored"
     yield Event("rewrite", "done", detail, time.time() - started, candidate)
     return out
 
