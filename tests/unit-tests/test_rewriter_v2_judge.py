@@ -250,6 +250,28 @@ class TestLoadSubmission:
             ["rewrite by phi4", "rewrite by qwen2.5:14b", "rewrite by gpt-oss:120b"]
         assert submission.rewrites[1]["reasons"] == ["dropped a fact"]
 
+    def test_looks_for_the_job_listing_in_the_given_directory(self, tmp_path):
+        listings = tmp_path / "listings"
+        listings.mkdir()
+        job_pdf = listings / "job_listing_cashier.pdf"
+        job_pdf.write_bytes(b"%PDF-1.4")
+        sub_dir = self._make_submission_dir(tmp_path, self._two_agent_rows())
+
+        submission, reason = rvj.load_submission("Cashier", "ALEX PARK", sub_dir, listings)
+
+        assert reason is None
+        assert submission.job_pdf == job_pdf
+
+    def test_missing_job_listing_reason_names_the_given_directory(self, tmp_path):
+        listings = tmp_path / "empty_listings"
+        listings.mkdir()
+        sub_dir = self._make_submission_dir(tmp_path, self._two_agent_rows())
+
+        submission, reason = rvj.load_submission("Cashier", "ALEX PARK", sub_dir, listings)
+
+        assert submission is None
+        assert str(listings) in reason
+
 
 # ---------------------------------------------------------------------------
 # discover_submissions
@@ -619,7 +641,7 @@ class TestMain:
         out_feedback.write_text("{}")
 
         monkeypatch.setattr(rvj, "discover_submissions", lambda results_dir: [("Cashier", "ALEX PARK", job_dir)])
-        monkeypatch.setattr(rvj, "load_submission", lambda jt, c, d: (self._submission(), None))
+        monkeypatch.setattr(rvj, "load_submission", lambda jt, c, d, listings: (self._submission(), None))
         monkeypatch.setattr(rvj, "extract_text_from_pdf", lambda path: "job text")
         monkeypatch.setattr(
             rvj, "call_judge_with_retries",
@@ -639,7 +661,7 @@ class TestMain:
         job_dir.mkdir(parents=True)
 
         monkeypatch.setattr(rvj, "discover_submissions", lambda results_dir: [("Cashier", "ALEX PARK", job_dir)])
-        monkeypatch.setattr(rvj, "load_submission", lambda jt, c, d: (None, "no metadata.csv"))
+        monkeypatch.setattr(rvj, "load_submission", lambda jt, c, d, listings: (None, "no metadata.csv"))
         write_mock = MagicMock()
         monkeypatch.setattr(rvj, "write_feedback", write_mock)
         self._argv(monkeypatch, "--results-dir", str(tmp_path / "results"), "--outdir", str(tmp_path / "out"))
@@ -654,7 +676,7 @@ class TestMain:
         submission = self._submission()
 
         monkeypatch.setattr(rvj, "discover_submissions", lambda results_dir: [("Cashier", "ALEX PARK", job_dir)])
-        monkeypatch.setattr(rvj, "load_submission", lambda jt, c, d: (submission, None))
+        monkeypatch.setattr(rvj, "load_submission", lambda jt, c, d, listings: (submission, None))
         monkeypatch.setattr(rvj, "extract_text_from_pdf", lambda path: "job text")
         parsed_result = {"recommended_rewrite": "phi4", "career_roadmap": []}
         monkeypatch.setattr(rvj, "call_judge_with_retries", lambda *a, **kw: (parsed_result, None))
@@ -672,7 +694,7 @@ class TestMain:
         submission = self._submission()
 
         monkeypatch.setattr(rvj, "discover_submissions", lambda results_dir: [("Cashier", "ALEX PARK", job_dir)])
-        monkeypatch.setattr(rvj, "load_submission", lambda jt, c, d: (submission, None))
+        monkeypatch.setattr(rvj, "load_submission", lambda jt, c, d, listings: (submission, None))
         monkeypatch.setattr(rvj, "extract_text_from_pdf", lambda path: "job text")
         monkeypatch.setattr(rvj, "call_judge_with_retries", lambda *a, **kw: ({}, "PARSE ERROR"))
         write_mock = MagicMock(return_value=tmp_path / "out" / "Cashier" / "ALEX PARK")
@@ -696,12 +718,13 @@ class TestMain:
         monkeypatch.setattr(rvj, "call_judge_with_retries", lambda *a, **kw: ({"recommended_rewrite": "phi4"}, None))
         monkeypatch.setattr(rvj, "write_feedback", MagicMock(return_value=tmp_path / "out"))
         self._argv(monkeypatch, "--job-title", "Cashier", "--candidate", "ALEX PARK",
-                   "--results-dir", str(tmp_path / "results"), "--outdir", str(tmp_path / "out"))
+                   "--results-dir", str(tmp_path / "results"), "--outdir", str(tmp_path / "out"),
+                   "--job-listings-dir", str(tmp_path / "listings"))
 
         rvj.main()
 
         discover_mock.assert_not_called()
-        load_mock.assert_called_once_with("Cashier", "ALEX PARK", job_dir)
+        load_mock.assert_called_once_with("Cashier", "ALEX PARK", job_dir, tmp_path / "listings")
 
     def test_single_target_mode_missing_dir_exits(self, monkeypatch, tmp_path):
         self._argv(monkeypatch, "--job-title", "Cashier", "--candidate", "GHOST",

@@ -139,11 +139,14 @@ def find_job_listing_pdf(job_title: str, job_listings_dir: Path = JOB_LISTINGS_D
     return candidate if candidate.is_file() else None
 
 
-def load_submission(job_title: str, candidate: str, submission_dir: Path):
+def load_submission(job_title: str, candidate: str, submission_dir: Path,
+                    job_listings_dir: Path = JOB_LISTINGS_DIR):
     """
     Load one data/rewrite_results/<job_title>/<candidate>/ folder.
 
-    Returns (RewriteSubmission, None) or (None, "<reason>") in the case of a bad submission 
+    job_listings_dir: where to look for the job's listing PDF (--job-listings-dir)
+
+    Returns (RewriteSubmission, None) or (None, "<reason>") in the case of a bad submission
     (no metadata.csv, no matching job listing, a row's .txt file absent)
     """
     csv_path = submission_dir / "metadata.csv"
@@ -151,9 +154,9 @@ def load_submission(job_title: str, candidate: str, submission_dir: Path):
     if not csv_path.is_file():
         return None, f"no metadata.csv in {submission_dir}"
 
-    job_pdf = find_job_listing_pdf(job_title)
+    job_pdf = find_job_listing_pdf(job_title, job_listings_dir)
     if job_pdf is None:
-        return None, f"no job listing PDF found for job title {job_title!r} under {JOB_LISTINGS_DIR}"
+        return None, f"no job listing PDF found for job title {job_title!r} under {job_listings_dir}"
 
     rows = load_metadata(csv_path)
     if not rows:
@@ -404,7 +407,8 @@ def main():
 
         print(f"-> {job_title} / {candidate}")
 
-        submission, reason = load_submission(job_title, candidate, submission_dir)
+        submission, reason = load_submission(job_title, candidate, submission_dir,
+                                             args.job_listings_dir)
         if submission is None:
             print(f"  WARN skipping: {reason}")
             n_missing += 1
