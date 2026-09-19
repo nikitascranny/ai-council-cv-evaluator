@@ -104,6 +104,218 @@
           "seconds": 189.5
         }
       }
+    },
+    {
+      "started": "2026-09-13T17:58:49+00:00",
+      "finished": "2026-09-13T17:59:01+00:00",
+      "exit_code": 0,
+      "python": "3.13.15",
+      "from": "judge",
+      "condition": "with-essential",
+      "force": false,
+      "cvs": null,
+      "jobs": "data/job-listings",
+      "out": "/content/drive/MyDrive/ai-cv-eval-results/batch6_samename_B",
+      "preflight": "ok",
+      "models": {
+        "judge": "deepseek-r1:8b"
+      },
+      "inputs": {
+        "job_listings": [
+          "job_listing_aquarium_biologist_entry_level.pdf",
+          "job_listing_computer_repair_technician.pdf",
+          "job_listing_estate_groundskeeper.pdf",
+          "job_listing_fishing_boat_hand.pdf",
+          "job_listing_museum_security_specialist.pdf",
+          "job_listing_school_it_technician_coding.pdf",
+          "job_listing_secretary.pdf",
+          "job_listing_startup_fullstack_engineer.pdf",
+          "job_listing_web_development_manager.pdf"
+        ]
+      },
+      "stages": {
+        "evaluate": {
+          "status": "reused"
+        },
+        "aggregate": {
+          "status": "reused"
+        },
+        "judge": {
+          "status": "ok",
+          "ok": 0,
+          "failed": 0,
+          "already_done": 9,
+          "total": 9,
+          "seconds": 10.3
+        }
+      }
+    },
+    {
+      "started": "2026-09-13T17:59:01+00:00",
+      "finished": "2026-09-13T17:59:10+00:00",
+      "exit_code": 0,
+      "python": "3.13.15",
+      "from": "judge",
+      "condition": "council-only",
+      "force": false,
+      "cvs": null,
+      "jobs": "data/job-listings",
+      "out": "/content/drive/MyDrive/ai-cv-eval-results/batch6_samename_B",
+      "preflight": "ok",
+      "models": {
+        "judge": "deepseek-r1:8b"
+      },
+      "inputs": {
+        "job_listings": [
+          "job_listing_aquarium_biologist_entry_level.pdf",
+          "job_listing_computer_repair_technician.pdf",
+          "job_listing_estate_groundskeeper.pdf",
+          "job_listing_fishing_boat_hand.pdf",
+          "job_listing_museum_security_specialist.pdf",
+          "job_listing_school_it_technician_coding.pdf",
+          "job_listing_secretary.pdf",
+          "job_listing_startup_fullstack_engineer.pdf",
+          "job_listing_web_development_manager.pdf"
+        ]
+      },
+      "stages": {
+        "evaluate": {
+          "status": "reused"
+        },
+        "aggregate": {
+          "status": "reused"
+        },
+        "judge": {
+          "status": "ok",
+          "ok": 0,
+          "failed": 0,
+          "already_done": 9,
+          "total": 9,
+          "seconds": 9.4
+        }
+      }
+    },
+    {
+      "started": "2026-09-13T19:16:25+00:00",
+      "finished": "2026-09-13T19:16:26+00:00",
+      "exit_code": 1,
+      "python": "3.13.15",
+      "from": "judge",
+      "condition": "with-essential",
+      "force": false,
+      "cvs": null,
+      "jobs": "data/job-listings",
+      "out": "/content/drive/MyDrive/ai-cv-eval-results/batch6_samename_B",
+      "preflight": "failed",
+      "models": {},
+      "inputs": {},
+      "stages": {}
+    },
+    {
+      "started": "2026-09-13T19:16:26+00:00",
+      "finished": "2026-09-13T19:16:26+00:00",
+      "exit_code": 1,
+      "python": "3.13.15",
+      "from": "judge",
+      "condition": "council-only",
+      "force": false,
+      "cvs": null,
+      "jobs": "data/job-listings",
+      "out": "/content/drive/MyDrive/ai-cv-eval-results/batch6_samename_B",
+      "preflight": "failed",
+      "models": {},
+      "inputs": {},
+      "stages": {}
+    },
+    {
+      "started": "2026-09-13T22:09:46+00:00",
+      "finished": "2026-09-13T22:15:13+00:00",
+      "exit_code": 0,
+      "python": "3.13.15",
+      "from": "judge",
+      "condition": "with-essential",
+      "force": false,
+      "cvs": null,
+      "jobs": "data/job-listings",
+      "out": "/content/drive/MyDrive/ai-cv-eval-results/batch6_samename_B",
+      "preflight": "ok",
+      "models": {
+        "judge": "deepseek-r1:8b"
+      },
+      "inputs": {
+        "job_listings": [
+          "job_listing_aquarium_biologist_entry_level.pdf",
+          "job_listing_computer_repair_technician.pdf",
+          "job_listing_estate_groundskeeper.pdf",
+          "job_listing_fishing_boat_hand.pdf",
+          "job_listing_museum_security_specialist.pdf",
+          "job_listing_school_it_technician_coding.pdf",
+          "job_listing_secretary.pdf",
+          "job_listing_startup_fullstack_engineer.pdf",
+          "job_listing_web_development_manager.pdf"
+        ]
+      },
+      "stages": {
+        "evaluate": {
+          "status": "reused"
+        },
+        "aggregate": {
+          "status": "reused"
+        },
+        "judge": {
+          "status": "ok",
+          "ok": 9,
+          "failed": 0,
+          "already_done": 0,
+          "total": 9,
+          "seconds": 326.4
+        }
+      }
+    },
+    {
+      "started": "2026-09-13T22:15:13+00:00",
+      "finished": "2026-09-13T22:18:19+00:00",
+      "exit_code": 0,
+      "python": "3.13.15",
+      "from": "judge",
+      "condition": "council-only",
+      "force": false,
+      "cvs": null,
+      "jobs": "data/job-listings",
+      "out": "/content/drive/MyDrive/ai-cv-eval-results/batch6_samename_B",
+      "preflight": "ok",
+      "models": {
+        "judge": "deepseek-r1:8b"
+      },
+      "inputs": {
+        "job_listings": [
+          "job_listing_aquarium_biologist_entry_level.pdf",
+          "job_listing_computer_repair_technician.pdf",
+          "job_listing_estate_groundskeeper.pdf",
+          "job_listing_fishing_boat_hand.pdf",
+          "job_listing_museum_security_specialist.pdf",
+          "job_listing_school_it_technician_coding.pdf",
+          "job_listing_secretary.pdf",
+          "job_listing_startup_fullstack_engineer.pdf",
+          "job_listing_web_development_manager.pdf"
+        ]
+      },
+      "stages": {
+        "evaluate": {
+          "status": "reused"
+        },
+        "aggregate": {
+          "status": "reused"
+        },
+        "judge": {
+          "status": "ok",
+          "ok": 9,
+          "failed": 0,
+          "already_done": 0,
+          "total": 9,
+          "seconds": 186.1
+        }
+      }
     }
   ]
 }

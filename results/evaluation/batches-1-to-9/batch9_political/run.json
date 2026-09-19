@@ -105,6 +105,128 @@
           "seconds": 380.0
         }
       }
+    },
+    {
+      "started": "2026-09-13T19:16:28+00:00",
+      "finished": "2026-09-13T19:16:29+00:00",
+      "exit_code": 1,
+      "python": "3.13.15",
+      "from": "judge",
+      "condition": "with-essential",
+      "force": false,
+      "cvs": null,
+      "jobs": "data/job-listings",
+      "out": "/content/drive/MyDrive/ai-cv-eval-results/batch9_political",
+      "preflight": "failed",
+      "models": {},
+      "inputs": {},
+      "stages": {}
+    },
+    {
+      "started": "2026-09-13T19:16:29+00:00",
+      "finished": "2026-09-13T19:16:29+00:00",
+      "exit_code": 1,
+      "python": "3.13.15",
+      "from": "judge",
+      "condition": "council-only",
+      "force": false,
+      "cvs": null,
+      "jobs": "data/job-listings",
+      "out": "/content/drive/MyDrive/ai-cv-eval-results/batch9_political",
+      "preflight": "failed",
+      "models": {},
+      "inputs": {},
+      "stages": {}
+    },
+    {
+      "started": "2026-09-14T00:06:41+00:00",
+      "finished": "2026-09-14T00:13:17+00:00",
+      "exit_code": 0,
+      "python": "3.13.15",
+      "from": "judge",
+      "condition": "with-essential",
+      "force": false,
+      "cvs": null,
+      "jobs": "data/job-listings",
+      "out": "/content/drive/MyDrive/ai-cv-eval-results/batch9_political",
+      "preflight": "ok",
+      "models": {
+        "judge": "deepseek-r1:8b"
+      },
+      "inputs": {
+        "job_listings": [
+          "job_listing_aquarium_biologist_entry_level.pdf",
+          "job_listing_computer_repair_technician.pdf",
+          "job_listing_estate_groundskeeper.pdf",
+          "job_listing_fishing_boat_hand.pdf",
+          "job_listing_museum_security_specialist.pdf",
+          "job_listing_school_it_technician_coding.pdf",
+          "job_listing_secretary.pdf",
+          "job_listing_startup_fullstack_engineer.pdf",
+          "job_listing_web_development_manager.pdf"
+        ]
+      },
+      "stages": {
+        "evaluate": {
+          "status": "reused"
+        },
+        "aggregate": {
+          "status": "reused"
+        },
+        "judge": {
+          "status": "ok",
+          "ok": 18,
+          "failed": 0,
+          "already_done": 0,
+          "total": 18,
+          "seconds": 396.3
+        }
+      }
+    },
+    {
+      "started": "2026-09-14T00:13:18+00:00",
+      "finished": "2026-09-14T00:18:56+00:00",
+      "exit_code": 0,
+      "python": "3.13.15",
+      "from": "judge",
+      "condition": "council-only",
+      "force": false,
+      "cvs": null,
+      "jobs": "data/job-listings",
+      "out": "/content/drive/MyDrive/ai-cv-eval-results/batch9_political",
+      "preflight": "ok",
+      "models": {
+        "judge": "deepseek-r1:8b"
+      },
+      "inputs": {
+        "job_listings": [
+          "job_listing_aquarium_biologist_entry_level.pdf",
+          "job_listing_computer_repair_technician.pdf",
+          "job_listing_estate_groundskeeper.pdf",
+          "job_listing_fishing_boat_hand.pdf",
+          "job_listing_museum_security_specialist.pdf",
+          "job_listing_school_it_technician_coding.pdf",
+          "job_listing_secretary.pdf",
+          "job_listing_startup_fullstack_engineer.pdf",
+          "job_listing_web_development_manager.pdf"
+        ]
+      },
+      "stages": {
+        "evaluate": {
+          "status": "reused"
+        },
+        "aggregate": {
+          "status": "reused"
+        },
+        "judge": {
+          "status": "ok",
+          "ok": 18,
+          "failed": 0,
+          "already_done": 0,
+          "total": 18,
+          "seconds": 338.2
+        }
+      }
     }
   ]
 }
