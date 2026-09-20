@@ -38,8 +38,17 @@ class RunRegistry:
         self._lock = threading.Lock()
         self._current = None
 
-    def start(self, runner, mode: str = "reviewer", action: str = None) -> str:
-        """runner is a zero-argument callable returning an Event iterator."""
+    def start(self, runner, mode: str = "reviewer", action: str = None,
+              on_finish=None) -> str:
+        """runner is a zero-argument callable returning an Event iterator.
+
+        on_finish runs once the run is over, however it ended. The app passes
+        the model unloader: a finished run leaves its models resident for
+        their keep_alive - half an hour and ten gigabytes for the rewriter -
+        and nothing else is watching for the end of a run. It is called after
+        the run is marked done, so a failure in it cannot leave the page
+        waiting, and its own errors are swallowed for the same reason.
+        """
         with self._lock:
             if self._current is not None and not self._runs[self._current].done:
                 raise RunBusy("a run is already in progress")
@@ -62,6 +71,13 @@ class RunRegistry:
                 with self._lock:
                     run.done = True
                 run.finished.set()
+                if on_finish is not None:
+                    try:
+                        on_finish()
+                    except Exception:
+                        # Housekeeping. A daemon that cannot be reached must
+                        # not turn a finished run into a failed one.
+                        pass
 
         threading.Thread(target=work, daemon=True).start()
         return run_id

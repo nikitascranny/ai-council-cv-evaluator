@@ -19,6 +19,8 @@ import json
 import sys
 from pathlib import Path
 
+import pytest
+
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "rewriter"))
 
@@ -602,3 +604,106 @@ class TestSummarise:
         ]
         summary = rv1.summarise(rows, flag_threshold=2)
         assert "0 clean, 0 rejected (of 1 scored), 1 truncated (excluded)" in summary
+
+
+# --- the probe's timeout and the models it leaves loaded --------------------
+#
+# The default was 300s, which is a budget for a fast machine rather than a
+# guard against a hung one. A 14B model that does not fit in VRAM spills to
+# system RAM and generates at a few tokens a second; a CV-length rewrite is
+# about a thousand output tokens, so every rewrite on such a machine died at
+# five minutes with "TimeoutError: timed out".
+
+
+def test_the_rewriter_timeout_is_a_hung_daemon_guard_not_a_speed_budget():
+    assert rv1.DEFAULT_TIMEOUT >= 1800
+    # Both halves of the probe: the paraphrase and the re-score.
+    import inspect
+    for fn in (rv1.paraphrase, rv1.make_scorer):
+        assert (inspect.signature(fn).parameters["timeout"].default
+                == rv1.DEFAULT_TIMEOUT), fn.__name__
+
+
+def _urlopen_times_out(monkeypatch):
+    monkeypatch.setattr(
+        rv1.urllib.request, "urlopen",
+        lambda *a, **k: (_ for _ in ()).throw(TimeoutError("timed out")))
+
+
+def test_a_rewrite_timeout_names_the_model_and_the_budget(monkeypatch):
+    """"TimeoutError: timed out" names neither, so a reviewer reading it on
+    the report cannot tell a dead daemon from a model too large for the
+    machine - the common cause, and the one with a different fix."""
+    _urlopen_times_out(monkeypatch)
+
+    with pytest.raises(rv1.RewriteError) as caught:
+        rv1._ollama_text("qwen2.5:14b", "prompt", 8192, 0, 1800)
+
+    assert "qwen2.5:14b" in str(caught.value)
+    assert "1800s" in str(caught.value)
+    assert "rewriting" in str(caught.value)
+
+
+def test_a_scoring_timeout_says_so_too():
+    """The re-score reaches Ollama through run_evaluations.call_ollama, which
+    raises the same bare TimeoutError. Both halves of the probe can be the one
+    that runs out of time, and the report has to say which."""
+    def times_out(model, prompt, num_ctx, seed, timeout):
+        raise TimeoutError("timed out")
+
+    scorer = rv1.make_scorer("phi4", call=times_out, timeout=1800)
+
+    with pytest.raises(rv1.ScoreError) as caught:
+        scorer("cv", "Role")
+
+    assert "phi4" in str(caught.value)
+    assert "1800s" in str(caught.value)
+    assert "scoring" in str(caught.value)
+
+
+def test_a_timed_out_rewrite_is_still_recorded_as_a_row_not_a_crash():
+    """RewriteError is already in probe()'s caught tuple, so the new message
+    must not change probe()'s contract: one bad candidate cannot end a batch."""
+    def times_out(cv_text, job_title, **kwargs):
+        raise rv1.RewriteError("qwen2.5:14b did not finish rewriting within 1800s.")
+
+    result = rv1.probe("cv text", "Role", _fake_scorer([3]),
+                       paraphrase_fn=times_out)
+
+    assert result.error is not None and "1800s" in result.error
+    assert result.score_before == 3
+    assert result.score_after is None and result.delta is None
+
+
+def test_the_rewriting_model_is_recorded_for_the_unloader(monkeypatch):
+    """rewriter_v1 talks to Ollama through its own urllib call, so nothing in
+    ollama_utils sees it. Unrecorded, the probe's 14B stayed resident for its
+    30-minute keep_alive after every run and after Ctrl-C."""
+    import ollama_utils
+    noted = []
+    monkeypatch.setattr(ollama_utils, "note_local_model",
+                        lambda model, host=None: noted.append((model, host)))
+    _urlopen_times_out(monkeypatch)
+
+    with pytest.raises(rv1.RewriteError):
+        rv1._ollama_text("qwen2.5:14b", "prompt", 8192, 0, 1800)
+
+    # Recorded BEFORE the call, so a request that timed out - which has still
+    # loaded the model - is exactly the case the unloader can see.
+    assert noted == [("qwen2.5:14b", rv1.OLLAMA_URL)]
+
+
+def test_the_scoring_model_is_recorded_for_the_unloader(monkeypatch):
+    """The scorer goes through run_evaluations.call_ollama, which predates the
+    web app, sends keep_alive 30m and records nothing."""
+    import ollama_utils
+    noted = []
+    monkeypatch.setattr(ollama_utils, "note_local_model",
+                        lambda model, host=None: noted.append(model))
+
+    scorer = rv1.make_scorer(
+        "phi4", call=lambda *a: {"response": '{"score": 5}',
+                                 "prompt_eval_count": 10})
+    scorer("cv", "Role")
+
+    assert noted == ["phi4"]

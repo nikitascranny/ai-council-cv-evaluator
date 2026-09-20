@@ -207,6 +207,73 @@ def test_stop_skips_a_daemon_that_cannot_be_reached(mock_post, mock_get, fresh_s
     assert fresh_stop_state.stop_local_models() == []
 
 
+
+
+# ---------------------------------------------------------------------------
+# unload_local_models (the end of an ordinary run)
+# ---------------------------------------------------------------------------
+#
+# A finished run used to leave its models resident for their keep_alive - half
+# an hour and about ten gigabytes for the rewriter's 14B - because nothing
+# unloaded them until Ctrl-C. stop_local_models() could not be reused for it:
+# it also refuses every later call, which would leave the app unable to run
+# anything a second time.
+
+
+@patch("ollama_utils.requests.get")
+@patch("ollama_utils.requests.post")
+def test_unload_frees_our_loaded_models(mock_post, mock_get, fresh_stop_state):
+    mock_post.return_value = _mock_response("ok")
+    fresh_stop_state.call_ollama_text("phi4", "p", keep_alive="30m")
+    mock_post.reset_mock()
+    mock_get.return_value = _ps("phi4:latest", "llama3:8b")
+
+    assert fresh_stop_state.unload_local_models() == ["phi4:latest"]
+    assert mock_post.call_args.kwargs["json"] == {"model": "phi4:latest",
+                                                  "keep_alive": 0}
+
+
+@patch("ollama_utils.requests.post")
+def test_unload_leaves_the_app_able_to_run_again(mock_post, fresh_stop_state):
+    """The difference from stop_local_models(). A run that ends must not take
+    the next one with it."""
+    mock_post.return_value = _mock_response("ok")
+    with patch("ollama_utils.requests.get", return_value=_ps()):
+        fresh_stop_state.unload_local_models()
+
+    text, error = fresh_stop_state.call_ollama_text("phi4", "p", keep_alive="30m")
+
+    assert error is None and text == "ok"
+
+
+@patch("ollama_utils.requests.get")
+@patch("ollama_utils.requests.post")
+def test_stop_still_unloads_and_still_cancels(mock_post, mock_get,
+                                              fresh_stop_state):
+    """Ctrl-C keeps both halves: unload, and refuse everything after."""
+    mock_post.return_value = _mock_response("ok")
+    fresh_stop_state.call_ollama_text("phi4", "p", keep_alive="30m")
+    mock_get.return_value = _ps("phi4:latest")
+
+    assert fresh_stop_state.stop_local_models() == ["phi4:latest"]
+
+    _, error = fresh_stop_state.call_ollama_text("phi4", "p", keep_alive="30m")
+    assert error.startswith("CANCELLED")
+
+
+def test_note_local_model_records_a_call_this_module_did_not_make(
+        fresh_stop_state):
+    """The rewriter's probe reaches Ollama through its own urllib call, so it
+    says so here. Without this its models were invisible to the unloader, and
+    Ctrl-C reported stopping the run's models while leaving the largest one
+    resident."""
+    fresh_stop_state.note_local_model("qwen2.5:14b",
+                                      "http://localhost:11434/api/generate")
+
+    assert fresh_stop_state._used_models == {
+        "http://localhost:11434": {"qwen2.5:14b"}}
+
+
 # ---------------------------------------------------------------------------
 # load_env_file
 # ---------------------------------------------------------------------------

@@ -94,21 +94,36 @@ def _tagged(name: str) -> str:
     return name if ":" in name else name + ":latest"
 
 
-def stop_local_models(timeout: float = 3) -> list:
-    """Stop this process's models on the local Ollama daemon, for Ctrl-C.
+def note_local_model(model: str, host: str = OLLAMA_URL) -> None:
+    """Record that this process asked a local daemon to load `model`.
 
-    Exiting the process drops any request in flight and Ollama cancels it, but
-    the model itself stays loaded for its keep_alive (30 minutes for the
-    rewriter) - what `ollama ps` shows as still running. keep_alive=0 is what
-    `ollama stop` sends; a model still busy unloads as soon as its request
-    ends. Only models this process asked for and that are loaded right now are
-    touched, so another program's models are left alone and nothing gets
-    loaded just to be unloaded.
-
-    Also makes every later call return a CANCELLED error at once. Returns the
-    names it stopped; a daemon that cannot be reached is skipped, not an error.
+    call_ollama_text does this for every local call it makes, so the evaluator
+    council, the essential-requirements check and the judge are all covered.
+    The rewriter's probe is not: it talks to Ollama through its own urllib
+    call (rewriter_v1._ollama_text, which needs plain text where this module's
+    calls force JSON), so it has to say so here. Without that, the probe's
+    models were invisible to unload_local_models(), and Ctrl-C left the
+    rewriter's 10GB resident for the rest of its keep_alive while reporting
+    that it had stopped the models the run started.
     """
-    _stopping.set()
+    with _used_lock:
+        _used_models.setdefault(_daemon_base(host), set()).add(model)
+
+
+def unload_local_models(timeout: float = 3) -> list:
+    """Unload this process's models from the local Ollama daemon.
+
+    A request that ends - normally, or by being dropped when the process exits
+    - does not unload anything: the model stays resident for its keep_alive
+    (30 minutes for the rewriter) - what `ollama ps` shows as still running.
+    keep_alive=0 is what `ollama stop` sends; a model still busy unloads as
+    soon as its request ends. Only models this process asked for and that are
+    loaded right now are touched, so another program's models are left alone
+    and nothing gets loaded just to be unloaded.
+
+    Returns the names it unloaded; a daemon that cannot be reached is skipped,
+    not an error.
+    """
     with _used_lock:
         used = {base: set(models) for base, models in _used_models.items()}
     stopped = []
@@ -129,6 +144,20 @@ def stop_local_models(timeout: float = 3) -> list:
                 continue
             stopped.append(name)
     return stopped
+
+
+def stop_local_models(timeout: float = 3) -> list:
+    """Unload, and refuse everything after: Ctrl-C.
+
+    The unloading is unload_local_models()'s. What this adds is the flag that
+    makes every later call return CANCELLED at once, so a run that was between
+    two model calls when Ctrl-C arrived cannot load a model back in just after
+    it was unloaded. That is why the end of an ordinary run calls
+    unload_local_models() and not this: the app is still running, and the next
+    run must still be able to reach a model.
+    """
+    _stopping.set()
+    return unload_local_models(timeout)
 
 
 def call_ollama_json(model: str,
@@ -234,8 +263,7 @@ def call_ollama_text(model: str,
     }
     if keep_alive is not None:
         body["keep_alive"] = keep_alive
-        with _used_lock:
-            _used_models.setdefault(_daemon_base(host), set()).add(model)
+        note_local_model(model, host)
     if think is not None:
         body["think"] = think
     extra = {"headers": headers} if headers else {}

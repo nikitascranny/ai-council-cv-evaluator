@@ -33,6 +33,7 @@ sys.path.insert(0, str(_ROOT / "common"))
 import prompts  # noqa: E402
 import run_evaluations  # noqa: E402
 import cv_pdf_parser  # noqa: E402
+import ollama_utils  # noqa: E402
 from fact_guard import (  # noqa: E402
     rejection_reasons,
     advisory_caps_runs,
@@ -60,10 +61,34 @@ OLLAMA_URL = "http://localhost:11434/api/generate"
 # rather than an indifferent ranking. See ProbeResult.similarity.
 DEFAULT_REWRITER_MODEL = "qwen2.5:14b"
 DEFAULT_NUM_CTX = 8192
+# A guard against a hung daemon, not a budget for a slow one. The old 300s was
+# the second: a 14B model that does not fit in VRAM spills to system RAM and
+# generates at a few tokens a second, where a CV-length rewrite is ~1000 output
+# tokens - so every rewrite on such a machine died at five minutes with
+# "TimeoutError: timed out" and no indication that the model was merely slow.
+# 1800 matches the spirit of ollama_utils' own 3600s guard: long enough that
+# reaching it means something is wrong, not merely slow.
+DEFAULT_TIMEOUT = 1800
 
 
 class RewriteError(RuntimeError):
     """The rewriting agent returned nothing usable."""
+
+
+def _timed_out(model: str, timeout: int, what: str) -> str:
+    """Why a call ran out of time, in terms a reviewer can act on.
+
+    urllib gives "timed out" and names neither the model nor the budget it
+    overran, so the report could not tell a dead daemon from a model too
+    large for the machine - the common cause, and the one with a different
+    fix.
+    """
+    return ("{model} did not finish {what} within {timeout}s. It is either "
+            "not responding, or too large to run at a usable speed on this "
+            "machine - a model that does not fit in VRAM spills to system RAM "
+            "and generates at a few tokens a second, where a CV-length "
+            "rewrite needs about a thousand.".format(
+                model=model, what=what, timeout=timeout))
 
 
 _REWRITE_PROMPT = """Rewrite the CV below in neutral, consistent professional prose.
@@ -131,14 +156,21 @@ def _ollama_text(model: str, prompt: str, num_ctx: int, seed: int, timeout: int)
     }).encode()
     req = urllib.request.Request(OLLAMA_URL, data=body,
                                  headers={"Content-Type": "application/json"})
-    with urllib.request.urlopen(req, timeout=timeout) as resp:
-        return json.loads(resp.read())
+    # Before the request, not after: a call that times out has still loaded
+    # the model, and that is exactly the case where something has to know to
+    # unload it. keep_alive above holds it for 30 minutes either way.
+    ollama_utils.note_local_model(model, OLLAMA_URL)
+    try:
+        with urllib.request.urlopen(req, timeout=timeout) as resp:
+            return json.loads(resp.read())
+    except TimeoutError:
+        raise RewriteError(_timed_out(model, timeout, "rewriting")) from None
 
 
 def paraphrase(cv_text: str, job_title: str, *,
                model: str = DEFAULT_REWRITER_MODEL,
                num_ctx: int = DEFAULT_NUM_CTX,
-               seed: int = 0, timeout: int = 300,
+               seed: int = 0, timeout: int = DEFAULT_TIMEOUT,
                strict: bool = False, call=None) -> str:
     """One rewriting pass. Returns the rewritten CV text.
 
@@ -188,7 +220,7 @@ class ScoreError(RuntimeError):
 
 def make_scorer(model: str, prompt_version: str = DEFAULT_PROMPT_VERSION,
                 num_ctx: int = DEFAULT_NUM_CTX, seed: int = 0,
-                timeout: int = 300, call=None):
+                timeout: int = DEFAULT_TIMEOUT, call=None):
     """Build scorer(cv_text, job_title) -> int.
 
     Model and prompt version are bound here rather than passed per call, so
@@ -209,7 +241,15 @@ def make_scorer(model: str, prompt_version: str = DEFAULT_PROMPT_VERSION,
 
     def scorer(cv_text: str, job_title: str) -> int:
         prompt = prompts.build(prompt_version, job_title, cv_text)
-        resp = call(model, prompt, num_ctx, seed, timeout)
+        # run_evaluations.call_ollama sends keep_alive 30m and records nothing
+        # - it predates the web app, and its own batch ends with the process.
+        # The scoring model is this one, so note it here rather than reach
+        # into the prototype.
+        ollama_utils.note_local_model(model, run_evaluations.OLLAMA)
+        try:
+            resp = call(model, prompt, num_ctx, seed, timeout)
+        except TimeoutError:
+            raise ScoreError(_timed_out(model, timeout, "scoring")) from None
         ptoks = resp.get("prompt_eval_count")
         scorer.last_prompt_eval_count = ptoks
         scorer.last_prompt_chars = len(prompt)

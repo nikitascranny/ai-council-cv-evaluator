@@ -212,6 +212,19 @@ def rewrite_stage(cv_text, job_title, scorer, deps, candidate: str = "",
     result = deps.probe(cv_text, job_title, scorer, score_rejected=False, **extra)
     out = result if isinstance(result, dict) else vars(result)
 
+    # probe() never raises on a model failure - it records it on `error` and
+    # returns the row anyway, so one bad candidate cannot end a batch. Report
+    # it as a failed stage rather than a done one: a probe that died before
+    # reaching the guard still carries the default `rejected: false`, and a
+    # board showing "done - rejected: false" for a rewrite that timed out
+    # reads as the opposite of what happened.
+    if out.get("error"):
+        yield Event("rewrite", "failed",
+                    {"error": str(out["error"]),
+                     "score_before": out.get("score_before")},
+                    time.time() - started, candidate)
+        return out
+
     # probe() returns a ProbeResult dataclass in production, and ProbeResult has
     # no `new_facts` field - the invented facts that make a rejection a finding
     # live in `reasons` (set from rejection_reasons() inside probe()). Read

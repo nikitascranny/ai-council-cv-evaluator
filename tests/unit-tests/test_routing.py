@@ -828,3 +828,71 @@ def test_a_failed_rewrite_judge_still_shows_the_rewrites():
     assert "The rewrite judge failed: timed out" in body
     assert "/download/0" in body
     assert "/candidate/{}/reevaluate/0".format(run_id) in body
+
+
+# --- a finished run must not go on holding the machine's memory -------------
+#
+# Ollama keeps a model resident for its keep_alive after the request that
+# loaded it ends - 30 minutes and around ten gigabytes for the rewriter's 14B.
+# Nothing watched for the end of a run, so a run that finished, failed or
+# timed out left that loaded until Ctrl-C.
+
+
+def test_a_finished_run_unloads_the_models_it_loaded(monkeypatch):
+    freed = []
+    monkeypatch.setattr(app, "unload_models", lambda: freed.append(True))
+    run_id = app.runs_mod.REGISTRY.start(
+        lambda: iter([Event("run", "done", {"payload": {}}, 0.0, "Jane")]),
+        on_finish=app.unload_models)
+    app.runs_mod.REGISTRY.get(run_id).finished.wait(timeout=5)
+
+    assert freed == [True]
+
+
+def test_a_run_that_raised_still_unloads(monkeypatch):
+    """The case that matters most: a rewrite that timed out has loaded the
+    model and produced nothing, so nothing else will free it."""
+    freed = []
+
+    def boom():
+        raise RuntimeError("model timed out")
+
+    run_id = app.runs_mod.REGISTRY.start(
+        boom, on_finish=lambda: freed.append(True))
+    app.runs_mod.REGISTRY.get(run_id).finished.wait(timeout=5)
+
+    assert freed == [True]
+    assert app.runs_mod.REGISTRY.get(run_id).error == "model timed out"
+
+
+def test_an_unreachable_daemon_does_not_turn_a_finished_run_into_a_failed_one():
+    def unreachable():
+        raise OSError("ollama is not running")
+
+    run_id = app.runs_mod.REGISTRY.start(
+        lambda: iter([Event("run", "done", {"payload": {}}, 0.0, "Jane")]),
+        on_finish=unreachable)
+    run = app.runs_mod.REGISTRY.get(run_id)
+    run.finished.wait(timeout=5)
+
+    assert run.done is True
+    assert run.error is None
+    assert len(run.payloads) == 1
+
+
+def test_every_route_that_starts_a_run_asks_for_the_models_back():
+    """Three routes start runs, and a rewrite left resident by any of them
+    costs the same ten gigabytes."""
+    source = Path(app.__file__).read_text(encoding="utf-8")
+    starts = source.count("REGISTRY.start(")
+    assert starts == source.count("on_finish=unload_models") == 3
+
+
+def test_the_run_end_unload_does_not_shut_the_app_down():
+    """unload_models(), not stop_models(): the second also refuses every later
+    call, which is right for Ctrl-C and would leave the app able to run
+    exactly once."""
+    source = Path(app.__file__).read_text(encoding="utf-8")
+    assert "on_finish=stop_models" not in source
+    assert "stop_local_models()" in source   # still there, for Ctrl-C
+    assert "unload_local_models()" in source

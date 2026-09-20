@@ -183,7 +183,8 @@ def candidate_run(form):
             candidate_mod.feedback, action)
 
     try:
-        run_id = runs_mod.REGISTRY.start(runner, mode="candidate", action=action)
+        run_id = runs_mod.REGISTRY.start(runner, mode="candidate", action=action,
+                                         on_finish=unload_models)
     except runs_mod.RunBusy:
         return _BUSY
     return Response(303, "", headers={"Location": "/run/" + run_id})
@@ -229,7 +230,8 @@ def candidate_reevaluate(form, run_id, index):
 
     try:
         new_id = runs_mod.REGISTRY.start(
-            runner, mode="candidate", action=evaluation.REEVALUATE)
+            runner, mode="candidate", action=evaluation.REEVALUATE,
+            on_finish=unload_models)
     except runs_mod.RunBusy:
         return _BUSY
     return Response(303, "", headers={"Location": "/run/" + new_id})
@@ -363,7 +365,8 @@ def reviewer_run(form):
     settings = Settings.from_form(form)
     try:
         run_id = runs_mod.REGISTRY.start(
-            _runner_for(Path(job), [Path(c) for c in cvs], settings))
+            _runner_for(Path(job), [Path(c) for c in cvs], settings),
+            on_finish=unload_models)
     except runs_mod.RunBusy:
         return _BUSY
     return Response(303, "", headers={"Location": "/run/" + run_id})
@@ -469,18 +472,45 @@ class Handler(BaseHTTPRequestHandler):
         sys.stderr.write("  {} {}\n".format(self.command, self.path))
 
 
+def _ollama_utils():
+    """The module, if a run has loaded it, else None.
+
+    Not imported at the top: this file is standard library only, and
+    ollama_utils is not loaded until a run needs it - when it never was, no
+    run reached a model and there is nothing to unload.
+    """
+    return sys.modules.get("ollama_utils")
+
+
+def unload_models() -> list:
+    """Release the models a finished run loaded.
+
+    Ollama keeps a model resident for its keep_alive after the request that
+    loaded it ends - thirty minutes and around ten gigabytes for the
+    rewriter's 14B - so a run that has finished, or failed, or timed out goes
+    on holding the machine's memory with nothing left to use it. Nothing else
+    watches for the end of a run, so the registry calls this.
+
+    Not stop_local_models(): that also refuses every later call, which is
+    right for Ctrl-C and would leave the app unable to run anything again.
+    """
+    module = _ollama_utils()
+    if module is None:
+        return []
+    return module.unload_local_models()
+
+
 def stop_models() -> list:
     """Stop the models a run started, so Ctrl-C ends them and not only the page.
 
-    A run is a thread in this process calling Ollama, and Ollama keeps a model
-    loaded after its caller has gone. Not imported at the top: this file is
-    standard library only, and ollama_utils is not loaded until a run needs it -
-    when it never was, no run reached a model and there is nothing to stop.
+    Unloads as unload_models() does, and additionally refuses every later
+    call, so a run caught between two model calls cannot load one back in
+    just after it was unloaded.
     """
-    ollama_utils = sys.modules.get("ollama_utils")
-    if ollama_utils is None:
+    module = _ollama_utils()
+    if module is None:
         return []
-    return ollama_utils.stop_local_models()
+    return module.stop_local_models()
 
 
 def main(argv=None) -> int:

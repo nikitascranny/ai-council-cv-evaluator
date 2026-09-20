@@ -341,6 +341,35 @@ def test_the_board_says_why_a_rejected_rewrite_has_no_score():
     assert "not_scored" in done.detail
 
 
+def test_a_probe_that_errored_is_reported_as_a_failed_stage():
+    """probe() records a model failure on `error` and returns the row rather
+    than raising, so the row still carries the default `rejected: false`. A
+    board showing "rewrite done - rejected: false" for a rewrite that timed
+    out reads as a clean rewrite, which is the opposite of what happened."""
+    result = {"error": "RewriteError: qwen2.5:14b did not finish rewriting "
+                       "within 1800s.",
+              "rejected": False, "delta": None, "score_before": 2,
+              "score_after": None}
+    events, out = _drain(rewrite_stage("cv", "Engineer", scorer=None,
+                                       deps=_deps(probe=lambda *a, **k: result)))
+    last = events[-1]
+    assert last.state == "failed"
+    assert "1800s" in last.detail["error"]
+    assert last.detail["score_before"] == 2
+    # The row is still returned, so the report renders the error rather than
+    # an empty rewrite panel.
+    assert out is result
+
+
+def test_a_failed_probe_does_not_also_claim_the_rewrite_was_clean():
+    result = {"error": "TimeoutError: timed out", "rejected": False,
+              "delta": None, "score_before": 2, "score_after": None}
+    events, _ = _drain(rewrite_stage("cv", "Engineer", scorer=None,
+                                     deps=_deps(probe=lambda *a, **k: result)))
+    assert not [e for e in events if e.state == "done"]
+    assert "rejected" not in events[-1].detail
+
+
 def test_a_scored_rewrite_says_nothing_about_not_being_scored():
     result = {"rejected": True, "reasons": ["invented: PhD"], "delta": -1,
               "score_before": 5, "score_after": 4, "similarity": 0.4}
